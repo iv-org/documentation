@@ -1,6 +1,6 @@
 GET `/api/v1/videos/:id`
-> Given :id, return `video`  
-> Schema:  
+> Given `:id`, return `video`  
+> `Video schema`:  
 ```
 {
   "title": String,
