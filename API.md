@@ -112,6 +112,7 @@
     "author": String,
     "authorUrl": String,
 
+    "published": Int64,
     "description": String,
     "descriptionHtml": String
   }
