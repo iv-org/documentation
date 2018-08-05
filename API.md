@@ -94,6 +94,28 @@
 ##### GET `/api/v1/trending`
 > Schema:
 ```
+[
+  {
+    "title": String,
+    "videoId": String,
+    "videoThumbnails": [
+      {
+        "quality": String,
+        "url": String,
+        "width": Int32,
+        "height" Int32
+    ],
+
+    "lengthSeconds": Int32,
+    "viewCount": Int64,
+
+    "author": String,
+    "authorUrl": String,
+
+    "description": String,
+    "descriptionHtml": String
+  }
+]
 ```
 
 GET `/api/v1/top`
