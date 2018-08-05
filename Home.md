@@ -1,2 +1,2 @@
 # Documentation
-- Developer API
+- [API](https://github.com/omarroth/invidious/wiki/API)
