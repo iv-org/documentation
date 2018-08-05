@@ -119,10 +119,22 @@
 ]
 ```
 
-GET `/api/v1/top`
+##### GET `/api/v1/top`
+> Schema:
+```
+```
 
-GET `/api/v1/channels/:ucid`
+##### GET `/api/v1/channels/:ucid`
+> Schema:
+```
+```
 
-GET `/api/v1/channels/:ucid/videos`
+##### GET `/api/v1/channels/:ucid/videos`
+> Schema:
+```
+```
 
-GET `/api/v1/search`
+##### GET `/api/v1/search`
+> Schema:
+```
+```
