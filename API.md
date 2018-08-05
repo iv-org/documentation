@@ -1,6 +1,5 @@
-GET `/api/v1/videos/:id`
-> Given `:id`, return `video`  
-> `Video` schema:  
+##### GET `/api/v1/videos/:id`
+> Schema:  
 ```
 {
   "title": String,
@@ -92,7 +91,10 @@ GET `/api/v1/videos/:id`
 }
 ```
 
-GET `/api/v1/trending`
+##### GET `/api/v1/trending`
+> Schema:
+```
+```
 
 GET `/api/v1/top`
 
