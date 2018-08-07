@@ -34,6 +34,7 @@
   "allowRatings": Bool,
   "rating": Float32,
   "isListed": Bool,
+  "hlsUrl": String?,
 
   "adaptiveFormats": [
     {
@@ -122,11 +123,76 @@
 ##### GET `/api/v1/top`
 > Schema:
 ```
+[
+  {
+    "title": String,
+    "videoId": String,
+    "videoThumbnails": [
+      {
+        "quality": String,
+        "url": String,
+        "width": Int32,
+        "height" Int32
+    ],
+
+    "lengthSeconds": Int32,
+    "viewCount": Int64,
+
+    "author": String,
+    "authorUrl": String,
+
+    "published": Int64,
+    "description": String,
+    "descriptionHtml": String
+  }
+]
 ```
 
 ##### GET `/api/v1/channels/:ucid`
 > Schema:
 ```
+{
+  "author": String,
+  "authorId": String,
+  "authorUrl": String,
+  "authorBanners": [
+    {
+      "url": String,
+      "width": Int32,
+      "height": Int32
+    }
+  ],
+  "authorThumbnails": [
+    {
+      "url": String,
+      "width": Int32,
+      "height": Int32
+    }
+  ],
+  
+  "subCount": Int32,
+  "totalViews": Int64,
+  "joined": Int64,
+  "paid": Bool,
+  "isFamilyFriendly": Bool,
+  "description": String,
+  "allowedRegions": Array(String),
+  "latestVideos": [
+    {
+      "title": String,
+      "videoId": String,
+      "published": Int64,
+      "videoThumbnails": [
+        {
+          "quality": String,
+          "url": String,
+          "width": Int32,
+          "height": Int32
+        }
+      ]
+    }
+  ]
+}
 ```
 
 ##### GET `/api/v1/channels/:ucid/videos`
