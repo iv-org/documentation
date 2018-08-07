@@ -287,6 +287,7 @@
         "continuation": String
       }
     }
-  ]
+  ],
+  "continuation": String?
 }
 ```
