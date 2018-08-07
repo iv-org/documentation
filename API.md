@@ -285,7 +285,7 @@
       "replies": {
         "replyCount": Int32,
         "continuation": String
-      }
+      }?
     }
   ],
   "continuation": String?
