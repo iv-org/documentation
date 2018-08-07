@@ -212,6 +212,7 @@
     ],
     "description": String,
     "descriptionHtml": String,
+
     "viewCount": Int64,
     "published": Int64,
     "lengthSeconds": Int32
@@ -245,4 +246,47 @@
     "lengthSeconds": Int32
   }
 ]
+```
+
+##### GET `/api/v1/captions/:id`
+> Schema:
+```
+{
+  "captions": [
+    {
+      "label": String,
+      "languageCode": String
+    }
+  ]
+}
+```
+
+##### GET `/api/v1/comments/:id`
+> Schema:
+```
+{
+  "commentCount": Int32?,
+  "comments": [
+    {
+      "author": String,
+      "authorThumbnails": [
+        "url": String,
+        "width": Int32,
+        "height": Int32
+      ],
+      "authorId": String,
+      "authorUrl": String,
+
+      "content": String,
+      "published": Int64,
+      "likeCount": Int32,
+      "commentId": String,
+       
+      "replies": {
+        "replyCount": Int32,
+        "continuation": String
+      }
+    }
+  ]
+}
 ```
