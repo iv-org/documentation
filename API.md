@@ -222,4 +222,27 @@
 ##### GET `/api/v1/search`
 > Schema:
 ```
+[
+  {
+    "title": String,
+    "videoId": String,
+    "author": String,
+    "authorUrl": String,
+
+    "videoThumbnails": [
+      {
+        "quality": String,
+        "url": String,
+        "width": Int32,
+        "height": Int32
+      }
+    ],
+    "description": String,
+    "descriptionHtml": String,
+
+    "viewCount": Int64,
+    "published": Int64,
+    "lengthSeconds": Int32
+  }
+]
 ```
