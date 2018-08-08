@@ -220,6 +220,11 @@
 ]
 ```
 
+Parameters:
+```
+page: Int32
+```
+
 ##### GET `/api/v1/search`
 > Schema:
 ```
@@ -248,6 +253,15 @@
 ]
 ```
 
+Parameters
+```
+q: String,
+page: Int32,
+sort_by: "relevance", "rating", "upload_date", "view_count"
+date: "hour", "today", "week", "month", "year"
+duration: "short", "long"
+```
+
 ##### GET `/api/v1/captions/:id`
 > Schema:
 ```
@@ -260,6 +274,14 @@
   ]
 }
 ```
+
+Parameters
+```
+label: String
+```
+
+A request with `label` will return the selected captions in WebVTT format.
+
 
 ##### GET `/api/v1/comments/:id`
 > Schema:
@@ -290,4 +312,9 @@
   ],
   "continuation": String?
 }
+```
+
+Parameters:
+```
+continuation: String
 ```
