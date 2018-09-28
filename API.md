@@ -138,6 +138,24 @@ Parameters:
 continuation: String
 ```
 
+##### GET `/api/v1/insights/:id`
+
+> Schema:
+
+```javascript
+{
+    "viewCount": Int64,
+    "timeWatchedText": String,
+    "subscriptionsDriven": Int32,
+    "shares": Int32,
+    "avgViewDurationSeconds": Int32,
+
+    "graphData": {
+        ...
+    }
+}
+```
+
 ##### GET `/api/v1/captions/:id`
 
 > Schema:
