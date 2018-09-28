@@ -15,7 +15,8 @@
 
   "description": String,
   "descriptionHtml": String,
-  "published": Int64
+  "published": Int64,
+  "publishedText": String,
   
   "keywords": Array(String),
   "viewCount": Int64,
@@ -25,6 +26,7 @@
   "isFamilyFriendly": Bool,
   "allowedRegions": Array(String),
   "genre": String,
+  "genreUrl": String,
  
   "author": String,
   "authorId": String,
@@ -69,7 +71,8 @@
   "captions": [
     {
       "label": String,
-      "languageCode": String
+      "languageCode": String,
+      "url": String,
     },
   ],
   "recommendedVideos": [
@@ -111,9 +114,11 @@
     "viewCount": Int64,
 
     "author": String,
+    "authorId": String,
     "authorUrl": String,
 
     "published": Int64,
+    "publishedText": String,
     "description": String,
     "descriptionHtml": String
   }
@@ -139,9 +144,11 @@
     "viewCount": Int64,
 
     "author": String,
+    "authorId": String,
     "authorUrl": String,
 
     "published": Int64,
+    "publishedText": String,
     "description": String,
     "descriptionHtml": String
   }
@@ -176,12 +183,16 @@
   "paid": Bool,
   "isFamilyFriendly": Bool,
   "description": String,
+  "descriptionHtml": String,
   "allowedRegions": Array(String),
   "latestVideos": [
     {
       "title": String,
       "videoId": String,
-      "published": Int64,
+      "author": String,
+      "authorId": String,
+      "authorUrl": String,
+
       "videoThumbnails": [
         {
           "quality": String,
@@ -189,7 +200,13 @@
           "width": Int32,
           "height": Int32
         }
-      ]
+      ],
+      "description": String,
+      "descriptionHtml": String,
+      "viewCount": Int64,
+      "published": Int64,
+      "publishedText": String,
+      "lengthSeconds": Int32
     }
   ]
 }
@@ -202,37 +219,8 @@
   {
     "title": String,
     "videoId": String,
-    "videoThumbnails": [
-      {
-        "quality": String,
-        "url": String,
-        "width": Int32,
-        "height": Int32
-      }
-    ],
-    "description": String,
-    "descriptionHtml": String,
-
-    "viewCount": Int64,
-    "published": Int64,
-    "lengthSeconds": Int32
-  }
-]
-```
-
-Parameters:
-```
-page: Int32
-```
-
-##### GET `/api/v1/search`
-> Schema:
-```
-[
-  {
-    "title": String,
-    "videoId": String,
     "author": String,
+    "authorId": String,
     "authorUrl": String,
 
     "videoThumbnails": [
@@ -248,7 +236,84 @@ page: Int32
 
     "viewCount": Int64,
     "published": Int64,
+    "publishedText": String,
     "lengthSeconds": Int32
+  }
+]
+```
+
+Parameters:
+```
+page: Int32
+```
+
+##### GET `/api/v1/search`
+> Schema:
+```
+[
+  {
+    "type": "video",
+    "title": String,
+    "videoId": String,
+    "author": String,
+    "authorId": String,
+    "authorUrl": String,
+    "videoThumbnails": [
+      {
+        "quality": String,
+        "url": String,
+        "width": Int32,
+        "height": Int32
+      }
+    ],
+    "description": String,
+    "descriptionHtml": String,
+    "viewCount": Int64,
+    "published": Int64,
+    "publishedText": String,
+    "lengthSeconds": Int32,
+    "liveNow": Bool
+  },
+  {
+    "type": "playlist",
+    "title": String,
+    "playlistId": String,
+    "author": String,
+    "authorId": String,
+    "authorUrl": String,
+    
+    "videoCount": Int32,
+    "videos": [
+      "title": String,
+      "videoId": String,
+      "lengthSeconds": Int32,
+      "videoThumbnails": [
+        {
+          "quality": String,
+          "url": String,
+          "width": Int32,
+          "height": Int32
+        }
+      ]
+    ]
+  },
+  {
+    "type": "channel",
+    "author": String,
+    "authorId": String,
+    "authorUrl": String,
+
+    "authorThumbnails": [
+      {
+        "url": String,
+        "width": Int32,
+        "height": Int32
+      }
+    ],
+    "subCount": Int32,
+    "videoCount": Int32,
+    "description": String,
+    "descriptionHtml": String,
   }
 ]
 ```
@@ -260,6 +325,7 @@ page: Int32,
 sort_by: "relevance", "rating", "upload_date", "view_count"
 date: "hour", "today", "week", "month", "year"
 duration: "short", "long"
+type: "video", "playlist", "channel", "all", (default: video)
 ```
 
 ##### GET `/api/v1/captions/:id`
@@ -300,7 +366,9 @@ A request with `label` will return the selected captions in WebVTT format.
       "authorUrl": String,
 
       "content": String,
+      "contentHtml": String,
       "published": Int64,
+      "publishedText": String,
       "likeCount": Int32,
       "commentId": String,
        
