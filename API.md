@@ -212,7 +212,7 @@
 }
 ```
 
-##### GET `/api/v1/channels/:ucid/videos`
+##### GET `/api/v1/channels/:ucid/videos`, `/api/v1/channels/videos/:ucid`
 > Schema:
 ```
 [
