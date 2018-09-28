@@ -1,11 +1,13 @@
 ##### GET `/api/v1/videos/:id`
-> Schema:  
-```
+
+> Schema:
+
+```javascript
 {
   "title": String,
   "videoId": String,
   "videoThumbnails": [
-    {    
+    {
       "quality": String,
       "url": String,
       "width": Int32,
@@ -17,17 +19,17 @@
   "descriptionHtml": String,
   "published": Int64,
   "publishedText": String,
-  
+
   "keywords": Array(String),
   "viewCount": Int64,
   "likeCount": Int32,
   "dislikeCount": Int32,
-  
+
   "isFamilyFriendly": Bool,
   "allowedRegions": Array(String),
   "genre": String,
   "genreUrl": String,
- 
+
   "author": String,
   "authorId": String,
   "authorUrl": String,
@@ -66,7 +68,7 @@
       "qualityLabel": String,
       "resolution": String,
       "size": String
-    }, 
+    },
   ],
   "captions": [
     {
@@ -95,8 +97,75 @@
 }
 ```
 
-##### GET `/api/v1/trending`
+##### GET `/api/v1/comments/:id`
+
 > Schema:
+
+```javascript
+{
+  "commentCount": Int32?,
+  "comments": [
+    {
+      "author": String,
+      "authorThumbnails": [
+        "url": String,
+        "width": Int32,
+        "height": Int32
+      ],
+      "authorId": String,
+      "authorUrl": String,
+
+      "content": String,
+      "contentHtml": String,
+      "published": Int64,
+      "publishedText": String,
+      "likeCount": Int32,
+      "commentId": String,
+
+      "replies": {
+        "replyCount": Int32,
+        "continuation": String
+      }?
+    }
+  ],
+  "continuation": String?
+}
+```
+
+Parameters:
+
+```
+continuation: String
+```
+
+##### GET `/api/v1/captions/:id`
+
+> Schema:
+
+```javascript
+{
+  "captions": [
+    {
+      "label": String,
+      "languageCode": String,
+      "url": String
+    }
+  ]
+}
+```
+
+Parameters:
+
+```
+label: String
+```
+
+A request with `label` will return the selected captions in WebVTT format.
+
+##### GET `/api/v1/trending`
+
+> Schema:
+
 ```
 [
   {
@@ -126,7 +195,9 @@
 ```
 
 ##### GET `/api/v1/top`
+
 > Schema:
+
 ```
 [
   {
@@ -156,7 +227,9 @@
 ```
 
 ##### GET `/api/v1/channels/:ucid`
+
 > Schema:
+
 ```
 {
   "author": String,
@@ -176,7 +249,7 @@
       "height": Int32
     }
   ],
-  
+
   "subCount": Int32,
   "totalViews": Int64,
   "joined": Int64,
@@ -213,176 +286,255 @@
 ```
 
 ##### GET `/api/v1/channels/:ucid/videos`, `/api/v1/channels/videos/:ucid`
+
 > Schema:
-```
+
+```javascript
 [
   {
-    "title": String,
-    "videoId": String,
-    "author": String,
-    "authorId": String,
-    "authorUrl": String,
+    title: String,
+    videoId: String,
+    author: String,
+    authorId: String,
+    authorUrl: String,
 
-    "videoThumbnails": [
+    videoThumbnails: [
       {
-        "quality": String,
-        "url": String,
-        "width": Int32,
-        "height": Int32
+        quality: String,
+        url: String,
+        width: Int32,
+        height: Int32
       }
     ],
-    "description": String,
-    "descriptionHtml": String,
+    description: String,
+    descriptionHtml: String,
 
-    "viewCount": Int64,
-    "published": Int64,
-    "publishedText": String,
-    "lengthSeconds": Int32
+    viewCount: Int64,
+    published: Int64,
+    publishedText: String,
+    lengthSeconds: Int32
   }
-]
+];
 ```
 
 Parameters:
+
 ```
 page: Int32
 ```
 
-##### GET `/api/v1/search`
+##### GET `/api/v1/channels/search/:ucid`
+
 > Schema:
-```
+
+```javascript
 [
   {
-    "type": "video",
-    "title": String,
-    "videoId": String,
-    "author": String,
-    "authorId": String,
-    "authorUrl": String,
-    "videoThumbnails": [
+    type: "video",
+    title: String,
+    videoId: String,
+    author: String,
+    authorId: String,
+    authorUrl: String,
+    videoThumbnails: [
       {
-        "quality": String,
-        "url": String,
-        "width": Int32,
-        "height": Int32
+        quality: String,
+        url: String,
+        width: Int32,
+        height: Int32
       }
     ],
-    "description": String,
-    "descriptionHtml": String,
-    "viewCount": Int64,
-    "published": Int64,
-    "publishedText": String,
-    "lengthSeconds": Int32,
-    "liveNow": Bool
+    description: String,
+    descriptionHtml: String,
+    viewCount: Int64,
+    published: Int64,
+    publishedText: String,
+    lengthSeconds: Int32,
+    liveNow: Bool
   },
   {
-    "type": "playlist",
-    "title": String,
-    "playlistId": String,
-    "author": String,
-    "authorId": String,
-    "authorUrl": String,
-    
-    "videoCount": Int32,
-    "videos": [
+    type: "playlist",
+    title: String,
+    playlistId: String,
+    author: String,
+    authorId: String,
+    authorUrl: String,
+
+    videoCount: Int32,
+    videos: [
       "title": String,
       "videoId": String,
       "lengthSeconds": Int32,
       "videoThumbnails": [
         {
-          "quality": String,
-          "url": String,
-          "width": Int32,
-          "height": Int32
+          quality: String,
+          url: String,
+          width: Int32,
+          height: Int32
         }
       ]
     ]
   },
   {
-    "type": "channel",
-    "author": String,
-    "authorId": String,
-    "authorUrl": String,
+    type: "channel",
+    author: String,
+    authorId: String,
+    authorUrl: String,
 
-    "authorThumbnails": [
+    authorThumbnails: [
       {
-        "url": String,
-        "width": Int32,
-        "height": Int32
+        url: String,
+        width: Int32,
+        height: Int32
       }
     ],
-    "subCount": Int32,
-    "videoCount": Int32,
-    "description": String,
-    "descriptionHtml": String,
+    subCount: Int32,
+    videoCount: Int32,
+    description: String,
+    descriptionHtml: String
   }
-]
+];
 ```
 
-Parameters
+Parameters:
+
 ```
-q: String,
-page: Int32,
+q: String
+page: Int32
+```
+
+##### GET `/api/v1/search`
+
+> Schema:
+
+```javascript
+[
+  {
+    type: "video",
+    title: String,
+    videoId: String,
+    author: String,
+    authorId: String,
+    authorUrl: String,
+    videoThumbnails: [
+      {
+        quality: String,
+        url: String,
+        width: Int32,
+        height: Int32
+      }
+    ],
+    description: String,
+    descriptionHtml: String,
+    viewCount: Int64,
+    published: Int64,
+    publishedText: String,
+    lengthSeconds: Int32,
+    liveNow: Bool
+  },
+  {
+    type: "playlist",
+    title: String,
+    playlistId: String,
+    author: String,
+    authorId: String,
+    authorUrl: String,
+
+    videoCount: Int32,
+    videos: [
+      "title": String,
+      "videoId": String,
+      "lengthSeconds": Int32,
+      "videoThumbnails": [
+        {
+          quality: String,
+          url: String,
+          width: Int32,
+          height: Int32
+        }
+      ]
+    ]
+  },
+  {
+    type: "channel",
+    author: String,
+    authorId: String,
+    authorUrl: String,
+
+    authorThumbnails: [
+      {
+        url: String,
+        width: Int32,
+        height: Int32
+      }
+    ],
+    subCount: Int32,
+    videoCount: Int32,
+    description: String,
+    descriptionHtml: String
+  }
+];
+```
+
+Parameters:
+
+```
+q: String
+page: Int32
 sort_by: "relevance", "rating", "upload_date", "view_count"
 date: "hour", "today", "week", "month", "year"
 duration: "short", "long"
 type: "video", "playlist", "channel", "all", (default: video)
 ```
 
-##### GET `/api/v1/captions/:id`
+##### GET `/api/v1/playlists/:plid`
+
 > Schema:
-```
+
+```javascript
 {
-  "captions": [
-    {
-      "label": String,
-      "languageCode": String
-    }
-  ]
-}
-```
+    "title": String,
+    "playlistId": String,
 
-Parameters
-```
-label: String
-```
+    "author": String,
+    "authorId": String,
+    "authorThumbnails": [
+        {
+            "url": String,
+            "width": String,
+            "height": String
+        }
+    ],
+    "description": String,
+    "descriptionHtml": String,
 
-A request with `label` will return the selected captions in WebVTT format.
+    "videoCount": Int32,
+    "viewCount": Int64,
+    "updated": Int64,
 
+    "videos": [
+        "title": String,
+        "videoId": String,
+        "author": String,
+        "authorId": String,
+        "authorUrl": String,
 
-##### GET `/api/v1/comments/:id`
-> Schema:
-```
-{
-  "commentCount": Int32?,
-  "comments": [
-    {
-      "author": String,
-      "authorThumbnails": [
-        "url": String,
-        "width": Int32,
-        "height": Int32
-      ],
-      "authorId": String,
-      "authorUrl": String,
-
-      "content": String,
-      "contentHtml": String,
-      "published": Int64,
-      "publishedText": String,
-      "likeCount": Int32,
-      "commentId": String,
-       
-      "replies": {
-        "replyCount": Int32,
-        "continuation": String
-      }?
-    }
-  ],
-  "continuation": String?
+        "videoThumbnails": [
+            {
+                "quality": String,
+                "url": String,
+                "width": Int32,
+                "height": Int32
+            }
+        ],
+        "index": Int32,
+        "lengthSeconds": Int32
+    ]
 }
 ```
 
 Parameters:
+
 ```
-continuation: String
+page: Int32
 ```
