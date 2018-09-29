@@ -380,17 +380,19 @@ page: Int32
 
     videoCount: Int32,
     videos: [
-      "title": String,
-      "videoId": String,
-      "lengthSeconds": Int32,
-      "videoThumbnails": [
-        {
-          quality: String,
-          url: String,
-          width: Int32,
-          height: Int32
-        }
-      ]
+      {
+        "title": String,
+        "videoId": String,
+        "lengthSeconds": Int32,
+        "videoThumbnails": [
+          {
+            quality: String,
+            url: String,
+            width: Int32,
+            height: Int32
+          }
+        ]
+      }
     ]
   },
   {
@@ -460,17 +462,19 @@ page: Int32
 
     videoCount: Int32,
     videos: [
-      "title": String,
-      "videoId": String,
-      "lengthSeconds": Int32,
-      "videoThumbnails": [
-        {
-          quality: String,
-          url: String,
-          width: Int32,
-          height: Int32
-        }
-      ]
+      {
+        "title": String,
+        "videoId": String,
+        "lengthSeconds": Int32,
+        "videoThumbnails": [
+          {
+            quality: String,
+            url: String,
+            width: Int32,
+            height: Int32
+          }
+        ]
+      }
     ]
   },
   {
@@ -531,22 +535,24 @@ type: "video", "playlist", "channel", "all", (default: video)
     "updated": Int64,
 
     "videos": [
-        "title": String,
-        "videoId": String,
-        "author": String,
-        "authorId": String,
-        "authorUrl": String,
-
-        "videoThumbnails": [
-            {
-                "quality": String,
-                "url": String,
-                "width": Int32,
-                "height": Int32
-            }
-        ],
-        "index": Int32,
-        "lengthSeconds": Int32
+        {
+          "title": String,
+          "videoId": String,
+          "author": String,
+          "authorId": String,
+          "authorUrl": String,
+  
+          "videoThumbnails": [
+              {
+                  "quality": String,
+                  "url": String,
+                  "width": Int32,
+                  "height": Int32
+              }
+          ],
+          "index": Int32,
+          "lengthSeconds": Int32
+        }
     ]
 }
 ```
