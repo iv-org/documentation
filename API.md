@@ -25,6 +25,8 @@
   "likeCount": Int32,
   "dislikeCount": Int32,
 
+  "paid": Bool,
+  "premium": Bool,
   "isFamilyFriendly": Bool,
   "allowedRegions": Array(String),
   "genre": String,
@@ -33,11 +35,19 @@
   "author": String,
   "authorId": String,
   "authorUrl": String,
+  "authorThumbnails": [
+    {
+      "url": String,
+      "width": Int32,
+      "height": Int32
+    }
+  ],
 
+  "subCountText": String,
   "lengthSeconds": Int32,
   "allowRatings": Bool,
   "rating": Float32,
-  "isListed": Bool,
+  "isListed": Bool?,
   "hlsUrl": String?,
 
   "adaptiveFormats": [
@@ -176,9 +186,12 @@ Parameters:
 
 ```
 label: String
+lang:  String
+tlang: String
 ```
 
 A request with `label` will return the selected captions in WebVTT format.
+Captions can also be selected with an ISO `lang`, e.g. &lang=en, `tlang` will auto-translate from English into the requested language (if English captions are available).
 
 ##### GET `/api/v1/trending`
 
@@ -297,11 +310,15 @@ A request with `label` will return the selected captions in WebVTT format.
       "viewCount": Int64,
       "published": Int64,
       "publishedText": String,
-      "lengthSeconds": Int32
+      "lengthSeconds": Int32,
+      "paid": Bool,
+      "premium": Bool
     }
   ]
 }
 ```
+
+Note that a channel's username (if it doesn't include spaces) is also valid in place of `ucid`, e.g. `/api/v1/channels/BlenderFoundation`.
 
 ##### GET `/api/v1/channels/:ucid/videos`, `/api/v1/channels/videos/:ucid`
 
@@ -331,6 +348,8 @@ A request with `label` will return the selected captions in WebVTT format.
     published: Int64,
     publishedText: String,
     lengthSeconds: Int32
+    paid: Bool,
+    premium: Bool
   }
 ];
 ```
@@ -368,7 +387,9 @@ page: Int32
     published: Int64,
     publishedText: String,
     lengthSeconds: Int32,
-    liveNow: Bool
+    liveNow: Bool,
+    paid: Bool,
+    premium: Bool
   },
   {
     type: "playlist",
@@ -450,7 +471,9 @@ page: Int32
     published: Int64,
     publishedText: String,
     lengthSeconds: Int32,
-    liveNow: Bool
+    liveNow: Bool,
+    paid: Bool,
+    premium: Bool
   },
   {
     type: "playlist",
@@ -561,4 +584,34 @@ Parameters:
 
 ```
 page: Int32
+```
+
+##### GET `/api/v1/mixes/:rdid`
+
+> Schema:
+
+```javascript
+{
+  title: String,
+  mixId: String,
+  videos: [
+    {
+      title: String,
+      videoId: String,
+      author: String,
+      authorId: String,
+      authorUrl: String,
+      videoThumbnails: [
+        {
+          quality: String,
+          url: String,
+          width: Int32,
+          height: Int32
+        }
+      ],
+      index: Int32,
+      lengthSeconds: Int32
+    }
+  ]
+}
 ```
