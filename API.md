@@ -318,6 +318,12 @@ Captions can also be selected with an ISO `lang`, e.g. &lang=en, `tlang` will au
 }
 ```
 
+Parameters:
+
+```
+sort_by: "newest", "oldest", "popular" (default: newest)
+```
+
 Note that a channel's username (if it doesn't include spaces) is also valid in place of `ucid`, e.g. `/api/v1/channels/BlenderFoundation`.
 
 ##### GET `/api/v1/channels/:ucid/videos`, `/api/v1/channels/videos/:ucid`
@@ -358,6 +364,7 @@ Parameters:
 
 ```
 page: Int32
+sort_by: "newest", "oldest", "popular" (default: newest)
 ```
 
 ##### GET `/api/v1/channels/search/:ucid`
