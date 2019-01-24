@@ -9,6 +9,13 @@ Invidious needs one PostgreSQL database with five tables.
 The table `videos` grows a lot and needs the most storage. You can clean it up using following commands:
 ```bash
 $ sudo -i -u postgres
+$ psql invidious -c "DELETE FROM nonces * WHERE expire < current_timestamp"
 $ psql invidious -c "TRUNCATE TABLE videos"
 $ exit
+```
+
+For regular maintenance you should add a cronjob for these commands
+```bash
+@weekly psql invidious -c "DELETE FROM nonces * WHERE expire < current_timestamp"
+@weekly psql invidious -c "TRUNCATE TABLE videos"
 ```
