@@ -5,7 +5,7 @@
 # Administration
 - [Configuration](https://github.com/omarroth/invidious/wiki/Configuration-options)
 - [Update Invidious](https://github.com/omarroth/invidious/wiki/Update-Invidious)
-- [Database informations and cleanup](https://github.com/omarroth/invidious/wiki/About-the-database-and-tables)
+- [Database Information and Maintenance](https://github.com/omarroth/invidious/wiki/Database-Information-and-Maintenance)
 
 # Developing
 
