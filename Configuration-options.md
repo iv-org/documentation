@@ -17,3 +17,4 @@ db:
 
 `full_refresh (default false)` Used for crawling channels: threads should check all videos uploaded by a channel  
 `https_only (default false)` Used to tell Invidious it is accessed via https, set to `true` if you have for example a reverse proxy with a ssl certificate  
+`domain` You should specify the domain you publish your Invidious instance here
