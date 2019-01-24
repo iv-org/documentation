@@ -4,7 +4,7 @@
 
 # For Administrators
 - [Configuration](https://github.com/omarroth/invidious/wiki/Configuration)
-- [Update Invidious](https://github.com/omarroth/invidious/wiki/Update-Invidious)
+- [Updating](https://github.com/omarroth/invidious/wiki/Updating)
 - [Database Information and Maintenance](https://github.com/omarroth/invidious/wiki/Database-Information-and-Maintenance)
 
 # For Developers
