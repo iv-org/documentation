@@ -16,6 +16,6 @@ $ exit
 
 For regular maintenance you should add a cronjob for these commands
 ```bash
-@weekly psql invidious -c "DELETE FROM nonces * WHERE expire < current_timestamp"
-@weekly psql invidious -c "TRUNCATE TABLE videos"
+@weekly psql invidious -c "DELETE FROM nonces * WHERE expire < current_timestamp" > /dev/null
+@weekly psql invidious -c "TRUNCATE TABLE videos" > /dev/null
 ```
