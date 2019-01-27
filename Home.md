@@ -7,6 +7,7 @@
 # For Administrators
 - [Configuration](https://github.com/omarroth/invidious/wiki/Configuration)
 - [Updating](https://github.com/omarroth/invidious/wiki/Updating)
+- [Apache2 Virtual Host with Reverse Proxy](https://github.com/omarroth/invidious/wiki/Apache2-Reverse-Proxy)
 - [Database Information and Maintenance](https://github.com/omarroth/invidious/wiki/Database-Information-and-Maintenance)
 - [Issues with Captcha](https://github.com/omarroth/invidious/wiki/Issues-with-Captcha-on-Debian-and-Ubuntu)
 
