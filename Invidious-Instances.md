@@ -15,6 +15,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
 * [qklhadlycap4cnod.onion/](http://qklhadlycap4cnod.onion/) (reverse proxy for https://invidio.us/)
 * [vid.wxzm.sx](https://vid.wxzm.sx/)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
+* [invidious.kabi.tk](https://invidious.kabi.tk)
 
 ### SSL Enabled (Secure Data Transfer):
 
