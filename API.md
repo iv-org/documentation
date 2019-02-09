@@ -114,6 +114,7 @@
 ```javascript
 {
   "commentCount": Int32?,
+  "videoId": String,
   "comments": [
     {
       "author": String,
@@ -124,14 +125,18 @@
       ],
       "authorId": String,
       "authorUrl": String,
-
+      "isEdited": Bool,
       "content": String,
       "contentHtml": String,
       "published": Int64,
       "publishedText": String,
       "likeCount": Int32,
       "commentId": String,
-
+      "authorIsChannelOwner": Bool,
+      "creatorHeart": {
+        "creatorThumbnail": String,
+        "creatorName": String
+      }?,
       "replies": {
         "replyCount": Int32,
         "continuation": String
