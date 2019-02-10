@@ -1,4 +1,4 @@
-Invidious needs one PostgreSQL database with five tables.
+Invidious needs one PostgreSQL database which has the following tables.
 
 `channel_videos` Stores truncated video info, used to create user feeds  
 `channels` Stores UCID and author name  
