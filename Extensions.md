@@ -5,9 +5,9 @@
 - [Youtube to Invidious](https://greasyfork.org/en/scripts/375264-youtube-to-invidious): Scans current page for YouTube embeds and replace with Invidious (userscript)
 - [Invidious Downloader](https://github.com/erupete/InvidiousDownloader): Script for downloading videos or audio (userscript)
 - [iPhone Redirector Shortcut](https://www.icloud.com/shortcuts/6bbf26d989cf4d07a5fe1626efbc0950): Automatically open YouTube videos in Invidious (iPhone shortcut)
-- [Invidious-Updater (And Installer)](https://github.com/tmiland/Invidious-Updater): Automatic update script for Invidious - Invidio.us
+- [Invidious-Updater (And Installer)](https://github.com/tmiland/Invidious-Updater): Automatic update script for Invidious
 
-### Integrate Invidious in other programs and apps
+### That integrate Invidious into other programs and apps
 
 - [FreshRSS Extension](https://github.com/tmiland/freshrss-invidious): 
 A FreshRSS extension to directly embed videos from Invidious channel feeds
