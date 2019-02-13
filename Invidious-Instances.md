@@ -18,9 +18,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
 * [invidious.kabi.tk](https://invidious.kabi.tk)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
-* [invidious.snopyta.org](https://invidious.snopyta.org/)
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
-* [invidious.lelux.fi](https://invidious.lelux.fi/)
+* [invidious.lelux.fi](https://invidious.lelux.fi/)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.lelux.fi)
 
 ### Plain HTTP (without SSL):
