@@ -1,4 +1,4 @@
-#### Warning: If you use imagemagick on Ubuntu for other services like Mastodon this guide may breaks them, please use [this guide](https://linuxconfig.org/how-to-install-imagemagick-7-on-ubuntu-18-04-linux) instead.
+#### Warning: If you use imagemagick on Ubuntu for other services like Mastodon this guide may break them, please use [this guide](https://linuxconfig.org/how-to-install-imagemagick-7-on-ubuntu-18-04-linux) instead.
 There is some issue on Debian 9 and Ubuntu 18.04 and later. It appears that the clock (the captcha) has no hands but you can see them outside the clock. You need to compile imagemagick yourself with rsvg to solve this issue.  
 Thanks [Tmiland](https://github.com/tmiland) for showing up a solution at [#299](https://github.com/omarroth/invidious/issues/299)
 
