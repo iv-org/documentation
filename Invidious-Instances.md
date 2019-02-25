@@ -18,8 +18,9 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
 
 ### Tor Hidden Service
-* [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/) (reverse proxy for https://invidio.us/)
-* [qklhadlycap4cnod.onion/](http://qklhadlycap4cnod.onion/) (reverse proxy for https://invidio.us/)
+* [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/) (reverse proxy for https://invidio.us/)
+* [qklhadlycap4cnod.onion](http://qklhadlycap4cnod.onion/) (reverse proxy for https://invidio.us/)
+* [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
 
 ### Plain HTTP (without SSL):
 
