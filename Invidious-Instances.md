@@ -12,15 +12,21 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
-* [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/) (reverse proxy for https://invidio.us/)
-* [qklhadlycap4cnod.onion/](http://qklhadlycap4cnod.onion/) (reverse proxy for https://invidio.us/)
 * [vid.wxzm.sx](https://vid.wxzm.sx/)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
 * [invidious.kabi.tk](https://invidious.kabi.tk)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
-* [invidious.lelux.fi](https://invidious.lelux.fi/)  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.lelux.fi)
+
+### Tor Hidden Service
+* [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/) (reverse proxy for https://invidio.us/)
+* [qklhadlycap4cnod.onion/](http://qklhadlycap4cnod.onion/) (reverse proxy for https://invidio.us/)
 
 ### Plain HTTP (without SSL):
+
+
+
+### Broken SSL or self signed:
+* [invidious.lelux.fi](https://invidious.lelux.fi/)  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.lelux.fi)
 
 ### Offline:
