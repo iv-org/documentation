@@ -628,6 +628,7 @@ sort_by: "relevance", "rating", "upload_date", "view_count"
 date: "hour", "today", "week", "month", "year"
 duration: "short", "long"
 type: "video", "playlist", "channel", "all", (default: video)
+features: "hd", "subtitles", "creative_commons", "3d", "live", "purchased", "4k", "360", "location", "hdr" (comma separated: e.g. "&features=hd,subtitles,3d,live")
 ```
 
 ##### GET `/api/v1/playlists/:plid`
