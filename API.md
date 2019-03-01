@@ -110,7 +110,7 @@
 Parameters:
 
 ```
-region: [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Decoding_table) (default: "US")
+region: ISO 3166 country code (default: "US")
 ```
 
 ##### GET `/api/v1/comments/:id`
@@ -202,7 +202,7 @@ Parameters:
 label: String
 lang:  String
 tlang: String
-region: [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Decoding_table) (default: "US")
+region: ISO 3166 country code (default: "US")
 ```
 
 A request with `label` will return the selected captions in WebVTT format.
@@ -248,7 +248,7 @@ Parameters:
 
 ```
 type: "music", "gaming", "news", "movies"
-region: [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Decoding_table) (default: "US")
+region: ISO 3166 country code (default: "US")
 ```
 
 ##### GET `/api/v1/top`
@@ -644,7 +644,7 @@ date: "hour", "today", "week", "month", "year"
 duration: "short", "long"
 type: "video", "playlist", "channel", "all", (default: video)
 features: "hd", "subtitles", "creative_commons", "3d", "live", "purchased", "4k", "360", "location", "hdr" (comma separated: e.g. "&features=hd,subtitles,3d,live")
-region: [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Decoding_table) (default: "US")
+region: ISO 3166 country code (default: "US")
 ```
 
 ##### GET `/api/v1/playlists/:plid`
