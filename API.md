@@ -473,6 +473,13 @@ sort_by: "newest", "oldest", "popular" (default: newest)
 }
 ```
 
+Parameters:
+
+```
+continuation: String
+sort_by: "oldest", "newest", "last"
+```
+
 ##### GET `/api/v1/channels/search/:ucid`
 
 > Schema:
