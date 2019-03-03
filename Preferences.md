@@ -6,10 +6,10 @@ These are the preferences you can set:
 
 ```
 {
-   "video_loop":false, // Always loop?
+   "video_loop":false, // Always loop
    "autoplay":false,
    "continue":false,   // Autoplay next video
-   "listen":false,     // Audio-only mode by default?
+   "listen":false,     // Audio-only mode by default
    "speed":1.0,        // Also accepts '0.5', '1.5', '2.0'
    "quality":"hd720",  // Also accepts 'dash' for 1080p, 'medium', 'small'
    "volume":100,
@@ -17,16 +17,17 @@ These are the preferences you can set:
       "youtube",
       ""               // Also accepts 'reddit'
    ],
-   "captions":[        // Language captions in order of preference?
+   "captions":[        // Language captions in order of preference
       "",
       "",
       ""
    ],
-   "related_videos":true,
-   "redirect_feed":false,
+   "related_videos":true, // Show related videos
+   "redirect_feed":false, // Redirect homepage to subscription feed
    "locale":"en-US",
    "dark_mode":false,
-   "thin_mode":false,
+   "thin_mode":false,     // Don't include pictures in page load
+   // For registered users (currently unused):
    "max_results":40,
    "sort":"published",
    "latest_only":false,
