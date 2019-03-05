@@ -6,7 +6,7 @@ $ sudo -i -u invidious
 $ cd invidious
 $ currentVersion=$(git rev-list --max-count=1 --abbrev-commit HEAD)
 $ git pull
-$ latestVersion=$(git describe --tags `git rev-list --tags --max-count=1`)
+$ latestVersion=$(git describe --tags --abbrev=0)
 $ git checkout $latestVersion
 $ for i in `git rev-list --abbrev-commit $currentVersion..HEAD` ; do file=./config/migrate-scripts/migrate-db-$i.sh ; [ -f $file ] && $file ; done
 $ shards update && shards install
