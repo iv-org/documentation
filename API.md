@@ -1,3 +1,30 @@
+##### GET `/api/v1/stats`
+
+> Schema:
+
+```javascript
+{
+  "version": String,
+  "software": {
+    "name": "invidious",
+    "version": String,
+    "branch": String
+  },
+  "openRegistrations": Bool,
+  "usage": {
+    "users": {
+      "total": Int32,
+      "activeHalfyear": Int32,
+      "activeMonth": Int32
+    }
+  },
+  "metadata": {
+    "updatedAt": Int64,
+    "lastChannelRefreshedAt": Int64
+  }
+}
+```
+
 ##### GET `/api/v1/videos/:id`
 
 > Schema:
