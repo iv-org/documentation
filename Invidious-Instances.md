@@ -29,7 +29,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 
 ### Broken SSL or self signed:
-* [invidious.lelux.fi](https://invidious.lelux.fi/)  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.lelux.fi)
+
+
 
 ### Offline:
