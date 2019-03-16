@@ -1,5 +1,7 @@
 # Public Invidious Instances
 
+[Uptime History provided by Uptimerobot](https://stats.uptimerobot.com/Am9LrCXJA)
+
 ## Official Instances
 
 * [invidio.us](https://invidio.us)  
