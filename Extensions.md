@@ -1,6 +1,6 @@
 ### Extensions for Invidious
 
-- [Alternate Tube Redirector](https://addons.mozilla.org/en-US/firefox/addon/alternate-tube-redirector/): Firefox Addon to utomatically open Youtube Videos on alternate sites like Invidious or Hooktube.
+- [Alternate Tube Redirector](https://addons.mozilla.org/en-US/firefox/addon/alternate-tube-redirector/): Firefox Addon to automatically open Youtube Videos on alternate sites like Invidious or Hooktube.
 - [Invidious Redirect](https://greasyfork.org/en/scripts/370461-invidious-redirect): Redirects Youtube URLs to Invidio.us (userscript)
 - [Youtube to Invidious](https://greasyfork.org/en/scripts/375264-youtube-to-invidious): Scans current page for YouTube embeds and replace with Invidious (userscript)
 - [Invidious Downloader](https://github.com/erupete/InvidiousDownloader): Script for downloading videos or audio (userscript)
