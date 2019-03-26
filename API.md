@@ -74,7 +74,10 @@
   "lengthSeconds": Int32,
   "allowRatings": Bool,
   "rating": Float32,
-  "isListed": Bool?,
+  "isListed": Bool,
+  "liveNow": Bool,
+  "isUpcoming": Bool,
+  "premiereTimestamp": Int64?,
 
   "hlsUrl": String?,
   "adaptiveFormats": [
@@ -189,7 +192,7 @@ continuation: String
 
 ##### GET `/api/v1/insights/:id`
 
-**Will always return 503: `YouTube has removed publicly-available analytics`***
+**Will always return 510: `YouTube has removed publicly-available analytics`***
 
 > Schema:
 
