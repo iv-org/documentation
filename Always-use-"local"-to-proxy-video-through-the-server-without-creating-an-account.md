@@ -3,7 +3,7 @@ Download Tampermonkey for your Browser:
 [Chrome and Chromium](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)  
 [Opera](https://addons.opera.com/extensions/details/tampermonkey-beta/)  
 
-Than add the following script in Tampermonkey. It will always add `&quality=dash` to the end of the video url.
+Than add the following script in Tampermonkey. It will always add `&local=true` to the end of the video url.
 
 ```
 // ==UserScript==
@@ -15,8 +15,8 @@ Than add the following script in Tampermonkey. It will always add `&quality=dash
 
 
 if (!(/[?&]quality=dash/).test(location.search)) {
-  location.search += (location.search ? "&" : "?") + "quality=dash";
+  location.search += (location.search ? "&" : "?") + "local=true";
 }
 ```
 
-##### NOTE: At the moment `googlevideo.com` will still be loaded as third party even with `dash` enabled. The current workaround is to either block this with [uBlock](https://addons.mozilla.org/firefox/addon/ublock-origin/), [uMatrix](https://addons.mozilla.org/firefox/addon/umatrix/) or [NoScript](https://addons.mozilla.org/firefox/addon/noscript/)
+You can also enable this by checking `Proxy videos? ` in your preferences.
