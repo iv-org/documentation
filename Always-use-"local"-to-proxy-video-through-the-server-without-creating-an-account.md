@@ -19,4 +19,4 @@ if (!(/[?&]quality=dash/).test(location.search)) {
 }
 ```
 
-You can also enable this by checking `Proxy videos? ` in your preferences.
+You can also enable this by checking `Proxy videos?` in your preferences.
