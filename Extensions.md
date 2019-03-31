@@ -6,6 +6,7 @@
 - [iPhone Redirector Shortcut](https://www.icloud.com/shortcuts/6bbf26d989cf4d07a5fe1626efbc0950): Automatically open YouTube videos in Invidious (iPhone shortcut)
 - [Invidious-Updater (And Installer)](https://github.com/tmiland/Invidious-Updater): Automatic update script for Invidious
 - [View on Invidious](https://omar.yt/722e5c15832840fe1ae8830b7c590254b9e0a45c/invidious-bookmarklet.html): View page on Invidious (bookmarklet)
+- [Invidition](https://addons.mozilla.org/fr/firefox/addon/invidition/): Redirects YouTube links and embeds to their Invidious counterpart without any call to YouTube
 
 ### Extensions that integrate Invidious into other programs and apps
 
