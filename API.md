@@ -143,6 +143,16 @@ Parameters:
 region: ISO 3166 country code (default: "US")
 ```
 
+##### GET `/api/v1/annotations/:id`
+
+Parameters:
+
+```
+source: "archive", "youtube" (default: "archive")
+```
+
+Returns annotation XML from YouTube's `/annotations_invideo` endpoint. Alternatively it provides access to legacy annotation data using [this collection](https://archive.org/details/youtubeannotations) on archive.org.
+
 ##### GET `/api/v1/comments/:id`
 
 > Schema:
@@ -192,7 +202,7 @@ continuation: String
 
 ##### GET `/api/v1/insights/:id`
 
-**Will always return 510: `YouTube has removed publicly-available analytics`***
+**Will always return 510: `YouTube has removed publicly-available analytics`\***
 
 > Schema:
 
@@ -552,10 +562,10 @@ sort_by: "oldest", "newest", "last"
     videoCount: Int32,
     videos: [
       {
-        "title": String,
-        "videoId": String,
-        "lengthSeconds": Int32,
-        "videoThumbnails": [
+        title: String,
+        videoId: String,
+        lengthSeconds: Int32,
+        videoThumbnails: [
           {
             quality: String,
             url: String,
@@ -636,10 +646,10 @@ page: Int32
     videoCount: Int32,
     videos: [
       {
-        "title": String,
-        "videoId": String,
-        "lengthSeconds": Int32,
-        "videoThumbnails": [
+        title: String,
+        videoId: String,
+        lengthSeconds: Int32,
+        videoThumbnails: [
           {
             quality: String,
             url: String,
@@ -716,7 +726,7 @@ region: ISO 3166 country code (default: "US")
           "author": String,
           "authorId": String,
           "authorUrl": String,
-  
+
           "videoThumbnails": [
               {
                   "quality": String,
