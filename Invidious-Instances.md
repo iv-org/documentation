@@ -19,7 +19,8 @@ Note: Please add new instances on the bottom so that every user can see how old 
 * [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
 * [invidiou.sh](https://invidiou.sh) 🇳🇴  
-  Issuer: CloudFlare, Inc [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.sh)
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.sh) 
+  - [Uptime History provided by Uptimerobot](https://status.invidiou.sh)
 * [invidious.enkirton.net](https://invidious.enkirton.net/) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.enkirton.net)
 
