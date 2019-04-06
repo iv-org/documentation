@@ -196,7 +196,8 @@ Returns annotation XML from YouTube's `/annotations_invideo` endpoint. Alternati
 Parameters:
 
 ```
-source: "youtube", "reddit"
+sort_by: "top", "new" (default: top)
+source: "youtube", "reddit" (default: youtube)
 continuation: String
 ```
 
