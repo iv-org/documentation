@@ -1,3 +1,12 @@
+### Pretty
+
+All endpoints that return a JSON body support `&pretty=1` for printing the response as formatted JSON.
+
+### Fields
+
+All endpoints that return a JSON body support the [fields API](https://developers.google.com/youtube/v3/getting-started#fields) for specifying desired fields to reduce bandwidth consumption. This can be used by adding `&fields=FIELDS` with the desired fields, for example [`/api/v1/videos/aqz-KE-bpKQ?fields=videoId,title,description`](https://invidio.us/api/v1/videos/aqz-KE-bpKQ?fields=videoId,title,description&pretty=1).
+
+
 ##### GET `/api/v1/stats`
 
 > Schema:
