@@ -10,4 +10,4 @@ A list of URL parameters for Invidious, which can automatically toggle various U
 | *Quality*          |                    |
 | `quality=dash`     | DASH               |
 | *Subtitles*        |                    |
-| `subtitles=en`     | English subtitles  |
+| `subtitles=en`     | English (auto-generated)|
