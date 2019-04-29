@@ -20,18 +20,12 @@ _This list is incomplete. You can help by expanding it._
 | `hl=pl`        | Polish                                                                                                                                           |
 | `hl=ru`        | Russian                                                                                                                                          |
 | `hl=uk`        | Ukranian                                                                                                                                         |
-| _Autoplay_     |
-|
-| `autoplay=1`   | Video loads and starts playback automatically
-|
-| `autoplay=0`   | Disabled
-|
-| _Continue_     |
-|
-| `continue=1`   | When video is done, automatically go to the next related video (similar to YouTube’s _Autoplay_ feature)
-|
-| `continue=0`   | Disabled
-|
+| _Autoplay_     |                                                                                                                                          |
+| `autoplay=1`   | Video loads and starts playback automatically                                                                                                                                          |
+| `autoplay=0`   | Disabled                                                                                                                                          |
+| _Continue_     |                                                                                                                                          |
+| `continue=1`   | When video is done, automatically go to the next related video (similar to YouTube’s _Autoplay_ feature)                                                                                                                                          |
+| `continue=0`   | Disabled                                                                                                                                          |
 | _Quality_      |                                                                                                                                                  |
 | `quality=dash` | [DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP)                                                                       |
 | _Subtitles_    | List of ISO 639-1 language codes (comma-separated)                                                                                               |
