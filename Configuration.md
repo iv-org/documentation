@@ -2,9 +2,9 @@
 
 The configuration file is located at [invidious/config/config.yml](https://github.com/omarroth/invidious/blob/master/config/config.yml).
 
-`channel_threads (default 1)` Number of threads to use for crawling videos from channels (for updating subscriptions)
+`channel_threads (default 1)` Number of threads to use for crawling videos from channels
 
-`feed_threads (default 1)` Number of threads to use for updating feeds (RSS Feeds)
+`feed_threads (default 1)` Number of threads to use for updating subscription feeds
 
 ```
 db:
