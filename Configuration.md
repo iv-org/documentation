@@ -2,10 +2,6 @@
 
 The configuration file is located at [invidious/config/config.yml](https://github.com/omarroth/invidious/blob/master/config/config.yml).
 
-`video_threads (default 0)` Number of threads to use for updating videos in cache (mostly non-functional)
-
-`crawl_threads (default 0)` Number of threads to use for finding new videos from YouTube (used to populate "top" page)
-
 `channel_threads (default 1)` Number of threads to use for crawling videos from channels (for updating subscriptions)
 
 `feed_threads (default 1)` Number of threads to use for updating feeds (RSS Feeds)
@@ -45,3 +41,13 @@ db:
 `admins (default [])` List of user IDs that have access to administrator preferences
 
 `external_port (default nil)` Invidious should supply links to a different port (if running behind a proxy, for example). PubSub notifications (if enabled) will also be sent to this port
+
+`default_user_preferences (default`[`ConfigPreferences`](https://github.com/omarroth/invidious/blob/0.16.0/src/invidious/helpers/helpers.cr#L39)`)` Default preferences to use for new and unregistered users, see #415
+
+`dmca_content (default [])` For compliance with DMCA requests, disables download widget for list of video IDs
+
+`check_tables (default false)` Check table integrity, automatically try to add any missing columns, create columns, etc.
+
+`cache_annotations (default false)` Cache annotations requested from IA, will not cache empty annotations or annotations that only contain cards
+
+`banner (default nil)` Optional banner to be displayed along top of page for announcements, etc.
