@@ -2,9 +2,9 @@
 
 The configuration file is located at [invidious/config/config.yml](https://github.com/omarroth/invidious/blob/master/config/config.yml).
 
-`channel_threads (default 1)` Number of threads to use for crawling videos from channels
+- `channel_threads` (default `1`) Number of threads to use for crawling videos from channels
 
-`feed_threads (default 1)` Number of threads to use for updating subscription feeds
+- `feed_threads` (default `1`) Number of threads to use for refreshing subscription feeds
 
 ```
 db:
@@ -14,40 +14,40 @@ db:
   port: 5432 # postgres port
 ```
 
-`full_refresh (default false)` Used for crawling channels: threads should check all videos uploaded by a channel
+- `full_refresh` (default `false`) When crawling channel videos, threads should refresh *all* videos uploaded by a channel
 
-`https_only (default false)` Used to tell Invidious it is accessed via https, set to `true` if you have for example a reverse proxy with a ssl certificate
+- `https_only` (default `false`) Used to tell Invidious it is accessed via https, set to `true` if you have for example a reverse proxy with a ssl certificate
 
-`domain (default nil)` You should specify the domain you publish your Invidious instance here
+- `domain` (default `nil`) Domain to use for providing `self` links in RSS feeds, issuing cookies, etc.
 
-`hmac_key (default nil)` Signing key for CSRF tokens and pubsub (randomly generated on startup, should be random string)
+- `hmac_key` (default `nil`) Signing key for CSRF tokens (when `nil` is randomly generated on startup, can be any random string)
 
-`use_pubsub_feeds (default false)` Support server-side notifications from YouTube using [PubSubHubbub](https://developers.google.com/youtube/v3/guides/push_notifications). Requires `domain` and `hmac_key` to be set
+- `use_pubsub_feeds` (default `false`) Use server-side notifications provided by [YouTube](https://developers.google.com/youtube/v3/guides/push_notifications). Requires `domain` and `hmac_key` to be set
 
-`default_home (default "Top")` Default home page
+- `default_home` (default `"Top"`) Default home page
 
-`feed_menu (default ["Popular", "Top", "Trending", "Subscriptions"])` Order of tabs on feed menu
+- `feed_menu` (default `["Popular", "Top", "Trending", "Subscriptions"]`) Order of tabs on feed menu
 
-`top_enabled (default true)` Whether top endpoints should be enabled (better for smaller instances)
+- `top_enabled` (default `true`) Whether top endpoints should be enabled (better privacy for smaller instances)
 
-`captcha_enabled (default true)` Determine if CAPTCHA should be required for login/registration
+- `captcha_enabled` (default `true`) Determine if CAPTCHA should be required for login/registration
 
-`login_enabled (default true)` Whether users should be able to login
+- `login_enabled` (default `true`) Whether users should be able to login
 
-`registration_enabled (default true)` Whether new users should be able to register
+- `registration_enabled` (default `true`) Whether new users should be able to register
 
-`statistics_enabled (default false)` Whether statistics should be available from `/api/v1/stats`
+- `statistics_enabled` (default `false`) Whether statistics should be available from `/api/v1/stats`
 
-`admins (default [])` List of user IDs that have access to administrator preferences
+- `admins` (default `[]`) List of user IDs that have access to administrator preferences
 
-`external_port (default nil)` Invidious should supply links to a different port (if running behind a proxy, for example). PubSub notifications (if enabled) will also be sent to this port
+- `external_port` (default `nil) Invidious should supply links to a different port (if running behind a proxy, for example). PubSub notifications (if enabled) will also be sent to this port
 
-`default_user_preferences (default`[`ConfigPreferences`](https://github.com/omarroth/invidious/blob/0.16.0/src/invidious/helpers/helpers.cr#L39)`)` Default preferences to use for new and unregistered users, see [#415](https://github.com/omarroth/invidious/issues/415)
+- `default_user_preferences` (default [`ConfigPreferences`](https://github.com/omarroth/invidious/blob/0.16.0/src/invidious/helpers/helpers.cr#L39)) Default preferences to use for new and unregistered users, see [#415](https://github.com/omarroth/invidious/issues/415)
 
-`dmca_content (default [])` For compliance with DMCA requests, disables download widget for list of video IDs
+- `dmca_content` (default `[]`) For compliance with DMCA requests, disables download widget for list of video IDs
 
-`check_tables (default false)` Check table integrity, automatically try to add any missing columns, create columns, etc.
+- `check_tables` (default `false`) Check table integrity, automatically try to add any missing columns, create columns, etc.
 
-`cache_annotations (default false)` Cache annotations requested from IA, will not cache empty annotations or annotations that only contain cards
+- `cache_annotations` (default `false`) Cache annotations requested from IA, will not cache empty annotations or annotations that only contain cards
 
-`banner (default nil)` Optional banner to be displayed along top of page for announcements, etc.
+- `banner` (default `nil`) Optional banner to be displayed along top of page for announcements, etc.
