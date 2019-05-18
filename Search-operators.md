@@ -1,4 +1,4 @@
-Invidious supports search filters provided by YouTube.
+Invidious supports the various search filters provided by YouTube.
 
 Support for more user-friendly search is planned, see [#179](https://github.com/omarroth/invidious/issues/179).
 
