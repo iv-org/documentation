@@ -12,8 +12,9 @@
 ## List of public Invidious Instances
 Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here.
 
-* [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
+* [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
+  - [fi.invidious.snopyta.org](https://fi.invidious.snopyta.org/) 🇫🇮, [de.invidious.snopyta.org](https://de.invidious.snopyta.org/) 🇩🇪
 * [vid.wxzm.sx](https://vid.wxzm.sx/) 🇳🇱  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
 * [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮  
