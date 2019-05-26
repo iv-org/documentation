@@ -4,6 +4,7 @@
 - [Extensions](https://github.com/omarroth/invidious/wiki/Extensions)
 - [Always proxy videos through server](https://github.com/omarroth/invidious/wiki/Always-use-"local"-to-proxy-video-through-the-server-without-creating-an-account)
 - [Preferences](https://github.com/omarroth/invidious/wiki/Preferences)
+- [Geoblocking, available quality and DASH](https://github.com/omarroth/invidious/wiki/Geoblocking,-available-video-quality-and-DASH)
 - [Using search operators](https://github.com/omarroth/invidious/wiki/Search-operators)
 - [List of URL parameters](https://github.com/omarroth/invidious/wiki/List-of-URL-parameters)
 
