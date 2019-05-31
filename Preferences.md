@@ -9,8 +9,8 @@ These are the preferences you can set:
    "annotations":true,            // Show annotations
    "annotations_subscribed":true, // 
    "autoplay":true,               // Autoplay current video
-   "continue":true,               // Autoplay next video
-   "continue_autoplay":true,      // 
+   "continue":true,               // Load next video when current video finishes
+   "continue_autoplay":true,      // Load and autoplay next video
    "listen":true,                 // Audio-only mode by default
    "local": true,                 // Proxy requests via Invidious instance for privacy
    "speed":1.0,                   // Also accepts '0.5', '1.5', '2.0'
