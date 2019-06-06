@@ -10,7 +10,7 @@ All endpoints that return a JSON body support the [fields API](https://developer
 
 > Schema:
 
-```$1javascript
+```javascript
 {
   "version": String,
   "software": {
@@ -37,7 +37,7 @@ All endpoints that return a JSON body support the [fields API](https://developer
 
 > Schema:
 
-```$1javascript
+```javascript
 {
   "title": String,
   "videoId": String,
@@ -165,7 +165,7 @@ Returns annotation XML from YouTube's `/annotations_invideo` endpoint. Alternati
 
 > Schema:
 
-```$1javascript
+```javascript
 {
   "commentCount": Int32?,
   "videoId": String,
@@ -261,7 +261,8 @@ Captions can also be selected with an ISO `lang`, e.g. &lang=en, `tlang` will au
 
 > Schema:
 
-```javascript[
+```javascript
+[
   {
     "title": String,
     "videoId": String,
