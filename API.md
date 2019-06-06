@@ -6,12 +6,11 @@ All endpoints that return a JSON body support `&pretty=1` for printing the respo
 
 All endpoints that return a JSON body support the [fields API](https://developers.google.com/youtube/v3/getting-started#fields) for specifying desired fields to reduce bandwidth consumption. This can be used by adding `&fields=FIELDS` with the desired fields, for example [`/api/v1/videos/aqz-KE-bpKQ?fields=videoId,title,description&pretty=1`](https://invidio.us/api/v1/videos/aqz-KE-bpKQ?fields=videoId,title,description&pretty=1).
 
-
 ##### GET `/api/v1/stats`
 
 > Schema:
 
-```javascript
+```$1javascript
 {
   "version": String,
   "software": {
@@ -38,7 +37,7 @@ All endpoints that return a JSON body support the [fields API](https://developer
 
 > Schema:
 
-```javascript
+```$1javascript
 {
   "title": String,
   "videoId": String,
@@ -166,7 +165,7 @@ Returns annotation XML from YouTube's `/annotations_invideo` endpoint. Alternati
 
 > Schema:
 
-```javascript
+```$1javascript
 {
   "commentCount": Int32?,
   "videoId": String,
@@ -225,7 +224,7 @@ continuation: String
     "avgViewDurationSeconds": Int32,
 
     "graphData": {
-        ...
+        // ...
     }
 }
 ```
@@ -262,8 +261,7 @@ Captions can also be selected with an ISO `lang`, e.g. &lang=en, `tlang` will au
 
 > Schema:
 
-```
-[
+```javascript[
   {
     "title": String,
     "videoId": String,
@@ -305,7 +303,7 @@ region: ISO 3166 country code (default: "US")
 
 > Schema:
 
-```
+```javascript
 [
   {
     "title": String,
@@ -316,6 +314,7 @@ region: ISO 3166 country code (default: "US")
         "url": String,
         "width": Int32,
         "height" Int32
+      }
     ],
 
     "lengthSeconds": Int32,
@@ -333,11 +332,41 @@ region: ISO 3166 country code (default: "US")
 ]
 ```
 
+##### GET `/api/v1/popular`
+
+```
+[
+    {
+        "type": "shortVideo",
+        "title": String,
+        "videoId": String,
+        "videoThumbnails": [
+            {
+            "quality": String,
+            "url": String,
+            "width": Int32,
+            "height" Int32
+            }
+        ],
+
+        "lengthSeconds": Int32,
+        "viewCount": Int64
+
+        "author": String,
+        "authorId": String,
+        "authorUrl": String,
+
+        "published": Int64,
+        "publishedText": String,
+    }
+]
+```
+
 ##### GET `/api/v1/channels/:ucid`
 
 > Schema:
 
-```
+```javascript
 {
   "author": String,
   "authorId": String,
