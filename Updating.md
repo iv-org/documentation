@@ -27,3 +27,8 @@ $ crystal build src/invidious.cr --release
 $ exit
 $ sudo systemctl restart invidious.service
 ```
+
+#### With Docker:
+```bash
+$ docker-compose pull && docker-compose up --force-recreate --build && docker image prune -f
+```
