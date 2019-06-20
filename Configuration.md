@@ -40,7 +40,7 @@ db:
 
 - `admins` (default `[]`) List of user IDs that have access to administrator preferences
 
-- `external_port` (default `nil) Invidious should supply links to a different port (if running behind a proxy, for example). PubSub notifications (if enabled) will also be sent to this port
+- `external_port` (default `nil`) Invidious should supply links to a different port (if running behind a proxy, for example). PubSub notifications (if enabled) will also be sent to this port
 
 - `default_user_preferences` (default [`ConfigPreferences`](https://github.com/omarroth/invidious/blob/0.16.0/src/invidious/helpers/helpers.cr#L39)) Default preferences to use for new and unregistered users, see [#415](https://github.com/omarroth/invidious/issues/415)
 
