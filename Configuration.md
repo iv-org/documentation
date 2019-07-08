@@ -51,3 +51,7 @@ db:
 - `cache_annotations` (default `false`) Cache annotations requested from IA, will not cache empty annotations or annotations that only contain cards
 
 - `banner` (default `nil`) Optional banner to be displayed along top of page for announcements, etc.
+
+- `hsts` (default `true`) For HTTP Strict Transport Security
+
+- `disable_proxy` (default `false`) Disable proxy option serverwide (options: 'dash', 'livestreams', 'downloads', 'local')
