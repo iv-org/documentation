@@ -560,6 +560,99 @@ continuation: String
 sort_by: "oldest", "newest", "last"
 ```
 
+##### GET `/api/v1/channels/comments/:ucid`, `/api/v1/channels/:ucid/comments`
+
+
+```javascript
+{
+  "authorId": String,
+  "comments": [
+    {
+      "author": String,
+      "authorThumbnails": [
+        "url": String,
+        "width": Int32,
+        "height": Int32
+      ],
+      "authorId": String,
+      "authorUrl": String,
+      "isEdited": Bool,
+      "content": String,
+      "contentHtml": String,
+      "published": Int64,
+      "publishedText": String,
+      "likeCount": Int32,
+      "commentId": String,
+      "authorIsChannelOwner": Bool,
+      "creatorHeart": {
+        "creatorThumbnail": String,
+        "creatorName": String
+      }?,
+      "replies": {
+        "replyCount": Int32,
+        "continuation": String
+      }?,
+      "attachment": Attachment?
+    }
+  ],
+  "continuation": String?
+}
+```
+
+The `authorId` for top-level comments will always(?) be the same as the requested channel. Top-level comments will also have an optional `attachment`, which can be one of:
+
+```javascript
+{
+    "type": "image",
+    "imageThumbnails": [
+        {
+            "url": String,
+            "width": Int32,
+            "height": Int32
+        }
+    ]
+}
+```
+
+```javascript
+{
+    "type": "video",
+    "title": String,
+    "videoId": String,
+    "videoThumbnails": [
+        {
+            "quality": String,
+            "url": String,
+            "width": Int32,
+            "height": Int32
+        }
+    ],
+    "lengthSeconds": Int32,
+    "author": String,
+    "authorId": String,
+    "authorUrl": String,
+    "published": Int64,
+    "publishedText": String,
+    "viewCount": Int64,
+    "viewCountText": String
+}
+```
+
+```javascript
+{
+    "type": "unknown",
+    "error": "Unrecognized attachment type."
+}
+```
+
+Some attachments may only have a `type` and `error`, similar to the above. Attachments will *only* be present on top-level comments.
+
+Parameters:
+
+```
+continuation: String
+```
+
 ##### GET `/api/v1/channels/search/:ucid`
 
 > Schema:
@@ -642,6 +735,23 @@ Parameters:
 ```
 q: String
 page: Int32
+```
+
+##### GET `/api/v1/search/suggestions`
+
+> Schema:
+
+```javascript
+{
+    "query": String,
+    "suggestions": Array(String)
+}
+```
+
+Parameters:
+
+```
+q: String
 ```
 
 ##### GET `/api/v1/search`
