@@ -1,3 +1,7 @@
+### Language
+
+All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fields into the desired language. A list of languages are provided in [List of URL parameters](https://github.com/omarroth/invidious/wiki/List-of-URL-parameters).
+
 ### Pretty
 
 All endpoints that return a JSON body support `&pretty=1` for printing the response as formatted JSON.
