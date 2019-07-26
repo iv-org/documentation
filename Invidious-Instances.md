@@ -29,7 +29,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=tube.poal.co)
 * [invidious.13ad.de](https://invidious.13ad.de/) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.13ad.de)
-* [yt.elukerio.org](https://yt.elukerio.org) 🇫🇷 
+* [yt.elukerio.org](https://yt.elukerio.org) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.elukerio.org)
 
 ### Tor Hidden Service
