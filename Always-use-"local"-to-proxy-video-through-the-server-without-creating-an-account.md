@@ -1,9 +1,9 @@
-Download Tampermonkey for your Browser:  
-[Firefox](https://addons.mozilla.org/firefox/addon/tampermonkey/)  
-[Chrome and Chromium](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)  
-[Opera](https://addons.opera.com/extensions/details/tampermonkey-beta/)  
+Download ViolentMonkey for your Browser:  
+[Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)  
+[Chrome and Chromium](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)  
+[Others](https://violentmonkey.github.io/get-it/)  
 
-Than add the following script in Tampermonkey. It will always add `&local=true` to the end of the video url.
+Than add the following script in ViolentMonkey. It will always add `&local=true` to the end of the video url.
 
 ```
 // ==UserScript==
