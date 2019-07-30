@@ -14,7 +14,7 @@ Than add the following script in Tampermonkey. It will always add `&local=true` 
 // ==/UserScript==
 
 
-if (!(/[?&]quality=dash/).test(location.search)) {
+if (!(/[?&]local=/).test(location.search) && !(/[?&]quality=dash/).test(location.search)) {
   location.search += (location.search ? "&" : "?") + "local=true";
 }
 ```
