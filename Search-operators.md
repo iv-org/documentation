@@ -4,6 +4,8 @@ Support for more user-friendly search is planned, see [#179](https://github.com/
 
 Search filters are currently implemented as `key:value` operators, similar to [DuckDuckGo](https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/) and other search engines. Operators can be added to the search query to filter results, for example: [`type:playlist sort:views music`](https://invidio.us/search?q=type%3Aplaylist+sort%3Adate+music).
 
+When using `subscriptions:true` or `channel:UCxxx` other filters are not applied.
+
 Supported operators:
 
 - `sort:`
@@ -43,5 +45,3 @@ Supported operators:
 - `subscriptions:` If logged in, search only for videos from subscribed channels
   - `true`
   - `false`
-
-When using `subscriptions:true` or `channel:UCxxx` other filters are not applied.
