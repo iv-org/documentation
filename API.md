@@ -339,7 +339,9 @@ region: ISO 3166 country code (default: "US")
 
 ##### GET `/api/v1/popular`
 
-```
+> Schema:
+
+```javascript
 [
     {
         "type": "shortVideo",
