@@ -30,6 +30,9 @@ These are the preferences you can set:
    "locale":"en-US",              // Choose interface language
    "dark_mode":true,              // Use dark mode
    "thin_mode":true,              // Don't include pictures in page load
+   "player_style":"invidious",    // Invidious style, the default
+   "player_style":"youtube",      // YouTube style, using a centered play button and always visible video control bar
+
 
    // For registered users (currently unused):
    "max_results":40,
