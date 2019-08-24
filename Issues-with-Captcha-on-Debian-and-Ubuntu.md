@@ -2,6 +2,8 @@
 There is some issue on Debian 9 and Ubuntu 18.04 and later. It appears that the clock (the captcha) has no hands but you can see them outside the clock. You need to compile imagemagick yourself with rsvg to solve this issue.  
 Thanks [Tmiland](https://github.com/tmiland) for showing up a solution at [#299](https://github.com/omarroth/invidious/issues/299)
 
+For lazy people a little hack is to disable captcha or use text one.  
+
 You can check if your version of imagemagick is affected with `convert -list format`.  
 It should show the following if your installed version is okay.
 ```
