@@ -14,7 +14,7 @@ If "Proxy videos?" setting is disabled, then the stream would be routed like thi
 > YouTube → Client/browser
 
 ## Video quality and DASH
-On Invidious you often don't have the same quality options as on YouTube. This is because the audio and video streams are separated and Invidious can not sync them together.
+On Invidious you often don't have the same quality options as on YouTube. This is because the audio and video streams are separated and Invidious currently can't sync them together.
 
 DASH is a streaming technique used by YouTube to provide resolutions higher than 1080p by providing multiple files for a client to use depending on network and user preferences.
 
