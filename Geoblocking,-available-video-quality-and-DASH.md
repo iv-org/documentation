@@ -1,23 +1,21 @@
 ## Geoblocking
-Sometimes you may notice that you cannot watch a video on Invidious. This is because YouTubes geoblocking.
+Sometimes you may notice that you cannot watch a video on Invidious. This is because YouTube is geoblocking, i.e. preventing access to videos based on your geographical location.
 
-If "Proxy videos?" is enabled, then Invidious will proxy videos through itself, so:  
-client/browser --> invidious/server --> youtube
+If "Proxy videos?" setting is enabled, then Invidious will proxy videos through itself, so the stream will be routed like this:
+> YouTube → Invidious/server → Client/browser
 
-If a video is blocked where the instance is hosted, then it will be:  
-client/browser --> invidious/server --> proxy server --> youtube  
-The current system works is cycling through proxies in different regions, and finding one where the video is unblocked.  
-The reason geo-blocked videos can take a long time to load is if Invidious cannott find a proxy or if none of the regions Invidious tries, return a valid response.
+If a video is blocked where the instance is hosted, then the route would be this:
+> YouTube → Proxy server → Invidious/server → Client/browser
 
-If that option is disabled, then it will look like this:  
-client/browser --> youtube
+The current system works by cycling through proxies in different regions, and finding one where the video is not blocked.
+The reason geoblocked videos may take a long time to load is because Invidious would have to cycle through all known proxy servers until it finds one that is able to play back the video.
 
+If "Proxy videos?" setting is disabled, then the stream would be routed like this:
+> YouTube → Client/browser
 
 ## Video quality and DASH
-On Invidious you do often not have the same quality options as on YouTube. This is because the audio and video streams are separated and Invidious cannot sync them together.
+On Invidious you often don't have the same quality options as on YouTube. This is because the audio and video streams are separated and Invidious can not sync them together.
 
-DASH is a streaming technique used by YouTube to provide resolutions higher than 1080p. Very simply: it provides multiple files for a client to use depending on network and user preferences.
+DASH is a streaming technique used by YouTube to provide resolutions higher than 1080p by providing multiple files for a client to use depending on network and user preferences.
 
-In the settings you can enable "DASH" as video quality. With this option enabled first of all the stream gets proxied through Invidious and second you can watch in higher quality or use automatic quality.
-
-You can also add `&quality=dash` to the url of your video.
+You can enable DASH by selecting the appropriately named video quality in the settings or by appending `&quality=dash` to the end of a video's URL. With this option enabled, the stream is proxied through Invidious for you to then watch at a higher or automatic quality.
