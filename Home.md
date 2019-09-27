@@ -7,6 +7,7 @@
 - [Geoblocking, available quality and DASH](https://github.com/omarroth/invidious/wiki/Geoblocking,-available-video-quality-and-DASH)
 - [Using search operators](https://github.com/omarroth/invidious/wiki/Search-operators)
 - [List of URL parameters](https://github.com/omarroth/invidious/wiki/List-of-URL-parameters)
+- [How to deal with uMatrix](https://github.com/omarroth/invidious/wiki/How-to-deal-with-uMatrix)
 
 ## For Administrators
 
