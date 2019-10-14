@@ -28,8 +28,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.13ad.de)
 * [yt.elukerio.org](https://yt.elukerio.org) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.elukerio.org)
-* [invidious.nixnet.xyz](https://invidious.nixnet.xyz) 🇩🇪  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.nixnet.xyz)
 * [invidious.drycat.fr](https://invidious.drycat.fr/) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.drycat.fr)
 * [yt.lelux.fi](https://yt.lelux.fi/) 🇳🇱  
@@ -54,3 +52,5 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 
 ### Offline:
+* [invidious.nixnet.xyz](https://invidious.nixnet.xyz) 🇩🇪  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.nixnet.xyz)
