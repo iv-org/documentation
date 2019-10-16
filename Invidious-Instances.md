@@ -20,7 +20,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
 * [invidiou.sh](https://invidiou.sh) 🇳🇱  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.sh) 
   - [Current status](https://status.invidiou.sh) 
-  - [no.invidiou.sh](https://no.invidiou.sh) 🇳🇴  
 * [tube.poal.co](https://tube.poal.co) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=tube.poal.co)
 * [yt.elukerio.org](https://yt.elukerio.org) 🇫🇷  
