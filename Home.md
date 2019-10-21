@@ -20,3 +20,4 @@
 ## For Developers
 
 - [API](https://github.com/omarroth/invidious/wiki/API)
+- [Authenticated Endpoints](https://github.com/omarroth/invidious/wiki/Authenticated-Endpoints)
