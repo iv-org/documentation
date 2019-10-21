@@ -24,9 +24,9 @@ db:
 
 - `use_pubsub_feeds` (default `false`) Use server-side notifications provided by [YouTube](https://developers.google.com/youtube/v3/guides/push_notifications). Requires `domain` and `hmac_key` to be set
 
-- `default_home` (default `"Top"`) Default home page
+- `default_home` (default `"Top"`) Default home page **Moved into `default_user_preferences`**
 
-- `feed_menu` (default `["Popular", "Top", "Trending", "Subscriptions"]`) Order of tabs on feed menu
+- `feed_menu` (default `["Popular", "Top", "Trending", "Subscriptions"]`) Order of tabs on feed menu **Moved into `default_user_preferences`**
 
 - `top_enabled` (default `true`) Whether top endpoints should be enabled (better privacy for smaller instances)
 
@@ -42,7 +42,7 @@ db:
 
 - `external_port` (default `nil`) Invidious should supply links to a different port (if running behind a proxy, for example). PubSub notifications (if enabled) will also be sent to this port
 
-- `default_user_preferences` (default [`ConfigPreferences`](https://github.com/omarroth/invidious/blob/master/src/invidious/helpers/helpers.cr#L129)) Default preferences to use for new and unregistered users, see [#415](https://github.com/omarroth/invidious/issues/415)
+- `default_user_preferences` (default [`ConfigPreferences`](https://github.com/omarroth/invidious/blob/master/src/invidious/helpers/helpers.cr#L127)) Default preferences to use for new and unregistered users, see [#415](https://github.com/omarroth/invidious/issues/415)
 
 - `dmca_content` (default `[]`) For compliance with DMCA requests, disables download widget for list of video IDs
 
