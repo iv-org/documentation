@@ -36,7 +36,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
 * NixNet - [invidious.l4qlywnpwqsluw65ts7md3khrivpirse744un3x7mlskqauz5pyuzgqd.onion](http://invidious.l4qlywnpwqsluw65ts7md3khrivpirse744un3x7mlskqauz5pyuzgqd.onion/)
 
 ### Eepsite (I2P)
-* [owxfohz4kjyv25fvlqilyxast7inivgiktls3th44jhk3ej3i7ya.b32.i2p](http://owxfohz4kjyv25fvlqilyxast7inivgiktls3th44jhk3ej3i7ya.b32.i2p)
+* [owxfohz4kjyv25fvlqilyxast7inivgiktls3th44jhk3ej3i7ya.b32.i2p](http://owxfohz4kjyv25fvlqilyxast7inivgiktls3th44jhk3ej3i7ya.b32.i2p) - offline
 
 
 ### Plain HTTP (without SSL):
