@@ -28,7 +28,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.drycat.fr)
 * [yt.lelux.fi](https://yt.lelux.fi/) 🇳🇱  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
-* [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
+* [watch.nettohikari.com](https://watch.nettohikari.com/) (IP address will change when blocked by Google, should solve "Video unavailable." error.) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)
 
 ### Tor Hidden Service
