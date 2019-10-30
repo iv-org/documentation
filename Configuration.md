@@ -55,3 +55,5 @@ db:
 - `hsts` (default `true`) For HTTP Strict Transport Security
 
 - `disable_proxy` (default `false`) Disable proxy option serverwide (options: 'dash', 'livestreams', 'downloads', 'local')
+
+- `force_resolve` (default `nil`) Force IPv4 or IPv6 connection to Google (options: 'ipv4', 'ipv6')
