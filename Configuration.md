@@ -56,4 +56,8 @@ db:
 
 - `disable_proxy` (default `false`) Disable proxy option serverwide (options: 'dash', 'livestreams', 'downloads', 'local')
 
-- `force_resolve` (default `nil`) Force IPv4 or IPv6 connection to Google (options: 'ipv4', 'ipv6')
+- `force_resolve` (default `nil`) Force IPv4 or IPv6 connection to Google (options: 'ipv4', 'ipv6') see #811
+
+- `pool_size` (default `100`) Pool size for HTTP connections for youtube.com and ytimg.com (each domain has a separate pool of `pool_size`)
+
+- `admin_email` (default `omarroth@protonmail.com`) Email provided to users for bug reports
