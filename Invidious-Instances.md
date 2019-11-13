@@ -34,6 +34,8 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Note: IP address will change automatically when blocked by Google due to too many requests, should solve "Video unavailable." error.
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
+* [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
 
 ### Tor Hidden Service
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
