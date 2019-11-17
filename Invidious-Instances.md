@@ -52,7 +52,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 ### Plain HTTP (without SSL):
 
-
+* [iv.wwa.ovh](http://iv.wwa.ovh/) - via [Yggdrasil Network](https://yggdrasil-network.github.io/about.html)
 
 ### Broken SSL or self signed:
 
