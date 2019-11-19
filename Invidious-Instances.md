@@ -58,7 +58,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 
 
-### Offline:
+### Blocked:
 * [invidious.nixnet.xyz](https://invidious.nixnet.xyz) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.nixnet.xyz)
 
