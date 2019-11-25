@@ -61,5 +61,3 @@ Note: Please add new instances on the bottom so that every user can see how old 
 ### Blocked:
 * [invidious.nixnet.xyz](https://invidious.nixnet.xyz) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.nixnet.xyz)
-
-* [iv.wwa.ovh](http://iv.wwa.ovh/) - via [Yggdrasil Network](https://yggdrasil-network.github.io/about.html)
