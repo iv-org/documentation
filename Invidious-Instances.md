@@ -13,8 +13,6 @@
 ## List of public Invidious Instances
 Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here.
 
-* [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
 * [vid.wxzm.sx](https://vid.wxzm.sx/) 🇳🇱  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
 * [invidiou.sh](https://invidiou.sh) 🇳🇱  
@@ -61,3 +59,5 @@ Note: Please add new instances on the bottom so that every user can see how old 
 ### Blocked:
 * [invidious.nixnet.xyz](https://invidious.nixnet.xyz) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.nixnet.xyz)
+* [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
