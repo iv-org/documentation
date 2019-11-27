@@ -10,6 +10,7 @@
 - [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect): Redirects both Youtube and Youtube embeds to Invidious and Twitter URLs to Nitter (Available Chrome and Firefox)
 - [Redirector](http://einaregilsson.com/redirector/): Write your own redirects for links and embeds using regular expressions, allowing you to use custom URL parameters (e.g. to automatically watch videos in 720p with subtitles)
 - [Invidious Copy Url](https://github.com/recette-lemon/invidious-copy-url/): Adds context menu options on Invidious to copy shortened Youtube URL at current time or not
+- [No-Youtube](https://github.com/mperez01/no-youtube): Userscript to replace youtube links to invidio.us
 
 ### Extensions that integrate Invidious into other programs and apps
 
