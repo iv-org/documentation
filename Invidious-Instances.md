@@ -13,15 +13,24 @@
 ## List of public Invidious Instances
 Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here.
 
-* [invidiou.sh](https://invidiou.sh) 🇳🇱  - [ ] blocked, [ ] offline
+* [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
+* [invidiou.sh](https://invidiou.sh) 🇳🇱  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.sh) 
   - [cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion](http://cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion) 
   - [Current status](https://status.invidiou.sh) 
+* [tube.poal.co](https://tube.poal.co) 🇺🇸  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=tube.poal.co)
 * [yt.elukerio.org](https://yt.elukerio.org) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.elukerio.org)
+* [invidious.drycat.fr](https://invidious.drycat.fr/) 🇫🇷  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.drycat.fr)
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
-
+* [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮 (Offline)  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
+* [yt.openalgeria.org](https://yt.openalgeria.org) 🇩🇿 (Bad gateway 502)   
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.openalgeria.org)
 
 ### Tor Hidden Service
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
@@ -37,25 +46,20 @@ Note: Please add new instances on the bottom so that every user can see how old 
 ### Plain HTTP (without SSL):
 
 
+
+### Broken SSL or self signed:
+
+
+
 ### Blocked:
 * [invidious.nixnet.xyz](https://invidious.nixnet.xyz) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.nixnet.xyz)
-* [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
-* [invidious.drycat.fr](https://invidious.drycat.fr/) 🇫🇷  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.drycat.fr)
 
-### Offline
+### Offline:
 * [vid.wxzm.sx](https://vid.wxzm.sx/) 🇳🇱  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
-* [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮 
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
+* [yt.lelux.fi](https://yt.lelux.fi/) 🇳🇱  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
 * [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)   
   Note: IP address will change automatically when blocked by Google due to too many requests, should solve "Video unavailable." error.
-* [yt.openalgeria.org](https://yt.openalgeria.org) 🇩🇿  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.openalgeria.org)
-* [yt.lelux.fi](https://yt.lelux.fi/) 🇳🇱  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
-* [tube.poal.co](https://tube.poal.co) 🇺🇸  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=tube.poal.co)
