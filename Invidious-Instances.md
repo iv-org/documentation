@@ -27,7 +27,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.drycat.fr)
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
-* [yewtu.be](yewtu.be) 🇮🇹 🇳🇱 🇫🇷 🇩🇪  
+* [yewtu.be](https://yewtu.be) 🇮🇹 🇳🇱 🇫🇷 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yewtu.be)
   - [Current status](https://status.unixfox.eu/783898765)
 * [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮 (Offline)  
