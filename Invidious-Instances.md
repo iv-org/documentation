@@ -25,8 +25,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.elukerio.org)
 * [invidious.drycat.fr](https://invidious.drycat.fr/) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.drycat.fr)
-* [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare)  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
 * [yewtu.be](https://yewtu.be) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yewtu.be)
   - [Current status](https://status.unixfox.eu/783898765)
@@ -65,3 +63,5 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Note: IP address will change automatically when blocked by Google due to too many requests, should solve "Video unavailable." error.
 * [yt.lelux.fi](https://yt.lelux.fi/) 🇳🇱  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
+* [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare)  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
