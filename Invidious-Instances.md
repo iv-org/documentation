@@ -30,6 +30,8 @@ Note: Please add new instances on the bottom so that every user can see how old 
   - [Current status](https://status.unixfox.eu/783898765)
 * [yt.openalgeria.org](https://yt.openalgeria.org) 🇩🇿   
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.openalgeria.org)
+* [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com) 
 
 ### Tor Hidden Service
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
@@ -56,9 +58,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
 * [vid.wxzm.sx](https://vid.wxzm.sx/) 🇳🇱  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
 ### Offline:
-* [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)   
-  Note: IP address will change automatically when blocked by Google due to too many requests, should solve "Video unavailable." error.
 * [yt.lelux.fi](https://yt.lelux.fi/) 🇳🇱  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare)  
