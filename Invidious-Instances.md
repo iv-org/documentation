@@ -19,8 +19,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.sh) 
   - [cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion](http://cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion) 
   - [Current status](https://status.invidiou.sh) 
-* [tube.poal.co](https://tube.poal.co) 🇺🇸  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=tube.poal.co)
 * [yt.elukerio.org](https://yt.elukerio.org) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.elukerio.org)
 * [invidious.drycat.fr](https://invidious.drycat.fr/) 🇫🇷  
@@ -64,3 +62,5 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
 * [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
+* [tube.poal.co](https://tube.poal.co) 🇺🇸  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=tube.poal.co)
