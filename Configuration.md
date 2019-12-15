@@ -18,9 +18,9 @@ db:
 
 - `https_only` (default `false`) Used to tell Invidious it is accessed via https, set to `true` if you have for example a reverse proxy with a ssl certificate
 
-- `domain` (default `nil`) Domain to use for providing `self` links in RSS feeds, issuing cookies, etc.
-
 - `hmac_key` (default `nil`) Signing key for CSRF tokens (when `nil` is randomly generated on startup, can be any random string)
+
+- `domain` (default `nil`) Domain to use for providing `self` links in RSS feeds, issuing cookies, etc.
 
 - `use_pubsub_feeds` (default `false`) Use server-side notifications provided by [YouTube](https://developers.google.com/youtube/v3/guides/push_notifications). Requires `domain` and `hmac_key` to be set
 
@@ -30,7 +30,7 @@ db:
 
 - `top_enabled` (default `true`) Whether top endpoints should be enabled (better privacy for smaller instances)
 
-- `captcha_enabled` (default `true`) Determine if CAPTCHA should be required for login/registration
+- `captcha_enabled` (default `true`) Determine if CAPTCHA should be required for registration
 
 - `login_enabled` (default `true`) Whether users should be able to login
 
@@ -61,3 +61,11 @@ db:
 - `pool_size` (default `100`) Pool size for HTTP connections for youtube.com and ytimg.com (each domain has a separate pool of `pool_size`)
 
 - `admin_email` (default `omarroth@protonmail.com`) Email provided to users for bug reports
+
+- `port` (default `3000`) Default port for HTTP server
+
+- `host_binding` (default `0.0.0.0`) Default host for HTTP server
+
+- `cookies` (default ``) Cookies to be used when connecting to YouTube
+
+- `captcha_key` (default `nil`) [Anti-Captcha](https://anti-captcha.com/) API key for solving YouTube CAPTCHAs, see [#886](https://github.com/omarroth/invidious/issues/886).
