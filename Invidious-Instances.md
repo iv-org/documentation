@@ -21,8 +21,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
   - [Current status](https://status.invidiou.sh) 
 * [yt.elukerio.org](https://yt.elukerio.org) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.elukerio.org)
-* [invidious.drycat.fr](https://invidious.drycat.fr/) 🇫🇷  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.drycat.fr)
 * [yewtu.be](https://yewtu.be) 🇧🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yewtu.be)
   - [Current status](https://status.unixfox.eu/783898765)
