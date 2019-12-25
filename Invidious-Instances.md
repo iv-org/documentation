@@ -16,18 +16,18 @@ Note: Please add new instances on the bottom so that every user can see how old 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
 * [invidiou.sh](https://invidiou.sh) 🇳🇱  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.sh) 
-  - [cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion](http://cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion) 
-  - [Current status](https://status.invidiou.sh) 
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.sh)
+  - [cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion](http://cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion)
+  - [Current status](https://status.invidiou.sh)
 * [yt.elukerio.org](https://yt.elukerio.org) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.elukerio.org)
 * [yewtu.be](https://yewtu.be) 🇧🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yewtu.be)
   - [Current status](https://status.unixfox.eu/783898765)
-* [yt.openalgeria.org](https://yt.openalgeria.org) 🇩🇿   
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.openalgeria.org)
-* [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com) 
+* [vid.wxzm.sx](https://vid.wxzm.sx/) 🇳🇱  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
+* [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare)  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
 
 ### Tor Hidden Service
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
@@ -49,16 +49,19 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 
 ### Blocked:
-* [invidious.nixnet.xyz](https://invidious.nixnet.xyz) 🇩🇪  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.nixnet.xyz)
-* [vid.wxzm.sx](https://vid.wxzm.sx/) 🇳🇱  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
+
+
+
 ### Offline:
 * [yt.lelux.fi](https://yt.lelux.fi/) 🇳🇱  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
-* [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare)  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
 * [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
 * [tube.poal.co](https://tube.poal.co) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=tube.poal.co)
+* [yt.openalgeria.org](https://yt.openalgeria.org) 🇩🇿  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.openalgeria.org)
+* [invidious.nixnet.xyz](https://invidious.nixnet.xyz) 🇩🇪  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.nixnet.xyz)
+* [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)
