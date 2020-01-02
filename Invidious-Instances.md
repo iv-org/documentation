@@ -26,7 +26,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
-* [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷
+* [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.zapashcanon.fr)
 
 ### Tor Hidden Service
