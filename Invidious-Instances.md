@@ -28,6 +28,8 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
 * [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.zapashcanon.fr)
+* [yt.lelux.fi](https://yt.lelux.fi/) 🇫🇷 
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
 
 ### Tor Hidden Service
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
@@ -53,8 +55,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 
 ### Offline:
-* [yt.lelux.fi](https://yt.lelux.fi/) 🇳🇱  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
 * [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
 * [tube.poal.co](https://tube.poal.co) 🇺🇸  
