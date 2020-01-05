@@ -19,7 +19,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.sh)
   - [cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion](http://cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion)
   - [Current status](https://status.invidiou.sh)
-* [yewtu.be](https://yewtu.be) 🇧🇪  
+* [yewtu.be](https://yewtu.be) 🇧🇪  (Hosted at Google Cloud - Proof https://tools.keycdn.com/geo?host=yewtu.be)
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yewtu.be)
   - [Current status](https://status.unixfox.eu/783898765)
 * [vid.wxzm.sx](https://vid.wxzm.sx/) 🇳🇱  
@@ -30,6 +30,8 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.zapashcanon.fr)
 * [yt.lelux.fi](https://yt.lelux.fi/) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
+* [invidious.toot.koeln](https://invidious.toot.koeln) 🇩🇪
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.toot.koeln)
 
 ### Tor Hidden Service
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
