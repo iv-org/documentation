@@ -11,6 +11,7 @@
 - [Redirector](http://einaregilsson.com/redirector/): Write your own redirects for links and embeds using regular expressions, allowing you to use custom URL parameters (e.g. to automatically watch videos in 720p with subtitles)
 - [Invidious Copy Url](https://github.com/recette-lemon/invidious-copy-url/): Adds context menu options on Invidious to copy shortened Youtube URL at current time or not
 - [No-Youtube](https://github.com/mperez01/no-youtube): Userscript to replace youtube links to invidio.us
+- [SponsorBlock](https://github.com/ajayyy/SponsorBlock): A crowd-sourced extension to skip sponsorships. Support invidio.us by enabling it in the options.
 
 ### Extensions that integrate Invidious into other programs and apps
 
