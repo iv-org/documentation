@@ -64,3 +64,5 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
 * [yt.lelux.fi](https://yt.lelux.fi/) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
+* [invidious.13ad.de](https://invidious.13ad.de)  
+* [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷  
