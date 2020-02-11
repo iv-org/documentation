@@ -22,8 +22,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
 * [yewtu.be](https://yewtu.be) 🇮🇹   
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yewtu.be)
   - [Current status](https://status.unixfox.eu/783898765)
-* [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.zapashcanon.fr)
 * [invidious.toot.koeln](https://invidious.toot.koeln) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.toot.koeln)
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare)  
