@@ -19,9 +19,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.sh)
   - [cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion](http://cb25eefn2tgrhko6aupv2cyok2q6ws6uxpctowniyzum5p62jvgucmqd.onion)
   - [Current status](https://status.invidiou.sh)
-* [yewtu.be](https://yewtu.be) 🇮🇹   
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yewtu.be)
-  - [Current status](https://status.unixfox.eu/783898765)
 * [invidious.toot.koeln](https://invidious.toot.koeln) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.toot.koeln)
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare)  
@@ -66,3 +63,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
 * [invidious.13ad.de](https://invidious.13ad.de)  
 * [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷  
+* [yewtu.be](https://yewtu.be) 🇮🇹   
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yewtu.be)
+  - [Current status](https://status.unixfox.eu/783898765)
