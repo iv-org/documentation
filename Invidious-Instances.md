@@ -17,7 +17,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
 * [invidious.13ad.de](https://invidious.13ad.de) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.13ad.de)
-* [haizrulamrie.com](https://haizrulamrie.com) 🇲🇾 (uses cloudflare)
+* [haizrulamrie.com](https://haizrulamrie.com) 🇲🇾 (uses cloudflare)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=haizrulamrie.com)
 * [yewtu.be](https://yewtu.be) 🇩🇪   
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yewtu.be)
