@@ -11,14 +11,13 @@
 - [Youtube to Invidious](https://greasyfork.org/en/scripts/375264-youtube-to-invidious): Scans current page for YouTube embeds and replace with Invidious
 - [No-Youtube](https://github.com/mperez01/no-youtube): Userscript to replace youtube links to invidio.us
 - [Invidious Audio Mode](https://greasyfork.org/en/scripts/397700-invidious-audio-mode): Adds a headphone icon next to all video links. Handy for those that just want to stream audio and not video.
+- [FYTE](https://greasyfork.org/en/scripts/9252-fyte-fast-youtube-embedded-player): Replace all YouTube embeds on a page with the video's thumbnail. Click on the thumbnail to play the video. Invidious is supported in the Options panel.
 
 ### Extensions that integrate Invidious into other programs and apps
-- [NitterizeMe](https://f-droid.org/en/packages/app.fedilab.nitterizeme/): Android app to rewrite YouTube links to Invidious when using the Share URL feature (also works with other sites like Twitter [Nitter] and Instagram [Bibliogram])
+- [UntrackMe](https://f-droid.org/en/packages/app.fedilab.nitterizeme/): Android app to rewrite YouTube links to Invidious when using the Share URL feature (also works with other sites like Twitter [Nitter] and Instagram [Bibliogram])
 - [iPhone Redirector Shortcut](https://www.icloud.com/shortcuts/6bbf26d989cf4d07a5fe1626efbc0950): Automatically open YouTube videos in Invidious (iPhone shortcut)
-- [FreshRSS Extension](https://github.com/tmiland/freshrss-invidious): 
-A FreshRSS extension to directly embed videos from Invidious channel feeds
-- [Kodi add-on](https://github.com/TheAssassin/kodi-invidious-plugin):
-Watch YouTube videos in the Kodi media center, using the Invidious API. Privacy-friendly alternative to the YouTube API based other add-on.
+- [FreshRSS Extension](https://github.com/tmiland/freshrss-invidious): A FreshRSS extension to directly embed videos from Invidious channel feeds
+- [Kodi add-on](https://github.com/TheAssassin/kodi-invidious-plugin): Watch YouTube videos in the Kodi media center, using the Invidious API. Privacy-friendly alternative to the YouTube API add-on.
 
 ### Utilities for Invidious
 - [Invidious-Updater (And Installer)](https://github.com/tmiland/Invidious-Updater): Automatic update script for Invidious
