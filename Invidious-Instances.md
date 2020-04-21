@@ -23,7 +23,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare, allows downloads)  
   Issuer: CloudFlare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
   - [4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion](http://4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion)
-* [yt.maisputain.ovh](https://yt.maisputain.ovh) 🇩🇪  
+* [yt.maisputain.ovh](https://yt.maisputain.ovh) 🇩🇪  (only IPV6)
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.maisputain.ovh)
 * [invidious.13ad.de](https://invidious.13ad.de) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.13ad.de)
