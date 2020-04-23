@@ -14,7 +14,7 @@
 - [FYTE](https://greasyfork.org/en/scripts/9252-fyte-fast-youtube-embedded-player): Replace all YouTube embeds on a page with the video's thumbnail. Click on the thumbnail to play the video. Invidious is supported in the Options panel.
 
 ### Extensions that integrate Invidious into other programs and apps
-- [UntrackMe](https://f-droid.org/en/packages/app.fedilab.nitterizeme/): Android app to rewrite YouTube links to Invidious when using the Share URL feature (also works with other sites like Twitter [Nitter] and Instagram [Bibliogram])
+- [UntrackMe](https://f-droid.org/en/packages/app.fedilab.nitterizeme/): Android app to rewrite YouTube links to Invidious. Can optionally play videos in the app as well.
 - [iPhone Redirector Shortcut](https://www.icloud.com/shortcuts/6bbf26d989cf4d07a5fe1626efbc0950): Automatically open YouTube videos in Invidious (iPhone shortcut)
 - [FreshRSS Extension](https://github.com/tmiland/freshrss-invidious): A FreshRSS extension to directly embed videos from Invidious channel feeds
 - [Kodi add-on](https://github.com/TheAssassin/kodi-invidious-plugin): Watch YouTube videos in the Kodi media center, using the Invidious API. Privacy-friendly alternative to the YouTube API add-on.
