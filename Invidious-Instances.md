@@ -29,7 +29,9 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.toot.koeln)
 * [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.fdn.fr)
-
+* [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)
+* [invidious.13ad.de](https://invidious.13ad.de)  
 
 ### Tor Hidden Service
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
@@ -62,13 +64,10 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.openalgeria.org)
 * [invidious.nixnet.xyz](https://invidious.nixnet.xyz) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.nixnet.xyz)
-* [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)
 * [vid.wxzm.sx](https://vid.wxzm.sx/) 🇳🇱  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.wxzm.sx)
 * [yt.lelux.fi](https://yt.lelux.fi/) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.lelux.fi)
-* [invidious.13ad.de](https://invidious.13ad.de)  
 * [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷 
 * [invidious.tozein.com](https://invidious.tozein.com) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.tozein.com)
