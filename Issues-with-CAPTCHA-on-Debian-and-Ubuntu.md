@@ -1,17 +1,17 @@
-#### Warning: If you use imagemagick on Ubuntu for other services like Mastodon this guide may break them, please use [this guide](https://linuxconfig.org/how-to-install-imagemagick-7-on-ubuntu-18-04-linux) instead.
-There is some issue on Debian 9 and Ubuntu 18.04 and later. It appears that the clock (the captcha) has no hands but you can see them outside the clock. You need to compile imagemagick yourself with rsvg to solve this issue.  
+#### Warning: If you use ImageMagick on Ubuntu for other services like Mastodon this guide may break them, please use [this guide](https://linuxconfig.org/how-to-install-imagemagick-7-on-ubuntu-18-04-linux) instead.
+There is some issue on Debian 9 and Ubuntu 18.04 and later. It appears that the clock (the CAPTCHA) has no hands but you can see them outside the clock. You need to compile ImageMagick yourself with librsvg to solve this issue.  
 Thanks [Tmiland](https://github.com/tmiland) for showing up a solution at [#299](https://github.com/omarroth/invidious/issues/299)
 
-For lazy people a little hack is to disable captcha or use text one.  
+For lazy people a little hack is to disable CAPTCHA or use text one.  
 
-You can check if your version of imagemagick is affected with `convert -list format`.  
+You can check if your version of ImageMagick is affected with `convert -list format`.  
 It should show the following if your installed version is okay.
 ```
       SVG  SVG       rw+   Scalable Vector Graphics (RSVG 2.40.13)
      SVGZ  SVG       rw+   Compressed Scalable Vector Graphics (RSVG 2.40.13)
 ```
 
-If this is not the case your version is not compiled with rsvg, then you get the following.
+If this is not the case your version is not compiled with librsvg, then you get the following.
 ```
       SVG  SVG       rw+   Scalable Vector Graphics (XML 2.9.4)
      SVGZ  SVG       rw+   Compressed Scalable Vector Graphics (XML 2.9.4)
