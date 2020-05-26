@@ -23,6 +23,6 @@ server {
 		proxy_set_header Connection "";	# to keep alive
 	}
 
-	if ($https = '') { return 301 https://$host$request_uri; }	# if not connected to https, perma redirect to https 
+	if ($https = '') { return 301 https://$host$request_uri; }	# if not connected to HTTPS, perma redirect to HTTPS
 }
 ```
