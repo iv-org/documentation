@@ -15,9 +15,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
-* [yewtu.be](https://yewtu.be) 🇫🇷 (dash and downloads enabled)  
-  Issuer: Let's Encrypt, [Cryptcheck (better alternative to SSLLabs) Verification](https://cryptcheck.fr/https/yewtu.be)
-  - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare, allows downloads)  
   Issuer: CloudFlare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
   - [4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion](http://4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion)
@@ -55,6 +52,9 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 
 ### Offline:
+* [yewtu.be](https://yewtu.be) 🇫🇷 (dash and downloads enabled)  
+  Issuer: Let's Encrypt, [Cryptcheck (better alternative to SSLLabs) Verification](https://cryptcheck.fr/https/yewtu.be)
+  - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
 * [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
 * [tube.poal.co](https://tube.poal.co) 🇺🇸  
