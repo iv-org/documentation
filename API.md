@@ -126,8 +126,8 @@ All endpoints that return a JSON body support the [fields API](https://developer
     {
       "label": String,
       "languageCode": String,
-      "url": String,
-    },
+      "url": String
+    }
   ],
   "recommendedVideos": [
     {
