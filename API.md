@@ -143,7 +143,7 @@ All endpoints that return a JSON body support the [fields API](https://developer
       ],
       "author": String,
       "lengthSeconds": Int32,
-      "viewCountText" String
+      "viewCountText": String
     }
   ]
 }
