@@ -321,7 +321,7 @@ region: ISO 3166 country code (default: "US")
         "quality": String,
         "url": String,
         "width": Int32,
-        "height" Int32
+        "height": Int32
       }
     ],
 
@@ -355,7 +355,7 @@ region: ISO 3166 country code (default: "US")
             "quality": String,
             "url": String,
             "width": Int32,
-            "height" Int32
+            "height": Int32
             }
         ],
 
