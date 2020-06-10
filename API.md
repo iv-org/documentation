@@ -51,7 +51,7 @@ All endpoints that return a JSON body support the [fields API](https://developer
       "url": String,
       "width": Int32,
       "height": Int32
-    },
+    }
   ],
 
   "description": String,
@@ -107,7 +107,7 @@ All endpoints that return a JSON body support the [fields API](https://developer
       "encoding": String,
       "qualityLabel": String?,
       "resolution": String?
-    },
+    }
   ],
   "formatStreams": [
     {
@@ -120,7 +120,7 @@ All endpoints that return a JSON body support the [fields API](https://developer
       "qualityLabel": String,
       "resolution": String,
       "size": String
-    },
+    }
   ],
   "captions": [
     {
@@ -139,7 +139,7 @@ All endpoints that return a JSON body support the [fields API](https://developer
           "url": String,
           "width": Int32,
           "height": Int32
-        },
+        }
       ],
       "author": String,
       "lengthSeconds": Int32,
@@ -177,9 +177,11 @@ Returns annotation XML from YouTube's `/annotations_invideo` endpoint. Alternati
     {
       "author": String,
       "authorThumbnails": [
-        "url": String,
-        "width": Int32,
-        "height": Int32
+        {
+          "url": String,
+          "width": Int32,
+          "height": Int32
+        }
       ],
       "authorId": String,
       "authorUrl": String,
