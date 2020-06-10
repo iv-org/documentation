@@ -367,7 +367,7 @@ region: ISO 3166 country code (default: "US")
         "authorUrl": String,
 
         "published": Int64,
-        "publishedText": String,
+        "publishedText": String
     }
 ]
 ```
