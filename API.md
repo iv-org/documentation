@@ -360,7 +360,7 @@ region: ISO 3166 country code (default: "US")
         ],
 
         "lengthSeconds": Int32,
-        "viewCount": Int64
+        "viewCount": Int64,
 
         "author": String,
         "authorId": String,
