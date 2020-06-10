@@ -275,7 +275,8 @@ Captions can also be selected with an ISO `lang`, e.g. &lang=en, `tlang` will au
         "quality": String,
         "url": String,
         "width": Int32,
-        "height" Int32
+        "height": Int32
+      }
     ],
 
     "lengthSeconds": Int32,
