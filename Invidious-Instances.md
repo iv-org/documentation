@@ -11,7 +11,8 @@
 * [axqzx4s6s54s32yentfqojs3x5i7faxza6xo3ehd4bzzsg2ii4fv2iid.onion](http://axqzx4s6s54s32yentfqojs3x5i7faxza6xo3ehd4bzzsg2ii4fv2iid.onion)
 
 ## List of public Invidious Instances
-Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here.
+Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here.  
+Note²: Please move the instance to the offline list **only** if the instance doesn't serve invidious anymore. Known errors from Invidious doesn't mean that the instance is offline.
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
