@@ -18,11 +18,11 @@ server {
 	location / {
 		proxy_pass http://127.0.0.1:3000/;
 		proxy_set_header X-Forwarded-For $remote_addr;
-		proxy_set_header Host $host;	# so invidious knows domain
+		proxy_set_header Host $host;	# so Invidious knows domain
 		proxy_http_version 1.1;		# to keep alive
 		proxy_set_header Connection "";	# to keep alive
 	}
 
-	if ($https = '') { return 301 https://$host$request_uri; }	# if not connected to HTTPS, perma redirect to HTTPS
+	if ($https = '') { return 301 https://$host$request_uri; }	# if not connected to HTTPS, perma-redirect to HTTPS
 }
 ```
