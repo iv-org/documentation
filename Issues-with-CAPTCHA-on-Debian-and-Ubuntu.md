@@ -24,7 +24,7 @@ Follow the steps to fix this issue:
 ```bash
 $ cd /tmp
 # check for new releases: https://github.com/ImageMagick/ImageMagick6/releases
-$ wget https://github.com/ImageMagick/ImageMagick6/archive/6.9.10-24.tar.gz
+$ wget https://github.com/ImageMagick/ImageMagick6/archive/6.9.11-19.tar.gz
 $ tar -xvf 6.9.10-24.tar.gz
 $ cd ImageMagick6-6.9.10-24
 $ ./configure --with-rsvg
