@@ -12,7 +12,7 @@
 
 ## List of public Invidious Instances
 Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here.  
-Note²: Please move the instance to the offline list **only** if the instance doesn't serve invidious anymore. Known errors from Invidious doesn't mean that the instance is offline.
+Note²: Please move the instance to the offline list **only** if the instance doesn't serve Invidious anymore. Known errors from Invidious doesn't mean the instance is offline.
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
@@ -40,7 +40,7 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snwmds.com)
 
 
-### Tor Hidden Service
+### Tor Onion Services
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
 * [qklhadlycap4cnod.onion](http://qklhadlycap4cnod.onion/)
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
@@ -54,7 +54,7 @@ Note²: Please move the instance to the offline list **only** if the instance do
 
 
 
-### Broken SSL or self signed:
+### Broken SSL or self-signed:
 
 
 
