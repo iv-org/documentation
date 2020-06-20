@@ -15,8 +15,8 @@ These are the preferences you can set:
    "local": true,                 // Proxy requests via Invidious instance for privacy
    "speed":1.0,                   // Also accepts '0.5', '1.5', '2.0'
    "quality":"hd720",             // Also accepts 'dash' for 1080p, 'medium', 'small'
-   "volume":100,                  // Audio Volume by default (0 = Min, 100 = Max)
-   "comments":[                   // Choose which source to use for the comments; 'youtube' or 'reddit'
+   "volume":100,                  // Default audio volume (0 = Min, 100 = Max)
+   "comments":[                   // Source to use for comments; 'youtube' or 'reddit'
       "youtube",
       ""
    ],
