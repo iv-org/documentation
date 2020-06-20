@@ -3,7 +3,7 @@ Download ViolentMonkey for your Browser:
 [Chrome and Chromium](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)  
 [Others](https://violentmonkey.github.io/get-it/)  
 
-Than add the following script in ViolentMonkey. It will always add `&local=true` to the end of the video url.
+Than add the following script in ViolentMonkey. It will always add `&local=true` to the end of the video URL.
 
 ```
 // ==UserScript==
