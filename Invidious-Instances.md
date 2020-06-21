@@ -38,6 +38,8 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snwmds.org)
 * [invidious.snwmds.com](https://invidious.snwmds.com/) 🇮🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snwmds.com)
+* [invidious.sunsetravens.com](https://invidious.sunsetravens.com/) 🇦🇺  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.sunsetravens.com)
 
 
 ### Tor Onion Services
