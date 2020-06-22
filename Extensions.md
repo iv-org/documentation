@@ -1,5 +1,5 @@
 ### Browser extensions for Invidious
-- [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect): Redirects both YouTube and YouTube embeds to Invidious and Twitter URLs to Nitter (Available for Chrome and Firefox).
+- [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect): Redirects YouTube to Invidious, Twitter to Nitter, and Instagram to Bibliogram. [Source](https://github.com/SimonBrazell/privacy-redirect) / [Firefox](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/) / [Chrome](https://chrome.google.com/webstore/detail/privacy-redirect/pmcmeagblkinmogikoikkdjiligflglb)
 - [SponsorBlock](https://github.com/ajayyy/SponsorBlock): A crowd-sourced extension to skip sponsorships. Support invidio.us and other instances by enabling them in the options (Available for Chrome and Firefox).
 - [Invidition](https://addons.mozilla.org/en-US/firefox/addon/invidition/): Firefox extension that redirects YouTube links and embeds to their Invidious counterpart without any call to YouTube. [(Source)](https://codeberg.org/Booteille/Invidition).
 - [Alternate Tube Redirector](https://addons.mozilla.org/en-US/firefox/addon/alternate-tube-redirector/): Firefox extension to automatically open YouTube Videos on alternate sites like Invidious or Hooktube. [(Source)](https://gitlab.com/2vek/alternate-tube-redirector/).
