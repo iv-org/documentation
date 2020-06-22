@@ -5,7 +5,7 @@
 - [Alternate Tube Redirector](https://addons.mozilla.org/en-US/firefox/addon/alternate-tube-redirector/): Firefox extension to automatically open YouTube Videos on alternate sites like Invidious or Hooktube. [(Source)](https://gitlab.com/2vek/alternate-tube-redirector/).
 - [Invidious Copy URL](https://github.com/recette-lemon/invidious-copy-url/): Adds context menu options on Invidious to copy shortened YouTube .URL at current time or not (Requires using developer mode in Chrome or a developer version of Firefox).
 - [View on Invidious](https://omar.yt/722e5c15832840fe1ae8830b7c590254b9e0a45c/invidious-bookmarklet.html): View page on Invidious (bookmarklet).
-- [Invidious Playlist Duration](https://github.com/rsapkf/invidious-playlist-duration): Shows total duration of playlists on Invidious.
+- [Invidious Playlist Duration](https://addons.mozilla.org/en-US/firefox/addon/invidious-playlist-duration/): Shows total duration of playlists on Invidious. [(Source)](https://github.com/rsapkf/invidious-playlist-duration).
 
 ### Userscripts for Invidious.
 - [Invidious Redirect](https://greasyfork.org/en/scripts/370461-invidious-redirect): Redirects YouTube URLs to Invidio.us.
