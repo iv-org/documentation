@@ -32,24 +32,13 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.fdn.fr)
 * [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)
-* [invidious.snwmds.net](https://invidious.snwmds.net/) 🇧🇷  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snwmds.net)
-* [invidious.snwmds.org](https://invidious.snwmds.org/) 🇯🇵  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snwmds.org)
-* [invidious.snwmds.com](https://invidious.snwmds.com/) 🇮🇪  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snwmds.com)
-* [invidious.sunsetravens.com](https://invidious.sunsetravens.com/) 🇦🇺  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.sunsetravens.com)
-* [invidious.gachirangers.com](https://invidious.gachirangers.com/) 🇮🇳  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.gachirangers.com)
-
 
 ### Tor Onion Services
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
 * [qklhadlycap4cnod.onion](http://qklhadlycap4cnod.onion/)
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
 * [mfqczy4mysscub2s.onion](http://mfqczy4mysscub2s.onion/)
-* [sb46cryrbrjsfe4kfeculaj3tpke36ynstjm5wym2yh5ng2nflgyugyd.onion](http://sb46cryrbrjsfe4kfeculaj3tpke36ynstjm5wym2yh5ng2nflgyugyd.onion)
+* [sb46cryrbrjsfe4kfeculaj3tpke36ynstjm5wym2yh5ng2nflgyugyd.onion](http://sb46cryrbrjsfe4kfeculaj3tpke36ynstjm5wym2yh5ng2nflgyugyd.onion) - offline
 
 ### Eepsite (I2P)
 * [owxfohz4kjyv25fvlqilyxast7inivgiktls3th44jhk3ej3i7ya.b32.i2p](http://owxfohz4kjyv25fvlqilyxast7inivgiktls3th44jhk3ej3i7ya.b32.i2p) - offline
@@ -83,3 +72,13 @@ Note²: Please move the instance to the offline list **only** if the instance do
 * [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷 
 * [invidious.tozein.com](https://invidious.tozein.com) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.tozein.com)
+* [invidious.snwmds.net](https://invidious.snwmds.net/) 🇧🇷  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snwmds.net)
+* [invidious.snwmds.org](https://invidious.snwmds.org/) 🇯🇵  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snwmds.org)
+* [invidious.snwmds.com](https://invidious.snwmds.com/) 🇮🇪  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snwmds.com)
+* [invidious.sunsetravens.com](https://invidious.sunsetravens.com/) 🇦🇺  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.sunsetravens.com)
+* [invidious.gachirangers.com](https://invidious.gachirangers.com/) 🇮🇳  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.gachirangers.com)
