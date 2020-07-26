@@ -35,7 +35,7 @@ Note²: Please move the instance to the offline list **only** if the instance do
 * [invidiou.site](https://invidiou.site/) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.site)
 * [yt.iswleuven.be](https://yt.iswleuven.be) 🇧🇪  
-  Issuer: [GÉANT](https://www.geant.org) (previously TERENA), [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.iswleuven.be)
+  Issuer: GÉANT (previously TERENA), [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.iswleuven.be)
 
 ### Tor Onion Services
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
