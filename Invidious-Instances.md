@@ -36,8 +36,7 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: GÉANT (previously TERENA), [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.iswleuven.be)
 * [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
-* [invidious.site](https://invidious.site/) 🇺🇸  
-  Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.site)
+
 
 ### Tor Onion Services
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
@@ -63,6 +62,8 @@ Note²: Please move the instance to the offline list **only** if the instance do
 
 
 ### Offline:
+* [invidious.site](https://invidious.site/) NL  
+  Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.site)
 * [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
 * [tube.poal.co](https://tube.poal.co) 🇺🇸  
