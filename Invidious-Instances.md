@@ -38,7 +38,8 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
 * [invidious.site](https://invidious.site/) 🇳🇱 (uses cloudflare)  
   Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.site)
-
+* [invidious.tube](https://invidious.tube/) 🇳🇱  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.tube)
 
 ### Tor Onion Services
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
