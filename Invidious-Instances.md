@@ -38,7 +38,7 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
 * [invidious.site](https://invidious.site/) 🇳🇱 (uses cloudflare)  
   Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.site)
-* [invidious.tube](https://invidious.tube/) 🇳🇱  
+* [invidious.tube](https://invidious.tube/) 🇳🇱  [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785789197-f3d9d125d986bcc9664df1da?style=social)](https://status.invidious.tube)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.tube)
 
 ### Tor Onion Services
