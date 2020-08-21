@@ -1,6 +1,6 @@
 ### What can be configured and what are these configuration options?
 
-The configuration file is located at [invidious/config/config.yml](https://github.com/omarroth/invidious/blob/master/config/config.yml).
+The configuration file is located at [invidious/config/config.yml](https://github.com/iv-org/invidious/blob/master/config/config.yml).
 
 - `channel_threads` (default `1`) Number of threads to use for crawling videos from channels
 
@@ -42,7 +42,7 @@ db:
 
 - `external_port` (default `nil`) Invidious should supply links to a different port (if running behind a proxy, for example). PubSub notifications (if enabled) will also be sent to this port
 
-- `default_user_preferences` (default [`ConfigPreferences`](https://github.com/omarroth/invidious/blob/master/src/invidious/helpers/helpers.cr#L127)) Default preferences to use for new and unregistered users, see [#415](https://github.com/omarroth/invidious/issues/415)
+- `default_user_preferences` (default [`ConfigPreferences`](https://github.com/iv-org/invidious/blob/master/src/invidious/helpers/helpers.cr#L127)) Default preferences to use for new and unregistered users, see [#415](https://github.com/iv-org/invidious/issues/415)
 
 - `dmca_content` (default `[]`) For compliance with DMCA requests, disables download widget for list of video IDs
 
@@ -56,7 +56,7 @@ db:
 
 - `disable_proxy` (default `false`) Disable proxy option serverwide (options: 'dash', 'livestreams', 'downloads', 'local')
 
-- `force_resolve` (default `nil`) Force IPv4 or IPv6 connection to Google (options: 'ipv4', 'ipv6') see [#811](https://github.com/omarroth/invidious/issues/811)
+- `force_resolve` (default `nil`) Force IPv4 or IPv6 connection to Google (options: 'ipv4', 'ipv6') see [#811](https://github.com/iv-org/invidious/issues/811)
 
 - `pool_size` (default `100`) Pool size for HTTP connections for youtube.com and ytimg.com (each domain has a separate pool of `pool_size`)
 
@@ -68,4 +68,4 @@ db:
 
 - `cookies` (default ``) Cookies to be used when connecting to YouTube
 
-- `captcha_key` (default `nil`) [Anti-Captcha](https://anti-captcha.com/) API key for solving YouTube CAPTCHAs, see [#886](https://github.com/omarroth/invidious/issues/886).
+- `captcha_key` (default `nil`) [Anti-Captcha](https://anti-captcha.com/) API key for solving YouTube CAPTCHAs, see [#886](https://github.com/iv-org/invidious/issues/886).
