@@ -118,7 +118,7 @@ A `debug` topic can also provided which will return a (psuedo-)randomly selected
 
 `since` will return all videos uploaded since `TIMESTAMP`, with a limit of the 15 most recent videos from each topic.
 
-More details in [#469](https://github.com/omarroth/invidious/issues/469).
+More details in [#469](https://github.com/iv-org/invidious/issues/469).
 
 ##### POST `/api/v1/auth/notifications`
 
