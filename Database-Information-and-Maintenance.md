@@ -1,6 +1,6 @@
 Invidious needs one PostgreSQL database which has the following tables.
 
-- `annotations` Caches annotation data if `cache_annotations` is enabled in [`config.yml`](https://github.com/omarroth/invidious/wiki/Configuration)
+- `annotations` Caches annotation data if `cache_annotations` is enabled in [`config.yml`](./Configuration)
 - `channel_videos` Stores truncated video info, used to create user feeds  
 - `channels` Stores UCID and author name  
 - `nonces` Keeps track of tokens issued to prevent CSRF  
