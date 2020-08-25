@@ -1,6 +1,6 @@
 ### Language
 
-All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fields into the desired language. A list of languages are provided in [List of URL parameters](https://github.com/omarroth/invidious/wiki/List-of-URL-parameters).
+All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fields into the desired language. A list of languages are provided in [List of URL parameters](./List-of-URL-parameters).
 
 ### Pretty
 
