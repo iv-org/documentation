@@ -28,8 +28,6 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.toot.koeln)
 * [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.fdn.fr)
-* [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)
 * [invidiou.site](https://invidiou.site/) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.site)
 * [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸  
@@ -93,3 +91,5 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.gachirangers.com)
 * [yt.maisputain.ovh](https://yt.maisputain.ovh) 🇩🇪  (only IPV6)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.maisputain.ovh)
+* [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)
