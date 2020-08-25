@@ -1,6 +1,6 @@
 Invidious supports the various search filters provided by YouTube.
 
-Support for more user-friendly search is planned, see [#179](https://github.com/omarroth/invidious/issues/179).
+Support for more user-friendly search is planned, see [#179](https://github.com/iv-org/invidious/issues/179).
 
 Search filters are currently implemented as `key:value` operators, similar to [DuckDuckGo](https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/) and other search engines. Operators can be added to the search query to filter results, for example: [`type:playlist sort:views music`](https://invidio.us/search?q=type%3Aplaylist+sort%3Adate+music).
 
