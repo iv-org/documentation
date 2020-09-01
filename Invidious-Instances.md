@@ -17,8 +17,6 @@ Note²: Please move the instance to the offline list **only** if the instance do
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare, allows downloads)  
   Issuer: CloudFlare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
   - [4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion](http://4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion)
-* [invidious.13ad.de](https://invidious.13ad.de) 🇩🇪  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.13ad.de)
 * [invidious.toot.koeln](https://invidious.toot.koeln) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.toot.koeln)
 * [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:  
