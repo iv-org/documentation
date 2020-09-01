@@ -5,11 +5,6 @@
 
 ## Official Instances
 
-* [invidio.us](https://invidio.us) 🇺🇸  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidio.us)
-* [kgg2m7yk5aybusll.onion](http://kgg2m7yk5aybusll.onion)
-* [axqzx4s6s54s32yentfqojs3x5i7faxza6xo3ehd4bzzsg2ii4fv2iid.onion](http://axqzx4s6s54s32yentfqojs3x5i7faxza6xo3ehd4bzzsg2ii4fv2iid.onion)
-
 ## List of public Invidious Instances
 Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here.  
 Note²: Please move the instance to the offline list **only** if the instance doesn't serve Invidious anymore. Known errors from Invidious doesn't mean the instance is offline.
@@ -94,3 +89,5 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=yt.maisputain.ovh)
 * [watch.nettohikari.com](https://watch.nettohikari.com/) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)
+* [invidio.us](https://invidio.us) 🇺🇸  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidio.us)
