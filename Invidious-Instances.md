@@ -9,7 +9,7 @@ Note²: Please move the instance to the offline list **only** if the instance do
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
-* [yewtu.be](https://yewtu.be) 🇫🇷 (dash and downloads enabled) ("yewtube anti bot protection" forces enabling javascript on first visit. Site usable without javascript after that.)
+* [yewtu.be](https://yewtu.be) 🇫🇷 (dash, downloads enabled and JavaScript is required to visit the website)
   Issuer: Let's Encrypt, [Cryptcheck (better alternative to SSLLabs) Verification](https://cryptcheck.fr/https/yewtu.be)
   - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare, allows downloads)  
