@@ -16,6 +16,7 @@
 - [Apache2 Virtual Host with Reverse Proxy](./Apache2-Reverse-Proxy)
 - [Database Information and Maintenance](./Database-Information-and-Maintenance)
 - [Issues with CAPTCHA](./Issues-with-CAPTCHA-on-Debian-and-Ubuntu)
+- [How to setup Anti-Captcha](./How-to-setup-Anti-Captcha)
 
 ## For Developers
 
