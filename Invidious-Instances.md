@@ -17,10 +17,6 @@ Note²: Please move the instance to the offline list **only** if the instance do
   - [4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion](http://4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion)
 * [invidious.toot.koeln](https://invidious.toot.koeln) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.toot.koeln)
-* [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.fdn.fr)
-* [invidiou.site](https://invidiou.site/) 🇺🇸  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.site)
 * [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
 * [invidious.site](https://invidious.site/) 🇳🇱 (uses cloudflare)  
@@ -54,6 +50,12 @@ Note²: Please move the instance to the offline list **only** if the instance do
 ### Blocked:
 
 
+
+### Broken:
+* [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.fdn.fr)
+* [invidiou.site](https://invidiou.site/) 🇺🇸  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.site)
 
 ### Offline:
 * [invidious.glie.town](https://invidious.glie.town/) 🇳🇱  
