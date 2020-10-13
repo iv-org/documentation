@@ -27,7 +27,7 @@ Note²: Please move the instance to the offline list **only** if the instance do
 * [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 (uses cloudflare)  
   Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kavin.rocks)
   - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664)
-* [tube.connect.cafe](https://tube.connect.cafe) 🇫🇷
+* [tube.connect.cafe](https://tube.connect.cafe) 🇫🇷   
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=tube.connect.cafe)
 
 ### Tor Onion Services
