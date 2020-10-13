@@ -24,8 +24,9 @@ Note²: Please move the instance to the offline list **only** if the instance do
 * [invidious.xyz](https://invidious.xyz) 🇺🇸 (dash and downloads enabled)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.xyz)
   - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785826809-32636456cfcf403d7066cba6)](https://status.invidious.xyz/785826809)
-* [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 (uses cloudflare)
+* [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 (uses cloudflare)  
   Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kavin.rocks)
+  - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664)
 
 ### Tor Onion Services
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
