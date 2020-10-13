@@ -24,11 +24,14 @@ Note²: Please move the instance to the offline list **only** if the instance do
 * [invidious.xyz](https://invidious.xyz) 🇺🇸 (dash and downloads enabled)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.xyz)
   - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785826809-32636456cfcf403d7066cba6)](https://status.invidious.xyz/785826809)
+* [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 (uses cloudflare)
+  Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kavin.rocks)
 
 ### Tor Onion Services
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
 * [qklhadlycap4cnod.onion](http://qklhadlycap4cnod.onion/)
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
+* [w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion](http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/)
 * [mfqczy4mysscub2s.onion](http://mfqczy4mysscub2s.onion/) - offline
 * [sb46cryrbrjsfe4kfeculaj3tpke36ynstjm5wym2yh5ng2nflgyugyd.onion](http://sb46cryrbrjsfe4kfeculaj3tpke36ynstjm5wym2yh5ng2nflgyugyd.onion) - offline
 
