@@ -12,8 +12,6 @@ Note²: Please move the instance to the offline list **only** if the instance do
 * [yewtu.be](https://yewtu.be) 🇫🇷 (dash, downloads enabled and JavaScript is required to visit the website)  
   Issuer: Let's Encrypt, [Cryptcheck (better alternative to SSLLabs) Verification](https://cryptcheck.fr/https/yewtu.be)
   - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
-* [invidious.toot.koeln](https://invidious.toot.koeln) 🇩🇪  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.toot.koeln)
 * [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
 * [invidious.site](https://invidious.site/) 🇳🇱 (uses cloudflare)  
@@ -57,8 +55,6 @@ Note²: Please move the instance to the offline list **only** if the instance do
 ### Broken:
 * [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.fdn.fr)
-* [invidiou.site](https://invidiou.site/) 🇺🇸  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.site)
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare, allows downloads)  
   Issuer: CloudFlare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
   - [4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion](http://4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion)
@@ -97,3 +93,5 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)
 * [invidio.us](https://invidio.us) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidio.us)
+* [invidious.toot.koeln](https://invidious.toot.koeln) 🇩🇪  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.toot.koeln)
