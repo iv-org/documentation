@@ -12,8 +12,6 @@ Note²: Please move the instance to the offline list **only** if the instance do
 * [yewtu.be](https://yewtu.be) 🇫🇷 (dash, downloads enabled and JavaScript is required to visit the website)  
   Issuer: Let's Encrypt, [Cryptcheck (better alternative to SSLLabs) Verification](https://cryptcheck.fr/https/yewtu.be)
   - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
-* [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
 * [invidious.site](https://invidious.site/) 🇳🇱 (uses cloudflare)  
   Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.site)
   - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785863283-8c8e020f55a036f2fec269d8)](https://status.invidious.site/785863283)
@@ -59,6 +57,8 @@ Note²: Please move the instance to the offline list **only** if the instance do
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare, allows downloads)  
   Issuer: CloudFlare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
   - [4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion](http://4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion)
+* [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
 
 ### Offline:
 * [invidious.glie.town](https://invidious.glie.town/) 🇳🇱  
