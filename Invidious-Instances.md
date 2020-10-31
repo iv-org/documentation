@@ -5,6 +5,7 @@
 
 ## List of public Invidious Instances
 Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here. Please move instances that have gone Offline to the bottom of the Offline list.
+
 Note²: Please move the instance to the offline list **only** if the instance doesn't serve Invidious anymore. Known errors from Invidious doesn't mean the instance is offline.
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
