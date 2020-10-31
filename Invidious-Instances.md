@@ -4,7 +4,7 @@
 [Instances API](https://instances.invidio.us/)
 
 ## List of public Invidious Instances
-Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here.  
+Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here. Please move instances that have gone Offline to the bottom of the Offline list.
 Note²: Please move the instance to the offline list **only** if the instance doesn't serve Invidious anymore. Known errors from Invidious doesn't mean the instance is offline.
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
@@ -67,8 +67,6 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
 
 ### Offline:
-* [invidious.glie.town](https://invidious.glie.town/) 🇳🇱  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.glie.town)
 * [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kabi.tk)
 * [tube.poal.co](https://tube.poal.co) 🇺🇸  
@@ -99,5 +97,7 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=watch.nettohikari.com)
 * [invidio.us](https://invidio.us) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidio.us)
+* [invidious.glie.town](https://invidious.glie.town/) 🇳🇱  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.glie.town)
 * [invidious.toot.koeln](https://invidious.toot.koeln) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.toot.koeln)
