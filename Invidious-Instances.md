@@ -4,9 +4,7 @@
 [Instances API](https://instances.invidio.us/)
 
 ## List of public Invidious Instances
-Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here. Please move instances that have gone Offline to the bottom of the Offline list.
-
-Note²: Please move the instance to the offline list **only** if the instance doesn't serve Invidious anymore. Known errors from Invidious doesn't mean the instance is offline.
+Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here. Please move instances that have gone Offline to the bottom of the Offline list **only** if the instance doesn't serve Invidious anymore. Known errors from Invidious doesn't mean the instance is offline.
 
 **Instances using Cloudflare must be marked as such.**
 
@@ -14,17 +12,14 @@ Note²: Please move the instance to the offline list **only** if the instance do
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
-* [yewtu.be](https://yewtu.be) 🇫🇷 (uses a [custom](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS) anti-bot protection that require JavaScript)  
+* [yewtu.be](https://yewtu.be) 🇫🇷 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765) (uses a [custom](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS) anti-bot protection that require JavaScript)  
   Issuer: Let's Encrypt, [Cryptcheck Verification](https://cryptcheck.fr/https/yewtu.be)
-  - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
 * [invidious.tube](https://invidious.tube/) 🇳🇱  [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785789197-f3d9d125d986bcc9664df1da?style=social)](https://status.invidious.tube)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.tube)
-* [invidious.xyz](https://invidious.xyz) 🇺🇸  
+* [invidious.xyz](https://invidious.xyz) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785826809-32636456cfcf403d7066cba6)](https://status.invidious.xyz/785826809)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.xyz)
-  - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785826809-32636456cfcf403d7066cba6)](https://status.invidious.xyz/785826809)
-* [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 (uses Cloudflare)  
+* [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664) (uses Cloudflare)  
   Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kavin.rocks)
-  - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664)
 * [tube.connect.cafe](https://tube.connect.cafe) 🇫🇷   
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=tube.connect.cafe)
 * [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷  
