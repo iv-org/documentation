@@ -31,7 +31,8 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.zapashcanon.fr)
 * [invidiou.site](https://invidiou.site/) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.site)
-
+* [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
 
 ### Tor Onion Services
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
@@ -63,8 +64,6 @@ Note²: Please move the instance to the offline list **only** if the instance do
 * [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare, allows downloads)  
   Issuer: CloudFlare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
   - [4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion](http://4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion)
-* [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
 
 ### Offline:
 * [invidious.kabi.tk](https://invidious.kabi.tk) 🇫🇮  
