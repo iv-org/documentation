@@ -14,15 +14,15 @@ Note²: Please move the instance to the offline list **only** if the instance do
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
-* [yewtu.be](https://yewtu.be) 🇫🇷 (dash, downloads enabled and JavaScript is required to visit the website)  
-  Issuer: Let's Encrypt, [Cryptcheck (better alternative to SSLLabs) Verification](https://cryptcheck.fr/https/yewtu.be)
+* [yewtu.be](https://yewtu.be) 🇫🇷 (uses a custom anti-bot protection that require JavaScript)  
+  Issuer: Let's Encrypt, [Cryptcheck Verification](https://cryptcheck.fr/https/yewtu.be)
   - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
 * [invidious.tube](https://invidious.tube/) 🇳🇱  [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785789197-f3d9d125d986bcc9664df1da?style=social)](https://status.invidious.tube)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.tube)
-* [invidious.xyz](https://invidious.xyz) 🇺🇸 (dash and downloads enabled)  
+* [invidious.xyz](https://invidious.xyz) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.xyz)
   - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785826809-32636456cfcf403d7066cba6)](https://status.invidious.xyz/785826809)
-* [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 (uses cloudflare)  
+* [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 (uses Cloudflare)  
   Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.kavin.rocks)
   - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664)
 * [tube.connect.cafe](https://tube.connect.cafe) 🇫🇷   
