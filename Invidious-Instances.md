@@ -1,9 +1,9 @@
-# Public Invidious Instances
+# Public Invidious Instances:
 
 [Uptime History provided by Uptimerobot](https://uptime.invidio.us/)  
 [Instances API](https://instances.invidio.us/)
 
-## List of public Invidious Instances
+## List of public Invidious Instances:
 Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here. Please move instances that have gone Offline to the bottom of the Offline list **only** if the instance doesn't serve Invidious anymore. Known errors from Invidious doesn't mean the instance is offline.
 
 **Instances using Cloudflare must be marked as such.**
@@ -29,13 +29,13 @@ Note: Please add new instances on the bottom so that every user can see how old 
 * [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
 
-### Tor Onion Services
+### Tor Onion Services:
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
 * [qklhadlycap4cnod.onion](http://qklhadlycap4cnod.onion/)
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
 * [w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion](http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/)
 
-### Eepsite (I2P)
+### Eepsite (I2P):
 
 
 
