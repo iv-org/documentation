@@ -61,7 +61,7 @@ Note²: Please move the instance to the offline list **only** if the instance do
 ### Broken:
 * [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.fdn.fr)
-* [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses cloudflare, allows downloads)  
+* [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses Cloudflare)  
   Issuer: CloudFlare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
   - [4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion](http://4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion)
 
