@@ -27,7 +27,7 @@ Note²: Please move the instance to the offline list **only** if the instance do
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=tube.connect.cafe)
 * [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.zapashcanon.fr)
-* [invidiou.site](https://invidiou.site/) 🇺🇸 (this isn't invidiou**s**.site)  
+* [invidiou.site](https://invidiou.site/) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.site)
 
 
