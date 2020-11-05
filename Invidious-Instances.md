@@ -34,10 +34,9 @@ Note: Please add new instances on the bottom so that every user can see how old 
 * [qklhadlycap4cnod.onion](http://qklhadlycap4cnod.onion/)
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
 * [w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion](http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/)
-* [mfqczy4mysscub2s.onion](http://mfqczy4mysscub2s.onion/) - offline
 
 ### Eepsite (I2P)
-* [owxfohz4kjyv25fvlqilyxast7inivgiktls3th44jhk3ej3i7ya.b32.i2p](http://owxfohz4kjyv25fvlqilyxast7inivgiktls3th44jhk3ej3i7ya.b32.i2p) - offline
+
 
 
 ### Plain HTTP (without SSL):
@@ -48,13 +47,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 
 
-### Blocked:
-
-
-
 ### Broken:
 * [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.fdn.fr)
-* [invidious.ggc-project.de](https://invidious.ggc-project.de) 🇩🇪  (uses Cloudflare)  
-  Issuer: CloudFlare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.ggc-project.de)
-  - [4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion](http://4l2dgddgsrkf2ous66i6seeyi6etzfgrue332grh2n7madpwopotugyd.onion)
