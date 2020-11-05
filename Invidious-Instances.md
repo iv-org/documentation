@@ -9,7 +9,8 @@ Note: Please add new instances on the bottom so that every user can see how old 
 Note²: Please move the instance to the offline list **only** if the instance doesn't serve Invidious anymore. Known errors from Invidious doesn't mean the instance is offline.
 
 **Instances using Cloudflare must be marked as such.**
-**Instances using any type of analytics must be marked as such, must be GDPR compliant if it's usable in the EU, and must respect the AGPL by explaining their changes and by publishing their source code.**
+
+**Instances using any type of analytics must be marked as such, must be GDPR compliant if it's usable in the EU, and must respect the AGPL by explaining their changes and by publishing their source code. In short: don't run analytics, it's not worth it.**
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
