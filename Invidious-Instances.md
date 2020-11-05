@@ -14,7 +14,7 @@ Note²: Please move the instance to the offline list **only** if the instance do
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
-* [yewtu.be](https://yewtu.be) 🇫🇷 (uses a custom anti-bot protection that require JavaScript)  
+* [yewtu.be](https://yewtu.be) 🇫🇷 (uses a [custom](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS) anti-bot protection that require JavaScript)  
   Issuer: Let's Encrypt, [Cryptcheck Verification](https://cryptcheck.fr/https/yewtu.be)
   - [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
 * [invidious.tube](https://invidious.tube/) 🇳🇱  [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785789197-f3d9d125d986bcc9664df1da?style=social)](https://status.invidious.tube)  
