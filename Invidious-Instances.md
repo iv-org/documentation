@@ -24,8 +24,8 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=tube.connect.cafe)
 * [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.zapashcanon.fr)
-* [invidiou.site](https://invidiou.site/) 🇺🇸 (this isn't invidiou**s**.site)  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.site)
+* [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.fdn.fr)
 * [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.mint.lgbt)
 * [invidious.site](https://invidious.site/) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785863283-8c8e020f55a036f2fec269d8)](https://status.invidious.site/785863283) (uses Cloudflare)  
@@ -50,5 +50,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 
 ### Broken:
-* [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:  
-  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.fdn.fr)
+
+* [invidiou.site](https://invidiou.site/) 🇺🇸 (this isn't invidiou**s**.site)  
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidiou.site)
