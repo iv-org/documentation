@@ -1,3 +1,6 @@
+This is a very basic nginx reverse proxy config, secured with Let's Encrypt. Do not forget to replace ServerName with your domain and make sure you are redirecting `proxy_pass` to the correct port.
+
+```
 # This first block redirects non-HTTPS traffic to secure port 443. Optional, but recommended.
 server {
     listen 80;
@@ -23,3 +26,4 @@ server {
         proxy_set_header   X-Forwarded-Proto   $scheme;
     }
 }
+```
