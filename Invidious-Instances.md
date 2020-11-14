@@ -33,7 +33,8 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.site)
 * [vid.encryptionin.space](https://vid.encryptionin.space/) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.encryptionin.space)
-
+* [invidious.mservice.ru.com](https://invidious.mservice.ru.com/) 🇩🇪
+  Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.mservice.ru.com)
 ### Tor Onion Services:
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
 * [qklhadlycap4cnod.onion](http://qklhadlycap4cnod.onion/)
