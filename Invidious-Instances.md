@@ -12,7 +12,7 @@ Note: Please add new instances on the bottom so that every user can see how old 
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
-* [yewtu.be](https://yewtu.be) 🇫🇷 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)  
+* [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)  
   Issuer: Let's Encrypt, [Cryptcheck Verification](https://cryptcheck.fr/https/yewtu.be)
 * [invidious.tube](https://invidious.tube/) 🇳🇱  [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785789197-f3d9d125d986bcc9664df1da?style=social)](https://status.invidious.tube)  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.tube)
