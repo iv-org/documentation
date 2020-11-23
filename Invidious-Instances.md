@@ -36,8 +36,6 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.encryptionin.space)
 * [invidious.mservice.ru.com](https://invidious.mservice.ru.com/) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.mservice.ru.com)
-* [invidious.wamis.ml](https://invidious.wamis.ml/) 🇸🇰  [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786455529-854655fd8c5b19fa3b921da7)](https://status.wamis.ml/786455529) (uses Cloudflare)  
-Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.wamis.ml)
 
 ### Tor Onion Services:
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
