@@ -36,6 +36,8 @@ Note: Please add new instances on the bottom so that every user can see how old 
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=vid.encryptionin.space)
 * [invidious.mservice.ru.com](https://invidious.mservice.ru.com/) 🇩🇪  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.mservice.ru.com)
+* [invidious.q3host.com](https://invidious.q3host.com) 🇩🇪 (uses Cloudflare) 
+  Issuer: Cloudflare, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.q3host.com)
 
 ### Tor Onion Services:
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
