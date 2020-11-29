@@ -1,3 +1,13 @@
+**Annoucement:**
+
+Due to the addition of multiples [Invidious instance violating the AGPL](https://github.com/iv-org/invidious/issues?q=is%3Aissue+label%3A%22agpl+violation). Editing the wiki is now restricted.
+
+The wiki will soon be merged to the code repository.
+
+In the meantime, if you have created a new public instance and wants it to be added feel free to open an issue, or contact one of the project manager.
+
+---
+
 ## General
 
 - [Public Invidious Instances](./Invidious-Instances)
