@@ -1,6 +1,6 @@
 **Annoucement:**
 
-Due to the addition of multiples [Invidious instance violating the AGPL](https://github.com/iv-org/invidious/issues?q=is%3Aissue+label%3A%22agpl+violation). Editing the wiki is now restricted.
+Due to the addition of multiples [Invidious instance violating the AGPL](https://github.com/iv-org/invidious/issues?q=is%3Aissue+label%3A%22agpl+violation%22). Editing the wiki is now restricted.
 
 The wiki will soon be merged to the code repository.
 
