@@ -1,4 +1,4 @@
-**Annoucement:**
+**Announcement:**
 
 Due to the addition of multiples [Invidious instance violating the AGPL](https://github.com/iv-org/invidious/issues?q=is%3Aissue+label%3A%22agpl+violation%22). Editing the wiki is now restricted.
 
@@ -24,7 +24,7 @@ In the meantime, if you have created a new public instance and wants it to be ad
 - [Configuration](./Configuration)
 - [Updating](./Updating)
 - [Apache2 Virtual Host with Reverse Proxy](./Apache2-Reverse-Proxy)
-- [Nginx Reverse Proxy Configuration](./Nginx-Reverse-Proxy-Configuration)
+- [Nginx Reverse Proxy Configuration](./NGINX-Reverse-Proxy)
 - [Database Information and Maintenance](./Database-Information-and-Maintenance)
 - [Issues with CAPTCHA](./Issues-with-CAPTCHA-on-Debian-and-Ubuntu)
 - [How to setup Anti-Captcha](./How-to-setup-Anti-Captcha)
