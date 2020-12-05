@@ -40,17 +40,3 @@ Note: Please add new instances on the bottom so that every user can see how old 
 * [qklhadlycap4cnod.onion](http://qklhadlycap4cnod.onion/)
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
 * [w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion](http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/)
-
-### Eepsite (I2P):
-
-
-
-### Plain HTTP (without SSL):
-
-
-
-### Broken SSL or self-signed:
-
-
-
-### Broken:
