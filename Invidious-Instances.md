@@ -3,12 +3,13 @@
 [Uptime History provided by Uptimerobot](https://uptime.invidio.us/)  
 [Instances API](https://instances.invidio.us/)
 
-## List of public Invidious Instances:
-Note: Please add new instances on the bottom so that every user can see how old and how long an instance is listed here. Please move instances that have gone Offline to the bottom of the Offline list **only** if the instance doesn't serve Invidious anymore. Known errors from Invidious doesn't mean the instance is offline.
+**Note:**
 
-**Instances using Cloudflare must be marked as such.**
+Instances using Cloudflare are marked as such. Instances using any type of anti-bot protection are marked as such.
 
-**Instances using any type of analytics must be marked as such, must be GDPR compliant if it's usable in the EU, and must respect the AGPL by explaining their changes and by publishing their source code. In short: don't run analytics, it's not worth it.**
+Instances using any type of analytics are marked as such, must be GDPR compliant (if it's usable in the EU), must be CCPA compliant (if it's usable in California), and must respect the AGPL by explaining their changes and by publishing their source code. In short: instances shouldn't run analytics, because it's not worth it.
+
+## List of public Invidious Instances (sorted from oldest to newest):
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮  
   Issuer: Let's Encrypt, [SSLLabs Verification](https://www.ssllabs.com/ssltest/analyze.html?d=invidious.snopyta.org)
