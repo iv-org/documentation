@@ -24,11 +24,9 @@ db:
 
 - `use_pubsub_feeds` (default `false`) Use server-side notifications provided by [YouTube](https://developers.google.com/youtube/v3/guides/push_notifications). Requires `domain` and `hmac_key` to be set
 
-- `default_home` (default `"Top"`) Default home page **Moved into `default_user_preferences`**
+- `default_home` (default `"Popular"`) Default home page **Moved into `default_user_preferences`**
 
-- `feed_menu` (default `["Popular", "Top", "Trending", "Subscriptions"]`) Order of tabs on feed menu **Moved into `default_user_preferences`**
-
-- `top_enabled` (default `true`) Whether top endpoints should be enabled (better privacy for smaller instances)
+- `feed_menu` (default `["Popular", "Trending", "Subscriptions"]`) Order of tabs on feed menu **Moved into `default_user_preferences`**
 
 - `captcha_enabled` (default `true`) Determine if CAPTCHA should be required for registration
 
