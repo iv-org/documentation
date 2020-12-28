@@ -37,6 +37,8 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.mservice.ru.com](https://invidious.mservice.ru.com/) 🇩🇪
 
+* [invidious.048596.xyz](https://invidious.048596.xyz/) 🇨🇦
+
 
 ### Tor Onion Services:
 
