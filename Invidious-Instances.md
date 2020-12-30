@@ -37,7 +37,7 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.mservice.ru.com](https://invidious.mservice.ru.com/) 🇩🇪
 
-* [invidious.048596.xyz](https://invidious.048596.xyz/) 🇨🇦
+* [invidious.048596.xyz](https://invidious.048596.xyz/) 🇨🇦 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786792286-b5894e4e11c42b8332375076)](https://status.048596.xyz/786792286)
 
 
 ### Tor Onion Services:
