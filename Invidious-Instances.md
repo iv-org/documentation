@@ -14,7 +14,7 @@ Instances using any type of analytics are marked as such, must be GDPR compliant
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮
+<!-- * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮 -->
 
 * [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
 
