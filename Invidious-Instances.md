@@ -35,8 +35,6 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.site](https://invidious.site/) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785863283-8c8e020f55a036f2fec269d8)](https://status.invidious.site/785863283) (uses Cloudflare)
 
-* [invidious.mservice.ru.com](https://invidious.mservice.ru.com/) 🇩🇪
-
 * [invidious.048596.xyz](https://invidious.048596.xyz/) 🇨🇦 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786792286-b5894e4e11c42b8332375076)](https://status.048596.xyz/786792286)
 
 
