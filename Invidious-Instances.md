@@ -25,6 +25,8 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664) (uses Cloudflare)
 
+* [tube.connect.cafe](https://tube.connect.cafe) 🇫🇷
+
 * [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷
 
 * [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:
@@ -64,5 +66,3 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 
 ### Broken:
-
-* [tube.connect.cafe](https://tube.connect.cafe) 🇫🇷
