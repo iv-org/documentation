@@ -52,6 +52,8 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion](http://kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion/) 🇳🇱
 
+* [invidious.3o7z6yfxhbw7n3za4rss6l434kmv55cgw2vuziwuigpwegswvwzqipyd.onion](http://invidious.3o7z6yfxhbw7n3za4rss6l434kmv55cgw2vuziwuigpwegswvwzqipyd.onion/) 🇺🇸
+
 
 ### Eepsite (I2P):
 
