@@ -39,6 +39,9 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.zee.li](https://invidious.zee.li) 🇺🇸 (uses Cloudflare)
 
+* [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://status.puffyan.us/786947233)
+
+
 
 ### Tor Onion Services:
 
@@ -52,6 +55,7 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion](http://kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion/) 🇳🇱
 
+* [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 
 
 ### Eepsite (I2P):
 
