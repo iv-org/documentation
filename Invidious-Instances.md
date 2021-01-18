@@ -59,11 +59,6 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸
 
 
-### Instances running a modified source code:
-
-* [ytprivate.com](https://ytprivate.com) 🇺🇸 (uses DDoS-Guard) Status: https://status.ytprivate.com/ - Source Code: https://github.com/ytprivatecom/invidious - Changes: https://github.com/ytprivatecom/invidious#source-changes
-
-
 ### Eepsite (I2P):
 
 
