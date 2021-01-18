@@ -41,6 +41,8 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://status.puffyan.us/786947233)
 
+* [ytprivate.com](https://ytprivate.com) 🇺🇸 (uses DDoS-Guard) (is running a modified source code) - Status: https://status.ytprivate.com/ - Source Code: https://github.com/ytprivatecom/invidious - Changes: https://github.com/ytprivatecom/invidious#source-changes
+
 
 ### Tor Onion Services:
 
