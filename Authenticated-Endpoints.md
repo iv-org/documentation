@@ -1,3 +1,13 @@
+---
+title: Authenticated-Endpoints
+description: 
+published: true
+date: 2021-01-28T21:00:15.031Z
+tags: 
+editor: undefined
+dateCreated: 2021-01-28T20:39:08.568Z
+---
+
 All endpoints under namespace `/api/v1/auth` require authentication.
 
 Authentication can be in one of two forms:

@@ -1,3 +1,13 @@
+---
+title: Updating
+description: 
+published: true
+date: 2021-01-28T21:01:05.686Z
+tags: 
+editor: undefined
+dateCreated: 2021-01-28T20:40:27.192Z
+---
+
 ## Invidious releases are based on tags. You can use them if you want to be sure your instance is stable.
 
 #### With release tags

@@ -1,3 +1,13 @@
+---
+title: How-to-deal-with-uMatrix
+description: 
+published: true
+date: 2021-01-28T21:00:33.619Z
+tags: 
+editor: undefined
+dateCreated: 2021-01-28T20:39:36.844Z
+---
+
 If you're using [uMatrix](https://github.com/gorhill/uMatrix), you'll not be able to automatically play a video served by Invidious on other websites without unblocking requests to Invidious instances.
 
 So, to make it work, you'll need to allow `css`, `image`, `media`, `script`, `xhr`, `frame` for the instance form which you're trying to play the video.

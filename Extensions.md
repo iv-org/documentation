@@ -1,3 +1,13 @@
+---
+title: Extensions
+description: 
+published: true
+date: 2021-01-28T21:00:27.409Z
+tags: 
+editor: undefined
+dateCreated: 2021-01-28T20:39:27.709Z
+---
+
 ### Browser extensions for Invidious
 - [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect): Redirects YouTube to Invidious, Twitter to Nitter, and Instagram to Bibliogram. [Source](https://github.com/SimonBrazell/privacy-redirect) / [Firefox](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/) / [Chrome](https://chrome.google.com/webstore/detail/privacy-redirect/pmcmeagblkinmogikoikkdjiligflglb)
 - [SponsorBlock](https://github.com/ajayyy/SponsorBlock): A crowd-sourced extension to skip sponsorships. Support invidious instances if enabled in the options (Available for Chrome and Firefox).

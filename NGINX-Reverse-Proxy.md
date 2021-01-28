@@ -1,3 +1,13 @@
+---
+title: NGINX-Reverse-Proxy
+description: 
+published: true
+date: 2021-01-28T21:00:53.653Z
+tags: 
+editor: undefined
+dateCreated: 2021-01-28T20:40:07.950Z
+---
+
 This is a very basic config, secured with Let's Encrypt. Any log is disabled by default. Do not forget to replace `server_name` with your domain.   
 
 ```

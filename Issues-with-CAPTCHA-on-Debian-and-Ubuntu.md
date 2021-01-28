@@ -1,3 +1,13 @@
+---
+title: Issues-with-CAPTCHA-on-Debian-and-Ubuntu
+description: 
+published: true
+date: 2021-01-28T21:00:44.293Z
+tags: 
+editor: undefined
+dateCreated: 2021-01-28T20:39:51.349Z
+---
+
 #### Warning: If you use ImageMagick on Ubuntu for other services like Mastodon this guide may break them, please use [this guide](https://linuxconfig.org/how-to-install-imagemagick-7-on-ubuntu-18-04-linux) instead.
 There is some issue on Debian 9 and Ubuntu 18.04 and later. It appears that the clock (the CAPTCHA) has no hands but you can see them outside the clock. You need to compile ImageMagick yourself with librsvg to solve this issue.  
 Thanks [Tmiland](https://github.com/tmiland) for showing up a solution at [#299](https://github.com/iv-org/invidious/issues/299)

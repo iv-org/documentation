@@ -1,3 +1,13 @@
+---
+title: Database-Information-and-Maintenance
+description: 
+published: true
+date: 2021-01-28T21:00:21.336Z
+tags: 
+editor: undefined
+dateCreated: 2021-01-28T20:39:18.631Z
+---
+
 Invidious needs one PostgreSQL database which has the following tables.
 
 - `annotations` Caches annotation data if `cache_annotations` is enabled in [`config.yml`](./Configuration)

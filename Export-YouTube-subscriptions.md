@@ -1,3 +1,13 @@
+---
+title: Export-YouTube-subscriptions
+description: 
+published: true
+date: 2021-01-28T21:00:24.371Z
+tags: 
+editor: undefined
+dateCreated: 2021-01-28T20:39:23.334Z
+---
+
 **The steps below as well as the resulting file name are different depending on your Google language 
 settings.**
 

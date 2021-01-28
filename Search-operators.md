@@ -1,3 +1,13 @@
+---
+title: Search-operators
+description: 
+published: true
+date: 2021-01-28T21:01:02.566Z
+tags: 
+editor: undefined
+dateCreated: 2021-01-28T20:40:22.456Z
+---
+
 Invidious supports the various search filters provided by YouTube.
 
 Support for more user-friendly search is planned, see [#179](https://github.com/iv-org/invidious/issues/179).
