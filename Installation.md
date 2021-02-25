@@ -1,3 +1,13 @@
+---
+title: Installation
+description: 
+published: true
+date: 2021-02-25T18:05:08.275Z
+tags: 
+editor: undefined
+dateCreated: 2021-02-25T11:24:06.655Z
+---
+
 ## Installation:
 
 To manually compile invidious you need at least 2GB of RAM. If you have less you can setup SWAP to have a combined amount of 2 GB or use Docker instead.

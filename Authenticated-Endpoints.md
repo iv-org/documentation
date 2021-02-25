@@ -2,7 +2,7 @@
 title: Authenticated-Endpoints
 description: 
 published: true
-date: 2021-01-28T21:00:15.031Z
+date: 2021-02-25T18:04:41.118Z
 tags: 
 editor: undefined
 dateCreated: 2021-01-28T20:39:08.568Z
