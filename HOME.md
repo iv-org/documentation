@@ -21,6 +21,7 @@ dateCreated: 2021-01-28T20:40:17.421Z
 
 ## For Administrators
 
+- [Installation](./Installation.md)
 - [Configuration](./Configuration.md)
 - [Updating](./Updating.md)
 - [Apache2 Virtual Host with Reverse Proxy](./Apache2-Reverse-Proxy.md)
