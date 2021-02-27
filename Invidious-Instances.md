@@ -77,7 +77,7 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸
 
-* [invidious.himiko7xl2skojc6odi7hykl626gt4qki3vxdbv33u2u3af76d6k32ad.onion/](http://invidious.himiko7xl2skojc6odi7hykl626gt4qki3vxdbv33u2u3af76d6k32ad.onion/) 🇧🇬
+* [invidious.himiko7xl2skojc6odi7hykl626gt4qki3vxdbv33u2u3af76d6k32ad.onion](http://invidious.himiko7xl2skojc6odi7hykl626gt4qki3vxdbv33u2u3af76d6k32ad.onion/) 🇧🇬
 
 ### Eepsite (I2P):
 
