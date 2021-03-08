@@ -28,9 +28,6 @@ Instances using any type of analytics are marked as such, must be GDPR compliant
 
 * [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
 
-* [invidious.tube](https://invidious.tube/) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785789197-f3d9d125d986bcc9664df1da?style=social)](https://status.invidious.tube)
-Uses custom anti-bot protection that requires a cookie: https://github.com/kyprizel/testcookie-nginx-module
-
 * [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664) (uses Cloudflare)
 
 * [tube.connect.cafe](https://tube.connect.cafe) 🇫🇷
