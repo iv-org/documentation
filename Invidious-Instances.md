@@ -61,6 +61,8 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.himiko.cloud](https://invidious.himiko.cloud) 🇧🇬
 
+* [tube.incog.host](https://tube.incog.host) 🇱🇺
+
 ### Tor Onion Services:
 
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
@@ -79,9 +81,11 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.himiko7xl2skojc6odi7hykl626gt4qki3vxdbv33u2u3af76d6k32ad.onion](http://invidious.himiko7xl2skojc6odi7hykl626gt4qki3vxdbv33u2u3af76d6k32ad.onion/) 🇧🇬
 
+* [tuberyps2pn6dor6h47brof3w2asmauahhk4ei42krugybzzzo55klad.onion](http://tuberyps2pn6dor6h47brof3w2asmauahhk4ei42krugybzzzo55klad.onion/) 🇱🇺
+
 ### Eepsite (I2P):
 
-
+* [vipzc556nzjraiqsk5xwvyhz54fvtqt3vrepdarat3zsj4a6eypq.b32.i2p](http://vipzc556nzjraiqsk5xwvyhz54fvtqt3vrepdarat3zsj4a6eypq.b32.i2p/) 🇱🇺
 
 ### Plain HTTP (without SSL):
 
