@@ -37,15 +37,9 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷
 
-* [invidious.fdn.fr](https://invidious.fdn.fr/) :fr:
-
 * [invidiou.site](https://invidiou.site/) 🇺🇸 (this isn't invidiou**s**.site)
 
-* [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸
-
 * [invidious.site](https://invidious.site/) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785863283-8c8e020f55a036f2fec269d8)](https://status.invidious.site/785863283) (uses Cloudflare)
-
-* [invidious.048596.xyz](https://invidious.048596.xyz/) 🇨🇦 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786792286-b5894e4e11c42b8332375076)](https://status.048596.xyz/786792286)
 
 * [invidious.zee.li](https://invidious.zee.li) 🇺🇸 (uses Cloudflare)
 
@@ -54,10 +48,6 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 * [ytprivate.com](https://ytprivate.com) 🇺🇸 [au.ytprivate.com](https://au.ytprivate.com) 🇦🇺 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947505-2a50cf3262906bb28c6cf8fc)](https://status.ytprivate.com/786947505) (uses DDoS-Guard) (is running a modified source code) - Source Code: https://github.com/ytprivatecom/invidious - Changes: https://github.com/ytprivatecom/invidious#source-changes
 
 * [invidious.namazso.eu](https://invidious.namazso.eu) 🇩🇪
-
-* [invidious.ethibox.fr](https://invidious.ethibox.fr) 🇫🇷
-
-* [inv.skyn3t.in](https://inv.skyn3t.in) 🇺🇸
 
 * [invidious.himiko.cloud](https://invidious.himiko.cloud) 🇧🇬
 
@@ -87,14 +77,18 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [vipzc556nzjraiqsk5xwvyhz54fvtqt3vrepdarat3zsj4a6eypq.b32.i2p](http://vipzc556nzjraiqsk5xwvyhz54fvtqt3vrepdarat3zsj4a6eypq.b32.i2p/) 🇱🇺
 
-### Plain HTTP (without SSL):
+### Down:
 
+* [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸
 
+* [invidious.048596.xyz](https://invidious.048596.xyz/) 🇨🇦 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786792286-b5894e4e11c42b8332375076)](https://status.048596.xyz/786792286)
 
-### Broken SSL or self-signed:
-
-
-
-### Broken:
+### Unmaintained:
 
 * [invidious.xyz](https://invidious.xyz) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785826809-32636456cfcf403d7066cba6)](https://status.invidious.xyz/785826809)
+
+* [invidious.fdn.fr](https://invidious.fdn.fr/) 🇫🇷
+
+* [invidious.ethibox.fr](https://invidious.ethibox.fr) 🇫🇷
+
+* [inv.skyn3t.in](https://inv.skyn3t.in) 🇺🇸
