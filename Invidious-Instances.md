@@ -2,9 +2,9 @@
 title: Invidious-Instances
 description: 
 published: true
-date: 2021-02-25T18:05:11.591Z
+date: 2021-03-13T22:29:20.041Z
 tags: 
-editor: undefined
+editor: markdown
 dateCreated: 2021-01-28T20:39:46.242Z
 ---
 
