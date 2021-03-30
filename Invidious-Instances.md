@@ -26,7 +26,7 @@ Instances using any type of analytics are marked as such, must be GDPR compliant
 
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮
 
-* [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
+* [yewtu.be](https://yewtu.be) 🇫🇷 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
 
 * [invidious.tube](https://invidious.tube/) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785789197-f3d9d125d986bcc9664df1da?style=social)](https://status.invidious.tube)
 Uses custom anti-bot protection that requires a cookie: https://github.com/kyprizel/testcookie-nginx-module
