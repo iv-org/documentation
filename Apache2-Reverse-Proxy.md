@@ -39,6 +39,7 @@ To make the VirtualHost config below actually work, you should as well:
 	- Create a [.htpasswd](http://httpd.apache.org/docs/current/programs/htpasswd.html) file and add required [username/login combos](http://aspirine.org/htpasswd_en.html) to it, if not already existing. 
 	- Open port 3333 (or any other free port) adding `Listen 3333` to Apache `ports.conf` (Debian `/etc/apache2/ports.conf`) 
 	- If you run Invidious with default parameters, you may need to replace default host binding (0.0.0.0) with localhost (127.0.0.1) instead. That way, Invidious won't be publicly available on port 3000 anymore, but only accessible via the reverse proxy on port 3333. So if you run Invidious via a systemd service, you would edit the service file (e.g. `/etc/systemd/system/invidious.service`) and change modify the ExecStart line to include the -b switch as follows `ExecStart=/home/invidious/invidious/invidious -b 127.0.0.1 -o invidious.log` and then reload the daemon with `systemctl daemon-reload` so that changes are taken into account.
+	- A convenient way to open such protected Invidious page without having to log in manually everytime is to access use a URL with the following format: http://username:password@domain:3333   
 
 ```
 <VirtualHost *:3333>
