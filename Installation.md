@@ -69,9 +69,10 @@ Fedora
 #  - with brew/snap: https://crystal-lang.org/install/on_fedora/
 #  - from tarball: https://crystal-lang.org/install/from_targz/
 # Currently, invidious depends on crystal 0.36.1-1, so a tarball install is necessary.
-cd /opt
+cd ~/Downloads
 wget https://github.com/crystal-lang/crystal/releases/download/0.36.1/crystal-0.36.1-1-linux-x86_64.tar.gz
-tar -xzf crystal-0.36.1-1-linux-x86_64.tar.gz
+cd /opt
+sudo tar -xzf ~/Downloads/crystal-0.36.1-1-linux-x86_64.tar.gz
 sudo ln -s /opt/crystal-0.36.1-1/bin/crystal /usr/local/bin/crystal
 sudo ln -s /opt/crystal-0.36.1-1/bin/shards /usr/local/bin/shards
 
