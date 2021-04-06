@@ -8,19 +8,19 @@ editor: markdown
 dateCreated: 2021-02-25T11:24:06.655Z
 ---
 
-## Installation:
+# Installation
 
 To manually compile invidious you need at least 2GB of RAM. If you have less you can setup SWAP to have a combined amount of 2 GB or use Docker instead.
 
 After installation take a look at the [Post-install steps](#post-install-configuration).
 
-### Automated installation:
+## Automated installation
 
 [Invidious-Updater](https://github.com/tmiland/Invidious-Updater) is a self-contained script that can automatically install and update Invidious.
 
-### Docker:
+## Docker
 
-#### Build and start cluster:
+### Build and start cluster
 
 ```bash
 $ docker-compose up
@@ -28,35 +28,56 @@ $ docker-compose up
 
 Then visit `localhost:3000` in your browser.
 
-#### Rebuild cluster:
+### Rebuild cluster
 
 ```bash
 $ docker-compose build
 ```
 
-#### Delete data and rebuild:
+### Delete data and rebuild
 
 ```bash
 $ docker volume rm invidious_postgresdata
 $ docker-compose build
 ```
 
-### Manual installation:
+## Manual installation
 
-### Linux:
+### Linux
 
 #### Install the dependencies
 
+Arch Linux
 ```bash
-# Arch Linux
-$ sudo pacman -S base-devel shards crystal librsvg postgresql
+sudo pacman -S base-devel shards crystal librsvg postgresql
+```
 
-# Ubuntu or Debian
+Ubuntu or Debian
+```bash
 # First you have to add the repository to your APT configuration. For easy setup just run in your command line:
-$ curl -fsSL https://crystal-lang.org/install.sh | sudo bash
-# That will add the signing key and the repository configuration. If you prefer to do it manually, Follow the instructions here https://crystal-lang.org/install
-$ sudo apt-get update
-$ sudo apt install crystal libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev
+curl -fsSL https://crystal-lang.org/install.sh | sudo bash
+
+# That will add the signing key and the repository configuration.
+# If you prefer to do it manually, Follow the instructions here https://crystal-lang.org/install
+sudo apt-get update
+sudo apt install crystal libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev
+```
+
+Fedora
+```bash
+# To install crystal on fedora, you can either install:
+#  - with brew/snap: https://crystal-lang.org/install/on_fedora/
+#  - from tarball: https://crystal-lang.org/install/from_targz/
+# Currently, invidious depends on crystal 0.36.1-1, so a tarball install is necessary.
+cd ~/Downloads
+wget https://github.com/crystal-lang/crystal/releases/download/0.36.1/crystal-0.36.1-1-linux-x86_64.tar.gz
+cd /opt
+sudo tar -xzf ~/Downloads/crystal-0.36.1-1-linux-x86_64.tar.gz
+sudo ln -s /opt/crystal-0.36.1-1/bin/crystal /usr/local/bin/crystal
+sudo ln -s /opt/crystal-0.36.1-1/bin/shards /usr/local/bin/shards
+
+# Then use dnf to install the dependencies:
+sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc
 ```
 
 #### Add an Invidious user and clone the repository
@@ -99,14 +120,14 @@ $ ./invidious # stop with ctrl c
 $ exit
 ```
 
-#### Systemd service:
+#### Systemd service
 
 ```bash
 $ sudo cp /home/invidious/invidious/invidious.service /etc/systemd/system/invidious.service
 $ sudo systemctl enable --now invidious.service
 ```
 
-#### Logrotate:
+#### Logrotate
 
 ```bash
 $ echo "/home/invidious/invidious/invidious.log {
@@ -120,7 +141,7 @@ minsize 1048576
 $ sudo chmod 0644 /etc/logrotate.d/invidious.logrotate
 ```
 
-### MacOS:
+### MacOS
 
 ```bash
 # Install dependencies
