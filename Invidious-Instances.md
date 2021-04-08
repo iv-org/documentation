@@ -59,6 +59,8 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.reallyancient.tech](https://invidious.reallyancient.tech) 🇸🇬
 
+* [invidious.silkky.cloud](https://invidious.silkky.cloud) 🇫🇮
+
 ### Tor Onion Services:
 
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
