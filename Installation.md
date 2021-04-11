@@ -31,7 +31,7 @@ Ensure [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Comp
 $ mkdir invidious
 ```
 
-### Create Docker Compose File
+### Create Docker Compose file
 
 ```bash
 $ cd invidious
@@ -41,7 +41,58 @@ $ cd invidious
 $ nano docker-compose.yml
 ```
 
-Refer to the [gist](https://gist.github.com/dayvista/6e9fdc2914f619e17e884180a2127711) for a working Compose file.
+Here is a working Compose setup:
+```docker
+version: "2.4"
+services:
+  postgres:
+    image: postgres:10
+    restart: always
+    networks:
+      - invidious
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+      - ./config/sql:/config/sql
+      - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
+    environment:
+      POSTGRES_DB: invidious
+      POSTGRES_USER: kemal
+      POSTGRES_PASSWORD: kemal
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+  invidious:
+    image: quay.io/invidious/invidious:latest
+    restart: always
+    networks:
+      - invidious
+    mem_limit: 1024M
+    cpus: 0.5
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      INVIDIOUS_CONFIG: |
+        channel_threads: 1
+        check_tables: true
+        feed_threads: 1
+        db:
+          dbname: invidious
+          user: kemal
+          password: kemal
+          host: postgres
+          port: 5432
+        full_refresh: false
+        https_only: false
+        domain: 
+      # external_port:
+    depends_on:
+      - postgres
+
+volumes:
+  postgresdata:
+
+networks:
+  invidious:
+```
 
 > The environment variable `POSTGRES_USER` cannot be changed. The SQL config files that run the initial database migrations are hard-coded with the username `kemal`.
 {.is-warning}
