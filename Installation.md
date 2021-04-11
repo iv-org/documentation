@@ -20,25 +20,55 @@ After installation take a look at the [Post-install steps](#post-install-configu
 
 ## Docker
 
-### Build and start cluster
+> **Use of the Invidious image hosted on Docker Hub is highly discouraged.** The current maintainers no longer have access to the account and it is considered deprecated.  [The image hosted on Quay](https://quay.io/repository/invidious/invidious) is recommended as an alternative. This change is reflected in the `docker-compose.yml` file used in this walkthrough. Also, unlike Docker Hub, [Quay is open source](https://github.com/quay/quay/blob/master/LICENSE).
+{.is-warning}
+
+Ensure [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed before beginning.
+
+### Make directory
+
+```bash
+$ mkdir invidious
+```
+
+### Create Docker Compose File
+
+```bash
+$ cd invidious
+```
+
+```bash
+$ nano docker-compose.yml
+```
+
+Refer to the [gist](https://gist.github.com/dayvista/6e9fdc2914f619e17e884180a2127711) for a working Compose file.
+
+> The environment variable `POSTGRES_USER` cannot be changed. The SQL config files that run the initial database migrations are hard-coded with the username `kemal`.
+{.is-warning}
+
+### Start Invidious
 
 ```bash
 $ docker-compose up
 ```
+or 
+```bash
+$ docker-compose up -d
+```
+to run it in the background.
 
-Then visit `localhost:3000` in your browser.
+Then, visit `localhost:3000` in your browser.
 
-### Rebuild cluster
+### Stop Invidious
 
 ```bash
-$ docker-compose build
+$ docker-compose down
 ```
 
-### Delete data and rebuild
+### Delete data
 
 ```bash
 $ docker volume rm invidious_postgresdata
-$ docker-compose build
 ```
 
 ## Manual installation
