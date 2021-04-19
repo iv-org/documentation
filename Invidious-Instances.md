@@ -86,17 +86,3 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 ### Eepsite (I2P):
 
 * [vipzc556nzjraiqsk5xwvyhz54fvtqt3vrepdarat3zsj4a6eypq.b32.i2p](http://vipzc556nzjraiqsk5xwvyhz54fvtqt3vrepdarat3zsj4a6eypq.b32.i2p/) 🇱🇺
-
-### Down:
-
-* [vid.mint.lgbt](https://vid.mint.lgbt/) 🇺🇸
-
-### Unmaintained:
-
-* [invidious.xyz](https://invidious.xyz) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785826809-32636456cfcf403d7066cba6)](https://status.invidious.xyz/785826809)
-
-* [invidious.fdn.fr](https://invidious.fdn.fr/) 🇫🇷
-
-* [invidious.ethibox.fr](https://invidious.ethibox.fr) 🇫🇷
-
-
