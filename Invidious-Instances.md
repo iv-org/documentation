@@ -53,6 +53,8 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.silkky.cloud](https://invidious.silkky.cloud) 🇫🇮
 
+* [invidious.exonip.de](https://invidious.exonip.de) 🇩🇪 [Uptime Robot status](https://status.exonip.de/)
+
 ### Tor Onion Services:
 
 * [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
