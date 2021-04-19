@@ -21,6 +21,8 @@ Instances using Cloudflare are marked as such. Instances using any type of anti-
 
 Instances using any type of analytics are marked as such, must be GDPR compliant (if it's usable in the EU), must be CCPA compliant (if it's usable in California), and must respect the AGPL by explaining their changes and by publishing their source code. In short: instances shouldn't run analytics, because it's not worth it.
 
+To be in this list, instances must have been updated in the last month. An instance that hasn't been updated in the last month is considered unmaintained and will be removed from the list.
+
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
