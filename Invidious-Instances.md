@@ -35,21 +35,11 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664) (uses Cloudflare)
 
-* [tube.connect.cafe](https://tube.connect.cafe) 🇫🇷
-
-* [invidious.zapashcanon.fr](https://invidious.zapashcanon.fr) 🇫🇷
-
-* [invidiou.site](https://invidiou.site/) 🇺🇸 (this isn't invidiou**s**.site)
-
-* [invidious.site](https://invidious.site/) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785863283-8c8e020f55a036f2fec269d8)](https://status.invidious.site/785863283) (uses Cloudflare)
-
 * [invidious.048596.xyz](https://invidious.048596.xyz/) 🇨🇦 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786792286-b5894e4e11c42b8332375076)](https://status.048596.xyz/786792286)
-
-* [invidious.zee.li](https://invidious.zee.li) 🇺🇸 (uses Cloudflare)
 
 * [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://status.puffyan.us/786947233)
 
-* [ytprivate.com](https://ytprivate.com) 🇺🇸 [au.ytprivate.com](https://au.ytprivate.com) 🇦🇺 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947505-2a50cf3262906bb28c6cf8fc)](https://status.ytprivate.com/786947505) (uses DDoS-Guard) (is running a modified source code) - Source Code: https://github.com/ytprivatecom/invidious - Changes: https://github.com/ytprivatecom/invidious#source-changes
+* [ytprivate.com](https://ytprivate.com) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947505-2a50cf3262906bb28c6cf8fc)](https://status.ytprivate.com/786947505) (uses DDoS-Guard) (is running a modified source code) - Source Code: https://github.com/ytprivatecom/invidious - Changes: https://github.com/ytprivatecom/invidious#source-changes
 
 * [invidious.namazso.eu](https://invidious.namazso.eu) 🇩🇪
 
@@ -58,8 +48,6 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 * [invidious.himiko.cloud](https://invidious.himiko.cloud) 🇧🇬
 
 * [tube.incog.host](https://tube.incog.host) 🇱🇺
-
-* [invidious.tinfoil-hat.net](https://invidious.tinfoil-hat.net) 🇩🇪
 
 * [invidious.reallyancient.tech](https://invidious.reallyancient.tech) 🇸🇬
 
