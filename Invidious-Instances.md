@@ -51,6 +51,8 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.namazso.eu](https://invidious.namazso.eu) 🇩🇪
 
+* [inv.skyn3t.in](https://inv.skyn3t.in) 🇺🇸
+
 * [invidious.himiko.cloud](https://invidious.himiko.cloud) 🇧🇬
 
 * [tube.incog.host](https://tube.incog.host) 🇱🇺
@@ -97,4 +99,4 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.ethibox.fr](https://invidious.ethibox.fr) 🇫🇷
 
-* [inv.skyn3t.in](https://inv.skyn3t.in) 🇺🇸
+
