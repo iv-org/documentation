@@ -45,6 +45,8 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [inv.skyn3t.in](https://inv.skyn3t.in) 🇺🇸
 
+* [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
+
 * [invidious.himiko.cloud](https://invidious.himiko.cloud) 🇧🇬
 
 * [tube.incog.host](https://tube.incog.host) 🇱🇺
