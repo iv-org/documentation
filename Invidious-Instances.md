@@ -10,7 +10,7 @@ dateCreated: 2021-01-28T20:39:46.242Z
 
 # Public Invidious Instances:
 
-[Uptime History provided by Uptimerobot](https://uptime.invidio.us/)
+[Uptime History provided by Uptimerobot](https://stats.uptimerobot.com/89VnzSKAn)
 
 [Instances API](https://instances.invidio.us/)
 
