@@ -45,8 +45,6 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [inv.skyn3t.in](https://inv.skyn3t.in) 🇺🇸
 
-* [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
-
 * [invidious.himiko.cloud](https://invidious.himiko.cloud) 🇧🇬
 
 * [tube.incog.host](https://tube.incog.host) 🇱🇺
@@ -56,6 +54,8 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 * [invidious.silkky.cloud](https://invidious.silkky.cloud) 🇫🇮
 
 * [invidious.exonip.de](https://invidious.exonip.de) 🇩🇪 [Uptime Robot status](https://status.exonip.de/)
+
+* [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
 
 ### Tor Onion Services:
 
