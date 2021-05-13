@@ -56,7 +56,3 @@ To be in this list, instances must have been updated in the last month. An insta
 * [kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion](http://kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion/) 🇳🇱
 
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸
-
-### Eepsite (I2P):
-
-* [vipzc556nzjraiqsk5xwvyhz54fvtqt3vrepdarat3zsj4a6eypq.b32.i2p](http://vipzc556nzjraiqsk5xwvyhz54fvtqt3vrepdarat3zsj4a6eypq.b32.i2p/) 🇱🇺
