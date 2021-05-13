@@ -30,9 +30,6 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [yewtu.be](https://yewtu.be) 🇫🇷 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
 
-* [invidious.tube](https://invidious.tube/) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m785789197-f3d9d125d986bcc9664df1da?style=social)](https://status.invidious.tube)
-Uses custom anti-bot protection that requires a cookie: https://github.com/kyprizel/testcookie-nginx-module
-
 * [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664) (uses Cloudflare)
 
 * [invidious.048596.xyz](https://invidious.048596.xyz/) 🇨🇦 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786792286-b5894e4e11c42b8332375076)](https://status.048596.xyz/786792286)
@@ -43,10 +40,6 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.namazso.eu](https://invidious.namazso.eu) 🇩🇪
 
-* [tube.incog.host](https://tube.incog.host) 🇱🇺
-
-* [invidious.reallyancient.tech](https://invidious.reallyancient.tech) 🇸🇬
-
 * [invidious.silkky.cloud](https://invidious.silkky.cloud) 🇫🇮
 
 * [invidious.exonip.de](https://invidious.exonip.de) 🇩🇪 [Uptime Robot status](https://status.exonip.de/)
@@ -54,24 +47,13 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 * [notyoutube.org](https://notyoutube.org) 🇫🇮 
 
 ### Tor Onion Services:
-
-* [fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion](http://fz253lmuao3strwbfbmx46yu7acac2jz27iwtorgmbqlkurlclmancad.onion/)
-
-* [qklhadlycap4cnod.onion](http://qklhadlycap4cnod.onion/)
-
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
 
 * [w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion](http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/)
 
 * [kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion](http://kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion/) 🇳🇱
 
-* [invidious.3o7z6yfxhbw7n3za4rss6l434kmv55cgw2vuziwuigpwegswvwzqipyd.onion](http://invidious.3o7z6yfxhbw7n3za4rss6l434kmv55cgw2vuziwuigpwegswvwzqipyd.onion/) 🇺🇸
-
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸
-
-* [invidious.himiko7xl2skojc6odi7hykl626gt4qki3vxdbv33u2u3af76d6k32ad.onion](http://invidious.himiko7xl2skojc6odi7hykl626gt4qki3vxdbv33u2u3af76d6k32ad.onion/) 🇧🇬
-
-* [tuberyps2pn6dor6h47brof3w2asmauahhk4ei42krugybzzzo55klad.onion](http://tuberyps2pn6dor6h47brof3w2asmauahhk4ei42krugybzzzo55klad.onion/) 🇱🇺
 
 ### Eepsite (I2P):
 
