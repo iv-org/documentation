@@ -43,8 +43,6 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 
 * [invidious.namazso.eu](https://invidious.namazso.eu) 🇩🇪
 
-* [inv.skyn3t.in](https://inv.skyn3t.in) 🇺🇸
-
 * [tube.incog.host](https://tube.incog.host) 🇱🇺
 
 * [invidious.reallyancient.tech](https://invidious.reallyancient.tech) 🇸🇬
