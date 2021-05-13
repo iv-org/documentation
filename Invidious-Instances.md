@@ -46,6 +46,8 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [notyoutube.org](https://notyoutube.org) 🇫🇮 
 
+* [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
+
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
 
