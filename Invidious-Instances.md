@@ -48,7 +48,7 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
 
-* [inv.eggo.xyz](https://inv.eggo.xyz) 🇺🇸
+* [i.eggo.xyz](https://i.eggo.xyz) 🇺🇸
 
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
