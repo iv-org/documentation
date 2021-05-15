@@ -1,9 +1,9 @@
 ---
 title: Invidious-Instances
-description: 
+description:
 published: true
 date: 2021-03-13T22:29:20.041Z
-tags: 
+tags:
 editor: markdown
 dateCreated: 2021-01-28T20:39:46.242Z
 ---
@@ -44,9 +44,11 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidious.exonip.de](https://invidious.exonip.de) 🇩🇪 [Uptime Robot status](https://status.exonip.de/)
 
-* [notyoutube.org](https://notyoutube.org) 🇫🇮 
+* [notyoutube.org](https://notyoutube.org) 🇫🇮
 
 * [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
+
+* [inv.eggo.xyz](https://inv.eggo.xyz) 🇺🇸
 
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
@@ -56,3 +58,5 @@ To be in this list, instances must have been updated in the last month. An insta
 * [kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion](http://kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion/) 🇳🇱
 
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸
+
+* [http://vidvwe3l54z5wfqzzyey2orl6q2jei3uht6rvgu4ev2oljac4tabqrqd.onion](http://http://vidvwe3l54z5wfqzzyey2orl6q2jei3uht6rvgu4ev2oljac4tabqrqd.onion)
