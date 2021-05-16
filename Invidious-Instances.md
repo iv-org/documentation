@@ -59,4 +59,4 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸
 
-* [vidvwe3l54z5wfqzzyey2orl6q2jei3uht6rvgu4ev2oljac4tabqrqd.onion](http://vidvwe3l54z5wfqzzyey2orl6q2jei3uht6rvgu4ev2oljac4tabqrqd.onion)
+* [vidvwe3l54z5wfqzzyey2orl6q2jei3uht6rvgu4ev2oljac4tabqrqd.onion](http://vidvwe3l54z5wfqzzyey2orl6q2jei3uht6rvgu4ev2oljac4tabqrqd.onion) (https://i.eggo.xyz)
