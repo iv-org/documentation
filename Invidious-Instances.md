@@ -26,8 +26,6 @@ To be in this list, instances must have been updated in the last month. An insta
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [invidious.blamefran.net](https://invidious.blamefran.net) 🇺🇸
-
 * [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮
 
 * [yewtu.be](https://yewtu.be) 🇫🇷 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://status.unixfox.eu/783898765)
@@ -54,6 +52,8 @@ Uses custom anti-bot protection that requires a cookie: https://github.com/kypri
 * [invidious.silkky.cloud](https://invidious.silkky.cloud) 🇫🇮
 
 * [invidious.exonip.de](https://invidious.exonip.de) 🇩🇪 [Uptime Robot status](https://status.exonip.de/)
+
+* [invidious.blamefran.net](https://invidious.blamefran.net) 🇺🇸
 
 ### Tor Onion Services:
 
