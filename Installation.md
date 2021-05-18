@@ -20,25 +20,106 @@ After installation take a look at the [Post-install steps](#post-install-configu
 
 ## Docker
 
-### Build and start cluster
+> **Use of the Invidious image hosted on Docker Hub is highly discouraged.** The current maintainers no longer have access to the account and it is considered deprecated.  [The image hosted on Quay](https://quay.io/repository/invidious/invidious) is recommended as an alternative. This change is reflected in the `docker-compose.yml` file used in this walkthrough. Also, unlike Docker Hub, [Quay is open source](https://github.com/quay/quay/blob/master/LICENSE).
+{.is-warning}
+
+Ensure [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed before beginning.
+
+### Make directory
+
+```bash
+$ mkdir invidious
+```
+
+### Create Docker Compose file
+
+```bash
+$ cd invidious
+```
+
+```bash
+$ nano docker-compose.yml
+```
+
+Here is a working Compose setup:
+```docker
+version: "2.4"
+services:
+  postgres:
+    image: postgres:10
+    restart: always
+    networks:
+      - invidious
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+      - ./config/sql:/config/sql
+      - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
+    environment:
+      POSTGRES_DB: invidious
+      POSTGRES_USER: kemal
+      POSTGRES_PASSWORD: kemal
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+  invidious:
+    image: quay.io/invidious/invidious:latest
+    restart: always
+    networks:
+      - invidious
+    mem_limit: 1024M
+    cpus: 0.5
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      INVIDIOUS_CONFIG: |
+        channel_threads: 1
+        check_tables: true
+        feed_threads: 1
+        db:
+          dbname: invidious
+          user: kemal
+          password: kemal
+          host: postgres
+          port: 5432
+        full_refresh: false
+        https_only: false
+        domain: 
+      # external_port:
+    depends_on:
+      - postgres
+
+volumes:
+  postgresdata:
+
+networks:
+  invidious:
+```
+
+> The environment variable `POSTGRES_USER` cannot be changed. The SQL config files that run the initial database migrations are hard-coded with the username `kemal`.
+{.is-warning}
+
+### Start Invidious
 
 ```bash
 $ docker-compose up
 ```
+or 
+```bash
+$ docker-compose up -d
+```
+to run it in the background.
 
-Then visit `localhost:3000` in your browser.
+Then, visit `localhost:3000` in your browser.
 
-### Rebuild cluster
+### Stop Invidious
 
 ```bash
-$ docker-compose build
+$ docker-compose down
 ```
 
-### Delete data and rebuild
+### Delete data
 
 ```bash
 $ docker volume rm invidious_postgresdata
-$ docker-compose build
 ```
 
 ## Manual installation
