@@ -48,7 +48,11 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
 
+<<<<<<< HEAD
 * [i.eggo.xyz](https://i.eggo.xyz) 🇺🇸
+=======
+* [invidious.blamefran.net](https://invidious.blamefran.net) 🇺🇸
+>>>>>>> 577ed99e5bc184364b0bc3fe556b0b8dfacb1fcb
 
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
