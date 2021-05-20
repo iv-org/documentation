@@ -50,8 +50,6 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidious.blamefran.net](https://invidious.blamefran.net) 🇺🇸
 
-* [i.eggo.xyz](https://i.eggo.xyz) 🇺🇸
-
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
 
@@ -60,5 +58,3 @@ To be in this list, instances must have been updated in the last month. An insta
 * [kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion](http://kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion/) 🇳🇱
 
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸
-
-* [vidvwe3l54z5wfqzzyey2orl6q2jei3uht6rvgu4ev2oljac4tabqrqd.onion](http://vidvwe3l54z5wfqzzyey2orl6q2jei3uht6rvgu4ev2oljac4tabqrqd.onion) (https://i.eggo.xyz)
