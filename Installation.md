@@ -141,7 +141,7 @@ curl -fsSL https://crystal-lang.org/install.sh | sudo bash
 # That will add the signing key and the repository configuration.
 # If you prefer to do it manually, Follow the instructions here https://crystal-lang.org/install
 sudo apt-get update
-sudo apt install crystal libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev
+sudo apt install crystal libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
 ```
 
 Fedora
