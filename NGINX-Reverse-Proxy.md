@@ -2,7 +2,7 @@
 title: NGINX-Reverse-Proxy
 description: 
 published: true
-date: 2021-02-25T18:05:24.718Z
+date: 2021-05-23T16:59:09.054Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-28T20:40:07.950Z

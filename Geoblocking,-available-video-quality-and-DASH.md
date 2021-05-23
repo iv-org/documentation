@@ -2,7 +2,7 @@
 title: Geoblocking,-available-video-quality-and-DASH
 description: 
 published: true
-date: 2021-02-25T18:04:56.028Z
+date: 2021-05-23T16:58:38.141Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-28T20:39:32.300Z

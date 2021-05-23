@@ -2,7 +2,7 @@
 title: Search-operators
 description: 
 published: true
-date: 2021-02-25T18:05:33.606Z
+date: 2021-05-23T16:59:19.319Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-28T20:40:22.456Z
