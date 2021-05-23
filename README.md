@@ -18,6 +18,7 @@ dateCreated: 2021-01-28T20:40:17.421Z
 - [Using search operators](./Search-operators.md)
 - [List of URL parameters](./List-of-URL-parameters.md)
 - [How to deal with uMatrix](./How-to-deal-with-uMatrix.md)
+- [Export your subscriptions from Youtube into Invidious](./Export-YouTube-subscriptions.md)
 
 ## For Administrators
 
