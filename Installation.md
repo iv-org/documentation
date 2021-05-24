@@ -140,7 +140,7 @@ sudo pacman -S crystal
 yay -S downgrade (or `paru -S downgrade`)
 sudo downgrade crystal
 # > Select 0.36.1-1
-# When asked if you want to add it to the ignore list (so that it's never updated), you can choose yes.
+# When asked to add crystal to the ignore list (so it won't be updated in the future), choose "yes".
 
 # Install from the archive:
 # Checking the package's signature is optional, but is a recommended practice.
