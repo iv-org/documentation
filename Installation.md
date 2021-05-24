@@ -133,7 +133,7 @@ Arch Linux
 sudo pacman -S base-devel shards librsvg postgresql
 
 # Invidious depends on crystal 0.36.1-1, so it has to be installed from the archive.
-# Checking the package's signature is optional, but is a recommend practice.
+# Checking the package's signature is optional, but is a recommended practice.
 cd ~/Downloads
 wget https://archive.archlinux.org/packages/c/crystal/crystal-0.36.1-1-x86_64.pkg.tar.zst
 wget https://archive.archlinux.org/packages/c/crystal/crystal-0.36.1-1-x86_64.pkg.tar.zst.sig
@@ -141,7 +141,7 @@ gpg2 --homedir /etc/pacman.d/gnupg --verify crystal-0.36.1-1-x86_64.pkg.tar.zst.
 sudo pacman -U crystal-0.36.1-1-x86_64.pkg.tar.zst
 
 # Alternatively, you can use the `downgrade` script from the AUR.
-# Make sure to read the wiki before using AUR: https://wiki.archlinux.org/title/AUR
+# Make sure to read the wiki before using the AUR: https://wiki.archlinux.org/title/AUR
 sudo pacman -S crystal
 sudo yay -S downgrade
 sudo downgrade crystal
