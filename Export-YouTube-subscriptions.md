@@ -13,10 +13,7 @@ dateCreated: 2021-01-28T20:39:23.334Z
 **This process won't work if you go directly to [Google Takeout](https://takeout.google.com/). You must enter the Takeout process via YouTube as described below.**
 
 1. Make sure you are signed into YouTube with the account you want to export subscriptions for. 
-2. Click on your profile image in the upper right corner. 
-3. Click on the "Your data in YouTube" option.
-4. Click "More"
-5. Click "Download YouTube data"
+2. Open https://takeout.google.com/takeout/custom/youtube?continue=https%3A%2F%2Fmyaccount.google.com%2Fyourdata%2Fyoutube%3Fhl%3Det%26authuser%3D0
 6. Click "All YouTube data included"
 7. Click "Deselect all"
 8. Choose "channel-memberships"
