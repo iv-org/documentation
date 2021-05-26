@@ -1,6 +1,6 @@
 ---
 title: Export-YouTube-subscriptions
-description: Howto export YouTube channel subscription.
+description: How to export YouTube channel subscription.
 published: true
 date: 2021-04-17T00:00:00.000Z
 tags: 
