@@ -23,7 +23,7 @@ dateCreated: 2021-01-28T20:39:23.334Z
 12. Wait for the export to complete, it should be fairly quick.
 13. Download the export, it will be a .zip file. 
 14. Expand the ZIP file. 
-15. Go to Invidious, click the little gear in the upper right corner. 
+15. Go to Invidious, click on the gear in the upper-right corner.
 16. Scroll down and click "Import/export data"
 17. Click the "Browse" button next to "Import YouTube subscriptions"
 18. Browse to the path you expanded the ZIP file to, there should be a "Takeout" folder.
