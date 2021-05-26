@@ -14,12 +14,12 @@ dateCreated: 2021-01-28T20:39:23.334Z
 
 1. Make sure you are signed into YouTube with the account you want to export subscriptions for. 
 2. Open https://takeout.google.com/takeout/custom/youtube?continue=https%3A%2F%2Fmyaccount.google.com%2Fyourdata%2Fyoutube%3Fhl%3Det%26authuser%3D0
-6. Click "All YouTube data included"
-7. Click "Deselect all"
-8. Choose "channel-memberships"
-9. Click "OK"
-10. Click "Next step"
-11. Click "Create export"
+6. Click `All YouTube data included`.
+7. Click `Deselect all`.
+8. Choose `channel-memberships`.
+9. Click `OK`.
+10. Click `Next step`.
+11. Click `Create export`.
 12. Wait for the export to complete, it should be fairly quick.
 13. Download the export, it will be a .zip file. 
 14. Expand the ZIP file. 
