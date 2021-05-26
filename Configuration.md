@@ -10,7 +10,7 @@ dateCreated: 2021-01-28T20:39:13.768Z
 
 ### What can be configured and what are these configuration options?
 
-The configuration file is located at [invidious/config/config.yml](https://github.com/iv-org/invidious/blob/master/config/config.yml).
+The configuration file is located at [invidious/config/config.yml](https://github.com/iv-org/invidious/blob/master/config/config.example.yml).
 
 - `channel_threads` (default `1`) Number of threads to use for crawling videos from channels
 
