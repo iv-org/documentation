@@ -1,0 +1,38 @@
+name: Create markdown list
+
+on: 
+  pull_request:
+    branches: "*"
+    paths:
+     - 'instances.yaml'
+
+jobs:
+  build:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9.5
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r src/requirements.txt
+      
+      - name: Create markdown instance list
+        run: |
+          python src/create-instance-md.py
+    
+      # Auto commit resulting md file
+      - name: "Auto commiting resulting markdown instance list"
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update Invidious-Instances.md          
+          file_pattern: Invidious-Instances.md
