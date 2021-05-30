@@ -10,7 +10,7 @@ adding_instance:
     - Instances running a modified source code must respect the AGPL by publishing their source code and stating their changes before they are be added to the list, and must publish any later modification in a timely manner.
   directions:
     - Fork the documentation repo.
-    - Open `instances.yaml` for editing."
+    - Open `instances.yaml` for editing.
     - Append your instance to the bottom of the HTTPS (or onion) list. See the examples in the yaml file for more info.
     - Make a pull request.
 
@@ -217,6 +217,18 @@ instances:
         is_modified: False
         source_url: null
 
+    - url: https://invidious.moomoo.me
+      country:
+        flag: 🇩🇪
+        name: Germany
+      status:
+      privacy_policy:
+      ddos_mitm_protection: Cloudflare
+      owner: https://github.com/moom0o
+      modified:
+        is_modified: False
+        source_url: null 
+
   onion:
     # Template onion instance
     # - url: http://example.onion
@@ -234,7 +246,7 @@ instances:
       country:
         flag: 🇫🇮
         name: Finland
-      invidious.snopyta.org: invidious.snopyta.org
+      associated_clearnet_instance: https://invidious.snopyta.org
       privacy_policy:
       owner: https://github.com/Perflyst
       modified:
