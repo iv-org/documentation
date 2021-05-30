@@ -1,8 +1,8 @@
 # Public Instances:
 
-Uptime History: [stats.uptimerobot.com/89VnzSKAn](https://stats.uptimerobot.com/89VnzSKAn)
+Uptime History: [uptime.invidious.io](https://uptime.invidious.io)
 
-Instances API: [api.invidious.io](https://instances.invidious.io)
+Instances API: [api.invidious.io](https://api.invidious.io)
 
 
 # Instances list:
