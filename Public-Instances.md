@@ -4,6 +4,7 @@ Uptime History: [stats.uptimerobot.com/89VnzSKAn](https://stats.uptimerobot.com/
 
 Instances API: [api.invidious.io](https://instances.invidious.io)
 
+
 # Instances list:
 
 | Address                                                      | Country    | Status                                                                                                                                                                    | Privacy policy                              | DDos Protection / MITM  | Owner                                                  | Note                                                                                                                                                 |
@@ -21,6 +22,7 @@ Instances API: [api.invidious.io](https://instances.invidious.io)
 | [notyoutube.org](https://notyoutube.org)                     | 🇫🇮 Finland | None                                                                                                                                                                      | None                                        | None                    | [@Eggo-Plant](https://github.com/Eggo-Plant)           |                                                                                                                                                      |
 | [inv.riverside.rocks](https://inv.riverside.rocks)           | 🇺🇸 USA     | None                                                                                                                                                                      | None                                        | None                    | [@RiversideRocks](https://github.com/RiversideRocks)   |                                                                                                                                                      |
 | [invidious.blamefran.net](https://invidious.blamefran.net)   | 🇺🇸 USA     | None                                                                                                                                                                      | None                                        | None                    | [@Aidan16](https://github.com/Aidan16)                 |                                                                                                                                                      |
+| [invidious.moomoo.me](https://invidious.moomoo.me)           | 🇩🇪 Germany | None                                                                                                                                                                      | None                                        | Cloudflare              | [@moom0o](https://github.com/moom0o)                   |                                                                                                                                                      |
 
 
 # Tor onion instances list:
