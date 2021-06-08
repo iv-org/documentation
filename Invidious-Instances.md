@@ -44,11 +44,7 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidious.exonip.de](https://invidious.exonip.de) 🇩🇪 [Status Page](https://status.exonip.de/)
 
-* [notyoutube.org](https://notyoutube.org) 🇫🇮
-
 * [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
-
-* [invidious.blamefran.net](https://invidious.blamefran.net) 🇺🇸
 
 * [invidious.moomoo.me](https://invidious.moomoo.me) 🇩🇪 (uses Cloudflare)
 
