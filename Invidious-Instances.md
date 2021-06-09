@@ -46,6 +46,8 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
 
+* [invidious.blamefran.net](https://invidious.blamefran.net) 🇺🇸
+
 * [invidious.moomoo.me](https://invidious.moomoo.me) 🇩🇪 (uses Cloudflare)
 
 ### Tor Onion Services:
