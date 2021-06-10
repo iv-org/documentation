@@ -50,6 +50,8 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidious.moomoo.me](https://invidious.moomoo.me) 🇩🇪 (uses Cloudflare)
 
+* [ytb.trom.tf](https://ytb.trom.tf) 🇩🇪
+
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
 
