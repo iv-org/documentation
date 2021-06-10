@@ -126,56 +126,39 @@ $ docker volume rm invidious_postgresdata
 
 ### Linux
 
+#### Install crystal
+
+Follow the instructions for your distribution here: https://crystal-lang.org/install/
+
+If you're in a hurry, here are one-liner commands for some common distributions:
+* Arch linux `sudo pacman -S crystal shards`
+* Debian/Ubuntu: `curl -fsSL https://crystal-lang.org/install.sh | sudo bash; sudo apt update && sudo apt install crystal`
+* Fedora: `sudo brew update && sudo brew install crystal-lang`
+
+Or you can do a tarball install:
+```bash
+cd ~/Downloads
+wget https://github.com/crystal-lang/crystal/releases/download/1.0.0/crystal-1.0.0-1-linux-x86_64.tar.gz
+cd /opt
+sudo tar -xzf ~/Downloads/crystal-1.0.0-1-linux-x86_64.tar.gz
+sudo cp /opt/crystal-1.0.0-1/bin/{crystal,shards} /usr/local/bin/
+```
+
 #### Install the dependencies
 
 Arch Linux
 ```bash
-sudo pacman -S base-devel shards librsvg postgresql
-
-# Invidious depends on crystal 0.36.1-1, so you either have to downgrade Crystal or install it from the archive.
-
-# Downgrade using the `downgrade` script from the AUR ( https://aur.archlinux.org/packages/downgrade/ ):
-# A basic understanding of the AUR is required, and the installation of `yay` (or `paru`) has to be done
-sudo pacman -S crystal
-yay -S downgrade (or `paru -S downgrade`)
-sudo downgrade crystal
-# > Select 0.36.1-1
-# When asked to add crystal to the ignore list (so it won't be updated in the future), choose "yes".
-
-# Install from the archive:
-# Checking the package's signature is optional, but is a recommended practice.
-cd ~/Downloads
-wget https://archive.archlinux.org/packages/c/crystal/crystal-0.36.1-1-x86_64.pkg.tar.zst
-wget https://archive.archlinux.org/packages/c/crystal/crystal-0.36.1-1-x86_64.pkg.tar.zst.sig
-gpg2 --homedir /etc/pacman.d/gnupg --verify crystal-0.36.1-1-x86_64.pkg.tar.zst.sig crystal-0.36.1-1-x86_64.pkg.tar.zst
-sudo pacman -U crystal-0.36.1-1-x86_64.pkg.tar.zst
+sudo pacman -S base-devel librsvg postgresql
 ```
 
 Ubuntu or Debian
 ```bash
-# First you have to add the repository to your APT configuration. For easy setup just run in your command line:
-curl -fsSL https://crystal-lang.org/install.sh | sudo bash
-
-# That will add the signing key and the repository configuration.
-# If you prefer to do it manually, Follow the instructions here https://crystal-lang.org/install
 sudo apt-get update
-sudo apt install crystal libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
+sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
 ```
 
 Fedora
 ```bash
-# To install crystal on fedora, you can either install:
-#  - with brew/snap: https://crystal-lang.org/install/on_fedora/
-#  - from tarball: https://crystal-lang.org/install/from_targz/
-# Currently, invidious depends on crystal 0.36.1-1, so a tarball install is necessary.
-cd ~/Downloads
-wget https://github.com/crystal-lang/crystal/releases/download/0.36.1/crystal-0.36.1-1-linux-x86_64.tar.gz
-cd /opt
-sudo tar -xzf ~/Downloads/crystal-0.36.1-1-linux-x86_64.tar.gz
-sudo ln -s /opt/crystal-0.36.1-1/bin/crystal /usr/local/bin/crystal
-sudo ln -s /opt/crystal-0.36.1-1/bin/shards /usr/local/bin/shards
-
-# Then use dnf to install the dependencies:
 sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc
 ```
 
