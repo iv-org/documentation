@@ -132,7 +132,7 @@ Follow the instructions for your distribution here: https://crystal-lang.org/ins
 
 If you're in a hurry, here are one-liner commands for some common distributions:
 * Arch linux `sudo pacman -S crystal shards`
-* Debian/Ubuntu: `curl -fsSL https://crystal-lang.org/install.sh | sudo bash; sudo apt update && sudo apt install crystal`
+* Debian/Ubuntu: `curl -fsSL https://crystal-lang.org/install.sh | sudo bash`
 * Fedora: `sudo brew update && sudo brew install crystal-lang`
 
 Or you can do a tarball install:
