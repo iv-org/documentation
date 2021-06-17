@@ -42,6 +42,8 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidious.silkky.cloud](https://invidious.silkky.cloud) 🇫🇮 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m787784614-79d1acc4b425d1ed813fc793)](https://status.silkky.cloud/787784614)
 
+* [invidious.exonip.de](https://invidious.exonip.de) 🇩🇪 [Status Page](https://status.exonip.de/) (using modified stylesheet) - Changes: https://github.com/exonip-de/invidious-source-modifications
+
 * [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
 
 * [invidious.blamefran.net](https://invidious.blamefran.net) 🇺🇸
