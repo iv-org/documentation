@@ -52,7 +52,7 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [ytb.trom.tf](https://ytb.trom.tf) 🇩🇪
 
-* [yt.cyberhost.uk](https://yt.cyberhost.uk) 🇫🇮
+* [yt.cyberhost.uk](https://yt.cyberhost.uk) 🇫🇮 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788432154-c8801112193f349268ea6104)](https://stats.uptimerobot.com/JlM0qH8Ygn)
 
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
