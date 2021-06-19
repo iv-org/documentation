@@ -1,6 +1,7 @@
 name: Create markdown list
 
 on: 
+  workflow_dispatch:
   push:
     branches: "*"
     paths:
