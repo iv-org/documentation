@@ -8,6 +8,7 @@ adding_instance:
     - Instances using any type of anti-bot protection are marked as such.
     - "Instances using any type of analytics are marked as such, must be GDPR compliant (if it's usable in the EU), must be CCPA compliant (if it's usable in California), and must respect the AGPL by explaining their changes and by publishing their source code. In short: instances shouldn't run analytics, because it's not worth it."
     - Instances running a modified source code must respect the AGPL by publishing their source code and stating their changes before they are be added to the list, and must publish any later modification in a timely manner.
+    - Instances should be up and functional at least 90% of the time.
   directions:
     - Fork the documentation repo.
     - Open `instances.yaml` for editing.
