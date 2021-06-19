@@ -183,8 +183,8 @@ instances:
       ddos_mitm_protection:
       owner: https://github.com/Exonip
       modified:
-        is_modified: False
-        source_url: null
+        is_modified: True
+        source_url: https://github.com/exonip-de/invidious-source-modifications
 
     - url: https://inv.riverside.rocks
       country:
