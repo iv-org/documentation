@@ -1,6 +1,11 @@
 name: Create markdown list
 
 on: 
+  push:
+    branches: "*"
+    paths:
+     - 'instances.yaml'
+
   pull_request:
     branches: "*"
     paths:
