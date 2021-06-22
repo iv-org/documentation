@@ -32,8 +32,6 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664) [invidious-us.kavin.rocks](https://invidious-us.kavin.rocks) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788216947-f3f63d30899a10dbe9a0338a)](https://status.kavin.rocks/788216947) (uses Cloudflare)
 
-* [invidious.048596.xyz](https://invidious.048596.xyz/) 🇨🇦 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786792286-b5894e4e11c42b8332375076)](https://status.048596.xyz/786792286)
-
 * [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://stats.uptimerobot.com/n7A08HGVl6/786947233)
 
 * [ytprivate.com](https://ytprivate.com) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947505-2a50cf3262906bb28c6cf8fc)](https://status.ytprivate.com/786947505) (uses DDoS-Guard) (is running a modified source code) - Source Code: https://github.com/ytprivatecom/invidious - Changes: https://github.com/ytprivatecom/invidious#source-changes
