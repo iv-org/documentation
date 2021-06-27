@@ -31,7 +31,6 @@ instances:
     #   is_modified: false
     #   source: null
 
-
     - url: https://invidious.snopyta.org
       country: FI
       status:
@@ -115,12 +114,11 @@ instances:
       is_modified: false
       source: null
 
-
     - url: https://invidious.exonip.de
       country: DE
       status: 
         url: https://status.exonip.de/
-        display_content:  Uptime Robot status
+        display_content: Status Page
         display_content_is_image: False
       privacy_policy:
       ddos_mitm_protection:
@@ -164,7 +162,6 @@ instances:
       is_modified: false
       source: null
 
-
     - url: https://yt.cyberhost.uk/
       country: FI
       status: 
@@ -179,7 +176,6 @@ instances:
       is_modified: false
       source: null
 
-
     - url: https://y.com.cm/
       country: DE
       status: 
@@ -188,6 +184,16 @@ instances:
       owner: https://github.com/Showfom
       is_modified: false
       source: null
+            
+    - url: https://invidious.hub.ne.kr
+      country: SG
+      status: 
+      privacy_policy:
+      ddos_mitm_protection: null
+      owner: https://github.com/hys0star
+      is_modified: false
+      source: null
+
 
   onion:
     # Template onion instance
@@ -239,3 +245,28 @@ instances:
       owner: https://github.com/FireMasterK
       is_modified: false
       source: null
+      
+    - url: http://xinzguzyta7riddeoygku6btmm3mdryxtfzwwjxy3zqpoxk3xg5qq6ad.onion
+      country: DE
+      associated_clearnet_instance: https://invidious.moomoo.me
+      privacy_policy:
+      owner: https://github.com/moom0o
+      is_modified: false
+      source: null
+
+    - url: http://invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion/
+      country: DE
+      associated_clearnet_instance: https://invidious.exonip.de
+      privacy_policy:
+      owner: https://github.com/Exonip
+      is_modified: True
+      source: https://github.com/exonip-de/invidious-source-modifications
+
+    - url: http://vrg2a4cdxlngik5fkx6hbkslmd6yybsnot5bcegx6cfc7xja2t4r4zqd.onion
+      country: SG
+      associated_clearnet_instance: https://invidious.hub.ne.kr
+      privacy_policy:
+      owner: https://github.com/hys0star
+      is_modified: false
+      source: null
+
