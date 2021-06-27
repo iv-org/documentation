@@ -1,2 +1,3 @@
 mdutils==1.3.0
+pycountry==20.7.3
 PyYAML==5.4.1
