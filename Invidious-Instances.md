@@ -34,8 +34,6 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://stats.uptimerobot.com/n7A08HGVl6/786947233)
 
-* [ytprivate.com](https://ytprivate.com) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947505-2a50cf3262906bb28c6cf8fc)](https://status.ytprivate.com/786947505) (uses DDoS-Guard) (is running a modified source code) - Source Code: https://github.com/ytprivatecom/invidious - Changes: https://github.com/ytprivatecom/invidious#source-changes
-
 * [invidious.namazso.eu](https://invidious.namazso.eu) 🇩🇪
 
 * [invidious.silkky.cloud](https://invidious.silkky.cloud) 🇫🇮 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m787784614-79d1acc4b425d1ed813fc793)](https://status.silkky.cloud/787784614)
