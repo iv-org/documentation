@@ -70,3 +70,5 @@ To be in this list, instances must have been updated in the last month. An insta
 * [hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion](http://hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion) 🇺🇸 (Onion of invidious-us.kavin.rocks)
 
 * [xinzguzyta7riddeoygku6btmm3mdryxtfzwwjxy3zqpoxk3xg5qq6ad.onion](http://xinzguzyta7riddeoygku6btmm3mdryxtfzwwjxy3zqpoxk3xg5qq6ad.onion) 🇩🇪 (Onion of invidious.moomoo.me)
+
+* [invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion](http://invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion) 🇩🇪 (Onion of invidious.exonip.de)
