@@ -68,3 +68,5 @@ To be in this list, instances must have been updated in the last month. An insta
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸
 
 * [hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion](http://hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion) 🇺🇸 (Onion of invidious-us.kavin.rocks)
+
+* [xinzguzyta7riddeoygku6btmm3mdryxtfzwwjxy3zqpoxk3xg5qq6ad.onion](http://xinzguzyta7riddeoygku6btmm3mdryxtfzwwjxy3zqpoxk3xg5qq6ad.onion) 🇩🇪 (Onion of invidious.moomoo.me)
