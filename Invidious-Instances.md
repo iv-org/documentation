@@ -54,8 +54,6 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [y.com.cm](https://y.com.cm) 🇩🇪 (uses Cloudflare)
 
-* [invidious.cmh.pw](https://invidious.cmh.pw) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788551784-5acd7c39c59eca92a5e1346d)](https://stats.uptimerobot.com/GwjjntJLKD/788551784) (uses Cloudflare)
-
 * [invidious.s1gm4.eu](https://invidious.s1gm4.eu) 🇫🇷 [Status Page](https://status.s1gm4.eu)
 
 ### Tor Onion Services:
