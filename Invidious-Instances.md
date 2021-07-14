@@ -56,6 +56,8 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidious.s1gm4.eu](https://invidious.s1gm4.eu) 🇫🇷 [Status Page](https://status.s1gm4.eu)
 
+* [invidious.hub.ne.kr](https://invidious.hub.ne.kr) 🇸🇬
+
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
 
@@ -70,3 +72,5 @@ To be in this list, instances must have been updated in the last month. An insta
 * [xinzguzyta7riddeoygku6btmm3mdryxtfzwwjxy3zqpoxk3xg5qq6ad.onion](http://xinzguzyta7riddeoygku6btmm3mdryxtfzwwjxy3zqpoxk3xg5qq6ad.onion) 🇩🇪 (Onion of invidious.moomoo.me)
 
 * [invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion](http://invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion) 🇩🇪 (Onion of invidious.exonip.de)
+
+* [vrg2a4cdxlngik5fkx6hbkslmd6yybsnot5bcegx6cfc7xja2t4r4zqd.onion](http://vrg2a4cdxlngik5fkx6hbkslmd6yybsnot5bcegx6cfc7xja2t4r4zqd.onion) 🇩🇪 (Onion of invidious.hub.ne.kr)
