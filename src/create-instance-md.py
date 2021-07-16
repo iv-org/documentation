@@ -46,14 +46,13 @@ class ColumnBuilder:
             return ""
 
         status_url = status_dict["url"]
-        display_content = status_dict["display_content"]
+        image = status_dict.get("image")
+        text = status_dict.get("text", "Status Page")
 
-        if status_dict.get("display_content_is_image"):
-            fallback = status_dict["display_content_image_fallback"]
-
-            return f"[![{fallback}]({display_content})]({status_url})"
+        if image:
+            return f"[![{text}]({image})]({status_url})"
         else:
-            return f"[{display_content}]({status_url})"
+            return f"[{text}]({status_url})"
 
     @staticmethod
     def _create_modified_column(is_modified, source):

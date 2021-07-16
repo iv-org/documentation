@@ -22,22 +22,26 @@ instances:
     #   country: FI
     #   status: 
     #     url: https://status.example.com
-    #     display_content: https://status-image.example.com
-    #     display_content_is_image: True
-    #     display_content_image_fallback: uptime status
+    #     image: https://status-image.example.com 
+    #     text: Status Page
     #   privacy_policy: example.com/privacy
-    #   ddos_mitm_protection: null
+    #   ddos_mitm_protection:
     #   owner: https://github.com/example
-    #   is_modified: false
-    #   source: null
+    #   is_modified:
+    #   source:
+    #   notes:
+    #     _  Hi I am an example!
+    # 
+    # *Image attribute in status has higher prioirty than text. Thus, if this attribute is filled out
+    #  The text attribute would only be used as a fallback.
+
 
     - url: https://invidious.snopyta.org
       country: FI
       status:
         url: https://status.unixfox.eu/783898765
-        display_content: https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d
-        display_content_is_image: True
-        display_content_image_fallback: Uptime Robot status
+        image: https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d
+        text: Uptime Robot status
       privacy_policy: https://snopyta.org/privacy_policy
       ddos_mitm_protection: null
       owner: https://github.com/Perflyst
@@ -59,9 +63,8 @@ instances:
       country: IN
       status:
         url: https://status.kavin.rocks/786132664
-        display_content: https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71
-        display_content_is_image: True
-        display_content_image_fallback: Uptime Robot status
+        image: https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71
+        text: Uptime Robot status
       privacy_policy:
       ddos_mitm_protection: Cloudflare
       owner: https://github.com/FireMasterK
@@ -73,9 +76,8 @@ instances:
       country: US
       status: 
         url: https://status.kavin.rocks/788216947
-        display_content: https://img.shields.io/uptimerobot/status/m788216947-f3f63d30899a10dbe9a0338a
-        display_content_is_image: True
-        display_content_image_fallback: Uptime Robot status
+        image: https://img.shields.io/uptimerobot/status/m788216947-f3f63d30899a10dbe9a0338a
+        text: Uptime Robot status
       privacy_policy:
       ddos_mitm_protection: Cloudflare
       owner: https://github.com/FireMasterK
@@ -87,9 +89,8 @@ instances:
       country: US
       status: 
         url: https://stats.uptimerobot.com/n7A08HGVl6/786947233
-        display_content: https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3
-        display_content_is_image: True
-        display_content_image_fallback: Uptime Robot status
+        image: https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3
+        text: Uptime Robot status
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/ItsSt0ne
@@ -111,9 +112,8 @@ instances:
       country: FI
       status: 
         url: https://status.silkky.cloud/787784614
-        display_content:  https://img.shields.io/uptimerobot/status/m787784614-79d1acc4b425d1ed813fc793
-        display_content_is_image: True
-        display_content_image_fallback: Uptime Robot status
+        image:  https://img.shields.io/uptimerobot/status/m787784614-79d1acc4b425d1ed813fc793
+        text: Uptime Robot status
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/TheSilkky
@@ -126,8 +126,7 @@ instances:
       country: DE
       status: 
         url: https://status.exonip.de/
-        display_content: Status Page
-        display_content_is_image:
+        text: Status Page
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/Exonip
@@ -180,9 +179,8 @@ instances:
       country: FI
       status: 
         url: https://stats.uptimerobot.com/JlM0qH8Ygn
-        display_content: https://img.shields.io/uptimerobot/status/m788432154-c8801112193f349268ea6104
-        display_content_is_image: True
-        display_content_image_fallback: Uptime Robot status
+        image: https://img.shields.io/uptimerobot/status/m788432154-c8801112193f349268ea6104
+        text: Uptime Robot status
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/cyberhost-uk
@@ -236,6 +234,9 @@ instances:
     - url: http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion
       country: FI
       associated_clearnet_instance: https://invidious.snopyta.org
+      status:
+        image: https://status-image.example.com 
+        text: Status Page
       privacy_policy:
       owner: https://github.com/Perflyst
       is_modified:
