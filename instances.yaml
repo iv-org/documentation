@@ -41,8 +41,8 @@ instances:
       privacy_policy: https://snopyta.org/privacy_policy
       ddos_mitm_protection: null
       owner: https://github.com/Perflyst
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: https://yewtu.be
@@ -51,8 +51,8 @@ instances:
       privacy_policy: null
       ddos_mitm_protection: null
       owner: https://github.com/unixfox
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: https://invidious.kavin.rocks
@@ -65,8 +65,8 @@ instances:
       privacy_policy:
       ddos_mitm_protection: Cloudflare
       owner: https://github.com/FireMasterK
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: https://invidious-us.kavin.rocks
@@ -79,8 +79,8 @@ instances:
       privacy_policy:
       ddos_mitm_protection: Cloudflare
       owner: https://github.com/FireMasterK
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: https://vid.puffyan.us
@@ -93,8 +93,8 @@ instances:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/ItsSt0ne
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: https://invidious.namazso.eu
@@ -103,8 +103,8 @@ instances:
       privacy_policy: https://namazso.eu/privacy.html
       ddos_mitm_protection:
       owner: https://github.com/namazso
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: https://invidious.silkky.cloud
@@ -117,8 +117,8 @@ instances:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/TheSilkky
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes: 
         - "[Uses anti-bot protection](https://github.com/bunkerity/bunkerized-nginx)"
 
@@ -127,7 +127,7 @@ instances:
       status: 
         url: https://status.exonip.de/
         display_content: Status Page
-        display_content_is_image: False
+        display_content_is_image:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/Exonip
@@ -142,8 +142,8 @@ instances:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/RiversideRocks
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: https://invidious.blamefran.net
@@ -152,8 +152,8 @@ instances:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/Aidan16
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: https://invidious.moomoo.me
@@ -162,8 +162,8 @@ instances:
       privacy_policy:
       ddos_mitm_protection: Cloudflare
       owner: https://github.com/moom0o
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: https://ytb.trom.tf
@@ -172,8 +172,8 @@ instances:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/TROMsite
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: https://yt.cyberhost.uk/
@@ -187,8 +187,8 @@ instances:
       ddos_mitm_protection:
       owner: https://github.com/cyberhost-uk
       modified:
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: https://y.com.cm/
@@ -197,8 +197,18 @@ instances:
       privacy_policy:
       ddos_mitm_protection: Cloudflare
       owner: https://github.com/Showfom
-      is_modified: false
-      source: null
+      is_modified:
+      source:
+      notes:
+
+    - url: https://invidious.s1gm4.eu
+      country: FR
+      status: 
+      privacy_policy:
+      ddos_mitm_protection:
+      owner: https://github.com/OrnithOrtion
+      is_modified:
+      source:
       notes:
   
     - url: https://invidious.hub.ne.kr
@@ -207,8 +217,8 @@ instances:
       privacy_policy:
       ddos_mitm_protection: null
       owner: https://github.com/hys0star
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
 
@@ -228,8 +238,8 @@ instances:
       associated_clearnet_instance: https://invidious.snopyta.org
       privacy_policy:
       owner: https://github.com/Perflyst
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/
@@ -237,8 +247,8 @@ instances:
       associated_clearnet_instance: https://invidious.kavin.rocks
       privacy_policy:
       owner: https://github.com/FireMasterK
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: http://kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion/
@@ -246,8 +256,8 @@ instances:
       associated_clearnet_instance:
       privacy_policy:
       owner: https://github.com/tirz
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion/
@@ -255,8 +265,8 @@ instances:
       associated_clearnet_instance: https://vid.puffyan.us
       privacy_policy:
       owner: https://github.com/ItsSt0ne
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: http://hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion/
@@ -264,8 +274,8 @@ instances:
       associated_clearnet_instance: https://invidious-us.kavin.rocks/
       privacy_policy:
       owner: https://github.com/FireMasterK
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: http://xinzguzyta7riddeoygku6btmm3mdryxtfzwwjxy3zqpoxk3xg5qq6ad.onion
@@ -273,8 +283,8 @@ instances:
       associated_clearnet_instance: https://invidious.moomoo.me
       privacy_policy:
       owner: https://github.com/moom0o
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
     - url: http://invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion/
@@ -291,7 +301,7 @@ instances:
       associated_clearnet_instance: https://invidious.hub.ne.kr
       privacy_policy:
       owner: https://github.com/hys0star
-      is_modified: false
-      source: null
+      is_modified:
+      source:
       notes:
 
