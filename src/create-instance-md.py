@@ -16,7 +16,8 @@ class ColumnBuilder:
             "is_modified": self._create_modified_column,
             "privacy_policy": self._create_privacy_policy_column,
             "ddos_mitm_protection": self.ddos_protection,
-            "owner": self._create_owner_column
+            "owner": self._create_owner_column,
+            "notes": self._create_notes_column
         }
 
         return router[name]
@@ -73,6 +74,22 @@ class ColumnBuilder:
         author_name = owner.split("/")
         return f"[@{author_name[-1]}]({owner})"
 
+    @staticmethod
+    def _create_notes_column(notes, is_modified, source):
+        # It is possible for both the notes and is_modified data to be falsey
+        if not notes and not is_modified:
+            return ""
+
+        notes_list = []
+        if is_modified:
+            notes_list.append(f" - [Instance is running a modified source code]({source})")
+        if notes:
+            [notes_list.append(f" - {note}") for note in notes]
+                
+        
+        return '<br/>'.join(notes_list)
+
+            
 
 class MDInstanceListBuilder:
     def __init__(self, instance_list_config):
@@ -88,16 +105,17 @@ class MDInstanceListBuilder:
     def _create_instance_tables(self):
         # HTTPS
         self.md.new_header(level=1, title='Instances list')
-        rows = ["Address", "Country", "Status", "Privacy policy", "DDos Protection / MITM", "Owner", "Modified"]
+        rows = ["Address", "Country", "Status", "Privacy policy", "DDos Protection / MITM", "Owner", "Notes"]
         for instance in self.config["instances"]["https"]:
             rows.extend(self._create_http_row(instance))
+
         self.md.new_table(columns=7, rows=len(self.config["instances"]["https"]) + 1, text=rows, text_align='center')
 
         self.md.new_line()
 
         # Onion
         self.md.new_header(level=1, title='Onion instances list')
-        rows = ["Address", "Country", "Associated clearnet instance", "Privacy policy", "Owner", "Modified"]
+        rows = ["Address", "Country", "Associated clearnet instance", "Privacy policy", "Owner", "Notes"]
         for instance in self.config["instances"]["onion"]:
             rows.extend(self._create_onion_row(instance))
         self.md.new_table(columns=6, rows=len(self.config["instances"]["onion"]) + 1, text=rows, text_align='center')
@@ -120,7 +138,7 @@ class MDInstanceListBuilder:
             self.builder.route("privacy_policy")(instance["privacy_policy"]),
             self.builder.route("ddos_mitm_protection")(instance["ddos_mitm_protection"]),
             self.builder.route("owner")(instance["owner"]),
-            self.builder.route("is_modified")(instance["is_modified"], instance["source"])
+            self.builder.route("notes")(instance["notes"], instance["is_modified"], instance["source"]),
         ]
 
     def _create_onion_row(self, instance):
@@ -130,7 +148,7 @@ class MDInstanceListBuilder:
             self.builder.route("associated_clearnet_instance")(instance["associated_clearnet_instance"]),
             self.builder.route("privacy_policy")(instance["privacy_policy"]),
             self.builder.route("owner")(instance["owner"]),
-            self.builder.route("is_modified")(instance["is_modified"], instance["source"])
+            self.builder.route("notes")(instance["notes"], instance["is_modified"], instance["source"]),
         ]
 
     def create(self):
