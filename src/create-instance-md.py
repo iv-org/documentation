@@ -88,7 +88,6 @@ class ColumnBuilder:
         
         return '<br/>'.join(notes_list)
 
-            
 
 class MDInstanceListBuilder:
     def __init__(self, instance_list_config):

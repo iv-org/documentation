@@ -8,6 +8,7 @@ adding_instance:
     - Instances using any type of anti-bot protection are marked as such.
     - "Instances using any type of analytics are marked as such, must be GDPR compliant (if it's usable in the EU), must be CCPA compliant (if it's usable in California), and must respect the AGPL by explaining their changes and by publishing their source code. In short: instances shouldn't run analytics, because it's not worth it."
     - Instances running a modified source code must respect the AGPL by publishing their source code and stating their changes before they are be added to the list, and must publish any later modification in a timely manner.
+    - - The instance must also contain a link to *both* the modified and original source code of Invidious. Ideally in the footer.
     - Instances should be up and functional at least 90% of the time.
   directions:
     - Fork the documentation repo.
@@ -51,7 +52,10 @@ instances:
 
     - url: https://yewtu.be
       country: FR
-      status: null
+      status:
+        url: https://uptime.invidious.io/784257752
+        image: https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d
+        text: Uptime Robot status
       privacy_policy: null
       ddos_mitm_protection: null
       owner: https://github.com/unixfox
@@ -85,6 +89,19 @@ instances:
       source:
       notes:
 
+    - url: https://invidious-jp.kavin.rocks
+      country: JP
+      status: 
+        url: https://status.kavin.rocks/788866642
+        image: https://img.shields.io/uptimerobot/status/m788866642-8a4478b8853722e98b7634e9
+        text: Uptime Robot status
+      privacy_policy:
+      ddos_mitm_protection: Cloudflare
+      owner: https://github.com/FireMasterK
+      is_modified:
+      source:
+      notes:
+
     - url: https://vid.puffyan.us
       country: US
       status: 
@@ -96,6 +113,19 @@ instances:
       owner: https://github.com/ItsSt0ne
       is_modified:
       source:
+      notes:
+
+    - url: https://ytprivate.com
+      country: US
+      status: 
+        url: https://status.ytprivate.com/786947505
+        image: https://img.shields.io/uptimerobot/status/m786947505-2a50cf3262906bb28c6cf8fc
+        text: Uptime Robot status
+      privacy_policy:
+      ddos_mitm_protection: DDoS-Guard
+      owner: https://github.com/ytprivatecom
+      is_modified: true
+      source: https://github.com/ytprivatecom/invidious
       notes:
 
     - url: https://invidious.namazso.eu
@@ -155,38 +185,14 @@ instances:
       source:
       notes:
 
-    - url: https://invidious.moomoo.me
-      country: DE
-      status:
-      privacy_policy:
-      ddos_mitm_protection: Cloudflare
-      owner: https://github.com/moom0o
-      is_modified:
-      source:
-      notes:
-
     - url: https://ytb.trom.tf
       country: DE
       status:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/TROMsite
-      is_modified:
-      source:
-      notes:
-
-    - url: https://yt.cyberhost.uk/
-      country: FI
-      status: 
-        url: https://stats.uptimerobot.com/JlM0qH8Ygn
-        image: https://img.shields.io/uptimerobot/status/m788432154-c8801112193f349268ea6104
-        text: Uptime Robot status
-      privacy_policy:
-      ddos_mitm_protection:
-      owner: https://github.com/cyberhost-uk
-      modified:
-      is_modified:
-      source:
+      is_modified: True
+      source: https://gitlab.com/TioTrom/trom.tf-invidious
       notes:
 
     - url: https://y.com.cm/
@@ -202,6 +208,8 @@ instances:
     - url: https://invidious.s1gm4.eu
       country: FR
       status: 
+        url: https://status.s1gm4.eu/
+        text: Status Page
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/OrnithOrtion
@@ -217,6 +225,42 @@ instances:
       owner: https://github.com/hys0star
       is_modified:
       source:
+      notes:
+
+    - url: https://invidious.noho.st
+      country: GB
+      status: 
+        url: https://img.shields.io/uptimerobot/status/m788769382-1b3bca2509f1d891c4620dbe
+        image: https://img.shields.io/uptimerobot/status/m788769382-1b3bca2509f1d891c4620dbe
+        text: Uptime Robot status
+      privacy_policy:
+      ddos_mitm_protection: null
+      owner: https://github.com/tomaytotomato
+      is_modified:
+      source:
+      notes:
+
+    - url: https://invidio.xamh.de
+      country: DE
+      status: 
+        url: https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8
+        image: https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8
+        text: Uptime Robot status
+      privacy_policy:
+      ddos_mitm_protection: null
+      owner: https://github.com/11Tuvork28
+      is_modified:
+      source:
+      notes:
+
+    - url: https://youtube.076.ne.jp
+      country: JP
+      status: 
+      privacy_policy:
+      ddos_mitm_protection: null
+      owner: https://github.com/TechnicalSuwako
+      is_modified: True
+      source: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
       notes:
 
 
@@ -279,15 +323,6 @@ instances:
       source:
       notes:
 
-    - url: http://xinzguzyta7riddeoygku6btmm3mdryxtfzwwjxy3zqpoxk3xg5qq6ad.onion
-      country: DE
-      associated_clearnet_instance: https://invidious.moomoo.me
-      privacy_policy:
-      owner: https://github.com/moom0o
-      is_modified:
-      source:
-      notes:
-
     - url: http://invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion/
       country: DE
       associated_clearnet_instance: https://invidious.exonip.de
@@ -297,7 +332,7 @@ instances:
       source: https://github.com/exonip-de/invidious-source-modifications
       notes:
 
-    - url: http://vrg2a4cdxlngik5fkx6hbkslmd6yybsnot5bcegx6cfc7xja2t4r4zqd.onion
+    - url: http://pwo2md4lgxs3hvroqi6wg33h6a3pv47euax6km3alke7letglieokyd.onion
       country: SG
       associated_clearnet_instance: https://invidious.hub.ne.kr
       privacy_policy:
