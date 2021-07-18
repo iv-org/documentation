@@ -143,6 +143,7 @@ wget https://github.com/crystal-lang/crystal/releases/download/1.0.0/crystal-1.0
 cd /opt
 sudo tar -xzf ~/Downloads/crystal-1.0.0-1-linux-x86_64.tar.gz
 sudo cp /opt/crystal-1.0.0-1/bin/{crystal,shards} /usr/local/bin/
+sudo cp -r /opt/crystal-1.0.0-1/lib/crystal /usr/local/lib/crystal
 ```
 
 #### Install the dependencies
