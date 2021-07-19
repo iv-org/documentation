@@ -46,8 +46,6 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidious.blamefran.net](https://invidious.blamefran.net) 🇺🇸
 
-* [invidious.moomoo.me](https://invidious.moomoo.me) 🇩🇪 (uses Cloudflare)
-
 * [ytb.trom.tf](https://ytb.trom.tf) 🇩🇪
 
 * [yt.cyberhost.uk](https://yt.cyberhost.uk) 🇫🇮 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788432154-c8801112193f349268ea6104)](https://stats.uptimerobot.com/JlM0qH8Ygn)
@@ -68,8 +66,6 @@ To be in this list, instances must have been updated in the last month. An insta
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸
 
 * [hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion](http://hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion) 🇺🇸 (Onion of invidious-us.kavin.rocks)
-
-* [xinzguzyta7riddeoygku6btmm3mdryxtfzwwjxy3zqpoxk3xg5qq6ad.onion](http://xinzguzyta7riddeoygku6btmm3mdryxtfzwwjxy3zqpoxk3xg5qq6ad.onion) 🇩🇪 (Onion of invidious.moomoo.me)
 
 * [invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion](http://invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion) 🇩🇪 (Onion of invidious.exonip.de)
 
