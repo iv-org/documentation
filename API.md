@@ -225,26 +225,6 @@ source: "youtube", "reddit" (default: youtube)
 continuation: String
 ```
 
-##### GET `/api/v1/insights/:id`
-
-**Will always return 510: `YouTube has removed publicly-available analytics`\***
-
-> Schema:
-
-```javascript
-{
-    "viewCount": Int64,
-    "timeWatchedText": String,
-    "subscriptionsDriven": Int32,
-    "shares": Int32,
-    "avgViewDurationSeconds": Int32,
-
-    "graphData": {
-        // ...
-    }
-}
-```
-
 ##### GET `/api/v1/captions/:id`
 
 > Schema:
@@ -315,39 +295,6 @@ Parameters:
 ```
 type: "music", "gaming", "news", "movies"
 region: ISO 3166 country code (default: "US")
-```
-
-##### GET `/api/v1/top`
-
-> Schema:
-
-```javascript
-[
-  {
-    "title": String,
-    "videoId": String,
-    "videoThumbnails": [
-      {
-        "quality": String,
-        "url": String,
-        "width": Int32,
-        "height": Int32
-      }
-    ],
-
-    "lengthSeconds": Int32,
-    "viewCount": Int64,
-
-    "author": String,
-    "authorId": String,
-    "authorUrl": String,
-
-    "published": Int64,
-    "publishedText": String,
-    "description": String,
-    "descriptionHtml": String
-  }
-]
 ```
 
 ##### GET `/api/v1/popular`
