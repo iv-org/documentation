@@ -58,6 +58,8 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [https://invidious.noho.st](https://invidious.noho.st) 🇬🇧 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788769382-1b3bca2509f1d891c4620dbe)
 
+* [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8)
+
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
 
