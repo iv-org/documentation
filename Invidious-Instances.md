@@ -73,4 +73,4 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion](http://invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion) 🇩🇪 (Onion of invidious.exonip.de)
 
-* [vrg2a4cdxlngik5fkx6hbkslmd6yybsnot5bcegx6cfc7xja2t4r4zqd.onion](http://vrg2a4cdxlngik5fkx6hbkslmd6yybsnot5bcegx6cfc7xja2t4r4zqd.onion) 🇸🇬 (Onion of invidious.hub.ne.kr)
+* [xpwo2md4lgxs3hvroqi6wg33h6a3pv47euax6km3alke7letglieokyd.onion](http://xpwo2md4lgxs3hvroqi6wg33h6a3pv47euax6km3alke7letglieokyd.onion) 🇸🇬 (Onion of invidious.hub.ne.kr)
