@@ -15,6 +15,10 @@ If you have less (e.g on a cheap VPS) you can setup a SWAP file or partition, so
 
 After installation take a look at the [Post-install steps](#post-install-configuration).
 
+### Note on blocking bots
+
+Allowing bots that excessively crawl (Semrush, webmeup, etc.) will lead your instance to get blocked very fast. While not required, it is a good idea to consider using bot blocking software such as [Nginx Bad Bot Blocker](https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker).
+
 ## Automated installation
 
 [Invidious-Updater](https://github.com/tmiland/Invidious-Updater) is a self-contained script that can automatically install and update Invidious.
