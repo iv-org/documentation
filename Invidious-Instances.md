@@ -48,8 +48,6 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [ytb.trom.tf](https://ytb.trom.tf) 🇩🇪
 
-* [yt.cyberhost.uk](https://yt.cyberhost.uk) 🇫🇮 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788432154-c8801112193f349268ea6104)](https://stats.uptimerobot.com/JlM0qH8Ygn)
-
 * [y.com.cm](https://y.com.cm) 🇩🇪 (uses Cloudflare)
 
 * [invidious.s1gm4.eu](https://invidious.s1gm4.eu) 🇫🇷 [Status Page](https://status.s1gm4.eu)
