@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - Using invidious
+  * [The media could not be loaded…](#q-the-media-could-not-be-loaded)
   * [Could not check out a connection in 2.0 seconds (DB::PoolTimeout)](
     #q-could-not-check-out-a-connection-in-20-seconds-dbpooltimeout)
 
@@ -15,6 +16,16 @@
 
 
 # Using invidious
+
+## **Q:** The media could not be loaded…
+
+**A:** This problem can occur when Youtube sends corrupted video data.
+Try switching instance. Reloading the page a few times may also help.
+
+_Note:_ If you're trying to listen to music, you will have to go to Youtube.
+This type of content is protected by DRM. We currently don't support those.
+
+<br/>
 
 ## **Q:** Could not check out a connection in 2.0 seconds (DB::PoolTimeout)
 
