@@ -39,7 +39,7 @@ class ColumnBuilder:
             return ""
 
         hostname = urlparse(url).hostname
-        return f"[{hostname[:35] + (hostname[35:] and '...')}]({url})"
+        return f"[{hostname[:30] + (hostname[30:] and '...')}]({url})"
 
     def _create_country_column(self, country_code):
         main_name, main_flag = self.get_country_name_and_flag_from_code(country_code)

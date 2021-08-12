@@ -280,7 +280,7 @@ instances:
       status:
         image: https://status-image.example.com 
         text: Status Page
-      privacy_policy:
+      privacy_policy: https://snopyta.org/privacy_policy
       owner: https://github.com/Perflyst
       is_modified:
       source:
