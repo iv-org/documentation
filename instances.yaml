@@ -32,6 +32,9 @@ instances:
     #   source:
     #   notes:
     #     _  Hi I am an example!
+    #   mirrors: # Mirrors should follow a reduced syntax of the base instance
+    #     - url: https://us.example.com
+    #     - country: US
     # 
     # *Image attribute in status has higher prioirty than text. Thus, if this attribute is filled out
     #  The text attribute would only be used as a fallback.
@@ -49,6 +52,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors:
 
     - url: https://yewtu.be
       country: FR
@@ -62,6 +66,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors:
 
     - url: https://invidious.kavin.rocks
       country: IN
@@ -75,32 +80,12 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors:
+        - url: https://invidious-us.kavin.rocks
+          country: US
 
-    - url: https://invidious-us.kavin.rocks
-      country: US
-      status: 
-        url: https://status.kavin.rocks/788216947
-        image: https://img.shields.io/uptimerobot/status/m788216947-f3f63d30899a10dbe9a0338a
-        text: Uptime Robot status
-      privacy_policy:
-      ddos_mitm_protection: Cloudflare
-      owner: https://github.com/FireMasterK
-      is_modified:
-      source:
-      notes:
-
-    - url: https://invidious-jp.kavin.rocks
-      country: JP
-      status: 
-        url: https://status.kavin.rocks/788866642
-        image: https://img.shields.io/uptimerobot/status/m788866642-8a4478b8853722e98b7634e9
-        text: Uptime Robot status
-      privacy_policy:
-      ddos_mitm_protection: Cloudflare
-      owner: https://github.com/FireMasterK
-      is_modified:
-      source:
-      notes:
+        - url: https://invidious-jp.kavin.rocks
+          country: JP
 
     - url: https://vid.puffyan.us
       country: US
@@ -114,6 +99,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors:
 
     - url: https://ytprivate.com
       country: US
@@ -127,6 +113,7 @@ instances:
       is_modified: true
       source: https://github.com/ytprivatecom/invidious
       notes:
+      mirrors:
 
     - url: https://invidious.namazso.eu
       country: DE
@@ -137,6 +124,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors:
 
     - url: https://invidious.silkky.cloud
       country: FI
@@ -151,6 +139,7 @@ instances:
       source:
       notes: 
         - "[Uses anti-bot protection](https://github.com/bunkerity/bunkerized-nginx)"
+      mirrors:
 
     - url: https://invidious.exonip.de
       country: DE
@@ -164,6 +153,7 @@ instances:
       source: https://github.com/exonip-de/invidious-source-modifications
       notes: 
         - "[Uses anti-bot protection](https://github.com/bunkerity/bunkerized-nginx)"
+      mirrors:
 
     - url: https://inv.riverside.rocks
       country: US
@@ -174,6 +164,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors:
 
     - url: https://invidious.blamefran.net
       country: US
@@ -184,6 +175,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors:
 
     - url: https://ytb.trom.tf
       country: DE
@@ -194,6 +186,7 @@ instances:
       is_modified: True
       source: https://gitlab.com/TioTrom/trom.tf-invidious
       notes:
+      mirrors:
 
     - url: https://y.com.cm/
       country: DE
@@ -204,6 +197,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors:
 
     - url: https://invidious.s1gm4.eu
       country: FR
@@ -216,7 +210,8 @@ instances:
       is_modified:
       source:
       notes:
-  
+      mirrors:
+
     - url: https://invidious.hub.ne.kr
       country: SG
       status: 
@@ -226,6 +221,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors:
 
     - url: https://invidious.noho.st
       country: GB
@@ -239,6 +235,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors:
 
     - url: https://invidio.xamh.de
       country: DE
@@ -252,6 +249,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors:
 
     - url: https://youtube.076.ne.jp
       country: JP
@@ -262,6 +260,7 @@ instances:
       is_modified: True
       source: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
       notes:
+      mirrors:
 
 
   onion:

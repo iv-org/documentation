@@ -17,10 +17,21 @@ class ColumnBuilder:
             "privacy_policy": self._create_privacy_policy_column,
             "ddos_mitm_protection": self.ddos_protection,
             "owner": self._create_owner_column,
-            "notes": self._create_notes_column
+            "notes": self._create_notes_column,
+            "mirrors": self._create_mirror_column
         }
 
         return router[name]
+
+    @staticmethod
+    def get_country_name_and_flag_from_code(code):
+        name = pycountry.countries.get(alpha_2=code).name
+        # https://stackoverflow.com/a/42235254
+        flag = (lambda s, e: chr(ord(s.upper()) - 0x41 + 0x1F1E6) +
+                            chr(ord(e.upper()) - 0x41 + 0x1F1E6))(*list(code))
+
+        return name, flag
+
 
     @staticmethod
     def _create_url_column(url):
@@ -28,17 +39,11 @@ class ColumnBuilder:
             return ""
 
         hostname = urlparse(url).hostname
-        return f"[{hostname}]({url})"
+        return f"[{hostname[:35] + (hostname[35:] and '...')}]({url})"
 
-    @staticmethod
-    def _create_country_column(country_code):
-        country_name = pycountry.countries.get(alpha_2=country_code).name
-        # https://stackoverflow.com/a/42235254
-        flag = (lambda s, e: chr(ord(s.upper()) - 0x41 + 0x1F1E6) +
-                             chr(ord(e.upper()) - 0x41 + 0x1F1E6)
-                )(*list(country_code))
-
-        return f"{flag} {country_name}"
+    def _create_country_column(self, country_code, mirrors=None):
+        main_name, main_flag = self.get_country_name_and_flag_from_code(country_code)
+        return f"{main_name} {main_flag}"
 
     @staticmethod
     def _create_status_column(status_dict):
@@ -84,9 +89,20 @@ class ColumnBuilder:
             notes_list.append(f" - [Instance is running a modified source code]({source})")
         if notes:
             [notes_list.append(f" - {note}") for note in notes]
-                
         
         return '<br/>'.join(notes_list)
+
+    def _create_mirror_column(self, mirrors):
+        if not mirrors:
+            return ""
+
+        country_column = []
+
+        for mirror in mirrors:
+            name, flag = self.get_country_name_and_flag_from_code(mirror["country"])
+            country_column.append(f"[{name} {flag}]({mirror['url']})")
+
+        return "<br/>".join(country_column)
 
 
 class MDInstanceListBuilder:
@@ -103,11 +119,11 @@ class MDInstanceListBuilder:
     def _create_instance_tables(self):
         # HTTPS
         self.md.new_header(level=1, title='Instances list')
-        rows = ["Address", "Country", "Status", "Privacy policy", "DDos Protection / MITM", "Owner", "Notes"]
+        rows = ["Address", "Country", "Mirrors", "Status", "Privacy policy", "DDos Protection / MITM", "Owner", "Notes"]
         for instance in self.config["instances"]["https"]:
             rows.extend(self._create_http_row(instance))
 
-        self.md.new_table(columns=7, rows=len(self.config["instances"]["https"]) + 1, text=rows, text_align='center')
+        self.md.new_table(columns=8, rows=len(self.config["instances"]["https"]) + 1, text=rows, text_align='center')
 
         self.md.new_line()
 
@@ -132,6 +148,7 @@ class MDInstanceListBuilder:
         return [
             self.builder.route("url")(instance["url"]),
             self.builder.route("country")(instance["country"]),
+            self.builder.route("mirrors")(instance["mirrors"]),
             self.builder.route("status")(instance["status"]),
             self.builder.route("privacy_policy")(instance["privacy_policy"]),
             self.builder.route("ddos_mitm_protection")(instance["ddos_mitm_protection"]),
