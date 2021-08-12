@@ -340,3 +340,12 @@ instances:
       source:
       notes:
 
+    - url: http://p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion/
+      country: JP
+      associated_clearnet_instance: https://invidious-jp.kavin.rocks
+      privacy_policy:
+      owner: https://github.com/FireMasterK
+      is_modified:
+      source:
+      notes:
+
