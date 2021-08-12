@@ -41,7 +41,7 @@ class ColumnBuilder:
         hostname = urlparse(url).hostname
         return f"[{hostname[:35] + (hostname[35:] and '...')}]({url})"
 
-    def _create_country_column(self, country_code, mirrors=None):
+    def _create_country_column(self, country_code):
         main_name, main_flag = self.get_country_name_and_flag_from_code(country_code)
         return f"{main_name} {main_flag}"
 
@@ -67,10 +67,15 @@ class ColumnBuilder:
 
     @staticmethod
     def _create_privacy_policy_column(privacy):
+        if not privacy:
+            return ""
+
         return f"[Here]({privacy})"
 
     @staticmethod
     def ddos_protection(ddos):
+        if not ddos:
+            return ""
         return f"{ddos}"
 
     @staticmethod

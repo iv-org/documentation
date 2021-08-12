@@ -132,9 +132,9 @@ instances:
         url: https://status.silkky.cloud/787784614
         image:  https://img.shields.io/uptimerobot/status/m787784614-79d1acc4b425d1ed813fc793
         text: Uptime Robot status
-      privacy_policy:
+      privacy_policy: https://silkky.cloud/privacy
       ddos_mitm_protection:
-      owner: https://github.com/TheSilkky
+      owner: https://github.com/silkkycloud
       is_modified:
       source:
       notes: 
@@ -215,7 +215,7 @@ instances:
     - url: https://invidious.hub.ne.kr
       country: SG
       status: 
-      privacy_policy:
+      privacy_policy: https://privacy.osbusiness.net/
       ddos_mitm_protection: null
       owner: https://github.com/hys0star
       is_modified:
