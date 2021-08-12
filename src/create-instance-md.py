@@ -91,7 +91,7 @@ class ColumnBuilder:
 
         notes_list = []
         if is_modified:
-            notes_list.append(f" - [Instance is running a modified source code]({source})")
+            notes_list.append(f" - [Modified source code]({source})")
         if notes:
             [notes_list.append(f" - {note}") for note in notes]
         
@@ -134,10 +134,10 @@ class MDInstanceListBuilder:
 
         # Onion
         self.md.new_header(level=1, title='Onion instances list')
-        rows = ["Address", "Country", "Associated clearnet instance", "Privacy policy", "Owner", "Notes"]
+        rows = ["Address", "Country", "Mirrors", "Associated clearnet instance", "Privacy policy", "Owner", "Notes"]
         for instance in self.config["instances"]["onion"]:
             rows.extend(self._create_onion_row(instance))
-        self.md.new_table(columns=6, rows=len(self.config["instances"]["onion"]) + 1, text=rows, text_align='center')
+        self.md.new_table(columns=7, rows=len(self.config["instances"]["onion"]) + 1, text=rows, text_align='center')
 
     def _create_prerequisite_list(self):
         self.md.new_header(level=2, title='Prerequisites')
@@ -165,6 +165,7 @@ class MDInstanceListBuilder:
         return [
             self.builder.route("url")(instance["url"]),
             self.builder.route("country")(instance["country"]),
+            self.builder.route("mirrors")(instance["mirrors"]),
             self.builder.route("associated_clearnet_instance")(instance["associated_clearnet_instance"]),
             self.builder.route("privacy_policy")(instance["privacy_policy"]),
             self.builder.route("owner")(instance["owner"]),

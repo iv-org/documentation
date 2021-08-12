@@ -138,7 +138,7 @@ instances:
       is_modified:
       source:
       notes: 
-        - "[Uses anti-bot protection](https://github.com/bunkerity/bunkerized-nginx)"
+        - "[Anti-bot protection](https://github.com/bunkerity/bunkerized-nginx)"
       mirrors:
 
     - url: https://invidious.exonip.de
@@ -152,7 +152,7 @@ instances:
       is_modified: True
       source: https://github.com/exonip-de/invidious-source-modifications
       notes: 
-        - "[Uses anti-bot protection](https://github.com/bunkerity/bunkerized-nginx)"
+        - "[Anti-bot protection](https://github.com/bunkerity/bunkerized-nginx)"
       mirrors:
 
     - url: https://inv.riverside.rocks
@@ -285,6 +285,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors: 
 
     - url: http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/
       country: IN
@@ -294,6 +295,12 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors: 
+        - url: http://hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion/
+          country: US
+
+        - url: http://p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion/
+          country: JP
 
     - url: http://kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion/
       country: NL
@@ -303,6 +310,7 @@ instances:
       is_modified:
       source:
       notes:
+      mirrors: 
 
     - url: http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion/
       country: US
@@ -312,15 +320,7 @@ instances:
       is_modified:
       source:
       notes:
-
-    - url: http://hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion/
-      country: US
-      associated_clearnet_instance: https://invidious-us.kavin.rocks/
-      privacy_policy:
-      owner: https://github.com/FireMasterK
-      is_modified:
-      source:
-      notes:
+      mirrors: 
 
     - url: http://invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion/
       country: DE
@@ -330,6 +330,7 @@ instances:
       is_modified: True
       source: https://github.com/exonip-de/invidious-source-modifications
       notes:
+      mirrors:
 
     - url: http://pwo2md4lgxs3hvroqi6wg33h6a3pv47euax6km3alke7letglieokyd.onion
       country: SG
@@ -339,13 +340,4 @@ instances:
       is_modified:
       source:
       notes:
-
-    - url: http://p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion/
-      country: JP
-      associated_clearnet_instance: https://invidious-jp.kavin.rocks
-      privacy_policy:
-      owner: https://github.com/FireMasterK
-      is_modified:
-      source:
-      notes:
-
+      mirrors: 
