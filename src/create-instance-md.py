@@ -13,7 +13,6 @@ class ColumnBuilder:
             "associated_clearnet_instance": self._create_url_column,
             "country": self._create_country_column,
             "status": self._create_status_column,
-            "is_modified": self._create_modified_column,
             "privacy_policy": self._create_privacy_policy_column,
             "ddos_mitm_protection": self.ddos_protection,
             "owner": self._create_owner_column,
@@ -60,12 +59,6 @@ class ColumnBuilder:
             return f"[{text}]({status_url})"
 
     @staticmethod
-    def _create_modified_column(is_modified, source):
-        if is_modified:
-            return f"[Yes]({source})"
-        return f"No"
-
-    @staticmethod
     def _create_privacy_policy_column(privacy):
         if not privacy:
             return ""
@@ -84,14 +77,15 @@ class ColumnBuilder:
         return f"[@{author_name[-1]}]({owner})"
 
     @staticmethod
-    def _create_notes_column(notes, is_modified, source):
+    def _create_notes_column(notes, modified):
         # It is possible for both the notes and is_modified data to be falsey
-        if not notes and not is_modified:
+        if not notes and not modified:
             return ""
 
         notes_list = []
-        if is_modified:
-            notes_list.append(f" - [Modified source code]({source})")
+        if modified:
+            notes_list.append(f" - [Modified source code]({modified['source']})")
+            notes_list.append(f" - [Changes]({modified['changes']})")
         if notes:
             [notes_list.append(f" - {note}") for note in notes]
         
@@ -158,7 +152,7 @@ class MDInstanceListBuilder:
             self.builder.route("privacy_policy")(instance["privacy_policy"]),
             self.builder.route("ddos_mitm_protection")(instance["ddos_mitm_protection"]),
             self.builder.route("owner")(instance["owner"]),
-            self.builder.route("notes")(instance["notes"], instance["is_modified"], instance["source"]),
+            self.builder.route("notes")(instance["notes"], instance["modified"]),
         ]
 
     def _create_onion_row(self, instance):
@@ -169,7 +163,7 @@ class MDInstanceListBuilder:
             self.builder.route("associated_clearnet_instance")(instance["associated_clearnet_instance"]),
             self.builder.route("privacy_policy")(instance["privacy_policy"]),
             self.builder.route("owner")(instance["owner"]),
-            self.builder.route("notes")(instance["notes"], instance["is_modified"], instance["source"]),
+            self.builder.route("notes")(instance["notes"], instance["modified"]),
         ]
 
     def create(self):

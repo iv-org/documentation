@@ -49,8 +49,7 @@ instances:
       privacy_policy: https://snopyta.org/privacy_policy
       ddos_mitm_protection: null
       owner: https://github.com/Perflyst
-      is_modified:
-      source:
+      modified:
       notes:
       mirrors:
 
@@ -63,8 +62,7 @@ instances:
       privacy_policy: null
       ddos_mitm_protection: null
       owner: https://github.com/unixfox
-      is_modified:
-      source:
+      modified:
       notes:
       mirrors:
 
@@ -77,8 +75,7 @@ instances:
       privacy_policy:
       ddos_mitm_protection: Cloudflare
       owner: https://github.com/FireMasterK
-      is_modified:
-      source:
+      modified:
       notes:
       mirrors:
         - url: https://invidious-us.kavin.rocks
@@ -96,8 +93,7 @@ instances:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/ItsSt0ne
-      is_modified:
-      source:
+      modified:
       notes:
       mirrors:
 
@@ -110,8 +106,9 @@ instances:
       privacy_policy:
       ddos_mitm_protection: DDoS-Guard
       owner: https://github.com/ytprivatecom
-      is_modified: true
-      source: https://github.com/ytprivatecom/invidious
+      modified:
+        source: https://github.com/ytprivatecom/invidious
+        changes: https://github.com/ytprivatecom/invidious#source-changes
       notes:
       mirrors:
 
@@ -121,7 +118,7 @@ instances:
       privacy_policy: https://namazso.eu/privacy.html
       ddos_mitm_protection:
       owner: https://github.com/namazso
-      is_modified:
+      modified:
       source:
       notes:
       mirrors:
@@ -135,7 +132,7 @@ instances:
       privacy_policy: https://silkky.cloud/privacy
       ddos_mitm_protection:
       owner: https://github.com/silkkycloud
-      is_modified:
+      modified:
       source:
       notes: 
         - "[Anti-bot protection](https://github.com/bunkerity/bunkerized-nginx)"
@@ -149,8 +146,9 @@ instances:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/Exonip
-      is_modified: True
-      source: https://github.com/exonip-de/invidious-source-modifications
+      modified:
+        source: https://github.com/exonip-de/invidious-source-modifications
+        changes: https://github.com/exonip-de/invidious-source-modifications
       notes: 
         - "[Anti-bot protection](https://github.com/bunkerity/bunkerized-nginx)"
       mirrors:
@@ -161,7 +159,7 @@ instances:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/RiversideRocks
-      is_modified:
+      modified:
       source:
       notes:
       mirrors:
@@ -172,7 +170,7 @@ instances:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/Aidan16
-      is_modified:
+      modified:
       source:
       notes:
       mirrors:
@@ -183,8 +181,9 @@ instances:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/TROMsite
-      is_modified: True
-      source: https://gitlab.com/TioTrom/trom.tf-invidious
+      modified:
+        source: https://gitlab.com/TioTrom/trom.tf-invidious
+        changes: https://gitlab.com/TioTrom/trom.tf-invidious
       notes:
       mirrors:
 
@@ -194,8 +193,7 @@ instances:
       privacy_policy:
       ddos_mitm_protection: Cloudflare
       owner: https://github.com/Showfom
-      is_modified:
-      source:
+      modified:
       notes:
       mirrors:
 
@@ -207,7 +205,7 @@ instances:
       privacy_policy:
       ddos_mitm_protection:
       owner: https://github.com/OrnithOrtion
-      is_modified:
+      modified:
       source:
       notes:
       mirrors:
@@ -218,7 +216,7 @@ instances:
       privacy_policy: https://privacy.osbusiness.net/
       ddos_mitm_protection: null
       owner: https://github.com/hys0star
-      is_modified:
+      modified:
       source:
       notes:
       mirrors:
@@ -232,7 +230,7 @@ instances:
       privacy_policy:
       ddos_mitm_protection: null
       owner: https://github.com/tomaytotomato
-      is_modified:
+      modified:
       source:
       notes:
       mirrors:
@@ -246,7 +244,7 @@ instances:
       privacy_policy:
       ddos_mitm_protection: null
       owner: https://github.com/11Tuvork28
-      is_modified:
+      modified:
       source:
       notes:
       mirrors:
@@ -257,8 +255,9 @@ instances:
       privacy_policy:
       ddos_mitm_protection: null
       owner: https://github.com/TechnicalSuwako
-      is_modified: True
-      source: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
+      modified:
+        source: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
+        changes: https://git.076.ne.jp/TechnicalSuwako/invidious-mod#change
       notes:
       mirrors:
 
@@ -282,7 +281,7 @@ instances:
         text: Status Page
       privacy_policy: https://snopyta.org/privacy_policy
       owner: https://github.com/Perflyst
-      is_modified:
+      modified:
       source:
       notes:
       mirrors: 
@@ -292,7 +291,7 @@ instances:
       associated_clearnet_instance: https://invidious.kavin.rocks
       privacy_policy:
       owner: https://github.com/FireMasterK
-      is_modified:
+      modified:
       source:
       notes:
       mirrors: 
@@ -307,7 +306,7 @@ instances:
       associated_clearnet_instance:
       privacy_policy:
       owner: https://github.com/tirz
-      is_modified:
+      modified:
       source:
       notes:
       mirrors: 
@@ -317,7 +316,7 @@ instances:
       associated_clearnet_instance: https://vid.puffyan.us
       privacy_policy:
       owner: https://github.com/ItsSt0ne
-      is_modified:
+      modified:
       source:
       notes:
       mirrors: 
@@ -327,8 +326,9 @@ instances:
       associated_clearnet_instance: https://invidious.exonip.de
       privacy_policy:
       owner: https://github.com/Exonip
-      is_modified: True
-      source: https://github.com/exonip-de/invidious-source-modifications
+      modified:
+        source: https://github.com/exonip-de/invidious-source-modifications
+        changes: https://github.com/exonip-de/invidious-source-modifications
       notes:
       mirrors:
 
@@ -337,7 +337,7 @@ instances:
       associated_clearnet_instance: https://invidious.hub.ne.kr
       privacy_policy:
       owner: https://github.com/hys0star
-      is_modified:
+      modified:
       source:
       notes:
       mirrors: 
