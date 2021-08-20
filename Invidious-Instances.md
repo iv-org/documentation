@@ -50,7 +50,7 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidious.s1gm4.eu](https://invidious.s1gm4.eu) 🇫🇷 [Status Page](https://status.s1gm4.eu)
 
-* [invidious.hub.ne.kr](https://invidious.hub.ne.kr) 🇸🇬
+* [invidious.hub.ne.kr](https://invidious.hub.ne.kr) 🇰🇷
 
 * [https://invidious.noho.st](https://invidious.noho.st) 🇬🇧 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788769382-1b3bca2509f1d891c4620dbe)
 
@@ -72,6 +72,6 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion](http://invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion) 🇩🇪 (Onion of invidious.exonip.de)
 
-* [xpwo2md4lgxs3hvroqi6wg33h6a3pv47euax6km3alke7letglieokyd.onion](http://xpwo2md4lgxs3hvroqi6wg33h6a3pv47euax6km3alke7letglieokyd.onion) 🇸🇬 (Onion of invidious.hub.ne.kr)
+* [osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion](http://osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion) 🇰🇷 (Onion of invidious.hub.ne.kr)
 
 * [p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion](http://p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion) 🇯🇵 (Onion of invidious-jp.kavin.rocks)
