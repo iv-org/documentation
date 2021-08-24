@@ -48,8 +48,6 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [y.com.cm](https://y.com.cm) 🇩🇪 (uses Cloudflare)
 
-* [invidious.s1gm4.eu](https://invidious.s1gm4.eu) 🇫🇷 [Status Page](https://status.s1gm4.eu)
-
 * [invidious.hub.ne.kr](https://invidious.hub.ne.kr) 🇰🇷
 
 * [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8)
