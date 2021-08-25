@@ -42,14 +42,6 @@ If you have an Android phone/tablet, you can check the
 
 # Commonly encountered errors
 
-## **Q:** Do you provide pre-built binaries (`.deb`, `.rpm`, etc.)?
-
-**A:** We currently don't provide those, due to the rolling release nature
-of Invidious. Get a fresh `clone` or `pull` the latest commits from `master`
-instead.
-
-<br/>
-
 ## **Q:** The media could not be loaded…
 
 **A:** This problem can occur when Youtube sends corrupted video data.
@@ -69,7 +61,16 @@ instance from the [list of public instances](https://instances.invidious.io)
 
 <br/>
 
+
 # Running your own instance
+
+## **Q:** Do you provide pre-built binaries (`.deb`, `.rpm`, etc.)?
+
+**A:** We currently don't provide those, due to the rolling release nature
+of Invidious. Get a fresh `clone` or `pull` the latest commits from `master`
+instead.
+
+<br/>
 
 ## **Q:** How can I configure _[thing]_?
 
