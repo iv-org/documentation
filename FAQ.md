@@ -12,6 +12,8 @@
     #q-could-not-check-out-a-connection-in-20-seconds-dbpooltimeout)
 
 - Running your own instance
+  * [Do you provide pre-built binaries (`.deb`, `.rpm`, etc..)?](
+    #q-do-you-provide-pre-built-binaries-deb-rpm-etc)
   * [How can I configure _[thing]_?](#q-how-can-i-configure-thing)
   * [RSS feeds/links/etc... URLs redirect to `<IP>:3000` but I have a reverse proxy!](
     #q-rss-feedslinksetc-urls-redirect-to-ip3000-but-i-have-a-reverse-proxy)
@@ -39,6 +41,14 @@ If you have an Android phone/tablet, you can check the
 
 
 # Commonly encountered errors
+
+## **Q:** Do you provide pre-built binaries (`.deb`, `.rpm`, etc.)?
+
+**A:** We currently don't provide those, due to the rolling release nature
+of Invidious. Get a fresh `clone` or `pull` the latest commits from `master`
+instead.
+
+<br/>
 
 ## **Q:** The media could not be loaded…
 
