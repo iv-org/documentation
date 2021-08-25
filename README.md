@@ -11,6 +11,7 @@ dateCreated: 2021-01-28T20:40:17.421Z
 ## General
 
 - [Public Invidious Instances](./Invidious-Instances.md)
+- [Frequently Asked Questions](./FAQ.md)
 - [Extensions](./Extensions.md)
 - [Always proxy videos through server](./Always-use-"local"-to-proxy-video-through-the-server-without-creating-an-account.md)
 - [Preferences](./Preferences.md)
