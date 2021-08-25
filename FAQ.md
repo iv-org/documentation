@@ -3,11 +3,15 @@
 ## Table of Contents
 
 - Using invidious
+  * [Can I use Invidious on my device?](#q-can-i-use-invidious-on-my-device)
+  * [Do you plan to make an Android/iOS app?](#q-do-you-plan-to-make-an-androidios-app)
+
+- Commonly encountered errors
   * [The media could not be loaded…](#q-the-media-could-not-be-loaded)
   * [Could not check out a connection in 2.0 seconds (DB::PoolTimeout)](
     #q-could-not-check-out-a-connection-in-20-seconds-dbpooltimeout)
 
-- Running your instance
+- Running your own instance
   * [How can I configure _[thing]_?](#q-how-can-i-configure-thing)
   * [RSS feeds/links/etc... URLs redirect to `<IP>:3000` but I have a reverse proxy!](
     #q-rss-feedslinksetc-urls-redirect-to-ip3000-but-i-have-a-reverse-proxy)
@@ -16,6 +20,25 @@
 
 
 # Using invidious
+
+## **Q:** Can I use Invidious on my device?
+
+**A:** As long as your device is equipped with a modern web browser,
+sure, of course! A responsive interface is available for mobile/tablets.
+
+<br/>
+
+## **Q:** Do you plan to make an Android/iOS app?
+
+**A:** No. Invidious is and will always be a browser application.
+
+If you have an Android phone/tablet, you can check the
+[NewPipe](https://github.com/TeamNewPipe/NewPipe/) application.
+
+<br/>
+
+
+# Commonly encountered errors
 
 ## **Q:** The media could not be loaded…
 
@@ -36,7 +59,7 @@ instance from the [list of public instances](https://instances.invidious.io)
 
 <br/>
 
-# Running your instance
+# Running your own instance
 
 ## **Q:** How can I configure _[thing]_?
 
