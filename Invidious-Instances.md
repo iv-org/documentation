@@ -54,6 +54,8 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [youtube.076.ne.jp](https://youtube.076.ne.jp) 🇯🇵 - Source code/changes: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
 
+* [yt.didw.to](https://yt.didw.to/) 🇸🇪
+
 
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
@@ -71,3 +73,5 @@ To be in this list, instances must have been updated in the last month. An insta
 * [osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion](http://osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion) 🇰🇷 (Onion of invidious.hub.ne.kr)
 
 * [p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion](http://p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion) 🇯🇵 (Onion of invidious-jp.kavin.rocks)
+
+* [k7mnd6gyelynroxoncodxjz44fd5ch2ewfjl2a6ozmg3jy6fwyxq3cyd.onion](http://k7mnd6gyelynroxoncodxjz44fd5ch2ewfjl2a6ozmg3jy6fwyxq3cyd.onion/) 🇸🇪 (Onion of yt.didw.to
