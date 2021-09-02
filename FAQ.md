@@ -44,11 +44,24 @@ If you have an Android phone/tablet, you can check the
 
 ## **Q:** The media could not be loaded…
 
-**A:** This problem can occur when Youtube sends corrupted video data.
-Try switching instance. Reloading the page a few times may also help.
+**A:** This problem can occur in different scenarios:
 
-_Note:_ If you're trying to listen to music, you will have to go to Youtube.
-This type of content is protected by DRM. We currently don't support those.
+* If you're trying to watch a music clip, Youtube is likely blocking the
+  video stream. Try enabling `proxy videos` in the preferences (or add
+  `&local=1` in the URL). Switching instance is also a good alternative,
+  as this type of content is often geo-restricted.
+
+* Youtube often sends corrupted video data for the `hd720`, `medium` and
+  `small` quality settings. Refreshing the page multiple times (5-7) can
+  fix the problem. You may also set your `preferred video quality` to
+  `dash` (or add `&quality=dash` to the URL).
+
+* Rarely, it can be due to an internal failure of the instance and the
+  video stream can't be fetched. A simple page refresh can solve the issue.
+
+If none of the solutions listed above fix that problem, try switching
+instances. And if that still doesn't work, you'll have to watch the video
+on youtube itself (sorry for the inconvenience).
 
 <br/>
 
