@@ -44,6 +44,8 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
 
+* [vid.mint.lgbt](https://vid.mint.lgbt) 🇨🇦 [Status Page](https://status.mint.lgbt/service/lesvidious)
+
 * [ytb.trom.tf](https://ytb.trom.tf) 🇩🇪 Source code/changes (just CSS additions): https://gitlab.com/TioTrom/trom.tf-invidious
 
 * [y.com.cm](https://y.com.cm) 🇩🇪 (uses Cloudflare)
