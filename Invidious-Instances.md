@@ -77,4 +77,4 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion](http://p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion) 🇯🇵 (Onion of invidious-jp.kavin.rocks)
 
-* [k7mnd6gyelynroxoncodxjz44fd5ch2ewfjl2a6ozmg3jy6fwyxq3cyd.onion](http://k7mnd6gyelynroxoncodxjz44fd5ch2ewfjl2a6ozmg3jy6fwyxq3cyd.onion/) 🇸🇪 (Onion of yt.didw.to
+* [k7mnd6gyelynroxoncodxjz44fd5ch2ewfjl2a6ozmg3jy6fwyxq3cyd.onion](http://k7mnd6gyelynroxoncodxjz44fd5ch2ewfjl2a6ozmg3jy6fwyxq3cyd.onion/) 🇸🇪 (Onion of yt.didw.to)
