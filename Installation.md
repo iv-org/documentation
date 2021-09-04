@@ -25,8 +25,7 @@ Allowing bots that excessively crawl (Semrush, webmeup, etc.) will lead your ins
 
 ## Docker
 
-> **Use of the Invidious image hosted on Docker Hub is highly discouraged.** The current maintainers no longer have access to the account and it is considered deprecated.  [The image hosted on Quay](https://quay.io/repository/invidious/invidious) is recommended as an alternative. This change is reflected in the `docker-compose.yml` file used in this walkthrough. Also, unlike Docker Hub, [Quay is open source](https://github.com/quay/quay/blob/master/LICENSE).
-{.is-warning}
+> The Invidious docker image is only [available on Quay](https://quay.io/repository/invidious/invidious) because, unlike Docker Hub, [Quay is open source](https://github.com/quay/quay/blob/master/LICENSE). This is reflected in the `docker-compose.yml` file used in this walkthrough.{.is-warning}
 
 Ensure [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed before beginning.
 
