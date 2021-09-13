@@ -1,7 +1,10 @@
 name: New instance
 description: New public instance proposal form
 title: "[New instance] <instance name>"
-assignees: ''
+assignees: 
+  - syeopite
+  - unixfox
+  - samantazfox
 
 body:
   - type: checkboxes
