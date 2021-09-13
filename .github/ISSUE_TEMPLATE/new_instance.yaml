@@ -7,6 +7,15 @@ assignees:
   - samantazfox
 
 body:
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: "the URL of your instance"
+      placeholder: "Example: https://invidious.example.com"
+    validations:
+      required: true
+
   - type: checkboxes
     attributes:
       label: Mandatory checks
