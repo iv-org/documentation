@@ -54,7 +54,7 @@ instances:
       mirrors:
 
     - url: https://yewtu.be
-      country: FR
+      country: NE
       status:
         url: https://uptime.invidious.io/784257752
         image: https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d
@@ -164,12 +164,14 @@ instances:
       notes:
       mirrors:
 
-    - url: https://invidious.blamefran.net
-      country: US
-      status:
+    - url: https://vid.mint.lgbt/
+      country: CA
+      status: 
+        url: https://status.mint.lgbt/service/lesvidious
+        text: Status Page
       privacy_policy:
       ddos_mitm_protection:
-      owner: https://github.com/Aidan16
+      owner: https://github.com/mintphin
       modified:
       source:
       notes:
@@ -197,39 +199,12 @@ instances:
       notes:
       mirrors:
 
-    - url: https://invidious.s1gm4.eu
-      country: FR
-      status: 
-        url: https://status.s1gm4.eu/
-        text: Status Page
-      privacy_policy:
-      ddos_mitm_protection:
-      owner: https://github.com/OrnithOrtion
-      modified:
-      source:
-      notes:
-      mirrors:
-
     - url: https://invidious.hub.ne.kr
-      country: SG
+      country: KR
       status: 
       privacy_policy: https://privacy.osbusiness.net/
       ddos_mitm_protection: null
       owner: https://github.com/hys0star
-      modified:
-      source:
-      notes:
-      mirrors:
-
-    - url: https://invidious.noho.st
-      country: GB
-      status: 
-        url: https://img.shields.io/uptimerobot/status/m788769382-1b3bca2509f1d891c4620dbe
-        image: https://img.shields.io/uptimerobot/status/m788769382-1b3bca2509f1d891c4620dbe
-        text: Uptime Robot status
-      privacy_policy:
-      ddos_mitm_protection: null
-      owner: https://github.com/tomaytotomato
       modified:
       source:
       notes:
@@ -251,13 +226,23 @@ instances:
 
     - url: https://youtube.076.ne.jp
       country: JP
-      status: 
+      status:
       privacy_policy:
       ddos_mitm_protection: null
       owner: https://github.com/TechnicalSuwako
       modified:
         source: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
         changes: https://git.076.ne.jp/TechnicalSuwako/invidious-mod#change
+      notes:
+      mirrors:
+
+    - url: https://yt.didw.to/
+      country: SE
+      status: 
+      privacy_policy:
+      ddos_mitm_protection: null
+      owner: https://github.com/didw-to
+      modified:
       notes:
       mirrors:
 
@@ -333,10 +318,20 @@ instances:
       mirrors:
 
     - url: http://pwo2md4lgxs3hvroqi6wg33h6a3pv47euax6km3alke7letglieokyd.onion
-      country: SG
+      country: KR
       associated_clearnet_instance: https://invidious.hub.ne.kr
       privacy_policy:
       owner: https://github.com/hys0star
+      modified:
+      source:
+      notes:
+      mirrors: 
+
+    - url: http://k7mnd6gyelynroxoncodxjz44fd5ch2ewfjl2a6ozmg3jy6fwyxq3cyd.onion/ 
+      country: SE
+      associated_clearnet_instance: https://yt.didw.to/
+      privacy_policy:
+      owner: https://github.com/didw-to
       modified:
       source:
       notes:
