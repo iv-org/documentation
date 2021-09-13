@@ -1,0 +1,56 @@
+name: New instance
+description: New public instance proposal form
+title: "[New instance] <instance name>"
+assignees: ''
+
+body:
+- type: checkboxes
+  attributes:
+    label: Mandatory checks
+    description: "Your instance must fulfill all the conditions listed below in order to be accepted"
+    options:
+    - label: "Instance has a domain name"
+      required: true
+    - label: "Instance is served over HTTPS"
+      required: true
+    - label: "Statistics (`/api/v1/stats`) are enabled"
+      required: true
+
+- type: checkboxes
+  attributes:
+    label: Maintainer chart
+    description: "As a maintainer, I acknowledge that I must do the following to stay in the public list"
+    - label: "Ensure that my instance is up to date (less than one month old)"
+      required: true
+    - label: "Ensure a proper uptime of my instance (around 90%)"
+      required: true
+
+- type: input
+  id: mitm-name
+  attributes:
+    label: Man in the Middle
+    description: "If your instance is behing a DDoS protection or MitM system, please specify that here"
+    placeholder: "Example: CloudFlare"
+  validations:
+    required: false
+
+- type: input
+  id: source-code-url
+  attributes:
+    label: Source code URL
+    description: "If your instance is running a modified source code, please provide the URL below"
+    placeholder: "Example: https://git.example.com/you/invidious"
+  validations:
+    required: false
+
+- type: checkboxes
+  attributes:
+    label: Analytics
+    description: "If your instance is running analytics:"
+    options:
+    - label: "They are GDPR/CCPA compliant"
+      required: false
+    - label: "This is stated in your Privacy Policy"
+      required: false
+    - label: "You have provided the source code's URL in the dedicated field above"
+      required: false
