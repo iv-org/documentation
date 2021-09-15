@@ -44,8 +44,8 @@ body:
       label: Host country
       description: What country is the instance
       placeholder: "Example: United States"
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: input
     id: mitm-name
