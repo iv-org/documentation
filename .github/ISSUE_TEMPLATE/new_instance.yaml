@@ -51,7 +51,7 @@ body:
     id: mitm-name
     attributes:
       label: Man in the Middle
-      description: "If your instance is behing a DDoS protection or MitM system, please specify that here"
+      description: "If your instance is behind a DDoS protection or MitM system, please specify that here"
       placeholder: "Example: CloudFlare"
     validations:
       required: false
