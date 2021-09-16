@@ -246,6 +246,16 @@ instances:
       notes:
       mirrors:
 
+    - url: https://yt.artemislena.eu
+      country: DE
+      status:
+      privacy_policy: https://artemislena.eu/privacy.html
+      ddos_mitm_protection: null
+      owner: https://github.com/artemislena
+      modified:
+      notes:
+      mirrors:
+
 
   onion:
     # Template onion instance
