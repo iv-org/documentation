@@ -59,7 +59,7 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [yt.didw.to](https://yt.didw.to/) 🇸🇪
 
-* [yt.artemislena.eu](yt.artemislena.eu) 🇩🇪
+* [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
 
 ### Tor Onion Services:
