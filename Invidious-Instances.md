@@ -43,8 +43,6 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [invidious.exonip.de](https://invidious.exonip.de) 🇩🇪 [Status Page](https://status.exonip.de/) - Source code/changes: https://github.com/exonip-de/invidious-source-modifications - Uses anti-bot protection by bunkerized-nginx: https://github.com/bunkerity/bunkerized-nginx
 
-* [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
-
 * [vid.mint.lgbt](https://vid.mint.lgbt) 🇨🇦 [Status Page](https://status.mint.lgbt/service/lesvidious)
 
 * [ytb.trom.tf](https://ytb.trom.tf) 🇩🇪 Source code/changes (just CSS additions): https://gitlab.com/TioTrom/trom.tf-invidious
