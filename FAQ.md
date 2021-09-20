@@ -5,6 +5,8 @@
 - Using invidious
   * [Can I use Invidious on my device?](#q-can-i-use-invidious-on-my-device)
   * [Do you plan to make an Android/iOS app?](#q-do-you-plan-to-make-an-androidios-app)
+  * [What data is collected by Invidious?](#q-what-data-is-collected-by-invidious)
+  * [What data is shared with YouTube?](#q-what-data-is-shared-with-youtube)
 
 - Commonly encountered errors
   * [The media could not be loaded…](#q-the-media-could-not-be-loaded)
@@ -36,6 +38,46 @@ sure, of course! A responsive interface is available for mobile/tablets.
 
 If you have an Android phone/tablet, you can check the
 [NewPipe](https://github.com/TeamNewPipe/NewPipe/) application.
+
+<br/>
+
+## **Q:** What data is collected by Invidious?
+
+**A:** Invidious by itself does not collect any data about its users, but
+keep in mind that instance owners can log your IP address (like any other
+server on the internet).
+
+By default, the server logs which URLs were accessed, the associated error
+code (e.g 404 if the URL was not found) and the time it took for the server
+to respond.
+
+Here is what the server logs looks like:
+
+```
+2021-08-30 18:15:44 UTC [info] 200 GET /watch?v=GIAKHj9uJtM 781.21ms
+2021-08-30 18:15:49 UTC [info] 200 GET /api/v1/search?q=Fly%20away 500.0ms
+2021-08-30 18:15:49 UTC [info] 200 GET /vi/lJcqAzWFWLs/mqdefault.jpg 15.82ms
+2021-08-30 18:15:49 UTC [info] 200 GET /vi/JoP_Tte7z7o/mqdefault.jpg 70.64ms
+```
+
+When you create an account, your watch history and the list of channels you
+subscribed will be stored in the server's database. You can export, migrate
+or delete these data at any time from your user account page.
+
+<br/>
+
+## **Q:** What data is shared with youTube?
+
+**A:** By default, the video stream is fetched directly from Google's servers
+(`googlevideo.com`) in order to reduce the bandwidth required by invidious,
+meaning that Google will be able to see your IP address and some other data
+commonly sent by web browsers, like your user-agent string.
+
+If you don't want that to happen, you can go to the `preferences` page and
+check the `Proxy videos` option. When this option is enabled, the invidious
+instance will be used as a relay (also know as a "proxy") between you and
+Google's servers, which will hide your IP address and the other information
+sent by your browser.
 
 <br/>
 
