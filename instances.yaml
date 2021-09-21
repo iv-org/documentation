@@ -1,0 +1,348 @@
+adding_instance:
+  prerequisites:
+    - Instances must have been updated in the last month. An instance that hasn't been updated in the last month is considered unmaintained and is removed from the list.
+    - Instances must have statistics (/api/v1/stats) enabled (statistics_enabled:true in the configuration file)
+    - Instances must be served via domain name.
+    - Instances must be served via HTTPS.
+    - Instances using any DDoS Protection / MITM are marked as such.
+    - Instances using any type of anti-bot protection are marked as such.
+    - "Instances using any type of analytics are marked as such, must be GDPR compliant (if it's usable in the EU), must be CCPA compliant (if it's usable in California), and must respect the AGPL by explaining their changes and by publishing their source code. In short: instances shouldn't run analytics, because it's not worth it."
+    - Instances running a modified source code must respect the AGPL by publishing their source code and stating their changes before they are be added to the list, and must publish any later modification in a timely manner.
+    - - The instance must also contain a link to *both* the modified and original source code of Invidious. Ideally in the footer.
+    - Instances should be up and functional at least 90% of the time.
+  directions:
+    - Fork the documentation repo.
+    - Open `instances.yaml` for editing.
+    - Append your instance to the bottom of the HTTPS (or onion) list. See the examples in the yaml file for more info.
+    - Make a pull request.
+
+instances:
+  https:
+    # Template instance
+    # - url: https://example.com
+    #   country: FI
+    #   status: 
+    #     url: https://status.example.com
+    #     image: https://status-image.example.com 
+    #     text: Status Page
+    #   privacy_policy: example.com/privacy
+    #   ddos_mitm_protection:
+    #   owner: https://github.com/example
+    #   is_modified:
+    #   source:
+    #   notes:
+    #     _  Hi I am an example!
+    #   mirrors: # Mirrors should follow a reduced syntax of the base instance
+    #     - url: https://us.example.com
+    #     - country: US
+    # 
+    # *Image attribute in status has higher prioirty than text. Thus, if this attribute is filled out
+    #  The text attribute would only be used as a fallback.
+
+
+    - url: https://invidious.snopyta.org
+      country: FI
+      status:
+        url: https://status.unixfox.eu/783898765
+        image: https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d
+        text: Uptime Robot status
+      privacy_policy: https://snopyta.org/privacy_policy
+      ddos_mitm_protection: null
+      owner: https://github.com/Perflyst
+      modified:
+      notes:
+      mirrors:
+
+    - url: https://yewtu.be
+      country: NE
+      status:
+        url: https://uptime.invidious.io/784257752
+        image: https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d
+        text: Uptime Robot status
+      privacy_policy: null
+      ddos_mitm_protection: null
+      owner: https://github.com/unixfox
+      modified:
+      notes:
+      mirrors:
+
+    - url: https://invidious.kavin.rocks
+      country: IN
+      status:
+        url: https://status.kavin.rocks/786132664
+        image: https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71
+        text: Uptime Robot status
+      privacy_policy:
+      ddos_mitm_protection: Cloudflare
+      owner: https://github.com/FireMasterK
+      modified:
+      notes:
+      mirrors:
+        - url: https://invidious-us.kavin.rocks
+          country: US
+
+        - url: https://invidious-jp.kavin.rocks
+          country: JP
+
+    - url: https://vid.puffyan.us
+      country: US
+      status: 
+        url: https://stats.uptimerobot.com/n7A08HGVl6/786947233
+        image: https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3
+        text: Uptime Robot status
+      privacy_policy:
+      ddos_mitm_protection:
+      owner: https://github.com/ItsSt0ne
+      modified:
+      notes:
+      mirrors:
+
+    - url: https://ytprivate.com
+      country: US
+      status: 
+        url: https://status.ytprivate.com/786947505
+        image: https://img.shields.io/uptimerobot/status/m786947505-2a50cf3262906bb28c6cf8fc
+        text: Uptime Robot status
+      privacy_policy:
+      ddos_mitm_protection: DDoS-Guard
+      owner: https://github.com/ytprivatecom
+      modified:
+        source: https://github.com/ytprivatecom/invidious
+        changes: https://github.com/ytprivatecom/invidious#source-changes
+      notes:
+      mirrors:
+
+    - url: https://invidious.namazso.eu
+      country: DE
+      status: 
+      privacy_policy: https://namazso.eu/privacy.html
+      ddos_mitm_protection:
+      owner: https://github.com/namazso
+      modified:
+      source:
+      notes:
+      mirrors:
+
+    - url: https://invidious.silkky.cloud
+      country: FI
+      status: 
+        url: https://status.silkky.cloud/787784614
+        image:  https://img.shields.io/uptimerobot/status/m787784614-79d1acc4b425d1ed813fc793
+        text: Uptime Robot status
+      privacy_policy: https://silkky.cloud/privacy
+      ddos_mitm_protection:
+      owner: https://github.com/silkkycloud
+      modified:
+      source:
+      notes: 
+        - "[Anti-bot protection](https://github.com/bunkerity/bunkerized-nginx)"
+      mirrors:
+
+    - url: https://invidious.exonip.de
+      country: DE
+      status: 
+        url: https://status.exonip.de/
+        text: Status Page
+      privacy_policy:
+      ddos_mitm_protection:
+      owner: https://github.com/Exonip
+      modified:
+        source: https://github.com/exonip-de/invidious-source-modifications
+        changes: https://github.com/exonip-de/invidious-source-modifications
+      notes: 
+        - "[Anti-bot protection](https://github.com/bunkerity/bunkerized-nginx)"
+      mirrors:
+
+    - url: https://inv.riverside.rocks
+      country: US
+      status:
+      privacy_policy:
+      ddos_mitm_protection:
+      owner: https://github.com/RiversideRocks
+      modified:
+      source:
+      notes:
+      mirrors:
+
+    - url: https://vid.mint.lgbt/
+      country: CA
+      status: 
+        url: https://status.mint.lgbt/service/lesvidious
+        text: Status Page
+      privacy_policy:
+      ddos_mitm_protection:
+      owner: https://github.com/mintphin
+      modified:
+      source:
+      notes:
+      mirrors:
+
+    - url: https://ytb.trom.tf
+      country: DE
+      status:
+      privacy_policy:
+      ddos_mitm_protection:
+      owner: https://github.com/TROMsite
+      modified:
+        source: https://gitlab.com/TioTrom/trom.tf-invidious
+        changes: https://gitlab.com/TioTrom/trom.tf-invidious
+      notes:
+      mirrors:
+
+    - url: https://y.com.cm/
+      country: DE
+      status: 
+      privacy_policy:
+      ddos_mitm_protection: Cloudflare
+      owner: https://github.com/Showfom
+      modified:
+      notes:
+      mirrors:
+
+    - url: https://invidious.hub.ne.kr
+      country: KR
+      status: 
+      privacy_policy: https://privacy.osbusiness.net/
+      ddos_mitm_protection: null
+      owner: https://github.com/hys0star
+      modified:
+      source:
+      notes:
+      mirrors:
+
+    - url: https://invidio.xamh.de
+      country: DE
+      status: 
+        url: https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8
+        image: https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8
+        text: Uptime Robot status
+      privacy_policy:
+      ddos_mitm_protection: null
+      owner: https://github.com/11Tuvork28
+      modified:
+      source:
+      notes:
+      mirrors:
+
+    - url: https://youtube.076.ne.jp
+      country: JP
+      status:
+      privacy_policy:
+      ddos_mitm_protection: null
+      owner: https://github.com/TechnicalSuwako
+      modified:
+        source: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
+        changes: https://git.076.ne.jp/TechnicalSuwako/invidious-mod#change
+      notes:
+      mirrors:
+
+    - url: https://yt.didw.to/
+      country: SE
+      status: 
+      privacy_policy:
+      ddos_mitm_protection: null
+      owner: https://github.com/didw-to
+      modified:
+      notes:
+      mirrors:
+
+    - url: https://yt.artemislena.eu
+      country: DE
+      status:
+      privacy_policy: https://artemislena.eu/privacy.html
+      ddos_mitm_protection: null
+      owner: https://github.com/artemislena
+      modified:
+      notes:
+      mirrors:
+
+
+  onion:
+    # Template onion instance
+    #   url: http://example.onion
+    #   country: FI
+    #   associated_clearnet_instance: https://example.com
+    #   privacy_policy: https://privacy.example.com
+    #   owner: https://github.com/example
+    #   modified:
+    #   is_modified: false
+    #   source: null
+
+    - url: http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion
+      country: FI
+      associated_clearnet_instance: https://invidious.snopyta.org
+      status:
+        image: https://status-image.example.com 
+        text: Status Page
+      privacy_policy: https://snopyta.org/privacy_policy
+      owner: https://github.com/Perflyst
+      modified:
+      source:
+      notes:
+      mirrors: 
+
+    - url: http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/
+      country: IN
+      associated_clearnet_instance: https://invidious.kavin.rocks
+      privacy_policy:
+      owner: https://github.com/FireMasterK
+      modified:
+      source:
+      notes:
+      mirrors: 
+        - url: http://hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion/
+          country: US
+
+        - url: http://p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion/
+          country: JP
+
+    - url: http://kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion/
+      country: NL
+      associated_clearnet_instance:
+      privacy_policy:
+      owner: https://github.com/tirz
+      modified:
+      source:
+      notes:
+      mirrors: 
+
+    - url: http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion/
+      country: US
+      associated_clearnet_instance: https://vid.puffyan.us
+      privacy_policy:
+      owner: https://github.com/ItsSt0ne
+      modified:
+      source:
+      notes:
+      mirrors: 
+
+    - url: http://invidc4i7i5uci6cledxsao6w7ng5etpflagdzoxj3yhipztwzvqjryd.onion/
+      country: DE
+      associated_clearnet_instance: https://invidious.exonip.de
+      privacy_policy:
+      owner: https://github.com/Exonip
+      modified:
+        source: https://github.com/exonip-de/invidious-source-modifications
+        changes: https://github.com/exonip-de/invidious-source-modifications
+      notes:
+      mirrors:
+
+    - url: http://pwo2md4lgxs3hvroqi6wg33h6a3pv47euax6km3alke7letglieokyd.onion
+      country: KR
+      associated_clearnet_instance: https://invidious.hub.ne.kr
+      privacy_policy:
+      owner: https://github.com/hys0star
+      modified:
+      source:
+      notes:
+      mirrors: 
+
+    - url: http://k7mnd6gyelynroxoncodxjz44fd5ch2ewfjl2a6ozmg3jy6fwyxq3cyd.onion/ 
+      country: SE
+      associated_clearnet_instance: https://yt.didw.to/
+      privacy_policy:
+      owner: https://github.com/didw-to
+      modified:
+      source:
+      notes:
+      mirrors: 
