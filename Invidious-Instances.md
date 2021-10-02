@@ -12,7 +12,7 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 [Uptime History provided by Uptimerobot](https://stats.uptimerobot.com/89VnzSKAn)
 
-[Instances API](https://instances.invidio.us/)
+[Instances API](https://api.invidious.io/)
 
 **Warning: Any public instance that isn't in this list is considered untrustworthy. Use them at your own risk.**
 
