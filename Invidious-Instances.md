@@ -59,14 +59,32 @@ dateCreated: 2021-05-23T16:58:48.431Z
 * [p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion](http://p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion) 🇯🇵 (Onion of invidious-jp.kavin.rocks)
 
 
-# Rules to have your instance in this list:
+## Rules to have your instance in this list:
 
-- Instances must have been up for at least a month before it can added to this list.
-- Instances must have been updated in the last month. An instance that hasn't been updated in the last month is considered unmaintained and is removed from the list.
-- Instances must have statistics (/api/v1/stats) enabled (`statistics_enabled:true` in the configuration file)
-- Instances must be served via domain name.
-- Instances must be served via HTTPS (or/and onion).
-- Instances using any DDoS Protection / MITM are marked as such (eg: Cloudflare, DDoS-Guard...).
-- Instances using any type of anti-bot protection are marked as such.
-- Instances using any type of analytics are marked as such, must be GDPR compliant (if it's usable in the EU), must be CCPA compliant (if it's usable in California), and must respect the AGPL by explaining their changes and by publishing their source code. In short: instances shouldn't run analytics, because it's not worth it.
-- Instances running a modified source code must respect the AGPL by publishing their source code and stating their changes **before** they are be added to the list, and must publish any later modification in a timely manner.
+1. Instances MUST have been up for at least a month before it can be added to this list.
+2. Instances MUST have been updated in the last month. An instance that hasn't been updated in the last month is considered unmaintained and is removed from the list.
+3. Instances MUST have statistics (/api/v1/stats) enabled (`statistics_enabled:true` in the configuration file).
+4. Instances MUST have an uptime of at 90% (according to [uptime.invidious.io](https://uptime.invidious.io/)).
+5. Instances MUST be served via domain name.
+6. Instances MUST be served via HTTPS (or/and onion).
+7. Instances using any DDoS Protection / MITM MUST be marked as such (eg: Cloudflare, DDoS-Guard...).
+8. Instances using any type of anti-bot protection MUST be marked as such.
+9. Instances using any type of analytics:
+   - MUST be marked as such
+   - MUST be GDPR compliant
+   - MUST be CCPA compliant
+   - Are, by essence, running a modified source code, so the next points applies too
+10. Any system whose goal is to modify the content served to the user (HTTP server rewrite, scripts, etc...) is considered the same as modifying the source code.
+11. Instances running a modified source code:
+    - MUST respect the AGPL by publishing their source code and stating their changes **before** they are be added to the list
+    - MUST publish any later modification in a timely manner
+    - MUST contain a link to both the modified and original source code of Invidious, ideally in the footer.
+12. Instances are free to serve ads or promote sponsors but they:
+    - MUST be marked as such
+    - MUST NOT be served from a third party (eg: Google Ads isn't allowed)
+    - MUST NOT be scam
+    - MUST be for 100% legal services/goods
+    - MUST be explicitly marked as "not endorsed in any way by the Invidious project"
+13. Instances MUSTN'T promote anything illegal (even if it's not advertisement).
+
+**NOTE:** We reserve the right to decline any instance from being added to the list, and to remove or ban any instance that repeatedly breaks the aforementioned rules.
