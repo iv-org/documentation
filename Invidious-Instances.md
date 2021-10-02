@@ -70,3 +70,16 @@ To be in this list, instances must have been updated in the last month. An insta
 * [p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion](http://p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion) 🇯🇵 (Onion of invidious-jp.kavin.rocks)
 
 * [k7mnd6gyelynroxoncodxjz44fd5ch2ewfjl2a6ozmg3jy6fwyxq3cyd.onion](http://k7mnd6gyelynroxoncodxjz44fd5ch2ewfjl2a6ozmg3jy6fwyxq3cyd.onion/) 🇸🇪 (Onion of yt.didw.to)
+
+
+# Rules to have your instance in this list:
+
+- Instances must have been up for at least a month before it can added to this list.
+- Instances must have been updated in the last month. An instance that hasn't been updated in the last month is considered unmaintained and is removed from the list.
+- Instances must have statistics (/api/v1/stats) enabled (`statistics_enabled:true` in the configuration file)
+- Instances must be served via domain name.
+- Instances must be served via HTTPS (or/and onion).
+- Instances using any DDoS Protection / MITM are marked as such (eg: Cloudflare, DDoS-Guard...).
+- Instances using any type of anti-bot protection are marked as such.
+- Instances using any type of analytics are marked as such, must be GDPR compliant (if it's usable in the EU), must be CCPA compliant (if it's usable in California), and must respect the AGPL by explaining their changes and by publishing their source code. In short: instances shouldn't run analytics, because it's not worth it.
+- Instances running a modified source code must respect the AGPL by publishing their source code and stating their changes **before** they are be added to the list, and must publish any later modification in a timely manner.
