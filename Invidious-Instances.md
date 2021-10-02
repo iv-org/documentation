@@ -35,11 +35,7 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://stats.uptimerobot.com/n7A08HGVl6/786947233)
 
-* [ytprivate.com](https://ytprivate.com) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947505-2a50cf3262906bb28c6cf8fc)](https://status.ytprivate.com/786947505) (uses DDoS-Guard) (is running a modified source code) - Source Code: https://github.com/ytprivatecom/invidious - Changes: https://github.com/ytprivatecom/invidious#source-changes
-
 * [invidious.namazso.eu](https://invidious.namazso.eu) 🇩🇪
-
-* [invidious.exonip.de](https://invidious.exonip.de) 🇩🇪 [Status Page](https://status.exonip.de/) - Source code/changes: https://github.com/exonip-de/invidious-source-modifications - Uses anti-bot protection by bunkerized-nginx: https://github.com/bunkerity/bunkerized-nginx
 
 * [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
 
@@ -47,15 +43,11 @@ To be in this list, instances must have been updated in the last month. An insta
 
 * [ytb.trom.tf](https://ytb.trom.tf) 🇩🇪 Source code/changes (just CSS additions): https://gitlab.com/TioTrom/trom.tf-invidious
 
-* [y.com.cm](https://y.com.cm) 🇩🇪 (uses Cloudflare)
-
 * [invidious.hub.ne.kr](https://invidious.hub.ne.kr) 🇰🇷
 
 * [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8)
 
 * [youtube.076.ne.jp](https://youtube.076.ne.jp) 🇯🇵 - Source code/changes: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
-
-* [yt.didw.to](https://yt.didw.to/) 🇸🇪
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
