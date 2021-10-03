@@ -78,7 +78,7 @@ dateCreated: 2021-05-23T16:58:48.431Z
 11. Instances running a modified source code:
     - MUST respect the AGPL by publishing their source code and stating their changes **before** they are be added to the list
     - MUST publish any later modification in a timely manner
-    - MUST contain a link to both the modified and original source code of Invidious, ideally in the footer.
+    - MUST contain a link to both the modified and original source code of Invidious in the footer.
 12. Instances are free to serve ads or promote sponsors but they:
     - MUST be marked as such
     - MUST NOT be served from a third party (eg: Google Ads isn't allowed)
