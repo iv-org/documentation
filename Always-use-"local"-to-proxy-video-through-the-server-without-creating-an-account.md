@@ -18,7 +18,7 @@ Than add the following script in ViolentMonkey. It will always add `&local=true`
 ```
 // ==UserScript==
 // @name        Invidious Proxy automatically
-// @match       *://*.invidious.io/watch?v=*
+// @match       *://*.redirect.invidious.io/watch?v=*
 // @run-at      document-start
 // @grant       none
 // ==/UserScript==
