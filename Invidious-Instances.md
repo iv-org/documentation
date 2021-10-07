@@ -32,8 +32,6 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [vid.mint.lgbt](https://vid.mint.lgbt) 🇨🇦 [Status Page](https://status.mint.lgbt/service/lesvidious)
 
-* [ytb.trom.tf](https://ytb.trom.tf) 🇩🇪 Source code/changes (just CSS additions): https://gitlab.com/TioTrom/trom.tf-invidious
-
 * [invidious.hub.ne.kr](https://invidious.hub.ne.kr) 🇰🇷
 
 * [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8)
