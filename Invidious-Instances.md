@@ -32,7 +32,7 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [vid.mint.lgbt](https://vid.mint.lgbt) 🇨🇦 [Status Page](https://status.mint.lgbt/service/lesvidious)
 
-* [invidious.hub.ne.kr](https://invidious.hub.ne.kr) 🇰🇷
+* [invidious.hub.ne.kr](https://invidious.hub.ne.kr) 🇳🇱 [Status](https://status.osbusiness.net/report/uptime/6e47474f3737993d8a3fde06f33dc128/)
 
 * [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8)
 
@@ -52,7 +52,7 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion](http://hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion) 🇺🇸 (Onion of invidious-us.kavin.rocks)
 
-* [osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion](http://osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion) 🇰🇷 (Onion of invidious.hub.ne.kr)
+* [osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion](http://osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion) 🇳🇱 (Onion of invidious.hub.ne.kr)
 
 * [p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion](http://p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion) 🇯🇵 (Onion of invidious-jp.kavin.rocks)
 
