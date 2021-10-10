@@ -75,6 +75,6 @@ dateCreated: 2021-05-23T16:58:48.431Z
     - MUST respect the AGPL by publishing their source code and stating their changes **before** they are be added to the list
     - MUST publish any later modification in a timely manner
     - MUST contain a link to both the modified and original source code of Invidious in the footer.
-12. Instances MUST NOT serve ads (sponsorship links in banner are considered ads) NOR promote products.
+12. Instances MUST NOT serve ads (sponsorship links in the banner are considered ads) NOR promote products.
 
 **NOTE:** We reserve the right to decline any instance from being added to the list, and to remove or ban any instance that repeatedly breaks the aforementioned rules.
