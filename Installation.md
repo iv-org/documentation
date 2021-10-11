@@ -63,7 +63,7 @@ services:
       POSTGRES_USER: kemal
       POSTGRES_PASSWORD: kemal
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER"]
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER $$POSTGRES_DB"]
   invidious:
     image: quay.io/invidious/invidious:latest
     restart: always
