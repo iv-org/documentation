@@ -32,7 +32,7 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [vid.mint.lgbt](https://vid.mint.lgbt) 🇨🇦 [Status Page](https://status.mint.lgbt/service/lesvidious)
 
-* [invidious.hub.ne.kr](https://invidious.hub.ne.kr) 🇳🇱 [Status](https://status.osbusiness.net/report/uptime/6e47474f3737993d8a3fde06f33dc128/)
+* [invidious.hub.ne.kr](https://invidious.hub.ne.kr) 🇳🇱 [Status Page](https://status.osbusiness.net/report/uptime/6e47474f3737993d8a3fde06f33dc128/)
 
 * [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8)
 
@@ -62,7 +62,7 @@ dateCreated: 2021-05-23T16:58:48.431Z
 1. Instances MUST have been up for at least a month before it can be added to this list.
 2. Instances MUST have been updated in the last month. An instance that hasn't been updated in the last month is considered unmaintained and is removed from the list.
 3. Instances MUST have statistics (/api/v1/stats) enabled (`statistics_enabled:true` in the configuration file).
-4. Instances MUST have an uptime of at 90% (according to [uptime.invidious.io](https://uptime.invidious.io/)).
+4. Instances MUST have an uptime of at 90% ([according to uptime.invidious.io](https://uptime.invidious.io/)).
 5. Instances MUST be served via domain name.
 6. Instances MUST be served via HTTPS (or/and onion).
 7. Instances using any DDoS Protection / MITM MUST be marked as such (eg: Cloudflare, DDoS-Guard...).
