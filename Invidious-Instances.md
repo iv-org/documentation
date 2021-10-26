@@ -32,7 +32,7 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [vid.mint.lgbt](https://vid.mint.lgbt) 🇨🇦 [Status Page](https://status.mint.lgbt/service/lesvidious)
 
-* [invidious.hub.ne.kr](https://invidious.hub.ne.kr) 🇳🇱 [Status Page](https://status.osbusiness.net/report/uptime/6e47474f3737993d8a3fde06f33dc128/)
+* [invidious.osi.kr](https://invidious.osi.kr) 🇳🇱 [Status Page](https://status.osbusiness.net/report/uptime/6e47474f3737993d8a3fde06f33dc128/)
 
 * [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8)
 
