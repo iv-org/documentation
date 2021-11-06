@@ -19,33 +19,22 @@ After installation take a look at the [Post-install steps](#post-install-configu
 
 Allowing bots that excessively crawl (Semrush, webmeup, etc.) will lead your instance to get blocked very fast. While not required, it is a good idea to consider using bot blocking software such as [Nginx Bad Bot Blocker](https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker).
 
+---
+
 ## Automated installation
 
 [Invidious-Updater](https://github.com/tmiland/Invidious-Updater) is a self-contained script that can automatically install and update Invidious.
 
+---
+
 ## Docker
 
-> The Invidious docker image is only [available on Quay](https://quay.io/repository/invidious/invidious) because, unlike Docker Hub, [Quay is open source](https://github.com/quay/quay/blob/master/LICENSE). This is reflected in the `docker-compose.yml` file used in this walkthrough.{.is-warning}
+> The Invidious docker image is only [available on Quay](https://quay.io/repository/invidious/invidious) because, unlike Docker Hub, [Quay is Free and Open Source Software](https://github.com/quay/quay/blob/master/LICENSE). This is reflected in the `docker-compose.yml` file used in this walkthrough.{.is-warning}
 
 Ensure [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed before beginning.
 
-### Make directory
+### Docker-compose method (production)
 
-```bash
-$ mkdir invidious
-```
-
-### Create Docker Compose file
-
-```bash
-$ cd invidious
-```
-
-```bash
-$ nano docker-compose.yml
-```
-
-Here is a working Compose setup:
 ```docker
 version: "2.4"
 services:
@@ -110,33 +99,22 @@ networks:
   invidious:
 ```
 
+Note: This compose is made for a true "production" setup, and is made to be used to have Invidious behind a reverse proxy, if you don't want that and prefer to directly access Invidious via its port, change `ports: - "127.0.0.1:3000:3000"` to `ports: - "3000:3000"`.
+
 > The environment variable `POSTGRES_USER` cannot be changed. The SQL config files that run the initial database migrations are hard-coded with the username `kemal`.
 {.is-warning}
 
-### Start Invidious
+
+### Docker-compose method (development)
 
 ```bash
-$ docker-compose up
-```
-or 
-```bash
-$ docker-compose up -d
-```
-to run it in the background.
-
-Then, visit `localhost:3000` in your browser.
-
-### Stop Invidious
-
-```bash
-$ docker-compose down
+git clone https://github.com/iv-org/invidious.git
+cd invidious
+docker-compose build
+docker-compose up
 ```
 
-### Delete data
-
-```bash
-$ docker volume rm invidious_postgresdata
-```
+---
 
 ## Manual installation
 
