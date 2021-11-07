@@ -99,7 +99,7 @@ networks:
   invidious:
 ```
 
-Note: This compose is made for a true "production" setup, and is made to be used to have Invidious behind a reverse proxy, if you don't want that and prefer to directly access Invidious via its port, change `ports: - "127.0.0.1:3000:3000"` to `ports: - "3000:3000"`.
+Note: This compose is made for a true "production" setup, where Invidious is behind a reverse proxy. If you prefer to directly access Invidious, replace `127.0.0.1:3000:3000` with `3000:3000` under the `ports:` section.
 
 > The environment variable `POSTGRES_USER` cannot be changed. The SQL config files that run the initial database migrations are hard-coded with the username `kemal`.
 {.is-warning}
