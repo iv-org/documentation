@@ -42,6 +42,8 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
+* [inv.cthd.icu](https://inv.cthd.icu/) 🇷🇸 - Source code/changes: https://github.com/cysea/invidious-custom
+
 
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion)
