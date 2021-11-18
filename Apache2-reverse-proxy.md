@@ -1,5 +1,5 @@
 ---
-title: NGINX-Reverse-Proxy
+title: Apache2-reverse-proxy
 description: 
 published: true
 date: 2021-11-17T16:59:09.054Z
