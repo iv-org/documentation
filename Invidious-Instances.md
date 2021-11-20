@@ -42,6 +42,8 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
+* [invidious.mutahar.rocks](https://invidious.mutahar.rocks) 🇫🇷
+
 * [inv.cthd.icu](https://inv.cthd.icu/) 🇷🇸 - Source code/changes: https://github.com/cysea/invidious-custom
 
 
