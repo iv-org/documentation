@@ -22,7 +22,7 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://uptime.invidious.io/784257752) - Source code/changes: https://github.com/unixfox/invidious-custom
 
-* [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664) [invidious-us.kavin.rocks](https://invidious-us.kavin.rocks) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788216947-f3f63d30899a10dbe9a0338a)](https://status.kavin.rocks/788216947) [invidious-jp.kavin.rocks](https://invidious-jp.kavin.rocks) 🇯🇵 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788866642-8a4478b8853722e98b7634e9)](https://status.kavin.rocks/788866642) (uses Cloudflare)
+* [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664) [invidious-us.kavin.rocks](https://invidious-us.kavin.rocks) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788216947-f3f63d30899a10dbe9a0338a)](https://status.kavin.rocks/788216947) (uses Cloudflare)
 
 * [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://stats.uptimerobot.com/n7A08HGVl6/786947233)
 
@@ -59,8 +59,6 @@ dateCreated: 2021-05-23T16:58:48.431Z
 * [hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion](http://hpniueoejy4opn7bc4ftgazyqjoeqwlvh2uiku2xqku6zpoa4bf5ruid.onion) 🇺🇸 (Onion of invidious-us.kavin.rocks)
 
 * [osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion](http://osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion) 🇳🇱 (Onion of invidious.hub.ne.kr)
-
-* [p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion](http://p4ozd76i5zmqepf6xavtehswcve2taptxbwpswkq5osfvncwylavllid.onion) 🇯🇵 (Onion of invidious-jp.kavin.rocks)
 
 *  [u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion](http://u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion) 🇺🇸 (Onion of inv.riverside.rocks)
 
