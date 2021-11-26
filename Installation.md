@@ -110,7 +110,6 @@ Note: This compose is made for a true "production" setup, where Invidious is beh
 ```bash
 git clone https://github.com/iv-org/invidious.git
 cd invidious
-docker-compose build
 docker-compose up
 ```
 
