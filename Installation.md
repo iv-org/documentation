@@ -15,10 +15,6 @@ If you have less (e.g on a cheap VPS) you can setup a SWAP file or partition, so
 
 After installation take a look at the [Post-install steps](#post-install-configuration).
 
-### Note on blocking bots
-
-Allowing bots that excessively crawl (Semrush, webmeup, etc.) will lead your instance to get blocked very fast. While not required, it is a good idea to consider using bot blocking software such as [Nginx Bad Bot Blocker](https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker).
-
 ---
 
 ## Automated installation
@@ -268,26 +264,5 @@ Instructions are available in the [updating guide](./Updating.md).
 ## Usage:
 
 ```bash
-$ ./invidious -h
-Usage: invidious [arguments]
-    -b HOST, --bind HOST             Host to bind (defaults to 0.0.0.0)
-    -p PORT, --port PORT             Port to listen for connections (defaults to 3000)
-    -s, --ssl                        Enables SSL
-    --ssl-key-file FILE              SSL key file
-    --ssl-cert-file FILE             SSL certificate file
-    -h, --help                       Shows this help
-    -c THREADS, --channel-threads=THREADS
-                                     Number of threads for refreshing channels (default: 1)
-    -f THREADS, --feed-threads=THREADS
-                                     Number of threads for refreshing feeds (default: 1)
-    -o OUTPUT, --output=OUTPUT       Redirect output (default: STDOUT)
-    -v, --version                    Print version
+$ ./invidious
 ```
-
-Or for development:
-
-```bash
-$ curl -fsSLo- https://raw.githubusercontent.com/samueleaton/sentry/master/install.cr | crystal eval
-$ ./sentry
-🤖  Your SentryBot is vigilant. beep-boop...
-``` 
