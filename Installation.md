@@ -119,22 +119,6 @@ docker-compose up
 
 Follow the instructions for your distribution here: https://crystal-lang.org/install/
 
-If you're in a hurry, here are one-liner commands for some common distributions:
-* Arch linux `sudo pacman -S crystal shards`
-* Debian/Ubuntu: `curl -fsSL https://crystal-lang.org/install.sh | sudo bash`
-* Fedora: `sudo brew update && sudo brew install crystal-lang`
-
-Or you can do a tarball install:
-```bash
-cd ~/Downloads
-wget https://github.com/crystal-lang/crystal/releases/download/1.1.1/crystal-1.1.1-1-linux-x86_64.tar.gz
-cd /opt
-sudo tar -xzf ~/Downloads/crystal-1.1.1-1-linux-x86_64.tar.gz
-sudo cp /opt/crystal-1.1.1-1/bin/{crystal,shards} /usr/local/bin/
-sudo cp -r /opt/crystal-1.1.1-1/lib/crystal /usr/local/lib/crystal
-sudo cp -r /opt/crystal-1.1.1-1/share/crystal /usr/local/share/crystal
-```
-
 #### Install the dependencies
 
 Arch Linux
@@ -144,7 +128,6 @@ sudo pacman -S base-devel librsvg postgresql
 
 Ubuntu or Debian
 ```bash
-sudo apt-get update
 sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
 ```
 
@@ -156,8 +139,8 @@ sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp
 #### Add an Invidious user and clone the repository
 
 ```bash
-$ useradd -m invidious
-$ sudo -i -u invidious
+# useradd -m invidious
+# su - invidious
 $ git clone https://github.com/iv-org/invidious
 $ exit
 ```
@@ -165,8 +148,8 @@ $ exit
 #### Set up PostgresSQL
 
 ```bash
-$ sudo systemctl enable --now postgresql
-$ sudo -i -u postgres
+# systemctl enable --now postgresql
+# sudo -i -u postgres
 $ psql -c "CREATE USER kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
 $ createdb -O kemal invidious
 $ psql invidious kemal < /home/invidious/invidious/config/sql/channels.sql
@@ -184,33 +167,31 @@ $ exit
 #### Set up Invidious
 
 ```bash
-$ sudo -i -u invidious
+# su - invidious
 $ cd invidious
 $ shards build src/invidious.cr --release
-# test compiled binary
-$ ./invidious # stop with ctrl c
 $ exit
 ```
 
 #### Systemd service
 
 ```bash
-$ sudo cp /home/invidious/invidious/invidious.service /etc/systemd/system/invidious.service
-$ sudo systemctl enable --now invidious.service
+# cp /home/invidious/invidious/invidious.service /etc/systemd/system/invidious.service
+# systemctl enable --now invidious.service
 ```
 
 #### Logrotate
 
 ```bash
-$ echo "/home/invidious/invidious/invidious.log {
+# echo "/home/invidious/invidious/invidious.log {
 rotate 4
 weekly
 notifempty
 missingok
 compress
 minsize 1048576
-}" | sudo tee /etc/logrotate.d/invidious.logrotate
-$ sudo chmod 0644 /etc/logrotate.d/invidious.logrotate
+}" | tee /etc/logrotate.d/invidious.logrotate
+# chmod 0644 /etc/logrotate.d/invidious.logrotate
 ```
 
 ### MacOS
