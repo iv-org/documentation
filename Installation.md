@@ -61,7 +61,7 @@ services:
     ports:
       - "127.0.0.1:3000:3000"
     environment:
-      INVIDIOUS_CONFIG: |
+      INVIDIOUS_CONFIG: | # Follow the config/config.yml file from the main repository to know the available configuration options
         channel_threads: 1
         check_tables: true
         feed_threads: 1
