@@ -182,20 +182,6 @@ $ exit
 # systemctl enable --now invidious.service
 ```
 
-#### Logrotate
-
-```bash
-# echo "/home/invidious/invidious/invidious.log {
-rotate 4
-weekly
-notifempty
-missingok
-compress
-minsize 1048576
-}" | tee /etc/logrotate.d/invidious.logrotate
-# chmod 0644 /etc/logrotate.d/invidious.logrotate
-```
-
 ### MacOS
 
 ```bash
@@ -261,4 +247,19 @@ $ exit
 
 ```bash
 $ ./invidious
+```
+
+
+#### Logrotate configuration
+
+```bash
+# echo "/home/invidious/invidious/invidious.log {
+rotate 4
+weekly
+notifempty
+missingok
+compress
+minsize 1048576
+}" | tee /etc/logrotate.d/invidious.logrotate
+# chmod 0644 /etc/logrotate.d/invidious.logrotate
 ```
