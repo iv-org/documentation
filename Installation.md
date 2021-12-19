@@ -141,8 +141,8 @@ sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp
 #### Add an Invidious user and clone the repository
 
 ```bash
-# useradd -m invidious
-# su - invidious
+$ useradd -m invidious
+$ su - invidious
 $ git clone https://github.com/iv-org/invidious
 $ exit
 ```
@@ -150,8 +150,8 @@ $ exit
 #### Set up PostgresSQL
 
 ```bash
-# systemctl enable --now postgresql
-# sudo -i -u postgres
+$ systemctl enable --now postgresql
+$ sudo -i -u postgres
 $ psql -c "CREATE USER kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
 $ createdb -O kemal invidious
 $ psql invidious kemal < /home/invidious/invidious/config/sql/channels.sql
@@ -169,7 +169,7 @@ $ exit
 #### Set up Invidious
 
 ```bash
-# su - invidious
+$ su - invidious
 $ cd invidious
 $ shards build src/invidious.cr --release
 $ exit
@@ -178,8 +178,8 @@ $ exit
 #### Systemd service
 
 ```bash
-# cp /home/invidious/invidious/invidious.service /etc/systemd/system/invidious.service
-# systemctl enable --now invidious.service
+$ cp /home/invidious/invidious/invidious.service /etc/systemd/system/invidious.service
+$ systemctl enable --now invidious.service
 ```
 
 ### MacOS
@@ -228,19 +228,19 @@ If you use a reverse proxy, you **must** configure invidious to properly serve r
 
 #### Updating a Docker install
 ```bash
-# docker-compose pull && docker-compose up && docker image prune -f
+$ docker-compose pull && docker-compose up && docker image prune -f
 ```
 
 #### Update a manual install
 ```bash
-# sudo - invidious
+$ sudo - invidious
 $ cd invidious
 $ currentVersion=$(git rev-list --max-count=1 --abbrev-commit HEAD)
 $ git pull
 $ for i in `git rev-list --reverse --abbrev-commit $currentVersion..HEAD` ; do file=./config/migrate-scripts/migrate-db-$i.sh ; [ -f $file ] && $file ; done
 $ shards build src/invidious.cr --release
 $ exit
-# systemctl restart invidious.service
+$ systemctl restart invidious.service
 ```
 
 ## Usage:
@@ -253,7 +253,7 @@ $ ./invidious
 #### Logrotate configuration
 
 ```bash
-# echo "/home/invidious/invidious/invidious.log {
+$ echo "/home/invidious/invidious/invidious.log {
 rotate 4
 weekly
 notifempty
@@ -261,5 +261,5 @@ missingok
 compress
 minsize 1048576
 }" | tee /etc/logrotate.d/invidious.logrotate
-# chmod 0644 /etc/logrotate.d/invidious.logrotate
+$ chmod 0644 /etc/logrotate.d/invidious.logrotate
 ```
