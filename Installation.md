@@ -240,19 +240,19 @@ If you use a reverse proxy, you **must** configure invidious to properly serve r
 
 #### Updating a Docker install
 ```bash
-$ docker-compose pull && docker-compose up && docker image prune -f
+# docker-compose pull && docker-compose up && docker image prune -f
 ```
 
 #### Update a manual install
 ```bash
-$ sudo - invidious
+# sudo - invidious
 $ cd invidious
 $ currentVersion=$(git rev-list --max-count=1 --abbrev-commit HEAD)
 $ git pull
 $ for i in `git rev-list --reverse --abbrev-commit $currentVersion..HEAD` ; do file=./config/migrate-scripts/migrate-db-$i.sh ; [ -f $file ] && $file ; done
 $ shards build src/invidious.cr --release
 $ exit
-$ sudo systemctl restart invidious.service
+# systemctl restart invidious.service
 ```
 
 ## Usage:
