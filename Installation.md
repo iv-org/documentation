@@ -106,9 +106,9 @@ Note: This compose is made for a true "production" setup, where Invidious is beh
 ### Docker-compose method (development)
 
 ```bash
-git clone https://github.com/iv-org/invidious.git
-cd invidious
-docker-compose up
+$ git clone https://github.com/iv-org/invidious.git
+$ cd invidious
+$ docker-compose up
 ```
 
 ---
@@ -125,17 +125,17 @@ Follow the instructions for your distribution here: https://crystal-lang.org/ins
 
 Arch Linux
 ```bash
-sudo pacman -S base-devel librsvg postgresql
+$ sudo pacman -S base-devel librsvg postgresql
 ```
 
 Ubuntu or Debian
 ```bash
-sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
+$ sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
 ```
 
 Fedora
 ```bash
-sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc
+$ sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc
 ```
 
 #### Add an Invidious user and clone the repository
