@@ -15,7 +15,7 @@ If you have less (e.g on a cheap VPS) you can setup a SWAP file or partition, so
 
 After installation take a look at the [Post-install steps](#post-install-configuration).
 
-Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) provider/software (Heroku, YunoHost, Repli...) are unsupported, use them at your own risk, they **WILL** cause problems with Invidious and might even suspend your account for "abuse" since Invidious is heavy and bandwidth intensive. If you use one and want to report an issue, please mention which one you use.
+Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) provider/software (Heroku, YunoHost, Repli...) are unsupported, use them at your own risk, they **WILL** cause problems with Invidious and might even suspend your account for "abuse" since Invidious is heavy, bandwidth intensive and technically a proxy (and most provider don't like them). If you use one and want to report an issue, please mention which one you use.
 
 ---
 
