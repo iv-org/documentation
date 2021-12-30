@@ -8,10 +8,10 @@ editor: markdown
 dateCreated: 2021-01-28T20:38:58.736Z
 ---
 
-Download ViolentMonkey for your Browser:  
-[Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)  
-[Chrome and Chromium](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)  
-[Others](https://violentmonkey.github.io/get-it/)  
+Download ViolentMonkey for your Browser:
+[Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)
+[Chrome and Chromium](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
+[Others](https://violentmonkey.github.io/get-it/)
 
 Than add the following script in ViolentMonkey. It will always add `&local=true` to the end of the video URL.
 
