@@ -10,8 +10,8 @@ dateCreated: 2021-02-25T11:24:06.655Z
 
 # Installation
 
-Compiling Invidious requires at least 2GB of free RAM (We recommend to have at least 3GB installed).
-If you have less (e.g on a cheap VPS) you can setup a swap file or partition, so the combined amount is >= 3GB.
+Compiling invidious requires at least 2GB of free RAM (We recommend to have at least 3GB installed).
+If you have less (e.g on a cheap VPS) you can setup a SWAP file or partition, so the combined amount is >= 3GB.
 
 After installation take a look at the [Post-install steps](#post-install-configuration).
 
@@ -25,9 +25,9 @@ Allowing bots that excessively crawl (Semrush, webmeup, etc.) will lead your ins
 
 ## Docker
 
-> The Invidious docker image is only [available on Quay](https://quay.io/repository/invidious/invidious) because, unlike Docker Hub, [Quay is open source](https://github.com/quay/quay/blob/master/LICENSE). This is reflected in the `docker-compose.yml` file used in this walkthrough.
+> The Invidious docker image is only [available on Quay](https://quay.io/repository/invidious/invidious) because, unlike Docker Hub, [Quay is open source](https://github.com/quay/quay/blob/master/LICENSE). This is reflected in the `docker-compose.yml` file used in this walkthrough.{.is-warning}
 
-Ensure [Docker Engine](https://docs.docker.com/engine/install) and [Docker Compose](https://docs.docker.com/compose/install) are installed before beginning.
+Ensure [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed before beginning.
 
 ### Make directory
 
@@ -86,7 +86,7 @@ services:
           port: 5432
         full_refresh: false
         https_only: false
-        domain:
+        domain: 
       # external_port:
     healthcheck:
       test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
@@ -111,13 +111,14 @@ networks:
 ```
 
 > The environment variable `POSTGRES_USER` cannot be changed. The SQL config files that run the initial database migrations are hard-coded with the username `kemal`.
+{.is-warning}
 
 ### Start Invidious
 
 ```bash
 $ docker-compose up
 ```
-or
+or 
 ```bash
 $ docker-compose up -d
 ```
@@ -137,16 +138,16 @@ $ docker-compose down
 $ docker volume rm invidious_postgresdata
 ```
 
-## Manual Installation
+## Manual installation
 
 ### Linux
 
-#### Install Crystal
+#### Install crystal
 
-Follow the instructions for your distribution [here](https://crystal-lang.org/install)
+Follow the instructions for your distribution here: https://crystal-lang.org/install/
 
 If you're in a hurry, here are one-liner commands for some common distributions:
-* Arch Linux `sudo pacman -S crystal shards`
+* Arch linux `sudo pacman -S crystal shards`
 * Debian/Ubuntu: `curl -fsSL https://crystal-lang.org/install.sh | sudo bash`
 * Fedora: `sudo brew update && sudo brew install crystal-lang`
 
@@ -168,7 +169,7 @@ Arch Linux
 sudo pacman -S base-devel librsvg postgresql
 ```
 
-Debian/Ubuntu
+Ubuntu or Debian
 ```bash
 sudo apt-get update
 sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
@@ -273,15 +274,15 @@ $ crystal build src/invidious.cr --release
 
 Detailed configuration available in the [configuration guide](./Configuration.md).
 
-Because of various issues, Invidious **must** be restarted often, at least once a day, ideally every  <!--TODO: add the number of hours--> hours.
+Because of various issues Invidious **must** be restarted often, at least once a day, ideally every hours.
 
 If you use a reverse proxy, you **must** configure invidious to properly serve request through it:
 
-`https_only: true` : if you are serving your instance via https, set it to true
+`https_only: true` : if your are serving your instance via https, set it to true
 
 `domain: domain.ext`: if you are serving your instance via a domain name, set it here
 
-`external_port: 443`: if you are serving your instance via https, set it to 443
+`external_port: 443`: if your are serving your instance via https, set it to 443
 
 ## Update Invidious
 
@@ -312,4 +313,4 @@ Or for development:
 $ curl -fsSLo- https://raw.githubusercontent.com/samueleaton/sentry/master/install.cr | crystal eval
 $ ./sentry
 🤖  Your SentryBot is vigilant. beep-boop...
-```
+``` 
