@@ -38,8 +38,6 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [youtube.076.ne.jp](https://youtube.076.ne.jp) 🇯🇵 - Source code/changes: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
 
-* [yt.didw.to](https://yt.didw.to/) 🇸🇪
-
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
 * [invidious.mutahar.rocks](https://invidious.mutahar.rocks) 🇫🇷
