@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- Using invidious
+- Using Invidious
   * [Can I use Invidious on my device?](#q-can-i-use-invidious-on-my-device)
   * [Do you plan to make an Android/iOS app?](#q-do-you-plan-to-make-an-androidios-app)
   * [What data is collected by Invidious?](#q-what-data-is-collected-by-invidious)
@@ -23,7 +23,7 @@
     #q-the-popular-feedpage-on-my-instance-is-empty)
 
 
-# Using invidious
+# Using Invidious
 
 ## **Q:** Can I use Invidious on my device?
 
@@ -37,7 +37,7 @@ sure, of course! A responsive interface is available for mobile/tablets.
 **A:** No. Invidious is and will always be a browser application.
 
 If you have an Android phone/tablet, you can check the
-[NewPipe](https://github.com/TeamNewPipe/NewPipe/) application.
+[NewPipe](https://github.com/TeamNewPipe/NewPipe) application.
 
 <br/>
 
@@ -51,7 +51,7 @@ By default, the server logs which URLs were accessed, the associated error
 code (e.g 404 if the URL was not found) and the time it took for the server
 to respond.
 
-Here is what the server logs looks like:
+Here is what the server logs look like:
 
 ```
 2021-08-30 18:15:44 UTC [info] 200 GET /watch?v=GIAKHj9uJtM 781.21ms
@@ -66,7 +66,7 @@ or delete these data at any time from your user account page.
 
 <br/>
 
-## **Q:** What data is shared with youTube?
+## **Q:** What data is shared with YouTube?
 
 **A:** By default, the video stream is fetched directly from Google's servers
 (`googlevideo.com`) in order to reduce the bandwidth required by invidious,
@@ -74,8 +74,8 @@ meaning that Google will be able to see your IP address and some other data
 commonly sent by web browsers, like your user-agent string.
 
 If you don't want that to happen, you can go to the `preferences` page and
-check the `Proxy videos` option. When this option is enabled, the invidious
-instance will be used as a relay (also know as a "proxy") between you and
+check the `Proxy videos` option. When this option is enabled, the Invidious
+instance will be used as a relay (also known as a "proxy") between you and
 Google's servers, which will hide your IP address and the other information
 sent by your browser.
 
@@ -89,9 +89,9 @@ sent by your browser.
 **A:** This problem can occur in different scenarios:
 
 * If you're trying to watch a music clip, Youtube is likely blocking the
-  video stream. Try enabling `proxy videos` in the preferences (or add
-  `&local=1` in the URL). Switching instance is also a good alternative,
-  as this type of content is often geo-restricted.
+  video stream. Try enabling `Proxy videos` in the preferences (or add
+  `&local=1` in the URL). Switching to another instance is also a good
+  alternative, as this type of content is often geo-restricted.
 
 * Youtube often sends corrupted video data for the `hd720`, `medium` and
   `small` quality settings. Refreshing the page multiple times (5-7) can
@@ -101,9 +101,9 @@ sent by your browser.
 * Rarely, it can be due to an internal failure of the instance and the
   video stream can't be fetched. A simple page refresh can solve the issue.
 
-If none of the solutions listed above fix that problem, try switching
+If none of the solutions listed above fix the problem, try switching
 instances. And if that still doesn't work, you'll have to watch the video
-on youtube itself (sorry for the inconvenience).
+on YouTube itself (sorry for the inconvenience).
 
 <br/>
 
@@ -136,11 +136,11 @@ All the supported configuration options are documented there.
 
 ## **Q:** RSS feeds/links/etc... URLs redirect to `<IP>:3000` but I have a reverse proxy!
 
-**A:** Make sure that the following parameters are set accrodingly to your environment:
-- `https_only`: if your instance is served over HTTPs
+**A:** Make sure that the following parameters are set according to your environment:
+- `https_only`: if your instance is served over HTTPS
 - `domain`: if you have a domain name that redirects to your instance
 - `external_port`: if your instance is accessed from a different port than
-  the listening one (e.g your instance listens on :3000, but is available on 
+  the listening one (e.g your instance listens on :3000, but is available on
   :443 through a reverse proxy, set `external_port` to `443`)
 
 <br/>

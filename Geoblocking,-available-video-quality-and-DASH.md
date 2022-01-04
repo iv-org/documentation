@@ -11,7 +11,7 @@ dateCreated: 2021-01-28T20:39:32.300Z
 ## Geoblocking
 Sometimes you may notice that you cannot watch a video on Invidious. This is because YouTube is geoblocking, i.e. preventing access to videos based on your geographical location.
 
-If "Proxy videos?" setting is enabled, then Invidious will proxy videos through itself, so the stream will be routed like this:
+If the `Proxy videos?` setting is enabled, Invidious will proxy videos through itself, so the stream will be routed like this:
 > YouTube → Invidious/server → Client/browser
 
 If a video is blocked where the instance is hosted, then the route would be this:
@@ -20,7 +20,7 @@ If a video is blocked where the instance is hosted, then the route would be this
 The current system works by cycling through proxies in different regions, and finding one where the video is not blocked.
 The reason geoblocked videos may take a long time to load is because Invidious would have to cycle through all known proxy servers until it finds one that is able to play back the video.
 
-If "Proxy videos?" setting is disabled, then the stream would be routed like this:
+If the `Proxy videos?` setting is disabled, then the stream would be routed like this:
 > YouTube → Client/browser
 
 ## Video quality and DASH

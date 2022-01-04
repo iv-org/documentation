@@ -74,7 +74,7 @@ db:
 
 - `host_binding` (default `0.0.0.0`) Default host for HTTP server
 
-- `cookies` (default ``) Cookies to be used when connecting to YouTube
+- `cookies` (default `nil`) Cookies to be used when connecting to YouTube
 
 - `captcha_key` (default `nil`) [Anti-Captcha](https://anti-captcha.com/) API key for solving YouTube CAPTCHAs, see [#886](https://github.com/iv-org/invidious/issues/886).
 
