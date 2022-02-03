@@ -18,7 +18,7 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [invidious.snopyta.org](https://invidious.snopyta.org/) 🇫🇮
+* [invidious.snopyta.org](https://invidious.snopyta.org) 🇫🇮
 
 * [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://uptime.invidious.io/784257752) - Source code/changes: https://github.com/unixfox/invidious-custom
 
@@ -38,15 +38,15 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
-* [inv.cthd.icu](https://inv.cthd.icu/) 🇷🇸 - Source code/changes: https://gitlab.cthd.icu/cthd/invidious-custom
+* [inv.cthd.icu](https://inv.cthd.icu) 🇷🇸 - Source code/changes: https://gitlab.cthd.icu/cthd/invidious-custom
 
 
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion) 🇫🇮 (Onion of invidious.snopyta.org)
 
-* [w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion](http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion/)
+* [w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion](http://w6ijuptxiku4xpnnaetxvnkc5vqcdu7mgns2u77qefoixi63vbvnpnqd.onion)
 
-* [kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion](http://kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion/) 🇳🇱
+* [kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion](http://kbjggqkzv65ivcqj6bumvp337z6264huv5kpkwuv6gu5yjiskvan7fad.onion) 🇳🇱
 
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸 (Onion of vid.puffyan.us)
 
