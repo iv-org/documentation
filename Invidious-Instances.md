@@ -62,7 +62,7 @@ dateCreated: 2021-05-23T16:58:48.431Z
 1. Instances MUST have been up for at least a month before it can be added to this list.
 2. Instances MUST have been updated in the last month. An instance that hasn't been updated in the last month is considered unmaintained and is removed from the list.
 3. Instances MUST have statistics (/api/v1/stats) enabled (`statistics_enabled:true` in the configuration file).
-4. Instances MUST have an uptime of at 90% ([according to uptime.invidious.io](https://uptime.invidious.io/)).
+4. Instances MUST have an uptime of at lest 90% ([according to uptime.invidious.io](https://uptime.invidious.io/)).
 5. Instances MUST be served via domain name.
 6. Instances MUST be served via HTTPS (or/and onion).
 7. Instances using any DDoS Protection / MITM MUST be marked as such (eg: Cloudflare, DDoS-Guard...).
