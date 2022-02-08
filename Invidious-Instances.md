@@ -42,6 +42,7 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
+* [invidious.privacy.gd](https://invidious.privacy.gd) 🇺🇸
 
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion) 🇫🇮 (Onion of invidious.snopyta.org)
@@ -57,6 +58,8 @@ dateCreated: 2021-05-23T16:58:48.431Z
 * [osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion](http://osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion) 🇳🇱 (Onion of invidious.hub.ne.kr)
 
 *  [u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion](http://u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion) 🇺🇸 (Onion of inv.riverside.rocks)
+
+* [2rorw2w54tr7jkasn53l5swbjnbvz3ubebhswscnc54yac6gmkxaeeqd.onion](http://2rorw2w54tr7jkasn53l5swbjnbvz3ubebhswscnc54yac6gmkxaeeqd.onion) 🇺🇸 (Onion of invidious.privacy.gd)
 
 
 ## Rules to have your instance in this list:
