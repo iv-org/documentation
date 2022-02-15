@@ -10,7 +10,7 @@ dateCreated: 2021-02-25T11:24:06.655Z
 
 # Installation
 
-Compiling invidious requires at least 2GB of free RAM (We recommend to have at least 3GB installed).
+Compiling Invidious requires at least 2GB of free RAM (We recommend to have at least 3GB installed).
 If you have less (e.g on a cheap VPS) you can setup a SWAP file or partition, so the combined amount is >= 3GB.
 
 After installation take a look at the [Post-install steps](#post-install-configuration).
@@ -18,7 +18,7 @@ After installation take a look at the [Post-install steps](#post-install-configu
 Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) provider/software (Heroku, YunoHost, Repli...) are unsupported. Use them at your own risk. They **WILL** cause problems with Invidious and might even suspend your account for "abuse" since Invidious is heavy, bandwidth intensive and technically a proxy (and most providers don't like them). If you use one and want to report an issue, please mention which one you use.
 
 
-## Automated installation
+## Automated Installation
 
 [Invidious-Updater](https://github.com/tmiland/Invidious-Updater) is a self-contained script that can automatically install and update Invidious.
 
@@ -27,7 +27,7 @@ Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](
 
 > The Invidious docker image is only [available on Quay](https://quay.io/repository/invidious/invidious) because, unlike Docker Hub, [Quay is Free and Open Source Software](https://github.com/quay/quay/blob/master/LICENSE). This is reflected in the `docker-compose.yml` file used in this walk-through.{.is-warning}
 
-Ensure [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed before beginning.
+Ensure [Docker Engine](https://docs.docker.com/engine/install) and [Docker Compose](https://docs.docker.com/compose/install) are installed before beginning.
 
 ### Docker-compose method (production)
 
@@ -124,11 +124,11 @@ docker-compose up
 ```
 
 
-## Manual installation
+## Manual Installation
 
 ### Linux
 
-#### Install crystal
+#### Install Crystal
 
 Follow the instructions for your distribution here: https://crystal-lang.org/install/
 
@@ -139,7 +139,7 @@ Arch Linux
 sudo pacman -S base-devel librsvg postgresql
 ```
 
-Ubuntu or Debian
+Debian/Ubuntu
 ```bash
 sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
 ```
@@ -225,15 +225,15 @@ shards update && shards install && crystal build src/invidious.cr --release
 
 Detailed configuration available in the [configuration guide](./Configuration.md).
 
-Because of various issues Invidious **must** be restarted often, at least once a day, ideally every hours.
+Because of various issues Invidious **must** be restarted often, at least once a day, ideally every hour.
 
 If you use a reverse proxy, you **must** configure invidious to properly serve request through it:
 
-`https_only: true` : if your are serving your instance via https, set it to true
+`https_only: true` : if you are serving your instance via https, set it to true
 
 `domain: domain.ext`: if you are serving your instance via a domain name, set it here
 
-`external_port: 443`: if your are serving your instance via https, set it to 443
+`external_port: 443`: if you are serving your instance via https, set it to 443
 
 ## Update Invidious
 
