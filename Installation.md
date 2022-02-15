@@ -31,7 +31,7 @@ Ensure [Docker Engine](https://docs.docker.com/engine/install) and [Docker Compo
 
 ### Docker-compose method (production)
 
-**This method uses the pre-built image from quay**
+**This method uses the pre-built Docker image from quay**
 
 Note: Currently the repository has to be cloned, this is because the `init-invidious-db.sh` file and the `config/sql` directory have to be mounted to the postgres container (See the volumes section in the docker-compose file below). This "problem" will be solved in the future.
 
@@ -71,7 +71,9 @@ services:
       - "127.0.0.1:3000:3000"
     environment:
       INVIDIOUS_CONFIG: | 
-      # Follow the config/config.yml file from the main repository to know the available configuration options
+      # Please read the following file for a comprehensive list of all available
+      # configuration options and their associated syntax:
+      # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
         channel_threads: 1
         check_tables: true
         feed_threads: 1
@@ -115,7 +117,7 @@ Note: This compose is made for a true "production" setup, where Invidious is beh
 
 ### Docker-compose method (development)
 
-**This method build an image from source**
+**This method build a Docker image from source**
 
 ```bash
 git clone https://github.com/iv-org/invidious.git
@@ -144,7 +146,7 @@ Debian/Ubuntu
 sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
 ```
 
-RHEL based and RHEL-like system (RHEL, Fedora, AlmaLinux, RockyLinux...)
+RHEL based and RHEL-like systems (RHEL, Fedora, AlmaLinux, RockyLinux...)
 ```bash
 sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc
 ```
