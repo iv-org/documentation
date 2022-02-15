@@ -15,15 +15,13 @@ If you have less (e.g on a cheap VPS) you can setup a SWAP file or partition, so
 
 After installation take a look at the [Post-install steps](#post-install-configuration).
 
-Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) provider/software (Heroku, YunoHost, Repli...) are unsupported, use them at your own risk, they **WILL** cause problems with Invidious and might even suspend your account for "abuse" since Invidious is heavy, bandwidth intensive and technically a proxy (and most provider don't like them). If you use one and want to report an issue, please mention which one you use.
+Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) provider/software (Heroku, YunoHost, Repli...) are unsupported. Use them at your own risk. They **WILL** cause problems with Invidious and might even suspend your account for "abuse" since Invidious is heavy, bandwidth intensive and technically a proxy (and most providers don't like them). If you use one and want to report an issue, please mention which one you use.
 
----
 
 ## Automated installation
 
 [Invidious-Updater](https://github.com/tmiland/Invidious-Updater) is a self-contained script that can automatically install and update Invidious.
 
----
 
 ## Docker
 
@@ -32,6 +30,17 @@ Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](
 Ensure [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed before beginning.
 
 ### Docker-compose method (production)
+
+**This method uses the pre-built image from quay**
+
+Note: Currently the repository has to be cloned, this is because the `init-invidious-db.sh` file and the `config/sql` directory have to be mounted to the postgres container (See the volumes section in the docker-compose file below). This "problem" will be solved in the future.
+
+```bash
+git clone https://github.com/iv-org/invidious.git
+cd invidious
+```
+
+Edit the docker-compose.yml with this content:
 
 ```docker
 version: "2.4"
@@ -61,7 +70,8 @@ services:
     ports:
       - "127.0.0.1:3000:3000"
     environment:
-      INVIDIOUS_CONFIG: | # Follow the config/config.yml file from the main repository to know the available configuration options
+      INVIDIOUS_CONFIG: | 
+      # Follow the config/config.yml file from the main repository to know the available configuration options
         channel_threads: 1
         check_tables: true
         feed_threads: 1
@@ -105,13 +115,14 @@ Note: This compose is made for a true "production" setup, where Invidious is beh
 
 ### Docker-compose method (development)
 
+**This method build an image from source**
+
 ```bash
-$ git clone https://github.com/iv-org/invidious.git
-$ cd invidious
-$ docker-compose up
+git clone https://github.com/iv-org/invidious.git
+cd invidious
+docker-compose up
 ```
 
----
 
 ## Manual installation
 
@@ -125,89 +136,89 @@ Follow the instructions for your distribution here: https://crystal-lang.org/ins
 
 Arch Linux
 ```bash
-$ sudo pacman -S base-devel librsvg postgresql
+sudo pacman -S base-devel librsvg postgresql
 ```
 
 Ubuntu or Debian
 ```bash
-$ sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
+sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
 ```
 
-Fedora
+RHEL based and RHEL-like system (RHEL, Fedora, AlmaLinux, RockyLinux...)
 ```bash
-$ sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc
+sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc
 ```
 
 #### Add an Invidious user and clone the repository
 
 ```bash
-$ useradd -m invidious
-$ su - invidious
-$ git clone https://github.com/iv-org/invidious
-$ exit
+useradd -m invidious
+su - invidious
+git clone https://github.com/iv-org/invidious
+exit
 ```
 
 #### Set up PostgresSQL
 
 ```bash
-$ systemctl enable --now postgresql
-$ sudo -i -u postgres
-$ psql -c "CREATE USER kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
-$ createdb -O kemal invidious
-$ psql invidious kemal < /home/invidious/invidious/config/sql/channels.sql
-$ psql invidious kemal < /home/invidious/invidious/config/sql/videos.sql
-$ psql invidious kemal < /home/invidious/invidious/config/sql/channel_videos.sql
-$ psql invidious kemal < /home/invidious/invidious/config/sql/users.sql
-$ psql invidious kemal < /home/invidious/invidious/config/sql/session_ids.sql
-$ psql invidious kemal < /home/invidious/invidious/config/sql/nonces.sql
-$ psql invidious kemal < /home/invidious/invidious/config/sql/annotations.sql
-$ psql invidious kemal < /home/invidious/invidious/config/sql/playlists.sql
-$ psql invidious kemal < /home/invidious/invidious/config/sql/playlist_videos.sql
-$ exit
+systemctl enable --now postgresql
+sudo -i -u postgres
+psql -c "CREATE USER kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
+createdb -O kemal invidious
+psql invidious kemal < /home/invidious/invidious/config/sql/channels.sql
+psql invidious kemal < /home/invidious/invidious/config/sql/videos.sql
+psql invidious kemal < /home/invidious/invidious/config/sql/channel_videos.sql
+psql invidious kemal < /home/invidious/invidious/config/sql/users.sql
+psql invidious kemal < /home/invidious/invidious/config/sql/session_ids.sql
+psql invidious kemal < /home/invidious/invidious/config/sql/nonces.sql
+psql invidious kemal < /home/invidious/invidious/config/sql/annotations.sql
+psql invidious kemal < /home/invidious/invidious/config/sql/playlists.sql
+psql invidious kemal < /home/invidious/invidious/config/sql/playlist_videos.sql
+exit
 ```
 
 #### Set up Invidious
 
 ```bash
-$ su - invidious
-$ cd invidious
-$ shards build src/invidious.cr --release
-$ exit
+su - invidious
+cd invidious
+shards update && shards install && crystal build src/invidious.cr --release
+exit
 ```
 
 #### Systemd service
 
 ```bash
-$ cp /home/invidious/invidious/invidious.service /etc/systemd/system/invidious.service
-$ systemctl enable --now invidious.service
+cp /home/invidious/invidious/invidious.service /etc/systemd/system/invidious.service
+systemctl enable --now invidious.service
 ```
 
 ### MacOS
 
 ```bash
 # Install dependencies
-$ brew update
-$ brew install shards crystal postgres imagemagick librsvg
+brew update
+brew install shards crystal postgres imagemagick librsvg
 
 # Clone the repository and set up a PostgreSQL database
-$ git clone https://github.com/iv-org/invidious
-$ cd invidious
-$ brew services start postgresql
-$ psql -c "CREATE ROLE kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
-$ createdb -O kemal invidious
-$ psql invidious kemal < config/sql/channels.sql
-$ psql invidious kemal < config/sql/videos.sql
-$ psql invidious kemal < config/sql/channel_videos.sql
-$ psql invidious kemal < config/sql/users.sql
-$ psql invidious kemal < config/sql/session_ids.sql
-$ psql invidious kemal < config/sql/nonces.sql
-$ psql invidious kemal < config/sql/annotations.sql
-$ psql invidious kemal < config/sql/privacy.sql
-$ psql invidious kemal < config/sql/playlists.sql
-$ psql invidious kemal < config/sql/playlist_videos.sql
+git clone https://github.com/iv-org/invidious
+cd invidious
+brew services start postgresql
+psql -c "CREATE ROLE kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
+createdb -O kemal invidious
+psql invidious kemal < config/sql/channels.sql
+psql invidious kemal < config/sql/videos.sql
+psql invidious kemal < config/sql/channel_videos.sql
+psql invidious kemal < config/sql/users.sql
+psql invidious kemal < config/sql/session_ids.sql
+psql invidious kemal < config/sql/nonces.sql
+psql invidious kemal < config/sql/annotations.sql
+psql invidious kemal < config/sql/privacy.sql
+psql invidious kemal < config/sql/playlists.sql
+psql invidious kemal < config/sql/playlist_videos.sql
 
 # Set up Invidious
-$ shards build src/invidious.cr --release
+shards update && shards install && crystal build src/invidious.cr --release
 ```
 
 ## Post-install configuration:
@@ -228,32 +239,29 @@ If you use a reverse proxy, you **must** configure invidious to properly serve r
 
 #### Updating a Docker install
 ```bash
-$ docker-compose pull && docker-compose up && docker image prune -f
+docker-compose pull && docker-compose up && docker image prune -f
 ```
 
 #### Update a manual install
 ```bash
-$ sudo - invidious
-$ cd invidious
-$ currentVersion=$(git rev-list --max-count=1 --abbrev-commit HEAD)
-$ git pull
-$ for i in `git rev-list --reverse --abbrev-commit $currentVersion..HEAD` ; do file=./config/migrate-scripts/migrate-db-$i.sh ; [ -f $file ] && $file ; done
-$ shards build src/invidious.cr --release
-$ exit
-$ systemctl restart invidious.service
+sudo - invidious
+cd invidious
+shards update && shards install && crystal build src/invidious.cr --release
+exit
+systemctl restart invidious.service
 ```
 
 ## Usage:
 
 ```bash
-$ ./invidious
+./invidious
 ```
 
 
 #### Logrotate configuration
 
 ```bash
-$ echo "/home/invidious/invidious/invidious.log {
+echo "/home/invidious/invidious/invidious.log {
 rotate 4
 weekly
 notifempty
@@ -261,5 +269,5 @@ missingok
 compress
 minsize 1048576
 }" | tee /etc/logrotate.d/invidious.logrotate
-$ chmod 0644 /etc/logrotate.d/invidious.logrotate
+chmod 0644 /etc/logrotate.d/invidious.logrotate
 ```
