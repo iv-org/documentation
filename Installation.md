@@ -117,7 +117,7 @@ Note: This compose is made for a true "production" setup, where Invidious is beh
 
 ### Docker-compose method (development)
 
-**This method build a Docker image from source**
+**This method builds a Docker image from source**
 
 ```bash
 git clone https://github.com/iv-org/invidious.git
