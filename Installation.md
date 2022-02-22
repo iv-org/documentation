@@ -76,7 +76,7 @@ services:
       - invidious-db
 
   invidious-db:
-    image: postgres:14-alpine
+    image: docker.io/library/postgres:14-alpine
     restart: unless-stopped
     volumes:
       - postgresdata:/var/lib/postgresql/data
