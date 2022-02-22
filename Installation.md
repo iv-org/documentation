@@ -52,19 +52,19 @@ services:
     ports:
       - "127.0.0.1:3000:3000"
     environment:
+      INVIDIOUS_CONFIG: |
       # Please read the following file for a comprehensive list of all available
       # configuration options and their associated syntax:
       # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
-      INVIDIOUS_CONFIG: |
         channel_threads: 1
         check_tables: true
         feed_threads: 1
         db:
+          dbname: invidious
           user: kemal
           password: kemal
-          host: postgres
+          host: invidious-postgres
           port: 5432
-          dbname: invidious
         full_refresh: false
         https_only: false
         domain:
@@ -75,9 +75,9 @@ services:
       timeout: 5s
       retries: 2
     depends_on:
-      - postgres
+      - invidious-postgres
 
-  postgres:
+  invidious-postgres:
     image: postgres:14
     restart: unless-stopped
     volumes:
