@@ -184,7 +184,8 @@ exit
 ```bash
 su - invidious
 cd invidious
-shards update && shards install && crystal build src/invidious.cr --release
+shards install --production
+crystal build src/invidious.cr --release
 exit
 ```
 
