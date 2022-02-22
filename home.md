@@ -23,7 +23,6 @@ dateCreated: 2021-02-25T18:13:08.338Z
 
 - [Installation](./Installation.md)
 - [Configuration](./Configuration.md)
-- [Updating](./Updating.md)
 - [Apache2 Virtual Host with Reverse Proxy](./Apache2-Reverse-Proxy.md)
 - [Nginx Reverse Proxy Configuration](./NGINX-Reverse-Proxy.md)
 - [Database Information and Maintenance](./Database-Information-and-Maintenance.md)
