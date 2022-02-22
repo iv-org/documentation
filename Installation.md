@@ -47,7 +47,6 @@ version: "3"
 services:
 
   invidious:
-    container_name: invidious
     image: quay.io/invidious/invidious:latest
     restart: unless-stopped
     ports:
@@ -77,7 +76,6 @@ services:
       - invidious-db
 
   invidious-db:
-    container_name: invidious-db
     image: postgres:14-alpine
     restart: unless-stopped
     volumes:
