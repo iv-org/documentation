@@ -56,19 +56,16 @@ services:
       # Please read the following file for a comprehensive list of all available
       # configuration options and their associated syntax:
       # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
-        channel_threads: 1
         check_tables: true
-        feed_threads: 1
         db:
           dbname: invidious
           user: kemal
           password: kemal
           host: invidious-postgres
           port: 5432
-        full_refresh: false
-        https_only: false
-        domain:
-      # external_port:
+        # https_only: false
+        # domain:
+        # external_port:
     healthcheck:
       test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
       interval: 30s
