@@ -47,6 +47,7 @@ version: "3"
 services:
 
   invidious:
+    container_name: invidious
     image: quay.io/invidious/invidious:latest
     restart: unless-stopped
     ports:
@@ -60,7 +61,7 @@ services:
           dbname: invidious
           user: kemal
           password: kemal
-          host: invidious-postgres
+          host: invidious-db
           port: 5432
         check_tables: true
         # external_port:
@@ -73,9 +74,10 @@ services:
       timeout: 5s
       retries: 2
     depends_on:
-      - invidious-postgres
+      - invidious-db
 
-  invidious-postgres:
+  invidious-db:
+    container_name: invidious-db
     image: postgres:14-alpine
     restart: unless-stopped
     volumes:
