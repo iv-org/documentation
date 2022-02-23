@@ -43,13 +43,42 @@ cd invidious
 Edit the docker-compose.yml with this content:
 
 ```docker
-version: "2.4"
+version: "3"
 services:
-  postgres:
-    image: postgres:10
-    restart: always
-    networks:
-      - invidious
+
+  invidious:
+    image: quay.io/invidious/invidious:latest
+    # image: quay.io/invidious/invidious:latest-arm64 # ARM64/AArch64 devices
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      # Please read the following file for a comprehensive list of all available
+      # configuration options and their associated syntax:
+      # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
+      INVIDIOUS_CONFIG: |
+        db:
+          dbname: invidious
+          user: kemal
+          password: kemal
+          host: invidious-db
+          port: 5432
+        check_tables: true
+        # external_port:
+        # domain:
+        # https_only: false
+        # statistics_enabled: false
+    healthcheck:
+      test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+      interval: 30s
+      timeout: 5s
+      retries: 2
+    depends_on:
+      - invidious-db
+
+  invidious-db:
+    image: docker.io/library/postgres:14
+    restart: unless-stopped
     volumes:
       - postgresdata:/var/lib/postgresql/data
       - ./config/sql:/config/sql
@@ -60,53 +89,9 @@ services:
       POSTGRES_PASSWORD: kemal
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
-  invidious:
-    image: quay.io/invidious/invidious:latest
-    restart: always
-    networks:
-      - invidious
-    mem_limit: 1024M
-    cpus: 0.5
-    ports:
-      - "127.0.0.1:3000:3000"
-    environment:
-      INVIDIOUS_CONFIG: | 
-      # Please read the following file for a comprehensive list of all available
-      # configuration options and their associated syntax:
-      # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
-        channel_threads: 1
-        check_tables: true
-        feed_threads: 1
-        db:
-          dbname: invidious
-          user: kemal
-          password: kemal
-          host: postgres
-          port: 5432
-        full_refresh: false
-        https_only: false
-        domain: 
-      # external_port:
-    healthcheck:
-      test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
-      interval: 30s
-      timeout: 5s
-      retries: 2
-    depends_on:
-      - postgres
-  autoheal:
-    restart: always
-    image: willfarrell/autoheal
-    environment:
-      - AUTOHEAL_CONTAINER_LABEL=all
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
 
 volumes:
   postgresdata:
-
-networks:
-  invidious:
 ```
 
 Note: This compose is made for a true "production" setup, where Invidious is behind a reverse proxy. If you prefer to directly access Invidious, replace `127.0.0.1:3000:3000` with `3000:3000` under the `ports:` section.
