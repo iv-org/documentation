@@ -48,6 +48,7 @@ services:
 
   invidious:
     image: quay.io/invidious/invidious:latest
+    # image: quay.io/invidious/invidious:latest-arm64 # ARM64/AArch64 devices
     restart: unless-stopped
     ports:
       - "127.0.0.1:3000:3000"
