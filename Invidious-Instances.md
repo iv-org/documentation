@@ -44,6 +44,8 @@ dateCreated: 2021-05-23T16:58:48.431Z
 
 * [invidious.privacy.gd](https://invidious.privacy.gd) 🇺🇸
 
+* [invidious.weblibre.org](https://invidious.weblibre.org) 🇨🇱
+
 * [invidious.esmailelbob.xyz](https://invidious.esmailelbob.xyz) 🇨🇦
 
 ### Tor Onion Services:
