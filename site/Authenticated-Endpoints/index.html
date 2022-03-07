@@ -1,0 +1,1251 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The official Invidious documentation">
+      
+      
+        <meta name="author" content="The Invidious project.">
+      
+      
+        <link rel="canonical" href="https://docs.invidious.io/Authenticated-Endpoints/">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>Authenticated-Endpoints - Invidious Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#get-apiv1authfeed" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Invidious Documentation" class="md-header__button md-logo" aria-label="Invidious Documentation" data-md-component="logo">
+      
+  <img src="../images/invidious.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Invidious Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Authenticated-Endpoints
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Invidious Documentation" class="md-nav__button md-logo" aria-label="Invidious Documentation" data-md-component="logo">
+      
+  <img src="../images/invidious.png" alt="logo">
+
+    </a>
+    Invidious Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        HOME
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Always-use-%22local%22-to-proxy-video-through-the-server-without-creating-an-account/" class="md-nav__link">
+        Always-use-"local"-to-proxy-video-through-the-server-without-creating-an-account
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Apache2-Reverse-Proxy/" class="md-nav__link">
+        Apache2-Reverse-Proxy
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Apache2-reverse-proxy/" class="md-nav__link">
+        Apache2-reverse-proxy
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Authenticated-Endpoints
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Authenticated-Endpoints
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authfeed" class="md-nav__link">
+    GET /api/v1/auth/feed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authnotifications" class="md-nav__link">
+    GET /api/v1/auth/notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authnotifications" class="md-nav__link">
+    POST /api/v1/auth/notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authplaylists" class="md-nav__link">
+    GET /api/v1/auth/playlists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authplaylists" class="md-nav__link">
+    POST /api/v1/auth/playlists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authplaylistsid" class="md-nav__link">
+    GET /api/v1/auth/playlists/:id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patch-apiv1authplaylistsid" class="md-nav__link">
+    PATCH /api/v1/auth/playlists/:id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-apiv1authplaylistsid" class="md-nav__link">
+    DELETE /api/v1/auth/playlists/:id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authplaylistsidvideos" class="md-nav__link">
+    POST /api/v1/auth/playlists/:id/videos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-apiv1authplaylistsidvideosindex" class="md-nav__link">
+    DELETE /api/v1/auth/playlists/:id/videos/:index
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authpreferences" class="md-nav__link">
+    GET /api/v1/auth/preferences
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authpreferences" class="md-nav__link">
+    POST /api/v1/auth/preferences
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authsubscriptions" class="md-nav__link">
+    GET /api/v1/auth/subscriptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authsubscriptionsucid" class="md-nav__link">
+    POST /api/v1/auth/subscriptions/:ucid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-apiv1authsubscriptionsucid" class="md-nav__link">
+    DELETE /api/v1/auth/subscriptions/:ucid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authtokens" class="md-nav__link">
+    GET /api/v1/auth/tokens
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authtokensregister" class="md-nav__link">
+    POST /api/v1/auth/tokens/register
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authtokensunregister" class="md-nav__link">
+    POST /api/v1/auth/tokens/unregister
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Configuration/" class="md-nav__link">
+        Configuration
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Database-Information-and-Maintenance/" class="md-nav__link">
+        Database-Information-and-Maintenance
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Export-YouTube-subscriptions/" class="md-nav__link">
+        Export-YouTube-subscriptions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Extensions/" class="md-nav__link">
+        Extensions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        Frequently Asked Questions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Geoblocking%2C-available-video-quality-and-DASH/" class="md-nav__link">
+        Geoblocking,-available-video-quality-and-DASH
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-deal-with-uMatrix/" class="md-nav__link">
+        How-to-deal-with-uMatrix
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-setup-Anti-Captcha/" class="md-nav__link">
+        How-to-setup-Anti-Captcha
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Invidious-Instances/" class="md-nav__link">
+        Invidious-Instances
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Issues-with-CAPTCHA-on-Debian-and-Ubuntu/" class="md-nav__link">
+        Issues-with-CAPTCHA-on-Debian-and-Ubuntu
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Known-Exception-in-log/" class="md-nav__link">
+        Known-Exception-in-log
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../List-of-URL-parameters/" class="md-nav__link">
+        List-of-URL-parameters
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NGINX-Reverse-Proxy/" class="md-nav__link">
+        NGINX-Reverse-Proxy
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Preferences/" class="md-nav__link">
+        Preferences
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Search-operators/" class="md-nav__link">
+        Search-operators
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Takedowns/" class="md-nav__link">
+        DMCA
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authfeed" class="md-nav__link">
+    GET /api/v1/auth/feed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authnotifications" class="md-nav__link">
+    GET /api/v1/auth/notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authnotifications" class="md-nav__link">
+    POST /api/v1/auth/notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authplaylists" class="md-nav__link">
+    GET /api/v1/auth/playlists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authplaylists" class="md-nav__link">
+    POST /api/v1/auth/playlists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authplaylistsid" class="md-nav__link">
+    GET /api/v1/auth/playlists/:id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patch-apiv1authplaylistsid" class="md-nav__link">
+    PATCH /api/v1/auth/playlists/:id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-apiv1authplaylistsid" class="md-nav__link">
+    DELETE /api/v1/auth/playlists/:id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authplaylistsidvideos" class="md-nav__link">
+    POST /api/v1/auth/playlists/:id/videos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-apiv1authplaylistsidvideosindex" class="md-nav__link">
+    DELETE /api/v1/auth/playlists/:id/videos/:index
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authpreferences" class="md-nav__link">
+    GET /api/v1/auth/preferences
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authpreferences" class="md-nav__link">
+    POST /api/v1/auth/preferences
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authsubscriptions" class="md-nav__link">
+    GET /api/v1/auth/subscriptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authsubscriptionsucid" class="md-nav__link">
+    POST /api/v1/auth/subscriptions/:ucid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-apiv1authsubscriptionsucid" class="md-nav__link">
+    DELETE /api/v1/auth/subscriptions/:ucid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-apiv1authtokens" class="md-nav__link">
+    GET /api/v1/auth/tokens
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authtokensregister" class="md-nav__link">
+    POST /api/v1/auth/tokens/register
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-apiv1authtokensunregister" class="md-nav__link">
+    POST /api/v1/auth/tokens/unregister
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>Authenticated-Endpoints</h1>
+
+<p>All endpoints under namespace <code>/api/v1/auth</code> require authentication.</p>
+<p>Authentication can be in one of two forms:</p>
+<ul>
+<li>A <code>Cookie: &lt;SID&gt;</code> header (for logged in users)</li>
+<li>An <code>Authentication: Bearer &lt;TOKEN&gt;</code> (recommended)</li>
+</ul>
+<p>A new token can be generated from <code>/authorize_token</code> with the given parameters:</p>
+<pre><code>scopes: Comma-separated list of scopes
+callback_url: URL to redirect to with generated token
+expire: Int64 how long a given token should be valid (in seconds)
+</code></pre>
+<p>Each <code>scope</code> has the following format:</p>
+<pre><code>METHOD1;METHOD2...:ENDPOINT(*)?
+</code></pre>
+<p>Where <code>METHOD</code> can be one of <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>, <code>PATCH</code>.</p>
+<p>An <code>ENDPOINT</code> can be any of the documented endpoints below.</p>
+<p>Examples:</p>
+<ul>
+<li>
+<p><code>POST:playlists*</code>: authorizes <code>POST</code> methods to <em>any</em> endpoint under <code>/api/v1/auth/playlists</code> (<code>/api/v1/auth/playlists</code>, <code>/api/v1/playlists/:id/videos</code>, etc.)</p>
+</li>
+<li>
+<p><code>:playlists/*</code>: authorizes <em>any</em> method to endpoints under <code>/api/v1/auth/playlists/</code> (<code>/api/v1/auth/playlists/:id</code>, <code>/api/v1/playlists/:id/videos</code>, etc.)</p>
+</li>
+<li>
+<p><code>GET:playlists/IVPAAAAAAA</code>: authorizes <code>GET</code> only to playlist <code>IVPAAAAAAA</code>.</p>
+</li>
+<li>
+<p><code>:preferences</code>: authorizes <em>any</em> method to <code>/api/v1/auth/preferences</code></p>
+</li>
+<li>
+<p><code>GET;POST:preferences</code>: authorizes <code>GET</code> or <code>POST</code> to <code>/api/v1/auth/preferences</code></p>
+</li>
+</ul>
+<p>When a <code>callback_url</code> is specified, after a user has authorized a token with the desired <code>scopes</code>, a GET request will be made to the <code>callback_url</code> with the token URL-escaped and appended as <code>token=TOKEN</code>.</p>
+<h5 id="get-apiv1authfeed">GET <code>/api/v1/auth/feed</code></h5>
+<p>Get subscription feed for the authenticated user.</p>
+<p>Parameters:</p>
+<pre><code>max_results: Int32
+page: Int32
+</code></pre>
+<blockquote>
+<p>Schema:</p>
+</blockquote>
+<pre><code class="language-javascript">{
+    &quot;notifications&quot;: [
+        {
+            &quot;type&quot;: &quot;shortVideo&quot;,
+            &quot;title&quot;: String,
+            &quot;videoId&quot;: String,
+            &quot;videoThumbnails&quot;: [
+                {
+                    &quot;quality&quot;: String,
+                    &quot;url&quot;: String,
+                    &quot;width&quot;: Int64,
+                    &quot;height&quot;: Int64
+                }
+            ],
+            &quot;lengthSeconds&quot;: Int64,
+            &quot;author&quot;: String,
+            &quot;authorId&quot;: String,
+            &quot;authorUrl&quot;: String,
+            &quot;published&quot;: Int64,
+            &quot;publishedText&quot;: String,
+            &quot;viewCount&quot;: Int64
+        }
+    ],
+    &quot;videos&quot;: [
+        {
+            &quot;type&quot;: &quot;shortVideo&quot;,
+            &quot;title&quot;: String,
+            &quot;videoId&quot;: String,
+            &quot;videoThumbnails&quot;: [
+                {
+                    &quot;quality&quot;: String,
+                    &quot;url&quot;: String,
+                    &quot;width&quot;: Int64,
+                    &quot;height&quot;: Int64
+                }
+            ],
+            &quot;lengthSeconds&quot;: Int64,
+            &quot;author&quot;: String,
+            &quot;authorId&quot;: String,
+            &quot;authorUrl&quot;: String,
+            &quot;published&quot;: Int64,
+            &quot;publishedText&quot;: String,
+            &quot;viewCount&quot;: Int64
+        }
+    ]
+}
+</code></pre>
+<h5 id="get-apiv1authnotifications">GET <code>/api/v1/auth/notifications</code></h5>
+<p>Parameters:</p>
+<pre><code>topics: Array(String) (comma separated: e.g. &quot;UCID1,UCID2) limit of 1000 topics
+since: Int64, timestamp
+</code></pre>
+<p>Provides an <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource">EventSource</a> for receiving changes from each <code>topic</code> in <code>topics</code>. Currently the only supported topic-type is <code>ucid</code>, which will return an updated video object whenever the given channel uploads a video.</p>
+<p>Important to note is that an event will also be sent when a channel <em>changes</em> an already uploaded video, for example changing description or title.</p>
+<p>Each event is a JSON object with the same schema as <code>/api/v1/videos</code>. The <code>fields</code> API can be used, which will be applied to each object.</p>
+<p>A <code>debug</code> topic can also provided which will return a (psuedo-)randomly selected video every minute.</p>
+<p><code>since</code> will return all videos uploaded since <code>TIMESTAMP</code>, with a limit of the 15 most recent videos from each topic.</p>
+<p>More details in <a href="https://github.com/iv-org/invidious/issues/469">#469</a>.</p>
+<h5 id="post-apiv1authnotifications">POST <code>/api/v1/auth/notifications</code></h5>
+<p>Same as above <code>GET</code> endpoint, however <code>topics</code> is moved into post body as <code>Content-Type: application/x-www-form-urlencoded</code>.</p>
+<h5 id="get-apiv1authplaylists">GET <code>/api/v1/auth/playlists</code></h5>
+<p>Get list of playlists for the given user.</p>
+<blockquote>
+<p>Schema:</p>
+</blockquote>
+<pre><code class="language-javascript">[
+    {
+        &quot;type&quot;: &quot;invidiousPlaylist&quot;,
+        &quot;title&quot;: String,
+        &quot;playlistId&quot;: String,
+        &quot;author&quot;: String,
+        &quot;authorId&quot;: null,
+        &quot;authorUrl&quot;: null,
+        &quot;authorThumbnails&quot;: [],
+        &quot;description&quot;: String,
+        &quot;descriptionHtml&quot;: String,
+        &quot;videoCount&quot;: Int32,
+        &quot;viewCount&quot;: 0,
+        &quot;updated&quot;: Int64,
+        &quot;isListed&quot;: Boolean,
+        &quot;videos&quot;: [
+            {
+                &quot;title&quot;: String,
+                &quot;videoId&quot;: String,
+                &quot;author&quot;: String,
+                &quot;authorId&quot;: String,
+                &quot;authorUrl&quot;: String,
+                &quot;videoThumbnails&quot;: [
+                    {
+                        &quot;quality&quot;: String,
+                        &quot;url&quot;: String,
+                        &quot;width&quot;: Int32,
+                        &quot;height&quot;: Int32
+                    }
+                ],
+                &quot;index&quot;: Int32,
+                &quot;indexId&quot;: String,
+                &quot;lengthSeconds&quot;: Int32
+            }
+        ]
+    }
+]
+</code></pre>
+<h5 id="post-apiv1authplaylists">POST <code>/api/v1/auth/playlists</code></h5>
+<p><code>Content-Type: application/json</code></p>
+<p>Create new playlist.</p>
+<p>Example request body:</p>
+<pre><code class="language-javascript">{
+    &quot;title&quot;: String,
+    &quot;privacy&quot;: &quot;private&quot;
+}
+</code></pre>
+<p><code>privacy</code> can be any of: <code>public</code>, <code>unlisted</code>, <code>private</code></p>
+<p>If successful, returns 201, a link to the created resource as a <code>Location</code> header, and the following response:</p>
+<pre><code class="language-javascript">{
+    &quot;title&quot;: String,
+    &quot;playlistId&quot;: String
+}
+</code></pre>
+<h5 id="get-apiv1authplaylistsid">GET <code>/api/v1/auth/playlists/:id</code></h5>
+<p>Returns same result as unauthenticated <code>/api/v1/playlists/:id</code>.</p>
+<p>Important to note is that if the requested playlist is marked as <code>private</code>, it will return an error if the request is not authenticated as the playlist's author.</p>
+<h5 id="patch-apiv1authplaylistsid">PATCH <code>/api/v1/auth/playlists/:id</code></h5>
+<p><code>Content-Type: application/json</code></p>
+<p>Modify a playlist's <code>description</code>, <code>title</code>, <code>description</code>, or <code>privacy</code>.</p>
+<p>Example request body:</p>
+<pre><code class="language-javascript">{
+    &quot;title&quot;: String,
+    &quot;description&quot;: String,
+    &quot;privacy&quot;: &quot;private&quot;
+}
+</code></pre>
+<p><code>privacy</code> can be any of: <code>public</code>, <code>unlisted</code>, <code>private</code></p>
+<p>Will return 204 on success.</p>
+<h5 id="delete-apiv1authplaylistsid">DELETE <code>/api/v1/auth/playlists/:id</code></h5>
+<p>Delete a given playlist <code>:id</code>.</p>
+<p>Will return 204 on success.</p>
+<h5 id="post-apiv1authplaylistsidvideos">POST <code>/api/v1/auth/playlists/:id/videos</code></h5>
+<p><code>Content-Type: application/json</code></p>
+<p>Add a video to the given playlist <code>:id</code>.</p>
+<p>Example request body:</p>
+<pre><code class="language-javascript">{
+    &quot;videoId&quot;: String
+}
+</code></pre>
+<p>Returns a 201 on success with the following schema:</p>
+<pre><code class="language-javascript">{
+    &quot;title&quot;: String,
+    &quot;videoId&quot;: String,
+    &quot;author&quot;: String,
+    &quot;authorId&quot;: String,
+    &quot;authorUrl&quot;: String,
+    &quot;videoThumbnails&quot;: [
+          {
+            &quot;quality&quot;: String,
+            &quot;url&quot;: String,
+            &quot;width&quot;: Int32,
+            &quot;height&quot;: Int32
+          }
+    ]
+}
+</code></pre>
+<h5 id="delete-apiv1authplaylistsidvideosindex">DELETE <code>/api/v1/auth/playlists/:id/videos/:index</code></h5>
+<p>Delete a video from the given playlist <code>:id</code> with <code>indexId</code> <code>:index</code>.</p>
+<p>Will return 204 on success.</p>
+<h5 id="get-apiv1authpreferences">GET <code>/api/v1/auth/preferences</code></h5>
+<p>Get preferences for authenticated user.</p>
+<blockquote>
+<p>Schema:</p>
+</blockquote>
+<pre><code class="language-javascript">{
+    &quot;annotations&quot;: false,
+    &quot;annotations_subscribed&quot;: false,
+    &quot;autoplay&quot;: false,
+    &quot;captions&quot;: [
+        &quot;&quot;,
+        &quot;&quot;,
+        &quot;&quot;
+    ],
+    &quot;comments&quot;: [
+        &quot;youtube&quot;,
+        &quot;&quot;
+    ],
+    &quot;continue&quot;: false,
+    &quot;continue_autoplay&quot;: true,
+    &quot;dark_mode&quot;: &quot;light&quot;,
+    &quot;latest_only&quot;: false,
+    &quot;listen&quot;: false,
+    &quot;local&quot;: false,
+    &quot;locale&quot;: &quot;en-US&quot;,
+    &quot;max_results&quot;: 40,
+    &quot;notifications_only&quot;: false,
+    &quot;player_style&quot;: &quot;invidious&quot;,
+    &quot;quality&quot;: &quot;hd720&quot;,
+    &quot;default_home&quot;: &quot;Popular&quot;,
+    &quot;feed_menu&quot;: [
+        &quot;Trending&quot;,
+        &quot;Playlists&quot;
+    ],
+    &quot;related_videos&quot;: true,
+    &quot;sort&quot;: &quot;published&quot;,
+    &quot;speed&quot;: 1.0,
+    &quot;thin_mode&quot;: false,
+    &quot;unseen_only&quot;: false,
+    &quot;video_loop&quot;: false,
+    &quot;volume&quot;: 100
+}
+</code></pre>
+<h5 id="post-apiv1authpreferences">POST <code>/api/v1/auth/preferences</code></h5>
+<p><code>Content-Type: application/json</code></p>
+<p>Patch user preferences.</p>
+<p>Example body:</p>
+<pre><code class="language-javascript">{
+    &quot;speed&quot;: 2.0,
+    &quot;volume&quot;: 10
+}
+</code></pre>
+<h5 id="get-apiv1authsubscriptions">GET <code>/api/v1/auth/subscriptions</code></h5>
+<p>Get user's subscriptions.</p>
+<blockquote>
+<p>Schema:</p>
+</blockquote>
+<pre><code class="language-javascript">[
+    {
+        &quot;author&quot;: String,
+        &quot;authorId&quot;: String
+    }
+]
+</code></pre>
+<h5 id="post-apiv1authsubscriptionsucid">POST <code>/api/v1/auth/subscriptions/:ucid</code></h5>
+<p><code>Content-Type: application/json</code></p>
+<p>Add a given <code>ucid</code> to a user's subscriptions.</p>
+<p>Will return 204 on success.</p>
+<h5 id="delete-apiv1authsubscriptionsucid">DELETE <code>/api/v1/auth/subscriptions/:ucid</code></h5>
+<p>Removes a given <code>ucid</code> from a user's subscriptions.</p>
+<p>Will return 204 on success.</p>
+<h5 id="get-apiv1authtokens">GET <code>/api/v1/auth/tokens</code></h5>
+<p>Get a list of tokens for the authenticated user.</p>
+<blockquote>
+<p>Schema:</p>
+</blockquote>
+<pre><code class="language-javascript">[
+    {
+        &quot;session&quot;: String,
+        &quot;issued&quot;: Int64
+    }
+]
+</code></pre>
+<h5 id="post-apiv1authtokensregister">POST <code>/api/v1/auth/tokens/register</code></h5>
+<p><code>Content-Type: application/json</code></p>
+<p>Create a new token for the authenticated user.</p>
+<p>Example request body:</p>
+<pre><code class="language-javascript">{
+    &quot;scopes&quot;: Array(String), // Each scope has same format as each scope in `/authorize_token`
+    &quot;callbackUrl&quot;: String?,
+    &quot;expire&quot;: Int64
+}
+</code></pre>
+<p>Returns a 200 on success with the newly created token as the response body.</p>
+<p>Example response:</p>
+<pre><code class="language-javascript">{
+    &quot;session&quot;:&quot;v1:YUwKEL1XwHQzp7-AAAAAAAAAAAAAAAAAA=&quot;,
+    &quot;scopes&quot;:[&quot;GET:notifications&quot;],
+    &quot;signature&quot;:&quot;jNYdAAAAAAAAAAAAAAAAAAAAAAAAAAAAVAXGb__2Gv-w=&quot;
+}
+</code></pre>
+<h5 id="post-apiv1authtokensunregister">POST <code>/api/v1/auth/tokens/unregister</code></h5>
+<p><code>Content-Type: application/json</code></p>
+<p>Revoke a token for the authenticated user.</p>
+<p>Example request:</p>
+<pre><code class="language-javascript">{
+    &quot;session&quot;: &quot;v1:YUwKEL1XwHQzp7-AAAAAAAAAAAAAAAAAA=&quot;
+}
+</code></pre>
+<p>Returns 204 on success.</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../Apache2-reverse-proxy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Apache2-reverse-proxy" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Apache2-reverse-proxy
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Configuration/" class="md-footer__link md-footer__link--next" aria-label="Next: Configuration" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Configuration
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/iv-org/documentation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.expand", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+    
+  </body>
+</html>
