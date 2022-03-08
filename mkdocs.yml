@@ -1,0 +1,23 @@
+site_name: Invidious Documentation
+site_url: https://docs.invidious.io/
+site_author: The Invidious project.
+site_description: >-
+  The official Invidious documentation
+theme:
+  name: material
+  font: false
+  palette:
+    primary: black
+  logo: images/invidious.png # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/#logo
+  favicon: images/favicon.ico # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/#favicon
+  features:
+    - navigation.tracking # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#anchor-tracking
+    - navigation.expand # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-expansion
+    - navigation.top # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#back-to-top-button
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/iv-org/documentation
+
+markdown_extensions:
+  - pymdownx.magiclink
