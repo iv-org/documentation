@@ -1,12 +1,4 @@
----
-title: Database-Information-and-Maintenance
-description: 
-published: true
-date: 2021-05-23T16:58:27.530Z
-tags: 
-editor: markdown
-dateCreated: 2021-01-28T20:39:18.631Z
----
+# Database Information and Maintenance
 
 Invidious needs one PostgreSQL database which has the following tables.
 

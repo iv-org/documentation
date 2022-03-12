@@ -1,12 +1,4 @@
----
-title: Extensions
-description: 
-published: true
-date: 2021-05-23T16:58:34.318Z
-tags: 
-editor: markdown
-dateCreated: 2021-01-28T20:39:27.709Z
----
+# Extensions
 
 ### Browser extensions for Invidious
 - [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect): Redirects YouTube to Invidious, Twitter to Nitter, and Instagram to Bibliogram. [Source](https://github.com/SimonBrazell/privacy-redirect) / [Firefox](https://addons.mozilla.org/addon/privacy-redirect) / [Chrome](https://chrome.google.com/webstore/detail/privacy-redirect/pmcmeagblkinmogikoikkdjiligflglb)

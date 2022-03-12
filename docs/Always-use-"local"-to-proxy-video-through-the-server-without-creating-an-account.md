@@ -1,12 +1,4 @@
----
-title: Always-use-"local"-to-proxy-video-through-the-server-without-creating-an-account
-description: 
-published: true
-date: 2021-05-23T16:58:12.539Z
-tags: 
-editor: markdown
-dateCreated: 2021-01-28T20:38:58.736Z
----
+# Always use "local" to proxy video through the server without creating an account
 
 Download ViolentMonkey for your Browser:
 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)

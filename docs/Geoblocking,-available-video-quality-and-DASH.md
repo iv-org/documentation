@@ -1,12 +1,4 @@
----
-title: Geoblocking,-available-video-quality-and-DASH
-description: 
-published: true
-date: 2021-05-23T16:58:38.141Z
-tags: 
-editor: markdown
-dateCreated: 2021-01-28T20:39:32.300Z
----
+# Geoblocking, available video quality and DASH
 
 ## Geoblocking
 Sometimes you may notice that you cannot watch a video on Invidious. This is because YouTube is geoblocking, i.e. preventing access to videos based on your geographical location.

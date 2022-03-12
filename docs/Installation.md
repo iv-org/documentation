@@ -1,13 +1,3 @@
----
-title: Installation
-description: 
-published: true
-date: 2021-05-23T16:58:48.374Z
-tags: 
-editor: markdown
-dateCreated: 2021-02-25T11:24:06.655Z
----
-
 # Installation
 
 Compiling Invidious requires at least 2GB of free RAM (We recommend to have at least 3GB installed).
