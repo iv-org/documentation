@@ -1,12 +1,4 @@
----
-title: Search-operators
-description: 
-published: true
-date: 2021-05-23T16:59:19.319Z
-tags: 
-editor: markdown
-dateCreated: 2021-01-28T20:40:22.456Z
----
+# Search operators
 
 Invidious supports the various search filters provided by YouTube.
 

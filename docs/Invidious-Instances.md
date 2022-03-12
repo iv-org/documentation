@@ -1,14 +1,4 @@
----
-title: Invidious-Instances
-description: 
-published: true
-date: 2021-05-23T16:58:51.441Z
-tags: 
-editor: markdown
-dateCreated: 2021-05-23T16:58:48.431Z
----
-
-# Public Invidious Instances:
+# Invidious Instances:
 
 [Uptime History provided by Uptimerobot](https://stats.uptimerobot.com/89VnzSKAn)
 

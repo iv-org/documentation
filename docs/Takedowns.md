@@ -1,12 +1,4 @@
----
-title: DMCA
-description: 
-published: true
-date: 2021-11-16T16:58:51.441Z
-tags: 
-editor: markdown
-dateCreated: 2021-11-16T16:58:48.431Z
----
+# Takedowns
 
 While running Invidious, it is very possible you will recive a DMCA at some point. A copyright agent will probably at some point search the ID of an infringing video on a search engine and see an Invidious instance appear. At least in the United States, Invidious instances should in theory be immune to DMCA laws because of [17 U.S. Code § 512](https://www.law.cornell.edu/uscode/text/17/512) stating that a provider is not responsible for content assuming that "the material is transmitted through the system or network without modification of its content."
 

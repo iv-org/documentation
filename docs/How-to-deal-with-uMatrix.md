@@ -1,12 +1,4 @@
----
-title: How-to-deal-with-uMatrix
-description: 
-published: true
-date: 2021-05-23T16:58:41.524Z
-tags: 
-editor: markdown
-dateCreated: 2021-01-28T20:39:36.844Z
----
+# How to deal with uMatrix
 
 If you're using [uMatrix](https://github.com/gorhill/uMatrix), you won't be able to automatically play a video served by Invidious on other websites without unblocking requests to Invidious instances.
 

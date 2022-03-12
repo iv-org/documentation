@@ -1,12 +1,4 @@
----
-title: List-of-URL-parameters
-description: 
-published: true
-date: 2021-05-23T16:59:05.685Z
-tags: 
-editor: markdown
-dateCreated: 2021-01-28T20:40:01.812Z
----
+# List of URL parameters
 
 A list of URL parameters for Invidious, which can automatically toggle various UI and player settings.
 
