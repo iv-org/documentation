@@ -1,8 +1,8 @@
 # Takedown Notices
 
-While running Invidious, it is very possible you will receive a takedown notice at some point. A copyright agent will probably search the ID of an infringing video on a search engine and see an Invidious instance appear. At least in the United States and in Europe, Invidious instances should in theory be immune those kind of takedown.
+If you are running a public Invidious instance, it is very possible that you will end up receiving a takedown notice at some point. A copyright agent will probably search the ID of an infringing video on a search engine and see your instance appear. At least in the United States and in Europe, Invidious instances are, in theory, legal.
 
-Do note that most requests are invalid and technically illegal since they aren't sent by a lawyer, so you can, in theory, never replies to them (unless they are a company/law firm). If you want to be safe you can obviously counter to all of them.
+Do note that most requests are invalid and technically illegal since they aren't sent by a lawyer, so you can, in theory, never reply to them (unless they are a company/law firm). If you want to be safe you can obviously counter all of them.
 
 To counter them "easily", we decided to provide templates depending on where your instance is located.
 
