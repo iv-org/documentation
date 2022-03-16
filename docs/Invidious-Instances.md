@@ -1,4 +1,4 @@
-# Invidious Instances:
+# Invidious Instances
 
 [Uptime History provided by Uptimerobot](https://stats.uptimerobot.com/89VnzSKAn)
 
