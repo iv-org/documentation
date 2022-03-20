@@ -40,6 +40,9 @@
 
 * [max16k.invidious.icu](https://max16k.invidious.icu) 🇩🇪 (uses Cloudflare)
 
+* [invidious.mutahar.rocks](https://invidious.mutahar.rocks) 🇫🇷 [inv.bp.mutahar.rocks](https://inv.bp.mutahar.rocks) 🇫🇷
+
+
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion) 🇫🇮 (Onion of invidious.snopyta.org)
 
