@@ -38,7 +38,7 @@
 
 * [invidious.esmailelbob.xyz](https://invidious.esmailelbob.xyz) 🇨🇦
 
-* [max16k.invidious.icu](https://max16k.invidious.icu) 🇩🇪 (uses Cloudflare)
+* [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare)
 
 * [invidious.mutahar.rocks](https://invidious.mutahar.rocks) 🇫🇷 [inv.bp.mutahar.rocks](https://inv.bp.mutahar.rocks) 🇫🇷
 
