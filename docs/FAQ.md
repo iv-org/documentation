@@ -5,13 +5,19 @@
 - Using Invidious
   * [Can I use Invidious on my device?](#q-can-i-use-invidious-on-my-device)
   * [Do you plan to make an Android/iOS app?](#q-do-you-plan-to-make-an-androidios-app)
+  * [Can I synchronize my account between instances?](
+    #q-can-i-synchronize-my-account-between-instances)
   * [What data is collected by Invidious?](#q-what-data-is-collected-by-invidious)
   * [What data is shared with YouTube?](#q-what-data-is-shared-with-youtube)
 
-- Commonly encountered errors
+- Commonly encountered errors/problems
   * [The media could not be loaded…](#q-the-media-could-not-be-loaded)
   * [Could not check out a connection in 2.0 seconds (DB::PoolTimeout)](
     #q-could-not-check-out-a-connection-in-20-seconds-dbpooltimeout)
+  * [`DB::PoolRetryAttemptsExceeded`](#q-dbpoolretryattemptsexceeded)
+  * [Subtitles are not working!](#q-subtitles-are-not-working)
+  * [Where are the 360p/480p/1080p quality options?](
+    #q-where-are-the-360p480p1080p-quality-options)
 
 - Running your own instance
   * [Do you provide pre-built binaries (`.deb`, `.rpm`, etc..)?](
@@ -21,6 +27,7 @@
     #q-rss-feedslinksetc-urls-redirect-to-ip3000-but-i-have-a-reverse-proxy)
   * [The "popular" feed/page on my instance is empty!](
     #q-the-popular-feedpage-on-my-instance-is-empty)
+  * [I can't log in nor save preferences](#q-i-cant-log-in-nor-save-preferences)
 
 
 # Using Invidious
@@ -38,6 +45,48 @@ sure, of course! A responsive interface is available for mobile/tablets.
 
 If you have an Android phone/tablet, you can check the
 [NewPipe](https://github.com/TeamNewPipe/NewPipe) application.
+
+<br/>
+
+## **Q:** Can I synchronize my account between instances?
+
+**A:** Short answer: manually => Yes, automatically => No.
+
+**How to do it manually:**
+
+1. Go to the import/export page while connected to your account (preferences
+page, then click the "Import/export data" link at the bottom of the page)
+2. Click on "Export Invidious data as JSON"
+3. Go to the same import/export page on the other instance
+4. Use "Import Invidious JSON data"
+5. Press import
+
+Yes, we're aware that it's cumbersome. Please continue to read to understand
+why we don't implement automatic synchronization.
+
+**Why we don't implement automatic sync:**
+
+TL;DR: we don't have the time to implement/maintain it.
+
+To get automatic synchronization, we have 3 options:
+  1. Centralized database (like Youtube)
+  2. Federation (like Matrix, Mastodon and PeerTube)
+  3. An external tool that uses the API
+
+1. A centralized database goes against our idea of a decentralized web so
+let's ignore that right away (plus, we don't want to risk hosting large
+amounts of user data anyway).
+
+2. Federation is a good option (it works well for the others), however we
+currently don't have the time nor the resources required to implement it.
+
+3. An external tool (that runs locally on your PC, or a self-hosted server
+like _Firefox Sync_) is also a valid option. As for federation, we don't
+have the resources to develop such a solution. PRs and external tool
+propositions are welcome!
+
+Please see the following issues for more details on the subject:
+https://github.com/iv-org/invidious/issues/2515
 
 <br/>
 
@@ -82,7 +131,7 @@ sent by your browser.
 <br/>
 
 
-# Commonly encountered errors
+# Commonly encountered errors/problems
 
 ## **Q:** The media could not be loaded…
 
@@ -113,6 +162,47 @@ on YouTube itself (sorry for the inconvenience).
 
 The instance you are using is having _database issues_. Please use another
 instance from the [list of public instances](https://instances.invidious.io)
+
+<br/>
+
+## **Q:** `DB::PoolRetryAttemptsExceeded`
+
+**A:** The instance you are using is having _database issues_. Please use
+another instance from the [list of public instances](
+https://instances.invidious.io)
+
+If you're an instance admin, first try restarting Invidious. Then try
+restarting PostgreSQL. If neither fixed the problem, try [increasing the
+maximum number of connections allowed](https://stackoverflow.com/a/32584211).
+Some distributions change the default to a low number.
+
+## **Q:** Subtitles are not working!
+
+**A:** Subtitles (also know as "Closed Captions") are generally not working
+on popular Invidious instances. This is due to URL rate limiting coming
+from Google servers.
+
+To solve that, try using a less popular public instance or host Invidious
+yourself.
+
+Please take a look at the following issue for more details:
+https://github.com/iv-org/invidious/issues/2567
+
+<br/>
+
+## **Q:** Where are the 360p/480p/1080p quality options?
+
+**A:** These quality options are only available when DASH is enabled.
+In order to enable DASH, go to the preferences and set the preferred
+video quality to "DASH".
+
+Note that DASH requires Javascript and _can_ be disabled by the instance
+administrator. So if the option is not available to you, try to switch to
+another instance.
+
+By default, DASH is not enabled to allow videos to be played without
+Javascript and also to save on bandwidth (DASH **must** be proxied in order
+to work properly, which uses a lot of the instance bandwidth).
 
 <br/>
 
@@ -150,3 +240,21 @@ All the supported configuration options are documented there.
 **A:** The "popular" feed is generated from the videos that are popular amongst
 the users registered on your instance. If nobody has created an account on your
 instance (e.g if registration is disabled) the popular feed will be empty.
+
+<br/>
+
+## **Q:** I can't log in nor save preferences!
+
+**A:** Double check your config! The value of the `domain` config option is
+used for the session (`SID`) and preferences (`PREFS`) cookies. If set
+incorrectly, the cookies will be invalid, and your browser will silently
+ignore them.
+
+**If you access your invidious instance by IP address (like `192.168.1.205`)
+then leave the `domain` config option EMPTY!**
+
+Common invalid values include:
+ - IP addresses (like `192.168.1.205`)
+ - Scheme before the domain (`https://example.com`)
+ - Port after the domain (`example.com:3000`)
+ - Typo in the FQDN (`<domain>.cm` instead of `<domain>.com`)
