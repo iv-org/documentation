@@ -10,12 +10,14 @@
   * [What data is collected by Invidious?](#q-what-data-is-collected-by-invidious)
   * [What data is shared with YouTube?](#q-what-data-is-shared-with-youtube)
 
-- Commonly encountered errors
+- Commonly encountered errors/problems
   * [The media could not be loaded…](#q-the-media-could-not-be-loaded)
   * [Could not check out a connection in 2.0 seconds (DB::PoolTimeout)](
     #q-could-not-check-out-a-connection-in-20-seconds-dbpooltimeout)
   * [`DB::PoolRetryAttemptsExceeded`](#q-dbpoolretryattemptsexceeded)
   * [Subtitles are not working!](#q-subtitles-are-not-working)
+  * [Where are the 360p/480p/1080p quality options?](
+    #q-where-are-the-360p480p1080p-quality-options)
 
 - Running your own instance
   * [Do you provide pre-built binaries (`.deb`, `.rpm`, etc..)?](
@@ -129,7 +131,7 @@ sent by your browser.
 <br/>
 
 
-# Commonly encountered errors
+# Commonly encountered errors/problems
 
 ## **Q:** The media could not be loaded…
 
@@ -185,6 +187,22 @@ yourself.
 
 Please take a look at the following issue for more details:
 https://github.com/iv-org/invidious/issues/2567
+
+<br/>
+
+## **Q:** Where are the 360p/480p/1080p quality options?
+
+**A:** These quality options are only available when DASH is enabled.
+In order to enable DASH, go to the preferences and set the preferred
+video quality to "DASH".
+
+Note that DASH requires Javascript and _can_ be disabled by the instance
+administrator. So if the option is not available to you, try to switch to
+another instance.
+
+By default, DASH is not enabled to allow videos to be played without
+Javascript and also to save on bandwidth (DASH **must** be proxied in order
+to work properly, which uses a lot of the instance bandwidth).
 
 <br/>
 
