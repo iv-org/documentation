@@ -1,8 +1,8 @@
 ## General
 
 - [Public Invidious Instances](./instances.md)
-- [Applications](./applications.md.md)
-- [Always proxy videos through server](./proxy-videos.md.md)
+- [Applications](./applications.md)
+- [Always proxy videos through server](./proxy-videos.md)
 - [Preferences](./preferences.md)
 - [Geoblocking, available quality and DASH](./geoblocking.md)
 - [Using search filters](./search-filters.md)
