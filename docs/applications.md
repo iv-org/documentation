@@ -1,4 +1,4 @@
-# Extensions
+# Applications
 
 ### Browser extensions for Invidious
 - [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect): Redirects YouTube to Invidious, Twitter to Nitter, and Instagram to Bibliogram. [Source](https://github.com/SimonBrazell/privacy-redirect) / [Firefox](https://addons.mozilla.org/addon/privacy-redirect) / [Chrome](https://chrome.google.com/webstore/detail/privacy-redirect/pmcmeagblkinmogikoikkdjiligflglb)
