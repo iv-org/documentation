@@ -200,7 +200,7 @@ shards update && shards install && crystal build src/invidious.cr --release
 
 ## Post-install configuration:
 
-Detailed configuration available in the [configuration guide](./Configuration.md).
+Detailed configuration available in the [configuration guide](./configuration.md).
 
 Because of various issues Invidious **must** be restarted often, at least once a day, ideally every hour.
 

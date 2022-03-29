@@ -1,25 +1,25 @@
 ## General
 
-- [Public Invidious Instances](./Invidious-Instances.md)
-- [Extensions](./Extensions.md)
-- [Always proxy videos through server](./Always-use-"local"-to-proxy-video-through-the-server-without-creating-an-account.md)
-- [Preferences](./Preferences.md)
-- [Geoblocking, available quality and DASH](./Geoblocking,-available-video-quality-and-DASH.md)
-- [Using search operators](./Search-operators.md)
-- [List of URL parameters](./List-of-URL-parameters.md)
-- [How to deal with uMatrix](./How-to-deal-with-uMatrix.md)
+- [Public Invidious Instances](./instances.md)
+- [Applications](./applications.md.md)
+- [Always proxy videos through server](./proxy-videos.md.md)
+- [Preferences](./preferences.md)
+- [Geoblocking, available quality and DASH](./geoblocking.md)
+- [Using search filters](./search-filters.md)
+- [List of URL parameters](./url-parameters.md)
+- [How to deal with uMatrix](./umatrix.md)
 
 ## For Administrators
 
-- [Installation](./Installation.md)
-- [Configuration](./Configuration.md)
-- [Apache2 Virtual Host with Reverse Proxy](./Apache2-Reverse-Proxy.md)
-- [Nginx Reverse Proxy Configuration](./NGINX-Reverse-Proxy.md)
-- [Database Information and Maintenance](./Database-Information-and-Maintenance.md)
-- [Issues with CAPTCHA](./Issues-with-CAPTCHA-on-Debian-and-Ubuntu.md)
-- [How to setup Anti-Captcha](./How-to-setup-Anti-Captcha.md)
+- [Installation](./installation.md)
+- [Configuration](./configuration.md)
+- [Apache2 Virtual Host with Reverse Proxy](./apache2.md)
+- [Nginx Reverse Proxy Configuration](./nginx.md)
+- [Database Information and Maintenance](./db-maintenance.md)
+- [Issues with CAPTCHA](./captcha-bug.md)
+- [How to setup Anti-Captcha](./anti-captcha.md)
 
 ## For Developers
 
-- [API](./API.md)
-- [Authenticated Endpoints](./Authenticated-Endpoints.md)
+- [API](./api.md)
+- [Authenticated Endpoints](./authenticated-endpoints.md)
