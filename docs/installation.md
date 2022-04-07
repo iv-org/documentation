@@ -7,11 +7,9 @@ After installation take a look at the [Post-install steps](#post-install-configu
 
 Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) provider/software (Heroku, YunoHost, Repli...) are unsupported. Use them at your own risk. They **WILL** cause problems with Invidious and might even suspend your account for "abuse" since Invidious is heavy, bandwidth intensive and technically a proxy (and most providers don't like them). If you use one and want to report an issue, please mention which one you use.
 
-
 ## Automated Installation
 
 [Invidious-Updater](https://github.com/tmiland/Invidious-Updater) is a self-contained script that can automatically install and update Invidious.
-
 
 ## Docker
 
@@ -67,7 +65,7 @@ services:
       - invidious-db
 
   invidious-db:
-    image: docker.io/library/postgres:14
+    image: docker.io/library/postgres:10
     restart: unless-stopped
     volumes:
       - postgresdata:/var/lib/postgresql/data
@@ -88,6 +86,7 @@ Note: This compose is made for a true "production" setup, where Invidious is beh
 
 **The environment variable `POSTGRES_USER` cannot be changed. The SQL config files that run the initial database migrations are hard-coded with the username `kemal`.**
 
+**According to issue [#3003](https://github.com/iv-org/invidious/issues/3003), using a PostgreSQL version greater than 10 might cause Invalid memory access errors.**
 
 ### Docker-compose method (development)
 
@@ -98,7 +97,6 @@ git clone https://github.com/iv-org/invidious.git
 cd invidious
 docker-compose up
 ```
-
 
 ## Manual Installation
 
@@ -111,16 +109,19 @@ Follow the instructions for your distribution here: https://crystal-lang.org/ins
 #### Install the dependencies
 
 Arch Linux
+
 ```bash
 sudo pacman -S base-devel librsvg postgresql
 ```
 
 Debian/Ubuntu
+
 ```bash
 sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
 ```
 
 RHEL based and RHEL-like systems (RHEL, Fedora, AlmaLinux, RockyLinux...)
+
 ```bash
 sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc
 ```
@@ -215,11 +216,13 @@ If you use a reverse proxy, you **must** configure invidious to properly serve r
 ## Update Invidious
 
 #### Updating a Docker install
+
 ```bash
 docker-compose pull && docker-compose up && docker image prune -f
 ```
 
 #### Update a manual install
+
 ```bash
 sudo - invidious
 cd invidious
@@ -233,7 +236,6 @@ systemctl restart invidious.service
 ```bash
 ./invidious
 ```
-
 
 #### Logrotate configuration
 
