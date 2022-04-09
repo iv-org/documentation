@@ -108,6 +108,8 @@ docker-compose up
 
 Follow the instructions for your distribution here: https://crystal-lang.org/install/
 
+Note: Invidious currently requires Crystal 1.2.2
+
 #### Install the dependencies
 
 Arch Linux
