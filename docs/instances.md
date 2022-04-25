@@ -22,8 +22,6 @@
 
 * [invidious.osi.kr](https://invidious.osi.kr) 🇳🇱 [Status Page](https://status.osbusiness.net/report/uptime/6e47474f3737993d8a3fde06f33dc128/)
 
-* [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m788804183-a33a0af7fb40e3bafa617cd8)
-
 * [youtube.076.ne.jp](https://youtube.076.ne.jp) 🇯🇵 - Source code/changes: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
