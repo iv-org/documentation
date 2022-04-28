@@ -218,16 +218,18 @@ If you use a reverse proxy, you **must** configure invidious to properly serve r
 
 #### Updating a Docker install
 ```bash
-docker-compose pull && docker-compose up && docker image prune -f
+docker-compose pull && docker-compose up -d && docker image prune -f
 ```
 
 #### Update a manual install
 ```bash
 sudo - invidious
 cd invidious
-shards update && shards install && crystal build src/invidious.cr --release
+git pull
+shards install --production
+crystal build src/invidious.cr --release
 exit
-systemctl restart invidious.service
+systemctl restart invidious
 ```
 
 ## Usage:
