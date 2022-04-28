@@ -218,7 +218,9 @@ If you use a reverse proxy, you **must** configure invidious to properly serve r
 
 #### Updating a Docker install
 ```bash
-docker-compose pull && docker-compose up -d && docker image prune -f
+docker-compose pull
+docker-compose up -d
+docker image prune -f
 ```
 
 #### Update a manual install
