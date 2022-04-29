@@ -231,7 +231,7 @@ git pull
 shards install --production
 crystal build src/invidious.cr --release
 exit
-systemctl restart invidious
+systemctl restart invidious.service
 ```
 
 ## Usage:
