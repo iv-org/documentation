@@ -6,6 +6,33 @@ site_description: >-
   The official Invidious documentation
 copyright: CC0 1.0 Universal (CC0 1.0)
 
+nav:
+  - Home: 'index.md'
+  - 'General':
+    - 'instances.md'
+    - 'export-youtube-subscriptions.md'
+    - 'preferences.md'
+    - 'applications.md'
+    - 'search-filters.md'
+    - 'url-parameters.md'
+    - 'proxy-videos.md'
+    - 'geoblocking.md'
+    - 'umatrix.md'
+    - 'known-exception.md'
+  - 'faq.md'
+  - 'For Administrators':
+    - 'installation.md'
+    - 'configuration.md'
+    - 'apache2.md'
+    - 'nginx.md'
+    - 'db-maintenance.md'
+    - 'captcha-bug.md'
+    - 'anti-captcha.md'
+    - 'takedown.md'
+  - 'For Developers':
+    - 'api.md'
+    - 'authenticated-endpoints.md'
+
 theme:
   name: material
   font: false
