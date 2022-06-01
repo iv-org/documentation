@@ -1,8 +1,38 @@
 site_name: Invidious Documentation
 site_url: https://docs.invidious.io/
+repo_url: https://github.com/iv-org/documentation
 site_author: The Invidious project.
 site_description: >-
   The official Invidious documentation
+copyright: CC0 1.0 Universal (CC0 1.0)
+
+nav:
+  - Home: 'index.md'
+  - 'General':
+    - 'instances.md'
+    - 'export-youtube-subscriptions.md'
+    - 'preferences.md'
+    - 'applications.md'
+    - 'search-filters.md'
+    - 'url-parameters.md'
+    - 'proxy-videos.md'
+    - 'geoblocking.md'
+    - 'umatrix.md'
+    - 'known-exception.md'
+    - 'faq.md'
+  - 'For Administrators':
+    - 'installation.md'
+    - 'configuration.md'
+    - 'apache2.md'
+    - 'nginx.md'
+    - 'db-maintenance.md'
+    - 'captcha-bug.md'
+    - 'anti-captcha.md'
+    - 'takedown.md'
+  - 'For Developers':
+    - 'api.md'
+    - 'authenticated-endpoints.md'
+
 theme:
   name: material
   font: false
@@ -14,6 +44,7 @@ theme:
     - navigation.tracking # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#anchor-tracking
     - navigation.expand # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-expansion
     - navigation.top # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#back-to-top-button
+
 extra:
   social:
     - icon: fontawesome/brands/github
