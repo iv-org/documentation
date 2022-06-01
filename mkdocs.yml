@@ -19,7 +19,7 @@ nav:
     - 'geoblocking.md'
     - 'umatrix.md'
     - 'known-exception.md'
-  - 'faq.md'
+    - 'faq.md'
   - 'For Administrators':
     - 'installation.md'
     - 'configuration.md'
