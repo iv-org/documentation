@@ -4,7 +4,7 @@ repo_url: https://github.com/iv-org/documentation
 site_author: The Invidious project.
 site_description: >-
   The official Invidious documentation
-copyright: CC0 1.0 Universal (CC0 1.0)
+copyright: Licensed under the VIRAL PUBLIC LICENSE (VPL)
 
 nav:
   - Home: 'index.md'
