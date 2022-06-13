@@ -59,6 +59,9 @@
 
 * [euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion](http://euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion/) 🇩🇪 (Onion of invidious.sethforprivacy.com)
 
+* [invidious.lqs5fjmajyp7rvp4qvyubwofzi6d4imua7vs237rkc4m5qogitqwrgyd.onion](http://invidious.lqs5fjmajyp7rvp4qvyubwofzi6d4imua7vs237rkc4m5qogitqwrgyd.onion) 🇨🇦 (Onion of invidious.esmailelbob.xyz)
+
+
 
 ## Rules to have your instance in this list:
 
