@@ -4,4 +4,4 @@ If you're using [uMatrix](https://github.com/gorhill/uMatrix), you won't be able
 
 So, to make it work, you'll need to allow `css`, `image`, `media`, `script`, `xhr`, `frame` for the instance from which you're trying to play the video.
 
-Since there are many Invidious instances, you can use the tool called [Invimatrix](https://booteille.gitlab.io/invimatrix) to automatically generate uMatrix rules for every known instance.
+Since there are many Invidious instances, you can use the tool called [Invimatrix](https://booteille.codeberg.page/invimatrix/) to automatically generate uMatrix & uBlock Origin rules for every known instance.
