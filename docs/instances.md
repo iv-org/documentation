@@ -26,8 +26,6 @@
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
-* [tube.cthd.icu](https://tube.cthd.icu) 🇷🇸 - Source code/changes: https://gitlab.cthd.icu/cthd/invidious-custom
-
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
 * [invidious.weblibre.org](https://invidious.weblibre.org) 🇨🇱
