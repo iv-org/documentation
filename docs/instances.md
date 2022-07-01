@@ -42,6 +42,8 @@
 
 * [invidious.tiekoetter.com](https://invidious.tiekoetter.com) 🇩🇪
 
+* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪
+
 * [inv.vern.cc](https://inv.vern.cc) 🇨🇦
 
 ### Tor Onion Services:
