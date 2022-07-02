@@ -32,8 +32,6 @@
 
 * [invidious.esmailelbob.xyz](https://invidious.esmailelbob.xyz) 🇨🇦
 
-* [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare)
-
 * [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇬🇷 [inv.bp.projectsegfau.lt](https://inv.bp.projectsegfau.lt) 🇫🇷
 
 * [y.com.sb](https://y.com.sb) 🇩🇪
