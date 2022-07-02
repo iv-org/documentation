@@ -26,8 +26,6 @@
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
-* [tube.cthd.icu](https://tube.cthd.icu) 🇷🇸 - Source code/changes: https://gitlab.cthd.icu/cthd/invidious-custom
-
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
 * [invidious.weblibre.org](https://invidious.weblibre.org) 🇨🇱
@@ -43,6 +41,10 @@
 * [invidious.sethforprivacy.com](https://invidious.sethforprivacy.com) 🇩🇪
 
 * [invidious.tiekoetter.com](https://invidious.tiekoetter.com) 🇩🇪
+
+* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪
+
+* [inv.vern.cc](https://inv.vern.cc) 🇨🇦
 
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion) 🇫🇮 (Onion of invidious.snopyta.org)
@@ -61,6 +63,7 @@
 
 * [invidious.lqs5fjmajyp7rvp4qvyubwofzi6d4imua7vs237rkc4m5qogitqwrgyd.onion](http://invidious.lqs5fjmajyp7rvp4qvyubwofzi6d4imua7vs237rkc4m5qogitqwrgyd.onion) 🇨🇦 (Onion of invidious.esmailelbob.xyz)
 
+* [inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion](http://inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion/) 🇨🇦 (Onion of inv.vern.cc)
 
 
 ## Rules to have your instance in this list:

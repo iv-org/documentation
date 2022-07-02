@@ -86,8 +86,8 @@ body:
   - type: textarea
     id: more-infos
     attributes:
-      label: Additionnal informations
-      description: "If your want to add other informations on your instance, do so here:"
+      label: Additional information
+      description: "If you want to add other information on your instance, do so here:"
       placeholder: "Example: Our instance also has an .onion URL, The source code changes are ..., etc."
     validations:
       required: false
