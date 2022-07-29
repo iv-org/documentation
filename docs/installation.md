@@ -165,6 +165,12 @@ crystal build src/invidious.cr --release
 exit
 ```
 
+Note: If the command `crystal build` didn't work properly, you can build Invidious without lsquic may solve compatibilities issues:
+
+```bash
+crystal build src/invidious.cr -Ddisable_quic --release
+```
+
 #### Systemd service
 
 ```bash
@@ -174,14 +180,16 @@ systemctl enable --now invidious.service
 
 ### MacOS
 
+#### Install the dependencies
+
 ```bash
-# Install dependencies
 brew update
 brew install shards crystal postgres imagemagick librsvg
+```
 
-# Clone the repository and set up a PostgreSQL database
-git clone https://github.com/iv-org/invidious
-cd invidious
+#### Set up PostgresSQL
+
+```bash
 brew services start postgresql
 psql -c "CREATE ROLE kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
 createdb -O kemal invidious
@@ -195,10 +203,29 @@ psql invidious kemal < config/sql/annotations.sql
 psql invidious kemal < config/sql/privacy.sql
 psql invidious kemal < config/sql/playlists.sql
 psql invidious kemal < config/sql/playlist_videos.sql
-
-# Set up Invidious
-shards update && shards install && crystal build src/invidious.cr --release
 ```
+
+#### Set up Invidious
+
+```bash
+git clone https://github.com/iv-org/invidious
+cd invidious
+shards install --production
+crystal build src/invidious.cr --release
+```
+
+Note: If the command `crystal build` didn't work properly, you can build Invidious without lsquic may solve compatibilities issues:
+
+```bash
+crystal build src/invidious.cr -Ddisable_quic --release
+```
+
+### Windows
+
+Crystal, the programming language used by Invidious, [doesn't support Windows yet](https://github.com/crystal-lang/crystal/issues/5430) but you can still install Invidious through two kinds of ways:
+
+- By installing [Docker desktop](https://docs.docker.com/desktop/install/windows-install/) and then following [our guide about Docker](#docker).
+- By installing [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about) and then following [our guide about Linux](#linux).
 
 ## Post-install configuration:
 
