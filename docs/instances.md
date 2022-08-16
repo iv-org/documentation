@@ -67,6 +67,7 @@
 
 * [inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion](http://inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion/) 🇨🇦 (Onion of inv.vern.cc)
 
+* [am74vkcrjp2d5v36lcdqgsj2m6x36tbrkhsruoegwfcizzabnfgf5zyd.onion](http://am74vkcrjp2d5v36lcdqgsj2m6x36tbrkhsruoegwfcizzabnfgf5zyd.onion) 🇺🇸 (Onion of invidious.slipfox.xyz)
 
 ## Rules to have your instance in this list:
 
