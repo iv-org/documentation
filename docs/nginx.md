@@ -18,7 +18,7 @@ server {
 	ssl_certificate_key /etc/letsencrypt/live/invidious.domain.tld/privkey.pem;
 
 	location / {
-		proxy_pass http://127.0.0.1:3000/;
+		proxy_pass http://127.0.0.1:3000;
 		proxy_set_header X-Forwarded-For $remote_addr;
 		proxy_set_header Host $host;	# so Invidious knows domain
 		proxy_http_version 1.1;		# to keep alive
