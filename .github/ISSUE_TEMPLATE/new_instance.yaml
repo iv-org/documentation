@@ -27,7 +27,7 @@ body:
         required: true
       - label: "Statistics (`/api/v1/stats`) are enabled"
         required: true
-      - label: "Instance is properly configured (including the mandatory [post install configuration](https://docs.invidious.io/Installation.md#post-install-configuration))"
+      - label: "Instance is properly configured (including the mandatory [post install configuration](https://docs.invidious.io/installation/#post-install-configuration))"
         required: true
       - label: "Instance has an automatic hourly restart setup"
         required: true
