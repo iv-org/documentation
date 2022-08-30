@@ -20,8 +20,6 @@
 
 * [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
 
-* [invidious.osi.kr](https://invidious.osi.kr) 🇳🇱 [Status Page](https://status.osbusiness.net/report/uptime/6e47474f3737993d8a3fde06f33dc128/)
-
 * [youtube.076.ne.jp](https://youtube.076.ne.jp) 🇯🇵 - Source code/changes: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
