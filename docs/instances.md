@@ -30,8 +30,6 @@
 
 * [invidious.esmailelbob.xyz](https://invidious.esmailelbob.xyz) 🇨🇦
 
-* [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 [inv.bp.projectsegfau.lt](https://inv.bp.projectsegfau.lt) 🇱🇺
-
 * [y.com.sb](https://y.com.sb) 🇩🇪
 
 * [invidious.sethforprivacy.com](https://invidious.sethforprivacy.com) 🇩🇪
