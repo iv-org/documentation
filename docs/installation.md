@@ -1,11 +1,16 @@
 # Installation
 
-Compiling Invidious requires at least 2GB of free RAM (We recommend to have at least 3GB installed).
-If you have less (e.g on a cheap VPS) you can setup a SWAP file or partition, so the combined amount is >= 3GB.
-
 After installation take a look at the [Post-install steps](#post-install-configuration).
 
 Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) provider/software (Heroku, YunoHost, Repli...) are unsupported. Use them at your own risk. They **WILL** cause problems with Invidious and might even suspend your account for "abuse" since Invidious is heavy, bandwidth intensive and technically a proxy (and most providers don't like them). If you use one and want to report an issue, please mention which one you use.
+
+
+## Hardware requirements
+
+Running Invidious requires at least 512MB of free RAM (so ~2G installed on the system), as long as the is restarted regularly, as recommended in the post-install configuration. Public instances should ideally have at least 4GB of RAM, 2vCPU, a 200 mbps link and 20TB of traffic (no data cap/unlimited traffic is preferred).
+
+Compiling Invidious requires at least 2.5GB of free RAM (We recommend to have at least 4GB installed).
+If you have less (e.g on a cheap VPS) you can setup a SWAP file or partition, so the combined amount is >= 4GB.
 
 
 ## Automated Installation
