@@ -71,6 +71,8 @@
 
 * [am74vkcrjp2d5v36lcdqgsj2m6x36tbrkhsruoegwfcizzabnfgf5zyd.onion](http://am74vkcrjp2d5v36lcdqgsj2m6x36tbrkhsruoegwfcizzabnfgf5zyd.onion) 🇺🇸 (Onion of invidious.slipfox.xyz)
 
+* [ng27owmagn5amdm7l5s3rsqxwscl5ynppnis5dqcasogkyxcfqn7psid.onion](http://ng27owmagn5amdm7l5s3rsqxwscl5ynppnis5dqcasogkyxcfqn7psid.onion) 🇩🇪 (Onion of yt.artemislena.eu)
+
 ## Rules to have your instance in this list:
 
 1. Instances MUST have been up for at least a month before it can be added to this list.
