@@ -7,7 +7,7 @@ Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](
 
 ## Hardware requirements
 
-Running Invidious requires at least 512MB of free RAM (so ~2G installed on the system), as long as the is restarted regularly, as recommended in the post-install configuration. Public instances should ideally have at least 4GB of RAM, 2vCPU, a 200 mbps link and 20TB of traffic (no data cap/unlimited traffic is preferred).
+Running Invidious requires at least 512MB of free RAM (so ~2G installed on the system), as long as it is restarted regularly, as recommended in the post-install configuration. Public instances should ideally have at least 4GB of RAM, 2vCPU, a 200 mbps link and 20TB of traffic (no data cap/unlimited traffic is preferred).
 
 Compiling Invidious requires at least 2.5GB of free RAM (We recommend to have at least 4GB installed).
 If you have less (e.g on a cheap VPS) you can setup a SWAP file or partition, so the combined amount is >= 4GB.
