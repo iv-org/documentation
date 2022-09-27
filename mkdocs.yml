@@ -25,6 +25,7 @@ nav:
     - 'configuration.md'
     - 'apache2.md'
     - 'nginx.md'
+    - 'caddy.md'
     - 'db-maintenance.md'
     - 'captcha-bug.md'
     - 'anti-captcha.md'

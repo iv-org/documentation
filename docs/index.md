@@ -15,6 +15,7 @@
 - [Configuration](./configuration.md)
 - [Apache2 Virtual Host with Reverse Proxy](./apache2.md)
 - [Nginx Reverse Proxy Configuration](./nginx.md)
+- [Caddy Reverse Proxy Configuration](./caddy.md)
 - [Database Information and Maintenance](./db-maintenance.md)
 - [Issues with CAPTCHA](./captcha-bug.md)
 - [How to setup Anti-Captcha](./anti-captcha.md)
