@@ -167,6 +167,8 @@ su - invidious
 cd invidious
 shards install --production
 crystal build src/invidious.cr --release
+cp config/config.example.yml config/config.yml 
+# Configure config/config.yml how you want
 exit
 ```
 
@@ -217,6 +219,8 @@ git clone https://github.com/iv-org/invidious
 cd invidious
 shards install --production
 crystal build src/invidious.cr --release
+cp config/config.example.yml config/config.yml 
+# Configure config/config.yml how you want
 ```
 
 Note: If the command `crystal build` didn't work properly, you can build Invidious without lsquic may solve compatibilities issues:
