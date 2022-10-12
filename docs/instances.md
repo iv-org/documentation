@@ -38,7 +38,7 @@
 
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 - Source code/changes: https://github.com/Sommerwiesel/invidious
 
-* [inv.vern.cc](https://inv.vern.cc) 🇨🇦
+* [inv.vern.cc](https://inv.vern.cc) 🇨🇦 - Source code/changes: https://git.vern.cc/vern/modifications/src/branch/master/invidious
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
