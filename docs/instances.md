@@ -52,6 +52,12 @@
 
 * [inv.odyssey346.dev](https://inv.odyssey346.dev) 🇫🇷
 
+* [invidious.baczek.me](https://invidious.baczek.me) 🇵🇱
+
+* [inv.trolling.dev](https://inv.trolling.dev) 🇬🇧
+
+* [invidious.weblibre.org](https://invidious.weblibre.org) 🇨🇱
+
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion) 🇫🇮 (Onion of invidious.snopyta.org)
 
