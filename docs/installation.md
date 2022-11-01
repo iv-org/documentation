@@ -165,8 +165,7 @@ exit
 ```bash
 su - invidious
 cd invidious
-shards install --production
-crystal build src/invidious.cr --release
+make
 cp config/config.example.yml config/config.yml 
 # Configure config/config.yml how you want
 exit
