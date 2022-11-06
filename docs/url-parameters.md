@@ -52,8 +52,10 @@ _This list is incomplete. You can help by expanding it._
 | `quality=dash`                               | [DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP)                                                                                                                |
 | `quality=hd720`                              | 720p                                                                                                                                                                                      |
 | `quality=medium`                             | 480p                                                                                                                                                                                      |
-| _Related Videos_                             | Show "Related videos" tab on the right-hand side                                                                                                                                          |
-| `related_videos=false`                       | Disabled                                                                                                                                                                                  |
+| _Related Videos_                             | Show "Related videos" tab on the right-hand side |                                                           
+| `related_videos=false`                       | Disabled              |
+| _Comments_                                   | Show comments below the video|
+| `comments=false`                             | Disabled           |    
 | _Speed_                                      | Default player speed, can be any positive number                                                                                                                                          |
 | `speed=0.5`                                  | Play at 0.5x speed                                                                                                                                                                        |
 | `speed=2`                                    | Play at 2x speed                                                                                                                                                                          |
