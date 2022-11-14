@@ -148,15 +148,6 @@ systemctl enable --now postgresql
 sudo -i -u postgres
 psql -c "CREATE USER kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
 createdb -O kemal invidious
-psql invidious kemal < /home/invidious/invidious/config/sql/channels.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/videos.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/channel_videos.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/users.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/session_ids.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/nonces.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/annotations.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/playlists.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/playlist_videos.sql
 exit
 ```
 
@@ -166,8 +157,13 @@ exit
 su - invidious
 cd invidious
 make
+
+# Configure config/config.yml as you like
 cp config/config.example.yml config/config.yml 
-# Configure config/config.yml how you want
+
+# Deploy the database
+./invidious --migrate
+
 exit
 ```
 
