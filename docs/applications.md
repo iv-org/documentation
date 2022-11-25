@@ -9,7 +9,7 @@
 - [Invidious Copy URL](https://github.com/recette-lemon/invidious-copy-url): Adds context menu options on Invidious to copy shortened YouTube URL at current time or not (Requires using developer mode in Chrome or a developer version of Firefox).
 - [View on Invidious](https://omar.yt/722e5c15832840fe1ae8830b7c590254b9e0a45c/invidious-bookmarklet.html): View page on Invidious (bookmarklet).
 - [Inviduration](https://addons.mozilla.org/addon/inviduration): Firefox extension that shows total duration of playlists on Invidious. [Source](https://github.com/rsapkf/inviduration) / [Firefox](https://addons.mozilla.org/addon/inviduration)
-- [Redirector](https://github.com/einaregilsson/Redirector): Extension for Firefox and Chromium that can manually be configured to process Inidious Redirects. For details, please see Redirector_Setup
+- [Redirector](https://github.com/einaregilsson/Redirector): Extension for Firefox and Chromium that can manually be configured to process Inidious Redirects. For details, please see redirector_setup.md
 
 ### Userscripts for Invidious.
 - [Invidious Redirect](https://greasyfork.org/en/scripts/370461-invidious-redirect): Redirects YouTube URLs to Invidio.us.
