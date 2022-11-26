@@ -36,7 +36,7 @@
 
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 - Source code/changes: https://github.com/Sommerwiesel/invidious
 
-* [inv.vern.cc](https://inv.vern.cc) 🇨🇦 - Source code/changes: https://git.vern.cc/vern/modifications/src/branch/master/invidious
+* [inv.vern.cc](https://inv.vern.cc) 🇺🇸 - Source code/changes: https://git.vern.cc/vern/modifications/src/branch/master/invidious
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
@@ -71,7 +71,7 @@
 
 * [invidious.esmail5pdn24shtvieloeedh7ehz3nrwcdivnfhfcedl7gf4kwddhkqd.onion](http://invidious.esmail5pdn24shtvieloeedh7ehz3nrwcdivnfhfcedl7gf4kwddhkqd.onion) 🇨🇦 (Onion of invidious.esmailelbob.xyz)
 
-* [inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion](http://inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion/) 🇨🇦 (Onion of inv.vern.cc)
+* [inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion](http://inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion/) 🇺🇸 (Onion of inv.vern.cc)
 
 * [am74vkcrjp2d5v36lcdqgsj2m6x36tbrkhsruoegwfcizzabnfgf5zyd.onion](http://am74vkcrjp2d5v36lcdqgsj2m6x36tbrkhsruoegwfcizzabnfgf5zyd.onion) 🇺🇸 (Onion of invidious.slipfox.xyz)
 
@@ -81,7 +81,7 @@
 
 ### I2P Eepsites:
 
-* [inv.vern.i2p](http://verni6dr4qxjgjumnvesxerh5rvhv6oy5ddeibaqy5d7tgbiiyfa.b32.i2p/) 🇨🇦 (Eepsite of inv.vern.cc)
+* [inv.vern.i2p](http://verni6dr4qxjgjumnvesxerh5rvhv6oy5ddeibaqy5d7tgbiiyfa.b32.i2p/) 🇺🇸 (Eepsite of inv.vern.cc)
 
 ## Rules to have your instance in this list:
 
