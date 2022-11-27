@@ -1,3 +1,5 @@
+# The Invidious documentation
+
 # Running the documentation locally for development purposes
 
 ## Local `mkdocs-material` installation
