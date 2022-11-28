@@ -40,8 +40,6 @@
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
-* [inv.privacy.com.de](https://inv.privacy.com.de) 🇩🇪
-
 * [invidious.rhyshl.live](https://invidious.rhyshl.live) 🇬🇧 (Uses Cloudflare)
 
 * [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪
