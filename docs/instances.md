@@ -24,8 +24,6 @@
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
-* [invidious.esmailelbob.xyz](https://invidious.esmailelbob.xyz) 🇨🇦
-
 * [inv.bp.projectsegfau.lt](https://inv.bp.projectsegfau.lt) 🇱🇺
 
 * [y.com.sb](https://y.com.sb) 🇩🇪
