@@ -18,8 +18,6 @@
 
 * [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
 
-* [youtube.076.ne.jp](https://youtube.076.ne.jp) 🇯🇵 - Source code/changes: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
-
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
