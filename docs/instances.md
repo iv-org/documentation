@@ -54,6 +54,8 @@
 
 * [yt.funami.tech](https://yt.funami.tech) 🇰🇷 
 
+* [invidious.drivet.xyz](https://invidious.drivet.xyz) 🇵🇱 
+
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion) 🇫🇮 (Onion of invidious.snopyta.org)
 
