@@ -38,8 +38,6 @@
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
-* [invidious.rhyshl.live](https://invidious.rhyshl.live) 🇬🇧 (Uses Cloudflare)
-
 * [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪
 
 * [invidious.dhusch.de](https://invidious.dhusch.de) 🇩🇪
