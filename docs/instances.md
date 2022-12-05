@@ -81,6 +81,8 @@
 
 * [iv.odysfvr23q5wgt7i456o5t3trw2cw5dgn56vbjfbq2m7xsc5vqbqpcyd.onion](http://iv.odysfvr23q5wgt7i456o5t3trw2cw5dgn56vbjfbq2m7xsc5vqbqpcyd.onion) 🇫🇷 (Onion of inv.odyssey346.dev)
 
+* [invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion](http://invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion) 🇺🇸 (Onion of invidious.privacydev.net)
+
 ### I2P Eepsites:
 
 * [inv.vern.i2p](http://verni6dr4qxjgjumnvesxerh5rvhv6oy5ddeibaqy5d7tgbiiyfa.b32.i2p/) 🇺🇸 (Eepsite of inv.vern.cc)
