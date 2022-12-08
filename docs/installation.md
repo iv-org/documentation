@@ -68,6 +68,10 @@ services:
       interval: 30s
       timeout: 5s
       retries: 2
+    logging:
+      options:
+        max-size: "1G"
+        max-file: "4"
     depends_on:
       - invidious-db
 
