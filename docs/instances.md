@@ -56,6 +56,13 @@
 
 * [vid.priv.au](https://vid.priv.au) 🇸🇬 
 
+* [invidious.marcopisco.com](https://invidious.marcopisco.com) 🇵🇹 (Uses cloudflare)
+
+* [invidious.lidarshield.cloud](https://invidious.lidarshield.cloud) 🇲🇩
+
+* [invidious.silur.me](https://invidious.silur.me) 🇩🇪
+
+
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion) 🇫🇮 (Onion of invidious.snopyta.org)
 
