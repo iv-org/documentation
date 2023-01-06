@@ -58,8 +58,6 @@
 
 * [vid.priv.au](https://vid.priv.au) 🇸🇬 
 
-* [invidious.marcopisco.com](https://invidious.marcopisco.com) 🇵🇹 (Uses cloudflare)
-
 * [invidious.lidarshield.cloud](https://invidious.lidarshield.cloud) 🇲🇩
 
 * [invidious.silur.me](https://invidious.silur.me) 🇩🇪
