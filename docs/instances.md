@@ -30,8 +30,6 @@
 
 * [y.com.sb](https://y.com.sb) 🇩🇪
 
-* [invidious.sethforprivacy.com](https://invidious.sethforprivacy.com) 🇩🇪
-
 * [invidious.tiekoetter.com](https://invidious.tiekoetter.com) 🇩🇪
 
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 - Source code/changes: https://github.com/Sommerwiesel/invidious
