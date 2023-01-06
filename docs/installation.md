@@ -239,6 +239,8 @@ Crystal, the programming language used by Invidious, [doesn't support Windows ye
 
 Detailed configuration available in the [configuration guide](./configuration.md).
 
+You must set a random generated value for the parameter `hmac_key:`! On Linux you can generate it using the command `pwgen 20 1`.
+
 Because of various issues Invidious **must** be restarted often, at least once a day, ideally every hour.
 
 If you use a reverse proxy, you **must** configure invidious to properly serve request through it:
