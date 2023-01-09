@@ -38,7 +38,7 @@
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
-* [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪
+* [watch.thekitty.zone](https://watch.thekitty.zone) 🇩🇪
 
 * [invidious.dhusch.de](https://invidious.dhusch.de) 🇩🇪
 
