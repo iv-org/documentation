@@ -31,7 +31,9 @@ nav:
     - 'takedown.md'
   - 'For Developers':
     - 'api.md'
-    - 'authenticated-endpoints.md'
+    - 'api/common_types.md'
+    - 'api/channels_endpoint.md'
+    - 'api/authenticated-endpoints.md'
 
 theme:
   name: material

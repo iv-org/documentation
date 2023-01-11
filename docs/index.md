@@ -22,4 +22,6 @@
 ## For Developers
 
 - [API](./api.md)
-- [Authenticated Endpoints](./authenticated-endpoints.md)
+  * [Common object types used across the API](./api/common_types.md)
+  * ["Channels" endpoint](./api/channels_endpoint.md)
+  * [Authenticated Endpoints](./api/authenticated-endpoints.md)
