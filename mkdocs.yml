@@ -31,7 +31,9 @@ nav:
     - 'takedown.md'
   - 'For Developers':
     - 'api.md'
-    - 'authenticated-endpoints.md'
+    - 'api/common_types.md'
+    - 'api/channels_endpoint.md'
+    - 'api/authenticated-endpoints.md'
 
 theme:
   name: material
@@ -44,6 +46,7 @@ theme:
     - navigation.tracking # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#anchor-tracking
     - navigation.expand # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-expansion
     - navigation.top # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#back-to-top-button
+    - content.code.copy # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-copy-button
 
 extra:
   social:
@@ -52,3 +55,8 @@ extra:
 
 markdown_extensions:
   - pymdownx.magiclink
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
