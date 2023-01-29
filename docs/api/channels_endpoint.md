@@ -122,3 +122,34 @@ See: GET `/api/v1/channels/:id/videos`
 	"continuation": String
 }
 ```
+
+##### GET `/api/v1/channels/:id/community`
+
+Please refer to the [Community Post Attachment types](./community_post_attachment_types.md) page for more details on the attachment JSON objects used below.
+
+> Url parameters
+
+* `continuation`: A continuation token to get the next chunk of items.
+
+> Response:
+
+```javascript
+{
+	authorId: String,
+	comments: {
+		attachment: Image | MultiImage | Video
+		author: String,
+		authorIsChannelOwner: Boolean
+		authorId: String,
+		authorThumbnails: ImageObject[],
+		authorUrl: String,
+		commentId: String,
+		content: String,
+		contentHtml: String,
+		isEdited: Boolean,
+		likeCount: Number,
+		published: Number,
+		publishedText: String,
+	}[]
+}
+```
