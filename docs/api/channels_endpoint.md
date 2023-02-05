@@ -153,3 +153,37 @@ Please refer to the [Community Post Attachment types](./community_post_attachmen
 	}[]
 }
 ```
+###### Community Post Attachment Types
+__Video__ 
+See [VideoObject](./common_types.md#videoobject) common type
+
+__Image__
+
+```javascript
+{
+    type: "image".
+    imageThumbnails: ImageObject[]
+}
+```
+
+__MultiImage__
+
+```javascript
+{
+    type: "multiImage",
+    images: [
+        ImageObject[]
+    ]
+}
+```
+
+__Unknown__
+
+This usually means that parsing support for the attachment type has not yet been implemented.
+
+```javascript
+{
+    type: "unknown",
+    error: String
+}
+```
