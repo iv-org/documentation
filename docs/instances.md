@@ -52,8 +52,6 @@
 
 * [yt.funami.tech](https://yt.funami.tech) 🇰🇷 
 
-* [invidious.drivet.xyz](https://invidious.drivet.xyz) 🇵🇱 (Uses cloudflare)
-
 * [invidious.lidarshield.cloud](https://invidious.lidarshield.cloud) 🇲🇩
 
 * [invidious.silur.me](https://invidious.silur.me) 🇩🇪
