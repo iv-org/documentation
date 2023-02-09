@@ -4,7 +4,6 @@ title: "[New instance] <instance name>"
 assignees: 
   - unixfox
   - samantazfox
-  - thefrenchghosty
 
 body:
   - type: input
