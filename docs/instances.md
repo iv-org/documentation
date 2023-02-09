@@ -54,8 +54,6 @@
 
 * [invidious.drivet.xyz](https://invidious.drivet.xyz) 🇵🇱 (Uses cloudflare)
 
-* [vid.priv.au](https://vid.priv.au) 🇸🇬 
-
 * [invidious.lidarshield.cloud](https://invidious.lidarshield.cloud) 🇲🇩
 
 * [invidious.silur.me](https://invidious.silur.me) 🇩🇪
