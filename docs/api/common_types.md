@@ -36,6 +36,7 @@
 	"author": String,
 	"authorId": String,
 	"authorUrl": String,
+	"authorVerified": Boolean,
 
 	"videoThumbnails": [
 		// One or more ThumbnailObject
