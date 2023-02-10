@@ -13,6 +13,7 @@ details on the various JSON objects used below.
 	"author": String,
 	"authorId": String,
 	"authorUrl": String,
+	"authorVerified": Boolean,
 	"authorBanners": [
 		// One or more ImageObject
 	],
