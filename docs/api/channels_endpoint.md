@@ -30,7 +30,9 @@ details on the various JSON objects used below.
 
     "description": String,
     "descriptionHtml": String,
-	"allowedRegions": [String],
+	"allowedRegions": String[],
+
+	"tabs": String[],
 
 	"latestVideos": [
 		// One or more VideoObject
