@@ -125,7 +125,7 @@ See: GET `/api/v1/channels/:id/videos`
 
 ##### GET `/api/v1/channels/:id/community`
 
-Please refer to the [Community Post Attachment types](./community_post_attachment_types.md) page for more details on the attachment JSON objects used below.
+Please refer to the [Community Post Attachment types](#community-post-attachment-types) below for more details on the attachment JSON objects used below.
 
 > Url parameters
 
@@ -137,7 +137,7 @@ Please refer to the [Community Post Attachment types](./community_post_attachmen
 {
 	authorId: String,
 	comments: {
-		attachment: Image | MultiImage | Video
+		attachment: ImageAttachment | MultiImageAttachment | VideoAttachment
 		author: String,
 		authorIsChannelOwner: Boolean
 		authorId: String,
@@ -154,26 +154,24 @@ Please refer to the [Community Post Attachment types](./community_post_attachmen
 }
 ```
 ###### Community Post Attachment Types
-__Video__ 
+__VideoAttachment__ 
 See [VideoObject](./common_types.md#videoobject) common type
 
-__Image__
+__ImageAttachment__
 
 ```javascript
 {
-    type: "image".
+    type: "image",
     imageThumbnails: ImageObject[]
 }
 ```
 
-__MultiImage__
+__MultiImageAttachment__
 
 ```javascript
 {
     type: "multiImage",
-    images: [
-        ImageObject[]
-    ]
+    images: ImageObject[][]
 }
 ```
 
