@@ -187,7 +187,10 @@ Returns annotation XML from YouTube's `/annotations_invideo` endpoint. Alternati
       ],
       "authorId": String,
       "authorUrl": String,
-      "isEdited": Bool,
+
+      "isEdited": Boolean,
+      "isPinned": Boolean,
+
       "content": String,
       "contentHtml": String,
       "published": Int64,
