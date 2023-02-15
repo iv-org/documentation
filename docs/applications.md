@@ -10,7 +10,6 @@
 - [View on Invidious](https://omar.yt/722e5c15832840fe1ae8830b7c590254b9e0a45c/invidious-bookmarklet.html): View page on Invidious (bookmarklet).
 - [Inviduration](https://addons.mozilla.org/addon/inviduration): Firefox extension that shows total duration of playlists on Invidious. [Source](https://github.com/rsapkf/inviduration) / [Firefox](https://addons.mozilla.org/addon/inviduration)
 - [Redirector](https://github.com/einaregilsson/Redirector): Extension for Firefox and Chromium that can manually be configured to process Inidious Redirects. For details, see the [setup page](./redirector-setup.md) to use it with Invidious.
-- [Playlet](https://github.com/iBicha/playlet): A Roku TV Youtube app that uses Invidious as a backend. [Source](https://github.com/iBicha/playlet) / [Roku Store](https://my.roku.com/account/add?channel=PLAYLET)
 
 ### Userscripts for Invidious.
 - [Invidious Redirect](https://greasyfork.org/en/scripts/370461-invidious-redirect): Redirects YouTube URLs to Invidio.us.
@@ -25,6 +24,7 @@
 - [FreshRSS Extension](https://github.com/tmiland/freshrss-invidious): A FreshRSS extension to directly embed videos from Invidious channel feeds.
 - [Kodi add-on](https://github.com/TheAssassin/kodi-invidious-plugin): Watch YouTube videos in the Kodi media center, using the Invidious API. Privacy-friendly alternative to the YouTube API add-on.
 - [Another Kodi add-on](https://github.com/lekma/plugin.video.invidious): Seems to have been more recently updated than the above.
+- [Playlet](https://github.com/iBicha/playlet): A Roku TV Youtube app that uses Invidious as a backend. [Roku Store](https://my.roku.com/account/add?channel=PLAYLET)
 
 ### Utilities for Invidious
 - [Invidious-Updater (And Installer)](https://github.com/tmiland/Invidious-Updater): Automatic install and update script for Invidious.
