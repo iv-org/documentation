@@ -6,6 +6,8 @@ Do note that most requests are invalid and technically illegal since they aren't
 
 To counter them "easily", we decided to provide templates depending on where your instance is located.
 
+Or if you want to hide your instance from takedown requests, you can also follow this tutorial: https://docs.invidious.io/hide-instance-behind-proxy-server/.
+
 ## Template - United States
 
 ```
