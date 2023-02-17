@@ -29,6 +29,7 @@ nav:
     - 'captcha-bug.md'
     - 'anti-captcha.md'
     - 'takedown.md'
+    - 'hide-instance-behind-proxy-server.md'
   - 'For Developers':
     - 'api.md'
     - 'api/common_types.md'
@@ -60,3 +61,4 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.details # https://facelessuser.github.io/pymdown-extensions/extensions/details/
