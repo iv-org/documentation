@@ -6,6 +6,13 @@ assignees:
   - samantazfox
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please consider joining our Matrix room for public instance maintainers by joining our Matrix room: https://matrix.to/#/#invidious:matrix.org
+        then pinging @unixfox, @TheFrenchGhosty and @SamantazFox for asking to be invited to the Matrix room.
+        We discuss troubles managing a public instance, sharing some advices and more.
+
   - type: input
     id: url
     attributes:
