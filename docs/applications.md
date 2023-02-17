@@ -24,6 +24,7 @@
 - [FreshRSS Extension](https://github.com/tmiland/freshrss-invidious): A FreshRSS extension to directly embed videos from Invidious channel feeds.
 - [Kodi add-on](https://github.com/TheAssassin/kodi-invidious-plugin): Watch YouTube videos in the Kodi media center, using the Invidious API. Privacy-friendly alternative to the YouTube API add-on.
 - [Another Kodi add-on](https://github.com/lekma/plugin.video.invidious): Seems to have been more recently updated than the above.
+- [Playlet](https://github.com/iBicha/playlet): A Roku TV Youtube app that uses Invidious as a backend. [Roku Store](https://my.roku.com/account/add?channel=PLAYLET)
 
 ### Utilities for Invidious
 - [Invidious-Updater (And Installer)](https://github.com/tmiland/Invidious-Updater): Automatic install and update script for Invidious.
