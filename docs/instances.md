@@ -16,8 +16,6 @@
 
 * [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://stats.uptimerobot.com/n7A08HGVl6/786947233)
 
-* [invidious.namazso.eu](https://invidious.namazso.eu) 🇩🇪
-
 * [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
