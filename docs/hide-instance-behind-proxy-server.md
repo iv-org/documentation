@@ -16,6 +16,12 @@ This proxy server will only redirect the [TCP](https://en.wikipedia.org/wiki/Tra
 
     Then you optionally preserve the IP address of your clients using for example on NGINX set_real_ip_from and real_ip_header.
 
+## Warning
+
+Adding an extra layer like a proxy server **will** add more latency, thus increase the response time from your final server to your browser. That's why for the part where you are going to rent a proxy server, you should choose a server close to your existing server(s).
+
+It should be noted, in the 4th step of the instructions, you will be able to remove this latency for a major part of the users of your instance (around 90% - people using modern browsers). The rest will experience this *added* latency which won't result in a decrease of the user experience if you choose your server wisely.
+
 ## Requirements
 
 - Your main web server should support the proxy protocol, it's possible to do it without it (later on in the tutorial). Non-exhaustive list of web servers that support it:  
@@ -47,6 +53,7 @@ Here are the recommended requirements for this proxy server:
   Later in the tutorial I'll explain you how to reduce the bandwidth consumption on the proxy server but this won't drastically reduce it by a lot.  
   TL;DR: If you have "unlimited" bandwidth limit it's much better.
 - 1 CPU core.
+- The proxy server should be close to your existing server(s), for minimal latency overhead.
 
 ??? note "You can monitor the bandwidth usage of your servers using vnStat."
 
