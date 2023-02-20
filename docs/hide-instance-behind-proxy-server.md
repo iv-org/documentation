@@ -14,13 +14,13 @@ This proxy server will only redirect the [TCP](https://en.wikipedia.org/wiki/Tra
 
     You need to proxy the HTTP protocol normally like you would already do with your current web server for invidious. But in this case from the proxy server to your existing infrastructure. Then also setup the certificates for HTTPS.
 
-    Then you optionally preserve the IP address of your clients using for example on NginX set_real_ip_from and real_ip_header.
+    Then you optionally preserve the IP address of your clients using for example on NGINX set_real_ip_from and real_ip_header.
 
 ## Requirements
 
 - Your main web server should support the proxy protocol, it's possible to do it without it (later on in the tutorial). Non-exhaustive list of web servers that support it:  
  
-    * NginX (recommended web server for this tutorial)
+    * NGINX (recommended web server for this tutorial)
     * Traefik
     * Apache ([doesn't come in the official version](https://www.scaleway.com/en/docs/tutorials/proxy-protocol-v2-load-balancer/#configuring-proxy-protocol-in-apache-web-server))
     * Caddy ([need to build with a custom module](https://github.com/mastercactapus/caddy2-proxyprotocol))
@@ -75,11 +75,11 @@ You don't need to setup a new port for the HTTP (cleartext) port as the proxy pr
     
     But preserving the IP address is in my opinion essential for blocking bots, bad actors.
 
-#### NginX
+#### NGINX
 
-In the NginX configuration file for Invidious, just after the line `listen 443 ssl` add this line:
+In the NGINX configuration file for Invidious, just after the line `listen 443 ssl http2` add this line:
 ```
-listen 8443 ssl proxy_protocol;
+listen 8443 ssl http2 proxy_protocol;
 set_real_ip_from PUBLIC_IPV4_ADDRESS_OF_ORIGINAL_SERVER/32;
 real_ip_header proxy_protocol;
 ```
@@ -88,15 +88,17 @@ Very simple example of a final result:
 ```
 http {
     server {
-        listen 443 ssl;
-        listen 8443 ssl proxy_protocol;
+        listen 443 ssl http2;
+        listen 8443 ssl http2 proxy_protocol;
         set_real_ip_from PUBLIC_IPV4_ADDRESS_OF_ORIGINAL_SERVER/32;
         real_ip_header proxy_protocol;
     }
 }
 ```
 
-Note: You don't necessarily need to add `http2` parameter to this line if you are going to follow the 4th step.
+Note: You may not have `http2` parameter for the `listen 443 ssl` line, if you don't have it enabled, it's hugely recommended to enable it for better performance and user experience.
+
+**If you are going to follow the [4th step](#4-optionally-reduce-the-traffic-going-through-the-proxy-server), please remove `http2` parameter from the line `listen 8443 ssl http2 proxy_protocol`, it may clash with the technique.**
 
 #### Traefik
 
@@ -198,7 +200,7 @@ Unfortunately it only works for Firefox browsers as Chrome doesn't support the a
 *I'll use the terminology `original server(s)` for the server(s) of your existing infrastructure, not the proxy server.*
 
 #### Requirement
-You need to have HTTP2 enabled on your web server, on NginX it's as simple as adding `http2` in the `listen ssl` line.  
+You need to have HTTP2 enabled on your web server, on NGINX it's as simple as adding `http2` in the `listen ssl` line.  
 You can check that in your config or here: https://tools.keycdn.com/http2-test
 
 #### Instructions
@@ -211,7 +213,7 @@ You can check that in your config or here: https://tools.keycdn.com/http2-test
     alt-svc: h2="original.yourdomain.com:443"; ma=86400
     ```
     Here is how to do it for:
-    - NginX: `add_header alt-svc 'h2="original.yourdomain.com:443"; ma=86400';`
+    - NGINX: `add_header alt-svc 'h2="original.yourdomain.com:443"; ma=86400';`
     - Traefik (or [read the doc](https://doc.traefik.io/traefik/middlewares/http/headers/)): `traefik.http.middlewares.altsvc.headers.customresponseheaders.alt-svc=h2="original.yourdomain.com:443"; ma=86400`
     - Caddy: `header alt-svc h2="original.yourdomain.com:443"; ma=86400`
     - Apache: `Header set alt-svc 'h2="original.yourdomain.com:443"; ma=86400'`
@@ -226,7 +228,7 @@ You can check that in your config or here: https://tools.keycdn.com/http2-test
 Different web servers that support HTTP3:
 
 - Traefik, you can enable HTTP3: https://doc.traefik.io/traefik/routing/entrypoints/#http3
-- NginX, there is a tutorial here: https://www.nginx.com/blog/binary-packages-for-preview-nginx-quic-http3-implementation/
+- NGINX, there is a tutorial here: https://www.nginx.com/blog/binary-packages-for-preview-nginx-quic-http3-implementation/
 - Caddy, it's already enabled by default
 
 1. Edit the previously added HTTP header by adapting it like this:
