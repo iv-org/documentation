@@ -48,8 +48,6 @@
 
 * [invidious.lidarshield.cloud](https://invidious.lidarshield.cloud) 🇲🇩
 
-* [invidious.silur.me](https://invidious.silur.me) 🇩🇪
-
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
 
 * [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇨🇦
