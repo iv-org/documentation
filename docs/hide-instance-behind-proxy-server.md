@@ -238,8 +238,9 @@ Different web servers that support HTTP3:
 - NGINX, there is a tutorial here: https://www.nginx.com/blog/binary-packages-for-preview-nginx-quic-http3-implementation/
 - Caddy, it's already enabled by default
 
-1. Edit the previously added HTTP header by adapting it like this:
+1. Whitelist the port UDP 443 in your firewall.
+2. Edit the previously added HTTP header by adapting it like this:
     ```
     alt-svc: h3="original.yourdomain.com:443"; ma=86400, h2="original.yourdomain.com:443"; ma=86400
     ```
-2. Restart your web server. Check in the dev tools if you still see the IP address of your original server(s) and the HTTP3 protocol should be also displayed.
+3. Restart your web server. Check in the dev tools if you still see the IP address of your original server(s) and the HTTP3 protocol should be also displayed.
