@@ -150,6 +150,7 @@ Please refer to the [Community Post Attachment types](#community-post-attachment
 		likeCount: Number,
 		published: Number,
 		publishedText: String,
+		replyCount: Number
 	}[]
 }
 ```
@@ -172,6 +173,20 @@ __MultiImageAttachment__
 {
     type: "multiImage",
     images: ImageObject[][]
+}
+```
+
+__Poll__
+
+```javascript
+{
+	type: "poll",
+	totalVotes: Number,
+	choices: {
+		text: String,
+		image?: ImageObject[]
+	}[]
+
 }
 ```
 
