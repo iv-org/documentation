@@ -34,6 +34,8 @@
 
 * [inv.vern.cc](https://inv.vern.cc) 🇺🇸 - Source code/changes: https://git.vern.cc/vern/modifications/src/branch/master/invidious
 
+* [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
+
 * [watch.thekitty.zone](https://watch.thekitty.zone) 🇩🇪
 
 * [inv.odyssey346.dev](https://inv.odyssey346.dev) 🇫🇷
