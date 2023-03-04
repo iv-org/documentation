@@ -52,6 +52,10 @@ _This list is incomplete. You can help by expanding it._
 | `quality=dash`                               | [DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP)                                                                                                                |
 | `quality=hd720`                              | 720p                                                                                                                                                                                      |
 | `quality=medium`                             | 480p                                                                                                                                                                                      |
+| _Quality_DASH_                                    | Default player quality when using DASH (default is Auto)                                                                                                                                                                  |
+| `quality_dash=auto`                               | Automatically change quality based on network conditions                                                                                                              |
+| `quality_dash=best`                              | Automatically use the best quality avalible                                                                                                                                                                                     |
+| `quality_dash=480`                             | always use 480p                                                                                                                                                                                      |
 | _Related Videos_                             | Show "Related videos" tab on the right-hand side |                                                           
 | `related_videos=false`                       | Disabled              |
 | _Comments_                                   | Show comments below the video|
