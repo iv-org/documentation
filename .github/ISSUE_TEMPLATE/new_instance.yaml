@@ -37,6 +37,8 @@ body:
         required: true
       - label: "Instance has an automatic hourly restart setup of Invidious"
         required: true
+      - label: "If dash, proxy + download is enabled (default settings), the instance has unlimited traffic/bandwidth or close to unlimited (100TB minimum)"
+        required: true
         
 
   - type: checkboxes
