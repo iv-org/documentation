@@ -54,8 +54,6 @@
 
 * [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇨🇦
 
-* [invidious.epicsite.xyz](https://invidious.epicsite.xyz) 🇬🇧
-
 * [invidious.sethforprivacy.com](https://invidious.sethforprivacy.com) 🇨🇦
 
 * [yt.oelrichsgarcia.de](https://yt.oelrichsgarcia.de) 🇩🇪 (uses Cloudflare)
