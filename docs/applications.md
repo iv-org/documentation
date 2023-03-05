@@ -10,7 +10,6 @@
 - [View on Invidious](https://omar.yt/722e5c15832840fe1ae8830b7c590254b9e0a45c/invidious-bookmarklet.html): View page on Invidious (bookmarklet).
 - [Inviduration](https://addons.mozilla.org/addon/inviduration): Firefox extension that shows total duration of playlists on Invidious. [Source](https://github.com/rsapkf/inviduration) / [Firefox](https://addons.mozilla.org/addon/inviduration)
 - [Redirector](https://github.com/einaregilsson/Redirector): Extension for Firefox and Chromium that can manually be configured to process Inidious Redirects. For details, see the [setup page](./redirector-setup.md) to use it with Invidious.
-- [Libredirect](https://libredirect.github.io/) Firefox/Chromium Extension that redirects to multiple private frontends including Invidious. Began life as a fork of Privacy Redirect before rapidly developing it's own distinct UI and support for additonal frontends. Actively in development. 
 
 ### Userscripts for Invidious.
 - [Invidious Redirect](https://greasyfork.org/en/scripts/370461-invidious-redirect): Redirects YouTube URLs to Invidio.us.
