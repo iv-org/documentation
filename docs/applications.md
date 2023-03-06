@@ -19,7 +19,7 @@
 - [FYTE](https://greasyfork.org/en/scripts/9252-fyte-fast-youtube-embedded-player): Replace all YouTube embeds on a page with the video's thumbnail. Click on the thumbnail to play the video. Invidious is supported in the Options panel.
 - [Privacy Redirector](https://github.com/dybdeskarphet/privacy-redirector): Userscript to automatically redirect to different private frontents, including Invidious. Can be configured to redirect to specific instances of the user's choice.
 - [Simple Sponsor Skipper](https://codeberg.org/mthsk/userscripts/src/branch/master/simple-sponsor-skipper): Userscript based on Sponsorblock that is pre-configured to work with multiple Invidious instances, but can be easily altered to use any instance desired by the user.
-- [Invidious URL Parameters](https://github.com/MintMain21/Invidious-URL-Parameters-Userscript/blob/main/README.md) Userscript for appending URL Parameters to video links for selected Invidious Instances. Works in tandum with Privacy Redirector and Simple Sponsor Skipper. See [here](https://docs.invidious.io/url-parameters/) for more information about URL Parameters. 
+- [Invidious URL Parameters](https://github.com/MintMain21/Invidious-URL-Parameters-Userscript) Userscript for appending URL Parameters to video links for selected Invidious Instances. Works in tandum with Privacy Redirector and Simple Sponsor Skipper. See [here](https://docs.invidious.io/url-parameters/) for more information about URL Parameters. 
 
 ### Extensions that integrate Invidious into other programs and apps
 - [UntrackMe](https://f-droid.org/en/packages/app.fedilab.nitterizeme): Android app to rewrite YouTube links to Invidious. Can optionally play videos in the app as well.
