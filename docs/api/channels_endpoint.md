@@ -135,22 +135,22 @@ Please refer to the [Community Post Attachment types](#community-post-attachment
 
 ```javascript
 {
-	authorId: String,
-	comments: {
-		attachment: ImageAttachment | MultiImageAttachment | VideoAttachment
-		author: String,
-		authorIsChannelOwner: Boolean
-		authorId: String,
-		authorThumbnails: ImageObject[],
-		authorUrl: String,
-		commentId: String,
-		content: String,
-		contentHtml: String,
-		isEdited: Boolean,
-		likeCount: Number,
-		published: Number,
-		publishedText: String,
-		replyCount: Number
+	"authorId": String,
+	"comments": {
+		"attachment": ImageAttachment | MultiImageAttachment | VideoAttachment | PollAttachment
+		"author": String,
+		"authorIsChannelOwner": Boolean
+		"authorId": String,
+		"authorThumbnails": ImageObject[],
+		"authorUrl": String,
+		"commentId": String,
+		"content": String,
+		"contentHtml": String,
+		"isEdited": Boolean,
+		"likeCount": Number,
+		"published": Number,
+		"publishedText": String,
+		"replyCount": Number
 	}[]
 }
 ```
@@ -162,8 +162,8 @@ __ImageAttachment__
 
 ```javascript
 {
-    type: "image",
-    imageThumbnails: ImageObject[]
+    "type": "image",
+    "imageThumbnails": ImageObject[]
 }
 ```
 
@@ -171,20 +171,20 @@ __MultiImageAttachment__
 
 ```javascript
 {
-    type: "multiImage",
-    images: ImageObject[][]
+    "type": "multiImage",
+    "images": ImageObject[][]
 }
 ```
 
-__Poll__
+__PollAttachment__
 
 ```javascript
 {
-	type: "poll",
-	totalVotes: Number,
-	choices: {
-		text: String,
-		image?: ImageObject[]
+	"type": "poll",
+	"totalVotes": Number,
+	"choices": {
+		"text": String,
+		"image?": ImageObject[]
 	}[]
 
 }
@@ -196,7 +196,7 @@ This usually means that parsing support for the attachment type has not yet been
 
 ```javascript
 {
-    type: "unknown",
-    error: String
+    "type": "unknown",
+    "error": String
 }
 ```
