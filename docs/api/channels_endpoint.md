@@ -125,3 +125,81 @@ See: GET `/api/v1/channels/:id/videos`
 	"continuation": String
 }
 ```
+
+##### GET `/api/v1/channels/:id/community`
+
+Please refer to the [Community Post Attachment types](#community-post-attachment-types) below for more details on the attachment JSON objects used below.
+
+> Url parameters
+
+* `continuation`: A continuation token to get the next chunk of items.
+
+> Response:
+
+```javascript
+{
+	"authorId": String,
+	"comments": {
+		"attachment": ImageAttachment | MultiImageAttachment | VideoAttachment | PollAttachment
+		"author": String,
+		"authorIsChannelOwner": Boolean
+		"authorId": String,
+		"authorThumbnails": ImageObject[],
+		"authorUrl": String,
+		"commentId": String,
+		"content": String,
+		"contentHtml": String,
+		"isEdited": Boolean,
+		"likeCount": Number,
+		"published": Number,
+		"publishedText": String,
+		"replyCount": Number
+	}[]
+}
+```
+###### Community Post Attachment Types
+__VideoAttachment__ 
+See [VideoObject](./common_types.md#videoobject) common type
+
+__ImageAttachment__
+
+```javascript
+{
+    "type": "image",
+    "imageThumbnails": ImageObject[]
+}
+```
+
+__MultiImageAttachment__
+
+```javascript
+{
+    "type": "multiImage",
+    "images": ImageObject[][]
+}
+```
+
+__PollAttachment__
+
+```javascript
+{
+	"type": "poll",
+	"totalVotes": Number,
+	"choices": {
+		"text": String,
+		"image?": ImageObject[]
+	}[]
+
+}
+```
+
+__Unknown__
+
+This usually means that parsing support for the attachment type has not yet been implemented.
+
+```javascript
+{
+    "type": "unknown",
+    "error": String
+}
+```
