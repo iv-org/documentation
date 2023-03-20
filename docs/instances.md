@@ -48,8 +48,6 @@
 
 * [yt.funami.tech](https://yt.funami.tech) 🇰🇷 
 
-* [invidious.lidarshield.cloud](https://invidious.lidarshield.cloud) 🇲🇩
-
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
 
 * [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇨🇦
