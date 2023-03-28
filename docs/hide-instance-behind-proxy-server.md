@@ -87,7 +87,7 @@ You don't need to setup a new port for the HTTP (cleartext) port as the proxy pr
 In the NGINX configuration file for Invidious, just after the line `listen 443 ssl http2` add this line:
 ```
 listen 8443 ssl http2 proxy_protocol;
-set_real_ip_from PUBLIC_IPV4_ADDRESS_OF_ORIGINAL_SERVER/32;
+set_real_ip_from PUBLIC_IPV4_ADDRESS_OF_PROXY_SERVER/32;
 real_ip_header proxy_protocol;
 ```
 
@@ -97,7 +97,7 @@ http {
     server {
         listen 443 ssl http2;
         listen 8443 ssl http2 proxy_protocol;
-        set_real_ip_from PUBLIC_IPV4_ADDRESS_OF_ORIGINAL_SERVER/32;
+        set_real_ip_from PUBLIC_IPV4_ADDRESS_OF_PROXY_SERVER/32;
         real_ip_header proxy_protocol;
     }
 }
@@ -112,7 +112,7 @@ Note: You may not have `http2` parameter for the `listen 443 ssl` line, if you d
 CLI parameters, adapt to your platform (docker compose, kubernetes or local traefik):
 ```
 --entryPoints.websecure.address=:8443
---entryPoints.websecure.proxyProtocol.trustedIPs=PUBLIC_IPV4_ADDRESS_OF_ORIGINAL_SERVER/32
+--entryPoints.websecure.proxyProtocol.trustedIPs=PUBLIC_IPV4_ADDRESS_OF_PROXY_SERVER/32
 ```
 
 Please see the documentation: https://doc.traefik.io/traefik/routing/entrypoints/#proxyprotocol
