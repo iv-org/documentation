@@ -34,15 +34,11 @@
 
 * [inv.vern.cc](https://inv.vern.cc) 🇺🇸 - Source code/changes: https://git.vern.cc/vern/modifications/src/branch/master/invidious
 
-* [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
-
 * [watch.thekitty.zone](https://watch.thekitty.zone) 🇩🇪
 
 * [inv.odyssey346.dev](https://inv.odyssey346.dev) 🇫🇷
 
 * [invidious.baczek.me](https://invidious.baczek.me) 🇵🇱
-
-* [invidious.weblibre.org](https://invidious.weblibre.org) 🇨🇱
 
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇳🇱 
 
@@ -55,8 +51,6 @@
 * [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇨🇦
 
 * [invidious.sethforprivacy.com](https://invidious.sethforprivacy.com) 🇨🇦
-
-* [yt.oelrichsgarcia.de](https://yt.oelrichsgarcia.de) 🇩🇪 (uses Cloudflare)
 
 * [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare)
 
@@ -78,8 +72,6 @@
 * [invidious.esmail5pdn24shtvieloeedh7ehz3nrwcdivnfhfcedl7gf4kwddhkqd.onion](http://invidious.esmail5pdn24shtvieloeedh7ehz3nrwcdivnfhfcedl7gf4kwddhkqd.onion) 🇨🇦 (Onion of invidious.esmailelbob.xyz)
 
 * [inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion](http://inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion/) 🇺🇸 (Onion of inv.vern.cc)
-
-* [am74vkcrjp2d5v36lcdqgsj2m6x36tbrkhsruoegwfcizzabnfgf5zyd.onion](http://am74vkcrjp2d5v36lcdqgsj2m6x36tbrkhsruoegwfcizzabnfgf5zyd.onion) 🇺🇸 (Onion of invidious.slipfox.xyz)
 
 * [ng27owmagn5amdm7l5s3rsqxwscl5ynppnis5dqcasogkyxcfqn7psid.onion](http://ng27owmagn5amdm7l5s3rsqxwscl5ynppnis5dqcasogkyxcfqn7psid.onion) 🇩🇪 (Onion of yt.artemislena.eu)
 
