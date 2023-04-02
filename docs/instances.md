@@ -95,6 +95,10 @@
 
 * [inv.vern.i2p](http://verni6dr4qxjgjumnvesxerh5rvhv6oy5ddeibaqy5d7tgbiiyfa.b32.i2p/) 🇺🇸 (Eepsite of inv.vern.cc)
 
+* [http://pjsfhqamc7k6htnumrvn4cwqqdoggeepj7u5viyimgnxg3gar72q.b32.i2p](http://pjsfhqamc7k6htnumrvn4cwqqdoggeepj7u5viyimgnxg3gar72q.b32.i2p) 🇫🇷 (Eepsite of invidious.projectsegfau.lt)
+
+* [http://pjsfi2szfkb4guqzmfmlyq4no46fayertjrwt4h2uughccrh2lvq.b32.i2p](http://pjsfi2szfkb4guqzmfmlyq4no46fayertjrwt4h2uughccrh2lvq.b32.i2p) 🇱🇺 (Eepsite of inv.bp.projectsegfau.lt)
+
 ## Rules to have your instance in this list:
 
 1. Instances MUST have been up for at least a month before it can be added to this list.
