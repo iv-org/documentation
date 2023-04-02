@@ -48,6 +48,8 @@
 
 * [yt.funami.tech](https://yt.funami.tech) 🇰🇷 
 
+* [vid.priv.au](https://vid.priv.au) 🇸🇬
+
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
 
 * [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇨🇦
@@ -69,7 +71,7 @@
 
 * [osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion](http://osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion) 🇳🇱 (Onion of invidious.hub.ne.kr)
 
-*  [u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion](http://u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion) 🇺🇸 (Onion of inv.riverside.rocks)
+* [u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion](http://u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion) 🇺🇸 (Onion of inv.riverside.rocks)
 
 * [euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion](http://euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion/) 🇩🇪 (Onion of invidious.sethforprivacy.com)
 
@@ -84,6 +86,10 @@
 * [iv.odysfvr23q5wgt7i456o5t3trw2cw5dgn56vbjfbq2m7xsc5vqbqpcyd.onion](http://iv.odysfvr23q5wgt7i456o5t3trw2cw5dgn56vbjfbq2m7xsc5vqbqpcyd.onion) 🇫🇷 (Onion of inv.odyssey346.dev)
 
 * [invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion](http://invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion) 🇳🇱 (Onion of invidious.privacydev.net)
+
+* [http://inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion](http://inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion) 🇫🇷 (Onion of invidious.projectsegfau.lt)
+
+* [http://invbp.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion](http://invbp.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion) 🇱🇺 (Onion of inv.bp.projectsegfau.lt)
 
 ### I2P Eepsites:
 
