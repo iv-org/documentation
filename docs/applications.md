@@ -20,7 +20,6 @@
 - [Privacy Redirector](https://github.com/dybdeskarphet/privacy-redirector): Userscript to automatically redirect to different private frontents, including Invidious. Can be configured to redirect to specific instances of the user's choice.
 - [Simple Sponsor Skipper](https://codeberg.org/mthsk/userscripts/src/branch/master/simple-sponsor-skipper): Userscript based on Sponsorblock that is pre-configured to work with multiple Invidious instances, but can be easily altered to use any instance desired by the user.
 - [Invidious URL Parameters](https://github.com/MintMain21/Invidious-URL-Parameters-Userscript) Userscript for appending URL Parameters to video links for selected Invidious Instances. Works in tandum with Privacy Redirector and Simple Sponsor Skipper. See [here](https://docs.invidious.io/url-parameters/) for more information about URL Parameters. 
-- [Invidious Missing Description Workaround](https://gist.github.com/gardockt/af1243d36d8b659b98a13720b81bd9f3) Workaround for Video Descriptions not appearing on most Invidious Instances. 
 
 ### Extensions that integrate Invidious into other programs and apps
 - [UntrackMe](https://f-droid.org/en/packages/app.fedilab.nitterizeme): Android app to rewrite YouTube links to Invidious. Can optionally play videos in the app as well.
