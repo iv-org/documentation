@@ -54,6 +54,12 @@
 
 * [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare)
 
+* [invidious.vpsburti.com](https://invidious.vpsburti.com) 🇳🇱  
+
+* [invidious.0011.lt](https://invidious.0011.lt) 🇱🇹 
+
+* [inv.zzls.xyz](https://inv.zzls.xyz) 🇨🇱 
+
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion) 🇫🇮 (Onion of invidious.snopyta.org)
 
