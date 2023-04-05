@@ -44,7 +44,7 @@ Applies to: Main window (address bar)
 
 # How to use it for Invidious URL Parameters?
 
-If you would like to use URL Parameters in your redirects (see https://github.com/cloudrac3r/invidious-documentation/blob/master/List-of-URL-parameters.md), you will need to manually add them to Rule 1, (https://[Invidious Domain Here]/watch?v=$1[URL Parameters here] in place of https://[Invidious Domain Here]/watch?v=$1.
+If you would like to use URL Parameters in your redirects (see [here](https://github.com/cloudrac3r/invidious-documentation/blob/master/List-of-URL-parameters.md)), you will need to manually add them to Rule 1, (https://[Invidious Domain Here]/watch?v=$1[URL Parameters here] in place of https://[Invidious Domain Here]/watch?v=$1.
 
 For clarity, an example of a URL parameter would be &related_videos=false&comments=false to ensure that neither related videos nor comments are displayed on a video page, so https://[Invidious Domain Here]/watch?v=$1&related_videos=false&comments=false would be the destination of redirects.
 
