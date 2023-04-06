@@ -63,6 +63,9 @@ _This list is incomplete. You can help by expanding it._
 | `comments=false`                             | Disabled           |   
 | _Extended Description_                       | Extend Video Description by default |
 | `extend_desc=true`                           | Enabled
+| _Player Style_                               | Video Player UI                                                                                                                                                                                          |
+| `player_style=invidious`                     | Invidious, the default                                                                                                                                          |
+| `player_style=youtube`                       | YouTube, using a centered play button and always visible video control bar                                                                                                                                                                                         |
 | _Speed_                                      | Default player speed, can be any positive number                                                                                                                                          |
 | `speed=0.5`                                  | Play at 0.5x speed                                                                                                                                                                        |
 | `speed=2`                                    | Play at 2x speed                                                                                                                                                                          |
@@ -98,6 +101,4 @@ _This list is incomplete. You can help by expanding it._
 | _Region_                                     | Provide "hint" (as ISO 3166 country code) for Invidious to load trending videos from the specified region                                                                                 |  |
 | `region=JP`                                  | Load videos that are trending in Japan                                                                                                                                                    |
 | `region=DE`                                  | Load videos that are trending in Germany                                                                                                                                                  |
-| **Player Style**                             |                                                                                                                                                                                           |
-| `player_style=invidious`                     | Invidious, the default                                                                                                                                          |
-| `player_style=youtube`                       | YouTube, using a centered play button and always visible video control bar                                                                                                                                                                                         |
+
