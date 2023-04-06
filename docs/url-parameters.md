@@ -59,7 +59,9 @@ _This list is incomplete. You can help by expanding it._
 | _Related Videos_                             | Show "Related videos" tab on the right-hand side |                                                           
 | `related_videos=false`                       | Disabled              |
 | _Comments_                                   | Show comments below the video|
-| `comments=false`                             | Disabled           |    
+| `comments=false`                             | Disabled           |   
+| _Extended Description_                       | Extend Video Description by default |
+| `extend_desc=true`                           | Enabled
 | _Speed_                                      | Default player speed, can be any positive number                                                                                                                                          |
 | `speed=0.5`                                  | Play at 0.5x speed                                                                                                                                                                        |
 | `speed=2`                                    | Play at 2x speed                                                                                                                                                                          |
