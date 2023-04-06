@@ -9,7 +9,8 @@ _This list is incomplete. You can help by expanding it._
 | **Site-wide parameters**                     |                                                                                                                                                                                           |
 | _Dark mode_                                  | Configure default theme without setting cookies                                                                                                                                           |
 | `dark_mode=true`                             | Use dark theme                                                                                                                                                                            |
-| `dark_mode=false`                            | Use light theme                                                                                                                                                                           |
+| `dark_mode=false`                            | Use light theme      |
+| `dark_mode=auto`                             | Use system/browser theme
 | _Thin mode_                                  | Load HTML, CSS, JS and video elements (disables images)                                                                                                                                   |
 | `thin_mode=true`                             | Enabled                                                                                                                                                                                   |
 | `thin_mode=false`                            | Disabled                                                                                                                                                                                  |
