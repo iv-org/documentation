@@ -32,8 +32,6 @@
 
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 - Source code/changes: https://github.com/Sommerwiesel/invidious
 
-* [inv.vern.cc](https://inv.vern.cc) 🇺🇸 - Source code/changes: https://git.vern.cc/vern/modifications/src/branch/master/invidious
-
 * [watch.thekitty.zone](https://watch.thekitty.zone) 🇩🇪
 
 * [inv.odyssey346.dev](https://inv.odyssey346.dev) 🇫🇷
