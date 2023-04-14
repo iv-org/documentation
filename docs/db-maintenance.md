@@ -1,5 +1,11 @@
 # Database Information and Maintenance
 
+!!! Note
+
+    You do not need to setup a cleanup cron anymore as there is now an automatic cleaning process in Invidious.
+    Since this pull request: [https://github.com/iv-org/invidious/pull/3294](https://github.com/iv-org/invidious/pull/3294).
+    But this page is left in case you need to manually cleanup the database.
+
 Invidious needs one PostgreSQL database which has the following tables.
 
 - `annotations` Caches annotation data if `cache_annotations` is enabled in [`config.yml`](./configuration.md)
