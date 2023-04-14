@@ -19,6 +19,7 @@
 - [Database Information and Maintenance](./db-maintenance.md)
 - [Issues with CAPTCHA](./captcha-bug.md)
 - [How to setup Anti-Captcha](./anti-captcha.md)
+- [How to reset a user's password](./reset-pass.md)
 
 ## For Developers
 
