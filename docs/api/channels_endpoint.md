@@ -140,7 +140,7 @@ Please refer to the [Community Post Attachment types](#community-post-attachment
 {
 	"authorId": String,
 	"comments": {
-		"attachment": ImageAttachment | MultiImageAttachment | VideoAttachment | PollAttachment
+		"attachment": ImageAttachment | MultiImageAttachment | VideoAttachment | PollAttachment | PlaylistAttachment
 		"author": String,
 		"authorIsChannelOwner": Boolean
 		"authorId": String,
@@ -160,6 +160,9 @@ Please refer to the [Community Post Attachment types](#community-post-attachment
 ###### Community Post Attachment Types
 __VideoAttachment__ 
 See [VideoObject](./common_types.md#videoobject) common type
+
+__PlaylistAttachment__
+See [PlaylistObject](./common_types.md#playlistobject) common type
 
 __ImageAttachment__
 

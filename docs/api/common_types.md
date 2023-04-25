@@ -85,7 +85,7 @@
 ```
 
 
-### PlaylistOject
+### PlaylistObject
 
 ```javascript
 {
