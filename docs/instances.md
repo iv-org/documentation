@@ -32,6 +32,8 @@
 
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 - Source code/changes: https://github.com/Sommerwiesel/invidious
 
+* [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
+
 * [inv.odyssey346.dev](https://inv.odyssey346.dev) 🇫🇷
 
 * [invidious.baczek.me](https://invidious.baczek.me) 🇵🇱
