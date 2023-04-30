@@ -46,6 +46,7 @@
 	"descriptionHtml": String,
 
 	"viewCount": Number, // Integer
+	"viewCountText": String,
 	"lengthSeconds": Number, // Integer
 
 	"published": Number, // Unix timestamp
