@@ -4,6 +4,8 @@ title: "[New instance] <instance name>"
 assignees: 
   - unixfox
   - samantazfox
+labels:
+  - instance-add
 
 body:
   - type: markdown
