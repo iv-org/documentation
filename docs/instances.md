@@ -50,6 +50,8 @@
 
 * [invidious.sethforprivacy.com](https://invidious.sethforprivacy.com) 🇨🇦
 
+* [invidious.ethibox.fr](https://invidious.ethibox.fr/) 🇫🇷
+
 * [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare)
 
 * [invidious.vpsburti.com](https://invidious.vpsburti.com) 🇳🇱  
