@@ -62,6 +62,7 @@
 
 * [invidious.nogafa.org](https://invidious.nogafa.org) 🇫🇷 
 
+* [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
 
 
 ### Tor Onion Services:
