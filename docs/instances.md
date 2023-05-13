@@ -34,7 +34,7 @@
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
-* [inv.odyssey346.dev](https://inv.odyssey346.dev) 🇫🇷
+* [inv.pistasjis.net](https://inv.pistasjis.net) 🇫🇷
 
 * [invidious.baczek.me](https://invidious.baczek.me) 🇵🇱
 
