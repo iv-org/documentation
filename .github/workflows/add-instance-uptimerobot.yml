@@ -93,7 +93,7 @@ jobs:
             }
             else {
               var replyComment = 
-                ['Domain not detected in the title, please edit the title by correcting it like this and reopen the issue:',
+                ['Domain not detected in the title, please edit the title by correcting it like this:',
                   'Issue title example: `[New instance] https://myinstance.com`'
                 ].join('\n');
 
@@ -102,11 +102,5 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 body: replyComment
-              })
-              await github.rest.issues.update({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                state: 'closed'
               })
             }
