@@ -113,6 +113,6 @@
     - MUST publish any later modification in a timely manner
     - MUST contain a link to both the modified and original source code of Invidious in the footer.
 12. Instances MUST NOT serve ads (sponsorship links in the banner are considered ads) NOR promote products.
-13. Instances MUST NOT restrict or disallow the access / usage to any physical person (also called [natural person](https://en.wikipedia.org/wiki/Natural_person)) (i.e a country's IP range MUST NOT be blocked, access by a physical person MUST NOT be disallowed for arbirary reason) - this rule doesn't apply to [juridical persons](https://en.wikipedia.org/wiki/Juridical_person).
+13. Instances MUST NOT restrict or disallow the access / usage to any [natural person](https://en.wikipedia.org/wiki/Natural_person) (i.e a country's IP range MUST NOT be blocked, access by a natural person MUST NOT be disallowed for arbirary reason) - this rule doesn't apply to [juridical persons](https://en.wikipedia.org/wiki/Juridical_person).
 
 **NOTE:** We reserve the right to decline any instance from being added to the list, and to remove or ban any instance that repeatedly breaks the aforementioned rules.
