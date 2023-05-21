@@ -12,14 +12,13 @@
 - [Redirector](https://github.com/einaregilsson/Redirector): Extension for Firefox and Chromium that can manually be configured to process Inidious Redirects. For details, see the [setup page](./redirector-setup.md) to use it with Invidious.
 
 ### Userscripts for Invidious.
-- [Invidious Redirect](https://greasyfork.org/en/scripts/370461-invidious-redirect): Redirects YouTube URLs to Invidio.us.
-- [YouTube to Invidious](https://greasyfork.org/en/scripts/375264-youtube-to-invidious): Scans current page for YouTube embeds and replace with Invidious.
-- [No-Youtube](https://github.com/mperez01/no-youtube): Userscript to replace youtube links to invidio.us.
-- [Invidious Audio Mode](https://greasyfork.org/en/scripts/397700-invidious-audio-mode): Adds a headphone icon next to all video links. Handy for those that just want to stream audio and not video.
-- [FYTE](https://greasyfork.org/en/scripts/9252-fyte-fast-youtube-embedded-player): Replace all YouTube embeds on a page with the video's thumbnail. Click on the thumbnail to play the video. Invidious is supported in the Options panel.
+- [Invidious Redirect](https://greasyfork.org/en/scripts/370461-invidious-redirect): Redirects YouTube URLs to a deprecated instance, but can be edited to redirect to a different instance.
+- [YouTube to Invidious](https://greasyfork.org/en/scripts/375264-youtube-to-invidious): Scans current page for YouTube embeds and replace with invidio.us. (Can be edited to use any preffered instance)
+- [No-Youtube](https://github.com/mperez01/no-youtube): Userscript to replace youtube links to invidio.us. Can be edited to redirect to a preffered instance.
+- [FYTE](https://greasyfork.org/en/scripts/9252-fyte-fast-youtube-embedded-player): Replace all YouTube embeds on a page with the video's thumbnail. Click on the thumbnail to play the video. Invidious is supported in the Options panel (redirects to invidio.us by default, can be edited).
 - [Privacy Redirector](https://github.com/dybdeskarphet/privacy-redirector): Userscript to automatically redirect to different private frontents, including Invidious. Can be configured to redirect to specific instances of the user's choice.
 - [Simple Sponsor Skipper](https://codeberg.org/mthsk/userscripts/src/branch/master/simple-sponsor-skipper): Userscript based on Sponsorblock that is pre-configured to work with multiple Invidious instances, but can be easily altered to use any instance desired by the user.
-- [Invidious URL Parameters](https://github.com/MintMain21/Invidious-URL-Parameters-Userscript) Userscript for appending URL Parameters to video links for selected Invidious Instances. Works in tandum with Privacy Redirector and Simple Sponsor Skipper. See [here](https://docs.invidious.io/url-parameters/) for more information about URL Parameters. 
+- [Invidious Preferences Userscript](https://github.com/MintMain21/Invidious-Preferences-Userscript) Userscript for enforcing preferences accross multiple instances, through URL Parameters, and without using browser cookies. Works in tandum with Privacy Redirector and Simple Sponsor Skipper. See [here](https://docs.invidious.io/url-parameters/) for more information about URL Parameters. 
 
 ### Extensions that integrate Invidious into other programs and apps
 - [UntrackMe](https://f-droid.org/en/packages/app.fedilab.nitterizeme): Android app to rewrite YouTube links to Invidious. Can optionally play videos in the app as well.
