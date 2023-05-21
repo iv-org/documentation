@@ -22,8 +22,6 @@
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
-* [invidious.esmailelbob.xyz](https://invidious.esmailelbob.xyz) 🇨🇦
-
 * [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 [inv.bp.projectsegfau.lt](https://inv.bp.projectsegfau.lt) 🇱🇺
 
 * [y.com.sb](https://y.com.sb) 🇩🇪
@@ -79,8 +77,6 @@
 * [u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion](http://u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion) 🇺🇸 (Onion of inv.riverside.rocks)
 
 * [euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion](http://euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion/) 🇩🇪 (Onion of invidious.sethforprivacy.com)
-
-* [invidious.esmail5pdn24shtvieloeedh7ehz3nrwcdivnfhfcedl7gf4kwddhkqd.onion](http://invidious.esmail5pdn24shtvieloeedh7ehz3nrwcdivnfhfcedl7gf4kwddhkqd.onion) 🇨🇦 (Onion of invidious.esmailelbob.xyz)
 
 * [ng27owmagn5amdm7l5s3rsqxwscl5ynppnis5dqcasogkyxcfqn7psid.onion](http://ng27owmagn5amdm7l5s3rsqxwscl5ynppnis5dqcasogkyxcfqn7psid.onion) 🇩🇪 (Onion of yt.artemislena.eu)
 
