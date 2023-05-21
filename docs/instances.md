@@ -115,4 +115,4 @@
 12. Instances MUST NOT serve ads (sponsorship links in the banner are considered ads) NOR promote products.
 13. Instances MUST NOT restrict or disallow the access / usage to any [natural person](https://en.wikipedia.org/wiki/Natural_person) (eg. a country's IP range MUST NOT be blocked, access by a natural person MUST NOT be disallowed for arbirary reason) - this rule doesn't apply to [juridical persons](https://en.wikipedia.org/wiki/Juridical_person).
 
-**NOTE:** We reserve the right to decline any instance from being added to the list, and to remove or ban any instance that repeatedly breaks the aforementioned rules.
+**NOTE:** We reserve the right to decline any instance from being added to the list, and to remove/ban any instance breaking the aforementioned rules.
