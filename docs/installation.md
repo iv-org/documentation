@@ -260,7 +260,7 @@ docker image prune -f
 
 #### Update a manual install
 ```bash
-sudo - invidious
+su - invidious
 cd invidious
 git pull
 shards install --production
