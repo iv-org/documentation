@@ -263,8 +263,7 @@ docker image prune -f
 su - invidious
 cd invidious
 git pull
-shards install --production
-crystal build src/invidious.cr --release
+make
 exit
 systemctl restart invidious.service
 ```
