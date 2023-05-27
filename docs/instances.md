@@ -50,7 +50,7 @@
 
 * [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare)
 
-* [invidious.vpsburti.com](https://invidious.vpsburti.com) 🇳🇱  
+* [invidious.vpsburti.com](https://invidious.vpsburti.com) 🇫🇮  
 
 * [invidious.0011.lt](https://invidious.0011.lt) 🇱🇹 
 
