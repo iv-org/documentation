@@ -28,8 +28,6 @@
 
 * [invidious.tiekoetter.com](https://invidious.tiekoetter.com) 🇩🇪
 
-* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 - Source code/changes: https://github.com/Sommerwiesel/invidious
-
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
 * [inv.pistasjis.net](https://inv.pistasjis.net) 🇫🇷
@@ -48,9 +46,7 @@
 
 * [invidious.sethforprivacy.com](https://invidious.sethforprivacy.com) 🇨🇦
 
-* [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare)
-
-* [invidious.vpsburti.com](https://invidious.vpsburti.com) 🇫🇮  
+* [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare) 
 
 * [invidious.0011.lt](https://invidious.0011.lt) 🇱🇹 
 
