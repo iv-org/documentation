@@ -24,11 +24,7 @@
 
 * [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 [inv.bp.projectsegfau.lt](https://inv.bp.projectsegfau.lt) 🇱🇺
 
-* [y.com.sb](https://y.com.sb) 🇩🇪
-
 * [invidious.tiekoetter.com](https://invidious.tiekoetter.com) 🇩🇪
-
-* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 - Source code/changes: https://github.com/Sommerwiesel/invidious
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
@@ -46,8 +42,6 @@
 
 * [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇨🇦
 
-* [invidious.sethforprivacy.com](https://invidious.sethforprivacy.com) 🇨🇦
-
 * [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare) 
 
 * [invidious.0011.lt](https://invidious.0011.lt) 🇱🇹 
@@ -55,8 +49,6 @@
 * [inv.zzls.xyz](https://inv.zzls.xyz) 🇨🇱 
 
 * [yt.floss.media](https://yt.floss.media) 🇺🇸 
-
-* [invidious.nogafa.org](https://invidious.nogafa.org) 🇫🇷 
 
 * [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
 
