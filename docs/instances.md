@@ -28,8 +28,6 @@
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
-* [inv.pistasjis.net](https://inv.pistasjis.net) 🇫🇷
-
 * [invidious.baczek.me](https://invidious.baczek.me) 🇵🇱
 
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇩🇪 
