@@ -10,7 +10,7 @@
 
 * [invidious.snopyta.org](https://invidious.snopyta.org) 🇫🇮
 
-* [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://uptime.invidious.io/784257752) - Source code/changes: https://github.com/unixfox/invidious-custom
+* [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://uptime.invidious.io/784257752) - Source code/changes: https://github.com/yewtudotbe/invidious-custom
 
 * [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664) (uses Cloudflare)
 
