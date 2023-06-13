@@ -8,19 +8,11 @@
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [invidious.snopyta.org](https://invidious.snopyta.org) 🇫🇮
-
 * [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://uptime.invidious.io/784257752) - Source code/changes: https://github.com/yewtudotbe/invidious-custom
-
-* [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664) (uses Cloudflare)
 
 * [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://stats.uptimerobot.com/n7A08HGVl6/786947233)
 
-* [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
-
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
-
-* [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
 * [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 [inv.bp.projectsegfau.lt](https://inv.bp.projectsegfau.lt) 🇱🇺
 
@@ -33,8 +25,6 @@
 * [invidious.baczek.me](https://invidious.baczek.me) 🇵🇱
 
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇩🇪 
-
-* [yt.funami.tech](https://yt.funami.tech) 🇰🇷 
 
 * [vid.priv.au](https://vid.priv.au) 🇸🇬
 
