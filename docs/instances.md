@@ -40,8 +40,6 @@
 
 * [inv.zzls.xyz](https://inv.zzls.xyz) 🇨🇱 
 
-* [yt.floss.media](https://yt.floss.media) 🇺🇸 
-
 * [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
 
 * [not-ytb.blocus.ch](https://not-ytb.blocus.ch) 🇨🇦 
