@@ -18,15 +18,11 @@
 
 * [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 [inv.bp.projectsegfau.lt](https://inv.bp.projectsegfau.lt) 🇱🇺
 
-* [y.com.sb](https://y.com.sb) 🇩🇪
-
 * [invidious.tiekoetter.com](https://invidious.tiekoetter.com) 🇩🇪
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
 * [inv.pistasjis.net](https://inv.pistasjis.net) 🇫🇷
-
-* [invidious.baczek.me](https://invidious.baczek.me) 🇵🇱
 
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇩🇪 
 
@@ -43,8 +39,6 @@
 * [inv.zzls.xyz](https://inv.zzls.xyz) 🇨🇱 
 
 * [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
-
-* [not-ytb.blocus.ch](https://not-ytb.blocus.ch) 🇨🇦 
 
 * [invidious.protokolla.fi](https://invidious.protokolla.fi) 🇫🇮 
 
