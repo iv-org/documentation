@@ -1,4 +1,4 @@
-# How to setup Anti-Captcha
+# Anti-Captcha setup
 
 1. [Register on anti-captcha.com](https://anti-captcha.com/clients/entrance/register) and finish the registration with the link provided in your mailbox.
 2. Head over to the [Add fund](https://anti-captcha.com/clients/finance/refill) page and use whatever currency you prefer to use for adding $2 into your balance.

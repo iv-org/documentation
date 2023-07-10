@@ -1,4 +1,4 @@
-# Database Information and Maintenance
+# Database maintenance
 
 !!! Note
 

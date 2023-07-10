@@ -1,4 +1,4 @@
-# NginX Reverse Proxy
+# NGINX reverse proxy setup
 
 This is a very basic config, secured with Let's Encrypt. Any log is disabled by default. Do not forget to replace `server_name` with your domain.
 

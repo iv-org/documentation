@@ -1,4 +1,4 @@
-# Redirector Setup
+# Redirector setup
 
 # What is Redirector?
 

@@ -1,4 +1,4 @@
-# List of URL parameters
+# URL parameters
 
 A list of URL parameters for Invidious, which can automatically toggle various UI and player settings.
 

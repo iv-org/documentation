@@ -1,4 +1,4 @@
-# Channels endpoint
+# API - Channels endpoint
 
 Please refer to the [Common object types](./common_types.md) page for more
 details on the various JSON objects used below.

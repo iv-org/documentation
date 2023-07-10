@@ -1,4 +1,4 @@
-# How to reset a user's password
+# Reset user password
 
 Resetting a user's invidious password needs you to edit the database.
 

@@ -1,4 +1,4 @@
-# Object types used across the API
+# API - Common object types
 
 
 ### ImageObject

@@ -1,4 +1,4 @@
-# Takedown Notices
+# Handling takedown notices
 
 If you are running a public Invidious instance, it is very possible that you will end up receiving a takedown notice at some point. A copyright agent will probably search the ID of an infringing video on a search engine and see your instance appear. At least in the United States and in Europe, Invidious instances are, in theory, legal.
 

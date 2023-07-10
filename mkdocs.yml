@@ -32,7 +32,7 @@ nav:
     - 'hide-instance-behind-proxy-server.md'
     - 'captcha-bug.md'
     - 'anti-captcha.md'
-    - 'reset-pass.md'
+    - 'reset-password.md'
     - 'known-exception.md'
   - 'For Developers':
     - 'api.md'
