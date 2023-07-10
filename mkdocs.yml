@@ -20,7 +20,7 @@ nav:
     - 'proxy-videos.md'
     - 'geoblocking.md'
     - 'umatrix.md'
-    - 'redirector-setup.md'
+    - 'redirector.md'
   - 'For Administrators':
     - 'installation.md'
     - 'configuration.md'

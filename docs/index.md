@@ -13,7 +13,7 @@
 - [UserScript to always proxy video](./proxy-videos.md)
 - [Videos geoblocking](./geoblocking.md)
 - [uMatrix setup](./umatrix.md)
-- [Redirector setup](./redirector-setup.md)
+- [Redirector setup](./redirector.md)
 
 ## For Administrators
 
