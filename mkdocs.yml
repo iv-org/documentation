@@ -20,6 +20,7 @@ nav:
     - 'umatrix.md'
     - 'known-exception.md'
     - 'faq.md'
+    - 'redirector-setup.md'
   - 'For Administrators':
     - 'installation.md'
     - 'configuration.md'
