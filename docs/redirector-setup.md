@@ -1,3 +1,5 @@
+# Redirector Setup
+
 # What is Redirector?
 
 Redirector is a Browser extension for Firefox and Chromium that can manually be configured to redirect links, such as YouTube to Invidious or [Twitter to Nitter](https://github.com/zedeus/nitter/wiki/Extensions#redirector)
