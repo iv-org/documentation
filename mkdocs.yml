@@ -42,8 +42,23 @@ nav:
 theme:
   name: material
   font: false
-  palette:
-    primary: black
+
+  palette: 
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   logo: images/invidious.png # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/#logo
   favicon: images/favicon.ico # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/#favicon
   features:
