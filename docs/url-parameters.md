@@ -56,7 +56,8 @@ _This list is incomplete. You can help by expanding it._
 | _Quality_DASH_                                    | Default player quality when using DASH (default is Auto)                                                                                                                                                                  |
 | `quality_dash=auto`                               | Automatically change quality based on network conditions                                                                                                              |
 | `quality_dash=best`                              | Automatically use the best quality avalible                                                                                                                                                                                     |
-| `quality_dash=480`                             | always use 480p                                                                                                                                                                                      |
+| `quality_dash=###`                             | always use desired quality (480, 720, etc).                                                                                                                                                                                     |
+| `quality_dash=worst`                             | Automatically use the worst quality avalible                                                                                                                                                                                     |
 | _Related Videos_                             | Show "Related videos" tab on the right-hand side |                                                           
 | `related_videos=false`                       | Disabled              |
 | _Comments_                                   | Show comments below the video|
