@@ -206,3 +206,17 @@ This usually means that parsing support for the attachment type has not yet been
     "error": String
 }
 ```
+
+##### GET `/api/v1/channels/:ucid/search`
+
+> Url parameters
+* `q`: The query to search
+* `page`: The page number of the search (Int32)
+
+> Response:
+```javascript
+[
+	VideoObject,
+	PlaylistObject
+];
+```
