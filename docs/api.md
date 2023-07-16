@@ -517,3 +517,19 @@ page: Int32
   ]
 }
 ```
+
+##### GET `/api/v1/hashtag/:tag`
+
+> Schema:
+
+```javascript
+{
+  results: VideoObject[],
+}
+```
+
+Parameters:
+
+```
+page: Int32
+```
