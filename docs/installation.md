@@ -12,12 +12,6 @@ Running Invidious requires at least 512MB of free RAM (so ~2G installed on the s
 Compiling Invidious requires at least 2.5GB of free RAM (We recommend to have at least 4GB installed).
 If you have less (e.g on a cheap VPS) you can setup a SWAP file or partition, so the combined amount is >= 4GB.
 
-
-## Automated Installation
-
-[Invidious-Updater](https://github.com/tmiland/Invidious-Updater) is a self-contained script that can automatically install and update Invidious.
-
-
 ## Docker
 
 **The Invidious docker image is only [available on Quay](https://quay.io/repository/invidious/invidious) because, unlike Docker Hub, [Quay is Free and Open Source Software](https://github.com/quay/quay/blob/master/LICENSE). This is reflected in the `docker-compose.yml` file used in this walk-through.**
