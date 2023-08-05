@@ -81,3 +81,4 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.details # https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - admonition
