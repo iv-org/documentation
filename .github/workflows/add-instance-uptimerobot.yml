@@ -73,7 +73,11 @@ jobs:
                       ['Hello! Your instance has been added to our monitoring system: https://stats.uptimerobot.com/89VnzSKAn/' + body.monitor.id,
                       'You need to wait 30 days before we add your instance, this is to evaluate that your instance will keep a good uptime for one month.',
                       '',
-                      'Make sure you double checked all the mandatory checks or this will slow down the process of adding your instance!'
+                      'Make sure you double checked all the mandatory checks or this will slow down the process of adding your instance!',
+                      '',
+                      'Please consider joining our Matrix room for public instance maintainers by joining our Matrix room: https://matrix.to/#/#invidious:matrix.org',
+                      'then pinging @\unixfox, @\TheFrenchGhosty and @\SamantazFox for asking to be invited to the Matrix room.',
+                      'We discuss troubles managing a public instance, sharing some advices and more.'
                       ].join('\n');
                     await github.rest.issues.createComment({
                       issue_number: context.issue.number,
