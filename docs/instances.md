@@ -30,7 +30,7 @@
 
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
 
-* [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇨🇦
+* [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇺🇲
 
 * [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare) 
 
