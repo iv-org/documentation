@@ -97,11 +97,15 @@
 
 * [invidiousge2cq2qegp4vdzsfu6mvpqdf6dtcyzmqbv7yx2spvkkajad.onion](http://invidiousge2cq2qegp4vdzsfu6mvpqdf6dtcyzmqbv7yx2spvkkajad.onion) 🇸🇬 (Onion of vid.priv.au)
 
+* [http://inv.zzlsghu6mvvwyy75mvga6gaf4znbp3erk5xwfzedb4gg6qqh2j6rlvid.onion](http://inv.zzlsghu6mvvwyy75mvga6gaf4znbp3erk5xwfzedb4gg6qqh2j6rlvid.onion) 🇨🇱 (Onion of inv.zzls.xyz)
+
 ### I2P Eepsites:
 
 * [http://pjsfhqamc7k6htnumrvn4cwqqdoggeepj7u5viyimgnxg3gar72q.b32.i2p](http://pjsfhqamc7k6htnumrvn4cwqqdoggeepj7u5viyimgnxg3gar72q.b32.i2p) 🇫🇷 (Eepsite of invidious.projectsegfau.lt)
 
 * [http://pjsfi2szfkb4guqzmfmlyq4no46fayertjrwt4h2uughccrh2lvq.b32.i2p](http://pjsfi2szfkb4guqzmfmlyq4no46fayertjrwt4h2uughccrh2lvq.b32.i2p) 🇱🇺 (Eepsite of inv.bp.projectsegfau.lt)
+
+* [zzlsbhhfvwg3oh36tcvx4r7n6jrw7zibvyvfxqlodcwn3mfrvzuq.b32.i2p](http://zzlsbhhfvwg3oh36tcvx4r7n6jrw7zibvyvfxqlodcwn3mfrvzuq.b32.i2p) 🇨🇱 (Eepsite of inv.zzls.xyz)
 
 ## Rules to have your instance in this list:
 
