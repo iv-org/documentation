@@ -34,8 +34,6 @@
 
 * [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare) 
 
-* [invidious.0011.lt](https://invidious.0011.lt) 🇱🇹 
-
 * [inv.zzls.xyz](https://inv.zzls.xyz) 🇨🇱 
 
 * [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
