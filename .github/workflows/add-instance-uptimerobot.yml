@@ -33,7 +33,7 @@ jobs:
             if (issueTitleParseUrl.length !== 0) {
               if (issueInfo.title.includes(".onion")) {
                 var replyComment = 
-                  ['Hello! I\'ve detected that you are requesting to add an onion URL.',
+                  ['Hello! I have detected that you are requesting to add an onion URL.',
                   'Please create a pull request instead for adding your onion url as an alternative to your clearnet URL: https://github.com/iv-org/documentation/edit/master/docs/instances.md'
                   ].join('\n');
                 await github.rest.issues.createComment({
@@ -76,7 +76,7 @@ jobs:
                       'Make sure you double checked all the mandatory checks or this will slow down the process of adding your instance!',
                       '',
                       'Please consider joining our Matrix room for public instance maintainers by joining our Matrix room: https://matrix.to/#/#invidious:matrix.org',
-                      'then pinging @\unixfox, @\TheFrenchGhosty and @\SamantazFox for asking to be invited to the Matrix room.',
+                      'then pinging @ unixfox, @ TheFrenchGhosty and @ SamantazFox for asking to be invited to the Matrix room.',
                       'We discuss troubles managing a public instance, sharing some advices and more.'
                       ].join('\n');
                     await github.rest.issues.createComment({
