@@ -44,9 +44,7 @@
 
 * [inv.in.projectsegfau.lt](https://inv.in.projectsegfau.lt) 🇮🇳  
 
-* [inv.citw.lgbt](https://inv.citw.lgbt) 🇳🇱  
-
-* [inv.makerlab.tech](https://inv.makerlab.tech) 🇪🇸  
+* [inv.citw.lgbt](https://inv.citw.lgbt) 🇳🇱   
 
 * [yt.oelrichsgarcia.de](https://yt.oelrichsgarcia.de) 🇩🇪  (uses Cloudflare)  
 
