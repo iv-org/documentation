@@ -18,11 +18,7 @@
 
 * [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 [inv.bp.projectsegfau.lt](https://inv.bp.projectsegfau.lt) 🇱🇺
 
-* [invidious.tiekoetter.com](https://invidious.tiekoetter.com) 🇩🇪
-
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
-
-* [inv.pistasjis.net](https://inv.pistasjis.net) 🇫🇷
 
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷 
 
