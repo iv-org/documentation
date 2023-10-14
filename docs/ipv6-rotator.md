@@ -1,5 +1,7 @@
 # Rotate your IPv6 address for escaping YouTube blocking
 
+This tutorial has been written by [unixfox](https://github.com/unixfox), owner of [yewtu.be](https://yewtu.be/). He is better suited when looking for help about this tutorial.
+
 ## Synopsis
 
 YouTube has started to periodically block the public Invidious instances since the start of June 2023 ([iv-org/invidious/issues/3872](https://github.com/iv-org/invidious/issues/3872)) and they have became more aggressive about it since the start of August 2023 ([iv-org/invidious/issues/4045](https://github.com/iv-org/invidious/issues/4045)).
