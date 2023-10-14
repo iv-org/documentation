@@ -4,7 +4,7 @@ This tutorial has been written by [unixfox](https://github.com/unixfox), owner o
 
 ## Synopsis
 
-YouTube has started to periodically block the public Invidious instances since the start of June 2023 ([iv-org/invidious/issues/3872](https://github.com/iv-org/invidious/issues/3872)) and they have became more aggressive about it since the start of August 2023 ([iv-org/invidious/issues/4045](https://github.com/iv-org/invidious/issues/4045)).
+YouTube has started to periodically block the public Invidious instances since the start of June 2023 ([iv-org/invidious/issues/3872](https://github.com/iv-org/invidious/issues/3872)) and they have become more aggressive about it since the start of August 2023 ([iv-org/invidious/issues/4045](https://github.com/iv-org/invidious/issues/4045)).
 
 Thanks to IPv6 you can easily escape this block because there are many addresses in a single /64 IPv6 range. (18,446,744,073,709,551,616 addresses to be precise)
 
