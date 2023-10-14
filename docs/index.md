@@ -25,6 +25,7 @@
 - [Database maintenance](./db-maintenance.md)
 - [Handling takedown notices](./takedown.md)
 - [Hiding Invidious instance behind proxy servers (for escaping DMCA requests)](./hide-instance-behind-proxy-server.md)
+- [IPv6 rotator (for escaping YouTube blockage)](./ipv6-rotator.md)
 - [CAPTCHA bug on Debian and Ubuntu](./captcha-bug.md)
 - [Anti-Captcha setup](./anti-captcha.md)
 - [Reset user password](./reset-password.md)
