@@ -33,12 +33,15 @@ But all of this is out of scope of this tutorial, please consult the internet fo
 
 #### 2) System packages requirement
 Please install:
-- python requests library.
-   Debian/Ubuntu: sudo apt install python3-requests
-   Other Linux distributions: sudo yourpackagemanager install python-requests
-- python pyroute2 library.
-   Debian/Ubuntu: sudo apt install python3-pyroute2
-   Other Linux distributions: sudo yourpackagemanager install python-pyroute2
+
+- python requests library.  
+  Debian/Ubuntu: `sudo apt install python3-requests`  
+  RHEL/CentOS/Fedora: `sudo dnf install python-requests`    
+  Other Linux distributions: `sudo yourpackagemanager install python-requests`
+- python pyroute2 library.   
+  Debian/Ubuntu: `sudo apt install python3-pyroute2`   
+  RHEL/CentOS/Fedora: `sudo dnf install python-pyroute2`  
+  Other Linux distributions: `sudo yourpackagemanager install python-pyroute2`
 
 ## Configure Invidious for IPv6
 ### If you are running Invidious outside of Docker or using something else than Docker (K8s)
@@ -83,24 +86,25 @@ It may be used on other projects that depend on YouTube and/or Google (example: 
    ```
    git clone https://github.com/iv-org/smart-ipv6-rotator.git
    ```
-3. Find the IPv6 subnet of your server, usually it's written on your provider website.
-    But you can easily find it using this tool: http://www.gestioip.net/cgi-bin/subnet_calculator.cgi. Enter the main IPv6 address, select IPv6 and change the prefix length only if it's not a /64.
-    Use the command `ip a` to get the detail of your IPv6 network configuration.
+3. Find the IPv6 subnet of your server, usually it's written on your provider website.  
+   But you can easily find it using this tool: http://www.gestioip.net/cgi-bin/subnet_calculator.cgi.  
+   Enter the main IPv6 address, select IPv6 and change the prefix length only if it's not a /64.  
+   Use the command `ip a` to get the detail of your IPv6 network configuration.
 4. Run the script once like this (don't use sudo if you are already root):
    ```
    sudo python smart-ipv6-rotator.py run --ipv6range=YOURIPV6SUBNET/64
    ```
 5. If everything went well, then configure a cron to periodically rotate your IPv6 range. Twice a day (noon and midnight) is enough for YouTube servers. Also at the reboot of the server!
-    Example crontab (`crontab -e -u root`):
+   Example crontab (`crontab -e -u root`):
    ```
    @reboot sleep 30s && python smart-ipv6-rotator.py run --ipv6range=YOURIPV6SUBNET/64
    0 */12 * * * python smart-ipv6-rotator.py run --ipv6range=YOURIPV6SUBNET/64
-   ```
-
-    The sleep command is useful in case your networking may take some time to be ready.
+   ```  
+   The sleep command is useful in case your networking may take some time to be ready.
  6. That's it!
 
 If the script does not work for you, it could be that:
+
 - Your provider does not allow you to assign any arbitrary IPv6 address, it's common for cloud providers like AWS, Oracle Cloud, Google Cloud where you need to manually assign the IPv6 address from the panel.
 - You have not correctly set your IPv6 subnet range. In such case, please ask for help on IRC or Matrix or in a GitHub issue.
 
