@@ -23,7 +23,7 @@ Depending on your provider and if it does support IPv6, you may have to configur
 
 If your provider does not support IPv6 then you can either switch to another provider that support IPv6.  
 There are many today that do support it, here is a non-exhaustive list of them (**this is not recommendation, just a list of the popular providers that support IPv6**):  
-Hetzner, BuyVM, Scaleway, OVH, Oracle Cloud, AWS, DigitalOcean, Vultr, Incognet, Netcup and more. Larger list: https://www.serverhunter.com/#query=ips%3Aipv6   
+Hetzner, BuyVM, Scaleway, OVH, DigitalOcean, Vultr, Incognet, Netcup and more. Larger list: https://www.serverhunter.com/#query=ips%3Aipv6   
 Nowadays, it's hard to find one that does not support IPv6.
 
 The alternative, if you do not want to switch provider, is to use an IPv6 tunnelbroker, it allows to get IPv6 connectivity using another server.
