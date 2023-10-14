@@ -30,6 +30,7 @@ nav:
     - 'db-maintenance.md'
     - 'takedown.md'
     - 'hide-instance-behind-proxy-server.md'
+    - 'ipv6-rotator.md'
     - 'captcha-bug.md'
     - 'anti-captcha.md'
     - 'reset-password.md'
