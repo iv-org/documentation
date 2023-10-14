@@ -28,7 +28,7 @@ Nowadays, it's hard to find one that does not support IPv6.
 
 The alternative, if you do not want to switch provider, is to use an IPv6 tunnelbroker, it allows to get IPv6 connectivity using another server.
 
-This website list all the free and paid existing tunnelbrokers: https://tunnelbroker.services/. **We do not recommend running a public instance on a free tunnelbroker as this would put a lot of strain on their network because video streaming consume a lot of bandwidth.**  
+This website lists all the free and paid existing tunnelbrokers: https://tunnelbroker.services/. **We do not recommend running a public instance on a free tunnelbroker as this would put a lot of strain on their network because video streaming consume a lot of bandwidth.**  
 You can also use an external server for acting as a tunnelbroker.  
 All of this is out of scope of this tutorial, please consult the internet for tutorials.
 
