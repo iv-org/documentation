@@ -1,6 +1,6 @@
 # Hiding Invidious instance behind proxy servers (for escaping DMCA requests)
 
-This tutorial has been writen by [unixfox](https://github.com/unixfox), owner of [yewtu.be](https://yewtu.be/)
+This tutorial has been written by [unixfox](https://github.com/unixfox), owner of [yewtu.be](https://yewtu.be/). He is better suited when looking for help about this tutorial.
 
 ## Synopsis
 
