@@ -6,30 +6,38 @@ This tutorial has been written by [unixfox](https://github.com/unixfox), owner o
 
 YouTube has started to periodically block the public Invidious instances since the start of June 2023 ([iv-org/invidious/issues/3872](https://github.com/iv-org/invidious/issues/3872)) and they have become more aggressive about it since the start of August 2023 ([iv-org/invidious/issues/4045](https://github.com/iv-org/invidious/issues/4045)).
 
-Thanks to IPv6 you can easily escape this block because there are many addresses in a single /64 IPv6 range. (18,446,744,073,709,551,616 addresses to be precise)
+Thanks to IPv6 you can easily escape this block because there are many IP addresses in a single /64 IPv6 range. (18,446,744,073,709,551,616 IP addresses to be precise)
 
 This tutorial will explain how to automatically and periodically rotate your IPv6 address. Also some notes about how to have IPv6 in case your provider does not offer it.
 
 ## Requirements
 #### 1) IPv6 support on your server
 ##### Testing
-You can easily find out if you have IPv6 by executing the command `curl -m 5 ipv6.icanhazip.com`.   
-If you do not have any errors, then congratulation, you can continue to the second requirement!
+You can easily find out if you have IPv6 by executing the command:
+```
+curl -m 5 ipv6.icanhazip.com
+```     
+If you do not have any errors, then congratulation, you can continue to [the second requirement](#2-system-packages-requirement)!
 
 If you do have an error (timeout or no route to host), then you will need to enable IPv6 support on your server.  
 Depending on your provider and if it does support IPv6, you may have to configure your server for IPv6. Check the documentation of your provider.
 
 ##### Other solutions if you do not have IPv6 support
 
+###### 1) Switch to another provider
+
 If your provider does not support IPv6 then you can either switch to another provider that support IPv6.  
 There are many today that do support it, here is a non-exhaustive list of them (**this is not recommendation, just a list of the popular providers that support IPv6**):  
-Hetzner, BuyVM, Scaleway, OVH, DigitalOcean, Vultr, Incognet, Netcup and more. Larger list: https://www.serverhunter.com/#query=ips%3Aipv6   
-Nowadays, it's hard to find one that does not support IPv6.
+Hetzner, BuyVM, Scaleway, OVH, DigitalOcean, Vultr, Incognet, Netcup and more.   
+Larger list: https://www.serverhunter.com/#query=ips%3Aipv6   
+
+###### 2) Use an IPv6 tunnelbroker or make one yourself
 
 The alternative, if you do not want to switch provider, is to use an IPv6 tunnelbroker, it allows to get IPv6 connectivity using another server.
 
 This website lists all the free and paid existing tunnelbrokers: https://tunnelbroker.services/. **We do not recommend running a public instance on a free tunnelbroker as this would put a lot of strain on their network because video streaming consumes a lot of bandwidth.**  
-You can also use an external server for acting as an IPV6 tunnel. Wireguard is perfectly suited for that.  
+
+You can also use an external server (from another provider that do support IPv6) for acting as an IPV6 tunnel for your main server. Wireguard is perfectly suited for that.  
 All of this is out of scope of this tutorial, please consult the internet for tutorials.
 
 #### 2) System packages requirement
@@ -48,8 +56,8 @@ Please install:
 ### If you are running Invidious outside of Docker or using something else than Docker (K8s)
 You probably have nothing to do!
 
-Except checking in your config.yml if you do not have this line set:
-```
+Except checking in your config.yml if you do not have this line set, if so remove it:
+```yaml
 force_resolve: ipv4
 ```
 
@@ -60,7 +68,6 @@ Note: Make sure you are running a recent version of Docker if you are running in
 
 1. Follow the steps 1 to 3 on the official documentation for Docker: https://docs.docker.com/config/daemon/ipv6/
 2. In your docker-compose file of invidious. Add these lines at the end of your docker-compose
-   
    ```yaml
    networks:
      default:
@@ -71,15 +78,20 @@ Note: Make sure you are running a recent version of Docker if you are running in
              gateway: fd01:db8:a::1
 
    ```
-
 3. Bring down your docker composition and bring it back up for recreating the network:
-   
    ```
    docker compose down
    docker compose up -d
    ```
- 
-To check if everything went well then do `docker compose exec invidious ping -c 1 ipv6.icanhazip.com` and if you do not get any error then you can jump to the next step.
+4. To check if everything went well then do:
+   ```
+   docker compose exec invidious ping -c 1 ipv6.icanhazip.com
+   ```
+   If you do not get any error then you can jump to the next step.
+5. **Finally**, check if you do not have this line configured in your `config.yml`, if so remove it:
+   ```yaml
+   force_resolve: ipv4
+   ```
 
 ## Configure the IPv6 rotator (made by Invidious team)
 This tool was developed by the Invidious team, and it's the official tool for rotating your IPv6 address on Invidious: https://github.com/iv-org/smart-ipv6-rotator.  
@@ -87,7 +99,6 @@ It may be used on other projects that depend on YouTube and/or Google (example: 
 
 1. Make sure you have installed all the python libraries from [the "requirements"](#requirements).
 2. Clone the repository somewhere that you like (not inside the invidious directory):
-   
    ```
    git clone https://github.com/iv-org/smart-ipv6-rotator.git
    ```
@@ -96,20 +107,18 @@ It may be used on other projects that depend on YouTube and/or Google (example: 
    Enter the main IPv6 address, select IPv6 and change the prefix length only if it's not a /64.  
    Use the command `ip a` to get the detail of your IPv6 network configuration.
 4. Run the script once like this (don't use sudo if you are already root):
-   
    ```
    sudo python smart-ipv6-rotator.py run --ipv6range=YOURIPV6SUBNET/64
    ```
 5. If everything went well, then configure a cron to periodically rotate your IPv6 range. Twice a day (noon and midnight) is enough for YouTube servers. Also at the reboot of the server!
    Example crontab (`crontab -e -u root`):
-   
    ```
-   @reboot sleep 30s && python smart-ipv6-rotator.py run --ipv6range=YOURIPV6SUBNET/64
-   0 */12 * * * python smart-ipv6-rotator.py run --ipv6range=YOURIPV6SUBNET/64
+   @reboot sleep 30s && python /path/to/the/script/smart-ipv6-rotator.py run --ipv6range=YOURIPV6SUBNET/64
+   0 */12 * * * python /path/to/the/script/smart-ipv6-rotator.py run --ipv6range=YOURIPV6SUBNET/64
    ```  
-   
    The `sleep` command is used in case your network takes too much time time to be ready.
- 6. That's it!
+
+That's it!
 
 If the script does not work for you, it could be that:
 
