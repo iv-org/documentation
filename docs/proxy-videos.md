@@ -1,4 +1,4 @@
-# Always use "local" to proxy video through the server without creating an account
+# UserScript to always proxy video
 
 Download ViolentMonkey for your Browser:
 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)

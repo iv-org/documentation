@@ -7,16 +7,10 @@ Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](
 
 ## Hardware requirements
 
-Running Invidious requires at least 512MB of free RAM (so ~2G installed on the system), as long as the is restarted regularly, as recommended in the post-install configuration. Public instances should ideally have at least 4GB of RAM, 2vCPU, a 200 mbps link and 20TB of traffic (no data cap/unlimited traffic is preferred).
+Running Invidious requires at least 20GB disk space, 512MB of free RAM (so ~2G installed on the system), as long as it is restarted regularly, as recommended in the post-install configuration. Public instances should ideally have at least 60G disk space, 4GB of RAM, 2vCPU, a 200 mbps link and 20TB of traffic (no data cap/unlimited traffic is preferred).
 
 Compiling Invidious requires at least 2.5GB of free RAM (We recommend to have at least 4GB installed).
 If you have less (e.g on a cheap VPS) you can setup a SWAP file or partition, so the combined amount is >= 4GB.
-
-
-## Automated Installation
-
-[Invidious-Updater](https://github.com/tmiland/Invidious-Updater) is a self-contained script that can automatically install and update Invidious.
-
 
 ## Docker
 
@@ -63,11 +57,16 @@ services:
         # domain:
         # https_only: false
         # statistics_enabled: false
+        hmac_key: "CHANGE_ME!!"
     healthcheck:
       test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
       interval: 30s
       timeout: 5s
       retries: 2
+    logging:
+      options:
+        max-size: "1G"
+        max-file: "4"
     depends_on:
       - invidious-db
 
@@ -91,8 +90,6 @@ volumes:
 
 Note: This compose is made for a true "production" setup, where Invidious is behind a reverse proxy. If you prefer to directly access Invidious, replace `127.0.0.1:3000:3000` with `3000:3000` under the `ports:` section.
 
-**The environment variable `POSTGRES_USER` cannot be changed. The SQL config files that run the initial database migrations are hard-coded with the username `kemal`.**
-
 
 ### Docker-compose method (development)
 
@@ -113,7 +110,7 @@ docker-compose up
 
 Follow the instructions for your distribution here: https://crystal-lang.org/install/
 
-Note: Invidious currently supports the following Crystal versions: `1.4.0` / `1.3.X` / `1.2.X`
+Note: Invidious currently supports the following Crystal versions: `1.8.2` / `1.7.X` / `1.6.X` / `1.5.X` / `1.4.1`.
 
 #### Install the dependencies
 
@@ -148,15 +145,6 @@ systemctl enable --now postgresql
 sudo -i -u postgres
 psql -c "CREATE USER kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
 createdb -O kemal invidious
-psql invidious kemal < /home/invidious/invidious/config/sql/channels.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/videos.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/channel_videos.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/users.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/session_ids.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/nonces.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/annotations.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/playlists.sql
-psql invidious kemal < /home/invidious/invidious/config/sql/playlist_videos.sql
 exit
 ```
 
@@ -165,8 +153,14 @@ exit
 ```bash
 su - invidious
 cd invidious
-shards install --production
-crystal build src/invidious.cr --release
+make
+
+# Configure config/config.yml as you like
+cp config/config.example.yml config/config.yml 
+
+# Deploy the database
+./invidious --migrate
+
 exit
 ```
 
@@ -217,6 +211,8 @@ git clone https://github.com/iv-org/invidious
 cd invidious
 shards install --production
 crystal build src/invidious.cr --release
+cp config/config.example.yml config/config.yml 
+# Configure config/config.yml how you want
 ```
 
 Note: If the command `crystal build` didn't work properly, you can build Invidious without lsquic may solve compatibilities issues:
@@ -235,6 +231,8 @@ Crystal, the programming language used by Invidious, [doesn't support Windows ye
 ## Post-install configuration:
 
 Detailed configuration available in the [configuration guide](./configuration.md).
+
+You must set a random generated value for the parameter `hmac_key:`! On Linux you can generate it using the command `pwgen 20 1`.
 
 Because of various issues Invidious **must** be restarted often, at least once a day, ideally every hour.
 
@@ -257,11 +255,10 @@ docker image prune -f
 
 #### Update a manual install
 ```bash
-sudo - invidious
+su - invidious
 cd invidious
 git pull
-shards install --production
-crystal build src/invidious.cr --release
+make
 exit
 systemctl restart invidious.service
 ```

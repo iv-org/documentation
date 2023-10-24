@@ -1,25 +1,39 @@
 ## General
 
-- [Public Invidious Instances](./instances.md)
+- [Invidious Instances](./instances.md)
 - [Applications](./applications.md)
-- [Always proxy videos through server](./proxy-videos.md)
+- [Export YouTube subscriptions](./export-youtube-subscriptions.md)
+- [Frequently Asked Questions](./faq.md)
+
+## For Advanced Users
+
 - [Preferences](./preferences.md)
-- [Geoblocking, available quality and DASH](./geoblocking.md)
-- [Using search filters](./search-filters.md)
-- [List of URL parameters](./url-parameters.md)
-- [How to deal with uMatrix](./umatrix.md)
+- [Search filters](./search-filters.md)
+- [URL parameters](./url-parameters.md)
+- [UserScript to always proxy video](./proxy-videos.md)
+- [Videos geoblocking](./geoblocking.md)
+- [uMatrix setup](./umatrix.md)
+- [Redirector setup](./redirector.md)
 
 ## For Administrators
 
 - [Installation](./installation.md)
 - [Configuration](./configuration.md)
-- [Apache2 Virtual Host with Reverse Proxy](./apache2.md)
-- [Nginx Reverse Proxy Configuration](./nginx.md)
-- [Database Information and Maintenance](./db-maintenance.md)
-- [Issues with CAPTCHA](./captcha-bug.md)
-- [How to setup Anti-Captcha](./anti-captcha.md)
+- [NGINX reverse proxy setup](./nginx.md)
+- [Caddy reverse proxy setup](./caddy.md)
+- [Apache2 reverse proxy setup](./apache2.md)
+- [Database maintenance](./db-maintenance.md)
+- [Handling takedown notices](./takedown.md)
+- [Hiding Invidious instance behind proxy servers (for escaping DMCA requests)](./hide-instance-behind-proxy-server.md)
+- [IPv6 rotator (for escaping YouTube blocking)](./ipv6-rotator.md)
+- [CAPTCHA bug on Debian and Ubuntu](./captcha-bug.md)
+- [Anti-Captcha setup](./anti-captcha.md)
+- [Reset user password](./reset-password.md)
+- [Known Exception in log](./known-exception.md)
 
 ## For Developers
 
 - [API](./api.md)
-- [Authenticated Endpoints](./authenticated-endpoints.md)
+- [API - Common object types](./api/common_types.md)
+- [API - Channels endpoint](./api/channels_endpoint.md)
+- [API - Authenticated endpoints](./api/authenticated-endpoints.md)

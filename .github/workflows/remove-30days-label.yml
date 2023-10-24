@@ -1,0 +1,23 @@
+name: Remove instance label when closing
+
+on:
+  issues:
+    types: [closed]
+
+jobs:
+
+  replycomment:
+
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: actions/github-script@v6
+        if: contains(github.event.issue.labels.*.name, 'wait-30-days')
+        with:
+          script: |
+            await github.rest.issues.removeLabel({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: 'wait-30-days'
+            });

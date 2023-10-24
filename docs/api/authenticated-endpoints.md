@@ -1,4 +1,4 @@
-# Authenticated Endpoints
+# API - Authenticated endpoints
 
 All endpoints under namespace `/api/v1/auth` require authentication.
 

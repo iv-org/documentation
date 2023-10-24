@@ -1,0 +1,110 @@
+name: Add instance to uptimerobot
+
+on:
+  issues:
+    types: [opened, reopened]
+
+jobs:
+
+  replycomment:
+
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v3
+        if: contains(github.event.issue.labels.*.name, 'instance-add')
+      - uses: actions/setup-node@v3
+        if: contains(github.event.issue.labels.*.name, 'instance-add')
+        with:
+          node-version: 16
+      - run: npm install request linkifyjs
+        if: contains(github.event.issue.labels.*.name, 'instance-add')
+      - uses: actions/github-script@v6
+        if: contains(github.event.issue.labels.*.name, 'instance-add')
+        with:
+          script: |
+            var issueInfo = (await github.rest.issues.get({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            })).data;
+            var linkify = require("linkifyjs");
+            var issueTitleParseUrl = linkify.find(issueInfo.title);
+            if (issueTitleParseUrl.length !== 0) {
+              if (issueInfo.title.includes(".onion")) {
+                var replyComment = 
+                  ['Hello! I have detected that you are requesting to add an onion URL.',
+                  'Please create a pull request instead for adding your onion url as an alternative to your clearnet URL: https://github.com/iv-org/documentation/edit/master/docs/instances.md'
+                  ].join('\n');
+                await github.rest.issues.createComment({
+                  issue_number: context.issue.number,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  body: replyComment
+                });
+                await github.rest.issues.update({
+                  issue_number: context.issue.number,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  state: 'closed'
+                });
+              }
+              else {
+                var instanceHostname = (new URL(issueTitleParseUrl[0].href)).hostname;
+                var request = require("request");
+                var options = { method: 'POST',
+                  url: 'https://api.uptimerobot.com/v2/newMonitor',
+                  json:true,
+                  headers:
+                  { 'content-type': 'application/x-www-form-urlencoded',
+                    'cache-control': 'no-cache' },
+                  form:
+                  { api_key: '${{ secrets.UPTIMEROBOT_API_KEY }}',
+                    format: 'json',
+                    type: '1',
+                    url: 'https://' + instanceHostname,
+                    friendly_name: instanceHostname } };
+                          
+                request(options, async function (error, response, body) {
+                  if (error) throw new Error(error);
+                  console.log(body);
+                  if (body.stat == "ok") {
+                    var replyComment = 
+                      ['Hello! Your instance has been added to our monitoring system: https://stats.uptimerobot.com/89VnzSKAn/' + body.monitor.id,
+                      'You need to wait 30 days before we add your instance, this is to evaluate that your instance will keep a good uptime for one month.',
+                      '',
+                      'Make sure you double checked all the mandatory checks or this will slow down the process of adding your instance!',
+                      '',
+                      'Please consider joining our Matrix room for public instance maintainers by joining our Matrix room: https://matrix.to/#/#invidious:matrix.org',
+                      'then pinging @ unixfox, @ TheFrenchGhosty and @ SamantazFox for asking to be invited to the Matrix room.',
+                      'We discuss troubles managing a public instance, sharing some advices and more.'
+                      ].join('\n');
+                    await github.rest.issues.createComment({
+                      issue_number: context.issue.number,
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      body: replyComment
+                    })
+                    await github.rest.issues.addLabels({
+                      issue_number: context.issue.number,
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      labels: ['wait-30-days']
+                    })
+                  }
+                });
+              }
+            }
+            else {
+              var replyComment = 
+                ['Domain not detected in the title, please edit the title by correcting it like this:',
+                  'Issue title example: `[New instance] https://myinstance.com`'
+                ].join('\n');
+
+              await github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: replyComment
+              })
+            }

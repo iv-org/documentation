@@ -1,4 +1,4 @@
-# Apache2 Reverse Proxy
+# Apache2 reverse proxy setup
 
 - A very basic config, secured with Let's Encrypt. Any log is disabled by default. Do not forget to replace `ServerName` with your domain.
 

@@ -8,47 +8,69 @@
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [invidious.snopyta.org](https://invidious.snopyta.org) 🇫🇮
-
-* [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://uptime.invidious.io/784257752) - Source code/changes: https://github.com/unixfox/invidious-custom
-
-* [invidious.kavin.rocks](https://invidious.kavin.rocks) 🇮🇳 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786132664-f9fa738fba1c4dc2f7364f71)](https://status.kavin.rocks/786132664) (uses Cloudflare)
+* [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://uptime.invidious.io/784257752) - Source code/changes: https://github.com/yewtudotbe/invidious-custom
 
 * [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://stats.uptimerobot.com/n7A08HGVl6/786947233)
-
-* [invidious.namazso.eu](https://invidious.namazso.eu) 🇩🇪
-
-* [inv.riverside.rocks](https://inv.riverside.rocks) 🇺🇸
-
-* [youtube.076.ne.jp](https://youtube.076.ne.jp) 🇯🇵 - Source code/changes: https://git.076.ne.jp/TechnicalSuwako/invidious-mod
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
-* [invidious.weblibre.org](https://invidious.weblibre.org) 🇨🇱
-
-* [invidious.esmailelbob.xyz](https://invidious.esmailelbob.xyz) 🇨🇦
-
 * [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 [inv.bp.projectsegfau.lt](https://inv.bp.projectsegfau.lt) 🇱🇺
-
-* [y.com.sb](https://y.com.sb) 🇩🇪
-
-* [invidious.sethforprivacy.com](https://invidious.sethforprivacy.com) 🇩🇪
-
-* [invidious.tiekoetter.com](https://invidious.tiekoetter.com) 🇩🇪
-
-* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 - Source code/changes: https://github.com/Sommerwiesel/invidious
-
-* [inv.vern.cc](https://inv.vern.cc) 🇨🇦
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
-* [inv.privacy.com.de](https://inv.privacy.com.de) 🇩🇪
+* [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷 
 
-* [invidious.rhyshl.live](https://invidious.rhyshl.live) 🇬🇧 (Uses Cloudflare)
+* [vid.priv.au](https://vid.priv.au) 🇸🇬
 
-* [invidio.xamh.de](https://invidio.xamh.de) 🇩🇪
+* [iv.melmac.space](https://iv.melmac.space) 🇩🇪
+
+* [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇺🇸
+
+* [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare) 
+
+* [inv.zzls.xyz](https://inv.zzls.xyz) 🇨🇱 
+
+* [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
+
+* [invidious.protokolla.fi](https://invidious.protokolla.fi) 🇫🇮 
+
+* [onion.tube](https://onion.tube) 🇯🇵 (uses Cloudflare)  
+
+* [inv.in.projectsegfau.lt](https://inv.in.projectsegfau.lt) 🇮🇳  
+
+* [inv.citw.lgbt](https://inv.citw.lgbt) 🇳🇱   
+
+* [yt.oelrichsgarcia.de](https://yt.oelrichsgarcia.de) 🇩🇪  (uses Cloudflare)  
+
+* [invidious.no-logs.com](https://invidious.no-logs.com) 🇸🇪 
+
+* [invidious.io.lol](https://invidious.io.lol) 🇺🇸
+
+* [iv.nboeck.de](https://iv.nboeck.de) 🇫🇮
+
+* [invidious.private.coffee](https://invidious.private.coffee) 🇦🇹
+
+* [yt.drgnz.club](https://yt.drgnz.club) 🇨🇿
+
+* [invidious.asir.dev](https://invidious.asir.dev) 🇺🇸
+
+* [iv.datura.network](https://iv.datura.network) 🇩🇪
+
+* [invidious.fdn.fr](https://invidious.fdn.fr) 🇫🇷
+
+* [anontube.lvkaszus.pl](https://anontube.lvkaszus.pl) 🇩🇪
+
+* [invidious.perennialte.ch](https://invidious.perennialte.ch) 🇦🇺 (uses Cloudflare)
+
+* [yt.cdaut.de](https://yt.cdaut.de) 🇩🇪
+
+* [invidious.drgns.space](https://invidious.drgns.space) 🇺🇸
+
+* [inv.us.projectsegfau.lt](https://inv.us.projectsegfau.lt) 🇺🇸
+
+* [invidious.einfachzocken.eu](https://invidious.einfachzocken.eu) 🇩🇪 (uses Cloudflare) 
 
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion) 🇫🇮 (Onion of invidious.snopyta.org)
@@ -61,15 +83,31 @@
 
 * [osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion](http://osbivz6guyeahrwp2lnwyjk2xos342h4ocsxyqrlaopqjuhwn2djiiyd.onion) 🇳🇱 (Onion of invidious.hub.ne.kr)
 
-*  [u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion](http://u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion) 🇺🇸 (Onion of inv.riverside.rocks)
+* [u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion](http://u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion) 🇺🇸 (Onion of inv.riverside.rocks)
 
 * [euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion](http://euxxcnhsynwmfidvhjf6uzptsmh4dipkmgdmcmxxuo7tunp3ad2jrwyd.onion/) 🇩🇪 (Onion of invidious.sethforprivacy.com)
 
-* [invidious.lqs5fjmajyp7rvp4qvyubwofzi6d4imua7vs237rkc4m5qogitqwrgyd.onion](http://invidious.lqs5fjmajyp7rvp4qvyubwofzi6d4imua7vs237rkc4m5qogitqwrgyd.onion) 🇨🇦 (Onion of invidious.esmailelbob.xyz)
+* [ng27owmagn5amdm7l5s3rsqxwscl5ynppnis5dqcasogkyxcfqn7psid.onion](http://ng27owmagn5amdm7l5s3rsqxwscl5ynppnis5dqcasogkyxcfqn7psid.onion) 🇩🇪 (Onion of yt.artemislena.eu)
 
-* [inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion](http://inv.vernccvbvyi5qhfzyqengccj7lkove6bjot2xhh5kajhwvidqafczrad.onion/) 🇨🇦 (Onion of inv.vern.cc)
+* [iv.odysfvr23q5wgt7i456o5t3trw2cw5dgn56vbjfbq2m7xsc5vqbqpcyd.onion](http://iv.odysfvr23q5wgt7i456o5t3trw2cw5dgn56vbjfbq2m7xsc5vqbqpcyd.onion) 🇫🇷 (Onion of inv.odyssey346.dev)
 
-* [am74vkcrjp2d5v36lcdqgsj2m6x36tbrkhsruoegwfcizzabnfgf5zyd.onion](http://am74vkcrjp2d5v36lcdqgsj2m6x36tbrkhsruoegwfcizzabnfgf5zyd.onion) 🇺🇸 (Onion of invidious.slipfox.xyz)
+* [invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion](http://invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion) 🇫🇷 (Onion of invidious.privacydev.net)
+
+* [http://inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion](http://inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion) 🇫🇷 (Onion of invidious.projectsegfau.lt)
+
+* [http://invbp.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion](http://invbp.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion) 🇱🇺 (Onion of inv.bp.projectsegfau.lt)
+
+* [invidiousge2cq2qegp4vdzsfu6mvpqdf6dtcyzmqbv7yx2spvkkajad.onion](http://invidiousge2cq2qegp4vdzsfu6mvpqdf6dtcyzmqbv7yx2spvkkajad.onion) 🇸🇬 (Onion of vid.priv.au)
+
+* [http://inv.zzlsghu6mvvwyy75mvga6gaf4znbp3erk5xwfzedb4gg6qqh2j6rlvid.onion](http://inv.zzlsghu6mvvwyy75mvga6gaf4znbp3erk5xwfzedb4gg6qqh2j6rlvid.onion) 🇨🇱 (Onion of inv.zzls.xyz)
+
+### I2P Eepsites:
+
+* [http://pjsfhqamc7k6htnumrvn4cwqqdoggeepj7u5viyimgnxg3gar72q.b32.i2p](http://pjsfhqamc7k6htnumrvn4cwqqdoggeepj7u5viyimgnxg3gar72q.b32.i2p) 🇫🇷 (Eepsite of invidious.projectsegfau.lt)
+
+* [http://pjsfi2szfkb4guqzmfmlyq4no46fayertjrwt4h2uughccrh2lvq.b32.i2p](http://pjsfi2szfkb4guqzmfmlyq4no46fayertjrwt4h2uughccrh2lvq.b32.i2p) 🇱🇺 (Eepsite of inv.bp.projectsegfau.lt)
+
+* [zzlsbhhfvwg3oh36tcvx4r7n6jrw7zibvyvfxqlodcwn3mfrvzuq.b32.i2p](http://zzlsbhhfvwg3oh36tcvx4r7n6jrw7zibvyvfxqlodcwn3mfrvzuq.b32.i2p) 🇨🇱 (Eepsite of inv.zzls.xyz)
 
 * [ng27owmagn5amdm7l5s3rsqxwscl5ynppnis5dqcasogkyxcfqn7psid.onion](http://ng27owmagn5amdm7l5s3rsqxwscl5ynppnis5dqcasogkyxcfqn7psid.onion) 🇩🇪 (Onion of yt.artemislena.eu)
 
@@ -86,9 +124,10 @@
 9. Instances MUST NOT use any type of analytics.
 10. Any system whose goal is to modify the content served to the user (i.e web server HTML rewrite) is considered the same as modifying the source code.
 11. Instances running a modified source code:
-    - MUST respect the AGPL by publishing their source code and stating their changes **before** they are be added to the list
+    - MUST respect the AGPL by publishing their source code and stating their changes **before** they are added to the list
     - MUST publish any later modification in a timely manner
     - MUST contain a link to both the modified and original source code of Invidious in the footer.
 12. Instances MUST NOT serve ads (sponsorship links in the banner are considered ads) NOR promote products.
+13. Instances MUST NOT restrict or disallow the access / usage to any [natural person](https://en.wikipedia.org/wiki/Natural_person) (eg. a country's IP range MUST NOT be blocked, access by a natural person MUST NOT be disallowed for arbirary reason) - this rule doesn't apply to [juridical persons](https://en.wikipedia.org/wiki/Juridical_person).
 
-**NOTE:** We reserve the right to decline any instance from being added to the list, and to remove or ban any instance that repeatedly breaks the aforementioned rules.
+**NOTE:** We reserve the right to decline any instance from being added to the list, and to remove / ban any instance breaking the aforementioned rules.

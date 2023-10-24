@@ -1,4 +1,4 @@
-# Search operators
+# Search filters
 
 Invidious supports the various search filters provided by YouTube.
 

@@ -4,9 +4,17 @@ title: "[New instance] <instance name>"
 assignees: 
   - unixfox
   - samantazfox
-  - thefrenchghosty
+labels:
+  - instance-add
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please consider joining our Matrix room for public instance maintainers by joining our Matrix room: https://matrix.to/#/#invidious:matrix.org
+        then pinging @unixfox, @TheFrenchGhosty and @SamantazFox for asking to be invited to the Matrix room.
+        We discuss troubles managing a public instance, sharing some advices and more.
+
   - type: input
     id: url
     attributes:
@@ -30,6 +38,8 @@ body:
       - label: "Instance is properly configured (including the mandatory [post install configuration](https://docs.invidious.io/installation/#post-install-configuration))"
         required: true
       - label: "Instance has an automatic hourly restart setup of Invidious"
+        required: true
+      - label: "If dash, proxy + download is enabled (default settings), the instance has unlimited traffic/bandwidth or close to unlimited (100TB minimum)"
         required: true
         
 
