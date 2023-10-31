@@ -16,7 +16,7 @@
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
-* [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 [inv.bp.projectsegfau.lt](https://inv.bp.projectsegfau.lt) 🇱🇺
+* [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
 
