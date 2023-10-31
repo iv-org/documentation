@@ -72,6 +72,8 @@
 
 * [invidious.einfachzocken.eu](https://invidious.einfachzocken.eu) 🇩🇪 (uses Cloudflare) 
 
+* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 
+
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion) 🇫🇮 (Onion of invidious.snopyta.org)
 
@@ -93,13 +95,13 @@
 
 * [invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion](http://invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion) 🇫🇷 (Onion of invidious.privacydev.net)
 
-* [http://inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion](http://inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion) 🇫🇷 (Onion of invidious.projectsegfau.lt)
-
-* [http://invbp.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion](http://invbp.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion) 🇱🇺 (Onion of inv.bp.projectsegfau.lt)
+* [inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion](http://inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion) 🇫🇷 (Onion of invidious.projectsegfau.lt)
 
 * [invidiousge2cq2qegp4vdzsfu6mvpqdf6dtcyzmqbv7yx2spvkkajad.onion](http://invidiousge2cq2qegp4vdzsfu6mvpqdf6dtcyzmqbv7yx2spvkkajad.onion) 🇸🇬 (Onion of vid.priv.au)
 
-* [http://inv.zzlsghu6mvvwyy75mvga6gaf4znbp3erk5xwfzedb4gg6qqh2j6rlvid.onion](http://inv.zzlsghu6mvvwyy75mvga6gaf4znbp3erk5xwfzedb4gg6qqh2j6rlvid.onion) 🇨🇱 (Onion of inv.zzls.xyz)
+* [inv.zzlsghu6mvvwyy75mvga6gaf4znbp3erk5xwfzedb4gg6qqh2j6rlvid.onion](http://inv.zzlsghu6mvvwyy75mvga6gaf4znbp3erk5xwfzedb4gg6qqh2j6rlvid.onion) 🇨🇱 (Onion of inv.zzls.xyz)
+
+* [jemgkaq2xibfu37hm2xojsxoi7djtwb25w6krhl63lhn52xfzgeyc2ad.onion](http://jemgkaq2xibfu37hm2xojsxoi7djtwb25w6krhl63lhn52xfzgeyc2ad.onion) 🇩🇪 (Onion of invidious.nerdvpn.de)
 
 ### I2P Eepsites:
 
