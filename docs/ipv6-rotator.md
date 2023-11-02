@@ -54,14 +54,14 @@ Please install:
 
 ## Configure Invidious for IPv6
 ### If you are running Invidious outside of Docker or using something else than Docker (K8s)
-You probably have nothing to do!
 
-Except checking in your config.yml if you do not have this line set, if so remove it:
+Please make sure that you have this line set in `config.yml`:
+
 ```yaml
-force_resolve: ipv4
+force_resolve: ipv6
 ```
 
-Or if you are on Kubernetes, check that your pods have IPv6 connectivity. But you probably already know that if you are using Kubernetes.
+Note: If you are on Kubernetes, check that your pods have IPv6 connectivity. But you probably already know that if you are using Kubernetes.
 
 ### If you are running Invidious in Docker
 Note: Make sure you are running a recent version of Docker if you are running into IPv6 issues.
@@ -78,20 +78,21 @@ Note: Make sure you are running a recent version of Docker if you are running in
              gateway: fd01:db8:a::1
 
    ```
-3. Bring down your docker composition and bring it back up for recreating the network:
+3. Make sure that you have this line set in `config.yml`:
+
+   ```yaml
+   force_resolve: ipv6
+   ```
+4. Bring down your docker composition and bring it back up for recreating the network:
    ```
    docker compose down
    docker compose up -d
    ```
-4. To check if everything went well then do:
+5. To check if everything went well then do:
    ```
    docker compose exec invidious ping -c 1 ipv6.icanhazip.com
    ```
    If you do not get any error then you can jump to the next step.
-5. **Finally**, check if you do not have this line configured in your `config.yml`, if so remove it:
-   ```yaml
-   force_resolve: ipv4
-   ```
 
 ## Configure the IPv6 rotator (made by Invidious team)
 This tool was developed by the Invidious team, and it's the official tool for rotating your IPv6 address on Invidious: https://github.com/iv-org/smart-ipv6-rotator.  
