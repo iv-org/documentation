@@ -10,7 +10,15 @@ Using Docker is recommended for this tutorial because the process is simpler wit
 
 ## Instructions
 
-### 1) Multiple Invidious processes
+### 1) Tune up your config.yml
+
+For decreasing the load on the PostgreSQL database:
+
+- enable_user_notifications: false  
+  User notifications will be deactivated.  
+  On large instances, it is recommended to set this option to `false`` in order to reduce the amount of data written to the database, and hence improve the overall performance of the instance.
+
+### 2) Multiple Invidious processes
 
 Invidious is single threaded, so by running multiple processes you better utilize the multiple threads of your server.  
 Also past a certain amount of requests, Invidious becomes sluggish. Having multiple processes reduces this sluggishness.
@@ -25,7 +33,16 @@ We assume that you have not changed the port `3000` from the default installatio
    ports:
     - "127.0.0.1:3000:3000"
    ```
-2. Create a new bash script that you will now use to start Invidious, name it `start.sh`:
+2. Duplicate the whole "invidious service" and copy it into a new one named `invidious-refresh`.  
+   Yes the whole block from the "invidious service". From `invidious:` to `- invidious-db`.
+3. Add these two lines into your `INVIDIOUS_CONFIG` parameter for **only the invidious service**:
+   ```
+   channel_threads: 0
+   feed_threads: 0
+   ```
+   This is required so that only one invidious process refresh the subscriptions for the users.  
+   Running this process with multiple processes may introduce some conflicts.
+4. Create a new bash script that you will now use to start Invidious, name it `start.sh`:
    ```
    #!/bin/sh
    docker compose up -d --scale invidious=6
@@ -33,7 +50,7 @@ We assume that you have not changed the port `3000` from the default installatio
    Explanation: The `--scale` parameter allows running multiple containers of the same Docker image.  
    Note: You can set more or less Invidious processes (6 in the example).  
    **Don't restart Invidious yet!**
-3. Create a file called `nginx.conf` and add this content:
+5. Create a file called `nginx.conf` and add this content:
    ```
    user www-data;
    events {
@@ -52,7 +69,7 @@ We assume that you have not changed the port `3000` from the default installatio
         }
    }
    ```
-4. Add a new service in your `docker-compose.yml` file:
+6. Add a new service in your `docker-compose.yml` file:
    ```
    nginx:
       image: nginx:latest
@@ -64,8 +81,7 @@ We assume that you have not changed the port `3000` from the default installatio
       ports:
         - "127.0.0.1:3000:3000"
    ```
-
-5. Update your cronjobs to restart Invidious (if you use cron).
+7. Update your cronjobs to restart Invidious (if you use cron).
    Instead of restarting a single Docker container you will now need to restart 6 containers (adjust if you added or removed number of containers).
    Replace with these CRON lines:
    ```
@@ -77,20 +93,114 @@ We assume that you have not changed the port `3000` from the default installatio
    5 */1 * * * docker restart invidious-invidious-6
    ```
    Each CRON line has a different schedule to avoid disrupting your entire Invidious instance due a restart.
-6. Apply the new configuration:
+8. Apply the new configuration:
    ```
    docker compose down
    chmod +x ./start.sh
    ./start.sh
    ```
 
-### 2) Speed up video playback with http3-ytproxy
+??? note "Click here for a final example of the `docker-compose` file. (Don't copy blindly)"
+
+    ```yaml
+    version: "3"
+    services:
+        invidious:
+            image: quay.io/invidious/invidious:latest
+            restart: unless-stopped
+            environment:
+                INVIDIOUS_CONFIG: |
+                    channel_threads: 0
+                    feed_threads: 0
+                    db:
+                        dbname: invidious
+                        user: kemal
+                        password: kemal
+                        host: invidious-db
+                        port: 5432
+                    check_tables: true
+                    # external_port:
+                    # domain:
+                    # https_only: false
+                    # statistics_enabled: false
+                    hmac_key: "CHANGE_ME!!"
+            healthcheck:
+                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+                interval: 30s
+                timeout: 5s
+                retries: 2
+            logging:
+                options:
+                    max-size: "1G"
+                    max-file: "4"
+            depends_on:
+               - invidious-db
+
+        
+        invidious-refresh:
+            image: quay.io/invidious/invidious:latest
+            restart: unless-stopped
+            environment:
+                INVIDIOUS_CONFIG: |
+                    db:
+                        dbname: invidious
+                        user: kemal
+                        password: kemal
+                        host: invidious-db
+                        port: 5432
+                    check_tables: true
+                    # external_port:
+                    # domain:
+                    # https_only: false
+                    # statistics_enabled: false
+                    hmac_key: "CHANGE_ME!!"
+            healthcheck:
+                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+                interval: 30s
+                timeout: 5s
+                retries: 2
+            logging:
+                options:
+                    max-size: "1G"
+                    max-file: "4"
+            depends_on:
+               - invidious-db 
+
+        nginx:
+            image: nginx:latest
+            restart: unless-stopped
+            volumes:
+                - ./nginx.conf:/etc/nginx/nginx.conf:ro
+            depends_on:
+                - invidious
+            ports:
+                - "127.0.0.1:3000:3000"
+
+        invidious-db:
+            image: docker.io/library/postgres:14
+            restart: unless-stopped
+            volumes:
+                - postgresdata:/var/lib/postgresql/data
+                - ./config/sql:/config/sql
+                - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
+            environment:
+                POSTGRES_DB: invidious
+                POSTGRES_USER: kemal
+                POSTGRES_PASSWORD: kemal
+            healthcheck:
+                test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+
+    volumes:
+        postgresdata:
+    ```
+
+### 3) Speed up video playback with http3-ytproxy
 
 Kavin from the Piped team has developed a tool that is much faster at proxying the traffic for video playback and image loading than Invidious: https://github.com/TeamPiped/http3-ytproxy
 
 NGINX configuration will be used for this tutorial, and it's highly recommended to setup this configuration on **your main reverse proxy**.
 
-But if you do not have NGINX as **your main reverse proxy** you can either try to adapt the rules to your reverse proxy. Or you can also use the separate NGINX container that you created in the [first section](#1-multiple-invidious-processes).
+But if you do not have NGINX as **your main reverse proxy** you can either try to adapt the rules to your reverse proxy. Or you can also use the separate NGINX container that you created in the [second section](#2-multiple-invidious-processes).
 
 1. Find the username of NGINX process, you can find it at the top of the file `/etc/nginx/nginx.conf`.  
    Get its uid and gid using the `id` command like so: `id www-data`.  
@@ -137,10 +247,112 @@ But if you do not have NGINX as **your main reverse proxy** you can either try t
         add_header Cache-Control private always;
    }
    ```
-   If you're using the NGINX from the [first section](#1-multiple-invidious-processes), you will need to add this new volume:
+   If you're using the NGINX from the [second section](#2-multiple-invidious-processes), you will need to add this new volume:
    ```
    volumes:
     - /opt/http3-ytproxy:/opt/http3-ytproxy
    ```
-5. Reload the docker composition: `./start.sh` (if you followed the [first section](#1-multiple-invidious-processes))
+5. Reload the docker composition: `./start.sh` (if you followed the [second section](#2-multiple-invidious-processes))
 6. Reload NGINX: `systemctl reload nginx`.
+
+??? note "Click here for a final example of the `docker-compose` file. (Don't copy blindly)"
+
+    ```yaml
+    version: "3"
+    services:
+        invidious:
+            image: quay.io/invidious/invidious:latest
+            restart: unless-stopped
+            environment:
+                INVIDIOUS_CONFIG: |
+                    channel_threads: 0
+                    feed_threads: 0
+                    db:
+                        dbname: invidious
+                        user: kemal
+                        password: kemal
+                        host: invidious-db
+                        port: 5432
+                    check_tables: true
+                    # external_port:
+                    # domain:
+                    # https_only: false
+                    # statistics_enabled: false
+                    hmac_key: "CHANGE_ME!!"
+            healthcheck:
+                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+                interval: 30s
+                timeout: 5s
+                retries: 2
+            logging:
+                options:
+                    max-size: "1G"
+                    max-file: "4"
+            depends_on:
+               - invidious-db
+    
+        invidious-refresh:
+            image: quay.io/invidious/invidious:latest
+            restart: unless-stopped
+            environment:
+                INVIDIOUS_CONFIG: |
+                    db:
+                        dbname: invidious
+                        user: kemal
+                        password: kemal
+                        host: invidious-db
+                        port: 5432
+                        check_tables: true
+                    # external_port:
+                    # domain:
+                    # https_only: false
+                    # statistics_enabled: false
+                    hmac_key: "CHANGE_ME!!"
+            healthcheck:
+                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+                interval: 30s
+                timeout: 5s
+                retries: 2
+            logging:
+                options:
+                    max-size: "1G"
+                    max-file: "4"
+            depends_on:
+               - invidious-db 
+
+        nginx:
+            image: nginx:latest
+            restart: unless-stopped
+            volumes:
+                - ./nginx.conf:/etc/nginx/nginx.conf:ro
+            depends_on:
+                - invidious
+            ports:
+                - "127.0.0.1:3000:3000"
+
+        http3-ytproxy:
+            image: 1337kavin/ytproxy:latest
+            restart: unless-stopped
+            user: 33:33
+            environment:
+                DISABLE_WEBP: 1
+            volumes:
+               - /opt/http3-ytproxy:/app/socket
+
+        invidious-db:
+            image: docker.io/library/postgres:14
+            restart: unless-stopped
+            volumes:
+              - postgresdata:/var/lib/postgresql/data
+              - ./config/sql:/config/sql
+              - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
+            environment:
+                POSTGRES_DB: invidious
+                POSTGRES_USER: kemal
+                POSTGRES_PASSWORD: kemal
+            healthcheck:
+                test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+
+    volumes:
+        postgresdata:
+    ```

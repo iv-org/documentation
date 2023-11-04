@@ -24,7 +24,6 @@
 - [Apache2 reverse proxy setup](./apache2.md)
 - [Database maintenance](./db-maintenance.md)
 - [CAPTCHA bug on Debian and Ubuntu](./captcha-bug.md)
-- [Anti-Captcha setup](./anti-captcha.md)
 - [Reset user password](./reset-password.md)
 - [Known Exception in log](./known-exception.md)
 
