@@ -40,8 +40,12 @@ If your reverse proxy is already in Docker you can also adapt it so that it send
    http {
         server {
             listen 3000;
+            listen [::]:3000;
+            access_log off;
             location / {
                 proxy_pass http://invidious:3000;
+                proxy_http_version 1.1; # to keep alive
+                proxy_set_header Connection ""; # to keep alive
             }
         }
    }
@@ -129,6 +133,11 @@ But if you do not have NGINX as your main reverse proxy you can either try to ad
         proxy_pass http://unix:/opt/http3-ytproxy/http-proxy.sock;
         add_header Cache-Control private always;
    }
+   ```
+   If using the NGINX from the [first section](#1-multiple-invidious-processes), you will need to add this new volume:
+   ```
+   volumes:
+    - /opt/http3-ytproxy:/opt/http3-ytproxy
    ```
 5. Reload the docker composition: `./start.sh` (if you followed the [first section](#1-multiple-invidious-processes))
 6. Reload NGINX: `systemctl reload nginx`.
