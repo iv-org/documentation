@@ -66,8 +66,17 @@ Note: If you are on Kubernetes, check that your pods have IPv6 connectivity. But
 ### If you are running Invidious in Docker
 Note: Make sure you are running a recent version of Docker if you are running into IPv6 issues.
 
-1. Follow the steps 1 to 3 on the official documentation for Docker: https://docs.docker.com/config/daemon/ipv6/
-2. In your docker-compose file of invidious. Add these lines at the end of your docker-compose
+If needed, IPv6 official documentation for Docker is at https://docs.docker.com/config/daemon/ipv6/.
+
+1. Put the following config in `/etc/docker/daemon.json`:
+   ```
+   {
+    "experimental": true,
+    "ip6tables": true
+   }
+   ```
+2. Restart Docker
+3. In your docker-compose file of invidious. Add these lines at the end of your docker-compose
    ```yaml
    networks:
      default:
@@ -78,17 +87,17 @@ Note: Make sure you are running a recent version of Docker if you are running in
              gateway: fd01:db8:a::1
 
    ```
-3. Make sure that you have this line set in `config.yml`:
+4. Make sure that you have this line set in `config.yml`:
 
    ```yaml
    force_resolve: ipv6
    ```
-4. Bring down your docker composition and bring it back up for recreating the network:
+5. Bring down your docker composition and bring it back up for recreating the network:
    ```
    docker compose down
    docker compose up -d
    ```
-5. To check if everything went well then do:
+6. To check if everything went well then do:
    ```
    docker compose exec invidious ping -c 1 ipv6.icanhazip.com
    ```
