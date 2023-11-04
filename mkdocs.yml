@@ -28,13 +28,14 @@ nav:
     - 'caddy.md'
     - 'apache2.md'
     - 'db-maintenance.md'
+    - 'captcha-bug.md'
+    - 'reset-password.md'
+    - 'known-exception.md'
+  - 'For public instances Owners':
     - 'takedown.md'
     - 'hide-instance-behind-proxy-server.md'
     - 'ipv6-rotator.md'
-    - 'captcha-bug.md'
-    - 'anti-captcha.md'
-    - 'reset-password.md'
-    - 'known-exception.md'
+    - 'improve-public-instance.md'
   - 'For Developers':
     - 'api.md'
     - 'api/common_types.md'
