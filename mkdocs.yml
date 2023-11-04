@@ -31,7 +31,7 @@ nav:
     - 'captcha-bug.md'
     - 'reset-password.md'
     - 'known-exception.md'
-  - 'For public Instances owners':
+  - 'For public instances Owners':
     - 'takedown.md'
     - 'hide-instance-behind-proxy-server.md'
     - 'ipv6-rotator.md'

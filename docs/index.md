@@ -28,11 +28,11 @@
 - [Reset user password](./reset-password.md)
 - [Known Exception in log](./known-exception.md)
 
-## For Public Instance Owners
+## For public instance Owners
 - [Handling takedown notices](./takedown.md)
 - [Hiding Invidious instance behind proxy servers (for escaping DMCA requests)](./hide-instance-behind-proxy-server.md)
 - [IPv6 rotator (for escaping YouTube blocking)](./ipv6-rotator.md)
-- [Improve public instance performance and stability](./improve-public-instance.md)
+- [Improve your public instance performance and stability](./improve-public-instance.md)
 
 ## For Developers
 

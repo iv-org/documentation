@@ -4,34 +4,36 @@ This tutorial has been written by [unixfox](https://github.com/unixfox), owner o
 
 ## Synopsis
 
-This tutorial will explain how to improve the performance of your public instance. And also decrease the memory and CPU consumption of Invidious on your server.
+This tutorial will explain how to improve the performance, and decrease the memory and CPU consumption of your public instance on your server.
 
-Using Docker is a recommendation for this tutorial because the process is simpler with it. You can try outside of Docker by adapting the ideas of this tutorial, but the main focus will be Docker.
+Using Docker is recommended for this tutorial because the process is simpler with it. You can try it outside of Docker by adapting the ideas of this tutorial, but the main focus will be Docker.
 
 ## Instructions
 
 ### 1) Multiple Invidious processes
 
 Invidious is single threaded, so by running multiple processes you better utilize the multiple threads of your server.  
-Also pass a certain amount of requests, Invidious becomes sluggish. Having multiple processes allows reducing this sluggishness.
+Also past a certain amount of requests, Invidious becomes sluggish. Having multiple processes reduces this sluggishness.
 
 This tutorial will explain how to run multiple containers of Invidious and use NGINX in Docker as a loadbalancer.  
 If your reverse proxy is already in Docker you can also adapt it so that it sends the requests directly to the Invidious containers.
+
+We assume that you have not changed the port `3000` from the default installation. But if you changed it then you will need to adapt it in the following configuration files and commands.
 
 1. In your `docker-compose.yml`, remove these lines for binding the port of Invidious:
    ```
    ports:
     - "127.0.0.1:3000:3000"
    ```
-2. Create a new bash script that you will now use for starting Invidious, call it `start.sh`:
+2. Create a new bash script that you will now use to start Invidious, name it `start.sh`:
    ```
    #!/bin/sh
    docker compose up -d --scale invidious=6
    ```
    Explanation: The `--scale` parameter allows running multiple containers of the same Docker image.  
-   Note: You set put less or more Invidious processes (6 in the example).  
+   Note: You can set more or less Invidious processes (6 in the example).  
    **Don't restart Invidious yet!**
-3. Create a file called `nginx.conf` and put this content:
+3. Create a file called `nginx.conf` and add this content:
    ```
    user www-data;
    events {
@@ -63,7 +65,7 @@ If your reverse proxy is already in Docker you can also adapt it so that it send
         - "127.0.0.1:3000:3000"
    ```
 
-5. Update your CRON for restarting Invidious.
+5. Update your cronjobs to restart Invidious (if you use cron).
    Instead of restarting a single Docker container you will now need to restart 6 containers (adjust if you added or removed number of containers).
    Replace with these CRON lines:
    ```
@@ -74,7 +76,7 @@ If your reverse proxy is already in Docker you can also adapt it so that it send
    4 */1 * * * docker restart invidious-invidious-5
    5 */1 * * * docker restart invidious-invidious-6
    ```
-   Each CRON line has a different schedule for avoiding disrupting your entire Invidious instance due a restart.
+   Each CRON line has a different schedule to avoid disrupting your entire Invidious instance due a restart.
 6. Apply the new configuration:
    ```
    docker compose down
@@ -82,22 +84,23 @@ If your reverse proxy is already in Docker you can also adapt it so that it send
    ./start.sh
    ```
 
-### 2) Accelerate the video playback with http3-ytproxy
+### 2) Speed up video playback with http3-ytproxy
 
-Kavin from Piped has developped a tool that is much faster at proxying the traffic for video playback and image loading than Invidious: https://github.com/TeamPiped/http3-ytproxy
+Kavin from the Piped team has developed a tool that is much faster at proxying the traffic for video playback and image loading than Invidious: https://github.com/TeamPiped/http3-ytproxy
 
 NGINX configuration will be used for this tutorial, and it's highly recommended to setup this configuration on your main reverse proxy.
 
 But if you do not have NGINX as your main reverse proxy you can either try to adapt the rules to your reverse proxy. Or you can also use the separate NGINX container from the [first section](#1-multiple-invidious-processes).
 
-1. Create a new directory for this new service and set it all permissions:
-   ```
-   mkdir /opt/http3-ytproxy
-   chmod 777 -R /opt/http3-ytproxy
-   ```
-2. Find the username of NGINX process, you can find it at the top of the file `/etc/nginx/nginx.conf`.  
+1. Find the username of NGINX process, you can find it at the top of the file `/etc/nginx/nginx.conf`.  
    Get its uid and gid using the `id` command like so: `id www-data`.  
    Usually it's uid `33` and gid `33`.
+2. Create a new directory for this new service and give the correct permissions for the user of NGINX:
+   ```
+   mkdir /opt/http3-ytproxy
+   chown 33:33 -R /opt/http3-ytproxy
+   ```
+   Replace `33:33` with uid:gid if you have something different.
 3. Add this new service to your `docker-compose.yml`:
    ```
    http3-ytproxy:
@@ -134,7 +137,7 @@ But if you do not have NGINX as your main reverse proxy you can either try to ad
         add_header Cache-Control private always;
    }
    ```
-   If using the NGINX from the [first section](#1-multiple-invidious-processes), you will need to add this new volume:
+   If you're using the NGINX from the [first section](#1-multiple-invidious-processes), you will need to add this new volume:
    ```
    volumes:
     - /opt/http3-ytproxy:/opt/http3-ytproxy
