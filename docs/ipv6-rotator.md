@@ -6,6 +6,8 @@ This tutorial has been written by [unixfox](https://github.com/unixfox), owner o
 
 YouTube has started to periodically block the public Invidious instances since the start of June 2023 ([iv-org/invidious/issues/3872](https://github.com/iv-org/invidious/issues/3872)) and they have become more aggressive about it since the start of August 2023 ([iv-org/invidious/issues/4045](https://github.com/iv-org/invidious/issues/4045)).
 
+Due to this block, "local proxy" and DASH do not work anymore. But Invidious still works without using the proxy because the video playback traffic is sent directly to YouTube servers without going through the instance.
+
 Thanks to IPv6 you can easily escape this block because there are many IP addresses in a single /64 IPv6 range. (18,446,744,073,709,551,616 IP addresses to be precise)
 
 This tutorial will explain how to automatically and periodically rotate your IPv6 address. Also some notes about how to have IPv6 in case your provider does not offer it.
