@@ -88,9 +88,9 @@ We assume that you have not changed the port `3000` from the default installatio
 
 Kavin from the Piped team has developed a tool that is much faster at proxying the traffic for video playback and image loading than Invidious: https://github.com/TeamPiped/http3-ytproxy
 
-NGINX configuration will be used for this tutorial, and it's highly recommended to setup this configuration on your main reverse proxy.
+NGINX configuration will be used for this tutorial, and it's highly recommended to setup this configuration on **your main reverse proxy**.
 
-But if you do not have NGINX as your main reverse proxy you can either try to adapt the rules to your reverse proxy. Or you can also use the separate NGINX container from the [first section](#1-multiple-invidious-processes).
+But if you do not have NGINX as **your main reverse proxy** you can either try to adapt the rules to your reverse proxy. Or you can also use the separate NGINX container that you created in the [first section](#1-multiple-invidious-processes).
 
 1. Find the username of NGINX process, you can find it at the top of the file `/etc/nginx/nginx.conf`.  
    Get its uid and gid using the `id` command like so: `id www-data`.  
