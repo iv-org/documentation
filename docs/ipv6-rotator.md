@@ -6,7 +6,7 @@ This tutorial has been written by [unixfox](https://github.com/unixfox), owner o
 
 YouTube has started to periodically block the public Invidious instances since the start of June 2023 ([iv-org/invidious/issues/3872](https://github.com/iv-org/invidious/issues/3872)) and they have become more aggressive about it since the start of August 2023 ([iv-org/invidious/issues/4045](https://github.com/iv-org/invidious/issues/4045)).
 
-Due to this block, "local proxy" and DASH do not work anymore. But Invidious still works without using the proxy because the video playback traffic is sent directly to YouTube servers without going through the instance.
+Due to this block, "local proxy" and DASH do not work anymore. But Invidious still works for most videos without using the proxy, because the video playback traffic is sent directly to YouTube servers without going through the instance.
 
 Thanks to IPv6 you can easily escape this block because there are many IP addresses in a single /64 IPv6 range. (18,446,744,073,709,551,616 IP addresses to be precise)
 
@@ -35,7 +35,7 @@ Larger list: https://www.serverhunter.com/#query=ips%3Aipv6
 
 ###### 2) Use an IPv6 tunnelbroker or make one yourself
 
-The alternative, if you do not want to switch provider, is to use an IPv6 tunnelbroker, it allows to get IPv6 connectivity using another server.
+The alternative, if you do not want to switch provider, is to use an IPv6 tunnelbroker. It allows to get IPv6 connectivity using another server.
 
 This website lists all the free and paid existing tunnelbrokers: https://tunnelbroker.services/. **We do not recommend running a public instance on a free tunnelbroker as this would put a lot of strain on their network because video streaming consumes a lot of bandwidth.**  
 
@@ -87,10 +87,8 @@ If needed, IPv6 official documentation for Docker is at https://docs.docker.com/
          config:
            - subnet: fd01:db8:a::/64
              gateway: fd01:db8:a::1
-
    ```
 4. Make sure that you have this line set in `config.yml`:
-
    ```yaml
    force_resolve: ipv6
    ```

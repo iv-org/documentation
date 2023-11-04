@@ -16,7 +16,7 @@ For decreasing the load on the PostgreSQL database:
 
 - enable_user_notifications: false  
   User notifications will be deactivated.  
-  On large instances, it is recommended to set this option to `false`` in order to reduce the amount of data written to the database, and hence improve the overall performance of the instance.
+  On large instances, it is recommended to set this option to `false` in order to reduce the amount of data written to the database, and hence improve the overall performance of the instance.
 
 ### 2) Multiple Invidious processes
 
@@ -247,6 +247,7 @@ But if you do not have NGINX as **your main reverse proxy** you can either try t
         add_header Cache-Control private always;
    }
    ```
+   Note: `proxy_buffering on` [may increase the disk usage](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffering), if this is not what you want you can remove the two lines `proxy_buffering` and `proxy_buffers`.  
    If you're using the NGINX from the [second section](#2-multiple-invidious-processes), you will need to add this new volume:
    ```
    volumes:
