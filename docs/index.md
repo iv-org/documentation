@@ -23,13 +23,16 @@
 - [Caddy reverse proxy setup](./caddy.md)
 - [Apache2 reverse proxy setup](./apache2.md)
 - [Database maintenance](./db-maintenance.md)
-- [Handling takedown notices](./takedown.md)
-- [Hiding Invidious instance behind proxy servers (for escaping DMCA requests)](./hide-instance-behind-proxy-server.md)
-- [IPv6 rotator (for escaping YouTube blocking)](./ipv6-rotator.md)
 - [CAPTCHA bug on Debian and Ubuntu](./captcha-bug.md)
 - [Anti-Captcha setup](./anti-captcha.md)
 - [Reset user password](./reset-password.md)
 - [Known Exception in log](./known-exception.md)
+
+## For Public Instance Owners
+- [Handling takedown notices](./takedown.md)
+- [Hiding Invidious instance behind proxy servers (for escaping DMCA requests)](./hide-instance-behind-proxy-server.md)
+- [IPv6 rotator (for escaping YouTube blocking)](./ipv6-rotator.md)
+- [Improve public instance performance and stability](./improve-public-instance.md)
 
 ## For Developers
 
