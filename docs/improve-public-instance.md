@@ -217,6 +217,7 @@ But if you do not have NGINX as **your main reverse proxy** you can either try t
       image: 1337kavin/ytproxy:latest
       restart: unless-stopped
       user: 33:33
+      network_mode: "host"
       environment:
         - DISABLE_WEBP=1
       volumes:
@@ -335,6 +336,7 @@ But if you do not have NGINX as **your main reverse proxy** you can either try t
             image: 1337kavin/ytproxy:latest
             restart: unless-stopped
             user: 33:33
+            network_mode: "host"
             environment:
                 DISABLE_WEBP: 1
             volumes:
