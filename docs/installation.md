@@ -209,12 +209,6 @@ cp config/config.example.yml config/config.yml
 # Configure config/config.yml how you want
 ```
 
-Note: If the command `crystal build` didn't work properly, you can build Invidious without lsquic may solve compatibilities issues:
-
-```bash
-crystal build src/invidious.cr -Ddisable_quic --release
-```
-
 ### Windows
 
 Crystal, the programming language used by Invidious, [doesn't support Windows yet](https://github.com/crystal-lang/crystal/issues/5430) but you can still install Invidious through two kinds of ways:
