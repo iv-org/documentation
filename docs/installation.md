@@ -116,17 +116,17 @@ Note: Invidious currently supports the following Crystal versions: `1.9.2` / `1.
 
 Arch Linux
 ```bash
-sudo pacman -S base-devel librsvg postgresql ttf-liberation
+sudo pacman -S base-devel librsvg postgresql ttf-opensans
 ```
 
 Debian/Ubuntu
 ```bash
-sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev fonts-liberation
+sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev fonts-open-sans
 ```
 
 RHEL based and RHEL-like systems (RHEL, Fedora, AlmaLinux, RockyLinux...)
 ```bash
-sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc liberation-fonts
+sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc  open-sans-fonts
 ```
 
 #### Add an Invidious user and clone the repository
