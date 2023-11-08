@@ -110,23 +110,23 @@ docker-compose up
 
 Follow the instructions for your distribution here: https://crystal-lang.org/install/
 
-Note: Invidious currently supports the following Crystal versions: `1.8.2` / `1.7.X` / `1.6.X` / `1.5.X` / `1.4.1`.
+Note: Invidious currently supports the following Crystal versions: `1.9.2` / `1.8.2` / `1.7.X` / `1.6.X`
 
 #### Install the dependencies
 
 Arch Linux
 ```bash
-sudo pacman -S base-devel librsvg postgresql
+sudo pacman -S base-devel librsvg postgresql ttf-liberation
 ```
 
 Debian/Ubuntu
 ```bash
-sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev
+sudo apt install libssl-dev libxml2-dev libyaml-dev libgmp-dev libreadline-dev postgresql librsvg2-bin libsqlite3-dev zlib1g-dev libpcre3-dev libevent-dev fonts-liberation
 ```
 
 RHEL based and RHEL-like systems (RHEL, Fedora, AlmaLinux, RockyLinux...)
 ```bash
-sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc
+sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp-devel readline-devel postgresql librsvg2-devel sqlite-devel zlib-devel gcc liberation-fonts
 ```
 
 #### Add an Invidious user and clone the repository
@@ -162,12 +162,6 @@ cp config/config.example.yml config/config.yml
 ./invidious --migrate
 
 exit
-```
-
-Note: If the command `crystal build` didn't work properly, you can build Invidious without lsquic may solve compatibilities issues:
-
-```bash
-crystal build src/invidious.cr -Ddisable_quic --release
 ```
 
 #### Systemd service
