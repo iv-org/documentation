@@ -24,7 +24,7 @@ Lists of third-party projects that use or support Invidious.
 | [FYTE](https://greasyfork.org/en/scripts/9252-fyte-fast-youtube-embedded-player) | Replace all YouTube embeds on a page with the video's thumbnail. Click on the thumbnail to play the video. Invidious is supported in the Options panel (redirects to invidio.us by default, can be edited). |
 | [Privacy Redirector](https://github.com/dybdeskarphet/privacy-redirector) | Userscript to automatically redirect to different private frontends, including Invidious. Can be configured to redirect to specific instances of the user's choice. |
 | [Simple Sponsor Skipper](https://codeberg.org/mthsk/userscripts/src/branch/master/simple-sponsor-skipper) | Userscript based on SponsorBlock that is pre-configured to work with multiple Invidious instances, but can be easily altered to use any instance desired by the user. |
-| [Invidious Preferences Userscript](https://github.com/MintMain21/Invidious-Preferences-Userscript) | Userscript for enforcing preferences across multiple instances, through URL Parameters, and without using browser cookies. Works in tandem with Privacy Redirector and Simple Sponsor Skipper. See [here](https://docs.invidious.io/url-parameters/) for more information about URL Parameters. |
+| [Invidious Preferences Userscript](https://gitlab.com/userscripts3/Invidious-Preferences-Userscript) | Userscript for enforcing preferences across multiple instances, through URL Parameters, and without using browser cookies. Works in tandem with Privacy Redirector and Simple Sponsor Skipper. See [here](https://docs.invidious.io/url-parameters/) for more information about URL Parameters. |
 
 ### Extensions that Integrate Invidious into other Apps
 
