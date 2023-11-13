@@ -126,7 +126,7 @@ It may be used on other projects that depend on YouTube and/or Google (example: 
    @reboot sleep 30s && python /path/to/the/script/smart-ipv6-rotator.py run --ipv6range=YOURIPV6SUBNET/64
    0 */12 * * * python /path/to/the/script/smart-ipv6-rotator.py run --ipv6range=YOURIPV6SUBNET/64
    ```  
-   The `sleep` command is used in case your network takes too much time time to be ready.
+   The `sleep` command is used in case your network takes too much time to be ready.
 
 That's it!
 
