@@ -42,12 +42,16 @@ We assume that you have not changed the port `3000` from the default installatio
    ```
    This is required so that only one invidious process refresh the subscriptions for the users.  
    Running this process with multiple processes may introduce some conflicts.
-4. Create a new bash script that you will now use to start Invidious, name it `start.sh`:
+4. Edit the docker-compose.yml with this content:
    ```
-   #!/bin/sh
-   docker compose up -d --scale invidious=6
+   version: "3"
+   services:
+      invidious:
+         image: quay.io/invidious/invidious:latest
+         deploy:
+            replicas: 6
    ```
-   Explanation: The `--scale` parameter allows running multiple containers of the same Docker image.  
+   Explanation: The `deploy.replicas` parameter allows running multiple containers of the same Docker image.  
    Note: You can set more or less Invidious processes (6 in the example).  
    **Don't restart Invidious yet!**
 5. Create a file called `nginx.conf` and add this content:
@@ -62,7 +66,9 @@ We assume that you have not changed the port `3000` from the default installatio
             listen [::]:3000;
             access_log off;
             location / {
-                proxy_pass http://invidious:3000;
+                resolver 127.0.0.11;
+                set $backend "invidious";
+                proxy_pass http://$backend:3000;
                 proxy_http_version 1.1; # to keep alive
                 proxy_set_header Connection ""; # to keep alive
             }
@@ -96,8 +102,7 @@ We assume that you have not changed the port `3000` from the default installatio
 8. Apply the new configuration:
    ```
    docker compose down
-   chmod +x ./start.sh
-   ./start.sh
+   docker compose up
    ```
 
 ??? note "Click here for a final example of the `docker-compose` file. (Don't copy blindly)"
@@ -107,6 +112,8 @@ We assume that you have not changed the port `3000` from the default installatio
     services:
         invidious:
             image: quay.io/invidious/invidious:latest
+            deploy:
+                replicas: 6
             restart: unless-stopped
             environment:
                 INVIDIOUS_CONFIG: |
@@ -254,7 +261,7 @@ But if you do not have NGINX as **your main reverse proxy** you can either try t
    volumes:
     - /opt/http3-ytproxy:/opt/http3-ytproxy
    ```
-5. Reload the docker composition: `./start.sh` (if you followed the [second section](#2-multiple-invidious-processes))
+5. Reload the docker compose. (if you followed the [second section](#2-multiple-invidious-processes))
 6. Reload NGINX: `systemctl reload nginx`.
 
 ??? note "Click here for a final example of the `docker-compose` file. (Don't copy blindly)"
@@ -264,6 +271,8 @@ But if you do not have NGINX as **your main reverse proxy** you can either try t
     services:
         invidious:
             image: quay.io/invidious/invidious:latest
+            deploy:
+                replicas: 6
             restart: unless-stopped
             environment:
                 INVIDIOUS_CONFIG: |
