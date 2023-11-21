@@ -11,6 +11,13 @@ body:
   - type: markdown
     attributes:
       value: |
+        Please consult these two important tutorials:
+
+        - Escaping the YouTube block ([403 errors in playback](https://github.com/iv-org/invidious/issues/4045)): https://docs.invidious.io/ipv6-rotator/
+        - Improving the performance and the stability of your public instance: https://docs.invidious.io/improve-public-instance/
+        
+        It is highly recommended to follow these tutorials because it will allow the instance to stay stable and performant over the long term.
+      
         Please consider joining our Matrix room for public instance maintainers by joining our Matrix room: https://matrix.to/#/#invidious:matrix.org
         then pinging @unixfox, @TheFrenchGhosty and @SamantazFox for asking to be invited to the Matrix room.
         We discuss troubles managing a public instance, sharing some advices and more.
