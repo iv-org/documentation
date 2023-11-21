@@ -36,6 +36,20 @@ Lists of third-party projects that use or support Invidious.
 | [Kodi add-on](https://github.com/lekma/plugin.video.invidious) | Watch YouTube videos in the Kodi media center, using the Invidious API. Privacy-friendly alternative to the YouTube API add-on. | |
 | [Playlet](https://github.com/iBicha/playlet) | A Roku TV YouTube app that uses Invidious as a backend. | [Roku Store](https://channelstore.roku.com/en-ca/details/840aec36f51bfe6d96cf6db9055a372a/playlet) |
 
+### Applications
+| Name | Description | Links |
+| --- | --- | --- |
+| [FreeTube](https://github.com/FreeTubeApp/FreeTube) | A desktop libre software YouTube app for privacy. | |
+| [Clipious](https://github.com/lamarios/clipious) | Unofficial Invidious client for Android | |
+| [Yattee](https://github.com/yattee/yattee) | Alternative YouTube frontend for iPhone, iPad, Mac and Apple TV. | |
+| [CloudTube](https://sr.ht/~cadence/tube/) | A JavaScript-rich alternate online YouTube player. | |
+| [HoloPlay](https://github.com/stephane-r/holoplay-pwa)| Progressive Web App for music connecting on Invidious API's with search, playlists and favorites. | |
+| [GTK+ Pipe Viewer](https://github.com/trizen/pipe-viewer) | YouTube client for Linux. | |
+| [PlasmaTube](https://invent.kde.org/multimedia/plasmatube/) | YouTube client for Linux. | [KDE Applications](https://apps.kde.org/plasmatube/) |
+| [WatchTube](https://github.com/WatchTubeTeam/) | Powerful YouTube client for Apple Watch. | |
+| [TubiTui](https://codeberg.org/777/TubiTui) | A lightweight, libre, TUI-based YouTube client. For desktop. | |
+| [Ytfzf](https://github.com/pystardust/ytfzf) | A posix script to find and watch youtube videos from the terminal. (Without API). | |
+
 ### Utilities
 
 | Name | Description |
