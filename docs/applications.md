@@ -6,6 +6,7 @@ Lists of third-party projects that use or support Invidious.
 | Name | Description | Links |
 | --- | --- | --- |
 | [FreeTube](https://github.com/FreeTubeApp/FreeTube) | A desktop libre software YouTube app for privacy. | |
+| [Playlet](https://github.com/iBicha/playlet) | A Roku TV YouTube app that uses Invidious as a backend. | [Roku Store](https://channelstore.roku.com/en-ca/details/840aec36f51bfe6d96cf6db9055a372a/playlet) |
 | [Clipious](https://github.com/lamarios/clipious) | Unofficial Invidious client for Android | |
 | [Yattee](https://github.com/yattee/yattee) | Alternative YouTube frontend for iPhone, iPad, Mac and Apple TV. | |
 | [CloudTube](https://sr.ht/~cadence/tube/) | A JavaScript-rich alternate online YouTube player. | |
@@ -48,7 +49,6 @@ Lists of third-party projects that use or support Invidious.
 | [iPhone Redirector Shortcut](https://www.icloud.com/shortcuts/6bbf26d989cf4d07a5fe1626efbc0950) | Automatically open YouTube videos in Invidious (iPhone shortcut). | |
 | [FreshRSS Extension](https://github.com/tmiland/freshrss-invidious) | A FreshRSS extension to directly embed videos from Invidious channel feeds. | |
 | [Kodi add-on](https://github.com/lekma/plugin.video.invidious) | Watch YouTube videos in the Kodi media center, using the Invidious API. Privacy-friendly alternative to the YouTube API add-on. | |
-| [Playlet](https://github.com/iBicha/playlet) | A Roku TV YouTube app that uses Invidious as a backend. | [Roku Store](https://channelstore.roku.com/en-ca/details/840aec36f51bfe6d96cf6db9055a372a/playlet) |
 
 ### Utilities
 
