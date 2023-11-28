@@ -178,6 +178,12 @@ systemctl --user daemon-reload
 systemctl --user enable --now pod-videos.service
 ```
 
+And similarly, the instruction below will re-start the service:
+
+```systemd
+systemctl --user restart pod-videos.service
+```
+
 If this service runs on a server, it will stop as soon as you logout, because it is running in user space. 
 To ensure it is persistent and remains active after logging out, you will need to enable user lingering.
 
