@@ -106,16 +106,17 @@ docker-compose up
 Podman is usually pre-installed in Fedora, CentOS, RHEL and derivatives. But if this is not the case, the instruction below will install all necessary packages.
 
 ```bash
-sudo dnf install container-tools
+sudo dnf install podman
 ```
 
 ### Download the configuration files from Invidious' repository
 
 Note: Currently the repository has to be cloned, this is because the `init-invidious-db.sh` file and the `config/sql` directory have to be mounted to the postgres container (See the volumes section in the postgres' container). This "problem" will be solved in the future.
+> `<INV-PATH>` Absolute path in your home directory where invidious will be downloaded (e.i. /home/johnsmith/.inv)
 
 ```bash
+cd <INV-PATH>
 git clone https://github.com/iv-org/invidious.git
-cd invidious
 ```
 
 ### Create Pod - videos
@@ -133,8 +134,8 @@ podman create --rm \
 --label "io.containers.autoupdate=registry" \
 --health-cmd='pg_isready -U $POSTGRES_USER -d $POSTGRES_DB' \
 -v postgresdata:/var/lib/postgresql/data \
--v ./config/sql:/config/sql:z \
--v./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh:z \
+-v <INV-PATH>/invidious/config/sql:/config/sql:z \
+-v <INV-PATH>/invidious/docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh:z \
 -e POSTGRES_DB=invidious \
 -e POSTGRES_USER=kemal \
 -e POSTGRES_PASSWORD=kemal \
@@ -143,8 +144,7 @@ docker.io/library/postgres:14
 
 ### Create Container - invidious
 
-Copy `./config/config.example.yml` to `/<CONFIG-PATH>/config.yml` and update parameters as required.
-`<CONFIG-PATH>` should be located under the user's home directory.
+Copy `<INV-PATH>/invidious/config/config.example.yml` to `<INV-PATH>/config.yml` and update parameters as required.
 
 ```podman
 podman create --rm \
@@ -155,7 +155,7 @@ podman create --rm \
 --health-interval=30s \
 --health-timeout=5s \
 --health-retries=2 \
--v /<CONFIG-PATH>/config.yml:/invidious/config/config.yml:z,U \
+-v <INV-PATH>/config.yml:/invidious/config/config.yml:z,U \
 quay.io/invidious/invidious:latest
 ```
 
