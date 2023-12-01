@@ -126,10 +126,12 @@ We assume that you have not changed the port `3000` from the default installatio
                         host: invidious-db
                         port: 5432
                     check_tables: true
-                    # external_port:
-                    # domain:
-                    # https_only: false
-                    # statistics_enabled: false
+                    use_pubsub_feeds: true
+                    use_innertube_for_captions: true
+                    external_port: 443
+                    domain: mydomain.com
+                    https_only: true
+                    statistics_enabled: true
                     hmac_key: "CHANGE_ME!!"
             healthcheck:
                 test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
@@ -156,10 +158,12 @@ We assume that you have not changed the port `3000` from the default installatio
                         host: invidious-db
                         port: 5432
                     check_tables: true
-                    # external_port:
-                    # domain:
-                    # https_only: false
-                    # statistics_enabled: false
+                    use_pubsub_feeds: true
+                    use_innertube_for_captions: true
+                    external_port: 443
+                    domain: mydomain.com
+                    https_only: true
+                    statistics_enabled: true
                     hmac_key: "CHANGE_ME!!"
             healthcheck:
                 test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
