@@ -85,8 +85,8 @@ If needed, IPv6 official documentation for Docker is at https://docs.docker.com/
        enable_ipv6: true
        ipam:
          config:
-           - subnet: fd01:db8:a::/64
-             gateway: fd01:db8:a::1
+           - subnet: 2001:0DB9::/112
+             gateway: 2001:0DB9::1
    ```
    Note: Don't change the subnet and the gateway. Unless there is a conflict with an existing docker network.
 4. Make sure that you have this line set in `config.yml`:
