@@ -215,7 +215,7 @@ Crystal, the programming language used by Invidious, [doesn't officially support
 
 - By installing [Docker desktop](https://docs.docker.com/desktop/install/windows-install/) and then following [our guide about Docker](#docker).
 - By installing [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about) and then following [our guide about Linux](#linux).
-- By installing [Windows-specific builds](https://github.com/crystal-lang/crystal/releases/) of Crystal.  Be wary, as we don't currently have records of Invidious being tested on those "unsuppored" builds yet.
+- By installing [Windows-specific builds](https://github.com/crystal-lang/crystal/releases/) of Crystal. Be wary, as we don't currently have records of Invidious being tested on those "unsupported" builds yet.
 
 ## Post-install configuration:
 
