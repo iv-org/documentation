@@ -223,7 +223,7 @@ crystal build src/invidious.cr -Ddisable_quic --release
 
 ### Windows
 
-Crystal, the programming language used by Invidious, [doesn't officially support Windows yet](https://github.com/crystal-lang/crystal/issues/5430) but you can still install Invidious through threekinds of ways:
+Crystal, the programming language used by Invidious, [doesn't officially support Windows yet](https://github.com/crystal-lang/crystal/issues/5430) but you can still install Invidious:
 
 - By installing [Docker desktop](https://docs.docker.com/desktop/install/windows-install/) and then following [our guide about Docker](#docker).
 - By installing [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about) and then following [our guide about Linux](#linux).
