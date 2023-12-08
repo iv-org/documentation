@@ -23,13 +23,13 @@ git clone https://github.com/iv-org/invidious.git
 
 ### Create Pod - videos
 
-```podman
+```bash
 podman pod create --name videos -p 3000:3000
 ```
 
 ### Create Container - postgres
 
-```podman
+```bash
 podman create --rm \
 --pod videos \
 --name postgres \
@@ -48,7 +48,7 @@ docker.io/library/postgres:14
 
 Copy `<INV-PATH>/invidious/config/config.example.yml` to `<INV-PATH>/config.yml` and update parameters as required.
 
-```podman
+```bash
 podman create --rm \
 --pod videos \
 --name invidious \
@@ -66,7 +66,7 @@ quay.io/invidious/invidious:latest
 Podman can generate systemd services to handle the life cycle of pods and containers. 
 The instructions below will create 3 service units, and they will be placed in the correct location ready to be used.
 
-```podman
+```bash
 cd ~
 cp $(podman generate systemd --new --files --name videos) .config/systemd/user
 ```
@@ -75,21 +75,21 @@ cp $(podman generate systemd --new --files --name videos) .config/systemd/user
 
 Despite the existance of 3 services, only the one related to the Pod must be used. The life cycle for the 2 containers implementing **postgres** and **invidious** will be handled by the pod.
 
-```systemd
+```bash
 systemctl --user daemon-reload
 systemctl --user enable --now pod-videos.service
 ```
 
 And similarly, the instruction below will re-start the service:
 
-```systemd
+```bash
 systemctl --user restart pod-videos.service
 ```
 
 If this service runs on a server, it will stop as soon as you logout, because it is running in user space. 
 To ensure it is persistent and remains active after logging out, you will need to enable user lingering.
 
-```systemd
+```bash
 loginctl enable-linger
 ```
 
