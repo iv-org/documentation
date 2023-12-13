@@ -55,6 +55,16 @@ Please install:
   Other Linux distributions: `sudo yourpackagemanager install python-pyroute2`
 
 ## Configure Invidious for IPv6
+### If you are running Invidious outside of Docker or using something else than Docker (K8s)
+
+Please make sure that you have this line set in `config.yml`:
+
+```yaml
+force_resolve: ipv6
+```
+
+Note: If you are on Kubernetes, check that your pods have IPv6 connectivity. But you probably already know that if you are using Kubernetes.
+
 ### If you are running Invidious in Docker
 Note: Make sure you are running a recent version of Docker if you are running into IPv6 issues.
 
@@ -79,12 +89,16 @@ If needed, IPv6 official documentation for Docker is at https://docs.docker.com/
              gateway: 2001:0DB9::1
    ```
    Note: Don't change the subnet and the gateway. Unless there is a conflict with an existing docker network.
-4. Bring down your docker composition and bring it back up for recreating the network:
+4. Make sure that you have this line set in `config.yml`:
+   ```yaml
+   force_resolve: ipv6
+   ```
+5. Bring down your docker composition and bring it back up for recreating the network:
    ```
    docker compose down
    docker compose up -d
    ```
-5. To check if everything went well then do:
+6. To check if everything went well then do:
    ```
    docker compose exec invidious ping -c 1 ipv6.icanhazip.com
    ```
