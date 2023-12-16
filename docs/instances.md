@@ -40,8 +40,6 @@
 
 * [yt.oelrichsgarcia.de](https://yt.oelrichsgarcia.de) 🇩🇪  (uses Cloudflare)  
 
-* [invidious.no-logs.com](https://invidious.no-logs.com) 🇸🇪 
-
 * [invidious.io.lol](https://invidious.io.lol) 🇺🇸
 
 * [iv.nboeck.de](https://iv.nboeck.de) 🇫🇮
