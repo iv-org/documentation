@@ -38,5 +38,5 @@ if [ "$(su postgres -c "psql invidious -c \"SELECT email FROM users WHERE email 
 fi
 
 HASH="$(mkpasswd --method=bcrypt-a -R 10)"
-su postgres -c "psql invidious -c \"UPDATE users SET password = '$HASH' WHERE email = '$ID';\""
+su postgres -c "psql invidious -c \"UPDATE users SET password = '\"'$HASH'\"' WHERE email = '\"'$ID'\"';\""
 ```

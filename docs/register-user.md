@@ -12,7 +12,7 @@ systemctl start podman-invidious_register
 CONTINUE='y'
 while [ "$CONTINUE" = 'y' ]; do
     read -rp 'User ID: ' ID
-    if [ "$(su postgres -c "psql invidious -c \"SELECT email FROM users WHERE email = '$ID';\"" | tail -n 2 | head -n 1)" != '(0 rows)' ]; then
+    if [ "$(su postgres -c "psql invidious -c \"SELECT email FROM users WHERE email = '\"'$ID'\"';\"" | tail -n 2 | head -n 1)" != '(0 rows)' ]; then
         echo 'Error: User ID is already taken'
         continue
     fi
