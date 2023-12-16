@@ -36,9 +36,7 @@
 
 * [onion.tube](https://onion.tube) 🇯🇵 (uses Cloudflare)  
 
-* [inv.in.projectsegfau.lt](https://inv.in.projectsegfau.lt) 🇮🇳  
-
-* [inv.citw.lgbt](https://inv.citw.lgbt) 🇳🇱   
+* [inv.in.projectsegfau.lt](https://inv.in.projectsegfau.lt) 🇮🇳    
 
 * [yt.oelrichsgarcia.de](https://yt.oelrichsgarcia.de) 🇩🇪  (uses Cloudflare)  
 
