@@ -38,17 +38,11 @@
 
 * [inv.in.projectsegfau.lt](https://inv.in.projectsegfau.lt) 🇮🇳    
 
-* [yt.oelrichsgarcia.de](https://yt.oelrichsgarcia.de) 🇩🇪  (uses Cloudflare)  
-
-* [invidious.io.lol](https://invidious.io.lol) 🇺🇸
-
 * [iv.nboeck.de](https://iv.nboeck.de) 🇫🇮
 
 * [invidious.private.coffee](https://invidious.private.coffee) 🇦🇹
 
 * [yt.drgnz.club](https://yt.drgnz.club) 🇨🇿
-
-* [invidious.asir.dev](https://invidious.asir.dev) 🇺🇸
 
 * [iv.datura.network](https://iv.datura.network) 🇩🇪
 
