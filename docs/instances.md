@@ -8,7 +8,7 @@
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [yewtu.be](https://yewtu.be) 🇳🇱 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://uptime.invidious.io/784257752) - Source code/changes: https://github.com/yewtudotbe/invidious-custom
+* [yewtu.be](https://yewtu.be) 🇩🇪 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://uptime.invidious.io/784257752) - Source code/changes: https://github.com/yewtudotbe/invidious-custom
 
 * [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://stats.uptimerobot.com/n7A08HGVl6/786947233)
 
@@ -61,6 +61,10 @@
 * [invidious.einfachzocken.eu](https://invidious.einfachzocken.eu) 🇩🇪 (uses Cloudflare) 
 
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 
+
+* [inv.n8pjl.ca](https://inv.n8pjl.ca) 🇨🇦  
+
+* [invidious.12a.app](https://invidious.12a.app) 🇳🇱  
 
 ### Tor Onion Services:
 * [c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion](http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion) 🇫🇮 (Onion of invidious.snopyta.org)
