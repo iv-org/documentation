@@ -95,6 +95,8 @@
 
 * [jemgkaq2xibfu37hm2xojsxoi7djtwb25w6krhl63lhn52xfzgeyc2ad.onion](http://jemgkaq2xibfu37hm2xojsxoi7djtwb25w6krhl63lhn52xfzgeyc2ad.onion) 🇩🇪 (Onion of invidious.nerdvpn.de)
 
+* [iyfn266ox5dhmjq2rd55hecv2cvrl7mwrgywcub4qaok6ujy5nkxccqd.onion](http://iyfn266ox5dhmjq2rd55hecv2cvrl7mwrgywcub4qaok6ujy5nkxccqd.onion) 🇷🇴 (Onion-only instance)
+
 ### I2P Eepsites:
 
 * [http://pjsfhqamc7k6htnumrvn4cwqqdoggeepj7u5viyimgnxg3gar72q.b32.i2p](http://pjsfhqamc7k6htnumrvn4cwqqdoggeepj7u5viyimgnxg3gar72q.b32.i2p) 🇫🇷 (Eepsite of invidious.projectsegfau.lt)
