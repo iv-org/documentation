@@ -34,10 +34,6 @@
 
 * [invidious.protokolla.fi](https://invidious.protokolla.fi) 🇩🇪 
 
-* [onion.tube](https://onion.tube) 🇯🇵 (uses Cloudflare)  
-
-* [inv.in.projectsegfau.lt](https://inv.in.projectsegfau.lt) 🇮🇳    
-
 * [iv.nboeck.de](https://iv.nboeck.de) 🇫🇮
 
 * [invidious.private.coffee](https://invidious.private.coffee) 🇦🇹
@@ -47,8 +43,6 @@
 * [iv.datura.network](https://iv.datura.network) 🇩🇪
 
 * [invidious.fdn.fr](https://invidious.fdn.fr) 🇫🇷
-
-* [anontube.lvkaszus.pl](https://anontube.lvkaszus.pl) 🇩🇪
 
 * [invidious.perennialte.ch](https://invidious.perennialte.ch) 🇦🇺 (uses Cloudflare)
 
@@ -63,8 +57,6 @@
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 
 
 * [inv.n8pjl.ca](https://inv.n8pjl.ca) 🇨🇦  
-
-* [invidious.12a.app](https://invidious.12a.app) 🇳🇱  
 
 * [youtube.owacon.moe](https://youtube.owacon.moe) 🇯🇵  
 
