@@ -8,7 +8,7 @@
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [yewtu.be](https://yewtu.be) 🇩🇪 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://uptime.invidious.io/784257752) - Source code/changes: https://github.com/yewtudotbe/invidious-custom
+* [yewtu.be](https://yewtu.be) 🇩🇪 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m783898765-2a4efa67aa8d1c7be6b1dd9d)](https://uptime.invidious.io/784257752) (no longer accepts new registrations) - Source code/changes: https://github.com/yewtudotbe/invidious-custom
 
 * [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786947233-1131c3f67b9a20621b1926d3?style=plastic)](https://stats.uptimerobot.com/n7A08HGVl6/786947233)
 
