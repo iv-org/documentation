@@ -233,7 +233,7 @@ If you use a reverse proxy, you **must** configure invidious to properly serve r
 
 `external_port: 443`: if you are serving your instance via https, set it to 443
 
-`use_pubsub_feeds: true`: if you are serving your instance on the internet, allow for faster notification of new videos ([detailed explanation](https://github.com/iv-org/invidious/blob/master/config/config.example.yml#L430).
+`use_pubsub_feeds: true`: if you are serving your instance on the internet, allow for faster notification of new videos ([detailed explanation](https://github.com/iv-org/invidious/blob/97c4165f55c4574efb554c9dae8d919d08da1cdd/config/config.example.yml#L409)).
 
 `use_innertube_for_captions: true`: if you are serving a public instance or you are hosting invidious in a datacenter, allow to unblock captions ([detailed explanation](https://github.com/iv-org/invidious/issues/2567#issuecomment-1727928996)).
 
