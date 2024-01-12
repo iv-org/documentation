@@ -20,8 +20,6 @@
 
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷 
 
-* [vid.priv.au](https://vid.priv.au) 🇸🇬
-
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
 
 * [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇺🇸
@@ -82,8 +80,6 @@
 * [invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion](http://invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion) 🇫🇷 (Onion of invidious.privacydev.net)
 
 * [inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion](http://inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion) 🇫🇷 (Onion of invidious.projectsegfau.lt)
-
-* [invidiousge2cq2qegp4vdzsfu6mvpqdf6dtcyzmqbv7yx2spvkkajad.onion](http://invidiousge2cq2qegp4vdzsfu6mvpqdf6dtcyzmqbv7yx2spvkkajad.onion) 🇸🇬 (Onion of vid.priv.au)
 
 * [inv.zzlsghu6mvvwyy75mvga6gaf4znbp3erk5xwfzedb4gg6qqh2j6rlvid.onion](http://inv.zzlsghu6mvvwyy75mvga6gaf4znbp3erk5xwfzedb4gg6qqh2j6rlvid.onion) 🇨🇱 (Onion of inv.zzls.xyz)
 
