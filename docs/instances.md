@@ -14,6 +14,8 @@
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
+* [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
+
 * [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 
 
 * [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
