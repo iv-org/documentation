@@ -16,6 +16,7 @@ Lists of third-party projects that use or support Invidious.
 | [WatchTube](https://github.com/WatchTubeTeam/) | Powerful YouTube client for Apple Watch. | |
 | [TubiTui](https://codeberg.org/777/TubiTui) | A lightweight, libre, TUI-based YouTube client. For desktop. | |
 | [Ytfzf](https://github.com/pystardust/ytfzf) | A posix script to find and watch youtube videos from the terminal. (Without API). | |
+| [yt2alt](https://github.com/iBicha/yt2alt) | A cli tool to import your profile from Youtube to an alternative platform. | |
 
 ### Browser Extensions
 
