@@ -288,7 +288,7 @@ Captions can also be selected with an ISO `lang`, e.g. &lang=en, `tlang` will au
 Parameters:
 
 ```
-type: "music", "gaming", "news", "movies"
+type: "music", "gaming", "movies", "default"
 region: ISO 3166 country code (default: "US")
 ```
 
