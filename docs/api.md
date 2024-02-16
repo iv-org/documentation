@@ -4,14 +4,6 @@
 
 All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fields into the desired language. A list of languages are provided in [List of URL parameters](./url-parameters.md).
 
-### Pretty
-
-All endpoints that return a JSON body support `&pretty=1` for printing the response as formatted JSON.
-
-### Fields
-
-All endpoints that return a JSON body support the [fields API](https://developers.google.com/youtube/v3/getting-started#fields) for specifying desired fields to reduce bandwidth consumption. This can be used by adding `&fields=FIELDS` with the desired fields, for example [`/api/v1/videos/aqz-KE-bpKQ?fields=videoId,title,description&pretty=1`](https://invidio.us/api/v1/videos/aqz-KE-bpKQ?fields=videoId,title,description&pretty=1).
-
 ##### GET `/api/v1/stats`
 
 > Schema:
