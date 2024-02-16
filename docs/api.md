@@ -517,3 +517,47 @@ page: Int32
   ]
 }
 ```
+
+##### GET `/api/v1/hashtag/:tag`
+> Schema:
+```javascript
+{
+  results: VideoObject[],
+}
+```
+Parameters:
+```
+page: Int32
+```
+
+##### GET `/api/v1/resolve_url`
+> Schema:
+```javascript
+{
+  ucid?: String,
+  videoId?: String,
+  playlistId?: String,
+  startTimeSeconds?: String,
+  params?: String,
+  pageType: string
+}
+```
+Parameters:
+```
+url: URL
+```
+
+##### GET `/api/v1/clips`
+> Schema:
+```javascript
+{
+  startTime: Float64, // in seconds
+  endTime: Float64, // in seconds
+  clipTitle: String,
+  video: VideoObject
+}
+```
+Parameters:
+```
+id: string
+```
