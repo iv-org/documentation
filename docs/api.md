@@ -603,7 +603,7 @@ Parameters:
 ```
 q: String
 page: Int32
-sort_by: "relevance", "rating", "upload_date", "view_count"
+sort: "relevance", "rating", "date", "views"
 date: "hour", "today", "week", "month", "year"
 duration: "short", "long", "medium"
 type: "video", "playlist", "channel", "movie", "show", "all", (default: all)
