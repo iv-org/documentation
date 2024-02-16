@@ -530,7 +530,7 @@ Parameters:
 page: Int32
 ```
 
-##### GET `/api/v1/resolve_url`
+##### GET `/api/v1/resolveurl`
 > Schema:
 ```javascript
 {
