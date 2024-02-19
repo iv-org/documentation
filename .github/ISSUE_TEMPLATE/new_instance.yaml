@@ -48,6 +48,8 @@ body:
         required: true
       - label: "If dash, proxy + download is enabled (default settings), the instance has unlimited traffic/bandwidth or close to unlimited (100TB minimum)"
         required: true
+      - label: "Instance is not running any kind of analytics"
+        required: true
         
 
   - type: checkboxes
@@ -86,18 +88,6 @@ body:
       placeholder: "Example: https://git.example.com/you/invidious"
     validations:
       required: false
-
-  - type: checkboxes
-    attributes:
-      label: Analytics
-      description: "If your instance is running analytics:"
-      options:
-      - label: "They are GDPR/CCPA compliant"
-        required: false
-      - label: "This is stated in your Privacy Policy"
-        required: false
-      - label: "You have provided the source code's URL in the dedicated field above"
-        required: false
 
   - type: textarea
     id: more-infos
