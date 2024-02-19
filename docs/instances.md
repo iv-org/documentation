@@ -18,8 +18,6 @@
 
 * [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 
 
-* [invidious.slipfox.xyz](https://invidious.slipfox.xyz) 🇺🇸
-
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷 
 
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
