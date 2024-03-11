@@ -56,8 +56,6 @@
 
 * [inv.n8pjl.ca](https://inv.n8pjl.ca) 🇨🇦  
 
-* [youtube.owacon.moe](https://youtube.owacon.moe) 🇯🇵  
-
 * [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵  
 
 ### Tor Onion Services:
