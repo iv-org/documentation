@@ -56,7 +56,9 @@
 
 * [inv.n8pjl.ca](https://inv.n8pjl.ca) 🇨🇦  
 
-* [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵  
+* [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵
+
+* [invidious.darkness.services](https://invidious.darkness.services) 🇺🇸 
 
 ### Tor Onion Services:
 
