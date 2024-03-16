@@ -16,21 +16,21 @@
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
-* [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 
+* [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷
 
-* [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷 
+* [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷
 
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
 
 * [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇺🇸
 
-* [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare) 
+* [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare)
 
-* [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 
+* [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱
 
-* [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
+* [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸
 
-* [invidious.protokolla.fi](https://invidious.protokolla.fi) 🇩🇪 
+* [invidious.protokolla.fi](https://invidious.protokolla.fi) 🇩🇪
 
 * [iv.nboeck.de](https://iv.nboeck.de) 🇫🇮
 
@@ -50,13 +50,15 @@
 
 * [inv.us.projectsegfau.lt](https://inv.us.projectsegfau.lt) 🇺🇸
 
-* [invidious.einfachzocken.eu](https://invidious.einfachzocken.eu) 🇩🇪 (uses Cloudflare) 
+* [invidious.einfachzocken.eu](https://invidious.einfachzocken.eu) 🇩🇪 (uses Cloudflare)
 
-* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 
+* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪
 
-* [inv.n8pjl.ca](https://inv.n8pjl.ca) 🇨🇦  
+* [inv.n8pjl.ca](https://inv.n8pjl.ca) 🇨🇦
 
-* [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵  
+* [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵
+
+* [vid.lilay.dev](https://vid.lilay.dev) 🇸🇬 (uses Cloudflare)
 
 ### Tor Onion Services:
 
