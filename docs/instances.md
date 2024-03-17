@@ -38,7 +38,7 @@
 
 * [yt.drgnz.club](https://yt.drgnz.club) 🇨🇿
 
-* [iv.datura.network](https://iv.datura.network) 🇩🇪
+* [iv.datura.network](https://iv.datura.network) 🇫🇮
 
 * [invidious.fdn.fr](https://invidious.fdn.fr) 🇫🇷
 
