@@ -50,7 +50,7 @@
 
 * [inv.us.projectsegfau.lt](https://inv.us.projectsegfau.lt) 🇺🇸
 
-* [invidious.einfachzocken.eu](https://invidious.einfachzocken.eu) 🇩🇪 (uses Cloudflare) 
+* [invidious.einfachzocken.eu](https://invidious.einfachzocken.eu) 🇩🇪 
 
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇩🇪 
 
