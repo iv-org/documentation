@@ -32,7 +32,7 @@
 
 * [invidious.protokolla.fi](https://invidious.protokolla.fi) 🇩🇪 
 
-* [iv.nboeck.de](https://iv.nboeck.de) 🇫🇮
+* [iv.nboeck.de](https://iv.nboeck.de) 🇩🇪
 
 * [invidious.private.coffee](https://invidious.private.coffee) 🇦🇹
 
