@@ -62,6 +62,8 @@
 
 * [inv.oikei.net](https://inv.oikei.net) 🇩🇪
 
+* [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
+
 ### Tor Onion Services:
 
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸 (Onion of vid.puffyan.us)
