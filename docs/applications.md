@@ -16,6 +16,7 @@ Lists of third-party projects that use or support Invidious.
 | [Playlet](https://github.com/iBicha/playlet) | A Roku TV YouTube app that uses Invidious as a backend. | [Roku Store](https://channelstore.roku.com/en-ca/details/840aec36f51bfe6d96cf6db9055a372a/playlet) |
 | [GTK+ Pipe Viewer](https://github.com/trizen/pipe-viewer) | YouTube client for Linux. | |
 | [PlasmaTube](https://invent.kde.org/multimedia/plasmatube/) | YouTube client for Linux. | [KDE Applications](https://apps.kde.org/plasmatube/) |
+| [yt2alt](https://github.com/iBicha/yt2alt) | A cli tool to import your profile from Youtube to an alternative platform. | |
 
 ### Browser Extensions
 
