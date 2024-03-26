@@ -418,3 +418,33 @@ Example request:
 ```
 
 Returns 204 on success.
+
+##### GET `/api/v1/auth/history`
+
+Get the history of videos played by the user.
+
+Parameters:
+
+```
+max_results: Int32
+page: Int32
+```
+
+> Schema:
+
+```javascript
+[
+   // video IDs
+]
+```
+##### POST `/api/v1/auth/history/:id`
+
+Set a video as watched.
+
+Returns 204 on success.
+
+##### DELETE `/api/v1/auth/history/:id`
+
+Delete a video from the user watched history.
+
+Returns 204 on success.
