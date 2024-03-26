@@ -114,7 +114,7 @@ Provides an [EventSource](https://developer.mozilla.org/en-US/docs/Web/API/Event
 
 Important to note is that an event will also be sent when a channel _changes_ an already uploaded video, for example changing description or title.
 
-Each event is a JSON object with the same schema as `/api/v1/videos`. The `fields` API can be used, which will be applied to each object.
+Each event is a JSON object with the same schema as `/api/v1/videos`.
 
 A `debug` topic can also provided which will return a (psuedo-)randomly selected video every minute.
 
