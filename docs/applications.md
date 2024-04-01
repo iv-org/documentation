@@ -7,6 +7,7 @@ Lists of third-party projects that use or support Invidious.
 | --- | --- | --- |
 | [FreeTube](https://github.com/FreeTubeApp/FreeTube) | A desktop libre software YouTube app for privacy. | |
 | [Clipious](https://github.com/lamarios/clipious) | Unofficial Invidious client for Android | |
+| [Materialious](https://github.com/WardPearce/Materialious) | Modern material design for Invidious.  | |
 | [Yattee](https://github.com/yattee/yattee) | Alternative YouTube frontend for iPhone, iPad, Mac and Apple TV. | [App Store](https://apps.apple.com/app/yattee/id1595136629) |
 | [CloudTube](https://sr.ht/~cadence/tube/) | A JavaScript-rich alternate online YouTube player. | |
 | [HoloPlay](https://github.com/stephane-r/holoplay-pwa)| Progressive Web App for music connecting on Invidious API's with search, playlists and favorites. | |
