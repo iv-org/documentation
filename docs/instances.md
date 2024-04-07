@@ -64,6 +64,8 @@
 
 * [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
 
+* [inv.benrogo.net](https://inv.benrogo.net) 🇺🇸 (uses Cloudflare)
+
 ### Tor Onion Services:
 
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸 (Onion of vid.puffyan.us)
