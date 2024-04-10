@@ -134,7 +134,7 @@ We assume that you have not changed the port `3000` from the default installatio
                     statistics_enabled: true
                     hmac_key: "CHANGE_ME!!"
             healthcheck:
-                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit 1
                 interval: 30s
                 timeout: 5s
                 retries: 2
@@ -166,7 +166,7 @@ We assume that you have not changed the port `3000` from the default installatio
                     statistics_enabled: true
                     hmac_key: "CHANGE_ME!!"
             healthcheck:
-                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit 1
                 interval: 30s
                 timeout: 5s
                 retries: 2
@@ -295,7 +295,7 @@ But if you do not have NGINX as **your main reverse proxy** you can either try t
                     # statistics_enabled: false
                     hmac_key: "CHANGE_ME!!"
             healthcheck:
-                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit 1
                 interval: 30s
                 timeout: 5s
                 retries: 2
@@ -324,7 +324,7 @@ But if you do not have NGINX as **your main reverse proxy** you can either try t
                     # statistics_enabled: false
                     hmac_key: "CHANGE_ME!!"
             healthcheck:
-                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+                test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit 1
                 interval: 30s
                 timeout: 5s
                 retries: 2
