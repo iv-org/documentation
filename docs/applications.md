@@ -17,6 +17,7 @@ Lists of third-party projects that use or support Invidious.
 | [GTK+ Pipe Viewer](https://github.com/trizen/pipe-viewer) | YouTube client for Linux. | |
 | [PlasmaTube](https://invent.kde.org/multimedia/plasmatube/) | YouTube client for Linux. | [KDE Applications](https://apps.kde.org/plasmatube/) |
 | [yt2alt](https://github.com/iBicha/yt2alt) | A cli tool to import your profile from Youtube to an alternative platform. | |
+| [Materialious](https://github.com/WardPearce/Materialious) | Modern material design for Invidious.  | |
 
 ### Browser Extensions
 
