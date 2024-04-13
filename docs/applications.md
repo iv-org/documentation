@@ -7,7 +7,6 @@ Lists of third-party projects that use or support Invidious.
 | --- | --- | --- |
 | [FreeTube](https://github.com/FreeTubeApp/FreeTube) | A desktop libre software YouTube app for privacy. | |
 | [Clipious](https://github.com/lamarios/clipious) | Unofficial Invidious client for Android | |
-| [Materialious](https://github.com/WardPearce/Materialious) | Modern material design for Invidious.  | |
 | [Yattee](https://github.com/yattee/yattee) | Alternative YouTube frontend for iPhone, iPad, Mac and Apple TV. | [App Store](https://apps.apple.com/app/yattee/id1595136629) |
 | [CloudTube](https://sr.ht/~cadence/tube/) | A JavaScript-rich alternate online YouTube player. | |
 | [HoloPlay](https://github.com/stephane-r/holoplay-pwa)| Progressive Web App for music connecting on Invidious API's with search, playlists and favorites. | |
@@ -18,6 +17,7 @@ Lists of third-party projects that use or support Invidious.
 | [GTK+ Pipe Viewer](https://github.com/trizen/pipe-viewer) | YouTube client for Linux. | |
 | [PlasmaTube](https://invent.kde.org/multimedia/plasmatube/) | YouTube client for Linux. | [KDE Applications](https://apps.kde.org/plasmatube/) |
 | [yt2alt](https://github.com/iBicha/yt2alt) | A cli tool to import your profile from Youtube to an alternative platform. | |
+| [Materialious](https://github.com/WardPearce/Materialious) | Modern material design for Invidious.  | |
 
 ### Browser Extensions
 
