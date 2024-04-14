@@ -16,7 +16,7 @@
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
-* [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇫🇷 
+* [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇩🇪
 
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷 
 
@@ -72,7 +72,7 @@
 
 * [invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion](http://invidious.g4c3eya4clenolymqbpgwz3q3tawoxw56yhzk4vugqrl6dtu3ejvhjid.onion) 🇫🇷 (Onion of invidious.privacydev.net)
 
-* [inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion](http://inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion) 🇫🇷 (Onion of invidious.projectsegfau.lt)
+* [inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion](http://inv.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion) 🇩🇪 (Onion of invidious.projectsegfau.lt)
 
 * [inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion](http://inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion) 🇨🇱 (Onion of inv.nadeko.net)
 
