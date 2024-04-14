@@ -18,8 +18,6 @@
 
 * [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇩🇪
 
-* [inv.in.projectsegfau.lt](https://inv.in.projectsegfau.lt) 🇮🇳
-
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷 
 
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
