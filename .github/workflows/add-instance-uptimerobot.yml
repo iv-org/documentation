@@ -83,9 +83,9 @@ jobs:
                       '',
                       'It is highly recommended to follow these tutorials because it will allow the instance to stay stable and performant over the long term.',
                       '',
-                      'Please consider joining the Matrix room for public instance maintainers by joining our Matrix room: https://matrix.to/#/#invidious:matrix.org',
-                      'then pinging @ unixfox, @ TheFrenchGhosty and @ SamantazFox for asking to be invited to the Matrix room.',
-                      'We discuss troubles managing a public instance, sharing some advices and more.'
+                      'When your instance is added to the instances list, please consider joining the Matrix room for public instance maintainers by joining our Matrix room: https://matrix.to/#/#invidious:matrix.org',
+                      'and pinging @ unixfox, @ TheFrenchGhosty and @ SamantazFox to ask to be invited to it.',
+                      'We discuss troubles managing a public instance, we share some advices, we warn you in advance of potential security issues and more.'
                       ].join('\n');
                     await github.rest.issues.createComment({
                       issue_number: context.issue.number,
