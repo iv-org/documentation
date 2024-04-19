@@ -33,7 +33,6 @@ nav:
     - 'ipv6-rotator.md'
     - 'captcha-bug.md'
     - 'anti-captcha.md'
-    - 'register-user.md'
     - 'reset-password.md'
     - 'known-exception.md'
   - 'For Developers':
