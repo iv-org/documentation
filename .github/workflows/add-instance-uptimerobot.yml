@@ -54,6 +54,7 @@ jobs:
                 var request = require("request");
                 var options = { method: 'POST',
                   url: 'https://api.uptimerobot.com/v2/newMonitor',
+                  json:true,
                   headers:
                   { 'content-type': 'application/x-www-form-urlencoded',
                     'cache-control': 'no-cache' },

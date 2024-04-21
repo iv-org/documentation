@@ -54,6 +54,7 @@ jobs:
                 var request = require("request");
                 var optionsAddNewCheck = { method: 'POST',
                   url: 'https://updown.io/api/checks?api-key=${{ secrets.UPDOWN_API_KEY }}',
+                  json:true,
                   headers:
                   { 'content-type': 'application/x-www-form-urlencoded' },
                   form:
@@ -71,7 +72,8 @@ jobs:
                   if (body.token) {
                     var optionsGetStatusPages = {
                         method: 'GET',
-                        url: 'https://updown.io/api/status_pages?api-key=${{ secrets.UPDOWN_API_KEY }}'
+                        url: 'https://updown.io/api/status_pages?api-key=${{ secrets.UPDOWN_API_KEY }}',
+                        json: true
                     };
 
                     request(optionsGetStatusPages, async function (error, response, body) {
@@ -87,11 +89,13 @@ jobs:
                           headers: {
                               'content-type': 'application/json'
                           },
-                          json: {checks: checksOfStatusPage}
+                          json: {checks: checksOfStatusPage})
                       };
 
                       request(optionsAddCheckToStatusPage, async function (error, response, body) {
                           if (error) throw new Error(error);
+
+                          console.log(body)
                       });
                     });
 
