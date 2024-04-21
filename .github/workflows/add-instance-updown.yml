@@ -1,4 +1,4 @@
-name: Add instance to uptimerobot
+name: Add instance to updown.io
 
 on:
   issues:
@@ -54,7 +54,6 @@ jobs:
                 var request = require("request");
                 var optionsAddNewCheck = { method: 'POST',
                   url: 'https://updown.io/api/checks?api-key=${{ secrets.UPDOWN_API_KEY }}',
-                  json:true,
                   headers:
                   { 'content-type': 'application/x-www-form-urlencoded' },
                   form:
@@ -72,8 +71,7 @@ jobs:
                   if (body.token) {
                     var optionsGetStatusPages = {
                         method: 'GET',
-                        url: 'https://updown.io/api/status_pages?api-key=${{ secrets.UPDOWN_API_KEY }}',
-                        json: true
+                        url: 'https://updown.io/api/status_pages?api-key=${{ secrets.UPDOWN_API_KEY }}'
                     };
 
                     request(optionsGetStatusPages, async function (error, response, body) {
@@ -86,11 +84,10 @@ jobs:
                       var optionsAddCheckToStatusPage = {
                           method: 'PUT',
                           url: 'https://updown.io/api/status_pages/resvf?api-key=${{ secrets.UPDOWN_API_KEY }}',
-                          json: true,
                           headers: {
                               'content-type': 'application/json'
                           },
-                          body: JSON.stringify({checks: checksOfStatusPage})
+                          json: {checks: checksOfStatusPage}
                       };
 
                       request(optionsAddCheckToStatusPage, async function (error, response, body) {
