@@ -89,7 +89,7 @@ jobs:
                           headers: {
                               'content-type': 'application/json'
                           },
-                          json: {checks: checksOfStatusPage})
+                          json: {checks: checksOfStatusPage}
                       };
 
                       request(optionsAddCheckToStatusPage, async function (error, response, body) {
