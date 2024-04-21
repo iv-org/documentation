@@ -52,22 +52,54 @@ jobs:
               else {
                 var instanceHostname = (new URL(issueTitleParseUrl[0].href)).hostname;
                 var request = require("request");
-                var options = { method: 'POST',
+                var optionsAddNewCheck = { method: 'POST',
                   url: 'https://updown.io/api/checks?api-key=${{ secrets.UPDOWN_API_KEY }}',
                   json:true,
                   headers:
-                  { 'content-type': 'application/x-www-form-urlencoded',
-                    'cache-control': 'no-cache' },
+                  { 'content-type': 'application/x-www-form-urlencoded' },
                   form:
                   { url: 'https://' + instanceHostname,
-                    alias: instanceHostname } };
+                    period: '300',
+                    mute_until: 'forever',
+                    published: 'true',
+                    alias: instanceHostname,
+                    string_match: 'An alternative front-end to YouTube' } };
+
                           
-                request(options, async function (error, response, body) {
+                request(optionsAddNewCheck, async function (error, response, body) {
                   if (error) throw new Error(error);
                   console.log(body);
-                  if (body.stat == "ok") {
+                  if (body.token) {
+                    var optionsGetStatusPages = {
+                        method: 'GET',
+                        url: 'https://updown.io/api/status_pages?api-key=${{ secrets.UPDOWN_API_KEY }}',
+                        json: true
+                    };
+
+                    request(optionsGetStatusPages, async function (error, response, body) {
+                      if (error) throw new Error(error);
+                      const statusPage = body.filter(element => element.token === "resvf");
+                      let checksOfStatusPage = statusPage[0].checks;
+
+                      checksOfStatusPage.push(body.token)
+
+                      var optionsAddCheckToStatusPage = {
+                          method: 'PUT',
+                          url: 'https://updown.io/api/status_pages/resvf?api-key=${{ secrets.UPDOWN_API_KEY }}',
+                          json: true,
+                          headers: {
+                              'content-type': 'application/json'
+                          },
+                          body: JSON.stringify({checks: checksOfStatusPage})
+                      };
+
+                      request(optionsAddCheckToStatusPage, async function (error, response, body) {
+                          if (error) throw new Error(error);
+                      });
+                    });
+
                     var replyComment = 
-                      ['Hello! Your instance has been added to our monitoring system: https://stats.uptimerobot.com/89VnzSKAn/' + body.monitor.id,
+                      ['Hello! Your instance has been added to our monitoring system: https://updown.io/' + body.token,
                       'You need to wait 30 days before we add your instance, this is to evaluate that your instance will keep a good uptime for one month.',
                       '',
                       'Make sure you double checked all the mandatory checks or this will slow down the process of adding your instance!',
@@ -98,6 +130,7 @@ jobs:
                     })
                   }
                 });
+                
               }
             }
             else {
