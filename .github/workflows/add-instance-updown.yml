@@ -17,7 +17,7 @@ jobs:
         if: contains(github.event.issue.labels.*.name, 'instance-add')
         with:
           node-version: 16
-      - run: npm install request linkifyjs updown.io
+      - run: npm install request linkifyjs
         if: contains(github.event.issue.labels.*.name, 'instance-add')
       - uses: actions/github-script@v6
         if: contains(github.event.issue.labels.*.name, 'instance-add')
