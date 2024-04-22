@@ -54,8 +54,6 @@
 
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 
 
-* [inv.n8pjl.ca](https://inv.n8pjl.ca) 🇨🇦  
-
 * [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵  
 
 * [vid.lilay.dev](https://vid.lilay.dev) 🇸🇬 (uses Cloudflare)
