@@ -1,6 +1,6 @@
 # Invidious Instances
 
-[Uptime History provided by Uptimerobot](https://stats.uptimerobot.com/89VnzSKAn)
+[Uptime History provided by updown.io](https://updown.io/p/resvf)
 
 [Instances API](https://api.invidious.io/)
 
