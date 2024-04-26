@@ -87,7 +87,7 @@
 ## Rules to have your instance in this list:
 
 1. Instances MUST have been up for at least a month before it can be added to this list.
-2. Instances MUST have been updated in the last month. An instance that hasn't been updated in the last month is considered unmaintained and is removed from the list.
+2. Instances MUST not be more than a month out of date compared with either the latest commit or latest release. Any instance that is more than a month out of date is considered unmaintained and will be removed from the list.
 3. Instances MUST have statistics (`/api/v1/stats`) enabled (`statistics_enabled: true` in the configuration file).
 4. Instances MUST have an uptime of at least 90% ([according to uptime.invidious.io](https://uptime.invidious.io/)).
 5. Instances MUST be served via domain name.
