@@ -208,10 +208,10 @@ psql invidious kemal < config/sql/playlist_videos.sql
 #### Set up Invidious
 
 ```bash
-shards install --production
-crystal build src/invidious.cr --release
+make
+
+# Configure config/config.yml as you like
 cp config/config.example.yml config/config.yml 
-# Configure config/config.yml how you want
 ```
 
 ### Windows
