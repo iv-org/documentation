@@ -138,7 +138,7 @@ git clone https://github.com/iv-org/invidious
 exit
 ```
 
-#### Set up PostgresSQL
+#### Set up PostgreSQL
 
 ```bash
 systemctl enable --now postgresql
@@ -187,7 +187,7 @@ git clone https://github.com/iv-org/invidious
 cd invidious
 ```
 
-#### Set up PostgresSQL
+#### Set up PostgreSQL
 
 ```bash
 brew services start postgresql
