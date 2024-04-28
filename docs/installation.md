@@ -184,6 +184,7 @@ brew install crystal postgresql imagemagick librsvg
 
 ```bash
 brew services start postgresql
+createdb
 psql -c "CREATE ROLE kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
 createdb -O kemal invidious
 psql invidious kemal < config/sql/channels.sql
