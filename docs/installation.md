@@ -177,7 +177,7 @@ systemctl enable --now invidious.service
 
 ```bash
 brew update
-brew install shards crystal postgres imagemagick librsvg
+brew install crystal postgres imagemagick librsvg
 ```
 
 #### Set up PostgresSQL
