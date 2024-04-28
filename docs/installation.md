@@ -192,7 +192,7 @@ cd invidious
 ```bash
 brew services start postgresql
 createdb
-psql -c "CREATE ROLE kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
+psql -c "CREATE ROLE kemal WITH LOGIN PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
 createdb -O kemal invidious
 psql invidious kemal < config/sql/channels.sql
 psql invidious kemal < config/sql/videos.sql
