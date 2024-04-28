@@ -180,6 +180,13 @@ brew update
 brew install crystal postgresql imagemagick librsvg
 ```
 
+#### Clone the Invidious repository
+
+```bash
+git clone https://github.com/iv-org/invidious
+cd invidious
+```
+
 #### Set up PostgresSQL
 
 ```bash
@@ -202,8 +209,6 @@ psql invidious kemal < config/sql/playlist_videos.sql
 #### Set up Invidious
 
 ```bash
-git clone https://github.com/iv-org/invidious
-cd invidious
 shards install --production
 crystal build src/invidious.cr --release
 cp config/config.example.yml config/config.yml 
