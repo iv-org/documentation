@@ -138,7 +138,7 @@ git clone https://github.com/iv-org/invidious
 exit
 ```
 
-#### Set up PostgresSQL
+#### Set up PostgreSQL
 
 ```bash
 systemctl enable --now postgresql
@@ -177,14 +177,22 @@ systemctl enable --now invidious.service
 
 ```bash
 brew update
-brew install shards crystal postgres imagemagick librsvg
+brew install crystal postgresql imagemagick librsvg
 ```
 
-#### Set up PostgresSQL
+#### Clone the Invidious repository
+
+```bash
+git clone https://github.com/iv-org/invidious
+cd invidious
+```
+
+#### Set up PostgreSQL
 
 ```bash
 brew services start postgresql
-psql -c "CREATE ROLE kemal WITH PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
+createdb
+psql -c "CREATE ROLE kemal WITH LOGIN PASSWORD 'kemal';" # Change 'kemal' here to a stronger password, and update `password` in config/config.yml
 createdb -O kemal invidious
 psql invidious kemal < config/sql/channels.sql
 psql invidious kemal < config/sql/videos.sql
@@ -193,7 +201,6 @@ psql invidious kemal < config/sql/users.sql
 psql invidious kemal < config/sql/session_ids.sql
 psql invidious kemal < config/sql/nonces.sql
 psql invidious kemal < config/sql/annotations.sql
-psql invidious kemal < config/sql/privacy.sql
 psql invidious kemal < config/sql/playlists.sql
 psql invidious kemal < config/sql/playlist_videos.sql
 ```
@@ -201,12 +208,10 @@ psql invidious kemal < config/sql/playlist_videos.sql
 #### Set up Invidious
 
 ```bash
-git clone https://github.com/iv-org/invidious
-cd invidious
-shards install --production
-crystal build src/invidious.cr --release
+make
+
+# Configure config/config.yml as you like
 cp config/config.example.yml config/config.yml 
-# Configure config/config.yml how you want
 ```
 
 ### Windows
