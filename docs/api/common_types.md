@@ -28,7 +28,7 @@
 
 ```javascript
 {
-	"type": "video", // Constant
+	"type": String, // one of: "video", "scheduled"
 
 	"title": String,
 	"videoId": String,
