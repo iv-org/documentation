@@ -37,6 +37,7 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
 
 ```javascript
 {
+  "type": String, // "video"|"published"
   "title": String,
   "videoId": String,
   "videoThumbnails": [
@@ -45,6 +46,19 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
       "url": String,
       "width": Int32,
       "height": Int32
+    }
+  ],
+  "storyboards": [
+    {
+      "url": String,
+      "templateUrl": String,
+      "width": Int32,
+      "height": Int32,
+      "count": Int32,
+      "interval	": Int32,
+      "storyboardWidth": Int32,
+      "storyboardHeight": Int32,
+      "storyboardCount": Int32
     }
   ],
 
@@ -82,7 +96,9 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
   "rating": Float32,
   "isListed": Bool,
   "liveNow": Bool,
+  "isPostLiveDvr": Bool,
   "isUpcoming": Bool,
+  "dashUrl:" String,
   "premiereTimestamp": Int64?,
 
   "hlsUrl": String?,
