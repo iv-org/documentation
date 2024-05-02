@@ -237,7 +237,7 @@ But if you do not have NGINX as **your main reverse proxy** you can either try t
    Replace `33:33` with uid:gid if you have something different.
 4. Add these lines for the "server" section of Invidious in your NGINX configuration, just after the block `location /`:
    ```
-   location ~ (^/videoplayback|^/vi/|^/ggpht/|^/sb/) {
+   location ~ (^/videoplayback|^/vi/|^/ggpht/) {
         proxy_buffering on;
         proxy_buffers 1024 16k;
         proxy_set_header X-Forwarded-For "";
