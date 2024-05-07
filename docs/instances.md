@@ -58,8 +58,6 @@
 
 * [vid.lilay.dev](https://vid.lilay.dev) 🇸🇬 (uses Cloudflare)
 
-* [inv.oikei.net](https://inv.oikei.net) 🇩🇪
-
 * [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
 
 ### Tor Onion Services:
