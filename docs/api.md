@@ -27,6 +27,11 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
   "metadata": {
     "updatedAt": Int64,
     "lastChannelRefreshedAt": Int64
+  },
+  "playback": {
+    "totalRequests": Int32?
+    "successfulRequests": Int32?
+    "ratio": Float32?
   }
 }
 ```
