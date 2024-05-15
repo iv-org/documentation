@@ -60,7 +60,9 @@
 
 * [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
 
-* [invidious.reallyaweso.me](https://invidious.reallyaweso.me) 🇩🇪 
+* [invidious.reallyaweso.me](https://invidious.reallyaweso.me) 🇩🇪
+
+* [invidious.materialio.us](https://invidious.materialio.us) 🇳🇿
 
 ### Tor Onion Services:
 
