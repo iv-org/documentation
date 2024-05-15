@@ -17,10 +17,6 @@ body:
         - Improving the performance and the stability of your public instance: https://docs.invidious.io/improve-public-instance/
         
         It is highly recommended to follow these tutorials because it will allow the instance to stay stable and performant over the long term.
-      
-        Please consider joining our Matrix room for public instance maintainers by joining our Matrix room: https://matrix.to/#/#invidious:matrix.org
-        then pinging @unixfox, @TheFrenchGhosty and @SamantazFox for asking to be invited to the Matrix room.
-        We discuss troubles managing a public instance, sharing some advices and more.
 
   - type: input
     id: url
@@ -86,6 +82,15 @@ body:
       label: Source code URL
       description: "If your instance is running a modified source code, please provide the URL below"
       placeholder: "Example: https://git.example.com/you/invidious"
+    validations:
+      required: false
+
+  - type: input
+    id: matrix-username
+    attributes:
+      label: Your matrix username
+      description: "Please input your Matrix username here to join the private Matrix room for public instances maintainers. We discuss troubles managing a public instance, share some advices and more. Optional but highly recommended."
+      placeholder: "matrixuser"
     validations:
       required: false
 
