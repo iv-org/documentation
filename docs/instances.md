@@ -64,6 +64,8 @@
 
 * [invidious.materialio.us](https://invidious.materialio.us) 🇳🇿
 
+* [inv.in.projectsegfau.lt](https://inv.in.projectsegfau.lt) 🇮🇳
+
 ### Tor Onion Services:
 
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸 (Onion of vid.puffyan.us)
