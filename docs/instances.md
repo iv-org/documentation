@@ -16,8 +16,6 @@
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
-* [invidious.projectsegfau.lt](https://invidious.projectsegfau.lt) 🇩🇪
-
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷 
 
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
