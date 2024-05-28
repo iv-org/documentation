@@ -39,6 +39,13 @@ We assume that you have not changed the port `3000` from the default installatio
    ```
    channel_threads: 0
    feed_threads: 0
+   jobs:
+     clear_expired_items:
+       enabled: false
+     refresh_channels:
+       enabled: false
+     refresh_feeds:
+       enabled: false
    ```
    This is required so that only one invidious process refresh the subscriptions for the users.  
    Running this process with multiple processes may introduce some conflicts.
@@ -133,6 +140,13 @@ We assume that you have not changed the port `3000` from the default installatio
                     https_only: true
                     statistics_enabled: true
                     hmac_key: "CHANGE_ME!!"
+                    jobs:
+                      clear_expired_items:
+                        enabled: false
+                      refresh_channels:
+                        enabled: false
+                      refresh_feeds:
+                        enabled: false
             healthcheck:
                 test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit 1
                 interval: 30s
