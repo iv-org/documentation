@@ -5,9 +5,7 @@ on:
     types: [closed]
 
 jobs:
-
   replycomment:
-
     runs-on: ubuntu-latest
     permissions: write-all
     steps:

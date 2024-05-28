@@ -5,9 +5,7 @@ on:
     types: [opened, reopened]
 
 jobs:
-
   replycomment:
-
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
@@ -31,10 +29,10 @@ jobs:
             var linkify = require("linkifyjs");
             var issueTitleParseUrl = linkify.find(issueInfo.title);
             if (issueTitleParseUrl.length !== 0) {
-              if (issueInfo.title.includes(".onion")) {
+              if (issueInfo.title.includes(".onion") || issueInfo.title.includes(".ip2")) {
                 var replyComment = 
-                  ['Hello! I have detected that you are requesting to add an onion URL.',
-                  'Please create a pull request instead for adding your onion url as an alternative to your clearnet URL: https://github.com/iv-org/documentation/edit/master/docs/instances.md'
+                  ['Hello! I have detected that you are requesting to add an onion or I2P URL.',
+                  'Please create a pull request instead for adding your onion or I2P url as an alternative to your clearnet URL: https://github.com/iv-org/documentation/edit/master/docs/instances.md'
                   ].join('\n');
                 await github.rest.issues.createComment({
                   issue_number: context.issue.number,
@@ -65,7 +63,6 @@ jobs:
                     apdex_t: '1.0',
                     alias: instanceHostname,
                     string_match: 'An alternative front-end to YouTube' } };
-
                           
                 request(optionsAddNewCheck, async function (error, response, body) {
                   if (error) throw new Error(error);
