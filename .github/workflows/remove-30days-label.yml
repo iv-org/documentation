@@ -5,10 +5,10 @@ on:
     types: [closed]
 
 jobs:
+
   replycomment:
 
     runs-on: ubuntu-latest
-
     permissions: write-all
     steps:
       - uses: actions/github-script@v6
