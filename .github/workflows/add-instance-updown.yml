@@ -65,6 +65,7 @@ jobs:
                     apdex_t: '1.0',
                     alias: instanceHostname,
                     string_match: 'An alternative front-end to YouTube' } };
+
                           
                 request(optionsAddNewCheck, async function (error, response, body) {
                   if (error) throw new Error(error);
