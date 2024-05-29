@@ -66,6 +66,8 @@
 
 * [invidious.incogniweb.net](https://invidious.incogniweb.net) 🇺🇸
 
+* [invidious.darkness.services](https://invidious.darkness.services) 🇺🇸
+
 ### Tor Onion Services:
 
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸 (Onion of vid.puffyan.us)
