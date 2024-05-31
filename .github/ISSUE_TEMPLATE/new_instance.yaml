@@ -46,6 +46,8 @@ body:
         required: true
       - label: "Instance is not running any kind of analytics"
         required: true
+      - label: "If using Cloudflare or any other DDoS Protection, settings are configured to allow uptime monitoring"
+        required: true
         
 
   - type: checkboxes
