@@ -46,7 +46,7 @@ body:
         required: true
       - label: "Instance is not running any kind of analytics"
         required: true
-      - label: "If using Cloudflare or any other DDoS protection Service, settings are configured to allow uptime monitoring. Cloudflare users can consult [this](https://updown.io/doc/known-issues-when-monitoring-a-cloudflare-protected-website) guide"
+      - label: "If using Cloudflare or any other DDoS protection service, settings are configured to allow uptime monitoring. Cloudflare users can consult [this](https://updown.io/doc/known-issues-when-monitoring-a-cloudflare-protected-website) guide"
         required: true
         
 
