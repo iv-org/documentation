@@ -68,6 +68,10 @@
 
 * [invidious.darkness.services](https://invidious.darkness.services) 🇺🇸
 
+* [invidious.yourdevice.ch](https://invidious.yourdevice.ch) 🇩🇪
+
+* [vid.selbsthilfegruppe.wtf](https://vid.selbsthilfegruppe.wtf) 🇩🇪 (uses Cloudflare)
+
 ### Tor Onion Services:
 
 * [grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion](http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion) 🇺🇸 (Onion of vid.puffyan.us)
