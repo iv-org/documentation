@@ -54,8 +54,6 @@
 
 * [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵  
 
-* [vid.lilay.dev](https://vid.lilay.dev) 🇸🇬 (uses Cloudflare)
-
 * [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
 
 * [invidious.reallyaweso.me](https://invidious.reallyaweso.me) 🇩🇪
@@ -69,8 +67,6 @@
 * [invidious.darkness.services](https://invidious.darkness.services) 🇺🇸
 
 * [invidious.yourdevice.ch](https://invidious.yourdevice.ch) 🇩🇪
-
-* [vid.selbsthilfegruppe.wtf](https://vid.selbsthilfegruppe.wtf) 🇩🇪 (uses Cloudflare)
 
 ### Tor Onion Services:
 
