@@ -100,7 +100,7 @@
 6. Instances MUST be served via HTTPS (or/and onion).
 7. Instances using any DDoS Protection / MITM MUST be marked as such (e.g. Cloudflare, DDoS-Guard).
 8. Instances using any type of anti-bot protection MUST be marked as such.
-9. Instances MUST NOT use any type of analytics.
+9. Instances MUST NOT use any type of analytics, including external scripts of any kind.
 10. Any system whose goal is to modify the content served to the user (i.e web server HTML rewrite) is considered the same as modifying the source code.
 11. Instances running a modified source code:
     - MUST respect the [GNU AGPL](https://en.wikipedia.org/wiki/GNU_Affero_General_Public_License) by publishing their source code and stating their changes **before** they are added to the list
