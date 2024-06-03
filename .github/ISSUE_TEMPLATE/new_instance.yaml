@@ -60,6 +60,14 @@ body:
       - label: "Ensure a proper uptime of my instance (around 90%)"
         required: true
 
+  - type: checkboxes
+    attributes:
+      label: Rules for public instances
+      description: By submitting this proposal, you agree to follow the [rules for public instances](https://docs.invidious.io/instances). 
+      options:
+        - label: I agree to follow the rules for public instances
+          required: true
+
   - type: input
     id: country
     attributes:
