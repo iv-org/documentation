@@ -90,7 +90,7 @@
 
 * [zzlsbhhfvwg3oh36tcvx4r7n6jrw7zibvyvfxqlodcwn3mfrvzuq.b32.i2p](http://zzlsbhhfvwg3oh36tcvx4r7n6jrw7zibvyvfxqlodcwn3mfrvzuq.b32.i2p) 🇨🇱 (Eepsite of inv.nadeko.net)
 
-## Rules to have your instance in this list:
+## Rules for public instances
 
 1. Instances MUST have been up for at least a month before it can be added to this list.
 2. Instances MUST have been updated in the last month. An instance that hasn't been updated in the last month is considered unmaintained and is removed from the list.
