@@ -28,7 +28,7 @@
 
 * [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
 
-* [invidious.protokolla.fi](https://invidious.protokolla.fi) 🇩🇪 
+* [invidious.protokolla.fi](https://invidious.protokolla.fi) 🇫🇮 
 
 * [iv.nboeck.de](https://iv.nboeck.de) 🇩🇪
 
