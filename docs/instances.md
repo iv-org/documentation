@@ -12,8 +12,6 @@
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
-* [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷 
-
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
 
 * [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 
@@ -47,8 +45,6 @@
 * [inv.in.projectsegfau.lt](https://inv.in.projectsegfau.lt) 🇮🇳
 
 * [invidious.incogniweb.net](https://invidious.incogniweb.net) 🇺🇸
-
-* [invidious.darkness.services](https://invidious.darkness.services) 🇺🇸
 
 
 ### Tor Onion Services:
