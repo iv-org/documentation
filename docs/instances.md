@@ -8,10 +8,6 @@
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
-
-* [vid.puffyan.us](https://vid.puffyan.us) 🇺🇸 
-
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
@@ -20,17 +16,11 @@
 
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
 
-* [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇺🇸
-
-* [invidious.lunar.icu](https://invidious.lunar.icu) 🇩🇪 (uses Cloudflare) 
-
 * [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 
 
 * [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
 
 * [invidious.protokolla.fi](https://invidious.protokolla.fi) 🇫🇮 
-
-* [iv.nboeck.de](https://iv.nboeck.de) 🇩🇪
 
 * [invidious.private.coffee](https://invidious.private.coffee) 🇦🇹
 
@@ -42,15 +32,9 @@
 
 * [invidious.perennialte.ch](https://invidious.perennialte.ch) 🇦🇺 (uses Cloudflare)
 
-* [yt.cdaut.de](https://yt.cdaut.de) 🇩🇪
-
 * [invidious.drgns.space](https://invidious.drgns.space) 🇺🇸
 
 * [inv.us.projectsegfau.lt](https://inv.us.projectsegfau.lt) 🇺🇸
-
-* [invidious.einfachzocken.eu](https://invidious.einfachzocken.eu) 🇩🇪 
-
-* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 
 
 * [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵  
 
@@ -66,7 +50,6 @@
 
 * [invidious.darkness.services](https://invidious.darkness.services) 🇺🇸
 
-* [invidious.yourdevice.ch](https://invidious.yourdevice.ch) 🇩🇪
 
 ### Tor Onion Services:
 
