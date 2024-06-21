@@ -8,6 +8,8 @@
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
+* [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
+
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
