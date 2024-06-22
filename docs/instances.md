@@ -16,8 +16,6 @@
 
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷
 
-* [iv.melmac.space](https://iv.melmac.space) 🇩🇪
-
 * [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 
 
 * [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
