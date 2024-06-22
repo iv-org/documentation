@@ -10,8 +10,6 @@
 
 * [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
 
-* [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
-
 * [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
 
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷
