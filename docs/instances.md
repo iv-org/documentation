@@ -20,8 +20,6 @@
 
 * [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
 
-* [invidious.protokolla.fi](https://invidious.protokolla.fi) 🇫🇮 
-
 * [invidious.private.coffee](https://invidious.private.coffee) 🇦🇹
 
 * [yt.drgnz.club](https://yt.drgnz.club) 🇨🇿
