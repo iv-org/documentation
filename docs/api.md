@@ -301,7 +301,7 @@ Captions can also be selected with an ISO `lang`, e.g. &lang=en, `tlang` will au
 Parameters:
 
 ```
-type: "music", "gaming", "news", "movies"
+type: "music", "gaming", "movies", "default"
 region: ISO 3166 country code (default: "US")
 ```
 
@@ -335,183 +335,6 @@ region: ISO 3166 country code (default: "US")
         "publishedText": String
     }
 ]
-```
-
-##### GET `/api/v1/channels/comments/:ucid`, `/api/v1/channels/:ucid/comments`
-
-
-```javascript
-{
-  "authorId": String,
-  "comments": [
-    {
-      "author": String,
-      "authorThumbnails": [
-        "url": String,
-        "width": Int32,
-        "height": Int32
-      ],
-      "authorId": String,
-      "authorUrl": String,
-      "isEdited": Bool,
-      "content": String,
-      "contentHtml": String,
-      "published": Int64,
-      "publishedText": String,
-      "likeCount": Int32,
-      "commentId": String,
-      "authorIsChannelOwner": Bool,
-      "creatorHeart": {
-        "creatorThumbnail": String,
-        "creatorName": String
-      }?,
-      "replies": {
-        "replyCount": Int32,
-        "continuation": String
-      }?,
-      "attachment": Attachment?
-    }
-  ],
-  "continuation": String?
-}
-```
-
-The `authorId` for top-level comments will always(?) be the same as the requested channel. Top-level comments will also have an optional `attachment`, which can be one of:
-
-```javascript
-{
-    "type": "image",
-    "imageThumbnails": [
-        {
-            "url": String,
-            "width": Int32,
-            "height": Int32
-        }
-    ]
-}
-```
-
-```javascript
-{
-    "type": "video",
-    "title": String,
-    "videoId": String,
-    "videoThumbnails": [
-        {
-            "quality": String,
-            "url": String,
-            "width": Int32,
-            "height": Int32
-        }
-    ],
-    "lengthSeconds": Int32,
-    "author": String,
-    "authorId": String,
-    "authorUrl": String,
-    "published": Int64,
-    "publishedText": String,
-    "viewCount": Int64,
-    "viewCountText": String
-}
-```
-
-```javascript
-{
-    "type": "unknown",
-    "error": "Unrecognized attachment type."
-}
-```
-
-Some attachments may only have a `type` and `error`, similar to the above. Attachments will *only* be present on top-level comments.
-
-Parameters:
-
-```
-continuation: String
-```
-
-##### GET `/api/v1/channels/search/:ucid`
-
-> Schema:
-
-```javascript
-[
-  {
-    type: "video",
-    title: String,
-    videoId: String,
-    author: String,
-    authorId: String,
-    authorUrl: String,
-    videoThumbnails: [
-      {
-        quality: String,
-        url: String,
-        width: Int32,
-        height: Int32
-      }
-    ],
-    description: String,
-    descriptionHtml: String,
-    viewCount: Int64,
-    published: Int64,
-    publishedText: String,
-    lengthSeconds: Int32,
-    liveNow: Bool,
-    paid: Bool,
-    premium: Bool
-  },
-  {
-    type: "playlist",
-    title: String,
-    playlistId: String,
-    author: String,
-    authorId: String,
-    authorUrl: String,
-
-    videoCount: Int32,
-    videos: [
-      {
-        title: String,
-        videoId: String,
-        lengthSeconds: Int32,
-        videoThumbnails: [
-          {
-            quality: String,
-            url: String,
-            width: Int32,
-            height: Int32
-          }
-        ]
-      }
-    ]
-  },
-  {
-    type: "channel",
-    author: String,
-    authorId: String,
-    authorUrl: String,
-
-    authorThumbnails: [
-      {
-        url: String,
-        width: Int32,
-        height: Int32
-      }
-    ],
-    subCount: Int32,
-    videoCount: Int32,
-    description: String,
-    descriptionHtml: String
-  }
-];
-```
-
-Parameters:
-
-```
-q: String
-page: Int32
 ```
 
 ##### GET `/api/v1/search/suggestions`
@@ -616,7 +439,7 @@ Parameters:
 ```
 q: String
 page: Int32
-sort_by: "relevance", "rating", "upload_date", "view_count"
+sort: "relevance", "rating", "date", "views"
 date: "hour", "today", "week", "month", "year"
 duration: "short", "long", "medium"
 type: "video", "playlist", "channel", "movie", "show", "all", (default: all)
@@ -706,4 +529,48 @@ page: Int32
     }
   ]
 }
+```
+
+##### GET `/api/v1/hashtag/:tag`
+> Schema:
+```javascript
+{
+  results: VideoObject[],
+}
+```
+Parameters:
+```
+page: Int32
+```
+
+##### GET `/api/v1/resolveurl`
+> Schema:
+```javascript
+{
+  ucid?: String,
+  videoId?: String,
+  playlistId?: String,
+  startTimeSeconds?: String,
+  params?: String,
+  pageType: string
+}
+```
+Parameters:
+```
+url: URL
+```
+
+##### GET `/api/v1/clips`
+> Schema:
+```javascript
+{
+  startTime: Float64, // in seconds
+  endTime: Float64, // in seconds
+  clipTitle: String,
+  video: VideoObject
+}
+```
+Parameters:
+```
+id: string
 ```
