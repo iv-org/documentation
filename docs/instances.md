@@ -50,6 +50,7 @@
 
 * [invidious.incogniweb.net](https://invidious.incogniweb.net) 🇺🇸
 
+* [invidious.darkness.services](https://invidious.darkness.services) 🇺🇸
 
 ### Tor Onion Services:
 
