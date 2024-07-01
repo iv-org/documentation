@@ -29,6 +29,7 @@ nav:
     - 'apache2.md'
     - 'db-maintenance.md'
     - 'captcha-bug.md'
+    - 'register-user.md'
     - 'reset-password.md'
     - 'known-exception.md'
   - 'For public instances Owners':
