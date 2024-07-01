@@ -9,7 +9,8 @@ _This list is incomplete. You can help by expanding it._
 | **Site-wide parameters**                     |                                                                                                                                                                                           |
 | _Dark mode_                                  | Configure default theme without setting cookies                                                                                                                                           |
 | `dark_mode=true`                             | Use dark theme                                                                                                                                                                            |
-| `dark_mode=false`                            | Use light theme                                                                                                                                                                           |
+| `dark_mode=false`                            | Use light theme      |
+| `dark_mode=auto`                             | Use system/browser theme
 | _Thin mode_                                  | Load HTML, CSS, JS and video elements (disables images)                                                                                                                                   |
 | `thin_mode=true`                             | Enabled                                                                                                                                                                                   |
 | `thin_mode=false`                            | Disabled                                                                                                                                                                                  |
@@ -52,10 +53,20 @@ _This list is incomplete. You can help by expanding it._
 | `quality=dash`                               | [DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP)                                                                                                                |
 | `quality=hd720`                              | 720p                                                                                                                                                                                      |
 | `quality=medium`                             | 480p                                                                                                                                                                                      |
+| _Quality_DASH_                                    | Default player quality when using DASH (default is Auto)                                                                                                                                                                  |
+| `quality_dash=auto`                               | Automatically change quality based on network conditions                                                                                                              |
+| `quality_dash=best`                              | Automatically use the best quality avalible                                                                                                                                                                                     |
+| `quality_dash=###`                             | always use desired quality (480, 720, etc).                                                                                                                                                                                     |
+| `quality_dash=worst`                             | Automatically use the worst quality avalible                                                                                                                                                                                     |
 | _Related Videos_                             | Show "Related videos" tab on the right-hand side |                                                           
 | `related_videos=false`                       | Disabled              |
 | _Comments_                                   | Show comments below the video|
-| `comments=false`                             | Disabled           |    
+| `comments=false`                             | Disabled           |   
+| _Extended Description_                       | Extend Video Description by default |
+| `extend_desc=true`                           | Enabled
+**Player Style**                             |    Define how the Video Player looks asthetically                                                                                                                                                                                       |
+| `player_style=invidious`                     | Invidious, the default                                                                                                                                          |
+| `player_style=youtube`                       | YouTube, using a centered play button and always visible video control bar                                                                                                                                                                                         |
 | _Speed_                                      | Default player speed, can be any positive number                                                                                                                                          |
 | `speed=0.5`                                  | Play at 0.5x speed                                                                                                                                                                        |
 | `speed=2`                                    | Play at 2x speed                                                                                                                                                                          |
@@ -90,6 +101,3 @@ _This list is incomplete. You can help by expanding it._
 | _Region_                                     | Provide "hint" (as ISO 3166 country code) for Invidious to load trending videos from the specified region                                                                                 |  |
 | `region=JP`                                  | Load videos that are trending in Japan                                                                                                                                                    |
 | `region=DE`                                  | Load videos that are trending in Germany                                                                                                                                                  |
-| **Player Style**                             |                                                                                                                                                                                           |
-| `player_style=invidious`                     | Invidious, the default                                                                                                                                          |
-| `player_style=youtube`                       | YouTube, using a centered play button and always visible video control bar                                                                                                                                                                                         |
