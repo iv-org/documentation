@@ -22,6 +22,7 @@
 - [NGINX reverse proxy setup](./nginx.md)
 - [Caddy reverse proxy setup](./caddy.md)
 - [Apache2 reverse proxy setup](./apache2.md)
+- [Make Invidious requests data from YouTube through a VPN using Gluetun (in case your IP is blocked)](./gluetun.md)
 - [Database maintenance](./db-maintenance.md)
 - [CAPTCHA bug on Debian and Ubuntu](./captcha-bug.md)
 - [Registering users manually](./register-user.md)
