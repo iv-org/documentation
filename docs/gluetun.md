@@ -1,5 +1,7 @@
 # Make Invidious requests data from YouTube through a VPN using Gluetun (in case your IP is blocked)
 
+This tutorial has been written by [TheFrenchGhosty](https://github.com/TheFrenchGhosty). He is better suited when looking for help about this tutorial.
+
 ## Create the docker network (must be done outside of the compose file):
 
 ```
