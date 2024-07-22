@@ -89,3 +89,52 @@ Update the Invidious config to use the new database address (since the network i
           host: 172.80.0.22
           port: 5432
 ```
+
+## Tell Gluetun to change IP daily (optional but recommended)
+
+**Don't forget to replace `/path/to/` with a proper path**
+
+- Control server documentation https://github.com/qdm12/gluetun-wiki/blob/main/setup/advanced/control-server.md
+
+Start by exposing the Gluetun control server internally (DO NOT EXPOSE IT EXTERNALLY, KEEP `127.0.0.1`), add this port mapping to Gluetun:
+
+```
+    ports:
+      - 127.0.0.1:8000:8000/tcp # Control server
+```
+
+
+Write a script named `restartvpn.sh` and add this content to it:
+
+! Remember to replace /path/to/ with the path you want the log to go (either the script location, or `/var/log/`) !
+
+Note: `2>&1` sent STDERR to STDOUT, `tee /path/to/restartvpn.log` will write the output of the script to /path/to/restartvpn.log (in the current directory) (while still printing it to the shell)
+
+```bash
+echo BEGIN 2>&1 | tee /path/to/restartvpn.log
+
+curl -X GET "http://127.0.0.1:8000/v1/publicip/ip" 2>&1 | tee /path/to/restartvpn.log # Print the original IP
+
+curl -X PUT -H "Content-Type: application/json" -d '{"status":"stopped"}' "http://127.0.0.1:8000/v1/openvpn/status" 2>&1 | tee /path/to/restartvpn.log # Stop OpenVPN
+
+sleep 5
+
+curl -X PUT -H "Content-Type: application/json" -d '{"status":"running"}' "http://127.0.0.1:8000/v1/openvpn/status" 2>&1 | tee /path/to/restartvpn.log # Start OpenVPN (changing the server it's connecting to)
+
+sleep 5
+
+curl -X GET "http://127.0.0.1:8888/v1/openvpn/status" 2>&1 | tee /path/to/restartvpn.log # Print the Gluetun status
+
+curl -X GET "http://127.0.0.1:8000/v1/publicip/ip" 2>&1 | tee /path/to/restartvpn.log # Print the new IP
+
+echo END 2>&1 | tee /path/to/restartvpn.log
+```
+
+
+Run this daily using cron
+
+Run `crontab -e` and add a new cronjob:
+
+```
+@daily /path/to/restartvpn.sh
+```
