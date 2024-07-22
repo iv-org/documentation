@@ -123,7 +123,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{"status":"running"}' "http:
 
 sleep 5
 
-curl -X GET "http://127.0.0.1:8888/v1/openvpn/status" 2>&1 | tee /path/to/restartvpn.log # Print the Gluetun status
+curl -X GET "http://127.0.0.1:8000/v1/openvpn/status" 2>&1 | tee /path/to/restartvpn.log # Print the Gluetun status
 
 curl -X GET "http://127.0.0.1:8000/v1/publicip/ip" 2>&1 | tee /path/to/restartvpn.log # Print the new IP
 
