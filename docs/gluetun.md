@@ -111,7 +111,7 @@ Write a script named `restartvpn.sh` and add this content to it:
 Note: `2>&1` sent STDERR to STDOUT, `tee /path/to/restartvpn.log` will write the output of the script to /path/to/restartvpn.log (in the current directory) (while still printing it to the shell)
 
 ```bash
-echo BEGIN 2>&1 | tee /path/to/restartvpn.log
+echo "BEGIN $(date --rfc-3339=seconds)" 2>&1 | tee /path/to/restartvpn.log
 
 curl -X GET "http://127.0.0.1:8000/v1/publicip/ip" 2>&1 | tee /path/to/restartvpn.log # Print the original IP
 
@@ -127,7 +127,7 @@ curl -X GET "http://127.0.0.1:8000/v1/openvpn/status" 2>&1 | tee /path/to/restar
 
 curl -X GET "http://127.0.0.1:8000/v1/publicip/ip" 2>&1 | tee /path/to/restartvpn.log # Print the new IP
 
-echo END 2>&1 | tee /path/to/restartvpn.log
+echo "END $(date --rfc-3339=seconds)" 2>&1 | tee /path/to/restartvpn.log
 ```
 
 
