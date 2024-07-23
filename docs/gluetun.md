@@ -113,23 +113,23 @@ Note: `2>&1` sent STDERR to STDOUT, `tee /path/to/restartvpn.log` will write the
 ```bash
 #!/usr/bin/env bash
 
-echo "BEGIN $(date --rfc-3339=seconds)" 2>&1 | tee /path/to/restartvpn.log
+echo "BEGIN $(date --rfc-3339=seconds)" 2>&1 | tee -a /path/to/restartvpn.log
 
-curl -X GET "http://127.0.0.1:8000/v1/publicip/ip" 2>&1 | tee /path/to/restartvpn.log # Print the original IP
+curl -s -X GET "http://127.0.0.1:8000/v1/publicip/ip" 2>&1 | tee -a /path/to/restartvpn.log # Print the original IP
 
-curl -X PUT -H "Content-Type: application/json" -d '{"status":"stopped"}' "http://127.0.0.1:8000/v1/openvpn/status" 2>&1 | tee /path/to/restartvpn.log # Stop OpenVPN
-
-sleep 5
-
-curl -X PUT -H "Content-Type: application/json" -d '{"status":"running"}' "http://127.0.0.1:8000/v1/openvpn/status" 2>&1 | tee /path/to/restartvpn.log # Start OpenVPN (changing the server it's connecting to)
+curl -s -X PUT -H "Content-Type: application/json" -d '{"status":"stopped"}' "http://127.0.0.1:8000/v1/openvpn/status" 2>&1 | tee -a /path/to/restartvpn.log # Stop OpenVPN
 
 sleep 5
 
-curl -X GET "http://127.0.0.1:8000/v1/openvpn/status" 2>&1 | tee /path/to/restartvpn.log # Print the Gluetun status
+curl -s -X PUT -H "Content-Type: application/json" -d '{"status":"running"}' "http://127.0.0.1:8000/v1/openvpn/status" 2>&1 | tee -a /path/to/restartvpn.log # Start OpenVPN (changing the server it's connecting to)
 
-curl -X GET "http://127.0.0.1:8000/v1/publicip/ip" 2>&1 | tee /path/to/restartvpn.log # Print the new IP
+sleep 5
 
-echo "END $(date --rfc-3339=seconds)" 2>&1 | tee /path/to/restartvpn.log
+curl -s -X GET "http://127.0.0.1:8000/v1/openvpn/status" 2>&1 | tee -a /path/to/restartvpn.log # Print the Gluetun status
+
+curl -s -X GET "http://127.0.0.1:8000/v1/publicip/ip" 2>&1 | tee -a /path/to/restartvpn.log # Print the new IP
+
+echo "END $(date --rfc-3339=seconds)" 2>&1 | tee -a /path/to/restartvpn.log
 ```
 
 
