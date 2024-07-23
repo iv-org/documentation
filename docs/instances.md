@@ -36,7 +36,7 @@
 
 * [invidious.drgns.space](https://invidious.drgns.space) 🇺🇸
 
-* [inv.us.projectsegfau.lt](https://inv.us.projectsegfau.lt) 🇺🇸
+* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 - Source code/changes: https://github.com/Sommerwiesel/invidious-nerdvpn
 
 * [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵  
 
