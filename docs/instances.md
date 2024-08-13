@@ -18,7 +18,7 @@
 
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 - Source code/changes: https://github.com/Sommerwiesel/invidious-nerdvpn
 
-* [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵
+* [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵 - Source code/changes: https://forgejo.jing.rocks/jing/invidious
 
 * [invidious.materialio.us](https://invidious.materialio.us) 🇳🇿
 
