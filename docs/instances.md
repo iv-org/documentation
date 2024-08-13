@@ -12,45 +12,13 @@
 
 * [yt.artemislena.eu](https://yt.artemislena.eu) 🇩🇪
 
-* [invidious.flokinet.to](https://invidious.flokinet.to) 🇷🇴
-
-* [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷
-
 * [iv.melmac.space](https://iv.melmac.space) 🇩🇪
 
 * [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 
 
-* [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸 
-
-* [invidious.protokolla.fi](https://invidious.protokolla.fi) 🇫🇮 
-
-* [invidious.private.coffee](https://invidious.private.coffee) 🇦🇹
-
-* [yt.drgnz.club](https://yt.drgnz.club) 🇨🇿
-
-* [iv.datura.network](https://iv.datura.network) 🇫🇮
-
-* [invidious.fdn.fr](https://invidious.fdn.fr) 🇫🇷
-
-* [invidious.perennialte.ch](https://invidious.perennialte.ch) 🇦🇺 (uses Cloudflare)
-
-* [invidious.drgns.space](https://invidious.drgns.space) 🇺🇸
-
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 - Source code/changes: https://github.com/Sommerwiesel/invidious-nerdvpn
 
-* [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵  
-
-* [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
-
-* [invidious.reallyaweso.me](https://invidious.reallyaweso.me) 🇩🇪
-
 * [invidious.materialio.us](https://invidious.materialio.us) 🇳🇿
-
-* [inv.in.projectsegfau.lt](https://inv.in.projectsegfau.lt) 🇮🇳
-
-* [invidious.incogniweb.net](https://invidious.incogniweb.net) 🇺🇸
-
-* [invidious.darkness.services](https://invidious.darkness.services) 🇺🇸
 
 ### Tor Onion Services:
 
