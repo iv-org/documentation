@@ -20,6 +20,8 @@
 
 * [invidious.perennialte.ch](https://invidious.perennialte.ch) 🇦🇺 (uses Cloudflare)
 
+* [invidious.reallyaweso.me](https://invidious.reallyaweso.me) 🇩🇪
+
 ### Tor Onion Services:
 
 * [inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion](http://inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion) 🇨🇱 (Onion of inv.nadeko.net)
