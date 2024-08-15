@@ -75,8 +75,8 @@ Note: Currently the repository has to be cloned, this is because the `init-invid
               port: 5432
             check_tables: true
             signature_server: inv_sig_helper:12999
-            po_token: CHANGE_ME
             visitor_data: CHANGE_ME
+            po_token: CHANGE_ME
             # external_port:
             # domain:
             # https_only: false
