@@ -22,6 +22,8 @@
 
 * [invidious.reallyaweso.me](https://invidious.reallyaweso.me) 🇩🇪
 
+* [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
+
 ### Tor Onion Services:
 
 * [inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion](http://inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion) 🇨🇱 (Onion of inv.nadeko.net)
