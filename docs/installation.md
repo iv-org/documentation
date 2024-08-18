@@ -41,16 +41,17 @@ Note: Currently the repository has to be cloned, this is because the `init-invid
     ```
     docker run quay.io/invidious/youtube-trusted-session-generator
     ```
-    You have to run this command on the same public IP address as the Invidious server. Not necessarily the same machine, just the same public IP address.  
-    You will need to copy these two parameters in the third step.
+    You have to run this command on the same public IP address as the one blocked by YouTube. Not necessarily the same machine, just the same public IP address.  
+    You will need to copy these two parameters in the third step.  
+    Subsequent usage of this same token will work on the same IP range or even the same ASN. The point is to generate this token on a blocked IP as "unblocked" IP addresses seems to not generate a token valid for passing the checks on a blocked IP.  
 
-2.  Execute these commands:
+3.  Execute these commands:
     ```bash
     git clone https://github.com/iv-org/invidious.git
     cd invidious
     ```
 
-3.  Edit the docker-compose.yml with this content:
+4.  Edit the docker-compose.yml with this content:
 
     ```docker
     version: "3"
@@ -146,7 +147,11 @@ docker-compose up
 
 [Follow these instructions here on the official tool `youtube-trusted-session-generator`](https://github.com/iv-org/youtube-trusted-session-generator?tab=readme-ov-file#tutorial-without-docker)
 
-These two parameters will be required for passing all verification checks on YouTube side and you will have to configure them in Invidious. You have to run this command on the same public IP address as the Invidious server. Not necessarily the same machine, just the same public IP address.
+These two parameters will be required for passing all verification checks on YouTube side and you will have to configure them in Invidious.
+
+You have to run this command on the same public IP address as the one blocked by YouTube. Not necessarily the same machine, just the same public IP address.  
+You will need to copy these two parameters in the `config.yaml` file.  
+Subsequent usage of this same token will work on the same IP range or even the same ASN. The point is to generate this token on a blocked IP as "unblocked" IP addresses seems to not generate a token valid for passing the checks on a blocked IP.  
 
 ??? warning "About po_token and visitor_data identities"
 
@@ -242,7 +247,11 @@ systemctl enable --now invidious.service
 
 [Follow these instructions here on the official tool `youtube-trusted-session-generator`](https://github.com/iv-org/youtube-trusted-session-generator?tab=readme-ov-file#tutorial-without-docker)
 
-These two parameters will be required for passing all verification checks on YouTube side and you will have to configure them in Invidious. You have to run this command on the same public IP address as the Invidious server. Not necessarily the same machine, just the same public IP address.
+These two parameters will be required for passing all verification checks on YouTube side and you will have to configure them in Invidious.
+
+You have to run this command on the same public IP address as the one blocked by YouTube. Not necessarily the same machine, just the same public IP address.  
+You will need to copy these two parameters in the `config.yaml` file.  
+Subsequent usage of this same token will work on the same IP range or even the same ASN. The point is to generate this token on a blocked IP as "unblocked" IP addresses seems to not generate a token valid for passing the checks on a blocked IP.  
 
 ??? warning "About po_token and visitor_data identities"
 
