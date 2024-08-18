@@ -110,7 +110,9 @@ docker-compose up
 
 Follow the instructions for your distribution here: https://crystal-lang.org/install/
 
-Note: Invidious currently supports the following Crystal versions: `1.9.2` / `1.8.2` / `1.7.X` / `1.6.X`
+**Note:** Invidious currently supports the following Crystal versions: `1.9.2` / `1.10` / `1.11` / `1.12`. \
+Versions prior to `1.9` are incompatible because we use features from the newer versions. \
+Version `1.13.x` should be compatible, however we have not tested it.
 
 #### Install the dependencies
 
