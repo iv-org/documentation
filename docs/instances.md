@@ -26,6 +26,8 @@
 
 * [invidious.einfachzocken.eu](https://invidious.einfachzocken.eu) 🇩🇪
 
+* [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸
+
 ### Tor Onion Services:
 
 * [inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion](http://inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion) 🇨🇱 (Onion of inv.nadeko.net)
