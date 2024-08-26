@@ -28,7 +28,7 @@
 
 * [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸
 
-* [iv.nboeck.de](https://iv.nboeck.de) 🇫🇮
+* [iv.nboeck.de](https://iv.nboeck.de) 🇩🇪
 
 ### Tor Onion Services:
 
