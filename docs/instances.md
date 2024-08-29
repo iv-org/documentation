@@ -30,7 +30,7 @@
 
 * [iv.nboeck.de](https://iv.nboeck.de) 🇩🇪
 
-* [iv.nowhere.moe](https://iv.nowhere.moe) 🇫
+* [iv.nowhere.moe](https://iv.nowhere.moe) 🇫🇮
 
 ### Tor Onion Services:
 
