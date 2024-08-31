@@ -20,7 +20,7 @@
 
 * [invidious.perennialte.ch](https://invidious.perennialte.ch) 🇦🇺 (uses Cloudflare)
 
-* [invidious.reallyaweso.me](https://invidious.reallyaweso.me) 🇩🇪
+* [invidious.reallyaweso.me](https://invidious.reallyaweso.me) 🇦🇹
 
 * [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
 
