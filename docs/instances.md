@@ -34,6 +34,8 @@
 
 * [invidious.adminforge.de](https://invidious.adminforge.de) 🇩🇪
 
+* [invidious.yourdevice.ch](https://invidious.yourdevice.ch) 🇩🇪
+
 ### Tor Onion Services:
 
 * [inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion](http://inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion) 🇨🇱 (Onion of inv.nadeko.net)
