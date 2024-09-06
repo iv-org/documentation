@@ -36,6 +36,8 @@
 
 * [invidious.yourdevice.ch](https://invidious.yourdevice.ch) 🇩🇪
 
+* [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷
+
 ### Tor Onion Services:
 
 * [inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion](http://inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion) 🇨🇱 (Onion of inv.nadeko.net)
