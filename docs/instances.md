@@ -20,7 +20,7 @@
 
 * [invidious.perennialte.ch](https://invidious.perennialte.ch) 🇦🇺 (uses Cloudflare)
 
-* [invidious.reallyaweso.me](https://invidious.reallyaweso.me) 🇩🇪
+* [invidious.reallyaweso.me](https://invidious.reallyaweso.me) 🇦🇹
 
 * [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
 
@@ -31,6 +31,10 @@
 * [iv.nboeck.de](https://iv.nboeck.de) 🇩🇪
 
 * [iv.nowhere.moe](https://iv.nowhere.moe) 🇫🇮
+
+* [invidious.adminforge.de](https://invidious.adminforge.de) 🇩🇪
+
+* [invidious.yourdevice.ch](https://invidious.yourdevice.ch) 🇩🇪
 
 * [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷
 
