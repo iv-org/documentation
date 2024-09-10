@@ -52,6 +52,7 @@ Lists of third-party projects that use or support Invidious.
 | [FreshRSS Extension](https://github.com/tmiland/freshrss-invidious) | A FreshRSS extension to directly embed videos from Invidious channel feeds. | |
 | [UntrackMe](https://f-droid.org/en/packages/app.fedilab.nitterizeme) | Android app to rewrite YouTube links to Invidious. Can optionally play videos in the app as well. | |
 | [Kodi add-on](https://github.com/lekma/plugin.video.invidious) | Watch YouTube videos in the Kodi media center, using the Invidious API. Privacy-friendly alternative to the YouTube API add-on. | |
+| [Koutube](https://github.com/iGerman00/koutube) | Watch YouTube videos on Discord without loading the YouTube embed. Quickly replace any YouTube links using the sed syntax (s/y/k) or by swapping the <kbd>y</kbd> with a <kbd>k</kbd>. | [Source](https://github.com/iGerman00/koutube) / [Website](https://koutube.com) |
 
 ### Utilities
 
