@@ -10,8 +10,6 @@
 
 * [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
 
-* [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 - Source code/changes: https://git.nadeko.net/Fijxu/invidious - CAPTCHA: mCaptcha (https://mcaptcha.org/)
-
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 - Source code/changes: https://github.com/Sommerwiesel/invidious-nerdvpn
 
 * [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇺🇸 - Source code/changes: https://github.com/ggtylerr/invidious
@@ -24,19 +22,9 @@
 
 * [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
 
-* [invidious.einfachzocken.eu](https://invidious.einfachzocken.eu) 🇩🇪
-
 * [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸
 
-* [iv.nboeck.de](https://iv.nboeck.de) 🇩🇪
-
-* [iv.nowhere.moe](https://iv.nowhere.moe) 🇫🇮
-
-* [invidious.adminforge.de](https://invidious.adminforge.de) 🇩🇪
-
 * [invidious.yourdevice.ch](https://invidious.yourdevice.ch) 🇩🇪
-
-* [invidious.privacydev.net](https://invidious.privacydev.net) 🇫🇷
 
 ### Tor Onion Services:
 
