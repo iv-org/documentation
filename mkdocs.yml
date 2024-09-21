@@ -32,6 +32,7 @@ nav:
     - 'register-user.md'
     - 'reset-password.md'
     - 'known-exception.md'
+    - 'gluetun.md'
   - 'For public instances Owners':
     - 'takedown.md'
     - 'hide-instance-behind-proxy-server.md'

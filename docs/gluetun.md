@@ -1,5 +1,15 @@
 # Make Invidious requests data from YouTube through a VPN using Gluetun (in case your IP is blocked)
 
+??? warning "No guarantees"
+
+    This tutorial does not guarantee Invidious to function again. This depends on the public IP address from the VPN that you will be using.
+    
+    YouTube has blocked datacenter IP addresses. If you are using the IP address of a well known VPN provider, this won't solve your issues.
+
+    IP addresses that may not be blocked are residential IP addresses (like at home).
+
+    If following this tutorial made Invidious working again, there is no guarantee that it will keep functioning forever. YouTube may detect traffic coming from Invidious and block your public IP address.
+
 This tutorial has been written by [TheFrenchGhosty](https://github.com/TheFrenchGhosty). He is better suited when looking for help about this tutorial.
 
 ## Create the docker network (must be done outside of the compose file):
@@ -27,9 +37,9 @@ services:
     devices:
       - /dev/net/tun:/dev/net/tun
     ports:
-#      - 8888:8888/tcp # HTTP proxy # Useless
-#      - 8388:8388/tcp # Shadowsocks # Useless
-#      - 8388:8388/udp # Shadowsocks # Useless
+#      - 8888:8888/tcp # HTTP proxy # Not relevant
+#      - 8388:8388/tcp # Shadowsocks # Not relevant
+#      - 8388:8388/udp # Shadowsocks # Not relevant
       - "127.0.0.1:3000:3000" # Invidious (use the Invidious ports configuration)
     volumes:
       - /docker/gluetun/data:/gluetun
