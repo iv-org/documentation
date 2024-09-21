@@ -8,23 +8,11 @@
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
-
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 - Source code/changes: https://github.com/Sommerwiesel/invidious-nerdvpn
-
-* [iv.ggtyler.dev](https://iv.ggtyler.dev) 🇺🇸 - Source code/changes: https://github.com/ggtylerr/invidious
 
 * [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵 - Source code/changes: https://forgejo.jing.rocks/jing/invidious
 
-* [invidious.perennialte.ch](https://invidious.perennialte.ch) 🇦🇺 (uses Cloudflare)
-
-* [invidious.reallyaweso.me](https://invidious.reallyaweso.me) 🇦🇹
-
 * [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
-
-* [inv.tux.pizza](https://inv.tux.pizza) 🇺🇸
-
-* [invidious.yourdevice.ch](https://invidious.yourdevice.ch) 🇩🇪
 
 ### Tor Onion Services:
 
