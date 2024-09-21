@@ -27,6 +27,7 @@
 - [Registering users manually](./register-user.md)
 - [Reset user password](./reset-password.md)
 - [Known Exception in log](./known-exception.md)
+- [Make Invidious requests data from YouTube through a VPN using Gluetun (in case your IP is blocked)](./gluetun.md)
 
 ## For public instance Owners
 - [Handling takedown notices](./takedown.md)
