@@ -27,7 +27,6 @@ nav:
     - 'nginx.md'
     - 'caddy.md'
     - 'apache2.md'
-    - 'gluetun.md'
     - 'db-maintenance.md'
     - 'captcha-bug.md'
     - 'register-user.md'
