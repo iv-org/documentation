@@ -170,7 +170,7 @@ Subsequent usage of this same token will work on the same IP range or even the s
 
 inv_sig_helper handle the "deciphering" of the video stream fetched from YouTube servers. As it is running untrusted code from Google themselves, make sure to isolate it by for example running it inside a LXC or locked down through systemd.
 
-Call for action: A systemd service example is welcome, [if you want to contribute to one](https://github.com/iv-org/documentation/edit/master/docs/installation.md#linux).
+The following systemd service file can be used to run inv_sig_helper with systemd: https://github.com/iv-org/inv_sig_helper/blob/master/inv_sig_helper.service
 
 #### Install Crystal
 
