@@ -170,7 +170,58 @@ Subsequent usage of this same token will work on the same IP range or even the s
 
 inv_sig_helper handle the "deciphering" of the video stream fetched from YouTube servers. As it is running untrusted code from Google themselves, make sure to isolate it by for example running it inside a LXC or locked down through systemd.
 
-Call for action: A systemd service example is welcome, [if you want to contribute to one](https://github.com/iv-org/documentation/edit/master/docs/installation.md#linux).
+The following systemd service file can be used to run inv_sig_helper with systemd:
+```ini
+[Unit]
+Description=Signature helper for Invidious
+After=syslog.target
+After=network.target
+
+[Service]
+ExecStart=/CHANGEME/path/to/sighelper/binary --tcp
+StandardOutput=journal
+StandardError=journal
+Type=simple
+
+CapabilityBoundingSet=
+DynamicUser=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+NoNewPrivileges=yes
+PrivateDevices=yes
+PrivateMounts=yes
+PrivateNetwork=no
+PrivateTmp=yes
+PrivateUsers=yes
+ProcSubset=pid
+ProtectClock=yes
+ProtectControlGroups=yes
+ProtectHome=yes
+ProtectHostname=yes
+ProtectKernelLogs=yes
+ProtectKernelModules=yes
+ProtectKernelTunables=yes
+ProtectProc=invisible
+ProtectSystem=full
+RestrictAddressFamilies=AF_UNIX AF_INET
+RestrictNamespaces=yes
+RestrictRealtime=yes
+SystemCallArchitectures=native
+SystemCallFilter=~@clock
+SystemCallFilter=~@cpu-emulation
+SystemCallFilter=~@debug
+SystemCallFilter=~@module
+SystemCallFilter=~@mount
+SystemCallFilter=~@obsolete
+SystemCallFilter=~@privileged
+SystemCallFilter=~@raw-io
+SystemCallFilter=~@reboot
+SystemCallFilter=~@resources
+SystemCallFilter=~@swap
+
+[Install]
+WantedBy=multi-user.target
+```
 
 #### Install Crystal
 
