@@ -97,6 +97,7 @@ Note: Currently the repository has to be cloned, this is because the `init-invid
 
       inv_sig_helper:
         image: quay.io/invidious/inv-sig-helper:latest
+        init: true
         command: ["--tcp", "0.0.0.0:12999"]
         environment:
           - RUST_LOG=info
