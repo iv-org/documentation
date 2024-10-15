@@ -12,8 +12,6 @@
 
 * [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵 - Source code/changes: https://forgejo.jing.rocks/jing/invidious
 
-* [invidious.privacyredirect.com](https://invidious.privacyredirect.com) 🇫🇮
-
 * [yt.drgnz.club](https://yt.drgnz.club) 🇨🇿
 
 ### Tor Onion Services:
