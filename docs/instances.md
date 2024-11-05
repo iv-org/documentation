@@ -14,8 +14,6 @@
 
 * [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵 - Source code/changes: https://forgejo.jing.rocks/jing/invidious
 
-* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 - Source code/changes: https://github.com/Sommerwiesel/invidious-nerdvpn
-
 * [yt.drgnz.club](https://yt.drgnz.club) 🇨🇿
 
 ### Tor Onion Services:
