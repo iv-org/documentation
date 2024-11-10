@@ -24,6 +24,7 @@ nav:
   - 'For Administrators':
     - 'installation.md'
     - 'configuration.md'
+    - 'youtube-errors-explained.md'
     - 'nginx.md'
     - 'caddy.md'
     - 'apache2.md'

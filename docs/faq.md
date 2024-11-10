@@ -137,6 +137,9 @@ sent by your browser.
 
 **A:** This problem can occur in different scenarios:
 
+* If you are the one that have installed Invidious, please read the page
+  ["All the YouTube error messages explained with solutions"](/youtube-errors-explained/)
+
 * If you're trying to watch a music clip, Youtube is likely blocking the
   video stream. Try enabling `Proxy videos` in the preferences (or add
   `&local=1` in the URL). Switching to another instance is also a good
