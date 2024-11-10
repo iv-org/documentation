@@ -19,6 +19,7 @@
 
 - [Installation](./installation.md)
 - [Configuration](./configuration.md)
+- [YouTube error messages explained with solutions](youtube-errors-explained.md)
 - [NGINX reverse proxy setup](./nginx.md)
 - [Caddy reverse proxy setup](./caddy.md)
 - [Apache2 reverse proxy setup](./apache2.md)
@@ -27,7 +28,6 @@
 - [Registering users manually](./register-user.md)
 - [Reset user password](./reset-password.md)
 - [Known Exception in log](./known-exception.md)
-- [Make Invidious requests data from YouTube through a VPN using Gluetun (in case your IP is blocked)](./gluetun.md)
 
 ## For public instance Owners
 - [Handling takedown notices](./takedown.md)
