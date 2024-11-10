@@ -19,7 +19,7 @@
 
 - [Installation](./installation.md)
 - [Configuration](./configuration.md)
-- [YouTube error messages explained with solutions](youtube-errors-explained.md)
+- [YouTube error messages explained with solutions](./youtube-errors-explained.md)
 - [NGINX reverse proxy setup](./nginx.md)
 - [Caddy reverse proxy setup](./caddy.md)
 - [Apache2 reverse proxy setup](./apache2.md)
