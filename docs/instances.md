@@ -18,6 +18,8 @@
 
 * [yt.drgnz.club](https://yt.drgnz.club) 🇨🇿
 
+* [invidious.catspeed.cc](https://invidious.catspeed.cc) 🇨🇦
+
 ### Tor Onion Services:
 
 * [inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion](http://inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion) 🇨🇱 (Onion of inv.nadeko.net)
