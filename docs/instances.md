@@ -18,7 +18,7 @@
 
 * [yt.drgnz.club](https://yt.drgnz.club) 🇨🇿
 
-* [invidious.catspeed.cc](https://invidious.catspeed.cc) 🇨🇦
+* [invidious.catspeed.cc](https://invidious.catspeed.cc) 🇨🇦 - Source code/changes: https://github.com/catspeed-cc/invidious
 
 ### Tor Onion Services:
 
