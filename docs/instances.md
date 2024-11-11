@@ -8,8 +8,6 @@
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
-
 * [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 - Source code/changes: https://git.nadeko.net/Fijxu/invidious - CAPTCHA: mCaptcha (https://mcaptcha.org/)
 
 * [invidious.jing.rocks](https://invidious.jing.rocks) 🇯🇵 - Source code/changes: https://forgejo.jing.rocks/jing/invidious
