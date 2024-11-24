@@ -1,6 +1,6 @@
 # Reset user password
 
-Resetting a user's invidious password needs you to edit the database.
+Resetting a user's Invidious password needs you to edit the database.
 
 Firstly, generate a bcrypt-encrypted hash for the new password you want to set for the user.
 

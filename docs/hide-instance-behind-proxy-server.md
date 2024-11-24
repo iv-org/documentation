@@ -12,7 +12,7 @@ This proxy server will only redirect the [TCP](https://en.wikipedia.org/wiki/Tra
 
     By forwarding the actual HTTP protocol this is more compute intensive and won't be covered in this tutorial.
 
-    You need to proxy the HTTP protocol normally like you would already do with your current web server for invidious. But in this case from the proxy server to your existing infrastructure. Then also setup the certificates for HTTPS.
+    You need to proxy the HTTP protocol normally like you would already do with your current web server for Invidious. But in this case from the proxy server to your existing infrastructure. Then also setup the certificates for HTTPS.
 
     Then you optionally preserve the IP address of your clients using for example on NGINX set_real_ip_from and real_ip_header.
 

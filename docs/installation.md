@@ -343,7 +343,7 @@ You must set a random generated value for the parameter `hmac_key:`! On Linux yo
 
 Because of various issues, Invidious **must** be restarted often, at least once a day, ideally every hour.
 
-If you use a reverse proxy, you **must** configure invidious to properly serve request through it:
+If you use a reverse proxy, you **must** configure Invidious to properly serve request through it:
 
 `https_only: true` : if you are serving your instance via https, set it to true
 
@@ -353,7 +353,7 @@ If you use a reverse proxy, you **must** configure invidious to properly serve r
 
 `use_pubsub_feeds: true`: if you are serving your instance on the internet, allow for faster notification of new videos ([detailed explanation](https://github.com/iv-org/invidious/blob/97c4165f55c4574efb554c9dae8d919d08da1cdd/config/config.example.yml#L409)).
 
-`use_innertube_for_captions: true`: if you are serving a public instance or you are hosting invidious in a datacenter, allow to unblock captions ([detailed explanation](https://github.com/iv-org/invidious/issues/2567#issuecomment-1727928996)).
+`use_innertube_for_captions: true`: if you are serving a public instance or you are hosting Invidious in a datacenter, allow to unblock captions ([detailed explanation](https://github.com/iv-org/invidious/issues/2567#issuecomment-1727928996)).
 
 ## Update Invidious
 
