@@ -118,7 +118,7 @@ or delete these data at any time from your user account page.
 ## **Q:** What data is shared with YouTube?
 
 **A:** By default, the video stream is fetched directly from Google's servers
-(`googlevideo.com`) in order to reduce the bandwidth required by invidious,
+(`googlevideo.com`) in order to reduce the bandwidth required by Invidious,
 meaning that Google will be able to see your IP address and some other data
 commonly sent by web browsers, like your user-agent string.
 
@@ -253,7 +253,7 @@ used for the session (`SID`) and preferences (`PREFS`) cookies. If set
 incorrectly, the cookies will be invalid, and your browser will silently
 ignore them.
 
-**If you access your invidious instance by IP address (like `192.168.1.205`)
+**If you access your Invidious instance by IP address (like `192.168.1.205`)
 then leave the `domain` config option EMPTY!**
 
 Common invalid values include:

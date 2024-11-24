@@ -14,7 +14,7 @@ sudo dnf install podman
 ### Download the configuration files from Invidious' repository
 
 Note: Currently the repository has to be cloned, this is because the `init-invidious-db.sh` file and the `config/sql` directory have to be mounted to the postgres container (See the volumes section in the postgres' container). This "problem" will be solved in the future.
-> `<INV-PATH>` Absolute path in your home directory where invidious will be downloaded (e.i. /home/johnsmith/.inv)
+> `<INV-PATH>` Absolute path in your home directory where Invidious will be downloaded (e.i. /home/johnsmith/.inv)
 
 ```bash
 cd <INV-PATH>
@@ -173,7 +173,7 @@ In the same terminal where you defined the environmental variables, create new e
     INVIDIOUS_HMAC_KEY="$HMAC"
     EOF
 
-From now on, if you need to change configuration just edit the generated file `~/.config/containers/systemd/invidious.env`. Now, create invidious container unit:
+From now on, if you need to change configuration just edit the generated file `~/.config/containers/systemd/invidious.env`. Now, create Invidious container unit:
 
     cat > ~/.config/containers/systemd/invidious.container <<EOF
     [Container]

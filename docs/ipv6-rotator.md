@@ -78,7 +78,7 @@ If needed, IPv6 official documentation for Docker is at https://docs.docker.com/
    }
    ```
 2. Restart Docker
-3. In your docker-compose file of invidious. Add these lines at the end of your docker-compose
+3. In your docker-compose file of Invidious. Add these lines at the end of your docker-compose
    ```yaml
    networks:
      default:
