@@ -121,7 +121,16 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
       "container": String,
       "encoding": String,
       "qualityLabel": String?,
-      "resolution": String?
+      "resolution": String?,
+      "fps": Int32,
+      "size": String?,
+      "targetDurationsec": Int64?,
+      "maxDvrDurationSec": Int64?,
+      "audioQuality": String?,
+      "audioSampleRate": String?,
+      "audioChannels": String?,
+      "colorInfo": String?,
+      "captionTrack": String?
     }
   ],
   "formatStreams": [
@@ -130,6 +139,7 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
       "itag": String,
       "type": String,
       "quality": String,
+      "bitrate": String?,
       "container": String,
       "encoding": String,
       "qualityLabel": String,
@@ -142,6 +152,14 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
       "label": String,
       "language_code": String,
       "url": String
+    }
+  ],
+  "musicTracks": [
+    {
+      "song": String,
+      "artist": String,
+      "album": String,
+      "license": String
     }
   ],
   "recommendedVideos": [
@@ -157,7 +175,18 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
         }
       ],
       "author": String,
+      "authorUrl": String,
+      "authorId": String?,
+      "authorVerified": Boolean,
+      "authorThumbnails": [
+        {
+          "url": string,
+          "width": Int32,
+          "height": Int32
+        }
+      ],
       "lengthSeconds": Int32,
+      "viewCount": 
       "viewCountText": String
     }
   ]
