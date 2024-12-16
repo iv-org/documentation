@@ -6,6 +6,8 @@
 
 **Warning: Any public instance that isn't in this list is considered untrustworthy. Use them at your own risk.**
 
+**The list of public instances is short due to the [recent YouTube issues](https://github.com/iv-org/invidious/issues/4734). If you can [please host Invidious at home](./installation.md) instead of using a public instance.**
+
 ## List of public Invidious Instances (sorted from oldest to newest):
 
 * [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
