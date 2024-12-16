@@ -117,11 +117,20 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
       "type": String,
       "clen": String,
       "lmt": String,
-      "projectionType": Int32,
+      "projectionType": String,
       "container": String,
       "encoding": String,
       "qualityLabel": String?,
-      "resolution": String?
+      "resolution": String?,
+      "fps": Int32,
+      "size": String?,
+      "targetDurationsec": Int64?,
+      "maxDvrDurationSec": Int64?,
+      "audioQuality": String?,
+      "audioSampleRate": String?,
+      "audioChannels": String?,
+      "colorInfo": String?,
+      "captionTrack": String?
     }
   ],
   "formatStreams": [
@@ -130,6 +139,7 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
       "itag": String,
       "type": String,
       "quality": String,
+      "bitrate": String?,
       "container": String,
       "encoding": String,
       "qualityLabel": String,
@@ -140,8 +150,16 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
   "captions": [
     {
       "label": String,
-      "languageCode": String,
+      "language_code": String,
       "url": String
+    }
+  ],
+  "musicTracks": [
+    {
+      "song": String,
+      "artist": String,
+      "album": String,
+      "license": String
     }
   ],
   "recommendedVideos": [
@@ -157,7 +175,18 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
         }
       ],
       "author": String,
+      "authorUrl": String,
+      "authorId": String?,
+      "authorVerified": Boolean,
+      "authorThumbnails": [
+        {
+          "url": string,
+          "width": Int32,
+          "height": Int32
+        }
+      ],
       "lengthSeconds": Int32,
+      "viewCount": 
       "viewCountText": String
     }
   ]
@@ -203,6 +232,8 @@ Returns annotation XML from YouTube's `/annotations_invideo` endpoint. Alternati
 
       "isEdited": Boolean,
       "isPinned": Boolean,
+      "isSponsor": Boolean?,
+      "sponsorIconUrl": String?,
 
       "content": String,
       "contentHtml": String,
@@ -430,6 +461,13 @@ q: String
     videoCount: Int32,
     description: String,
     descriptionHtml: String
+  },
+  {
+    type: "hashtag"
+    title: String,
+    url: String,
+    channelCount: Int32,
+    videoCount: Int32
   }
 ];
 ```
@@ -470,6 +508,7 @@ region: ISO 3166 country code (default: "US")
 
     "videoCount": Int32,
     "viewCount": Int64,
+    "viewCountText": String,
     "updated": Int64,
 
     "videos": [

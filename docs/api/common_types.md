@@ -57,7 +57,15 @@
 
 	"liveNow": Boolean,
 	"premium": Boolean,
-	"isUpcoming": Boolean
+	"isUpcoming": Boolean,
+
+	"isNew" Boolean,
+	"is4k": Boolean,
+	"is8k": Boolean,
+	"isVr180": Boolean,
+	"isVr360": Boolean,
+	"is3d": Boolean,
+	"hasCaptions": Boolean
 }
 ```
 

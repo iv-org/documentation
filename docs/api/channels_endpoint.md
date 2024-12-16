@@ -124,6 +124,7 @@ This is the same as requesting `/api/v1/channels/:id/videos` without URL paramet
 > URL parameters:
 
 * `continuation`: A continuation token to get the next chunk of items. The token is provided each time this API is requested.
+* `sort_by`: Sort order filter. Accepted values: `newest`, `popular` or `oldest`
 
 > Response:
 
@@ -135,6 +136,7 @@ See: GET `/api/v1/channels/:id/videos`
 > URL parameters:
 
 * `continuation`: A continuation token to get the next chunk of items. The token is provided each time this API is requested.
+* `sort_by`: Sort order filter. Accepted values: `newest`, `popular` or `oldest`
 
 > Response:
 
