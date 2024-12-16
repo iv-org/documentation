@@ -57,6 +57,7 @@ YouTube is forbidding you from viewing/downloading videos from their "googlevide
 ### Cause(s)
 
 This error has different root causes:
+
 - You are loading a video stream that is restricted to the IP address that generated that URL. For example this can happen on music videos or copyright content.
 - You or someone on your network have downloaded a lot of videos. Your IP address has been blocked from YouTube servers.
 
