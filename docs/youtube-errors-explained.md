@@ -21,7 +21,7 @@ Usually it is related to a lot of traffic being generated for refreshing your su
 
 - Try to keep the `channel_refresh_interval` parameter commented to let Invidious refreshing your subscriptions less frequently.
 - Unsubscribe from some channels. While this may not be ideal, this will definitively send less data to YouTube.
-- Configure pubsub: [/installation/#post-install-configuration](/installation/#post-install-configuration). This requires your Invidious to be available on the internet and through a public domain.  
+- Configure pubsub: [/installation/#post-install-configuration](./installation.md/#post-install-configuration). This requires your Invidious to be available on the internet and through a public domain.  
    After this you can try to extend the refresh interval, like to `channel_refresh_interval: 240m`.  
    You will still get almost instantaneous notifications from new YouTube videos thanks to pubsub but you will induce less refreshing traffic to YouTube servers. As pubsub is method for YouTube to notify your Invidious instance for new videos.
 - Change your public IP address. This may not solve the issue permanently but temporarily solve it.
@@ -39,7 +39,7 @@ YouTube is blocking the communication of Invidious to their servers.
 
 ### Solution(s)
 
-First make sure that you are running the latest version of Invidious and you are using inv_sig_helper. Please see [the updated installation guide](/installation/).
+First make sure that you are running the latest version of Invidious and you are using inv_sig_helper. Please see [the updated installation guide](./installation.md).
 
 After which you can try these solutions:
 
@@ -47,3 +47,26 @@ After which you can try these solutions:
 - If you have IPv6 on the computer hosting Invidious, you can try to rotate your IPv6 public address, tutorial available here: "[Rotate your IPv6 address for escaping YouTube blocking](/ipv6-rotator/)"
 
 All of these options do not guarantee you to bring back Invidious to working conditions. These are just advices for trying to unblock your Invidious instance from YouTube. Make sure to always specify any modification being done to your Invidious when reporting issues.
+
+## Videoplayback URLs that returns 403 HTTP errors
+
+### Error explained
+
+YouTube is forbidding you from viewing/downloading videos from their "googlevideo.com" server. Other functions such as viewing channels pages may still work.
+
+### Cause(s)
+
+This error has different root causes:
+- You are loading a video stream that is restricted to the IP address that generated that URL. For example this can happen on music videos or copyright content.
+- You or someone on your network have downloaded a lot of videos. Your IP address has been blocked from YouTube servers.
+
+### Solution(s)
+
+First make sure that you are running the latest version of Invidious and you are using inv_sig_helper. Please see [the updated installation guide](./installation.md).
+
+After which you can try these solutions:
+
+- Change your public IP address. Reboot your router or by configuring a proxy in Invidious: https://github.com/iv-org/invidious/blob/2150264d849771df8f15bab172ab6d87eeb80c55/config/config.example.yml#L176-L185
+- If you have IPv6 on the computer hosting Invidious, you can try to rotate your IPv6 public address, tutorial available here: "[Rotate your IPv6 address for escaping YouTube blocking](./ipv6-rotator.md)"
+- If it's a music video or a copyright content, then try to make sure that the video is loaded from the same IP that generated the video URL.
+
