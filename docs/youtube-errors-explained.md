@@ -39,11 +39,13 @@ YouTube is blocking the communication of Invidious to their servers.
 
 ### Solution(s)
 
-First make sure that you are running the latest version of Invidious and you are using inv_sig_helper. Please see [the updated installation guide](./installation.md).
+First make sure that you are running the latest version of Invidious and you are using Invidious companion. Please see [the updated installation guide](./installation.md).
 
 After which you can try these solutions:
 
-- Change your public IP address. Reboot your router or by configuring a proxy in Invidious: https://github.com/iv-org/invidious/blob/2150264d849771df8f15bab172ab6d87eeb80c55/config/config.example.yml#L176-L185
+- Change your public IP address. Reboot your router or by configuring a proxy on Invidious companion: https://github.com/iv-org/invidious-companion/blob/be1f4bee39f4d01fe83c65855538dbaacbf6d0c0/config/default.toml#L14
+- Configuring a YouTube account by enabling `oauth_enabled` in Invidious companion: https://github.com/iv-org/invidious-companion/blob/be1f4bee39f4d01fe83c65855538dbaacbf6d0c0/config/default.toml#L23.  
+   **WARNING**: YouTube is known to ban accounts being used on non official YouTube clients, you have been warned. Do not use a personal account.
 - If you have IPv6 on the computer hosting Invidious, you can try to rotate your IPv6 public address, tutorial available here: "[Rotate your IPv6 address for escaping YouTube blocking](/ipv6-rotator/)"
 
 All of these options do not guarantee you to bring back Invidious to working conditions. These are just advices for trying to unblock your Invidious instance from YouTube. Make sure to always specify any modification being done to your Invidious when reporting issues.
