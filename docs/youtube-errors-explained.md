@@ -6,7 +6,7 @@
 
 ### Error explained
 
-YouTube is limiting the traffic that you can sent to their servers. This error may appear for a duration of 24 hours.
+YouTube is limiting the traffic that you can send to their servers. This error may appear for a duration of 24 hours.
 
 ### Cause(s)
 
