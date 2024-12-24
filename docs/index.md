@@ -18,6 +18,7 @@
 ## For Administrators
 
 - [Installation](./installation.md)
+- [Invidious companion documentation](./invidious-companion.md)
 - [Configuration](./configuration.md)
 - [YouTube error messages explained with solutions](./youtube-errors-explained.md)
 - [NGINX reverse proxy setup](./nginx.md)

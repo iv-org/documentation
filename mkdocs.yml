@@ -23,6 +23,7 @@ nav:
     - 'redirector.md'
   - 'For Administrators':
     - 'installation.md'
+    - 'invidious-companion.md'
     - 'configuration.md'
     - 'youtube-errors-explained.md'
     - 'nginx.md'
