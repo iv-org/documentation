@@ -67,8 +67,13 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
               port: 5432
             check_tables: true
             invidious_companion:
-            - private_url: "http://companion:8282/" # URL used for the internal communication between invidious and invidious companion
-              public_url: "http://localhost:8282/" # (public) URL used for the communication between your browser and invidious companion
+            # URL used for the internal communication between invidious and invidious companion
+            - private_url: "http://companion:8282/"
+            # (public) URL used for the communication between your browser and invidious companion
+            # IF you are using a reverse proxy OR accessing invidious from an external IP then you NEED to change this value
+            # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
+              public_url: "http://localhost:8282/"
+            # IT is NOT recommended to use the same key as HMAC KEY. Generate a new key!
             invidious_companion_key: "CHANGE_ME!!"
             # external_port:
             # domain:
@@ -91,7 +96,9 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
         image: quay.io/invidious/invidious-companion:latest
         environment:
           - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
-        #  - SERVER_BASE_URL=http://localhost:8282 # ONLY use if you are using a reverse proxy - this the same URL as "public_url"
+        # SET this value IF you are using a reverse proxy OR accessing invidious from an external IP.
+        # Please consult for more doc: https://github.com/iv-org/invidious-companion/wiki/Environment-variables
+        #  - SERVER_BASE_URL=http://localhost:8282
         restart: unless-stopped
         ports:
           - "127.0.0.1:8282:8282"
@@ -211,8 +218,14 @@ edit config/config.yaml
 
 add:
 invidious_companion:
-- private_url: "http://companion:8282/" # URL used for the internal communication between invidious and invidious companion
-  public_url: "http://localhost:8282/" # (public) URL used for the communication between your browser and invidious companion
+  # URL used for the internal communication between invidious and invidious companion
+  - private_url: "http://companion:8282/"
+  # (public) URL used for the communication between your browser and invidious companion
+  # IF you are using a reverse proxy OR accessing invidious from an external IP then you NEED to change this value
+  # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
+    public_url: "http://localhost:8282/"
+# IT is NOT recommended to use the same key as HMAC KEY. Generate a new key!
+invidious_companion_key: "CHANGE_ME!!"
 
 # Deploy the database
 ./invidious --migrate
@@ -236,7 +249,16 @@ wget https://github.com/iv-org/invidious-companion???
 git clone https://github.com/iv-org/invidious-companion.git
 deno compile
 
-# create a new systemd service for running it
+# launch it manually
+SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG ./invidious-companion
+
+You can optionally launch it using SERVER_BASE_URL if you are using a reverse proxy or an external IP.
+
+See more docs about the environment variables: https://github.com/iv-org/invidious-companion/wiki/Environment-variables
+
+# OR create a new systemd service for running it in background
+# TODO systemd service not yet available
+# https://github.com/iv-org/invidious-companion/issues/3
 sudo wget https://github.com/iv-org/invidious-companion/raw/refs/heads/master/systemd.service -O /etc/systemd/systemd/invidious-companion.service
 sudo systemctl enable --now invidious.service
 ```
@@ -289,8 +311,13 @@ edit config/config.yaml
 
 add:
 invidious_companion:
-- private_url: "http://companion:8282/" # URL used for the internal communication between invidious and invidious companion
-  public_url: "http://localhost:8282/" # (public) URL used for the communication between your browser and invidious companion
+  # URL used for the internal communication between invidious and invidious companion
+  - private_url: "http://companion:8282/"
+  # (public) URL used for the communication between your browser and invidious companion
+  # IF you are using a reverse proxy OR accessing invidious from an external IP then you NEED to change this value
+  # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
+    public_url: "http://localhost:8282/"
+invidious_companion_key: "CHANGE_ME!!"
 
 # launch invidious
 ./invidious
@@ -306,7 +333,12 @@ git clone https://github.com/iv-org/invidious-companion.git
 deno compile
 
 # launch it
-./invidious-companion
+SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG ./invidious-companion
+
+You can optionally launch it using SERVER_BASE_URL if you are using a reverse proxy or an external IP.
+
+See more docs about the environment variables: https://github.com/iv-org/invidious-companion/wiki/Environment-variables
+
 ```
 
 ### Windows
