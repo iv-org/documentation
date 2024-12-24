@@ -68,7 +68,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
             check_tables: true
             invidious_companion:
             # URL used for the internal communication between invidious and invidious companion
-            - private_url: "http://companion:8282/"
+            - private_url: "http://invidious_companion:8282/"
             # (public) URL used for the communication between your browser and invidious companion
             # IF you are using a reverse proxy OR accessing invidious from an external IP then you NEED to change this value
             # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
