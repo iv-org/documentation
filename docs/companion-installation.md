@@ -90,8 +90,8 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
       invidious_companion:
         image: quay.io/invidious/invidious-companion:latest
         environment:
-          - SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
-        #  - BASE_URL=http://localhost:8282 # ONLY use if you are using a reverse proxy - this the same URL as "public_url"
+          - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
+        #  - SERVER_BASE_URL=http://localhost:8282 # ONLY use if you are using a reverse proxy - this the same URL as "public_url"
         restart: unless-stopped
         ports:
           - "127.0.0.1:8282:8282"
