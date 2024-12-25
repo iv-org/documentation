@@ -42,7 +42,13 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
     cd invidious
     ```
 
-2.  Edit the docker-compose.yml with this content:
+2.  Assign the correct permissions to Invidious companion for the cache directory:
+    ```bash
+    mkdir -p /var/tmp/youtubei.js
+    chown 10001:10001 -R /var/tmp/youtubei.js
+    ```
+
+3.  Edit the docker-compose.yml with this content:
 
     ```docker
     version: "3"
@@ -52,6 +58,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
         image: quay.io/invidious/invidious:companion
         # image: quay.io/invidious/invidious:companion-arm64 # ARM64/AArch64 devices
         restart: unless-stopped
+        # Remove "127.0.0.1:" if used from an external IP
         ports:
           - "127.0.0.1:3000:3000"
         environment:
@@ -68,7 +75,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
             check_tables: true
             invidious_companion:
             # URL used for the internal communication between invidious and invidious companion
-            - private_url: "http://invidious_companion:8282/"
+            - private_url: "http://companion:8282/"
             # (public) URL used for the communication between your browser and invidious companion
             # IF you are using a reverse proxy OR accessing invidious from an external IP then you NEED to change this value
             # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
@@ -92,7 +99,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
         depends_on:
           - invidious-db
 
-      invidious_companion:
+      companion:
         image: quay.io/invidious/invidious-companion:latest
         environment:
           - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
@@ -100,6 +107,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
         # Please consult for more doc: https://github.com/iv-org/invidious-companion/wiki/Environment-variables
         #  - SERVER_BASE_URL=http://localhost:8282
         restart: unless-stopped
+        # Remove "127.0.0.1:" if used from an external IP
         ports:
           - "127.0.0.1:8282:8282"
         logging:
@@ -136,7 +144,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
 
     Note: This compose is made for a true "production" setup, where Invidious is behind a reverse proxy. If you prefer to directly access Invidious, replace `127.0.0.1:3000:3000` with `3000:3000` under the `ports:` section.
 
-3. Run the docker composition:
+4. Run the docker composition:
 
 ```
 docker compose up -d
