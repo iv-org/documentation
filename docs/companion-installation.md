@@ -42,10 +42,10 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
     cd invidious
     ```
 
-2.  Assign the correct permissions to Invidious companion for the cache directory:
+2.  Generate two secret keys, one for Invidious (HMAC_KEY) and one for Invidious companion (invidious_companion_key)
     ```bash
-    mkdir -p /var/tmp/youtubei.js
-    chown 10001:10001 -R /var/tmp/youtubei.js
+    pwgen 16 1 # for Invidious (HMAC_KEY)
+    pwgen 16 1 # for Invidious companion (invidious_companion_key)
     ```
 
 3.  Edit the docker-compose.yml with this content:
@@ -81,11 +81,13 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
             # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
               public_url: "http://localhost:8282/"
             # IT is NOT recommended to use the same key as HMAC KEY. Generate a new key!
+            # Use the key generated in the 2nd step
             invidious_companion_key: "CHANGE_ME!!"
             # external_port:
             # domain:
             # https_only: false
             # statistics_enabled: false
+            # Use the key generated in the 2nd step
             hmac_key: "CHANGE_ME!!"
         healthcheck:
           test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit 1
@@ -102,7 +104,8 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
       companion:
         image: quay.io/invidious/invidious-companion:latest
         environment:
-          - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
+        # Use the key generated in the 2nd step
+           - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
         # SET this value IF you are using a reverse proxy OR accessing invidious from an external IP.
         # Please consult for more doc: https://github.com/iv-org/invidious-companion/wiki/Environment-variables
         #  - SERVER_BASE_URL=http://localhost:8282
@@ -117,10 +120,9 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
         cap_drop:
           - ALL
         read_only: true
-        user: 10001:10001
         # cache for youtube library
         volumes:
-          - /var/tmp/youtubei.js:/var/tmp/youtubei.js:rw
+          - companioncache:/var/tmp/youtubei.js:rw
         security_opt:
           - no-new-privileges:true
 
