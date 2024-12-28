@@ -1,7 +1,8 @@
 # Traefik reverse proxy setup with Invidious companion
 
-This is a very basic config, assuming that you're using Traefik to manage SSL certificates for you, and Traefik is on the same server as the Invidious and companion container: 
+This is a very basic config, assuming that you're using Traefik to manage SSL certificates for you, and Traefik is on the same server as the Invidious and companion container.
 Do not forget to replace `<server_name>` with your domain.
+
 **Invidious Setup**
 ```
 ...
