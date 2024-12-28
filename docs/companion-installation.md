@@ -384,6 +384,7 @@ AND make sure to add these new routes into your reverse proxy, example in variou
 - [NGINX](./companion-nginx.md)
 - [Apache2](./companion-apache2.md)
 - [Caddy](./companion-caddy.md)
+- [Traefik](./companion-traefik.md)
 
 ## Update Invidious
 
