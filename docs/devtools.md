@@ -17,7 +17,7 @@ This tutorial only works on the desktop version of Firefox and Chromium based br
 
 1. Keep the Devtools open.
 2. On Chromium based browser, drag the "Status" column to make it wide as much as possible.  
-   ![Wide status bar on Google Chrome](./images/devtools-chrome-wide-status.gif)
+   ![Wide status bar on Google Chrome](./images/devtools-chrome-wide-status.gif)    
    On Firefox, drag the "Transferred" column to make it wide as much as possible.  
    ![Wide transferred bar on Google Chrome](./images/devtools-firefox-wide-transferred.gif)
 3. Refresh the page (F5 key) and load your video again if refreshing did not play the video again.
