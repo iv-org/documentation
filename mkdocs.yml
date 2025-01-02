@@ -26,6 +26,7 @@ nav:
     - 'invidious-companion.md'
     - 'configuration.md'
     - 'youtube-errors-explained.md'
+    - 'devtools.md'
     - 'nginx.md'
     - 'caddy.md'
     - 'apache2.md'
