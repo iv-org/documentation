@@ -8,7 +8,7 @@ This tutorial only works on the desktop version of Firefox and Chromium based br
 
 1. Press the F12 key on your keyboard. Or Ctrl + Shift + E at the same time if F12 did not work.
 2. By default, this will automatically show you the "Elements" category. Click instead on the "Network" tab.
-3. You should see a window like this:
+3. You should see a window like this:  
    ![DevTools on Google Chrome](./images/devtools-chrome.png)
    ![DevTools on Firefox](./images/devtools-firefox.png)
 4. You may not see any requests listed yet or already some active requests, follow the second part for the troubleshooting part.
@@ -16,9 +16,9 @@ This tutorial only works on the desktop version of Firefox and Chromium based br
 ## Troubleshoot failed requests
 
 1. Keep the Devtools open.
-2. On Chromium based browser, drag the "Status" column to make it wide as much as possible.
+2. On Chromium based browser, drag the "Status" column to make it wide as much as possible.  
    ![Wide status bar on Google Chrome](./images/devtools-chrome-wide-status.gif)
-   On Firefox, drag the "Transferred" column to make it wide as much as possible.
+   On Firefox, drag the "Transferred" column to make it wide as much as possible.  
    ![Wide transferred bar on Google Chrome](./images/devtools-firefox-wide-transferred.gif)
 3. Refresh the page (F5 key) and load your video again if refreshing did not play the video again.
 4. Every line under Name, Status, Type, Size OR "Status", "Method", "File" is a "Web Request". More info about what it is [here](https://web.archive.org/web/20241207173530/https://sourcedefense.com/glossary/web-request/).
@@ -44,11 +44,11 @@ Please read the dedicated page here: [Videoplayback URLs that returns 403 HTTP e
 
 ### B) Request with name "videoplayback" or "latest_version" or some random number/letters with "?local=true" and with Status ERR_NAME_NOT_RESOLVED OR NS_ERROR_UNKNOWN_HOST or CORS failed or NS_ERROR_CONNECTION_REFUSED or ERR_CONNECTION_REFUSED or any error starting with NS_ERROR_CONNECTION or ERR_CONNECTION
 
-![latest_version unknown host](./images/devtools-firefox-unknown-host-latest-version.png)
-![dash unknown host](./images/devtools-firefox-unknown-host-dash.png)
-![latest_version connection refused](./images/devtools-firefox-connection-refused-latest-version.png)
-![latest_version unknown host](./images/devtools-chrome-unknown-host-latest-version.png)
-![latest_version connection refused](./images/devtools-chrome-connection-refused-latest-version.png)
+![latest_version unknown host](./images/devtools-firefox-unknown-host-latest-version.png)    
+![dash unknown host](./images/devtools-firefox-unknown-host-dash.png)   
+![latest_version connection refused](./images/devtools-firefox-connection-refused-latest-version.png)    
+![latest_version unknown host](./images/devtools-chrome-unknown-host-latest-version.png)    
+![latest_version connection refused](./images/devtools-chrome-connection-refused-latest-version.png)    
 
 #### Cause
 
@@ -62,7 +62,7 @@ Your browser can't resolve an external resource because the domain/hostname does
 
 ### C) Request with Status 500
 
-![error with status 500](./images/devtools-chrome-500.png)
+![error with status 500](./images/devtools-chrome-500.png)    
 ![error with status 500](./images/devtools-firefox-500.png)
 
 #### Cause
