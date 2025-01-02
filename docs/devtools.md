@@ -71,7 +71,7 @@ The Invidious backend returned an error.
 
 #### Diagnostic
 
-Click on the line for request then go "Preview" tab and visualize the error.
+Click on the line of the request then go "Preview" tab and visualize the error.
 
 If it's an HTML response then you will see the error directly, if it's JSON then you might have to scroll or find more precisely the error.
 
@@ -79,7 +79,19 @@ If it's an HTML response then you will see the error directly, if it's JSON then
 
 Keep note of the error found using DevTools and also look at the logs of Invidious for any errors. Once done, search in the Invidious issues for possible solutions: https://github.com/iv-org/invidious/issues
 
-### D) I don't see any red lines
+### D) I see red lines for "videoplayback" but my error type is not listed
+
+#### Diagnostic
+
+Click on the line of the request then check the Status Code or "Status" in Firefox.
+
+#### Solution
+
+- Look for possible solutions in the GitHub issues of Invidious by searching for the error message: https://github.com/iv-org/invidious/issues
+- If you did not really find any solution then you might have hit a unknown bug, if that's the case then please open a bug report at https://github.com/iv-org/invidious/issues/new/choose.   
+  Make sure to include as much details as possible.
+
+### E) I don't see any red lines
 
 #### Diagnostic
 
@@ -89,7 +101,8 @@ Go to the Console tab and check the errors. If you see errors like: `The media c
 
 - If you are on Microsoft Edge or on a non-standard Firefox installation, you might be missing some codecs: https://github.com/iv-org/invidious/issues/3756
 - Look for possible solutions in the GitHub issues of Invidious by searching for the error message: https://github.com/iv-org/invidious/issues
-- If you did not really find any solution then you might have hit a unknown bug, if that's the case then please open a bug report at https://github.com/iv-org/invidious/issues/new/choose
+- If you did not really find any solution then you might have hit a unknown bug, if that's the case then please open a bug report at https://github.com/iv-org/invidious/issues/new/choose.   
+  Make sure to include as much details as possible.
 
 ## Export the requests done for further analysis by Invidious developers
 
