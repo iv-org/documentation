@@ -1,5 +1,11 @@
 # Diagnose video playback issues with DevTools
 
+## Why this tutorial?
+
+Invidious or more specifically Video.JS (the library for the video player) can't give you a proper error for the famous message "The media could not be loaded, either because the server or network failed or because the format is not supported.".
+
+Here is how to find the real error and fix it.
+
 ## Requirements
 
 This tutorial only works on the desktop version of Firefox and Chromium based browsers (Chrome, Brave, Opera, Vivaldi, Edge and so on).
