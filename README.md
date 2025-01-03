@@ -1,7 +1,5 @@
 # The Invidious documentation
 
-This project is tested with BrowserStack.
-
 ## Running the documentation locally for development purposes
 
 Run those commands in the repository's folder.
