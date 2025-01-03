@@ -13,6 +13,8 @@ After installation take a look at the [Post-install steps](installation.md#post-
 
 ## Podman (rootless container)
 
+Guide contributor(s): [@sigulete](https://github.com/sigulete)
+
 Podman is usually pre-installed in Fedora, CentOS, RHEL and derivatives. But if this is not the case, the instruction below will install all necessary packages.
 
 RHEL based and RHEL-like systems
@@ -110,6 +112,8 @@ podman image prune -f
 ```
 
 ## Podman via systemd
+
+Guide contributor(s): [@lzap](https://github.com/lzap)
 
 This method is suitable for systems which come with Podman version 5.x or higher and systemd (e.g. Fedora, CentOS Stream 9 or clones). Instructions are written for root-less mode, do not run the commands as root since paths are different. Ensure that SELinux is in enforcing mode for maximum security.
 
@@ -219,6 +223,8 @@ And the whole application can be now started:
 Keep in mind that generated units cannot be enabled using `systemctl enable`, the main pod will be enabled automatically. If you do not like this behavior, remove the `WantedBy` line from `invidious.pod`.
 
 ## MacOS
+
+Guide contributor(s): Previously Invidious developers
 
 ### Generate po_token and visitor_data identities
 
