@@ -66,7 +66,7 @@ Your browser can't resolve an external resource because the domain/hostname does
 - Look for possible solutions in the GitHub issues of Invidious by searching for the error message: https://github.com/iv-org/invidious/issues
 - If you are trying the new Invidious companion, make sure that public_url and base_url is correctly configured. Double check!
 
-### C) Request with Status 500
+### C) Request with Status 500 or Status 400
 
 ![error with status 500](./images/devtools-chrome-500.png)    
 ![error with status 500](./images/devtools-firefox-500.png)
