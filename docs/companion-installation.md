@@ -142,6 +142,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
 
     volumes:
       postgresdata:
+      companioncache:
     ```
 
     Note: This compose is made for a true "production" setup, where Invidious is behind a reverse proxy. If you prefer to directly access Invidious, replace `127.0.0.1:3000:3000` with `3000:3000` under the `ports:` section.
