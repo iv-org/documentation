@@ -13,7 +13,7 @@ Lists of third-party projects that use or support Invidious.
 | [WatchTube](https://github.com/WatchTubeTeam/) | Powerful YouTube client for Apple Watch. | [App Store](https://apps.apple.com/app/watchtube/id1599884909) |
 | [TubiTui](https://codeberg.org/777/TubiTui) | A lightweight, libre, TUI-based YouTube client. For desktop. | |
 | [Ytfzf](https://github.com/pystardust/ytfzf) | A posix script to find and watch youtube videos from the terminal. (Without API). | |
-| [Playlet](https://github.com/iBicha/playlet) | A Roku TV YouTube app that uses Invidious as a backend. | [Roku Store](https://channelstore.roku.com/en-ca/details/840aec36f51bfe6d96cf6db9055a372a/playlet) |
+| [Playlet](https://github.com/iBicha/playlet) | A Roku TV YouTube app that uses Invidious as a backend. | [Roku Store](https://channelstore.roku.com/details/840aec36f51bfe6d96cf6db9055a372a/playlet) |
 | [GTK+ Pipe Viewer](https://github.com/trizen/pipe-viewer) | YouTube client for Linux. | |
 | [PlasmaTube](https://invent.kde.org/multimedia/plasmatube/) | YouTube client for Linux. | [KDE Applications](https://apps.kde.org/plasmatube/) |
 | [yt2alt](https://github.com/iBicha/yt2alt) | A cli tool to import your profile from Youtube to an alternative platform. | |
