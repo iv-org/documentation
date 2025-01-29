@@ -16,7 +16,7 @@
 
 * [invidious.f5.si](https://invidious.f5.si) 🇯🇵 - Cloudflare
 
-* [invidious.schenkel.eti.br](invidious.schenkel.eti.br) 🇧🇷 - Cloudflare
+* [invidious.schenkel.eti.br](https://invidious.schenkel.eti.br) 🇧🇷 - Cloudflare
 
 ### Tor Onion Services:
 
