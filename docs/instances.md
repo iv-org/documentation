@@ -12,10 +12,6 @@
 
 * [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 - Source code/changes: https://git.nadeko.net/Fijxu/invidious - CAPTCHA: mCaptcha (https://mcaptcha.org/)
 
-* [invidious.f5.si](https://invidious.f5.si) 🇯🇵 - Cloudflare
-
-* [invidious.schenkel.eti.br](https://invidious.schenkel.eti.br) 🇧🇷 - Cloudflare
-
 ### Tor Onion Services:
 
 * [inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion](http://inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion) 🇨🇱 (Onion of inv.nadeko.net)
