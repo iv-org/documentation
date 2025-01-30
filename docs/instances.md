@@ -10,13 +10,7 @@
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
-
 * [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 - Source code/changes: https://git.nadeko.net/Fijxu/invidious - CAPTCHA: mCaptcha (https://mcaptcha.org/)
-
-* [invidious.f5.si](https://invidious.f5.si) 🇯🇵 - Cloudflare
-
-* [invidious.schenkel.eti.br](https://invidious.schenkel.eti.br) 🇧🇷 - Cloudflare
 
 ### Tor Onion Services:
 
