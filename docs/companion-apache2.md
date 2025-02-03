@@ -12,12 +12,12 @@
         ProxyRequests off
         ProxyPass / http://127.0.0.1:3000/ nocanon
         ProxyPassReverse / http://127.0.0.1:3000/
-        ProxyPass /latest_version http://127.0.0.1:3000/ nocanon
-        ProxyPassReverse /latest_version http://127.0.0.1:3000/
-        ProxyPass /api/manifest/dash/id/ http://127.0.0.1:3000/ nocanon
-        ProxyPassReverse /api/manifest/dash/id/ http://127.0.0.1:3000/
-        ProxyPass /videoplayback http://127.0.0.1:3000/ nocanon
-        ProxyPassReverse /videoplayback http://127.0.0.1:3000/
+        ProxyPass /latest_version http://127.0.0.1:8282/ nocanon
+        ProxyPassReverse /latest_version http://127.0.0.1:8282/
+        ProxyPass /api/manifest/dash/id/ http://127.0.0.1:8282/ nocanon
+        ProxyPassReverse /api/manifest/dash/id/ http://127.0.0.1:8282/
+        ProxyPass /videoplayback http://127.0.0.1:8282/ nocanon
+        ProxyPassReverse /videoplayback http://127.0.0.1:8282/
 
         AllowEncodedSlashes on
 
@@ -62,12 +62,12 @@ To make the VirtualHost config below actually work, you should as well:
 
     ProxyPass / http://127.0.0.1:3000/ nocanon
     ProxyPassReverse / http://127.0.0.1:3000/
-    ProxyPass /latest_version http://127.0.0.1:3000/ nocanon
-    ProxyPassReverse /latest_version http://127.0.0.1:3000/
-    ProxyPass /api/manifest/dash/id/ http://127.0.0.1:3000/ nocanon
-    ProxyPassReverse /api/manifest/dash/id/ http://127.0.0.1:3000/
-    ProxyPass /videoplayback http://127.0.0.1:3000/ nocanon
-    ProxyPassReverse /videoplayback http://127.0.0.1:3000/
+    ProxyPass /latest_version http://127.0.0.1:8282/ nocanon
+    ProxyPassReverse /latest_version http://127.0.0.1:8282/
+    ProxyPass /api/manifest/dash/id/ http://127.0.0.1:8282/ nocanon
+    ProxyPassReverse /api/manifest/dash/id/ http://127.0.0.1:8282/
+    ProxyPass /videoplayback http://127.0.0.1:8282/ nocanon
+    ProxyPassReverse /videoplayback http://127.0.0.1:8282/
     ProxyPreserveHost On
     ProxyRequests Off
     AllowEncodedSlashes On
