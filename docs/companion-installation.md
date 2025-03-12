@@ -75,11 +75,11 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
             check_tables: true
             invidious_companion:
             # URL used for the internal communication between invidious and invidious companion
-            - private_url: "http://companion:8282/"
+            - private_url: "http://companion:8282"
             # (public) URL used for the communication between your browser and invidious companion
             # IF you are using a reverse proxy OR accessing invidious from an external IP then you NEED to change this value
             # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
-              public_url: "http://localhost:8282/"
+              public_url: "http://localhost:8282"
             # IT is NOT recommended to use the same key as HMAC KEY. Generate a new key!
             # Use the key generated in the 2nd step
             invidious_companion_key: "CHANGE_ME!!"
@@ -230,11 +230,11 @@ edit config/config.yaml
 add:
 invidious_companion:
   # URL used for the internal communication between invidious and invidious companion
-  - private_url: "http://companion:8282/"
+  - private_url: "http://companion:8282"
   # (public) URL used for the communication between your browser and invidious companion
   # IF you are using a reverse proxy OR accessing invidious from an external IP then you NEED to change this value
   # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
-    public_url: "http://localhost:8282/"
+    public_url: "http://localhost:8282"
 # IT is NOT recommended to use the same key as HMAC KEY. Generate a new key!
 invidious_companion_key: "CHANGE_ME!!"
 
@@ -323,11 +323,11 @@ edit config/config.yaml
 add:
 invidious_companion:
   # URL used for the internal communication between invidious and invidious companion
-  - private_url: "http://companion:8282/"
+  - private_url: "http://companion:8282"
   # (public) URL used for the communication between your browser and invidious companion
   # IF you are using a reverse proxy OR accessing invidious from an external IP then you NEED to change this value
   # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
-    public_url: "http://localhost:8282/"
+    public_url: "http://localhost:8282"
 invidious_companion_key: "CHANGE_ME!!"
 
 # launch invidious
