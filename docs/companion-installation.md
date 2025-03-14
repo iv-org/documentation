@@ -6,9 +6,7 @@ Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](
 
 # WARNING about this doc
 
-This documentation is temporary and will explain you how to test Invidious companion. Make sure to subscribe to the issue [4734](https://github.com/iv-org/invidious/issues/4734) where you will be alerted once Invidious companion is available in a stable release of Invidious!
-
-Because once it is in stable release the special docker tag ":companion" WON'T be updated anymore!
+This documentation is temporary and will explain you how to test Invidious companion. Invidious companion is currently in testing in the master branch.
 
 And if you are using a reverse proxy then make sure to read again the post install because you have new routes to add!
 
@@ -55,8 +53,8 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
     services:
 
       invidious:
-        image: quay.io/invidious/invidious:companion
-        # image: quay.io/invidious/invidious:companion-arm64 # ARM64/AArch64 devices
+        image: quay.io/invidious/invidious:master
+        # image: quay.io/invidious/invidious:master-arm64 # ARM64/AArch64 devices
         restart: unless-stopped
         # Remove "127.0.0.1:" if used from an external IP
         ports:
@@ -79,6 +77,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
             # (public) URL used for the communication between your browser and invidious companion
             # IF you are using a reverse proxy OR accessing invidious from an external IP then you NEED to change this value
             # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
+            # And make sure to add the routes from the post install when using a reverse proxy!
               public_url: "http://localhost:8282"
             # IT is NOT recommended to use the same key as HMAC KEY. Generate a new key!
             # Use the key generated in the 2nd step
@@ -106,9 +105,6 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
         environment:
         # Use the key generated in the 2nd step
            - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
-        # SET this value IF you are using a reverse proxy OR accessing invidious from an external IP.
-        # Please consult for more doc: https://github.com/iv-org/invidious-companion/wiki/Environment-variables
-        #  - SERVER_BASE_URL=http://localhost:8282
         restart: unless-stopped
         # Remove "127.0.0.1:" if used from an external IP
         ports:
@@ -263,8 +259,6 @@ deno compile
 # launch it manually
 SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG ./invidious-companion
 
-You can optionally launch it using SERVER_BASE_URL if you are using a reverse proxy or an external IP.
-
 See more docs about the environment variables: https://github.com/iv-org/invidious-companion/wiki/Environment-variables
 
 # OR create a new systemd service for running it in background
@@ -345,8 +339,6 @@ deno compile
 
 # launch it
 SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG ./invidious-companion
-
-You can optionally launch it using SERVER_BASE_URL if you are using a reverse proxy or an external IP.
 
 See more docs about the environment variables: https://github.com/iv-org/invidious-companion/wiki/Environment-variables
 
