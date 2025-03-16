@@ -11,6 +11,7 @@
 ## List of public Invidious Instances (sorted from oldest to newest):
 
 * [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 - Source code/changes: https://git.nadeko.net/Fijxu/invidious - CAPTCHA: mCaptcha (https://mcaptcha.org/)
+* [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
 
 ### Tor Onion Services:
 
