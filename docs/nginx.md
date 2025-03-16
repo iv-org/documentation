@@ -6,8 +6,9 @@ This is a very basic config, secured with Let's Encrypt. Any log is disabled by 
 server {
 	listen 80;
 	listen [::]:80;
-	listen 443 ssl http2;
-	listen [::]:443 ssl http2;
+	listen 443 ssl;
+	listen [::]:443 ssl;
+        http2 on;
 
 	server_name invidious.domain.tld;
 

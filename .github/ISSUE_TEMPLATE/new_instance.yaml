@@ -4,6 +4,8 @@ title: "[New instance] <instance name>"
 assignees: 
   - unixfox
   - samantazfox
+  - perennialtech
+  - bugmaschine
 labels:
   - instance-add
 
@@ -44,7 +46,9 @@ body:
         required: true
       - label: "If dash, proxy + download is enabled (default settings), the instance has unlimited traffic/bandwidth or close to unlimited (100TB minimum)"
         required: true
-      - label: "Instance is not running any kind of analytics"
+      - label: "Instance is not running any kind of analytics, including external scripts of any kind"
+        required: true
+      - label: "If using Cloudflare or any other DDoS protection service, settings are configured to allow uptime monitoring. Cloudflare users can consult [this](https://updown.io/doc/known-issues-when-monitoring-a-cloudflare-protected-website) guide"
         required: true
         
 
@@ -57,6 +61,14 @@ body:
         required: true
       - label: "Ensure a proper uptime of my instance (around 90%)"
         required: true
+
+  - type: checkboxes
+    attributes:
+      label: Rules for public instances
+      description: By submitting this proposal, you agree to follow the [rules for public instances](https://docs.invidious.io/instances/#rules-for-public-instances). 
+      options:
+        - label: I agree to follow the rules for public instances
+          required: true
 
   - type: input
     id: country

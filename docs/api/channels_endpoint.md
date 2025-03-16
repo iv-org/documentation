@@ -85,12 +85,46 @@ This is the same as requesting `/api/v1/channels/:id/videos` without URL paramet
 }
 ```
 
+##### GET `/api/v1/channels/:id/podcasts`
+
+> URL parameters:
+
+* `continuation`: A continuation token to get the next chunk of items. The token is provided each time this API is requested.
+
+> Response:
+
+```javascript
+{
+	"playlists": [
+		// One or more PlaylistOject
+	],
+	"continuation": continuation
+}
+```
+
+##### GET `/api/v1/channels/:id/releases`
+
+> URL parameters:
+
+* `continuation`: A continuation token to get the next chunk of items. The token is provided each time this API is requested.
+
+> Response:
+
+```javascript
+{
+	"playlists": [
+		// One or more PlaylistOject
+	],
+	"continuation": continuation
+}
+```
 
 ##### GET `/api/v1/channels/:id/shorts`
 
 > URL parameters:
 
 * `continuation`: A continuation token to get the next chunk of items. The token is provided each time this API is requested.
+* `sort_by`: Sort order filter. Accepted values: `newest`, `popular` or `oldest`
 
 > Response:
 
@@ -102,6 +136,7 @@ See: GET `/api/v1/channels/:id/videos`
 > URL parameters:
 
 * `continuation`: A continuation token to get the next chunk of items. The token is provided each time this API is requested.
+* `sort_by`: Sort order filter. Accepted values: `newest`, `popular` or `oldest`
 
 > Response:
 
@@ -206,3 +241,34 @@ This usually means that parsing support for the attachment type has not yet been
     "error": String
 }
 ```
+
+##### GET `/api/v1/channels/:ucid/search`
+
+> Url parameters
+* `q`: The query to search
+* `page`: The page number of the search (Int32)
+
+> Response:
+```javascript
+[
+	VideoObject,
+	PlaylistObject
+];
+```
+
+##### GET `/api/v1/post/:id`
+> Url parameters
+
+* `ucid`: You can optionally provide the channel's id for fetching the post.
+
+> Response:
+Same as [`/api/v1/channels/:id/community`](#get-apiv1channelsidcommunity) but only returns one post in the comments array
+
+
+
+##### GET `/api/v1/post/:id/comments`
+
+* `ucid`: You can optionally provide the channel's id for fetching the post's comments.
+
+> Response:
+Same as [`/api/v1/channels/:id/comments`](../api.md#get-apiv1commentsid) but has a postId instead of a videoId

@@ -18,12 +18,16 @@
 ## For Administrators
 
 - [Installation](./installation.md)
+- [Invidious companion documentation](./invidious-companion.md)
 - [Configuration](./configuration.md)
+- [YouTube error messages explained with solutions](./youtube-errors-explained.md)
+- [Diagnose video playback issues with DevTools](./devtools.md)
 - [NGINX reverse proxy setup](./nginx.md)
 - [Caddy reverse proxy setup](./caddy.md)
 - [Apache2 reverse proxy setup](./apache2.md)
 - [Database maintenance](./db-maintenance.md)
 - [CAPTCHA bug on Debian and Ubuntu](./captcha-bug.md)
+- [Registering users manually](./register-user.md)
 - [Reset user password](./reset-password.md)
 - [Known Exception in log](./known-exception.md)
 

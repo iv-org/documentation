@@ -13,11 +13,12 @@ Lists of third-party projects that use or support Invidious.
 | [WatchTube](https://github.com/WatchTubeTeam/) | Powerful YouTube client for Apple Watch. | [App Store](https://apps.apple.com/app/watchtube/id1599884909) |
 | [TubiTui](https://codeberg.org/777/TubiTui) | A lightweight, libre, TUI-based YouTube client. For desktop. | |
 | [Ytfzf](https://github.com/pystardust/ytfzf) | A posix script to find and watch youtube videos from the terminal. (Without API). | |
-| [Playlet](https://github.com/iBicha/playlet) | A Roku TV YouTube app that uses Invidious as a backend. | [Roku Store](https://channelstore.roku.com/en-ca/details/840aec36f51bfe6d96cf6db9055a372a/playlet) |
+| [Playlet](https://github.com/iBicha/playlet) | A Roku TV YouTube app that uses Invidious as a backend. | [Roku Store](https://channelstore.roku.com/details/840aec36f51bfe6d96cf6db9055a372a/playlet) |
 | [GTK+ Pipe Viewer](https://github.com/trizen/pipe-viewer) | YouTube client for Linux. | |
 | [PlasmaTube](https://invent.kde.org/multimedia/plasmatube/) | YouTube client for Linux. | [KDE Applications](https://apps.kde.org/plasmatube/) |
 | [yt2alt](https://github.com/iBicha/yt2alt) | A cli tool to import your profile from Youtube to an alternative platform. | |
 | [Materialious](https://github.com/WardPearce/Materialious) | Modern material design for Invidious.  | |
+| [IInvidious](https://www.colino.net/wordpress/en/iinvidious-an-apple-ii-invidious-client/) | An Invidious client for the Apple II.  | [Repository](https://github.com/colinleroy/a2tools) |
 
 ### Browser Extensions
 
@@ -27,7 +28,7 @@ Lists of third-party projects that use or support Invidious.
 | [Redirector](https://github.com/einaregilsson/Redirector) | Extension for Firefox and Chromium that can manually be configured to process Invidious Redirects. For details, see the [setup page](./redirector.md) to use it with Invidious. | [Source](https://github.com/einaregilsson/Redirector) / [Firefox](https://addons.mozilla.org/addon/redirector) / [Chrome](https://chrome.google.com/webstore/detail/redirector/ocgpenflpmgnfapjedencafcfakcekcd) |
 | [Invidious Copy URL](https://github.com/recette-lemon/invidious-copy-url) | Adds context menu options on Invidious to copy shortened YouTube URL at current time or not (Requires using developer mode in Chrome or a developer version of Firefox). | |
 | [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect) | Redirects YouTube to Invidious, Twitter to Nitter, and Instagram to Bibliogram. | [Source](https://github.com/SimonBrazell/privacy-redirect) / [Firefox](https://addons.mozilla.org/addon/privacy-redirect) / [Chrome](https://chrome.google.com/webstore/detail/privacy-redirect/pmcmeagblkinmogikoikkdjiligflglb) |
-| [SponsorBlock](https://github.com/ajayyy/SponsorBlock) | A crowd-sourced extension to skip sponsorships. Support invidious instances if enabled in the options. | [Source](https://github.com/ajayyy/SponsorBlock) / [Firefox](https://addons.mozilla.org/addon/sponsorblock) / [Chrome](https://chrome.google.com/webstore/detail/mnjggcdmjocbbbhaepdhchncahnbgone) |
+| [SponsorBlock](https://github.com/ajayyy/SponsorBlock) | A crowd-sourced extension to skip sponsorships. Support Invidious instances if enabled in the options. | [Source](https://github.com/ajayyy/SponsorBlock) / [Firefox](https://addons.mozilla.org/addon/sponsorblock) / [Chrome](https://chrome.google.com/webstore/detail/mnjggcdmjocbbbhaepdhchncahnbgone) |
 | [Inviduration](https://github.com/rsapkf/inviduration) | Firefox extension that shows total duration of playlists on Invidious. | [Source](https://github.com/rsapkf/inviduration) / [Firefox](https://addons.mozilla.org/addon/inviduration) |
 | [Alter](https://github.com/w3bdev1/alter) | Firefox extension that redirects YouTube, Twitter and Reddit to Invidious, Nitter and Teddit respectively. | [Source](https://github.com/w3bdev1/alter) / [Firefox](https://addons.mozilla.org/addon/alter) |
 
@@ -51,6 +52,7 @@ Lists of third-party projects that use or support Invidious.
 | [FreshRSS Extension](https://github.com/tmiland/freshrss-invidious) | A FreshRSS extension to directly embed videos from Invidious channel feeds. | |
 | [UntrackMe](https://f-droid.org/en/packages/app.fedilab.nitterizeme) | Android app to rewrite YouTube links to Invidious. Can optionally play videos in the app as well. | |
 | [Kodi add-on](https://github.com/lekma/plugin.video.invidious) | Watch YouTube videos in the Kodi media center, using the Invidious API. Privacy-friendly alternative to the YouTube API add-on. | |
+| [Koutube](https://github.com/iGerman00/koutube) | Watch YouTube videos on Discord without loading the YouTube embed. Quickly replace any YouTube links using the sed syntax (s/y/k) or by swapping the <kbd>y</kbd> with a <kbd>k</kbd>. | [Source](https://github.com/iGerman00/koutube) / [Website](https://koutube.com) |
 
 ### Utilities
 

@@ -49,7 +49,7 @@ For clarity, an example of a URL parameter would be &related_videos=false&commen
 
 For redirects with ? in the URL, the Parameter string will start with &, while redirects without ? in the URL should have a Parameter string begining with ?, so https://[Invidious Domain Here]/$2 becomes ```https://[Invidious Domain Here]/$2?related_videos=false&comments=false```
 
-Should you choose to use URL Parameters, I would reccomend adding the following rules to both ensure all invidious videos load with your preference, and to ensure that unnecesary parameters are not added when already applied. 
+Should you choose to use URL Parameters, I would reccomend adding the following rules to both ensure all Invidious videos load with your preference, and to ensure that unnecesary parameters are not added when already applied. 
 
 # Rule 5 (Redirects Invidious Video URLs with parameters)
 

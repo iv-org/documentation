@@ -23,12 +23,16 @@ nav:
     - 'redirector.md'
   - 'For Administrators':
     - 'installation.md'
+    - 'invidious-companion.md'
     - 'configuration.md'
+    - 'youtube-errors-explained.md'
+    - 'devtools.md'
     - 'nginx.md'
     - 'caddy.md'
     - 'apache2.md'
     - 'db-maintenance.md'
     - 'captcha-bug.md'
+    - 'register-user.md'
     - 'reset-password.md'
     - 'known-exception.md'
   - 'For public instances Owners':

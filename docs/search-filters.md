@@ -13,8 +13,8 @@ Supported operators:
 - `sort:`
   - `relevance` (default)
   - `rating`
-  - `upload_date`, `date`
-  - `view_count`, `views`
+  - `date`
+  - `views`
 - `date:`
   - `hour`
   - `today`
@@ -30,11 +30,13 @@ Supported operators:
   - `show`
 - `duration:`
   - `short`
+  - `medium`
   - `long`
 - `features:` Multiple can be specified, for example `features:live,4k,subtitles`
   - `hd`
   - `subtitles`
   - `creative_commons`,`cc`
+  - `3d`
   - `live`, `livestream`
   - `purchased`
   - `4k`
