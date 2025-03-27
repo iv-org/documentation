@@ -255,7 +255,7 @@ wget https://github.com/iv-org/invidious-companion???
 
 # or compile it using https://docs.deno.com/runtime/
 git clone https://github.com/iv-org/invidious-companion.git
-deno compile
+deno task compile
 
 # launch it manually
 SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG ./invidious-companion
@@ -336,7 +336,7 @@ wget https://github.com/iv-org/invidious-companion???
 
 # or compile it using https://docs.deno.com/runtime/
 git clone https://github.com/iv-org/invidious-companion.git
-deno compile
+deno task compile
 
 # launch it
 SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG ./invidious-companion
