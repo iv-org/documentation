@@ -12,7 +12,8 @@
 
 * [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 - Source code/changes: https://git.nadeko.net/Fijxu/invidious - CAPTCHA: mCaptcha (https://mcaptcha.org/)
 * [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
-* [id.420129.xyz](https://id.420129.xyz) 🇩🇪  
+* [id.420129.xyz](https://id.420129.xyz) 🇩🇪
+* [invidious1.duckdns.org](https://invidious1.duckdns.org) 🇮🇳
 
 ### Tor Onion Services:
 
