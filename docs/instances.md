@@ -10,7 +10,7 @@
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 - Source code/changes: https://git.nadeko.net/Fijxu/invidious - CAPTCHA: mCaptcha (https://mcaptcha.org/)
+* [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 - Source code/changes: https://git.nadeko.net/Fijxu/invidious - CAPTCHA: Anubis (Modified) (https://git.nadeko.net/Fijxu/anubis-patches)
 * [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
 * [id.420129.xyz](https://id.420129.xyz) 🇩🇪  
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 - Source code/changes: https://github.com/Sommerwiesel/invidious-nerdvpn
@@ -21,7 +21,7 @@
 
 ### I2P Eepsites:
 
-* [zzlsbhhfvwg3oh36tcvx4r7n6jrw7zibvyvfxqlodcwn3mfrvzuq.b32.i2p](http://zzlsbhhfvwg3oh36tcvx4r7n6jrw7zibvyvfxqlodcwn3mfrvzuq.b32.i2p) 🇨🇱 (Eepsite of inv.nadeko.net)
+* [nadekoohummkxncchcsylr3eku36ze4waq4kdrhcqupckc3pe5qq.b32.i2p](http://nadekoohummkxncchcsylr3eku36ze4waq4kdrhcqupckc3pe5qq.b32.i2p) 🇨🇱 (Eepsite of inv.nadeko.net)
 
 ## Rules to have your instance in this list:
 
