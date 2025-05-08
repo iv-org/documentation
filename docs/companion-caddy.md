@@ -10,6 +10,7 @@ https://<server_name> {
 		path /latest_version
 		path /api/manifest/dash/id/*
 		path /videoplayback*
+		path /download*
 	}
 
   reverse_proxy @companion localhost:8282

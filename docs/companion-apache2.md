@@ -18,6 +18,8 @@
         ProxyPassReverse /api/manifest/dash/id/ http://127.0.0.1:8282/
         ProxyPass /videoplayback http://127.0.0.1:8282/ nocanon
         ProxyPassReverse /videoplayback http://127.0.0.1:8282/
+        ProxyPass /download http://127.0.0.1:8282/ nocanon
+        ProxyPassReverse /download http://127.0.0.1:8282/
 
         AllowEncodedSlashes on
 
@@ -68,6 +70,8 @@ To make the VirtualHost config below actually work, you should as well:
     ProxyPassReverse /api/manifest/dash/id/ http://127.0.0.1:8282/
     ProxyPass /videoplayback http://127.0.0.1:8282/ nocanon
     ProxyPassReverse /videoplayback http://127.0.0.1:8282/
+    ProxyPass /download http://127.0.0.1:8282/ nocanon
+    ProxyPassReverse /download http://127.0.0.1:8282/
     ProxyPreserveHost On
     ProxyRequests Off
     AllowEncodedSlashes On
