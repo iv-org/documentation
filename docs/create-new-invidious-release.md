@@ -93,12 +93,12 @@ If not, go back to step 2.
 
 ## Step 4
 
-Edit again `shard.yml` to add `-dev` to the version string. If you didn't already, also add a "future version" title line to the
+Edit `shard.yml` again to add `-dev` to the version string. If you didn't already, also add a "future version" title line to the
 top of the changelog under which future PR will be listed.
 
 [Example commit](https://github.com/iv-org/invidious/commit/98926047586154269bb269d01e3e52e60e044035)
 
-Commit you changes:
+Commit your changes:
 ```
 git add CHANGELOG.md shard.yml
 git commit -S -m "Prepare for next release"
