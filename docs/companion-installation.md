@@ -2,13 +2,13 @@
 
 After installation take a look at the [Post-install steps](#post-install-configuration).
 
-Note: Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) provider/software (Heroku, YunoHost, Repli...) are unsupported. Use them at your own risk. They **WILL** cause problems with Invidious and might even suspend your account for "abuse" since Invidious is heavy, bandwidth intensive and technically a proxy (and most providers don't like them). If you use one and want to report an issue, please mention which one you use.
+>[!Note]
+> Any [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) or [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) provider/software (Heroku, YunoHost, Repli...) are unsupported. Use them at your own risk. They **WILL** cause problems with Invidious and might even suspend your account for "abuse" since Invidious is heavy, bandwidth intensive and technically a proxy (and most providers don't like them). If you use one and want to report an issue, please mention which one you use.
 
-# WARNING about this doc
+>[!WARNING]
+> This documentation is temporary and will explain the process for testing Invidious companion. Invidious companion is currently in testing in the master branch.
+> If you are using a reverse proxy then make sure to double check the [Post-install steps](#post-install-configuration) because you have new routes to add!
 
-This documentation is temporary and will explain you how to test Invidious companion. Invidious companion is currently in testing in the master branch.
-
-And if you are using a reverse proxy then make sure to read again the post install because you have new routes to add!
 
 ## Hardware requirements
 
@@ -35,116 +35,131 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
 
 
 1.  Execute these commands:
-    ```bash
-    git clone https://github.com/iv-org/invidious.git
-    cd invidious
-    ```
+   
+```bash
+git clone https://github.com/iv-org/invidious.git
+cd invidious
+```
 
 2.  Generate two secret keys, one for Invidious (HMAC_KEY) and one for Invidious companion (invidious_companion_key)
-    ```bash
-    pwgen 16 1 # for Invidious (HMAC_KEY)
-    pwgen 16 1 # for Invidious companion (invidious_companion_key)
-    ```
+
+>[!IMPORTANT]
+> The Invidious companion key must follow specific rules or Invidious will throw an HTTP 400 error when loading videos.
+>
+> It must:
+> - Contain only alphanumeric characters (letters A-Z, a-z, and numbers 0-9).
+> - Avoid special characters (e.g., #, !, @, etc.), as they will cause a 400 "Bad Request" error.
+> - Be 16 characters long. No more, no less.
+>
+> We recommend generating the key using pwgen on Linux, e.g.:
+>
+>  ```bash
+>  pwgen 16 1
+>  ```
+
+
+    
 
 3.  Edit the docker-compose.yml with this content:
 
-    ```docker
-    version: "3"
-    services:
+```yaml
+version: "3"
+services:
 
-      invidious:
-        image: quay.io/invidious/invidious:master
-        # image: quay.io/invidious/invidious:master-arm64 # ARM64/AArch64 devices
-        restart: unless-stopped
-        # Remove "127.0.0.1:" if used from an external IP
-        ports:
-          - "127.0.0.1:3000:3000"
-        environment:
-          # Please read the following file for a comprehensive list of all available
-          # configuration options and their associated syntax:
-          # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
-          INVIDIOUS_CONFIG: |
-            db:
-              dbname: invidious
-              user: kemal
-              password: kemal
-              host: invidious-db
-              port: 5432
-            check_tables: true
-            invidious_companion:
-            # URL used for the internal communication between invidious and invidious companion
-            # There is no need to change that except if Invidious companion does not run on the same docker compose file.
-            - private_url: "http://companion:8282"
-            # (public) URL used for the communication between your browser and invidious companion
-            # IF you are using a reverse proxy OR accessing invidious from an external IP then you NEED to change this value
-            # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
-            # And make sure to add the routes from the post install when using a reverse proxy!
-              public_url: "http://localhost:8282"
-            # IT is NOT recommended to use the same key as HMAC KEY. Generate a new key!
-            # Use the key generated in the 2nd step
-            invidious_companion_key: "CHANGE_ME!!"
-            # external_port:
-            # domain:
-            # https_only: false
-            # statistics_enabled: false
-            # Use the key generated in the 2nd step
-            hmac_key: "CHANGE_ME!!"
-        healthcheck:
-          test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit 1
-          interval: 30s
-          timeout: 5s
-          retries: 2
-        logging:
-          options:
-            max-size: "1G"
-            max-file: "4"
-        depends_on:
-          - invidious-db
-
-      companion:
-        image: quay.io/invidious/invidious-companion:latest
-        environment:
+  invidious:
+    image: quay.io/invidious/invidious:master
+    # image: quay.io/invidious/invidious:master-arm64 # ARM64/AArch64 devices
+    restart: unless-stopped
+    # Remove "127.0.0.1:" if used from an external IP
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      # Please read the following file for a comprehensive list of all available
+      # configuration options and their associated syntax:
+      # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
+      INVIDIOUS_CONFIG: |
+        db:
+          dbname: invidious
+          user: kemal
+          password: kemal
+          host: invidious-db
+          port: 5432
+        check_tables: true
+        invidious_companion:
+        # URL used for the internal communication between invidious and invidious companion
+        # There is no need to change that except if Invidious companion does not run on the same docker compose file.
+        - private_url: "http://companion:8282"
+        # (public) URL used for the communication between your browser and invidious companion
+        # IF you are using a reverse proxy OR accessing invidious from an external IP then you NEED to change this value
+        # Please consult for more doc: https://github.com/unixfox/invidious/blob/invidious-companion/config/config.example.yml#L57-L88
+        # And make sure to add the routes from the post install when using a reverse proxy!
+          public_url: "http://localhost:8282"
+        # IT is NOT recommended to use the same key as HMAC KEY. Generate a new key!
         # Use the key generated in the 2nd step
-           - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
-        restart: unless-stopped
-        # Remove "127.0.0.1:" if used from an external IP
-        ports:
-          - "127.0.0.1:8282:8282"
-        logging:
-          options:
-            max-size: "1G"
-            max-file: "4"
-        cap_drop:
-          - ALL
-        read_only: true
-        # cache for youtube library
-        volumes:
-          - companioncache:/var/tmp/youtubei.js:rw
-        security_opt:
-          - no-new-privileges:true
+        invidious_companion_key: "CHANGE_ME!!"
+        # external_port:
+        # domain:
+        # https_only: false
+        # statistics_enabled: false
+        # Use the key generated in the 2nd step
+        hmac_key: "CHANGE_ME!!"
+    healthcheck:
+      test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit 1
+      interval: 30s
+      timeout: 5s
+      retries: 2
+    logging:
+      options:
+        max-size: "1G"
+        max-file: "4"
+    depends_on:
+      - invidious-db
 
-      invidious-db:
-        image: docker.io/library/postgres:14
-        restart: unless-stopped
-        volumes:
-          - postgresdata:/var/lib/postgresql/data
-          - ./config/sql:/config/sql
-          - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
-        environment:
-          POSTGRES_DB: invidious
-          POSTGRES_USER: kemal
-          POSTGRES_PASSWORD: kemal
-        healthcheck:
-          test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
-
+  companion:
+    image: quay.io/invidious/invidious-companion:latest
+    environment:
+    # Use the key generated in the 2nd step
+       - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
+    restart: unless-stopped
+    # Remove "127.0.0.1:" if used from an external IP
+    ports:
+      - "127.0.0.1:8282:8282"
+    logging:
+      options:
+        max-size: "1G"
+        max-file: "4"
+    cap_drop:
+      - ALL
+    read_only: true
+    # cache for youtube library
     volumes:
-      postgresdata:
-      companioncache:
-    ```
+      - companioncache:/var/tmp/youtubei.js:rw
+    security_opt:
+      - no-new-privileges:true
 
-    Note: This compose is made for a true "production" setup, where Invidious is behind a reverse proxy. If you prefer to directly access Invidious, replace `127.0.0.1:3000:3000` with `3000:3000` under the `ports:` section.
+  invidious-db:
+    image: docker.io/library/postgres:14
+    restart: unless-stopped
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+      - ./config/sql:/config/sql
+      - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
+    environment:
+      POSTGRES_DB: invidious
+      POSTGRES_USER: kemal
+      POSTGRES_PASSWORD: kemal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
 
-4. Run the docker composition:
+volumes:
+  postgresdata:
+  companioncache:
+```
+
+>[!Note]
+> This compose is made for a true "production" setup, where Invidious is behind a reverse proxy. If you prefer to directly access Invidious, replace `127.0.0.1:3000:3000` with `3000:3000` under the `ports:` section.
+
+5. Run the docker composition:
 
 ```
 docker compose up -d
@@ -216,15 +231,16 @@ exit
 su - invidious
 cd invidious
 make
+```
+#### Configure config/config.yml as you like
 
-# Configure config/config.yml as you like
-cp config/config.example.yml config/config.yml 
+```cp config/config.example.yml config/config.yml```
 
-# edit config.yaml to include invidious companion
+#### edit config.yaml to include invidious companion
 
-edit config/config.yaml
+```nano config/config.yaml```
 
-add:
+```yaml
 invidious_companion:
   # URL used for the internal communication between invidious and invidious companion
   - private_url: "http://companion:8282"
@@ -234,12 +250,12 @@ invidious_companion:
     public_url: "http://localhost:8282"
 # IT is NOT recommended to use the same key as HMAC KEY. Generate a new key!
 invidious_companion_key: "CHANGE_ME!!"
-
-# Deploy the database
-./invidious --migrate
-
-exit
 ```
+#### Deploy the database
+```./invidious --migrate```
+
+```exit```
+
 
 #### Systemd service for Invidious
 
