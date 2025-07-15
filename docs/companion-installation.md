@@ -336,6 +336,7 @@ wget https://github.com/iv-org/invidious-companion???
 
 # or compile it using https://docs.deno.com/runtime/
 git clone https://github.com/iv-org/invidious-companion.git
+cd invidious-companion
 deno task compile
 
 # launch it
