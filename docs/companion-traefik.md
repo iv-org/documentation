@@ -8,7 +8,7 @@ Do not forget to replace `<server_name>` with your domain.
 ...
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.invidious.rule=Host(`<server_name>`) && !(Path(`/latest_version`) || PathPrefix(`/api/manifest/dash/id/`) || PathPrefix(`/videoplayback*`))"
+      - "traefik.http.routers.invidious.rule=Host(`<server_name>`) && !(Path(`/latest_version`) || PathPrefix(`/api/manifest/dash/id/`) || PathPrefix(`/videoplayback`))"
       - "traefik.http.routers.invidious.entrypoints=web-sec"
       - "traefik.http.routers.invidious.tls.certresolver=le"
       - "traefik.http.services.invidious.loadbalancer.server.port=3000"
@@ -19,7 +19,7 @@ Do not forget to replace `<server_name>` with your domain.
 ...
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.invidious-companion.rule=Host(`<server_name>`) && (Path(`/latest_version`) || PathPrefix(`/api/manifest/dash/id/`) || PathPrefix(`/videoplayback*`))"
+      - "traefik.http.routers.invidious-companion.rule=Host(`<server_name>`) && (Path(`/latest_version`) || PathPrefix(`/api/manifest/dash/id/`) || PathPrefix(`/videoplayback`))"
       - "traefik.http.routers.invidious-companion.entrypoints=web-sec"
       - "traefik.http.routers.invidious-companion.tls.certresolver=le"
       - "traefik.http.services.invidious-companion.loadbalancer.server.port=8282"
