@@ -66,6 +66,8 @@ To make the VirtualHost config below actually work, you should as well:
     ProxyPassReverse /latest_version http://127.0.0.1:8282/
     ProxyPass /api/manifest/dash/id/ http://127.0.0.1:8282/ nocanon
     ProxyPassReverse /api/manifest/dash/id/ http://127.0.0.1:8282/
+    ProxyPass /api/v1/captions/ http://127.0.0.1:8282/ nocanon
+    ProxyPassReverse /api/v1/captions/ http://127.0.0.1:8282/
     ProxyPass /videoplayback http://127.0.0.1:8282/ nocanon
     ProxyPassReverse /videoplayback http://127.0.0.1:8282/
     ProxyPreserveHost On
