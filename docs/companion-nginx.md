@@ -33,7 +33,7 @@ server {
     }
 
     # Invidious companion service (multiple paths, same backend)
-    location ~ ^/(latest_version|videoplayback|api/v1/captions|api/v1/manifest/dash/id)/ {
+    location ~ ^/(latest_version|videoplayback|api/v1/captions|api/manifest/dash/id)/ {
         proxy_pass http://127.0.0.1:8282;
     }
 }
