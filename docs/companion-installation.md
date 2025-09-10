@@ -102,7 +102,8 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
           - invidious-db
 
       companion:
-        image: quay.io/invidious/invidious-companion:latest
+        # Fix for pr #180 https://github.com/iv-org/invidious-companion/pull/180
+        image: quay.io/invidious/invidious-companion:master-5ae79a6
         environment:
         # Use the key generated in the 2nd step
            - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
