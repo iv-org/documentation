@@ -275,13 +275,13 @@ Take a look at the community installation guide: [here](./community-installation
 
 ## Post-install configuration:
 
+### Highly recommended
+
 Detailed configuration available in the [configuration guide](./configuration.md).
 
-You must set a random generated value for the parameter `hmac_key:`! On Linux you can generate it using the command `pwgen 20 1`.
-
-Because of various issues, Invidious **must** be restarted often, at least once a day, ideally every hour.
-
-If you use a reverse proxy, you **must** configure Invidious to properly serve request through it:
+1. You must set a random generated value for the parameter `hmac_key:`! On Linux you can generate it using the command `pwgen 20 1`.
+2. Because of various issues, Invidious **must** be restarted often, at least once a day, ideally every hour.
+3. If you use a reverse proxy, you **must** configure Invidious to properly serve request through it:
 
 `https_only: true` : if you are serving your instance via https, set it to true
 
@@ -292,6 +292,24 @@ If you use a reverse proxy, you **must** configure Invidious to properly serve r
 `use_pubsub_feeds: true`: if you are serving your instance on the internet, allow for faster notification of new videos ([detailed explanation](https://github.com/iv-org/invidious/blob/97c4165f55c4574efb554c9dae8d919d08da1cdd/config/config.example.yml#L409)).
 
 `use_innertube_for_captions: true`: if you are serving a public instance or you are hosting Invidious in a datacenter, allow to unblock captions ([detailed explanation](https://github.com/iv-org/invidious/issues/2567#issuecomment-1727928996)).
+
+### Advanced (improve performance)
+
+For performance reasons, you may configure Invidious companion to be served directly under your reverse proxy for serving the video streams.
+
+This will greatly improve your playback when used by multiple users.
+
+Uncomment `public_url` for the parameter `invidious_companion:` in Invidious config.yaml and configure it like this:
+
+Configure the `public_url` to be the same as the domain used for Invidious or on a separate domain (if you want) with the path `/companion`.   
+Examples: `https://MYINVIDIOUSDOMAIN/companion` or `https://COMPANION.MYINVIDIOUSDOMAIN/companion`.
+
+Then configure your reverse proxy:
+
+- [NGINX](./companion-nginx.md)
+- [Apache2](./companion-apache2.md)
+- [Caddy](./companion-caddy.md)
+- [Traefik](./companion-traefik.md)
 
 ## Update Invidious
 
