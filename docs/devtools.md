@@ -64,7 +64,6 @@ Your browser can't resolve an external resource because the domain/hostname does
 
 - Make sure you have correctly followed the post install [in the installation guide](./installation.md).
 - Look for possible solutions in the GitHub issues of Invidious by searching for the error message: https://github.com/iv-org/invidious/issues
-- If you are trying the new Invidious companion, make sure that public_url and base_url is correctly configured. Double check!
 
 ### C) Request with Status 500 or Status 400
 

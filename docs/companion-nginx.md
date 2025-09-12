@@ -1,4 +1,4 @@
-# NGINX reverse proxy setup with Invidious companion
+# NGINX reverse proxy setup with Invidious companion direct traffic
 
 This is a very basic config, secured with Let's Encrypt. Any log is disabled by default. Do not forget to replace `server_name` with your domain.
 
@@ -32,8 +32,8 @@ server {
         proxy_pass http://127.0.0.1:3000;
     }
 
-    # Invidious companion service (multiple paths, same backend)
-    location ~ ^/(latest_version|videoplayback|api/v1/captions|api/manifest/dash/id)/ {
+    # Invidious companion service
+    location /companion {
         proxy_pass http://127.0.0.1:8282;
     }
 }
