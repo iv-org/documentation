@@ -1,4 +1,4 @@
-# Apache2 reverse proxy setup with Invidious companion
+# Apache2 reverse proxy setup with Invidious companion direct traffic
 
 - A very basic config, secured with Let's Encrypt. Any log is disabled by default. Do not forget to replace `ServerName` with your domain.
 
@@ -12,12 +12,8 @@
         ProxyRequests off
         ProxyPass / http://127.0.0.1:3000/ nocanon
         ProxyPassReverse / http://127.0.0.1:3000/
-        ProxyPass /latest_version http://127.0.0.1:8282/ nocanon
-        ProxyPassReverse /latest_version http://127.0.0.1:8282/
-        ProxyPass /api/manifest/dash/id/ http://127.0.0.1:8282/ nocanon
-        ProxyPassReverse /api/manifest/dash/id/ http://127.0.0.1:8282/
-        ProxyPass /videoplayback http://127.0.0.1:8282/ nocanon
-        ProxyPassReverse /videoplayback http://127.0.0.1:8282/
+        ProxyPass /companion http://127.0.0.1:8282 nocanon
+        ProxyPassReverse /companion http://127.0.0.1:8282
 
         AllowEncodedSlashes on
 
@@ -62,14 +58,9 @@ To make the VirtualHost config below actually work, you should as well:
 
     ProxyPass / http://127.0.0.1:3000/ nocanon
     ProxyPassReverse / http://127.0.0.1:3000/
-    ProxyPass /latest_version http://127.0.0.1:8282/ nocanon
-    ProxyPassReverse /latest_version http://127.0.0.1:8282/
-    ProxyPass /api/manifest/dash/id/ http://127.0.0.1:8282/ nocanon
-    ProxyPassReverse /api/manifest/dash/id/ http://127.0.0.1:8282/
-    ProxyPass /api/v1/captions/ http://127.0.0.1:8282/ nocanon
-    ProxyPassReverse /api/v1/captions/ http://127.0.0.1:8282/
-    ProxyPass /videoplayback http://127.0.0.1:8282/ nocanon
-    ProxyPassReverse /videoplayback http://127.0.0.1:8282/
+    # ONLY WHEN public_url uncommented (not default)! Invidious companion service
+    #ProxyPass /companion http://127.0.0.1:8282/ nocanon
+    #ProxyPassReverse /companion http://127.0.0.1:8282/
     ProxyPreserveHost On
     ProxyRequests Off
     AllowEncodedSlashes On

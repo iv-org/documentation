@@ -1,6 +1,6 @@
 # Invidious companion documentation
 
-If you are looking for the installation guide then please read [companion-installation](./companion-installation.md).
+If you are looking for the installation guide then please read [installation](./installation.md).
 
 If you are looking for extra documentation about Invidious companion then please visit: [https://github.com/iv-org/invidious-companion/wiki](https://github.com/iv-org/invidious-companion/wiki).
 
