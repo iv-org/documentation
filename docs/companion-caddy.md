@@ -6,7 +6,7 @@ Any log is disabled by default. Do not forget to replace `server_name` with your
 ```
 https://<server_name> {
 
-  reverse_proxy /companion localhost:8282
+  reverse_proxy /companion/* localhost:8282
   reverse_proxy localhost:3000
 
   log {
