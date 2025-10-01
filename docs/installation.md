@@ -254,8 +254,8 @@ SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIO
 
 See more docs about the environment variables: https://github.com/iv-org/invidious-companion/wiki/Environment-variables
 
-sudo wget https://github.com/iv-org/invidious-companion/raw/refs/heads/master/invidious-companion.service -O /etc/systemd/systemd/invidious-companion.service
-sudo systemctl enable --now invidious.service
+sudo wget https://github.com/iv-org/invidious-companion/raw/refs/heads/master/invidious-companion.service -O /etc/systemd/system/invidious-companion.service
+sudo systemctl enable --now invidious-companion.service
 ```
 
 ### MacOS
