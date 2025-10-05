@@ -10,7 +10,7 @@
 
 ## List of public Invidious Instances (sorted from oldest to newest):
 
-* [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 - Source code/changes: https://git.nadeko.net/Fijxu/invidious - CAPTCHA: Anubis (Modified) (https://git.nadeko.net/Fijxu/anubis-patches)
+* [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 - Source code/changes: https://git.nadeko.net/Fijxu/invidious - CAPTCHA: Go-away
 * [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
 * [invidious.f5.si](https://invidious.f5.si) 🇯🇵 - Cloudflare
 
