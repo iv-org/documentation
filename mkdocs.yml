@@ -38,6 +38,7 @@ nav:
     - 'takedown.md'
     - 'hide-instance-behind-proxy-server.md'
     - 'ipv6-rotator.md'
+    - 'ipv6-rotation-simple.md'
     - 'improve-public-instance.md'
   - 'For Developers':
     - 'api.md'
