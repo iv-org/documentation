@@ -56,6 +56,8 @@ All of these options do not guarantee you to bring back Invidious to working con
 
 Invidious companion is trying to create a valid PO Token against YouTube servers. But it fails to create a valid one.
 
+Creating a valid PO Token should only take under one minute.
+
 ### Cause(s)
 
 - YouTube is running different mechanisms to detect the usage of non official YouTube clients. Your Invidious instance may have been detected by their system.
