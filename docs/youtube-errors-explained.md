@@ -25,6 +25,7 @@ Usually it is related to a lot of traffic being generated for refreshing your su
    After this you can try to extend the refresh interval, like to `channel_refresh_interval: 240m`.  
    You will still get almost instantaneous notifications from new YouTube videos thanks to pubsub but you will induce less refreshing traffic to YouTube servers. As pubsub is method for YouTube to notify your Invidious instance for new videos.
 - Change your public IP address. This may not solve the issue permanently but temporarily solve it.
+- Ask the community for advice: https://invidious.io/contact/. Don't contact the team, we won't help you by email. Only ask in Matrix or IRC.
 
 ## Sign in to confirm you are not a bot - This helps protect our community
 
@@ -35,7 +36,7 @@ YouTube is blocking the communication of Invidious to their servers.
 ### Cause(s)
 
 - YouTube is running different mechanisms to detect the usage of non official YouTube clients. Your Invidious instance may have been detected by their system.
-- Your IP address is blacklisted from YouTube servers. It is known that YouTube block datacenter IP addresses.
+- Your IP address is blacklisted from YouTube servers. It is known that YouTube block datacenter and VPN IP addresses.
 
 ### Solution(s)
 
@@ -45,8 +46,41 @@ After which you can try these solutions:
 
 - Change your public IP address. Reboot your router or by configuring a proxy in Invidious companion (not **Invidious**): https://github.com/iv-org/invidious-companion/blob/b0fcfa49e21b708adcdf9fbf15c82c75cf0002a4/config/config.example.toml#L33
 - If you have IPv6 on the computer hosting Invidious, you can try to rotate your IPv6 public address, tutorial available here: "[Rotate your IPv6 address for escaping YouTube blocking](./ipv6-rotator.md)"
+- Ask the community for advice: https://invidious.io/contact/. Don't contact the team, we won't help you by email. Only ask in Matrix or IRC.
 
 All of these options do not guarantee you to bring back Invidious to working conditions. These are just advices for trying to unblock your Invidious instance from YouTube. Make sure to always specify any modification being done to your Invidious when reporting issues.
+
+## PO Token initialization taking too much time to complete.
+
+### Message explained
+
+Invidious companion is trying to create a valid PO Token against YouTube servers. But it fails to create a valid one.
+
+### Cause(s)
+
+- YouTube is running different mechanisms to detect the usage of non official YouTube clients. Your Invidious instance may have been detected by their system.
+- Your IP address is blacklisted from YouTube servers. It is known that YouTube block datacenter and VPN IP addresses.
+- The player ID has changed. YouTube have specific players for encrypting videos. Invidious companion can't decrypt the new one.
+
+### Diagnostic
+
+Go to https://www.youtube.com with a browser and with the IP address configured for Invidious companion. Use a socks proxy from your server (`ssh -D`) if your server doesn't have a graphical interface.
+
+Try to play a video. If you get "Sign in to confirm you are not a bot - This helps protect our community", then your IP is blocked from YouTube.
+
+### Solution(s)
+
+First make sure that you are running the latest version of Invidious and you are using Invidious companion. Please see [the updated installation guide](./installation.md).
+
+After which you can try these solutions if you confirmed you are blocked:
+
+- Change your public IP address. Reboot your router or by configuring a proxy in Invidious companion (not **Invidious**): https://github.com/iv-org/invidious-companion/blob/b0fcfa49e21b708adcdf9fbf15c82c75cf0002a4/config/config.example.toml#L33
+- If you have IPv6 on the computer hosting Invidious, you can try to rotate your IPv6 public address, tutorial available here: "[Rotate your IPv6 address for escaping YouTube blocking](./ipv6-rotator.md)"
+- Ask the community for advice: https://invidious.io/contact/. Don't contact the team, we won't help you by email. Only ask in Matrix or IRC.
+
+All of these options do not guarantee you to bring back Invidious to working conditions. These are just advices for trying to unblock your Invidious instance from YouTube. Make sure to always specify any modification being done to your Invidious when reporting issues.
+
+If you are not blocked, this might be a player ID change that companion doesn't support yet. If that's the case, consult the [GitHub issues](https://github.com/iv-org/invidious-companion/issues) if there is an existing issue. And if and ONLY if there is none, create a GitHub issue.
 
 ## Videoplayback URLs returning 403 HTTP errors
 
@@ -60,6 +94,7 @@ This error has different root causes:
 
 - You are loading a video stream that is restricted to the IP address that generated that URL. For example this can happen on music videos or copyright content.
 - You or someone on your network have downloaded a lot of videos. Your IP address has been blocked from YouTube servers.
+- Ask the community for advice: https://invidious.io/contact/. Don't contact the team, we won't help you by email. Only ask in Matrix or IRC.
 
 ### Solution(s)
 
