@@ -68,6 +68,11 @@ Go to https://www.youtube.com with a browser and with the IP address configured 
 
 Try to play a video. If you get "Sign in to confirm you are not a bot - This helps protect our community", then your IP is blocked from YouTube.
 
+You can also check the logs of Invidious companion in order to understand what's going on. With Docker Compose:
+```
+docker compose logs -f companion
+```
+
 ### Solution(s)
 
 First make sure that you are running the latest version of Invidious and you are using Invidious companion. Please see [the updated installation guide](./installation.md).
