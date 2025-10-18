@@ -30,6 +30,7 @@ nav:
     - 'caddy.md'
     - 'apache2.md'
     - 'db-maintenance.md'
+    - 'db-migration.md'
     - 'captcha-bug.md'
     - 'register-user.md'
     - 'reset-password.md'
