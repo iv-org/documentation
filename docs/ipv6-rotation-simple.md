@@ -1,4 +1,4 @@
-# IPv6 rotation for avoiding YouTube blocking
+# Simple IPv6 rotation for avoid YouTube blocking (SLAAC)
 
 ## Requirements
 - A host with IPv6 support providing a ``/64`` IPv6 prefix. (If your server provider provides smaller prefix lengths such as ``/128`` it is not sufficient for rotation)
