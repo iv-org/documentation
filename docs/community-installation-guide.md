@@ -203,7 +203,7 @@ Volume=invidious-companion-cache:/var/tmp/youtubei.js:rw
 
 # WARNING: The container will fail to start without this env var
 # NOTE: The podman secret is preferred, but you may set the env var directly like this
-Environment=SERVER_SECRET_KEY=my-secret-key
+# Environment=SERVER_SECRET_KEY=my-secret-key
 
 # If you set the env var above, comment this out
 # `pwgen 16 1 | podman secret create --replace invidious-db-pw -`
