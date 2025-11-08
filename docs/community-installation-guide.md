@@ -113,7 +113,7 @@ podman image prune -f
 
 ## Podman via systemd
 
-Guide contributor(s): [@lzap](https://github.com/lzap)
+Guide contributor(s): [@redbeardymcgee](https://git.mcgee.red/redbeardymcgee)
 
 This method employs rootless containers through podman whose lifecycles are managed by systemd and is suitable for systems which come with Podman version 5.x or higher. Ensure that SELinux is in enforcing mode for maximum security. Do not run any of the following commands or scripts as root.
 
