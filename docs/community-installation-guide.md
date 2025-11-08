@@ -234,8 +234,9 @@ Copy the example config from [HERE](https://github.com/iv-org/invidious/blob/mas
 
 Edit the configuration according to your environment. The example is very well commented. Notable fields include `invidious_companion` and `invidious_companion_key` to ensure that the companion container is connectable. If you changed the `$POSTGRES_PASSWORD`, then it should be configured to match in the `db` field. The field `hmac_key` is **mandatory**.
 
-> [!WARNING]
-> The Invidious container may fail to start or operate as expected if the `config.yml` is not correctly configured.
+!!! warning
+
+    The Invidious container may fail to start or operate as expected if the `config.yml` is not correctly configured.
 
 ### Confirm the container services are generated
 
