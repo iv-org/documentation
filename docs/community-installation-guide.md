@@ -115,112 +115,183 @@ podman image prune -f
 
 Guide contributor(s): [@lzap](https://github.com/lzap)
 
-This method is suitable for systems which come with Podman version 5.x or higher and systemd (e.g. Fedora, CentOS Stream 9 or clones). Instructions are written for root-less mode, do not run the commands as root since paths are different. Ensure that SELinux is in enforcing mode for maximum security.
+This method employs rootless containers through podman whose lifecycles are managed by systemd and is suitable for systems which come with Podman version 5.x or higher. Ensure that SELinux is in enforcing mode for maximum security. Do not run any of the following commands or scripts as root.
 
-Create a new volume for database:
+### Define containers
 
-    podman volume create invidious-db
+Add the quadlet definitions for Invidious, the database, and the companion containers to `$HOME/.config/containers/systemd/invidious`.
 
-Start a temporary container:
+```ini
+# $HOME/.config/containers/systemd/invidious/invidious.container
+[Unit]
+Description=Invidious
+Requires=invidious-db.service
+After=invidious-db.service
+Requires=invidious-companion.service
+After=invidious-companion.service
 
-    podman run --rm -it --name invidious-init -v invidious-db:/var/lib/postgresql/data:Z -p 5432:5432 -e POSTGRES_DB=invidious -e POSTGRES_USER=kemal -e POSTGRES_PASSWORD=kemal docker.io/library/postgres:14
+[Service]
+Restart=on-failure
+TimeoutStartSec=900
 
-In another terminal, migrate the database:
+[Install]
+WantedBy=multi-user.target
 
-    export PGPASSWORD=kemal
-    for F in channels videos channel_videos users session_ids nonces annotations playlists playlist_videos; do
-        curl -s https://raw.githubusercontent.com/iv-org/invidious/refs/heads/master/config/sql/$F.sql | \
-            psql -h localhost -p 5432 -U kemal invidious
-    done
+[Container]
+Image=quay.io/invidious/invidious:latest
+ContainerName=invidious
+AutoUpdate=registry
 
-Shutdown the temporary container, it is no longer needed. Create a database volume unit:
+Network=invidious.network
+HostName=invidious
 
-    cat > ~/.config/containers/systemd/invidious-db.volume <<EOF
-    [Volume]
-    VolumeName=invidious-db
-    EOF
+Volume=./config.yml:/invidious/config/config.yml
+```
 
-And a database container:
+```ini
+# $HOME/.config/containers/systemd/invidious/invidious-db
+[Unit]
+Description=Invidious postgres
 
-    cat > ~/.config/containers/systemd/invidious-db.container <<EOF
-    [Container]
-    ContainerName=invidious-db
-    Environment=POSTGRES_DB=invidious POSTGRES_USER=kemal POSTGRES_PASSWORD=kemal
-    Image=docker.io/library/postgres:14
-    HealthCmd=pg_isready -h localhost -p 5432 -U kemal -d invidious
-    Notify=healthy
-    Pod=invidious.pod
-    Volume=invidious-db.volume:/var/lib/postgresql/data:Z
-    EOF
+[Service]
+Restart=on-failure
+TimeoutStartSec=900
 
-Create a helper container:
+[Install]
+WantedBy=multi-user.target
 
-    cat > ~/.config/containers/systemd/invidious-sig-helper.container <<EOF
-    [Container]
-    ContainerName=invidious-sig-helper
-    Environment=RUST_LOG=info
-    Image=quay.io/invidious/inv-sig-helper:latest
-    Exec=--tcp 0.0.0.0:12999
-    Pod=invidious.pod
-    EOF
+[Container]
+Image=docker.io/library/postgres:14
+ContainerName=invidious-db
+AutoUpdate=registry
 
-Generate your `VISITOR_DATA` an `PO_TOKEN` secrets. For more information about these, read the information dialog above.
+Network=invidious.network
+HostName=invidious-db
 
-    podman run quay.io/invidious/youtube-trusted-session-generator
+Volume=invidious-db:/var/lib/postgresql/data
 
-Set those secrets as temporary environmental variables, also generate a random string for HMAC secret:
+Environment=POSTGRES_DB=invidious
+Environment=POSTGRES_USER=kemal
+Environment=POSTGRES_PASSWORD=kemal
 
-    HMAC=$(openssl rand -base64 21)
-    VISITOR_DATA="ABCDEF%3D%3D" # notsecret
-    PO_TOKEN="MpOIfiljfsdljds-Lljfsdk-ojrdjXVs==" # notsecret
+# NOTE: Alternatively, set password as a podman secret
+# `printf 'my-postgres-password' | podman secret create --replace invidious-db-pw -`
+# Secret=invidious-db-pw,type=env,target=POSTGRES_PASSWORD
+```
 
-In the same terminal where you defined the environmental variables, create new environmental config file:
+```ini
+# $HOME/.config/containers/systemd/invidious/invidious-companion
+[Unit]
+Description=Invidious companion
 
-    cat > ~/.config/containers/systemd/invidious.env <<EOF
-    INVIDIOUS_DATABASE_URL="postgres://kemal:kemal@invidious-db:5432/invidious"
-    #INVIDIOUS_CHECK_TABLES=true
-    #INVIDIOUS_DOMAIN="inv.example.com"
-    INVIDIOUS_SIGNATURE_SERVER="invidious-sig-helper:12999"
-    INVIDIOUS_VISITOR_DATA="$VISITOR_DATA"
-    INVIDIOUS_PO_TOKEN="$PO_TOKEN"
-    INVIDIOUS_HMAC_KEY="$HMAC"
-    EOF
+[Service]
+Restart=on-failure
+TimeoutStartSec=900
 
-From now on, if you need to change configuration just edit the generated file `~/.config/containers/systemd/invidious.env`. Now, create Invidious container unit:
+[Install]
+WantedBy=multi-user.target
 
-    cat > ~/.config/containers/systemd/invidious.container <<EOF
-    [Container]
-    ContainerName=invidious
-    EnvironmentFile=%h/.config/containers/systemd/invidious.env
-    Image=quay.io/invidious/invidious:latest
-    Pod=invidious.pod
-    [Unit]
-    After=invidious-db.service
-    EOF
+[Container]
+Image=quay.io/invidious/invidious-companion:latest
+ContainerName=invidious-companion
+AutoUpdate=registry
 
-And finally, create pod unit. Note only port 3000 is exposed, do not expose other ports!
+Network=invidious.network
+HostName=invidious-companion
 
-    cat > ~/.config/containers/systemd/invidious.pod <<EOF
-    [Pod]
-    PodName=invidious
-    PublishPort=3000:3000
-    [Install]
-    WantedBy=multi-user.target default.target
-    EOF
+Volume=invidious-companion-cache:/var/tmp/youtubei.js:rw
+
+# WARNING: The container will fail to start without this env var
+# NOTE: The podman secret is preferred, but you may set the env var directly like this
+Environment=SERVER_SECRET_KEY=my-secret-key
+
+# If you set the env var above, comment this out
+# `pwgen 16 1 | podman secret create --replace invidious-db-pw -`
+Secret=invidious-companion-secret-key,type=env,target=SERVER_SECRET_KEY
+```
+
+### Define the storage volumes
+
+The database requires a data volume to persist the database. The companion uses a cache volume.
+
+```ini
+# $HOME/.config/containers/systemd/invidious/invidious-db.volume
+[Volume]
+VolumeName=invidious-db
+```
+
+```ini
+# $HOME/.config/containers/systemd/invidious/invidious-companion.volume
+[Volume]
+VolumeName=invidious-companion-cache
+```
+
+### Modify `config.yml` for your evironment
+
+Copy the example config from [HERE](https://github.com/iv-org/invidious/blob/master/config/config.example.yml).
+
+`curl -o "$HOME"/.config/containers/systemd/invidious/config.yml https://raw.githubusercontent.com/iv-org/invidious/refs/heads/master/config/config.example.yml`
+
+Edit the configuration according to your environment. The example is very well commented. Notable fields include `invidious_companion` and `invidious_companion_key` to ensure that the companion container is connectable. If you changed the `$POSTGRES_PASSWORD`, then it should be configured to match in the `db` field. The field `hmac_key` is **mandatory**.
+
+> [!WARNING]
+> The Invidious container may fail to start or operate as expected if the `config.yml` is not correctly configured.
+
+### Confirm the container services are generated
 
 Systemd units are generated on-the-fly during `daemon-reload` command, but before that let's check syntax with quadlet generator. Note, you need Podman version 5.0 or higher, older versions will not work:
 
-    /usr/libexec/podman/quadlet -dryrun -user
+`QUADLET_UNIT_DIRS="$HOME/.config/containers/systemd/invidious" /lib/systemd/user-generators/podman-user-generator -user -dryrun`
 
-Reload systemd daemon. Keep in mind you need to do this command every time you change a unit file, you can change the environmental file freely tho.
+Reload systemd daemon. Keep in mind you need to do this command every time you change a unit file.
 
-    systemctl --user daemon-reload
+`systemctl --user daemon-reload`
+
+### Prepare the database
+
+The database container requires an initial migration. This should be handled by the field `check_tables` in `config.yml` if set to `true`. The following steps will manually initialize the database in case there is an issue.
+
+```bash
+# Start the database container
+systemctl --user start invidious-db
+
+# Enter the container, install curl, initialize the database, uninstall curl
+podman exec invidious-db \
+  sh -c '
+        apt-get update
+        apt-get install --assume-yes --no-install-recommends curl
+
+        for initdb in channels videos channel_videos users session_ids nonces annotations playlists playlist_videos
+        do
+          curl -s https://raw.githubusercontent.com/iv-org/invidious/refs/heads/master/config/sql/$initdb.sql | psql postgresql://$POSTGRES_USER:$POSTGRES_PASSWORD@invidious-db/$POSTGRES_DB
+        done
+        apt-get --assume-yes purge curl
+        '
+```
+
+### Create a timer to restart Invidious regularly
+
+Invidious recommends restarting frequently in the [post-install configuration documentation](https://docs.invidious.io/installation/#post-install-configuration). A systemd timer is an effective method of achieving this. Add the file to `$HOME/.config/systemd/user/invidious.timer` and activate it with `systemctl --user enable --now invidious.timer`.
+
+```ini
+# $HOME/.config/systemd/user/invidious.timer
+[Unit]
+Description=Restart Invidious every hour
+
+[Install]
+WantedBy=timers.target
+
+[Timer]
+OnUnitActiveSec=60minutes
+```
+
+### Start the application
 
 And the whole application can be now started:
 
-    systemctl --user start invidious-pod
+`systemctl --user start invidious`
 
-Keep in mind that generated units cannot be enabled using `systemctl enable`, the main pod will be enabled automatically. If you do not like this behavior, remove the `WantedBy` line from `invidious.pod`.
+Keep in mind that generated units cannot be enabled using `systemctl --user enable`. The Invidious containers will be started automatically.
 
 ## MacOS
 
