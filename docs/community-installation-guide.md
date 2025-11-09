@@ -145,7 +145,7 @@ AutoUpdate=registry
 Network=invidious.network
 HostName=invidious
 
-Volume=./config.yml:/invidious/config/config.yml
+Volume=./config.yml:/invidious/config/config.yml:Z
 ```
 
 ```ini
@@ -168,7 +168,7 @@ AutoUpdate=registry
 Network=invidious.network
 HostName=invidious-db
 
-Volume=invidious-db:/var/lib/postgresql/data
+Volume=invidious-db:/var/lib/postgresql/data:Z
 
 Environment=POSTGRES_DB=invidious
 Environment=POSTGRES_USER=kemal
@@ -199,7 +199,7 @@ AutoUpdate=registry
 Network=invidious.network
 HostName=invidious-companion
 
-Volume=invidious-companion-cache:/var/tmp/youtubei.js:rw
+Volume=invidious-companion-cache:/var/tmp/youtubei.js:rw,Z
 
 # WARNING: The container will fail to start without this env var
 # NOTE: The podman secret is preferred, but you may set the env var directly like this
