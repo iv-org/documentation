@@ -26,6 +26,7 @@
 - [Caddy reverse proxy setup](./caddy.md)
 - [Apache2 reverse proxy setup](./apache2.md)
 - [Database maintenance](./db-maintenance.md)
+- [Database migration](./db-migration.md)
 - [CAPTCHA bug on Debian and Ubuntu](./captcha-bug.md)
 - [Registering users manually](./register-user.md)
 - [Reset user password](./reset-password.md)
