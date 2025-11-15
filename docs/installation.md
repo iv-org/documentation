@@ -82,7 +82,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
             # Use the key generated in the 2nd step
             hmac_key: "CHANGE_ME!!"
         healthcheck:
-          test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit 1
+          test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/stats || exit 1
           interval: 30s
           timeout: 5s
           retries: 2

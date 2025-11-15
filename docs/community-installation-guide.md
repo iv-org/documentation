@@ -64,7 +64,7 @@ podman create --rm \
 --pod videos \
 --name invidious \
 --label "io.containers.autoupdate=registry" \
---health-cmd="wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit 1" \
+--health-cmd="wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/stats || exit 1" \
 --health-interval=30s \
 --health-timeout=5s \
 --health-retries=2 \
