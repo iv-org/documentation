@@ -241,9 +241,9 @@ systemctl enable --now invidious.service
 ```bash
 
 # wget from a binary release
-# https://github.com/iv-org/invidious-companion/releases/tag/master
+# https://github.com/iv-org/invidious-companion/releases/tag/release-master
 
-wget https://github.com/iv-org/invidious-companion/releases/download/master/invidious_companion-x86_64-unknown-linux-gnu.tar.gz
+wget https://github.com/iv-org/invidious-companion/releases/download/release-master/invidious_companion-x86_64-unknown-linux-gnu.tar.gz
 
 # or compile it using https://docs.deno.com/runtime/
 git clone https://github.com/iv-org/invidious-companion.git
