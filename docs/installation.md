@@ -186,8 +186,8 @@ sudo dnf install -y openssl-devel libevent-devel libxml2-devel libyaml-devel gmp
 #### Add an Invidious user and clone the repository
 
 ```bash
-useradd -m invidious
-su - invidious
+sudo useradd -m invidious
+sudo su - invidious
 git clone https://github.com/iv-org/invidious
 exit
 ```
@@ -205,7 +205,7 @@ exit
 #### Set up Invidious
 
 ```bash
-su - invidious
+sudo su - invidious
 cd invidious
 make
 
@@ -326,7 +326,7 @@ docker image prune -f
 
 #### Update a manual install
 ```bash
-su - invidious
+sudo su - invidious
 cd invidious
 git pull
 make
