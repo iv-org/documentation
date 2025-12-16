@@ -1,0 +1,1 @@
+# Database restore for manual installations
