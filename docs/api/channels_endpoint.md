@@ -259,7 +259,7 @@ This usually means that parsing support for the attachment type has not yet been
 ##### GET `/api/v1/post/:id`
 > Url parameters
 
-* `ucid`: You can optionally provide the channel's id for fetching the post.
+* `ucid`: It's recommended to provide the channel's id for fetching the post.
 
 > Response:
 Same as [`/api/v1/channels/:id/community`](#get-apiv1channelsidcommunity) but only returns one post in the comments array
@@ -268,7 +268,12 @@ Same as [`/api/v1/channels/:id/community`](#get-apiv1channelsidcommunity) but on
 
 ##### GET `/api/v1/post/:id/comments`
 
-* `ucid`: You can optionally provide the channel's id for fetching the post's comments.
+> Url parameters
+
+* `ucid`: You need to provide the channel's id for fetching the post's comments.
+* `sort_by`: "top", "new" (default: top)
+
+
 
 > Response:
 Same as [`/api/v1/channels/:id/comments`](../api.md#get-apiv1commentsid) but has a postId instead of a videoId
