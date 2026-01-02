@@ -297,3 +297,9 @@ Keep in mind that generated units cannot be enabled using `systemctl --user enab
 ## MacOS
 
 Looking for contributors to this operating system. Please submit a new doc for MacOS at https://github.com/iv-org/documentation/blob/master/docs/community-installation-guide.md
+
+## BSD (FreeBSD - OpenBSD)
+
+People have successfully ran Invidious on FreeBSD/OpenBSD as discussed in https://github.com/iv-org/invidious/issues/2388
+
+We are looking for contributors to write a proper guide for installing Invidious on FreeBSD/OpenBSD. If you can, please submit a new doc for FreeBSD/OpenBSD at https://github.com/iv-org/documentation/blob/master/docs/community-installation-guide.md
