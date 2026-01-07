@@ -14,7 +14,6 @@
 * [yewtu.be](https://yewtu.be) 🇩🇪 - Source code/changes: https://github.com/yewtudotbe/invidious-custom
 * [invidious.f5.si](https://invidious.f5.si) 🇯🇵 - Cloudflare
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 - Source code/changes: https://git.nerdvpn.de/NerdVPN.de/invidious
-* [inv.perditum.com](https://inv.perditum.com) 🇦🇱 - Source code/changes: https://source.perditum.com/Perditum/invidious
 
 ### Tor Onion Services:
 
