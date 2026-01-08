@@ -95,6 +95,9 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
 
       companion:
         image: quay.io/invidious/invidious-companion:latest
+        # Please read the following file for a comprehensive list of all available
+        # environment variables and their associated syntax:
+        # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
         environment:
         # Use the key generated in the 2nd step
            - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
