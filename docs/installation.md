@@ -97,7 +97,9 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
         image: quay.io/invidious/invidious-companion:latest
         environment:
         # Use the key generated in the 2nd step
-           - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
+           - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG
+        # Uncomment to configure an outbound proxy (fixes PO Token initialization taking too much time to complete)
+        #  - PROXY: socks5://x.x.x.x:1234   
         restart: unless-stopped
         # Uncomment only if you have configured "public_url" for Invidious companion
         # Or if you want to use Invidious companion as an API in your program.
