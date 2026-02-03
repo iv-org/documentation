@@ -30,6 +30,12 @@ nav:
     - 'caddy.md'
     - 'apache2.md'
     - 'db-maintenance.md'
+    - 'Database Migration':
+      - 'db-migration-info.md'
+      - 'db-migration-backup-docker.md'
+      - 'db-migration-backup-manual.md'
+      - 'db-migration-restore-docker.md'
+      - 'db-migration-restore-manual.md'
     - 'captcha-bug.md'
     - 'register-user.md'
     - 'reset-password.md'
