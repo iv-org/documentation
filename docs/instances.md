@@ -32,7 +32,7 @@ Instance operators SHOULD [contact the Invidious maintainers](https://invidious.
 4. Instances MUST have an uptime of at least 90% ([according to uptime.invidious.io](https://uptime.invidious.io/)).
 5. Instances MUST demonstrate good playback stability, as evaluated manually by the Invidious maintainers.
 6. Instances MUST be served via domain name.
-7. Instances MUST be served via HTTPS (or/and onion).
+7. Instances MUST be served via HTTPS on the clearnet (internet).
 8. Instances using any DDoS Protection / MITM MUST be marked as such (e.g. Cloudflare, DDoS-Guard).
 9. Instances MUST NOT use any type of analytics, including external scripts of any kind.
 10. Any system whose goal is to modify the content served to the user (i.e web server HTML rewrite) is considered the same as modifying the source code.
