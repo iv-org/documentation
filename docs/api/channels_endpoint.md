@@ -33,6 +33,7 @@ details on the various JSON objects used below.
 	"allowedRegions": String[],
 
 	"tabs": String[],
+	"pronouns": String?
 
 	"latestVideos": [
 		// One or more VideoObject
