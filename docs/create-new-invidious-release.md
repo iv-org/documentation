@@ -135,20 +135,12 @@ top of the changelog under which future PR will be listed.
 
 [Example commit](https://github.com/iv-org/invidious/commit/98926047586154269bb269d01e3e52e60e044035)
 
-Commit your changes:
+Commit and push your changes:
 ```
 git add CHANGELOG.md shard.yml
 git commit -S -m "Prepare for next release"
-```
-
-## Step 6
-
-Once you have checked everything, push to GitHub:
-```sh
 git push origin master
-git push origin vX.Y.Z
 ```
-
 
 ## Step 7
 
