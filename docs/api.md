@@ -477,7 +477,7 @@ Parameters:
 ```
 q: String
 page: Int32
-sort: "relevance", "rating", "date", "views"
+sort: "relevance", "views"
 date: "hour", "today", "week", "month", "year"
 duration: "short", "long", "medium"
 type: "video", "playlist", "channel", "movie", "show", "all", (default: all)
