@@ -12,8 +12,6 @@ Supported operators:
 
 - `sort:`
   - `relevance` (default)
-  - `rating`
-  - `date`
   - `views`
 - `date:`
   - `hour`
