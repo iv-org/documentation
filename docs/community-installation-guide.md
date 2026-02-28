@@ -299,7 +299,7 @@ Keep in mind that generated units cannot be enabled using `systemctl --user enab
 Guide contributor(s): [@SimplyProgrammer](https://github.com/SimplyProgrammer)
 
 This method provides a simple and straightforward guide with scripts to setup Invidious inside a Proxmox Linux VM or LXC container.
-It utilizes podman to create Invidious containers and Caddy 2 for https reverse proxy.
+It utilizes podman to create Invidious containers, Caddy 2 for self-signed https reverse proxy and Linux service for automatic startup.
 
 Available at https://github.com/SimplyProgrammer/Invidious-podman-LXC-VM
 
