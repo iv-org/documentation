@@ -294,6 +294,15 @@ And the whole application can be now started:
 
 Keep in mind that generated units cannot be enabled using `systemctl --user enable`. The Invidious containers will be started automatically.
 
+## Proxmox VMs and LXCs
+
+Guide contributor(s): [@SimplyProgrammer](https://github.com/SimplyProgrammer)
+
+This method provides a simple and straightforward guide with scripts to setup Invidious inside a Proxmox Linux VM or LXC container.
+It utilizes podman to create Invidious containers and Caddy 2 for https reverse proxy.
+
+Available at https://github.com/SimplyProgrammer/Invidious-podman-LXC-VM
+
 ## MacOS
 
 Looking for contributors to this operating system. Please submit a new doc for MacOS at https://github.com/iv-org/documentation/blob/master/docs/community-installation-guide.md
