@@ -46,9 +46,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
 3.  Edit the docker-compose.yml with this content:
 
     ```docker
-    version: "3"
     services:
-
       invidious:
         image: quay.io/invidious/invidious:latest
         # image: quay.io/invidious/invidious:latest-arm64 # ARM64/AArch64 devices
