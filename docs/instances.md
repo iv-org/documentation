@@ -22,6 +22,7 @@
 ### I2P Eepsites:
 
 * [nadekoohummkxncchcsylr3eku36ze4waq4kdrhcqupckc3pe5qq.b32.i2p](http://nadekoohummkxncchcsylr3eku36ze4waq4kdrhcqupckc3pe5qq.b32.i2p) 🇨🇱 (Eepsite of inv.nadeko.net)
+* [invidious-nerdvpn.i2p](http://invidious-nerdvpn.i2p] 🇺🇦 (Eepsite of invidious.nerdvpn.de)
 
 ## Rules to have your instance in this list:
 
