@@ -5,7 +5,7 @@ All endpoints under namespace `/api/v1/auth` require authentication.
 Authentication can be in one of two forms:
 
 - A `Cookie: <SID>` header (for logged in users)
-- An `Authentication: Bearer <TOKEN>` (recommended)
+- An `Authorization: Bearer <TOKEN>` (recommended)
 
 A new token can be generated from `/authorize_token` with the given parameters:
 
