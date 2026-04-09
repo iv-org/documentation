@@ -586,10 +586,12 @@ page: Int32
 > Schema:
 ```javascript
 {
+  browseId?: String,
   ucid?: String,
   videoId?: String,
   playlistId?: String,
   startTimeSeconds?: String,
+  postId?: String,
   params?: String,
   pageType: string
 }
