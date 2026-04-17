@@ -25,7 +25,7 @@
 * [nadekoohummkxncchcsylr3eku36ze4waq4kdrhcqupckc3pe5qq.b32.i2p](http://nadekoohummkxncchcsylr3eku36ze4waq4kdrhcqupckc3pe5qq.b32.i2p) 🇨🇱 (Eepsite of inv.nadeko.net)
 * [invidious-nerdvpn.i2p](http://invidious-nerdvpn.i2p) 🇺🇦 (Eepsite of invidious.nerdvpn.de)
 
-## Yggdrasil Network:
+### Yggdrasil Network:
 
 * [inv-ygg.nadeko.net](https://inv-ygg.nadeko.net) 🇨🇱 (Yggdrasil equivalent of inv.nadeko.net, Clearnet DNS)
 * [inv.nadeko.ygg](https://inv.nadeko.ygg) 🇨🇱 (Yggdrasil equivalent of inv.nadeko.net, Alfis DNS)
