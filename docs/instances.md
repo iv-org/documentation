@@ -27,7 +27,8 @@
 
 ## Yggdrasil Network:
 
-* [inv-ygg.nadeko.net](https://inv-ygg.nadeko.net) 🇨🇱 (Yggdrasil equivalent of inv.nadeko.net)
+* [inv-ygg.nadeko.net](https://inv-ygg.nadeko.net) 🇨🇱 (Yggdrasil equivalent of inv.nadeko.net, Clearnet DNS)
+* [inv.nadeko.ygg](https://inv.nadeko.ygg) 🇨🇱 (Yggdrasil equivalent of inv.nadeko.net, Alfis DNS)
 
 ## Rules to have your instance in this list:
 
