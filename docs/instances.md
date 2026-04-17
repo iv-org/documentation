@@ -25,6 +25,10 @@
 * [nadekoohummkxncchcsylr3eku36ze4waq4kdrhcqupckc3pe5qq.b32.i2p](http://nadekoohummkxncchcsylr3eku36ze4waq4kdrhcqupckc3pe5qq.b32.i2p) 🇨🇱 (Eepsite of inv.nadeko.net)
 * [invidious-nerdvpn.i2p](http://invidious-nerdvpn.i2p) 🇺🇦 (Eepsite of invidious.nerdvpn.de)
 
+## Yggdrasil Network:
+
+* [inv-ygg.nadeko.net](https://inv-ygg.nadeko.net) 🇨🇱 (Yggdrasil equivalent of inv.nadeko.net)
+
 ## Rules to have your instance in this list:
 
 Instance operators SHOULD [contact the Invidious maintainers](https://invidious.io/contact/) for guidance only if they are unsure how to comply with a specific rule or set of rules, such as questions about rotating proxies, anti-bot measures, monitoring, or Invidious configuration.
