@@ -13,6 +13,7 @@ nav:
     - 'applications.md'
     - 'export-youtube-subscriptions.md'
     - 'faq.md'
+    - 'gitea.md'
   - 'For Advanced Users':
     - 'preferences.md'
     - 'search-filters.md'

@@ -4,6 +4,7 @@
 - [Applications](./applications.md)
 - [Export YouTube subscriptions](./export-youtube-subscriptions.md)
 - [Frequently Asked Questions](./faq.md)
+- [Gitea Mirror](./gitea.md)
 
 ## For Advanced Users
 
