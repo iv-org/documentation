@@ -14,6 +14,8 @@
 * [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 - Source code/changes: https://git.nerdvpn.de/NerdVPN.de/invidious
 * [inv.thepixora.com](https://inv.thepixora.com) 🇨🇦
 * [yt.chocolatemoo53.com](https://yt.chocolatemoo53.com) 🇺🇸 - Source code/changes: https://git.nadeko.net/Fijxu/invidious 
+* [invidious.tiekoetter.com](https://invidious.tiekoetter.com) 🇩🇪 - Source code/changes: https://github.com/tiekoetter/invidious
+* [invidious.f5.si](https://invidious.f5.si) 🇯🇵 
 
 ### Tor Onion Services:
 
