@@ -18,6 +18,9 @@
 #        ErrorLog /var/log/apache2/invidious.domain.tld/error.log
         CustomLog /dev/null combined
 
+        # Required due to long URLs on channels next pages.
+        LimitRequestLine 16382
+
         RewriteEngine on
         SSLCertificateFile /etc/letsencrypt/live/invidious.domain.tld/fullchain.pem
         SSLCertificateKeyFile /etc/letsencrypt/live/invidious.domain.tld/privkey.pem
