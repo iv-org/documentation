@@ -187,7 +187,9 @@ All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fie
       ],
       "lengthSeconds": Int32,
       "viewCount": 
-      "viewCountText": String
+      "viewCountText": String,
+      "published": String,
+      "publishedText": String,
     }
   ]
 }
