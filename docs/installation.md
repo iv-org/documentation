@@ -49,7 +49,6 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
     services:
       invidious:
         image: quay.io/invidious/invidious:latest
-        # image: quay.io/invidious/invidious:latest-arm64 # ARM64/AArch64 devices
         restart: unless-stopped
         # Remove "127.0.0.1:" if used from an external IP
         ports:
@@ -98,7 +97,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
         # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
         environment:
         # Use the key generated in the 2nd step
-           - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG 
+           - SERVER_SECRET_KEY=CHANGE_ME!!SAME_AS_INVIDIOUS_COMPANION_SECRET_KEY_FROM_INVIDIOUS_CONFIG
         restart: unless-stopped
         # Uncomment only if you have configured "public_url" for Invidious companion
         # Or if you want to use Invidious companion as an API in your program.
@@ -211,7 +210,7 @@ cd invidious
 make
 
 # Configure config/config.yml as you like
-cp config/config.example.yml config/config.yml 
+cp config/config.example.yml config/config.yml
 
 # edit config.yaml to include invidious companion
 
@@ -271,7 +270,7 @@ Crystal, the programming language used by Invidious, [doesn't officially support
 
 - By installing [Docker desktop](https://docs.docker.com/desktop/setup/install/windows-install/) and then following [our guide about Docker](#docker).
 - By installing [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about) and then following [our guide about Linux](#linux).
-- By installing [Windows-specific builds](https://github.com/crystal-lang/crystal/releases/) of Crystal. Be wary, as we don't currently have records of Invidious being tested on those "unsupported" builds yet.   
+- By installing [Windows-specific builds](https://github.com/crystal-lang/crystal/releases/) of Crystal. Be wary, as we don't currently have records of Invidious being tested on those "unsupported" builds yet.
   Not officially supported by Invidious developers!
 
 ### Is your platform not listed (Podman, BSD, LXC and more)?
@@ -306,7 +305,7 @@ This will greatly improve your playback when used by multiple users.
 
 Uncomment `public_url` for the parameter `invidious_companion:` in Invidious config.yaml and configure it like this:
 
-Configure the `public_url` to be the same as the domain used for Invidious or on a separate domain (if you want) with the path `/companion`.   
+Configure the `public_url` to be the same as the domain used for Invidious or on a separate domain (if you want) with the path `/companion`.
 Examples: `https://MYINVIDIOUSDOMAIN/companion` or `https://COMPANION.MYINVIDIOUSDOMAIN/companion`.
 
 Then configure your reverse proxy:
