@@ -39,8 +39,8 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
 
 2.  Generate two secret keys, one for Invidious (HMAC_KEY) and one for Invidious companion (invidious_companion_key)
     ```bash
-    pwgen 16 1 # for Invidious (HMAC_KEY)
-    pwgen 16 1 # for Invidious companion (invidious_companion_key)
+    pwgen 16 1 # 1st step for Invidious (HMAC_KEY)
+    pwgen 16 1 # 2nd step for Invidious companion (invidious_companion_key)
     ```
 
 3.  Edit the docker-compose.yml with this content:
@@ -76,7 +76,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
             # domain:
             # https_only: false
             # statistics_enabled: false
-            # Use the key generated in the 2nd step
+            # Use the key generated in the 1st step
             hmac_key: "CHANGE_ME!!"
         healthcheck:
           test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/stats || exit 1
