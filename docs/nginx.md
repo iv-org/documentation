@@ -21,7 +21,9 @@ server {
 	location / {
 		proxy_pass http://127.0.0.1:3000;
 		proxy_set_header X-Forwarded-For $remote_addr;
-		proxy_set_header Host $host;	# so Invidious knows domain
+        # Needed for alternative domains to work, check Invidious `config.example.yml`
+        # file to get more details on how it works.
+        proxy_set_header X-Forwarded-Host $host;
 		proxy_http_version 1.1;		# to keep alive
 		proxy_set_header Connection "";	# to keep alive
 	}
