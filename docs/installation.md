@@ -26,24 +26,16 @@ Ensure [Docker Engine](https://docs.docker.com/engine/install) and [Docker Compo
 
 **This method uses the pre-built Docker image from quay**
 
-Note: Currently the repository has to be cloned, this is because the `init-invidious-db.sh` file and the `config/sql` directory have to be mounted to the postgres container (See the volumes section in the docker-compose file below). This "problem" will be solved in the future.
-
 Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/install/linux/. It should already be installed if you can successfully run the command `docker compose` (with a space between the two words).
 
 
-1.  Execute these commands:
-    ```bash
-    git clone https://github.com/iv-org/invidious.git
-    cd invidious
-    ```
-
-2.  Generate two secret keys, one for Invidious (HMAC_KEY) and one for Invidious companion (invidious_companion_key)
+1.  Generate two secret keys, one for Invidious (HMAC_KEY) and one for Invidious companion (invidious_companion_key)
     ```bash
     pwgen 16 1 # 1st step for Invidious (HMAC_KEY)
     pwgen 16 1 # 2nd step for Invidious companion (invidious_companion_key)
     ```
 
-3.  Edit the docker-compose.yml with this content:
+2.  Edit the docker-compose.yml with this content:
 
     ```docker
     services:
@@ -120,17 +112,33 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
       invidious-db:
         image: docker.io/library/postgres:14
         restart: unless-stopped
+        configs:
+          - source: init-invidious-db
+            target: /docker-entrypoint-initdb.d/init-invidious-db.sh
+            mode: 0755
         volumes:
           - postgresdata:/var/lib/postgresql/data
           - ./config/sql:/config/sql
-          - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
         environment:
           POSTGRES_DB: invidious
           POSTGRES_USER: kemal
           POSTGRES_PASSWORD: kemal
         healthcheck:
           test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
-
+    configs:
+      init-invidious-db:
+        content: |
+          #!/bin/bash
+          set -eou pipefail
+          psql --username "$$POSTGRES_USER" --dbname "$$POSTGRES_DB" < config/sql/channels.sql
+          psql --username "$$POSTGRES_USER" --dbname "$$POSTGRES_DB" < config/sql/videos.sql
+          psql --username "$$POSTGRES_USER" --dbname "$$POSTGRES_DB" < config/sql/channel_videos.sql
+          psql --username "$$POSTGRES_USER" --dbname "$$POSTGRES_DB" < config/sql/users.sql
+          psql --username "$$POSTGRES_USER" --dbname "$$POSTGRES_DB" < config/sql/session_ids.sql
+          psql --username "$$POSTGRES_USER" --dbname "$$POSTGRES_DB" < config/sql/nonces.sql
+          psql --username "$$POSTGRES_USER" --dbname "$$POSTGRES_DB" < config/sql/annotations.sql
+          psql --username "$$POSTGRES_USER" --dbname "$$POSTGRES_DB" < config/sql/playlists.sql
+          psql --username "$$POSTGRES_USER" --dbname "$$POSTGRES_DB" < config/sql/playlist_videos.sql
     volumes:
       postgresdata:
       companioncache:
@@ -138,7 +146,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
 
     Note: This compose is made for a true "production" setup, where Invidious is behind a reverse proxy. If you prefer to directly access Invidious, replace `127.0.0.1:3000:3000` with `3000:3000` under the `ports:` section.
 
-4. Run the docker composition:
+3. Run the docker composition:
 
 ```
 docker compose up -d
