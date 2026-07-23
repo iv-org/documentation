@@ -48,7 +48,7 @@ Make sure to run the newer Docker Compose V2: https://docs.docker.com/compose/in
     ```docker
     services:
       invidious:
-        image: quay.io/invidious/invidious:latest
+        image: quay.io/invidious/invidious:master
         restart: unless-stopped
         # Remove "127.0.0.1:" if used from an external IP
         ports:
