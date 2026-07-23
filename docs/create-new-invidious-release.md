@@ -1,5 +1,10 @@
 # How to make a new Invidious release
 
+## Easier way
+
+- You can now use this script to manually create a new release: https://github.com/iv-org/invidious/blob/master/scripts/create-release.py
+- Trigger a new release using GitHub Action: https://github.com/iv-org/invidious/actions/workflows/create-release.yml
+
 ## Preamble
 
 In the following document, `vX.Y.Z` is the release version, which should follow
