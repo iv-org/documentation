@@ -609,7 +609,7 @@ url: URL
   startTime: Float64, // in seconds
   endTime: Float64, // in seconds
   clipTitle: String,
-  video: VideoObject
+  videoId: String
 }
 ```
 Parameters:
