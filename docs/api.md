@@ -221,13 +221,7 @@ Returns annotation XML from YouTube's `/annotations_invideo` endpoint. Alternati
   "comments": [
     {
       "author": String,
-      "authorThumbnails": [
-        {
-          "url": String,
-          "width": Int32,
-          "height": Int32
-        }
-      ],
+      "authorThumbnail": String,
       "authorId": String,
       "authorUrl": String,
 
