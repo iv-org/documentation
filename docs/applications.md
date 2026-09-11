@@ -18,6 +18,7 @@ Lists of third-party projects that use or support Invidious.
 | [yt2alt](https://github.com/iBicha/yt2alt) | A cli tool to import your profile from Youtube to an alternative platform. | |
 | [Materialious](https://github.com/WardPearce/Materialious) | Modern material design for Invidious.  | |
 | [IInvidious](https://www.colino.net/wordpress/en/iinvidious-an-apple-ii-invidious-client/) | An Invidious client for the Apple II.  | [Repository](https://github.com/colinleroy/a2tools) |
+| [Invidious Tizen](https://github.com/lennartschoch/invidious-tizen) | An Invidious client for Samsung Tizen TVs (via TizenBrew) | |
 
 ### Browser Extensions
 
