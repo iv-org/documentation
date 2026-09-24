@@ -12,6 +12,7 @@ details on the various JSON objects used below.
 {
 	"author": String,
 	"authorId": String,
+	"authorHandle": String?,
 	"authorUrl": String,
 	"authorVerified": Boolean,
 	"authorBanners": [
