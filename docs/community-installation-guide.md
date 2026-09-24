@@ -328,6 +328,10 @@ It should automatically start with your VM/LXC, no extra work needed.
 
 More info and the whole solution is available for review at https://github.com/SimplyProgrammer/Invidious-podman-LXC-VM.
 
+## Easypanel
+
+[Easypanel](https://easypanel.io) is a self-hosted Docker deployment platform, and Invidious has a one-click deployment template there: https://easypanel.io/templates/invidious. The template sets up Invidious with a PostgreSQL database automatically.
+
 ## MacOS
 
 Looking for contributors to this operating system. Please submit a new doc for MacOS at https://github.com/iv-org/documentation/blob/master/docs/community-installation-guide.md
