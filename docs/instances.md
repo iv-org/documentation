@@ -11,7 +11,7 @@
 ## List of public Invidious Instances (sorted from oldest to newest):
 
 * [inv.nadeko.net](https://inv.nadeko.net) 🇨🇱 - Source code/changes: https://git.nadeko.net/Fijxu/invidious - CAPTCHA: Go-away
-* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇺🇦 - Source code/changes: https://git.nerdvpn.de/NerdVPN.de/invidious
+* [invidious.nerdvpn.de](https://invidious.nerdvpn.de) 🇨🇦 - Source code/changes: https://git.nerdvpn.de/NerdVPN.de/invidious
 * [yt.chocolatemoo53.com](https://yt.chocolatemoo53.com) 🇺🇸 - Source code/changes: https://git.nadeko.net/Fijxu/invidious 
 * [invidious.tiekoetter.com](https://invidious.tiekoetter.com) 🇩🇪 - Source code/changes: https://github.com/tiekoetter/invidious
 * [invidious.f5.si](https://invidious.f5.si) 🇯🇵
