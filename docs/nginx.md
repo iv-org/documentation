@@ -15,6 +15,9 @@ server {
 	access_log off;
 	error_log /var/log/nginx/error.log crit;
 
+	# Required due to long URLs on channels next pages.
+	large_client_header_buffers 4 16k;
+
 	ssl_certificate /etc/letsencrypt/live/invidious.domain.tld/fullchain.pem;
 	ssl_certificate_key /etc/letsencrypt/live/invidious.domain.tld/privkey.pem;
 
