@@ -19,7 +19,7 @@ Lists of third-party projects that use or support Invidious.
 | [Materialious](https://github.com/WardPearce/Materialious) | Modern material design for Invidious.  | |
 | [IInvidious](https://www.colino.net/wordpress/en/iinvidious-an-apple-ii-invidious-client/) | An Invidious client for the Apple II.  | [Repository](https://github.com/colinleroy/a2tools) |
 | [Invidious Tizen](https://github.com/lennartschoch/invidious-tizen) | An Invidious client for Samsung Tizen TVs (via TizenBrew) | |
-| [HomeTube](https://github.com/biolend83/hometube) | Self-hosted web front end that looks like classic YouTube, runs next to your own Invidious and adds live streams and live captions. | |
+| [TubeHaus](https://github.com/biolend83/tubehaus) | Self-hosted web front end that looks like classic YouTube, runs next to your own Invidious and adds live streams and live captions. | |
 
 ### Browser Extensions
 
