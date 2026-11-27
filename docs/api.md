@@ -294,8 +294,23 @@ Captions can also be selected with an ISO `lang`, e.g. &lang=en, `tlang` will au
 ```javascript
 [
   {
+    "type": String, // always "video"
     "title": String,
     "videoId": String,
+
+    "author": String,
+    "authorId": String,
+    "authorUrl": String,
+    "authorVerified": Bool,
+
+    "authorThumbnails": [
+      {
+        "url": String,
+        "width": Int32,
+        "height": Int32
+      }
+    ]?,
+
     "videoThumbnails": [
       {
         "quality": String,
@@ -305,21 +320,26 @@ Captions can also be selected with an ISO `lang`, e.g. &lang=en, `tlang` will au
       }
     ],
 
-    "lengthSeconds": Int32,
-    "viewCount": Int64,
-
-    "author": String,
-    "authorId": String,
-    "authorUrl": String,
-
-    "published": Int64,
-    "publishedText": String,
     "description": String,
     "descriptionHtml": String,
 
+    "viewCount": Int64,
+    "viewCountText": String,
+    "published": Int64,
+    "publishedText": String,
+    "lengthSeconds": Int32,
+
     "liveNow": Bool,
-    "paid": Bool,
-    "premium": Bool
+    "premium": Bool,
+    "isUpcoming": Bool,
+    "premiereTimestamp": Int64?,
+    "isNew": Bool,
+    "is4k": Bool,
+    "is8k": Bool,
+    "isVr180": Bool,
+    "isVr360": Bool,
+    "is3d": Bool,
+    "hasCaptions": Bool
   }
 ]
 ```
@@ -327,7 +347,7 @@ Captions can also be selected with an ISO `lang`, e.g. &lang=en, `tlang` will au
 Parameters:
 
 ```
-type: "music", "gaming", "movies", "default"
+type: "livestreams", "gaming", "default"
 region: ISO 3166 country code (default: "US")
 ```
 
